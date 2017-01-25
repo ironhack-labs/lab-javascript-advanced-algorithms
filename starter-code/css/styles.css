@@ -1,0 +1,99 @@
+html {
+  background-color: grey;
+}
+
+#stackOF {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  border-right: 2px solid black
+}
+
+#queueUF {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  border-left: 2px solid black;
+}
+
+.topBox {
+  position: relative;
+  width: 80%;
+  height: 250px;
+  margin: 1% 10%;
+  padding: 2.5%;
+}
+
+.bottomBox {
+  position: relative;
+  width: 80%;
+  height: 98%;
+  padding: 2.5% 0%;
+  margin: 1% 10%;
+}
+
+.stackStep {
+  position: relative;
+  width: 370px;
+  left: 15%;
+  height: 37px;
+  margin: 0;
+  border: 2px solid black;
+}
+
+.queueStep {
+  position: relative;
+  background-color: grey;
+  width: 52px;
+  float: left;
+  height: 300px;
+  margin: 0;
+  border: 2px solid black;
+}
+
+.titles {
+  position: relative;
+  font-size: 30px;
+  font-weigth: bold;
+  margin: 2% 12%;
+}
+
+.filledBox {
+  background-color: blue;
+}
+
+.inputBox {
+  position: relative;
+  width: 50%;
+  margin: 2% 12%;
+}
+
+.addRemButtons {
+  color: white;
+  position: relative;
+  width: 100%;
+}
+
+.addButton {
+  position: relative;
+  background-color: blue;
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  margin: 1% 10%;
+}
+
+.remButton {
+  position: relative;
+  background-color: red;
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  margin: 1% 10%;
+}
