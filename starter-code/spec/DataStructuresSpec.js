@@ -181,7 +181,7 @@ describe("Queues", function() {
       queue.enqueue(19);
       queue.enqueue(88);
 
-      expect(queue.dequeue()).toBe(19);
+      expect(queue.dequeue()).toBe(88);
     });
 
     it ("Should return 'Queue Underflow' if there are no elements in the queue", function () {
