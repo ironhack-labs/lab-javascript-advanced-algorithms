@@ -15,6 +15,7 @@ describe("Stack", function() {
     });
   });
 
+ 
   describe ("Stack methods", function () {
     it ("Should has a method to check if the current stack is empty", function () {
       expect(typeof(stack.isEmpty)).toBe('function');
