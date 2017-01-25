@@ -27,7 +27,7 @@ QueueDataStructure.prototype.dequeue=function(){
   if(this.isEmpty()){
     return 'Queue Underflow';
   }else{
-    return this.queueControl.pop();}
+    return this.queueControl.pop;}
     //console.log(this.queueControl);
 };
 var queue =new QueueDataStructure();
