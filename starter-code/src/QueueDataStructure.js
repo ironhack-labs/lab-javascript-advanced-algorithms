@@ -48,7 +48,13 @@ QueueDataStructure.prototype.pop = function(){
 };
 
 function deleteQueue() {
-  allQueue = document.getElementsByClassName('fill-queue');
-  allQueue[0].className = "empty-queue"
+  allFillQueue = document.getElementsByClassName('fill-queue');
+  allFillQueue[0].className = "empty-queue"
   queue.queueControl.pop();
+}
+
+function addQueue() {
+  allEmptyQueue = document.getElementsByClassName('empty-queue');
+  allEmptyQueue[0].className = "fill-queue";
+  queue.queueControl.push();
 }

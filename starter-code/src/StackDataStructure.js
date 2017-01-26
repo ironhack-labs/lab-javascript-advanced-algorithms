@@ -41,13 +41,14 @@ StackDataStructure.prototype.pop = function(){
   }
 };
 
+function deleteStack() {
+  allFillStack = document.getElementsByClassName('fill');
+  allFillStack[0].className = "empty-stack"
+  stack.stackControl.pop();
+}
 
-// var stack = new StackDataStructure;
-
-// stack.push = function(value){
-//   return stack.stackControl.push(value);
-// }
-//
-// stack.isEmpty = function () {
-//   return stack.stackControl.length < 1 ? true : false;
-// };
+function addStack() {
+  allEmptyStack = document.getElementsByClassName('empty-stack');
+  allEmptyStack[allEmptyStack.length-1].className = "fill";
+  stack.stackControl.push();
+}
