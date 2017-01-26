@@ -1,0 +1,23 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/suazo/.nvm/versions/node/v7.4.0/bin/node',
+1 verbose cli   '/Users/suazo/.nvm/versions/node/v7.4.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'test' ]
+2 info using npm@4.0.5
+3 info using node@v7.4.0
+4 verbose config Skipping project config: /Users/suazo/.npmrc. (matches userconfig)
+5 verbose stack Error: ENOENT: no such file or directory, open '/Users/suazo/package.json'
+6 verbose cwd /Users/suazo/IronHack/Semana2/Dia3/lab-javascript-advanced-algorithms/starter-code
+7 error Darwin 16.3.0
+8 error argv "/Users/suazo/.nvm/versions/node/v7.4.0/bin/node" "/Users/suazo/.nvm/versions/node/v7.4.0/bin/npm" "run" "test"
+9 error node v7.4.0
+10 error npm  v4.0.5
+11 error path /Users/suazo/package.json
+12 error code ENOENT
+13 error errno -2
+14 error syscall open
+15 error enoent ENOENT: no such file or directory, open '/Users/suazo/package.json'
+16 error enoent ENOENT: no such file or directory, open '/Users/suazo/package.json'
+16 error enoent This is most likely not a problem with npm itself
+16 error enoent and is related to npm not being able to find a file.
+17 verbose exit [ -2, true ]
