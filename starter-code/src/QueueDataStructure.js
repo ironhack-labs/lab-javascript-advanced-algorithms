@@ -31,7 +31,7 @@ QueueDataStructure.prototype.canEnqueue = function() {
 //ADDS THE NEW ELEMENT TO THE BEGINNING OF THE ARRAY
 QueueDataStructure.prototype.enqueue = function(i) {
   console.log(i);
-  this.queueControl.push(i);
+  this.queueControl.unshift(i);
   console.log(this.queueControl);
   if (this.queueControl.length > this.MAX_SIZE) {
     return "Queue Overflow";
@@ -44,9 +44,13 @@ QueueDataStructure.prototype.dequeue = function() {
     return "Queue Underflow";
   }
   else {
-    return this.queueControl[this.queueControl.length - 1];
+    return this.queueControl.pop();
   }
 };
+
+
+
+// VISUALIZATION
 
 
 
@@ -58,6 +62,9 @@ $( document ).ready(function() {
     if (newQueue.canEnqueue() === true) {
       newQueue.enqueue($('#queue-input').val());
       $('.queue-wrapper').append('<div class="bar"></div>');
+    }
+    else {
+      newQueue.dequeue();
     }
     console.log(QueueDataStructure.queControl);
 

@@ -54,6 +54,6 @@ StackDataStructure.prototype.pop = function() {
     return "Stack Underflow";
   }
   else {
-    return this.stackControl[this.stackControl.length - 1];
+    return this.stackControl.pop();
   }
 };
