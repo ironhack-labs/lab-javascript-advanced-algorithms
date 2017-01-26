@@ -1,0 +1,15 @@
+.main-container{
+  width: 30%;
+  margin:auto;
+}
+
+.main-container * {
+  width: 100%;
+}
+
+.brick {
+  background-color: #fff;
+  border: solid 1px grey;
+  border-radius: 10px;
+  height: 50px;
+}
