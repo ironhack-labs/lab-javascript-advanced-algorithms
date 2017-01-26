@@ -14,7 +14,14 @@ StackDataStructure.prototype.isEmpty = function () {
     }
     return true;
 };
-
+                                                                    //WE CAN PASS OUR PROTOTYPES TO OTHER PROTOTYPES
+                                                                    //I.E. StackDataStructure.prototype.pop = function () {
+                                                                    //     if (this.isEmpty()) {
+                                                                    //       return "Stack Underflow";
+                                                                    //     }
+                                                                    //     return this.stackControl.pop();
+                                                                    //
+                                                                    // };
 
 StackDataStructure.prototype.push = function (element) {
 
