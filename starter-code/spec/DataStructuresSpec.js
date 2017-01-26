@@ -4,43 +4,48 @@ describe("Stack", function() {
   beforeEach (function() {
     stack = new StackDataStructure();
   });
+  //DONE
 
   describe ("Stack properties", function () {
-    it ("Should has an array to add the elements to the stack", function () {
+    it ("Should have an array to add the elements to the stack", function () {
       expect(Array.isArray(stack.stackControl)).toBe(true);
     });
+    //DONE
 
     it ("Should has a max number of items to avoid the stack overflow", function () {
       expect(typeof(stack.MAX_SIZE)).toBe('number');
     });
+    //DONE
   });
 
   describe ("Stack methods", function () {
     it ("Should has a method to check if the current stack is empty", function () {
       expect(typeof(stack.isEmpty)).toBe('function');
     });
-
+    //DONE
     it ("Should has a method to check if we can push elements into the stack", function () {
       expect(typeof(stack.canPush)).toBe('function');
     });
-
+    //DONE
     it ("Should has a method to push elements into the stack", function () {
       expect(typeof(stack.push)).toBe('function');
     });
-
+    //DONE
     it ("Should has a method to take elements from the stack", function () {
       expect(typeof(stack.pop)).toBe('function');
     });
+    //DONE
   });
 
   describe ("Stack methods default values", function () {
     it ("Should has an empty stack", function () {
       expect(stack.isEmpty()).toBe(true);
     });
-
+    //DONE
     it ("Should be able to add a new element in the stack", function () {
       expect(stack.canPush()).toBe(true);
     });
+    //DONE
   });
 
   describe ("Stack methods usage", function () {
@@ -89,6 +94,8 @@ describe("Stack", function() {
     });
 
     it ("Should return 'Stack Underflow' if there are no elements in the stack", function () {
+
+
       expect(stack.pop()).toBe('Stack Underflow');
     });
   });
