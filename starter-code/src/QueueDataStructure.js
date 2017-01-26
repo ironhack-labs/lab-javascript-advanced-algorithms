@@ -13,6 +13,7 @@ function QueueDataStructure () {
     if (this.queueControl.length < this.MAX_SIZE) {
       return true;
     } else {
+      console.log("Queue Overflow");
       return false;
     }
   };
@@ -21,14 +22,16 @@ function QueueDataStructure () {
       this.queueControl.unshift(newNumber);
       return this.queueControl;
     } else {
+      alert("Queue Overflow");
       return "Queue Overflow";
     }
   };
   this.dequeue = function () {
     if (this.queueControl.length === 0) {
+      alert("Queue Underflow");
       return "Queue Underflow";
     } else {
-      return this.queueControl.pop();
+      return this.queueControl.shift();
     }
   };
 }

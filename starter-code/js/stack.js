@@ -1,26 +1,29 @@
 var myStack = new StackDataStructure();
 var addToTheStack = function () {
-  myStack.push($("#stackOF .inputBox").attr("value"));
+  myStack.push($("#stackOF .inputBox").value);
   stackFiller();
 };
 
+var removeFromTheStack = function () {
+  myStack.pop();
+  stackEmptier();
+};
 
-  var stackCounter = 0;
+  var stackCounter = 9;
 
 var stackFiller = function () {
-  stackCounter = 0;
   var currentStep = $(".stackStep")[stackCounter];
-
-  console.log(currentStep);
-  currentStep.attr(".filledBox");
-  return stackCounter += 1;
+  $(currentStep).toggleClass("filledBox");
+  var currentText = $("#stackOF .inputBox").value;
+  $(currentStep).html(currentText);
+  stackCounter -= 1;
 };
 
 var stackEmptier = function () {
-
+  stackCounter += 1;
   var currentStep = $(".stackStep")[stackCounter];
-  currentStep.addClass("filledBox");
-  stackCounter -= 1;
+  $(currentStep).toggleClass("filledBox");
+
 };
 
 function stackTrigger () {
@@ -30,7 +33,7 @@ function stackTrigger () {
   $("#stackOF .topBox").append("<input class='inputBox' type='text' placeholder='Add elements to the Stack'>");
   $("#stackOF .topBox").append("<div class='addRemButtons'></div>");
   $("#stackOF .addRemButtons").append("<button class='addButton' onclick='addToTheStack()'>ADD</button>");
-  $("#stackOF .addRemButtons").append("<button class='remButton'>TAKE</button>");
+  $("#stackOF .addRemButtons").append("<button class='remButton' onclick='removeFromTheStack()'>TAKE</button>");
   for(var i=0;i<10;i++){
       $('#stackOF .bottomBox').append('<div class="stackStep" />');
   }

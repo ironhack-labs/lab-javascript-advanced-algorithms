@@ -21,11 +21,13 @@ function StackDataStructure () {
       this.stackControl.push(newNumber);
       return this.stackControl;
     } else {
+      alert("Stack Overflow");
       return "Stack Overflow";
     }
   };
   this.pop = function() {
     if (this.stackControl.length === 0) {
+      alert("Stack Underflow");
       return "Stack Underflow";
     } else {
       return this.stackControl.pop();

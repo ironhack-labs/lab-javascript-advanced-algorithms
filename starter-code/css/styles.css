@@ -1,6 +1,4 @@
-html {
-  background-color: grey;
-}
+
 
 #stackOF {
   position: fixed;
@@ -45,11 +43,11 @@ html {
   height: 37px;
   margin: 0;
   border: 2px solid black;
+  color: white;
 }
 
 .queueStep {
   position: relative;
-  background-color: grey;
   width: 52px;
   float: left;
   height: 300px;
