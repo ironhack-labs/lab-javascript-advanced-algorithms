@@ -41,9 +41,8 @@ This data structure is also called LIFO queue. LIFO stands for "last in, first o
 
 ![Image](https://i.imgur.com/NcuoeUk.png)
 
-:::info
+**Info**
 Think about a stack as if it was a stack of books. You can put a book over the others, but you just can take the book on the top of the stack.
-:::
 
 ### Queues
 
@@ -55,9 +54,8 @@ The process to add an element into queue is called **enqueue**, and the process 
 
 ![](https://i.imgur.com/Qo1SQQ7.png)
 
-:::info
+**Info**
 Think about a queue as if it was a queue in a bank. When you arrive, you are the last in the line, and you have to wait until it's your turn to being attended.
-:::
 
 ## Exercise
 
@@ -109,9 +107,7 @@ So we will also need to have two methods, one to check if we can add new element
 
 If you follow the set of tests, you will get a solution with all the necessary implementations :)
 
-:::danger
 **You can't use the append or prepend jQuery methods to do this exercise. The goal is not to do the exercise fast, but to have a first approach with the Data Structures.**
-:::
 
 ### Second iteration
 
@@ -128,9 +124,7 @@ So we will also need to have two methods, one to check if we can add new element
 
 If you follow the set of tests, you will get a solution with all the necessary implementations :)
 
-:::danger
 **Again, you can't use the append or prepend jQuery methods to do this exercise. Remember that the goal is not to do the exercise fast, but to understand these Data Structures.**
-:::
 
 ### Third iteration
 
