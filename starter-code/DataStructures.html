@@ -14,132 +14,146 @@
         <h1>Abstract Data Types</h1>
       </div>
     </div>
-    <div id="stack_board">
+    <div id="board">
       <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <h1>Stack</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="overflow" class="extra">
+        <!--<div class="col-md-4">
+          <div id="stack_board">
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <h1>Stack</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="overflow" class="extra">
+                  <h3>Overflow</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="card9" class="pic">
+                </div>
+                <div id="card9-reversed" class="pic-reversed">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="card8" class="pic">
+                </div>
+                <div id="card8-reversed" class="pic-reversed">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="card7" class="pic">
+                </div>
+                <div id="card7-reversed" class="pic-reversed">
+                  <h3></h3>
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="card6" class="pic">
+                </div>
+                <div id="card6-reversed" class="pic-reversed">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="card5" class="pic">
+                </div>
+                <div id="card5-reversed" class="pic-reversed">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="card4" class="pic">
+                </div>
+                <div id="card4-reversed" class="pic-reversed">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="card3" class="pic">
+                </div>
+                <div id="card3-reversed" class="pic-reversed">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="card2" class="pic">
+                </div>
+                <div id="card2-reversed" class="pic-reversed">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="card1" class="pic">
+                </div>
+                <div id="card1-reversed" class="pic-reversed">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="card0" class="pic">
+                </div>
+                <div id="card0-reversed" class="pic-reversed">
+                  <h3></h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-md-offset-2">
+                <div id="underflow" class="extra">
+                  <h3>Underflow</h3>
+                </div>
+              </div>
+            </div>
+            <div class="input-object">
+              <div class="row">
+                <div class="col-md-2 col-md-offset-2">
+                  <input></input>
+                </div>
+              </div>
+            </div>
+            <div class="add-object">
+              <div class="row">
+                <div class="col-md-2 col-md-offset-2">
+                  <button class="btn" id="add-object"><p>Add</p></button>
+                </div>
+              </div>
+            </div>
+            <div class="take-object">
+              <div class="row">
+                <div class="col-md-2 col-md-offset-2">
+                  <button class="btn" id="take-object"><p>Take</p></button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="card0" class="pic">
-          </div>
-          <div id="card0-reversed" class="pic-reversed">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="card1" class="pic">
-          </div>
-          <div id="card1-reversed" class="pic-reversed">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="card2" class="pic">
-          </div>
-          <div id="card2-reversed" class="pic-reversed">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="card3" class="pic">
-          </div>
-          <div id="card3-reversed" class="pic-reversed">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="card4" class="pic">
-          </div>
-          <div id="card4-reversed" class="pic-reversed">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="card5" class="pic">
-          </div>
-          <div id="card5-reversed" class="pic-reversed">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="card6" class="pic">
-          </div>
-          <div id="card6-reversed" class="pic-reversed">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="card7" class="pic">
-          </div>
-          <div id="card7-reversed" class="pic-reversed">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="card8" class="pic">
-          </div>
-          <div id="card8-reversed" class="pic-reversed">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="card9" class="pic">
-          </div>
-          <div id="card9-reversed" class="pic-reversed">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <div id="underflow" class="extra">
-          </div>
-        </div>
-      </div>
-      <div class="input-object">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <input></input>
-          </div>
-        </div>
-      <div>
-      <div class="add-object">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <button class="btn" id="add-object"><p>Add</p></button>
-          </div>
-        </div>
-      </div>
-      <div class="take-object">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <button class="btn" id="take-object"><p>Take</p></button>
-          </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
-
-
-
-
-
 
   <!-- <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script> -->

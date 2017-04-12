@@ -15,9 +15,15 @@
   /*display: none;*/
   background-color: #456783;
   width:200px;
-	height:20px;
+	height:30px;
 	float:left;
 	margin:10px;
+}
+
+.extra h3{
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
 }
 
 .pic {
@@ -31,7 +37,7 @@
 
 .pic-reversed{
   /*display: none;*/
-  background-color: #456783;
+  background-color: red;
   width:200px;
 	height:50px;
 	float:left;

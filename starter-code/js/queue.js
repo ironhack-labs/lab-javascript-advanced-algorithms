@@ -35,17 +35,17 @@ QueueObject.prototype.enqueueObj = function(element){
 
   if(this._overFlow())
   {
-    return false;
+    return ["null",false];
   }
   else
   {
     var elementObj = {obj: element , index: this.numObjs };
     console.log("elementObj.index",elementObj.index);
-    console.log("this.numObjs",this.numObjs);
     this.numObjs++;
+    console.log("this.numObjs",this.numObjs);
     this.queueArray.push(elementObj);
 
-    return true;
+    return [elementObj,true];
   }
 
 };
@@ -64,8 +64,7 @@ QueueObject.prototype.unqueueObj = function(){
     var min = 0;
 
     this.queueArray.forEach(function(elementObj){
-      console.log("elementObj.index",elementObj.index);
-      console.log("this.numObjs-1",self.numObjs-1);
+
       if(elementObj.index !== 0)
       {
         elementObj.index--;
@@ -73,12 +72,14 @@ QueueObject.prototype.unqueueObj = function(){
       }
       else {
 
-        temp = elementObj.obj;
+        temp = elementObj;
+        console.log("elementObj.index",elementObj.index);
       }
     });
 
     this.queueArray = tempArray;
     this.numObjs--;
+    console.log("this.numObjs",self.numObjs);
 
     return [temp,true];
   }
