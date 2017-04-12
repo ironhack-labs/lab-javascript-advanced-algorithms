@@ -40,9 +40,7 @@ StackObject.prototype.pushObj = function(element){
   else
   {
     var elementObj = {obj: element , index: this.numObjs };
-    console.log("elementObj.index",elementObj.index);
     this.numObjs++;
-    console.log("this.numObjs",this.numObjs);
     this.structureArray.push(elementObj);
 
     return [elementObj,true];
@@ -71,13 +69,12 @@ StackObject.prototype.popObj = function(){
       else {
 
         temp = elementObj;
-        console.log("elementObj.index",elementObj.index);
+
       }
     });
 
     this.structureArray = tempArray;
     this.numObjs--;
-    console.log("this.numObjs",self.numObjs);
 
     return [temp,true];
   }
@@ -146,11 +143,8 @@ function stackBoard(addObjectDoc, stackObject){
 
       if(tempId === "stack-take-object")
       {
-        console.log("take");
+
         var tempObj = stackObject.popObj();
-        console.log("take performed");
-        console.log(tempObj);
-        console.log(tempObj[0].obj);
 
         if(tempObj[1]===true)
         {
@@ -171,15 +165,12 @@ function stackBoard(addObjectDoc, stackObject){
       }
       else if(tempId === "stack-add-object")
       {
-        console.log("add");
-        console.log(addObjectDoc);
+
         $('#stack-out-object h3').html("");
 
         if(addObjectDoc!=="")
         {
           var tempObj = stackObject.pushObj(addObjectDoc);
-          console.log("add performed");
-          console.log(tempObj);
 
           if(tempObj[1]===true)
           {
@@ -188,7 +179,6 @@ function stackBoard(addObjectDoc, stackObject){
             temp = temp + "-reversed";
             $(temp).css('display','block');
             temp = temp + " h3";
-            console.log(temp);
             $(temp).html(addObjectDoc);
             $('#stack-underflow').css('display','none');
           }
@@ -202,7 +192,6 @@ function stackBoard(addObjectDoc, stackObject){
 
   $('#stack-board .stack-input-object').on( 'change', 'input', function(){
       addObjectDoc = $(this).val();
-      console.log(addObjectDoc);
   });
 
   for(var i=0; i<stackObject.structureLength; i++)
