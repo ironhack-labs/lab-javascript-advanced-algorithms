@@ -1,0 +1,16 @@
+
+
+
+.stack-container{
+  width: 40%;
+  height: 600px;
+  margin: 30px 0 0 13%;
+  display: inline-block;
+}
+
+.queue-container{
+  width:40%;
+  height:600px;
+  margin: 30px 0 0 5%;
+  display: inline-block;
+}
