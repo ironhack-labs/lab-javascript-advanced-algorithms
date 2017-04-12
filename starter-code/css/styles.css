@@ -1,0 +1,73 @@
+
+.container {
+  width: 90%;
+  height: 80%;
+  text-align: center;
+}
+.content {
+  margin: auto;
+  background-color: blue;
+  width: 90%;
+}
+
+.stack {
+  float: left;
+  width: 50%;
+  height: 80%;
+}
+
+.queue {
+  float: left;
+  width: 50%;
+  height: 80%;
+}
+
+button {
+  margin: 5px auto;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 90%;
+  color: white;
+}
+
+.add {
+  background-color: rgb(57,134,183);
+}
+
+.take {
+  background-color: rgb(206,48,52);
+}
+
+input {
+  margin: 10px auto 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 90%;
+}
+
+.item {
+  margin: 2px auto;
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: 90%;
+  height: 20px;
+  background-color: rgb(74,174,229);
+  color: white;
+}
+.empty {
+  margin: 2px auto;
+  border: 1px solid grey;
+  border-radius: 3px;
+  width: 90%;
+  height: 20px;
+  background-color: rgb(237,237,237);
+}
+.alert {
+  margin: 2px auto;
+  border: 1px solid rgb(206,48,52);;
+  border-radius: 3px;
+  width: 90%;
+  height: 20px;
+  background-color: rgb(244,266,266);
+  color: rgb(206,48,52);
+}

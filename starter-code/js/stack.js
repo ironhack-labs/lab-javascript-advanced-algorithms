@@ -1,23 +1,32 @@
-function StackDataStructure() {
-  this.stackControl = [];
-  this.MAX_SIZE = 0;
+var stack;
 
+function addStack(){
+  var item = document.getElementById('text2Add2Stack').value;
+  if (stack.push(item) === "Stack Overflow") {
+    alert("Stack Overflow");
+  } else {
+    printStack();
+  }
 }
 
-Stack.prototype.isEmpty = function() {
+function takeStack(){
+  if (stack.pop() === "Stack Underflow") {
+    alert("Stack Underfloor");
+  }else{
+    printStack();
+  }
+}
 
-};
+function printStack(){
+  var stackDataStructure = document.getElementById('stackDataStructure');
+  stackDataStructure.innerHTML = "";
+  items = stack.stackControl.length;
 
-Stack.prototype.canPush = function() {
+  for (var j = 0; j < (10-items);j++) {
+    stackDataStructure.innerHTML += "<div class='empty'></div>";
+  }
 
-};
-
-Stack.prototype.push = function() {
-
-};
-
-Stack.prototype.pop = function() {
-
-};
-
-var stack = new StackDataStructure(true);
+  for (var i = items -1; i>=0; i--){
+    stackDataStructure.innerHTML += "<div class='item'>"+ stack.stackControl[i] +"</div>";
+  }
+}
