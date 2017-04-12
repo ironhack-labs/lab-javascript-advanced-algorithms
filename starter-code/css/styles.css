@@ -1,0 +1,56 @@
+.container{
+  width: 50%;
+  background-color: red;
+  display: inline;
+}
+
+.stack-container{
+  display:block;
+  margin: 20px 10px 20px;
+  float: left;
+}
+
+.queue-container{
+  display:block;
+  margin: 20px 10px 20px;
+  float:right;
+}
+
+
+input{
+  border: solid 1px black;
+  text-align: center;
+  width: 150px;
+  font-size:14px;
+}
+
+button{
+  display: list-item;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-blue{
+  width:100%;
+  background-color:blue;
+  border-radius:10px;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btn-red{
+  width:100%;
+  background-color:red;
+  border-radius:10px;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+}
+
+.number{
+  height:50px;
+  background-color:grey;
+  margin:3px 3px;
+  border-radius: 10px;
+}
