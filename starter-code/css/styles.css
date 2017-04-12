@@ -1,5 +1,5 @@
-#memory_board {
-    margin-top: 20%;
+#board {
+    margin-top: 1%;
     background-color: grey;
 }
 
@@ -13,7 +13,7 @@
 
 .extra {
   /*display: none;*/
-  background-color: #456783;
+  background-color: red;
   width:200px;
 	height:30px;
 	float:left;
@@ -37,7 +37,7 @@
 
 .pic-reversed{
   /*display: none;*/
-  background-color: red;
+  background-color: green;
   width:200px;
 	height:50px;
 	float:left;
