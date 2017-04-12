@@ -140,9 +140,6 @@ function queueBoard(addObjectDoc, queueObject){
             // $(temp).css('display','block');
             temp = temp + " h3";
             $(temp).html(tempObj2.obj);
-
-            $('#queue-overflow').css('display','none');
-            $('#queue-out-object h3').html(tempObj[0].obj);
           }
 
           for(var i= queueObject.structureLength-1; i>=queueObject.numObjs;i--)
@@ -153,6 +150,9 @@ function queueBoard(addObjectDoc, queueObject){
             $(temp).css('display','none');
 
           }
+
+          $('#queue-overflow').css('display','none');
+          $('#queue-out-object h3').html(tempObj[0].obj);
         }
         else if(tempObj[1]===false)
         {
@@ -166,7 +166,7 @@ function queueBoard(addObjectDoc, queueObject){
         console.log("add");
         console.log(addObjectDoc);
         $('#queue-out-object h3').html("");
-        
+
         if(addObjectDoc!=="")
         {
           var tempObj = queueObject.enqueueObj(addObjectDoc);
