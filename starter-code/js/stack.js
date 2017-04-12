@@ -130,6 +130,9 @@ function generateBoardHtml(structureObject, string){
 
   $('#'+string+'-board').append(generateContent);
 
+  generateContent ="<div class='out-object' id='"+string+"-out-object'><div class='row'><div class='col-md-2 col-md-offset-2'><h3></h3></div></div></div>";
+
+  $('#'+string+'-board').append(generateContent);
 
 }
 
@@ -147,18 +150,22 @@ function stackBoard(addObjectDoc, stackObject){
         var tempObj = stackObject.popObj();
         console.log("take performed");
         console.log(tempObj);
+        console.log(tempObj[0].obj);
 
         if(tempObj[1]===true)
         {
-          var temp = "#stack-board #stack-card"+(tempObj[0].index).toString();
+          var temp = "#stack-card"+(tempObj[0].index).toString();
           $(temp).css('display','block');
           temp = temp + "-reversed";
           $(temp).css('display','none');
-          $('#stack-board #stack-overflow').css('display','none');
+          $('#stack-overflow').css('display','none');
+          $('#stack-out-object h3').html(tempObj[0].obj);
+
         }
         else if(tempObj[1]===false)
         {
-          $('#stack-board #stack-underflow').css('display','block');
+          $('#stack-underflow').css('display','block');
+          $('#stack-out-object h3').html("");
         }
 
       }
@@ -166,6 +173,7 @@ function stackBoard(addObjectDoc, stackObject){
       {
         console.log("add");
         console.log(addObjectDoc);
+        $('#stack-out-object h3').html("");
 
         if(addObjectDoc!=="")
         {
@@ -175,18 +183,18 @@ function stackBoard(addObjectDoc, stackObject){
 
           if(tempObj[1]===true)
           {
-            var temp = "#stack-board #stack-card"+(tempObj[0].index).toString();
+            var temp = "#stack-card"+(tempObj[0].index).toString();
             $(temp).css('display','none');
             temp = temp + "-reversed";
             $(temp).css('display','block');
             temp = temp + " h3";
             console.log(temp);
             $(temp).html(addObjectDoc);
-            $('#stack-board #stack-underflow').css('display','none');
+            $('#stack-underflow').css('display','none');
           }
           else if(tempObj[1]===false)
           {
-            $('#stack-board #stack-overflow').css('display','block');
+            $('#stack-overflow').css('display','block');
           }
         }
       }
@@ -199,7 +207,7 @@ function stackBoard(addObjectDoc, stackObject){
 
   for(var i=0; i<stackObject.structureLength; i++)
   {
-    var temp = "#stack-board #stack-card"+(i).toString();
+    var temp = "#stack-card"+(i).toString();
     temp = temp + "-reversed";
     $(temp).css('display','none');
   }

@@ -135,18 +135,19 @@ function queueBoard(addObjectDoc, queueObject){
           for(var i = 0; i< queueObject.numObjs; i++)
           {
             tempObj2 = queueObject.returnByIndex(i);
-            var temp = "#queue-board #queue-card"+i;
+            var temp = "#queue-card"+i;
             temp = temp + "-reversed";
             // $(temp).css('display','block');
             temp = temp + " h3";
             $(temp).html(tempObj2.obj);
 
-            $('#queue-board #queue-overflow').css('display','none');
+            $('#queue-overflow').css('display','none');
+            $('#queue-out-object h3').html(tempObj[0].obj);
           }
 
           for(var i= queueObject.structureLength-1; i>=queueObject.numObjs;i--)
           {
-            var temp = "#queue-board #queue-card"+i;
+            var temp = "#queue-card"+i;
             $(temp).css('display','block');
             temp = temp + "-reversed";
             $(temp).css('display','none');
@@ -155,7 +156,8 @@ function queueBoard(addObjectDoc, queueObject){
         }
         else if(tempObj[1]===false)
         {
-          $('#queue-board #queue-underflow').css('display','block');
+          $('#queue-underflow').css('display','block');
+          $('#queue-out-object h3').html("");
         }
 
       }
@@ -163,7 +165,8 @@ function queueBoard(addObjectDoc, queueObject){
       {
         console.log("add");
         console.log(addObjectDoc);
-
+        $('#queue-out-object h3').html("");
+        
         if(addObjectDoc!=="")
         {
           var tempObj = queueObject.enqueueObj(addObjectDoc);
@@ -172,18 +175,18 @@ function queueBoard(addObjectDoc, queueObject){
 
           if(tempObj[1]===true)
           {
-            var temp = "#queue-board #queue-card"+(tempObj[0].index).toString();
+            var temp = "#queue-card"+(tempObj[0].index).toString();
             $(temp).css('display','none');
             temp = temp + "-reversed";
             $(temp).css('display','block');
             temp = temp + " h3";
             console.log(temp);
             $(temp).html(addObjectDoc);
-            $('#queue-board #queue-underflow').css('display','none');
+            $('#queue-underflow').css('display','none');
           }
           else if(tempObj[1]===false)
           {
-            $('#queue-board #queue-overflow').css('display','block');
+            $('#queue-overflow').css('display','block');
           }
         }
       }
@@ -197,7 +200,7 @@ function queueBoard(addObjectDoc, queueObject){
   for(var i=0; i<queueObject.structureLength; i++)
   {
     console.log(i);
-    var temp = "#queue-board #queue-card"+(i).toString();
+    var temp = "#queue-card"+(i).toString();
     temp = temp + "-reversed";
     $(temp).css('display','none');
   }
