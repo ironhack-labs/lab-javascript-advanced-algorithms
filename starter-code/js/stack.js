@@ -1,22 +1,17 @@
-/*$(document).ready(function(){
+$(document).ready(function(){
+  stack = new StackDataStructure()
 
-  $(".stack-number").on("click",function(){
-      console.log(click);
-      $("#number" : first-child).css("background-color","purple");
-    })
-
-});*/
-
-
-/*$(window).load(function(){
-    $("#number").click(function () {
-        $(this).toggle("selected").css("background-color","purple");
-    });
-});*/
-
+  $(".stack-blue").on("click",function(){
+    stack.stackControl.push("STACK")
+    console.log(stack.stackControl)
+    $("#stack-number .s-number:nth-child("+(9-stack.stackControl.length)+")").addClass("active")
+  })
+  
+  $(".stack-red").on("click",function(){
+    stack.pop()
+    console.log(stack.stackControl)
+    $("#stack-number .s-number:nth-child("+(8-stack.stackControl.length)+")").removeClass("active")
+  })
 
 
-$(".btn-blue").on("click", function() {
-  $(this).toggleClass("active");
-    $(".number:first-child").toggle()
-     });
+})

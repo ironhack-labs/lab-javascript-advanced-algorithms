@@ -1,7 +1,7 @@
 
 function StackDataStructure () {
   this.stackControl=[];
-  this.MAX_SIZE=100;
+  this.MAX_SIZE=8;
 }
 
 StackDataStructure.prototype.isEmpty= function(){
@@ -26,6 +26,7 @@ StackDataStructure.prototype.push=function(number){
 }
 
 StackDataStructure.prototype.pop=function(number){
+  this.stackControl.pop();
   if (!this.isEmpty()) {
     return this.stackControl[this.stackControl.length-1];
   }else{

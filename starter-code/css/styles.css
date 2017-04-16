@@ -45,12 +45,23 @@ button{
   border-radius:10px;
   color: black;
   text-align: center;
-  font-size: 16px;
+  font-size: 16px;§
 }
 
-.number{
+.s-number{
   height:50px;
   background-color:grey;
   margin:3px 3px;
   border-radius: 10px;
+}
+
+.q-number{
+  height:50px;
+  background-color:grey;
+  margin:3px 3px;
+  border-radius: 10px;
+}
+
+.active{
+  background-color:purple;
 }
