@@ -35,14 +35,14 @@ Create your Pull request with everything you need to run your game properly.
 
 ### Stacks
 
-An stack is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack. The only element that can be removed is the element that was at the top of the stack.
+ stack is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack. The only element that can be removed is the element that was at the top of the stack.
 
 This data structure is also called LIFO queue. LIFO stands for "last in, first out", meaning that the last element we put in the stack, is the first element that will go out.
 
 ![Image](https://i.imgur.com/NcuoeUk.png)
 
-**Info**
-Think about a stack as if it was a stack of books. You can put a book over the others, but you just can take the book on the top of the stack.
+**Think about a stack as if it was a stack of books. You can put a book over the others, but you just can take the book on the top of the stack.**
+
 
 ### Queues
 
@@ -54,16 +54,15 @@ The process to add an element into queue is called **enqueue**, and the process 
 
 ![](https://i.imgur.com/Qo1SQQ7.png)
 
-**Info**
-Think about a queue as if it was a queue in a bank. When you arrive, you are the last in the line, and you have to wait until it's your turn to being attended.
+**Hint**: Think about a queue as if it was a queue in a bank. When you arrive, you are the last in the line, and you have to wait until it's your turn to being attended.
 
 ## Exercise
 
 ### Introduction
 
-The goal of this exercise is to create a visual layout to show how do stacks and queues work. We will do it by using advanced JavaScript concepts like closures, scope, context, method invocation...
+The goal of this exercise is to create a visual layout to show how stacks and queues work. We will do it by using advanced JavaScript concepts like closures, scope, context, method invocation...
 
-We have created a set of tests to guide you through the abstract data types implementation. After implement the JavaScript functionality, create a visual layout to show how each data structure work.
+We have created a set of tests to guide you through the abstract data types implementation. After implementing the JavaScript functionality, create a visual layout to show how each data structure works.
 
 ### Requirements
 
@@ -105,7 +104,7 @@ We should also be careful with Stack Overflow (yes, like the website), and Stack
 
 So we will also need to have two methods, one to check if we can add new elements to the stack (to avoid the stack overflow), and another one to check if we can take an element from the stack (to avoid the stack underflow).
 
-If you follow the set of tests, you will get a solution with all the necessary implementations :)
+If you satisfy the set of tests, you will get a solution with all the necessary implementations :)
 
 **You can't use the append or prepend jQuery methods to do this exercise. The goal is not to do the exercise fast, but to have a first approach with the Data Structures.**
 
@@ -128,9 +127,9 @@ If you follow the set of tests, you will get a solution with all the necessary i
 
 ### Third iteration
 
-Once we have created all the functionality, let's create a visual representation to see how do stacks and queues work. You have to consider all the options we have coded!
+Once we have created all the functionality, let's create a visual representation to see how these stacks and queues work. You have to consider all the options we have coded!
 
-Here we purpose you an example about how we could represent the different steps of the stack structure.
+Here we propose how we could visually represent the different steps of the stack structure.
 
 #### Initial layout
 
