@@ -1,0 +1,75 @@
+#board {
+    margin-top: 1%;
+    background-color: grey;
+}
+
+.col-md-12{
+  box-sizing: border-box;
+}
+
+.col-md-4{
+  box-sizing: border-box;
+}
+
+.extra {
+  /*display: none;*/
+  background-color: red;
+  width:200px;
+	height:30px;
+	float:left;
+	margin:10px;
+}
+
+.extra h3{
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pic {
+  /*display: none;*/
+  background-color: #456783;
+	width:200px;
+	height:50px;
+	float:left;
+	margin:10px;
+}
+
+.pic-reversed{
+  /*display: none;*/
+  background-color: green;
+  width:200px;
+	height:50px;
+	float:left;
+	margin:10px;;
+}
+
+.pic-reversed img{
+  width: inherit;
+  height: inherit;
+}
+
+.btn{
+  width:200px;
+  margin: 0 auto;
+}
+
+input{
+  width:200px;
+}
+
+.input-object{
+  margin-top: 10px;
+}
+
+.add-object{
+  margin-top: 10px;
+}
+
+.take-object{
+  margin-top: 10px;
+}
+
+.out-object{
+  margin-top: 10px;
+}
