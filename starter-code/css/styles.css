@@ -1,0 +1,30 @@
+.btn {
+  width:100%;
+  margin:2px 0;
+}
+.btn-danger {
+  margin-bottom: 10px;
+}
+input {
+  width:100%;
+  margin-bottom: 2px;
+}
+
+.stack,.queue {
+  background-color: whitesmoke;
+  height:40px;
+  border:1px solid white;
+}
+.data {
+  color: white;
+  background-color:#3b85bf;
+}
+
+body {
+  font-size: 30px;
+}
+
+.error {
+  color: red;
+  font-size:20px;
+}
