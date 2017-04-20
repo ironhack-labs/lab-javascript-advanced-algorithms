@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 160px;
+    text-align: center;
+    margin: 0 auto 5px;
+    border-radius: 10%;
+}
+
+.btn-add {
+    background: #00BFFF;
+}
+
+.btn-take {
+    background: #FF69B4;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.stack-area {
+  width: 50%;
+    float: left;
+}
+
+.queue-area {
+  width: 50%;
+    float: left;
+}
+
+.elements-wrapper {
+    width: 500px;
+    height: 150px;
+}
+
+.element-box {
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+
+.stack-element-box {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.queue-element-box {
+    width: 50px;
+    height: 150px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.filled-element {
+  background: blue;
+}
