@@ -59,7 +59,7 @@ describe("Stack", function() {
     it ("Should return the stack when an element is inserted", function () {
       expect(stack.push(19)).toEqual([19]);
     });
-
+debugger
     it ("Should insert the elements in the received order", function () {
       stack.push(19);
       stack.push(88);
@@ -93,6 +93,9 @@ describe("Stack", function() {
     });
   });
 });
+
+
+
 
 describe("Queues", function() {
   var queue;
