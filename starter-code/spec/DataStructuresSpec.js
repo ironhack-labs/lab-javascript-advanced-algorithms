@@ -26,7 +26,6 @@ describe("Stack", function() {
 
     it ("Should has a method to push elements into the stack", function () {
       expect(typeof(stack.push)).toBe('function');
-    });
 
     it ("Should has a method to take elements from the stack", function () {
       expect(typeof(stack.pop)).toBe('function');
@@ -42,6 +41,7 @@ describe("Stack", function() {
       expect(stack.canPush()).toBe(true);
     });
   });
+});
 
   describe ("Stack methods usage", function () {
     it ("Should add the indicated element to the stack", function () {
