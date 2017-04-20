@@ -100,7 +100,6 @@ describe("Queues", function() {
   beforeEach(function() {
     queue = new QueueDataStructure();
   });
-
   describe ("Queue properties", function () {
     it ("Should has an array to add the elements to the queue", function () {
       expect(Array.isArray(queue.queueControl)).toBe(true);
@@ -110,6 +109,7 @@ describe("Queues", function() {
       expect(typeof(queue.MAX_SIZE)).toBe('number');
     });
   });
+
 
   describe ("Queue methods", function () {
     it ("Should has a method to check if the current queue is empty", function () {
