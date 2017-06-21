@@ -1,8 +1,9 @@
 $(document).ready(function(){
     var stack = new StackDataStructure();
+
   $("#add-stack").click(function(){
     if(stack.push() !== 'Stack Overflow'){
-      console.log(stack.stackControl);
+
     //  $(".stack:last-child").not('.azul').addClass('azul');
     var a= $(".stack").last().children().not('.unselect').addClass('azul');
     a.prev().removeClass('unselect');
@@ -14,12 +15,12 @@ $(document).ready(function(){
 
   $("#take-stack").click(function(){
     if(stack.pop() !== 'Stack Underflow'){
-      $(".stack").children('.azul').first().removeClass('azul');
 
+    var a= $(".stack").children('.azul').first().removeClass('azul');
+    a.prev().addClass('unselect');
   }else {
     alert('No quedan stacks! Añade más antes de borrar');
   }
 
   });
-
 });
