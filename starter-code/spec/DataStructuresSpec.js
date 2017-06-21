@@ -46,7 +46,6 @@ describe("Stack", function() {
   describe ("Stack methods usage", function () {
     it ("Should add the indicated element to the stack", function () {
       stack.push(19);
-
       expect(stack.stackControl.length).toBe(1);
     });
 
@@ -155,8 +154,8 @@ describe("Queues", function() {
     it ("Should return the queue when an element is queued", function () {
       expect(queue.enqueue(19)).toEqual([19]);
     });
-
     it ("Should insert the elements in the reverse received order", function () {
+
       queue.enqueue(19);
       queue.enqueue(88);
 
