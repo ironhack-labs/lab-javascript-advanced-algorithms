@@ -24,9 +24,8 @@ QueueDataStructure.prototype.canEnqueue = function() {
 };
 
 QueueDataStructure.prototype.enqueue = function(element) {
-  var response,
-      canEnqueue = this.canEnqueue();
-  if(canEnqueue){
+  var response;
+  if(this.canEnqueue()){
     this.queueControl.unshift(element);
     response = this.queueControl;
   } else {
@@ -37,10 +36,10 @@ QueueDataStructure.prototype.enqueue = function(element) {
 
 QueueDataStructure.prototype.dequeue = function() {
   var response;
-  if(this.queueControl.length !== 0){
-    response = this.queueControl.pop();
-  } else {
+  if(this.isEmpty()){
     response = 'Queue Underflow';
+  } else {
+    response = this.queueControl.pop();
   }
   return response;
 };

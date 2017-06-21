@@ -1,0 +1,27 @@
+.default {
+  margin-top: 4%;
+}
+.default > div {
+  height: 10vh;
+  background-color: #e1e5ed;
+  margin-bottom: 1%;
+  border: 1px solid white;
+  width: 20vw;
+}
+
+.btn {
+  display: block;
+  height: 10vh;
+  width: 20vw;
+  margin-bottom: 1%;
+}
+
+input {
+  height: 10vh;
+  width: 20vw;
+  margin-bottom: 1%;
+}
+
+h1 {
+  text-transform: capitalize;
+}

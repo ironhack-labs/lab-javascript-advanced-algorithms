@@ -25,9 +25,8 @@ StackDataStructure.prototype.canPush = function() {
 };
 
 StackDataStructure.prototype.push = function(element) {
-  var canPush = this.canPush(),
-      response;
-  if(canPush){
+  var response;
+  if(this.canPush()){
     this.stackControl.push(element);
     response = this.stackControl;
   } else {
@@ -38,10 +37,10 @@ StackDataStructure.prototype.push = function(element) {
 
 StackDataStructure.prototype.pop = function() {
   var response;
-  if(this.stackControl.length !== 0){
-    response = this.stackControl.pop();
-  } else {
+  if(this.isEmpty()){
     response = 'Stack Underflow';
+  } else {
+    response = this.stackControl.pop();
   }
   return response;
 };
