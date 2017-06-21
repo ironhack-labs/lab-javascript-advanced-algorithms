@@ -1,0 +1,111 @@
+
+
+.container{
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+
+.stackContainer{
+  background-color: white;
+  height: 730px;
+  padding: 0px;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+.titleStack{
+  height: 50px;
+  font-weight: bold;
+  font-size: 3.5em;
+}
+
+.queueContainer{
+  background-color: white;
+  height: 730px;
+  padding: 0px;
+}
+
+.stackButton{
+  background-color: white;
+  height: 60px;
+  text-align: center;
+}
+
+button{
+  border-radius: 60px;
+  border: 3px solid blue;
+  width: 50%;
+  font-size: 2em;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.btn-Pop{
+  background-color: white;
+  color: blue;
+}
+
+.btn-Dequeue{
+  background-color: white;
+  color: blue;
+}
+
+
+.stackBoxParent{
+  padding:10%;
+  padding-top: 8%;
+  height: 550px;
+  background-color: white;
+}
+
+.stackBox{
+  background-color: white;
+  border-radius: 5px;
+  height: 40px;
+  margin-top:2px;
+  margin-bottom: 2px;
+  border: 2px solid blue;
+}
+
+.stackBox.blue{
+  background-color: blue;
+  border-radius: 5px;
+  height: 40px;
+  margin-top:2px;
+  margin-bottom: 2px;
+}
+
+.queueBoxParent{
+  padding:10%;
+  padding-top: 8%;
+  height: 550px;
+  background-color: white;
+}
+
+.queueBox{
+  background-color: white;
+  border-radius: 5px;
+  height: 410px;
+  width: 9%;
+  margin-right: :2%;
+  margin-left: :2%;
+
+  border: 2px solid blue;
+  float: left;
+}
+
+.queueBox.blue{
+  background-color: blue;
+  border-radius: 5px;
+  height: 410px;
+  width: 9%;
+  margin-right: :2%;
+  margin-left: :2%;
+  border: 2px solid blue;
+  float: left;
+}
