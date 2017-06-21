@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
@@ -7,15 +8,33 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
   </section>
+  <div class="stack-container stack">
+    <h2>STACK</h2>
+    <div class="input-group">
+      <input class="input-text"type="text" class="form-control" placeholder="Add element to the stack...">
+    </div>
+    <button type="button" class="btn btn-info btn-add">ADD</button>
+    <button type="button" class="btn btn-danger btn-take">TAKE</button>
+    <ul class="list-group stackParent">
+      <li class="list-group-item stackChild"></li>
+      <li class="list-group-item stackChild"></li>
+      <li class="list-group-item stackChild"></li>
+      <li class="list-group-item stackChild"></li>
+      <li class="list-group-item stackChild"></li>
+      <li class="list-group-item stackChild"></li>
+      <li class="list-group-item stackChild"></li>
+    </ul>
+  </div>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>
