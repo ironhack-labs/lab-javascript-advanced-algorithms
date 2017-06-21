@@ -10,12 +10,44 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
+    <div class="wrapper">
+      <div class="queue">
+        <h2>Queue</h2>
+        <div>
+          <input type="text" id="newQueueElement">
+        </div>
+        <div>
+          <input type="submit" value="ADD" id="addToQueue" class="btn btn-primary button"/>
+        </div>
+        <div>
+          <input type="submit" value="TAKE" id="takeFromQueue" class="btn btn-danger button"/>
+        </div>
+        <div class="message queueMessage">
+        </div>   
+      </div>
+      <div class="stack">
+        <h2>Stack</h2>
+        <div>
+          <input type="text" id="newStackElement">
+        </div>
+        <div>
+          <input type="submit" value="ADD" id="addToStack" class="btn btn-primary button"/>
+        </div>
+        <div>
+          <input type="submit" value="TAKE" id="takeFromStack" class="btn btn-danger button"/>
+        </div>
+        <div class="message stackMessage">
+        </div>   
+      </div>
+    </div>
   </section>
 
+  <script src="js/jquery-3.2.1.min.js"></script>
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+
+
 </body>
 </html>

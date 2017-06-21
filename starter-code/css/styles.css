@@ -1,0 +1,44 @@
+h2 {
+    text-align: center;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.queue {
+    margin-right: 300px;
+}
+
+.message {
+   background-color: #f3e2e2;
+    height: 30px;
+    color: red;
+    text-align: center;
+    padding-top: 4px;
+    border: 1px solid;
+    margin-top: 1px;
+    display: none;
+}
+
+
+.empty-element {
+    background-color: gray;
+    height: 30px;
+    margin: 1px;
+}
+
+.button {
+    width: 152px;
+    margin-top:8px;
+}
+
+.element {
+    background-color: #52ade7;
+    height: 30px;
+    margin: 1px;
+    text-align: center;
+    padding-top: 4px;
+    color: #fff;
+}
+
