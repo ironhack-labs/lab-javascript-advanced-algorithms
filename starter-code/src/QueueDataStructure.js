@@ -24,7 +24,7 @@ function QueueDataStructure () {  this.queueControl = [];
   };
   this.dequeue = function() {
     if (!this.isEmpty()) {
-      return (this.queueControl[this.queueControl.length-1]);
+      this.queueControl.pop();
     } else {
       return "Queue Underflow";
     }

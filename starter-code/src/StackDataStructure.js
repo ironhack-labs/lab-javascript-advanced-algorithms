@@ -25,7 +25,7 @@ function StackDataStructure () {
   };
   this.pop = function() {
     if (!this.isEmpty()) {
-      return (this.stackControl[this.stackControl.length-1]);
+      this.stackControl.pop();
     } else {
       return "Stack Underflow";
     }
