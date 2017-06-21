@@ -33,7 +33,7 @@ describe("Stack", function() {
     });
   });
 
-  describe ("Stack methods default values", function () {
+ describe ("Stack methods default values", function () {
     it ("Should has an empty stack", function () {
       expect(stack.isEmpty()).toBe(true);
     });
