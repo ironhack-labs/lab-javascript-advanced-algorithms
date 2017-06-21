@@ -22,7 +22,6 @@ function addStack() {
   $('#add-stack').on('click', function() {
 
     if (stack.isEmpty()) {
-      // console.log(stack1);
       stack.push(stack1);
       nextStack = stack1;
       count++;
@@ -51,8 +50,6 @@ function addStack() {
       console.log('Stack Overflow');
     }
 
-    // return nextStack;
-
   });
 
 
@@ -68,7 +65,6 @@ function takeStack() {
     if (!stack.isEmpty()) {
       stack.pop();
       nextStack.removeClass('stackAdded');
-      // console.log('currentstack',nextStack, 'count: ',count);
       count2--;
       nextStack = $('#stacks #' + count2);
       console.log('nextstack', nextStack);
