@@ -1,0 +1,26 @@
+
+h1 {
+  text-align: center;
+}
+h2 {
+text-align: center;
+}
+
+btn {
+  margin:10px;
+}
+
+.form-control {
+      margin-bottom: 15px;
+}
+
+.btn {
+  margin-bottom: 17px;
+}
+
+li {
+  height: 60px;
+  border: 2px solid #CCC;
+  width:90%;
+  margin: auto;
+}
