@@ -10,12 +10,55 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    <div class="row">
+      <div class="col-xs-3 col-xs-offset-2">
+        <h2>Stack</h2>
 
+        <input id="stackInput">
+        <br>
+        <button id="addStack" class="btn btn-success">Add</button>
+        <br>
+        <button id="removeStack" class="btn btn-danger">Take</button>
+        <br>
+        <div id="stackBuffer">
+        </div>
+      </div>
+      <div class="col-xs-3 col-xs-offset-2">
+        <h2>Queue</h2>
+
+        <input id="queueInput">
+        <br>
+        <button id="addQueue" class="btn btn-success">Add</button>
+        <br>
+        <button id="removeQueue" class="btn btn-danger">Take</button>
+        <br>
+        <div id="queueBuffer">
+        </div>
+
+      </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+  <script>
+  window.onload = function  (){
+    var stack = new StackDataStructure()
+    var queue = new QueueDataStructure()
+
+    window.stack = stack
+    window.queue = queue
+
+    drawStackDataStructure(stack)
+    document.getElementById('addStack').addEventListener('click', addElementToStack)
+    document.getElementById('removeStack').addEventListener('click', removeElementFromStack)
+
+    drawQueueDataStructure(queue)
+    document.getElementById('addQueue').addEventListener('click', addElementToQueue)
+    document.getElementById('removeQueue').addEventListener('click', removeElementFromQueue)
+
+  }
+  </script>
 </body>
 </html>

@@ -3,6 +3,7 @@ describe("Stack", function() {
 
   beforeEach (function() {
     stack = new StackDataStructure();
+    console.log(StackDataStructure)
   });
 
   describe ("Stack properties", function () {
