@@ -14,6 +14,7 @@
   height: 10vh;
   width: 20vw;
   margin-bottom: 1%;
+  text-transform: uppercase;
 }
 
 input {
@@ -24,4 +25,8 @@ input {
 
 h1 {
   text-transform: capitalize;
+}
+
+.active {
+  background-color: blue;
 }

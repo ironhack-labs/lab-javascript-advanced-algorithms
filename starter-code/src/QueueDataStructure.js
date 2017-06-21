@@ -14,13 +14,7 @@ QueueDataStructure.prototype.isEmpty = function() {
 };
 
 QueueDataStructure.prototype.canEnqueue = function() {
-  var response;
-  if(this.queueControl.length < this.MAX_SIZE){
-    response = true;
-  } else {
-    response = false;
-  }
-  return response;
+  return this.queueControl.length < this.MAX_SIZE;
 };
 
 QueueDataStructure.prototype.enqueue = function(element) {

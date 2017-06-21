@@ -15,13 +15,7 @@ StackDataStructure.prototype.isEmpty = function() {
 };
 
 StackDataStructure.prototype.canPush = function() {
-  var response;
-  if(this.stackControl.length < this.MAX_SIZE){
-    response = true;
-  } else {
-    response = false;
-  }
-  return response;
+  return this.stackControl.length < this.MAX_SIZE;
 };
 
 StackDataStructure.prototype.push = function(element) {
