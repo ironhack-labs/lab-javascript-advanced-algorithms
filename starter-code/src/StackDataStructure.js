@@ -24,11 +24,11 @@ function StackDataStructure () {
       return "Stack Overflow";
     }
     };
-  this.pop = function(a){
+  this.pop = function(){
     if (this.isEmpty()) {
       return "Stack Underflow";
     } else {
-      return this.stackControl.pop(a);
+      return this.stackControl.pop();
     }
   };
 }

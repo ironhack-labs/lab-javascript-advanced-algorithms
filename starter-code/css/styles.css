@@ -86,6 +86,9 @@ input {
   height: 20px;
   margin-top: 10px;
   font-size: 14px;
+  font-weight:bold;
+  color: white;
+  text-align: center;
 }
 
 .queue {
@@ -94,6 +97,9 @@ input {
   height: 20px;
   margin-top: 10px;
   font-size: 14px;
+  font-weight:bold;
+  color: white;
+  text-align: center;
 }
 
 .blue {

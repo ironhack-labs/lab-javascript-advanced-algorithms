@@ -17,7 +17,7 @@ function QueueDataStructure () {
   };
   this.enqueue = function(a) {
     if (this.canEnqueue()) {
-      this.queueControl.unshift(a);
+      this.queueControl.push(a);
       return this.queueControl;
 
     } else {
@@ -28,7 +28,7 @@ function QueueDataStructure () {
     if (this.isEmpty()) {
       return "Queue Underflow";
     } else {
-      return this.queueControl.pop(a);
+      return this.queueControl.unshift(a);
     }
   };
 }
