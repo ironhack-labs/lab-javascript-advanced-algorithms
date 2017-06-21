@@ -1,0 +1,30 @@
+h1{
+  text-align: center;
+}
+
+.baterie{
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 25px;
+}
+
+.list-group{
+  width: 50%;
+  margin-left: 25%
+}
+
+.input-group{
+  width: 50%;
+  margin-left: 25%;
+}
+
+.rem{
+  background-color: red;
+  color: white;
+}
+
+.ad{
+  background-color: #063971;
+  color: white;
+}
