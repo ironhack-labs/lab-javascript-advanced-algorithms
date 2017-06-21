@@ -1,0 +1,61 @@
+.left {
+  width: 40%;
+  float: left;
+}
+
+.left > h2 {
+  font-weight: 900;
+}
+
+.right {
+  width: 40%;
+  float: right;
+}
+
+.right > h2 {
+  font-weight: 900;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+}
+
+.button-add, .button-take {
+  border: none;
+  padding: 10px 12px;
+  width: 100%;
+  display: block;
+  margin: 0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.button-add {
+  background-color: #3379c2;
+}
+
+.button-take {
+  background-color: #EE504C;
+}
+
+.cajas {
+  margin-top: 40px;
+}
+
+.caja1, .caja2, .caja3, .caja4, .caja5, .caja6, .caja7, .caja8{
+  height: 50px;
+  width: 100%;
+  background-color: #ececec;
+  margin-bottom: 4px;
+}
+
+.color-azul {
+  background-color: #3AA1EE;
+}
