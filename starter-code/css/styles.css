@@ -8,6 +8,14 @@
   margin-top: 10px;
   font-size: 14px;
 }
+.unpint{
+  background-color: lightGrey;
+  width: 300px;
+  height: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+
+}
 .stack{
   display: inline-block;
   margin-left: 30px;
