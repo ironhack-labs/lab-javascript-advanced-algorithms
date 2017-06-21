@@ -1,8 +1,8 @@
 function QueueDataStructure () {
   this.queueControl = [];
-  this.MAX_SIZE = 10;
+  this.MAX_SIZE = 8;
   this.isEmpty = function() {
-    if (this.queueControl.length === 0) {
+    if (this.queueControl.length ===0) {
       return true;
     } else {
       return false;
@@ -16,19 +16,19 @@ function QueueDataStructure () {
     }
   };
   this.enqueue = function(a) {
-    if (this.canEnqueue()) {
-      this.queueControl.unshift(a);
-      return this.queueControl;
-
+    if (this.queueControl.length >= this.MAX_SIZE) {
+      alert("Queue Overflow");
     } else {
-      return "Queue Overflow";
-    }
-    };
-  this.dequeue = function(a){
-    if (this.isEmpty()) {
-      return "Queue Underflow";
-    } else {
-      return this.queueControl.pop(a);
-    }
+    this.queueControl.unshift(a);
+    return this.queueControl;
+  }
   };
+  this.dequeue = function() {
+    if (this.isEmpty()) {
+      alert("Queue Underflow");
+    } else {
+    return this.queueControl.pop();
+  }
+  };
+
 }

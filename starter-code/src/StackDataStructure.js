@@ -1,6 +1,7 @@
+
 function StackDataStructure () {
   this.stackControl = [];
-  this.MAX_SIZE = 10;
+  this.MAX_SIZE = 8;
   this.isEmpty = function() {
     if (this.stackControl.length === 0) {
       return true;
@@ -9,26 +10,25 @@ function StackDataStructure () {
     }
   };
   this.canPush = function() {
-    if (this.stackControl.length < this.MAX_SIZE) {
+    if (this.stackControl.length<this.MAX_SIZE) {
       return true;
     } else {
       return false;
     }
   };
   this.push = function(a) {
-    if (this.canPush()) {
+    if(this.canPush()){
       this.stackControl.push(a);
       return this.stackControl;
-
     } else {
-      return "Stack Overflow";
+      alert("Stack Overflow");
     }
-    };
-  this.pop = function(a){
+  };
+  this.pop = function () {
     if (this.isEmpty()) {
-      return "Stack Underflow";
+      alert("Stack Underflow");
     } else {
-      return this.stackControl.pop(a);
+    return this.stackControl.pop();
     }
   };
 }
