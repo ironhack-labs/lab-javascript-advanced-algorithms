@@ -1,0 +1,18 @@
+body{
+  text-align: center;
+}
+.bar-stack, .bar {
+  width: 100px;
+  height: 30px;
+  background: #dbdde0;
+  border: solid 1px black;
+  margin: 0 auto;
+
+}
+.btn {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.azul {
+  background: blue;
+}
