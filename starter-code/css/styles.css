@@ -59,3 +59,24 @@
 .color-azul {
   background-color: #3AA1EE;
 }
+
+@media only screen and (max-width:800px) {
+  .container {
+    padding: 0 90px;
+  }
+
+  .container > h1 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .left {
+    float: inherit;
+    width: 100%;
+  }
+
+  .right {
+    float: inherit;
+    width: 100%;
+  }
+}
