@@ -1,40 +1,34 @@
-function StackDataStructure() {
+function StackDataStructure () {
   this.stackControl = [];
-  this.MAX_SIZE = 0;
+  this.MAX_SIZE = 10;
   this.isEmpty = function() {
-    if (this.stackControl === 0) {
+    if (this.stackControl.length === 0) {
       return true;
     } else {
       return false;
     }
   };
-
   this.canPush = function() {
-    if (isEmpty) {
+    if (this.stackControl.length < this.MAX_SIZE) {
       return true;
     } else {
       return false;
     }
   };
-  this.push = function() {
-    if (this.stackControl === 0) {
-      return this.stackControl.push();
+  this.push = function(a) {
+    if (this.canPush()) {
+      this.stackControl.push(a);
+      return this.stackControl;
+
     } else {
+      return "Stack Overflow";
+    }
+    };
+  this.pop = function(a){
+    if (this.isEmpty()) {
       return "Stack Underflow";
-    }
-  };
-  this.pop = function() {
-    if (this.stackControl !== 0) {
-      return this.stackControl.pop();
     } else {
-      return false;
+      return this.stackControl.pop(a);
     }
   };
-  this.isEmpty = function() {
-    if(this.stackControl[0]=== undefined){
-      return true;
-    }else{
-      return false;
-  }
-};
 }
