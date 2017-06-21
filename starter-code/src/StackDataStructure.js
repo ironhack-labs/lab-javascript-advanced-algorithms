@@ -26,10 +26,10 @@ function StackDataStructure () {
 
   },
   this.pop = function() {
-    if (this.isEmpty() === false) {
-      return this.stackControl[this.stackControl.length-1];
-    }else {
+    if (this.isEmpty()) {
       return 'Stack Underflow';
+    }else {
+      return this.stackControl.pop();
     }
   }
 }

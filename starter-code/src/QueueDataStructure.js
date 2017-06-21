@@ -1,7 +1,4 @@
 function QueueDataStructure () {
-}
-
-function QueueDataStructure () {
   this.queueControl = [],
   this.MAX_SIZE = 8,
   this.isEmpty = function() {
@@ -29,10 +26,10 @@ function QueueDataStructure () {
 
   },
   this.dequeue = function() {
-    if (this.isEmpty() === false) {
-      return this.queueControl[this.queueControl.length-1];
-    }else {
+    if (this.isEmpty()) {
       return 'Queue Underflow';
+    }else {
+      return this.queueControl.pop();
     }
   }
 }
