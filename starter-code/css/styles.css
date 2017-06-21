@@ -1,0 +1,58 @@
+.container{
+  text-align: center;
+}
+.pint {
+  background-color: lightGrey;
+  width: 300px;
+  height: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#stack{
+  display: inline-block;
+  margin-left: 30px;
+
+}
+#queue{
+  display: inline-block;
+  margin-left: 200px;
+}
+
+.btn {
+  width: 150px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.add {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.take {
+  color: #fff;
+  background-color: #CF000F;
+  border-color: #CF000F;
+}
+.active {
+  background-color: #6495ED;
+}
