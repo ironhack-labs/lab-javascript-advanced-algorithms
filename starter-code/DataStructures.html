@@ -8,14 +8,46 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
+  <div class="container">
     <h1>Abstract Data Types</h1>
+    <div class="row">
 
-  </section>
+      <div class="col-sm-5" id="stack">
+      <h2>Stack</h2>
+      <input type="text" class="form-control"  value="Add element to the stack...">
+      <button class="btn btn-info btn-block addstack">ADD</button>
+      <button class="btn btn-danger btn-block stackdel">TAKE</button>
+      <ul class="list-groups">
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+      </ul>
+      </div>
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-5" id="queue">
+          <h2>Queue</h2>
+          <input type="text" class="form-control" name="removeelement" value="Add element to the stack...">
+          <button class="btn btn-info btn-block queueadd">ADD</button>
+          <button class="btn btn-danger btn-block queuetake">TAKE</button>
+          <ul class="list-groups">
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+
 </body>
 </html>
