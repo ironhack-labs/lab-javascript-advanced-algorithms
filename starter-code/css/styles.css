@@ -1,0 +1,24 @@
+.add {
+  background-color: lightblue;
+}
+
+.take {
+  background-color: pink;
+}
+
+.boxes {
+  background-color: White;
+  width: 100%;
+  height: auto;
+  border: solid 1px darkblue;
+  font: helvetica;
+  text-align: center;
+  padding: 5px;
+}
+.boxes {
+  margin-top: 5px;
+}
+
+.btn {
+  width: 71%;
+}
