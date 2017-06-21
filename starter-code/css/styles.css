@@ -1,0 +1,26 @@
+.container {
+  margin-top: 2rem;
+  width: 50%;
+}
+
+.container * {
+  display: block;
+  width: 100%;
+}
+
+button {
+  margin-top: 2%;
+}
+
+.stack-element:first-of-type {
+  margin-top: 20px;
+}
+
+.stack-element {
+  background-color: #D3D3D3;
+  height: 5rem;
+  border-radius: 5px;
+  margin-bottom: 1px;
+  text-align: center;
+  padding-top: 1.5rem;
+}
