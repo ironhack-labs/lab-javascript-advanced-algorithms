@@ -5,7 +5,7 @@ $(document).ready(function(){
   $('#stack .add').on('click', function() {
     stack.isEmpty();
     stack.canPush();
-    console.log(stack.push(0));
+    stack.push(0);
 
 
     $("#stack .disabled:last").addClass('active');
