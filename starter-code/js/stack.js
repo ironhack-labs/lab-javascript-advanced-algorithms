@@ -1,16 +1,32 @@
-function StackDataStructure () {
-  this.stackControl = [];
-  this.MAX_SIZE = 30;
-  StackDataStructure.prototype.isEmpty = function () {
-    return parsethis.stackControl.length ? true ; false
-  };
-  StackDataStructure.prototype.canPush = function () {
-    return parsethis.stackControl.length <   this.MAX_SIZE ? true ; false
-  };
-  StackDataStructure.prototype.push = function (element) {
-    this.stackControl = push(element);
-  };
-  StackDataStructure.prototype.pop = function () {
+function drawStackDataStructure (stack) {
+  document.getElementById('stackBuffer').innerHTML = ''
+  var stackNode = document.createElement('div')
+  for(var i = stack.MAX_SIZE; i > 0; i--) {
+    var element = document.createElement('div')
 
-  };
+    element.id = i;
+    element.className = stack.stackControl.length < i ? 'box' : 'box full'
+    element.innerHTML = stack.stackControl.length < i ? '' :( (stack.MAX_SIZE - i === 0) ? 'Stack Overflow' : stack.stackControl[i-1])
+
+    stackNode.append(element)
+  }
+  console.log('')
+
+  document.getElementById('stackBuffer').append(stackNode)
+}
+
+function addElementToStack () {
+  stack.push(document.getElementById('stackInput').value)
+  drawStackDataStructure(stack)
+  document.getElementById('stackInput').value = ''
+  console.log(stack.stackControl)
+
+}
+
+function removeElementFromStack () {
+  stack.pop(document.getElementById('stackInput').value)
+  drawStackDataStructure(stack)
+  document.getElementById('stackInput').value = ''
+  console.log(stack.stackControl)
+
 }

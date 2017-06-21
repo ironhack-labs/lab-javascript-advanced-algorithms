@@ -1,0 +1,25 @@
+h2 {
+  padding-left: 35px;
+}
+
+.btn{
+  width: 57%;
+}
+
+input{
+  width: 57%;
+}
+
+
+.box{
+  border: 1px solid black;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px
+}
+
+.full{
+  background: blue;
+  color: white;
+}

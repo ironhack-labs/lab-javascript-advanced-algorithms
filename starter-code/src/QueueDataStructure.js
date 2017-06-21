@@ -1,6 +1,6 @@
 function QueueDataStructure () {
   this.queueControl = [];
-  this.MAX_SIZE = 30;
+  this.MAX_SIZE = 5;
   QueueDataStructure.prototype.isEmpty = function () {
     return this.queueControl.length === 0  ? true : false
   };
@@ -12,7 +12,7 @@ function QueueDataStructure () {
     return this.canEnqueue() ? this.queueControl.reverse() : 'Queue Overflow'
   };
   QueueDataStructure.prototype.dequeue = function (element) {
-    this.queueControl.shift(element);
+    this.queueControl.pop(element);
     return this.isEmpty() ? 'Queue Underflow' : this.queueControl[this.queueControl.length - 1]
   };
 }
