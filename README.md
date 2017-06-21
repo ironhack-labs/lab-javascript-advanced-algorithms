@@ -10,12 +10,12 @@ In this exercise, you will be able to:
 - Learn how to model real-life situations and objects into proper data structures
 - Use tests to develop your solution
 
+### Requirements
 
-## Data Structures
-
-A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a particular way to organize your data in the computer so it can be used efficiently. One or more [abstract data types](https://en.wikipedia.org/wiki/Abstract_data_type) can be implemented and they specify the operations that can be performed over a data structure.
-
-In this exercise we will implement two different abstract data types that are very common: `stacks` and `queues`. Let's see what both data structures to understand how they work.
+- [Fork this repo](https://guides.github.com/activities/forking/)
+- Clone this repo into your `~/code/labs`
+- Make sure you pass all the tests
+- Make sure to use JavaScript closures, scope, shadowing, hoisting, context, and method invocation
 
 ## Submission
 
@@ -29,24 +29,29 @@ Navigate to your repo and create a Pull Request -from your master branch to the 
 
 In the Pull request name, add your name and last names separated by a dash "-"
 
+## Data Structures
+
+A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a particular way to organize your data in the computer so it can be used efficiently. One or more [abstract data types](https://en.wikipedia.org/wiki/Abstract_data_type) can be implemented and they specify the operations that can be performed over a data structure.
+
+In this exercise we will implement two different abstract data types that are very common: `stacks` and `queues`. Let's see what both data structures to understand how they work.
+
 ## Deliverables
 
 Create your Pull request with everything you need to run your game properly.
 
 ### Stacks
 
- stack is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack. The only element that can be removed is the element that was at the top of the stack.
+ Stack is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack. The only element that can be removed is the element that was at the top of the stack.
 
 This data structure is also called LIFO queue. LIFO stands for "last in, first out", meaning that the last element we put in the stack, is the first element that will go out.
 
 ![Image](https://i.imgur.com/NcuoeUk.png)
 
-**Think about a stack as if it was a stack of books. You can put a book over the others, but you just can take the book on the top of the stack.**
-
+**Think about a stack as if it was a stack of books. You can put a book over the others, but you just can't take the book on the bottom of the stack.**
 
 ### Queues
 
-Queues are the other abstract data type we are going to see. It's also called as linear data structure, in which the first element is inserted from one end called **rear**, and the deletion of an existing element takes place from the other end called as **front**.
+Queues are the other abstract data type we are going to see. It's also called a linear data structure, in which the first element is inserted from one end, called **rear**, and the deletion of an existing element takes place from the other end called as **front**.
 
 This makes a queue a FIFO data structure, which means that the first element inserted, will be the first element removed.
 
@@ -63,25 +68,6 @@ The process to add an element into queue is called **enqueue**, and the process 
 The goal of this exercise is to create a visual layout to show how stacks and queues work. We will do it by using advanced JavaScript concepts like closures, scope, context, method invocation...
 
 We have created a set of tests to guide you through the abstract data types implementation. After implementing the JavaScript functionality, create a visual layout to show how each data structure works.
-
-### Requirements
-
-- [Fork this repo](https://guides.github.com/activities/forking/)
-- Clone this repo into your `~/code/labs`
-- Make sure you pass all the tests
-- Make sure to use JavaScript closures, scope, shadowing, hoisting, context, and method invocation
-
-### Submission
-
-- Upon completion, run the following commands
-
-	```
-	git add .
-	git commit -m"done"
-	git push origin master
-	```
-
-- Navigate to your repo and [create a Pull Request](https://help.github.com/articles/creating-a-pull-request/)
 
 ### Starter code
 
@@ -104,7 +90,7 @@ We should also be careful with Stack Overflow (yes, like the website), and Stack
 
 So we will also need to have two methods, one to check if we can add new elements to the stack (to avoid the stack overflow), and another one to check if we can take an element from the stack (to avoid the stack underflow).
 
-If you satisfy the set of tests, you will get a solution with all the necessary implementations :)
+If you satisfy the set of tests, you will get a solution with all the necessary implementations. :)
 
 **You can't use the append or prepend jQuery methods to do this exercise. The goal is not to do the exercise fast, but to have a first approach with the Data Structures.**
 
