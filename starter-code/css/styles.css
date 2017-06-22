@@ -9,7 +9,7 @@ body{
   margin: auto;
   display:flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -24,14 +24,14 @@ body{
   padding: 15px;
 }
 
-.overflow{
-  height: 35px;
+.alert{
+  height: 50px;
   border: 3px solid #633;
   border-radius: 5px;
   background-color: #faa;
   color: #633;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.1em;
   text-align: center;
 }
 

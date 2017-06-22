@@ -15,6 +15,7 @@ $("document").ready(function(){
       if(stack.canPush()){
         stack.push(parseInt(input.val()));
         updateStackRepresentation();
+        $("#stack .underflow").addClass("hidden");
       }else{
         $("#stack .overflow").removeClass("hidden");
       }
@@ -29,6 +30,8 @@ $("document").ready(function(){
       $("#stack .overflow").addClass("hidden");
       stack.pop()
       updateStackRepresentation();
+    }else{
+      $("#stack .underflow").removeClass("hidden");
     }
   });
 

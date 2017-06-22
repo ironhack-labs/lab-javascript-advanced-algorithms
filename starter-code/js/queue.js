@@ -15,6 +15,7 @@ $("document").ready(function(){
       if(queue.canEnqueue()){
         queue.enqueue(parseInt(input.val()));
         updateQueueRepresentation();
+        $("#queue .underflow").addClass("hidden");
       }else{
         $("#queue .overflow").removeClass("hidden");
       }
@@ -29,6 +30,8 @@ $("document").ready(function(){
       $("#queue .overflow").addClass("hidden");
       queue.dequeue()
       updateQueueRepresentation();
+    }else{
+      $("#queue .underflow").removeClass("hidden");
     }
   });
 
