@@ -1,0 +1,63 @@
+.container:after {
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+.stack-wrapper, .queue-wrapper {
+  float: left;
+  width: 46%;
+  margin: 2%;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  background-color: lightgray;
+}
+
+.btn.primary {
+  background-color: #fabada;
+}
+
+.btn.secondary {
+  background-color: lightblue;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stack li, .queue li {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.queue li {
+  background-color: lightgray;
+}
+
+.queue li.filled {
+  background-color: gray;
+}
+
+.stack li {
+  background-color: lightpink;
+}
+
+.stack li.filled {
+  background-color: orangered;
+}
+
+input[type="text"]{
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 18px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
