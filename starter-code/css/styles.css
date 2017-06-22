@@ -1,0 +1,33 @@
+body {
+  background-color: #DDEEDD;
+  font-family: Helvetica;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 240px;
+  margin-left: 30px 0px;
+  border-radius: 12px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 12px 0px;
+  }
+
+.unselected {
+}
+
+.rectangle {
+  width: 240px;
+  height: 40px;
+  background-color: #FEFEFE;
+  border: 1px solid #DDEEDD;
+}
+
+.selected {
+  background-color: #9999CC;
+}
