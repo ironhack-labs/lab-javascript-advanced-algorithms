@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+body{
+  font-family: 'Oswald';
+}
+
+.main-wrapper{
+  max-width: 800px;
+  margin: auto;
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.section-wrapper{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.panel{
+  width: 350px;
+  padding: 15px;
+}
+
+.alert{
+  height: 50px;
+  border: 3px solid #633;
+  border-radius: 5px;
+  background-color: #faa;
+  color: #633;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.overflow.hidden{
+  display: hidden;
+}
+
+.interaction{
+  margin: 15px 0px;
+}
+
+.interaction input, .interaction button{
+  margin: 5px 0;
+}
+
+.interaction input{
+  border-radius: 5px;
+  border: 3px solid #666;
+  line-height: 35px;
+  height: 35px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.interaction button{
+  width: 100%;
+  border-radius: 5px;
+  line-height: 35px;
+  height: 35px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.interaction button.add{
+  border: 3px solid #363;
+  background-color: #696;
+}
+.interaction button.add:hover{
+  border: 3px solid #ada;
+}
+
+.interaction button.delete{
+  border: 3px solid #633;
+  background-color: #966;
+}
+.interaction button.delete:hover{
+  border: 3px solid #daa;
+}
+
+.row{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+
+  border-radius: 5px;
+  border: 3px solid #666;
+  background-color: #999;
+  margin: 10px 0;
+}
+
+.row.filled{
+  font-size: 1.2em;
+  color: white;
+  border-color: #336;
+  background-color: #669;
+}
+
+h2{
+  text-transform: uppercase;
+
+}
