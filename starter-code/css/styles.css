@@ -1,0 +1,59 @@
+.stack{
+
+}
+.queuque{
+
+}
+
+.row-stack{
+  height: 35px;
+  background-color: #ECECEC;
+  margin-bottom: 2px;
+  margin-left: 4px;
+}
+.input-stack{
+  margin-bottom: 10px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.add-stack{
+  height: 30px;
+  background-color: #4873C2;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color:white;
+}
+.take-stack{
+  height: 27px;
+  background-color: #E24F4A;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  color:white;
+}
+.row-queuque{
+  height: 35px;
+  background-color: #ECECEC;
+  margin-bottom: 2px;
+  margin-left: 4px;
+}
+.input-queuque{
+  margin-bottom: 10px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.add-queuque{
+  height: 30px;
+  background-color: #4873C2;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color:white;
+}
+.take-queuque{
+  height: 27px;
+  background-color: #E24F4A;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  color:white;
+}
