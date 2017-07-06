@@ -8,8 +8,52 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <h1>Abstract Data Types</h1>
+  <section id="main-container">
+
+    <!-- ******* STACK  ******* -->
+    <div class="pile-container">
+      <h2>Stack (LIFO)</h2>
+      <input class="stack-input input" placeholder="Add element to the stack here..."></input>
+      <button class="btn stack-btn add-btn">ADD</button>
+      <button class="btn stack-btn take-btn">TAKE</button>
+      <div class="pile stack-pile">
+        <div class='of-container'><div class="block stack-overflow overflow">Stack Overflow</div></div>
+        <div class="block stack-block-10"></div>
+        <div class="block stack-block-9"></div>
+        <div class="block stack-block-8"></div>
+        <div class="block stack-block-7"></div>
+        <div class="block stack-block-6"></div>
+        <div class="block stack-block-5"></div>
+        <div class="block stack-block-4"></div>
+        <div class="block stack-block-3"></div>
+        <div class="block stack-block-2"></div>
+        <div class="block stack-block-1"></div>
+        <div class='of-container'><div class="block stack-underflow underflow">Stack Underflow</div></div>
+      </div>
+    </div>
+
+    <!-- ******* QUEUE  ******* -->
+    <div class="pile-container">
+      <h2>Queue (FIFO)</h2>
+      <input class="queue-input input" placeholder="Add element to the stack here..."></input>
+      <button class="btn queue-btn add-btn">ADD</button>
+      <button class="btn queue-btn take-btn">TAKE</button>
+      <div class="pile queue-pile">
+        <div class='of-container'><div class="block queue-overflow overflow">Queue Overflow</div></div>
+        <div class="block queue-block-10"></div>
+        <div class="block queue-block-9"></div>
+        <div class="block queue-block-8"></div>
+        <div class="block queue-block-7"></div>
+        <div class="block queue-block-6"></div>
+        <div class="block queue-block-5"></div>
+        <div class="block queue-block-4"></div>
+        <div class="block queue-block-3"></div>
+        <div class="block queue-block-2"></div>
+        <div class="block queue-block-1"></div>
+        <div class='uf-container'><div class="block queue-underflow underflow">Queue Underflow</div></div>
+      </div>
+    </div>
 
   </section>
 
