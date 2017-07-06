@@ -1,0 +1,88 @@
+html {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+h1 {
+  margin: 10px auto 10px;
+  text-align: center;
+}
+
+h2 {
+  margin: 10px auto 10px;
+  text-align: center;
+}
+
+#main-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.pile-container {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 50px;
+}
+
+.input {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.add-btn {
+   background-color: rgba(26, 117, 255, 0.9);
+}
+
+.take-btn {
+   background-color: rgba(230, 57, 0, 0.9);
+}
+
+
+.pile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.block {
+  width: 100%;
+  border: 1px solid white;
+  height: 50px;
+  text-align: center;
+  padding: 12px;
+  font-size: 1.8rem;
+  background-color: #e6e6e6;
+  color: black;
+}
+
+
+.block.full {
+  background-color: rgba(128, 159, 255, 0.9);
+  color: white;
+}
+
+.of-container, .uf-container {
+  height: 50px;
+  width: 100%
+}
+
+.block.overflow, .block.underflow {
+  background-color: rgba(204, 0, 0, 0.6);
+  color: white;
+  display: none;
+}
