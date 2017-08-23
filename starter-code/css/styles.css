@@ -1,0 +1,46 @@
+.input-text, .btn{
+  margin: 5px;
+  width: 200px;
+  display: block;
+}
+
+.stack-section{
+  display: inline-block;
+}
+
+.queue-section{
+  display: inline-block;
+}
+
+.stack{
+  height: 40px;
+  width: 200px;
+  margin-left: 5px;
+}
+
+.stack-element{
+  background-color: #e0dfdf;
+  border: 1px solid #fff;
+}
+
+.full{
+  background-color: #3a49cc;
+  color: #fff;
+}
+
+.out-of-bounds{
+  background-color: #e47c7c;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.queue{
+  width: 40px;
+  height: 200px;
+  display: inline-block;
+}
+
+.queue-element{
+  background-color: #e0dfdf;
+  border: 1px solid #fff;
+}
