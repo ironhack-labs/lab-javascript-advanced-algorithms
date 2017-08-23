@@ -33,8 +33,9 @@ StackDataStructure.prototype.pop = function() {
     return 'Stack Underflow';
   }
   else {
-    this.stackControl.shift();
-    return this.stackControl[this.stackControl.length - 1];
+    var a = this.stackControl[this.stackControl.length-1];
+    this.stackControl.pop();
+    return a;
 }
 };
 

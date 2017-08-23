@@ -1,6 +1,6 @@
 function QueueDataStructure() {
   this.queueControl = [];
-  this.MAX_SIZE = 10;
+  this.MAX_SIZE = 8;
 }
 
 
@@ -34,8 +34,11 @@ QueueDataStructure.prototype.dequeue = function() {
   if (this.queueControl.length === 0) {
     return "Queue Underflow";
   } else {
-    this.queueControl.shift();
-    return this.queueControl[this.queueControl.length - 1];
+    var a = this.queueControl[this.queueControl.length - 1];
+    this.queueControl.pop();
+    return a;
   }
 
 };
+
+var queue = new QueueDataStructure();
