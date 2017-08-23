@@ -1,9 +1,9 @@
 $(document).ready(function() {
   stack = new StackDataStructure()
-  $cont = $('section.container div.cont')  
+  $cont = $('section.stack div.cont')  
   stack.MAX_SIZE = $cont.length
 
-  $('section.container button.green').on('click', function() {
+  $('section.stack button.green').on('click', function() {
     $parent = $(this).parent()
     $cont = $($parent).children('div')
     $product = $($parent).children('input').val()
@@ -13,7 +13,7 @@ $(document).ready(function() {
     }    
   })
 
-  $('section.container button.red').on('click', function() {
+  $('section.stack button.red').on('click', function() {
     $parent = $(this).parent()
     $cont = $($parent).children('div')
     if(!stack.isEmpty()){

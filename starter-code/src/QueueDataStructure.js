@@ -16,6 +16,7 @@ QueueDataStructure.prototype.enqueue = function(x) {
   return this.queueControl.length > this.MAX_SIZE ? 'Queue Overflow' : this.queueControl
 }
 
-QueueDataStructure.prototype.dequeue = function() {
+QueueDataStructure.prototype.dequeue = function(x) {
+  this.queueControl.shift(x)
   return this.queueControl.length == 0 ? 'Queue Underflow' : this.queueControl[this.queueControl.length - 1]
 }

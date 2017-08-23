@@ -46,3 +46,25 @@ section.container div.block {
   height: 40px;
   margin: 3px;
 }
+
+section.queue div.cont {
+  float: right;
+}
+
+section.queue div.cont {
+  display: inline-block;
+  height: 200px;
+  width: 40px;
+}
+
+section.queue button {
+  margin-left: 42px;
+}
+
+section.queue div.block {
+  padding: 10px;
+  background: #47A4D4;
+  width: 40px;
+  height: 200px;
+  display: inline-block;
+}
