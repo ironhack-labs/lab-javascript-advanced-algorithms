@@ -9,11 +9,14 @@ function StackDataStructure() {
   };
 
   this.push = function(element) {
+
     var m = this.stackControl.length;
     this.stackControl[m] = element;
-    return this.stackControl;
+    return this.canPush==true ? this.stackControl : "Stack Overflow";
 
   };
-  this.pop = function() {};
-return this.stackControl.pop();
+  this.pop = function() {
+
+return this.isEmpty==true ? "Stack Underflow" : this.stackControl.pop();
+};
 }
