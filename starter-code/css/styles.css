@@ -1,0 +1,31 @@
+.btn {
+  width: 300px;
+}
+
+.inputFirst {
+  width: 300px;
+}
+
+.boton-full{
+  width: 300px;
+}
+
+.add {
+  margin-top:20px;
+  margin-bottom: 20PX;
+}
+
+.emptyStack{
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.addedStack{
+  background: #00FFFF;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
