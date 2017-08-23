@@ -14,7 +14,7 @@ describe("Stack", function() {
       expect(typeof(stack.MAX_SIZE)).toBe('number');
     });
   });
-
+//
   describe ("Stack methods", function () {
     it ("Should has a method to check if the current stack is empty", function () {
       expect(typeof(stack.isEmpty)).toBe('function');
@@ -32,7 +32,7 @@ describe("Stack", function() {
       expect(typeof(stack.pop)).toBe('function');
     });
   });
-
+//
   describe ("Stack methods default values", function () {
     it ("Should has an empty stack", function () {
       expect(stack.isEmpty()).toBe(true);
@@ -137,7 +137,7 @@ describe("Queues", function() {
     it ("Should be able to enqueue a new element in the queue", function () {
       expect(queue.canEnqueue()).toBe(true);
     });
-  });
+   });
 
   describe ("Queue methods usage", function () {
     it ("Should enqueue the indicated element to the queue", function () {
@@ -188,4 +188,4 @@ describe("Queues", function() {
       expect(queue.dequeue()).toBe('Queue Underflow');
     });
   });
-});
+ });
