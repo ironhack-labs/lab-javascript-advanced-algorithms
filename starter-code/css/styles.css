@@ -1,0 +1,58 @@
+body {
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 10%;
+  background-color: #ffd6f8;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+.container {
+  position: relative;
+}
+
+
+input {
+  margin: 10px;
+  padding: 5px;
+}
+
+.btn {
+  color: #FFF;
+  width: 200px;
+  margin: 15px;
+}
+
+.but-add {
+  background: #119131;
+}
+
+.but-take {
+  background: #e24848;
+}
+
+div {
+  border: 10px solid #fff;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.vert {
+  height: 50px;
+  width: 250px;
+  margin-bottom: 2px;
+}
+
+.blocks {
+  vertical-align: middle;
+}
+
+.align {
+  text-align: center;
+}
+.oneMore{
+  background-color: #69cadb;
+}
