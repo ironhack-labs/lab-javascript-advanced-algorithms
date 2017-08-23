@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+section.container {
+  width: 300px;
+  margin-left: 150px;
+  display: inline-block;
+}
+
+section.container input {
+  width: 200px;
+  margin: 3px;
+}
+
+section.container button {
+  padding: 10px;
+  margin: 3px;
+  border: none;
+  display: block;
+  width: 200px;
+}
+
+section.container button.green {
+  background: #31E37E;
+}
+
+section.container button.red {
+  background: #F47575;
+  margin-bottom: 20px;
+}
+
+section.container .cont {
+  width: 200px;
+  height: 40px;
+  background: #CBCBCB;
+  margin: 3px;
+}
+
+section.container div.block {
+  background: #47A4D4
+}
