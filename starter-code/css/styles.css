@@ -1,0 +1,79 @@
+body {
+  position: absolute;
+  margin: 90px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+ line-height: normal;
+ font-size: 26px;
+ text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+#stack {
+  display: inline-block;
+}
+
+#queue {
+  display: inline-block;
+  float: right;
+}
+
+span {
+  padding: 5px;
+}
+
+input {
+  margin: 10px;
+  padding: 5px;
+}
+
+.btn {
+  color: #FFF;
+  width: 150px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.btn-add {
+  background: blue;
+}
+
+.btn-take {
+  background: red;
+}
+
+article {
+  border: 1px solid #555;
+  padding: 20px;
+  border-radius: 2px;
+  margin: auto;
+  text-align: center;
+}
+
+.vertical {
+  height: 48px;
+  width: 300px;
+  margin-bottom: 2px;
+}
+
+.horizontal {
+  height: 300px;
+  width: 80px;
+  display: inline-block;
+}
+
+.blocks {
+  vertical-align: middle;
+}
+
+.align {
+  text-align: center;
+}
