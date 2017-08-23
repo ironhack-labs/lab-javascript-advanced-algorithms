@@ -39,5 +39,10 @@ section.container .cont {
 }
 
 section.container div.block {
-  background: #47A4D4
+  text-align: center;
+  padding: 10px;
+  background: #47A4D4;
+  width: 200px;
+  height: 40px;
+  margin: 3px;
 }

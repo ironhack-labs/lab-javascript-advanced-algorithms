@@ -17,7 +17,8 @@ StackDataStructure.prototype.push = function(x) {
 }
 
 
-StackDataStructure.prototype.pop = function() {
+StackDataStructure.prototype.pop = function(x) {
+  this.stackControl.pop(x)
   return this.stackControl.length == 0 ? 'Stack Underflow' : this.stackControl[this.stackControl.length - 1] 
 }
 
