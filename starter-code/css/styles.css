@@ -38,7 +38,6 @@
 .queue{
   width: 40px;
   height: 200px;
-  display: inline-block;
 }
 
 .queue-element{
