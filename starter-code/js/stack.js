@@ -31,18 +31,10 @@ function drawStackOutOfBounds(child, overUnderFlow){
   var $stackOutOfBoundsDiv = $('.stack-container div:' + child + '-child()')
   $stackOutOfBoundsDiv.addClass('out-of-bounds')
   $stackOutOfBoundsDiv.text('Stack ' + overUnderFlow)
-
-  // drawNormalStack()
 }
 
 function drawNormalStack(){
-  var $stackOverflowDiv = $('.stack-container div:first-child()')
-  $stackOverflowDiv.removeClass('out-of-bounds')
-  $stackOverflowDiv.text('')
-
-  var $stackUnderflowDiv = $('.stack-container div:last-child()')
-  $stackUnderflowDiv.removeClass('out-of-bounds')
-  $stackUnderflowDiv.text('')
+  removeStyles()
 
   var numElements = stack.stackControl.length
   var childrenNum = stack.MAX_SIZE + 1
@@ -63,5 +55,21 @@ function drawNormalStack(){
     indexStack++
     childrenNum--
     numElements--
+  }
+}
+
+function removeStyles(){
+  var $stackOverflowDiv = $('.stack-container div:first-child()')
+  $stackOverflowDiv.removeClass('out-of-bounds')
+  $stackOverflowDiv.text('')
+
+  var $stackUnderflowDiv = $('.stack-container div:last-child()')
+  $stackUnderflowDiv.removeClass('out-of-bounds')
+  $stackUnderflowDiv.text('')
+
+  var $fullElements = $('.stack-container').children('.full')
+  for(var i = 0; i < $fullElements.length; i++){
+    $($fullElements[i]).removeClass('full')
+    $($fullElements[i]).text('')
   }
 }
