@@ -29,7 +29,7 @@ $(document).ready(function() {
 
       $($('.content-queue').children().get().reverse()).each(function(index) {
         if (queue.queueControl[index]) {
-          $(this).html(queue.queueControl[index]).removeClass("queue-grey queue-underflow").addClass("queue-div");
+          $(this).html(queue.queueControl[queue.queueControl.length - index - 1]).removeClass("queue-grey queue-underflow").addClass("queue-div");
         } else {
           $(this).html("").removeClass("blue-div queue-underflow").addClass("queue-grey");
         }
