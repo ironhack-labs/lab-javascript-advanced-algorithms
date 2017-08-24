@@ -1,12 +1,11 @@
 var queue;
 var divQueue;
+
   function createDiv2(){
     var myDiv = $("<div>");
     myDiv.addClass("emptyQueue col-sm-1");
     return myDiv;
   }
-
-
 function showQueue (){
     var addedDiv;
     var toPush = $(".inputSecond").val();
@@ -14,7 +13,12 @@ function showQueue (){
     addedDiv = $(".emptyQueue")[0];
     $(addedDiv).addClass("addedQueue");
     $(addedDiv).removeClass("emptyQueue");
-    //$(addedDiv).text(toPush);
+  }
+
+  function showOverFlow(list, text ,clase){
+    var alertFull = $(list)[0];
+    $(alertFull).addClass(clase);
+    $(alertFull).text(text);
   }
 
   function hideQueue(){
@@ -39,19 +43,16 @@ for(var i = 0; i < stack.MAX_SIZE; i++){
    var alertEmpty = $(".emptyQueue")[queue.MAX_SIZE - 1];
    $(alertEmpty).removeClass("redQueue");
    $(alertEmpty).text("");
+   var myQueue = $(".addedQueue");
 
    if(queue.canEnqueue()){
    showQueue();
-   var myQueue = $(".addedQueue");
    myQueue.each(function(index){
      $(this).text(queue.queueControl[index]);
    });
  }
   else{
-    var alertFull = $(".addedQueue")[0];
-    $(alertFull).addClass("redQueue");
-    $(alertFull).text("QUEUE OVERFLOW");
-  }
+    showOverFlow(myQueue, "QUEUE OVERFLOW", "redQueue");  }
    });
 
  $(".takequeue").on("click", function(){

@@ -41,6 +41,7 @@ mainDiv = $(".stackHere");
   }
 
   $(".add").on("click",function(){
+    var myStack = $(".addedStack");
     var emptyStack = $(".emptyStack")[stack.MAX_SIZE -1];
     $(emptyStack).text("STACK UNDERFLOW");
     $(emptyStack).removeClass("red");
@@ -49,9 +50,7 @@ mainDiv = $(".stackHere");
       showDiv(countHowMany());
     }
     else{
-      var myalert = $(".addedStack")[0];
-      $(myalert).text("STACK OVERFLOW");
-      $(myalert).addClass("red");
+      showOverFlow(myStack, "STACK OVERFLOW", "red");  
     }
   });
 
