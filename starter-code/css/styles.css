@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+    border: 4px blue solid;
+    border-radius: 5px
+}
+
+.info-box {
+    height: 50px;
+    text-align: center;
+    font-size: 3em;
+    color: red;
+}
+
+.element-input-stack, .add-button-stack,
+.remove-button-stack {
+    margin: 5px 0px;
+    width: 100%;
+}
+
+.element-input-queue, .add-button-queue,
+.remove-button-queue {
+    margin: 5px 0px;
+    width: 100%;
+}
+
+.stack-box, .queue-box {
+    height: 34px;
+    margin: 2px 0px;
+    width: 100%;
+    background-color: #DCDCDC;
+    text-align: center;
+    line-height: 34px;
+}
+
+.stack-box-filled, .queue-box-filled {
+    height: 34px;
+    margin: 2px 0px;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    line-height: 34px;
+}
+
+
+
