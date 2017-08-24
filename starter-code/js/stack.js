@@ -41,7 +41,7 @@ function drawNormalStack(){
   var indexStack = 0;
   var $element
 
-  if(numElements == 0){
+  if(stack.isEmpty()){
     $element = $('.stack-container div:nth-child(' + childrenNum + ')')
     $element.removeClass('full')
     $element.text('')

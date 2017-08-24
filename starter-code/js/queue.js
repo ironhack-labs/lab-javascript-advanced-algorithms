@@ -41,7 +41,7 @@ function drawNormalQueue(){
   var indexQueue = 0;
   var $element
 
-  if(numElements == 0){
+  if(queue.isEmpty()){
     $element = $('.queue-container div:nth-child(' + childrenNum + ')')
     $element.removeClass('full')
     $element.text('')
