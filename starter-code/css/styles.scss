@@ -1,68 +1,78 @@
-.container{
+.container {
   text-align: center;
 }
-.paint{
+
+.paint {
   background: #7db7e9;
 }
 
- .box{
-   width:100%;
-   height: 1000px;
-   text-align: center;
+.box {
+  width: 100%;
+  height: 1000px;
+  text-align: center;
 
-   .left,.right{
-     width: 50%;
-     height: 100%;
-     float:left;
-     padding-right: 10%;
+  .left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding-right: 10%;
 
-     ul{
-      padding-left: 0;
-      margin-top: 20px;
-       li{
-         list-style-type: none;
-         text-align: center;
-         color: white;
-         line-height: 2.5em;
-         font-size: 2rem;
-       }
+    .elements {
+      height: 40px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+  }
 
-     }
+  .right {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding-right: 10%;
 
-   }
+    .elements {
+      height: 200px;
+      border: 1px solid #ccc;
+      width: 12%;
+      float: left;
+    }
+  }
 
- }
+  ul {
+    padding-left: 0;
+    margin-top: 20px;
 
- button{
-   padding: 10px 50px;
-    border-radius: 5px;
-    border: 0;
-    margin: 10px 0;
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: white
- }
- #addQueue, #addStack{
-   background: #46e78e;
- }
+    li {
+      list-style-type: none;
+      text-align: center;
+      color: white;
+      line-height: 2.5em;
+      font-size: 2rem;
+    }
+  }
+}
 
- #deleteQueue, #deleteStack{
-   background: #eb7d96;
- }
+button {
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: 0;
+  margin: 10px 0;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
 
- input{
-   padding: 10px 50px;
- }
+#addQueue,
+#addStack {
+  background: #46e78e;
+}
 
- .left .elements{
-   height: 40px;
-   border:1px solid #ccc;
-   width: 100%;
- }
- .right .elements{
-   height: 200px;
-   border:1px solid #ccc;
-   width: 12%;
-   float: left;
- }
+#deleteQueue,
+#deleteStack {
+  background: #eb7d96;
+}
+
+input {
+  padding: 10px 50px;
+}
