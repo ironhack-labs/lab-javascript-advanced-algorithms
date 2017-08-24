@@ -4,14 +4,10 @@ $(document).ready(function() {
   $("#stack-add").on("click", function(e) {
     e.preventDefault();
     if (stack.canPush()) {
-      var $stackVal = $("#stack-val").val();
-      console.log($stackVal);
+      var $stackVal = $("#stack-val").val();    
 
       stack.push($stackVal);
-
       var position = ".block-" + stack.stackControl.length;
-
-      console.log(position);
 
       $(position).removeClass("grey");
       $(position).addClass("blue");

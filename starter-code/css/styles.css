@@ -1,13 +1,16 @@
 .container{
   text-align: center;
+}
 
+.blocks{
+    width: 100%;
 }
 
 .stack-row{
   font-size: 20px;
-  width: 100px;
+  width: 100%;
   height: 30px;
-  border: 2px solid red;
+  border: 2px solid blue;
   margin-top: 5px;
 }
 
@@ -17,4 +20,8 @@
 
 .blue{
   background:blue;
+}
+
+.form-group{
+  margin-top: 5px;
 }
