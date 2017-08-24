@@ -1,0 +1,15 @@
+.stack {
+  height: 50px;
+  margin: 5px auto;
+  background-color: grey;
+}
+
+.grey {
+  background-color: grey;
+
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
