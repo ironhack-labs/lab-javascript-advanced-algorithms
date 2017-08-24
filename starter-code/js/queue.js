@@ -8,8 +8,11 @@ $(document).ready(function() {
     $parent = $(this).parent()
     $cont = $($parent).children('div')
     if(queue.canEnqueue()) {
+      $div = $($cont)[queue.queueControl.length]
       queue.enqueue($($cont).text())
-      $($parent).children('div.cont:first').prop('class', 'block')
+      $($div).prop('class', 'block')
+      // También funciona pero sin utilizar queueControl[]
+      // $($parent).children('div.cont:first').prop('class', 'block')
     }    
   })
 
@@ -18,7 +21,9 @@ $(document).ready(function() {
     $cont = $($parent).children('div')
     if(!queue.isEmpty()){
       queue.dequeue($($cont).text())
-      $($parent).children('div.block:last').prop('class', 'cont')
+      $div = $($cont)[queue.queueControl.length]
+      $($div).prop('class', 'cont')
+      // $($parent).children('div.block:last').prop('class', 'cont')
     }
   })
 })

@@ -3,14 +3,21 @@ h1 {
   margin-bottom: 50px;
 }
 
+div.global {
+  width: 90%;
+  text-align: center;
+}
+
 section.container {
   width: 300px;
   margin-left: 150px;
   display: inline-block;
+  margin: 0 auto;
 }
 
 section.container input {
   width: 200px;
+  display: block;
   margin: 3px;
 }
 
@@ -36,19 +43,21 @@ section.container .cont {
   height: 40px;
   background: #CBCBCB;
   margin: 3px;
+  float: left;
 }
 
-section.container div.block {
+section.stack div.block {
   text-align: center;
-  padding: 10px;
+  padding: 8px;
   background: #47A4D4;
   width: 200px;
   height: 40px;
   margin: 3px;
+  float: left;
 }
 
-section.queue div.cont {
-  float: right;
+section.queue {
+  margin-left: 150px;
 }
 
 section.queue div.cont {
@@ -66,4 +75,14 @@ section.queue div.block {
   width: 40px;
   height: 200px;
   display: inline-block;
+  float: left;
+  margin: 3px;
+}
+
+section.queue button.green {
+  margin-left: 0;
+}
+
+section.queue button.red {
+  margin-left: 0;
 }

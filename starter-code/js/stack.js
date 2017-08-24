@@ -9,7 +9,11 @@ $(document).ready(function() {
     $product = $($parent).children('input').val()
     if(stack.canPush()) {
       stack.push($($cont).text())
-      $($parent).children('div.cont:last').prop('class', 'block').text($product)
+      $n = stack.MAX_SIZE - stack.stackControl.length
+      $div = $($cont)[$n]
+      $($div).prop('class', 'block').text($product)
+      // también funciona pero no utilizamos el stackControl[]
+      // $($parent).children('div.cont:last').prop('class', 'block').text($product)
     }    
   })
 
@@ -18,7 +22,10 @@ $(document).ready(function() {
     $cont = $($parent).children('div')
     if(!stack.isEmpty()){
       stack.pop($($cont).text())
-      $($parent).children('div.block:first').prop('class', 'cont').text('')
+      $n = (stack.MAX_SIZE - 1) - stack.stackControl.length
+      $div = $($cont)[$n]
+      $($div).prop('class', 'cont').text('')
+      // $($parent).children('div.block:first').prop('class', 'cont').text('')
     }
   })
 })
