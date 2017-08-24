@@ -1,0 +1,51 @@
+body {
+  width: 90%;
+}
+
+.container {
+  height: 1000px;
+}
+
+.input {
+  width: 90%;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-stack {
+  background-color: blue;
+}
+
+.take-stack {
+  background-color: red;
+  color: white;
+}
+
+.btn {
+  width: 45%;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  height: 45px;
+}
+
+.slot {
+  height: 70px;
+  margin: 10px;
+  width: 45%;
+}
+
+.empty {
+  background-color: grey;
+}
+
+.full {
+  background-color: blue;
+}
+
+.warning {
+  border: 2px solid red;
+}
