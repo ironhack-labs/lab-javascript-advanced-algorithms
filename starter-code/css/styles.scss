@@ -5,6 +5,14 @@ $back-color-stack: #eee;
   height: 50px;
   text-align: center;
   padding: 20px;
-  background-color: $back-color-stack;
   margin: 5px auto;
+  border-radius: 5px;
+}
+
+.grey {
+  background-color: $back-color-stack;
+}
+
+.blue {
+  background-color: blue;
 }
