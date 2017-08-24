@@ -1,0 +1,105 @@
+body {
+  position: absolute;
+  margin: 90px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+ line-height: normal;
+ font-size: 26px;
+ text-align: center;
+}
+
+.container {
+  position: relative;
+}
+
+#stack {
+  display: inline-block;
+}
+
+#queue {
+  display: inline-block;
+  float: right;
+}
+
+span {
+  padding: 5px;
+  color: blue;
+  font-size: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 1px;
+}
+
+.btn {
+  color: #FFF;
+  width: 150px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.btn-add {
+  background: blue;
+}
+
+.btn-add-2 {
+  background: blue;
+}
+
+.btn-take {
+  background: red;
+}
+
+article {
+  border: 1px solid #555;
+  padding: 20px;
+  border-radius: 4px;
+  margin: auto;
+  text-align: center;
+  height: 48px;
+  width: 300px;
+  margin-bottom: 2px;
+  background: white;
+}
+.vertical{
+
+}
+
+.vertical {
+  height: 48px;
+  width: 300px;
+  margin-bottom: 2px;
+  background: white;
+}
+
+.horizontal {
+  height: 300px;
+  width: 80px;
+  display: inline-block;
+}
+
+.blocks {
+  vertical-align: middle;
+}
+
+.align {
+  text-align: center;
+}
+
+.color-1 {
+  background: blue;
+  height: 48px;
+  width: 300px;
+  margin-bottom: 2px;
+}
+
+.color-2 {
+  background: yellow;
+}
