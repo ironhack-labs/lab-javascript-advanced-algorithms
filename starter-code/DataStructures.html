@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
+  <link href="css/reset.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
 
+<body>
+  <section class="container stack">
+    <h1>Abstract Data Types</h1>
+    <section class="row">
+
+      <section id="stack" class="col-md-6">
+        <h2>Stack</h2>
+        <div class='blocks'>
+          <div class="stack-row block-8 grey"></div>
+          <div class="stack-row block-7 grey"></div>
+          <div class="stack-row block-6 grey"></div>
+          <div class="stack-row block-5 grey"></div>
+          <div class="stack-row block-4 grey"></div>
+          <div class="stack-row block-3 grey"></div>
+          <div class="stack-row block-2 grey"></div>
+          <div class="stack-row block-1 grey"></div>
+        </div>
+        <form>
+          <div class="form-group">
+            <input id='stack-val' type="text" name="text" value='Add the item to the stack..'>
+            <button id="stack-add" class="btn btn-success">ADD</button>
+            <button id="stack-rm" class="btn btn-danger">TAKE</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="queue" class="col-md-6">
+        <h2 class="queue-title">Queue</h2>
+        <div class='blocks'>
+          <div class="queue-row block-8 grey"></div>
+          <div class="queue-row block-7 grey"></div>
+          <div class="queue-row block-6 grey"></div>
+          <div class="queue-row block-5 grey"></div>
+          <div class="queue-row block-4 grey"></div>
+          <div class="queue-row block-3 grey"></div>
+          <div class="queue-row block-2 grey"></div>
+          <div class="queue-row block-1 grey"></div>
+        </div>
+      </section>
+    </section>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
@@ -18,4 +57,5 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>
