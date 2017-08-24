@@ -1,6 +1,4 @@
-content-queue#stack {
 
-}
 
 .input-group {
   width: 300px;
@@ -15,31 +13,25 @@ content-queue#stack {
   margin-top: 20px;
 }
 
-.content-stack div {
-  background: lightgrey;
-  width: 300px;
-  height: 50px;
-  margin: 2px 0;
-}
-
-.content-queue {
-  margin-right: 5px;
-}
-
-.content-queue div {
-  background: lightgrey;
-  width: 34px;
-  height: 414px;
-  margin: 20px 2px;
-  float: left;
-
 .blue-div {
   background: #7799FF;
   width: 300px;
   height: 50px;
   margin: 2px 0;
   font-size: 20px;
-  color: white;
+  color: darkblue;
+  text-align: center;
+  padding: 10px;
+}
+
+.queue-div{
+  background: #7799FF;
+  width: 34px;
+  height: 414px;
+  margin: 20px 2px;
+  float: left;
+  font-size: 20px;
+  color: darkblue;
   text-align: center;
   padding: 10px;
 }
@@ -53,4 +45,36 @@ content-queue#stack {
   color: red;
   text-align: center;
   padding: 10px;
+}
+
+.grey-div {
+  background: lightgrey;
+  width: 300px;
+  height: 50px;
+  margin: 2px 0;
+}
+
+.content-queue {
+  margin-right: 5px;
+}
+
+.queue-grey {
+  background: lightgrey;
+  width: 34px;
+  height: 414px;
+  margin: 20px 2px;
+  float: left;
+}
+
+.queue-underflow {
+  background: #FF9977;
+  width: 34px;
+  height: 414px;
+  margin: 20px 2px;
+  float: left;
+  color: red;
+  writing-mode: vertical-lr;
+  font-size: 17px;
+  padding: 20px 0px 0px 5px;
+
 }

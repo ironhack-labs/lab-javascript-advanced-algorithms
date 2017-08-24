@@ -1,33 +1,36 @@
 $(document).ready(function() {
 
-  $('.add-queue').on("click", function() {
-    var add = $('.form-queue').val();
-    if (queue.canEnqueue()) {
-      queue.enqueue(add);
-      console.log(queue.queueControl);
-      }
-      else {
-      $('.content-queue:first-child').html("Queue Overflow").addClass("overflow");
-    }
+      $('.add-queue').on("click", function() {
+        var add = $('.form-queue').val();
+        if (queue.canEnqueue()) {
+          queue.enqueue(add);
 
-      $('.content-queue').children().each(function(index) {
-      $(this).html(queue.queueControl[index]).addClass("blue-div");
-    });
+          $('.content-queue').children().each(function(index) {
+            if (queue.queueControl[index]) {
+              $(this).html(queue.queueControl[index]).removeClass("queue-grey queue-underflow").addClass("queue-div");
+            } else {
+              $(this).html("").removeClass("queue-underflow").addClass("queue-grey");
+            }
+          });
 
-  });
+        } else {
+          $('.content-queue').children().html("Queue Overflow").removeClass('queue-grey queue-div').addClass("queue-underflow");
+        }
+
+      });
 
   $('.take-queue').on("click", function() {
     if (queue.isEmpty()) {
-      $('.content-queue:last-child').html("Queue Underflow").addClass("overflow");
+      $('.content-queue').children().html("Queue Underflow").addClass("queue-underflow");
     } else {
       queue.dequeue();
       console.log(queue.queueControl);
 
       $('.content-queue').children().each(function(index) {
         if (queue.queueControl[index]) {
-          $(this).html(queue.queueControl[index]).addClass("blue-div");
+          $(this).html(queue.queueControl[index]).removeClass("queue-grey queue-underflow").addClass("queue-div");
         } else {
-          $(this).html("").removeClass("blue-div");
+          $(this).html("").removeClass("blue-div queue-underflow").addClass("queue-grey");
         }
       });
     }
