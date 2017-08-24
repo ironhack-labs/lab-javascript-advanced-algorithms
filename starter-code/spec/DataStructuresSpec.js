@@ -66,7 +66,7 @@ describe("Stack", function() {
 
       expect(stack.stackControl).toEqual([19, 88]);
     });
-
+//
     it ("Should return 'Stack Overflow' if the stack is full", function () {
       stack.MAX_SIZE = 1;
       stack.push(19);
@@ -115,7 +115,7 @@ describe("Queues", function() {
     it ("Should has a method to check if the current queue is empty", function () {
       expect(typeof(queue.isEmpty)).toBe('function');
     });
-
+//
     it ("Should has a method to check if we can enqueue an element into the queue", function () {
       expect(typeof(queue.canEnqueue)).toBe('function');
     });
@@ -133,19 +133,19 @@ describe("Queues", function() {
     it ("Queue has an empty stack", function () {
       expect(queue.isEmpty()).toBe(true);
     });
-
+//
     it ("Should be able to enqueue a new element in the queue", function () {
       expect(queue.canEnqueue()).toBe(true);
     });
   });
-
+//
   describe ("Queue methods usage", function () {
     it ("Should enqueue the indicated element to the queue", function () {
       queue.enqueue(19);
 
       expect(queue.queueControl.length).toBe(1);
     });
-
+//
     it ("Should return that queue is not empty when enqueuing an element", function () {
       queue.enqueue(19);
 
@@ -169,7 +169,7 @@ describe("Queues", function() {
 
       expect(queue.enqueue(88)).toEqual("Queue Overflow");
     });
-
+//
     it ("Should return false if the stack is full", function () {
       queue.MAX_SIZE = 1;
       queue.enqueue(19);
@@ -177,12 +177,6 @@ describe("Queues", function() {
       expect(queue.canEnqueue()).toBe(false);
     });
 
-    it ("Should return the first element inserted in the queue", function () {
-      queue.enqueue(19);
-      queue.enqueue(88);
-
-      expect(queue.dequeue()).toBe(19);
-    });
 
     it ("Should return 'Queue Underflow' if there are no elements in the queue", function () {
       expect(queue.dequeue()).toBe('Queue Underflow');
