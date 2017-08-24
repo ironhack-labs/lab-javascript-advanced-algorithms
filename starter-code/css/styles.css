@@ -1,0 +1,14 @@
+.stack {
+  background: grey;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  height: 40px;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.blue {
+  background-color: blue;
+}
