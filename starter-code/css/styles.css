@@ -1,0 +1,39 @@
+body{
+  height: 1000px;
+}
+
+.first{
+  width: 20%;
+  margin: 100px;
+}
+
+.col-md-12{
+
+  margin-top: 10px;
+  height: 50px;
+
+}
+
+.grey{background: grey;}
+
+button{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.blue{background-color: blue;
+color: white;}
+
+
+
+
+/*.second{
+  width: 50%;
+  float: right;
+
+}
+
+.col-md-1{background: grey;
+margin-left: 10px;
+height: 150px;
+}*/
