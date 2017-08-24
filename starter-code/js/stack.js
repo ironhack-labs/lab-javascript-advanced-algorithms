@@ -1,3 +1,6 @@
+//no es lamejor de las formas, ni mucho menos, pero podria funcionar perfectamente
+
+
 $(document).ready(function(){
 
     var myStack = new StackDataStructure();
@@ -15,6 +18,10 @@ $(document).ready(function(){
         $(a).removeClass("grey");
         $(a).addClass("blue");
         $(a).text(b);
+// No me da tiempo, pero lo que hay que hacer es sustituir en la posicion "ultimo" del array
+// el valor del input por el 1, para que se vea tambien reflejado.
+        //var ultimo= myStack.stackControl.length - 1;
+
       }});
 
 
@@ -28,8 +35,8 @@ $(document).ready(function(){
 
         $(a).removeClass("blue");
         $(a).addClass("grey");
-
-        //document.getElementByClassName(a).innerHTML =" ";
+// aqui tendria que eliminar el ultimo elemento del array y despues borrar el texto de la parte visible
+//document.getElementByClassName(a).innerHTML =" ";
 
 
         myStack.stackControl.splice(0,1);
