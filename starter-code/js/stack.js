@@ -41,17 +41,30 @@ mainDiv = $(".stackHere");
   }
 
   $(".add").on("click",function(){
+    var emptyStack = $(".emptyStack")[stack.MAX_SIZE -1];
+    $(emptyStack).text("STACK UNDERFLOW");
+    $(emptyStack).removeClass("red");
     if(stack.canPush()){
+
       showDiv(countHowMany());
     }
     else{
-      alert(stack.push());
+      var myalert = $(".addedStack")[0];
+      $(myalert).text("STACK OVERFLOW");
+      $(myalert).addClass("red");
     }
   });
 
   $(".take").on("click",function(){
     if(!stack.isEmpty()){
+      var myalert = $(".addedStack")[0];
+      $(myalert).removeClass("red");
       removeDiv();
+  }
+  else{
+    var emptyStack = $(".emptyStack")[stack.MAX_SIZE -1];
+    $(emptyStack).text("STACK UNDERFLOW");
+    $(emptyStack).addClass("red");
   }
   });
 

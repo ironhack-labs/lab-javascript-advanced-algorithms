@@ -32,3 +32,20 @@
   display: inline-block;
   background: yellow;
 }
+.redQueue{
+  border: 1px solid black;
+  height: 200px;
+  width: 50px;
+  border-radius: 12px;
+  display: inline-block;
+  background: red;
+  writing-mode: tb-rl;
+}
+.red{
+  border: 1px solid black;
+  height: 50px;
+  width: 100%;
+  border-radius: 12px;
+  display: inline-block;
+  background: red;
+}
