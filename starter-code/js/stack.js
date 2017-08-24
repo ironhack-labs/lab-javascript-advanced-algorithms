@@ -1,15 +1,15 @@
 $(document).ready(function() {
   var stack = new StackDataStructure();
 
-  $("#stack-add").on("click", function() {
-
+  $("#stack-add").on("click", function(e) {
+    e.preventDefault();
     if (stack.canPush()) {
       var $stackVal = $("#stack-val").val();
       console.log($stackVal);
 
       stack.push($stackVal);
 
-      var position = "block-" + stack.stackControl.length;
+      var position = ".block-" + stack.stackControl.length;
 
       console.log(position);
 

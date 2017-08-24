@@ -1,8 +1,14 @@
 .container{
   text-align: center;
+
 }
-li{
+
+.stack-row{
   font-size: 20px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid red;
+  margin-top: 5px;
 }
 
 .grey{
@@ -11,7 +17,4 @@ li{
 
 .blue{
   background:blue;
-}
-.stack-row{
-  border-color: 2px solid red;
 }
