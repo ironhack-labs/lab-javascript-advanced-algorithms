@@ -34,7 +34,7 @@ function drawQueueOutOfBounds(child, overUnderFlow){
 }
 
 function drawNormalQueue(){
-  removeStyles()
+  removeQueueStyles()
 
   var numElements = queue.queueControl.length
   var childrenNum = 2
@@ -58,7 +58,7 @@ function drawNormalQueue(){
   }
 }
 
-function removeStyles(){
+function removeQueueStyles(){
   var $queueOverflowDiv = $('.queue-container div:first-child()')
   $queueOverflowDiv.removeClass('out-of-bounds')
   $queueOverflowDiv.text('')

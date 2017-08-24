@@ -34,7 +34,7 @@ function drawStackOutOfBounds(child, overUnderFlow){
 }
 
 function drawNormalStack(){
-  removeStyles()
+  removeStackStyles()
 
   var numElements = stack.stackControl.length
   var childrenNum = stack.MAX_SIZE + 1
@@ -58,7 +58,7 @@ function drawNormalStack(){
   }
 }
 
-function removeStyles(){
+function removeStackStyles(){
   var $stackOverflowDiv = $('.stack-container div:first-child()')
   $stackOverflowDiv.removeClass('out-of-bounds')
   $stackOverflowDiv.text('')
