@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
@@ -7,9 +8,28 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
+    <h1>Stack</h1>
+    <input type="text" value="Add an element to this stack...">
+    <div id="buttons">
+      <button class="add-stack btn">ADD</button>
+      <button class="take-stack btn">TAKE</button>
+    </div>
+    <div id="stockpile">
+      <div class="warning oflow">STACK OVERFLOW</div>
+      <div class="slot empty full final"></div>
+      <div class="slot empty full"></div>
+      <div class="slot empty full"></div>
+      <div class="slot empty full"></div>
+      <div class="slot empty full"></div>
+      <div class="slot empty full"></div>
+      <div class="slot empty full"></div>
+      <div class="slot empty full begin"></div>
+      <div class="warning uflow">STACK UNDEFLOW</div>
+
+    </div>
 
   </section>
 
@@ -18,4 +38,5 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>
