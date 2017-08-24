@@ -4,17 +4,26 @@ function QueueDataStructure () {
 }
 
 QueueDataStructure.prototype.isEmpty = function(){
-   return true;
+   return (this.queueControl.length > 0) ?  false : true;
 };
 
 QueueDataStructure.prototype.canEnqueue = function(){
-  return true;
+  return (this.queueControl.length == this.MAX_SIZE) ? false : true;
 };
 
 QueueDataStructure.prototype.enqueue = function(a){
-return this.queueControl.push(a);
+if (this.queueControl.length < this.MAX_SIZE){
+ this.queueControl.unshift(a);
+ return this.queueControl;
+ }else{
+   return "Queue Overflow";
+ }
 };
 
 QueueDataStructure.prototype.dequeue = function(){
-
+  if (this.queueControl.length === 0) {
+    return "Queue Underflow";
+  } else {
+    return this.queueControl.pop();
+  }
 };
