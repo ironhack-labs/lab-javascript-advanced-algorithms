@@ -1,0 +1,88 @@
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+div.global {
+  width: 90%;
+  text-align: center;
+}
+
+section.container {
+  width: 300px;
+  margin-left: 150px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+section.container input {
+  width: 200px;
+  display: block;
+  margin: 3px;
+}
+
+section.container button {
+  padding: 10px;
+  margin: 3px;
+  border: none;
+  display: block;
+  width: 200px;
+}
+
+section.container button.green {
+  background: #31E37E;
+}
+
+section.container button.red {
+  background: #F47575;
+  margin-bottom: 20px;
+}
+
+section.container .cont {
+  width: 200px;
+  height: 40px;
+  background: #CBCBCB;
+  margin: 3px;
+  float: left;
+}
+
+section.stack div.block {
+  text-align: center;
+  padding: 8px;
+  background: #47A4D4;
+  width: 200px;
+  height: 40px;
+  margin: 3px;
+  float: left;
+}
+
+section.queue {
+  margin-left: 150px;
+}
+
+section.queue div.cont {
+  display: inline-block;
+  height: 200px;
+  width: 40px;
+}
+
+section.queue button {
+  margin-left: 42px;
+}
+
+section.queue div.block {
+  background: #47A4D4;
+  width: 40px;
+  height: 200px;
+  display: inline-block;
+  float: left;
+  margin: 3px;
+}
+
+section.queue button.green {
+  margin-left: 0;
+}
+
+section.queue button.red {
+  margin-left: 0;
+}
