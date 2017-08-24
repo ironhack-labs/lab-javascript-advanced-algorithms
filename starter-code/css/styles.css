@@ -1,0 +1,51 @@
+.boton-full{
+  width: 100%;
+}
+.emptyStack{
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+.queueHere, .stackHere{
+  margin-top: 30px;
+}
+.addedStack{
+  background: yellow;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+.emptyQueue{
+  border: 1px solid black;
+  height: 200px;
+  width: 50px;
+  border-radius: 12px;
+  display: inline-block;
+}
+.addedQueue{
+  border: 1px solid black;
+  height: 200px;
+  width: 50px;
+  border-radius: 12px;
+  display: inline-block;
+  background: yellow;
+}
+.redQueue{
+  border: 1px solid black;
+  height: 200px;
+  width: 50px;
+  border-radius: 12px;
+  display: inline-block;
+  background: red;
+  writing-mode: tb-rl;
+}
+.red{
+  border: 1px solid black;
+  height: 50px;
+  width: 100%;
+  border-radius: 12px;
+  display: inline-block;
+  background: red;
+}
