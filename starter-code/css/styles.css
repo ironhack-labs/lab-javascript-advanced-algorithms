@@ -1,0 +1,52 @@
+h1 {
+  text-align: center;
+}
+
+.form-control, .btn-primary, .btn-danger {
+ width: 300px;
+ margin: 0 auto;
+ display: block;
+ transition: all 200ms ease;
+
+}
+
+.btn {
+  margin-bottom: 10px;
+}
+
+.empty-block {
+  background-color: #ededed;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto 4px auto;
+  text-align: center;
+  line-height: 50px;
+  transition: all 400ms ease;
+}
+
+.stack-overflow, .stack-underflow {
+  background-color: #ffd8d8;
+  border: 1px solid #ff5b5b;
+  display: none;
+  transition: all 400ms ease;
+}
+
+.stack-underflow {
+  width: 300px;
+  height: 50px;
+  margin: 0 auto 4px auto;
+  text-align: center;
+  line-height: 50px;
+  transition: all 400ms ease;
+}
+
+h2 {
+    color: #ff5b5b;
+    font-weight: 400;
+    position: relative;
+    bottom: 12px;
+}
+
+.taken-block {
+  background-color: #3ab3ff;
+}
