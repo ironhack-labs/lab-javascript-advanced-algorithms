@@ -1,0 +1,41 @@
+.stack, .queue{
+  /*background-color: red;*/
+  width: 30%;
+  text-align: center;
+  margin-left: 100px;
+  float: left;
+  text-align: center;
+}
+
+.stack button, .queue button{
+  width: 90%;
+  margin: 3px;
+  margin-bottom: 10px;
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.stack div{
+  width: 40%;
+  height: 50px;
+  background-color: grey;
+  margin: 1px auto;
+}
+
+.queue div{
+  width: 15%;
+  height: 100px;
+  background-color: grey;
+  margin: 0px auto;
+  margin-left: 1px;
+  float: left;
+}
+
+button[name=buttonA]{
+  background-color: blue;
+}
+
+button[name=buttonT]{
+  background-color: red;
+}
