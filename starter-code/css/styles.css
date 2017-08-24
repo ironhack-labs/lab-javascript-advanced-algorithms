@@ -28,11 +28,14 @@ h2 {
 
 span {
   padding: 5px;
+  color: blue;
+  font-size: 20px;
 }
 
 input {
   margin: 10px;
   padding: 5px;
+  border-radius: 1px;
 }
 
 .btn {
@@ -46,6 +49,10 @@ input {
   background: blue;
 }
 
+.btn-add-2 {
+  background: blue;
+}
+
 .btn-take {
   background: red;
 }
@@ -53,15 +60,23 @@ input {
 article {
   border: 1px solid #555;
   padding: 20px;
-  border-radius: 2px;
+  border-radius: 4px;
   margin: auto;
   text-align: center;
+  height: 48px;
+  width: 300px;
+  margin-bottom: 2px;
+  background: white;
+}
+.vertical{
+
 }
 
 .vertical {
   height: 48px;
   width: 300px;
   margin-bottom: 2px;
+  background: white;
 }
 
 .horizontal {
@@ -76,4 +91,15 @@ article {
 
 .align {
   text-align: center;
+}
+
+.color-1 {
+  background: blue;
+  height: 48px;
+  width: 300px;
+  margin-bottom: 2px;
+}
+
+.color-2 {
+  background: yellow;
 }
