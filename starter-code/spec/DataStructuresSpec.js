@@ -20,35 +20,35 @@ describe("Stack", function() {
       expect(typeof(stack.isEmpty)).toBe('function');
     });
 
-    it ("Should has a method to check if we can push elements into the stack", function () {
+     it ("Should has a method to check if we can push elements into the stack", function () {
       expect(typeof(stack.canPush)).toBe('function');
-    });
+     });
 
-    it ("Should has a method to push elements into the stack", function () {
-      expect(typeof(stack.push)).toBe('function');
-    });
+     it ("Should has a method to push elements into the stack", function () {
+       expect(typeof(stack.push)).toBe('function');
+     });
 
-    it ("Should has a method to take elements from the stack", function () {
-      expect(typeof(stack.pop)).toBe('function');
-    });
+     it ("Should has a method to take elements from the stack", function () {
+       expect(typeof(stack.pop)).toBe('function');
+     });
   });
 
   describe ("Stack methods default values", function () {
-    it ("Should has an empty stack", function () {
-      expect(stack.isEmpty()).toBe(true);
-    });
+     it ("Should has an empty stack", function () {
+       expect(stack.isEmpty()).toBe(true);
+     });
 
-    it ("Should be able to add a new element in the stack", function () {
-      expect(stack.canPush()).toBe(true);
-    });
+     it ("Should be able to add a new element in the stack", function () {
+       expect(stack.canPush()).toBe(true);
+      });
   });
 
   describe ("Stack methods usage", function () {
     it ("Should add the indicated element to the stack", function () {
-      stack.push(19);
+       stack.push(19);
 
-      expect(stack.stackControl.length).toBe(1);
-    });
+       expect(stack.stackControl.length).toBe(1);
+     });
 
     it ("Should return that stack is not empty when adding an element", function () {
       stack.push(19);
@@ -91,7 +91,7 @@ describe("Stack", function() {
     it ("Should return 'Stack Underflow' if there are no elements in the stack", function () {
       expect(stack.pop()).toBe('Stack Underflow');
     });
-  });
+   });
 });
 
 describe("Queues", function() {
