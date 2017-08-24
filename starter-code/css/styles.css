@@ -23,12 +23,6 @@
   border: 1px solid #fff;
 }
 
-.full{
-  background-color: #3a49cc;
-  color: #fff;
-  text-align: center;
-}
-
 .out-of-bounds{
   background-color: #e47c7c;
   border: 1px solid #ff0000;
@@ -43,4 +37,10 @@
 .queue-element{
   background-color: #e0dfdf;
   border: 1px solid #fff;
+}
+
+.full{
+  background-color: #3a49cc;
+  color: #fff;
+  text-align: center;
 }
