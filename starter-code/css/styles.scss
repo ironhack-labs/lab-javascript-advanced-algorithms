@@ -16,6 +16,9 @@
     height: 100%;
     float: left;
     padding-right: 10%;
+    .text-alert{
+      background-color: #eb7d96;
+    }
 
     .elements {
       height: 40px;
@@ -29,6 +32,11 @@
     height: 100%;
     float: left;
     padding-right: 10%;
+    .text-alert{
+      background-color: #eb7d96;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+    }
 
     .elements {
       height: 200px;
@@ -46,7 +54,7 @@
       list-style-type: none;
       text-align: center;
       color: white;
-      line-height: 2.5em;
+      line-height: 2em;
       font-size: 2rem;
     }
   }
