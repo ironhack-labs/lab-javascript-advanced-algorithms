@@ -1,0 +1,30 @@
+.box {
+  height: 40px;
+  width: 300px;
+  border: 0.5px solid white;
+  margin-left: 20px;
+}
+
+.grey{
+  background: rgb(217, 217, 217);
+}
+
+.longer {
+  width: 300px;
+  margin: 5px;
+
+}
+
+.letters{
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.indent{
+  margin-left: 20px;
+  margin-bottom: -10px;
+}
+
+.bluebox{
+  background-color: rgb(42, 133, 139);
+}
