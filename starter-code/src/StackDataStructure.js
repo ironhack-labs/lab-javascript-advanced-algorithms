@@ -2,7 +2,7 @@ function StackDataStructure() {
   this.stackControl = [];
   this.MAX_SIZE = 10;
 }
-var stack = new StackDataStructure();
+//var stack = new StackDataStructure();
 
 StackDataStructure.prototype.isEmpty = function() {
   return (this.stackControl.length === 0) ? true : false;

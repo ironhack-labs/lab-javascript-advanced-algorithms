@@ -1,0 +1,17 @@
+.container{
+  text-align: center;
+}
+li{
+  font-size: 20px;
+}
+
+.grey{
+  background-color: grey;
+}
+
+.blue{
+  background:blue;
+}
+.stack-row{
+  border-color: 2px solid red;
+}
