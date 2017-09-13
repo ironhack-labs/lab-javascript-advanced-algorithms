@@ -12,12 +12,12 @@ function QueueDataStructure() {
       this.stackControl.unshift(element);
       return this.queueControl;
     } else {
-      return "Stack Overflow";
+      return "Queue Overflow";
     }
   };
   this.pop = function() {
     if (this.isEmpty()) {
-      return "Stack Underflow";
+      return "Queue Underflow";
     } else {
       return this.queueControl.pop();
     }
