@@ -4,7 +4,7 @@
 
 function QueueDataStructure () {
   this.queueControl=[];
-  this.MAX_SIZE=20;
+  this.MAX_SIZE=10;
 
   this.isEmpty=function(){
     if(this.queueControl.length===0){

@@ -1,6 +1,6 @@
 function StackDataStructure () {
   this.stackControl=[];
-  this.MAX_SIZE=20;
+  this.MAX_SIZE=10;
 
   this.isEmpty=function(){
     if(this.stackControl.length===0){
