@@ -4,18 +4,18 @@ function QueueDataStructure() {
   this.isEmpty = function() {
     return this.queueControl.length === 0;
   };
-  this.canPush = function() {
+  this.canEnqueue = function() {
     return this.queueControl.length < this.MAX_SIZE;
   };
-  this.push = function(element) {
-    if (this.canPush()) {
-      this.stackControl.unshift(element);
+  this.enqueue = function(element) {
+    if (this.canEnqueue()) {
+      this.queueControl.unshift(element);
       return this.queueControl;
     } else {
       return "Queue Overflow";
     }
   };
-  this.pop = function() {
+  this.dequeue = function() {
     if (this.isEmpty()) {
       return "Queue Underflow";
     } else {
