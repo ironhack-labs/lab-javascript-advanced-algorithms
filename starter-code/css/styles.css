@@ -1,0 +1,55 @@
+.input {
+  width: 300px;
+  height: 40px;
+  border-radius: 6px;
+  border: solid 1px lightgrey;
+  }
+
+  input::placeholder {
+    color: lightgrey;
+  }
+
+.button {
+  width: 300px;
+  margin-top: 8px;
+  margin-left: 2px;
+  height: 40px;
+  border-radius: 6px;
+  color: white;
+  border: none;
+
+}
+
+.add{
+  background-color: lightblue;
+  text-align: center;
+}
+
+.take{
+  background-color:salmon;
+  margin-bottom: 15px;
+
+}
+
+.empty{
+  background-color: lightgray;
+  width: 300px;
+  height: 50px;
+  margin: 2px;
+}
+
+.underflow, .overflow{
+  border: solid 2px salmon;
+  background-color: pink;
+  color: red;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 50px;
+}
+
+span{
+  color: white;
+  text-align: center;
+  margin-left: 140px;
+  vertical-align: bottom;
+}

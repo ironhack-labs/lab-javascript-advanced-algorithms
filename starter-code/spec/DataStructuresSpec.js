@@ -146,6 +146,8 @@ describe("Queues", function() {
       expect(queue.queueControl.length).toBe(1);
     });
 
+    //ABOVE, CHECK IF IT MEANS PUSH TO THE END, OR UNSHIFT TO THE FRONT
+
     it ("Should return that queue is not empty when enqueuing an element", function () {
       queue.enqueue(19);
 
