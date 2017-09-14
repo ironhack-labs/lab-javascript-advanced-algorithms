@@ -1,0 +1,17 @@
+input, button {
+  width: 30%;
+  margin: 10px 30px;
+}
+
+    .block-stack {
+       background-color: #9CA5A1;
+       padding: 20px 10px;
+       margin: 10px 30px;
+       width: 30%;
+       text-align: center;
+       border-radius: 10px:
+     }
+
+   .data-in {
+     background-color: #367FF0;
+   }
