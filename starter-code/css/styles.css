@@ -1,0 +1,19 @@
+
+.stack div {
+	height: 40px;
+	background-color: #ededed;
+	margin: 2px;
+}
+
+.stack {
+	margin: auto;
+	margin-top: 20px;
+}
+
+button {
+	width: 90%;
+	margin: 3px 0px;
+}
+
+
+

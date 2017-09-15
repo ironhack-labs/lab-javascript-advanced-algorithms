@@ -55,7 +55,7 @@ describe("Stack", function() {
 
       expect(stack.isEmpty()).toBe(false);
     });
-
+    	
     it ("Should return the stack when an element is inserted", function () {
       expect(stack.push(19)).toEqual([19]);
     });
