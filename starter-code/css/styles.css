@@ -1,0 +1,29 @@
+.stack {
+  margin-top: 10px;
+  width: 400px;
+  height: 80px;
+  background-color: #bed8d4;
+}
+
+#button-add {
+  background-color: #99D17B;
+  color: white;
+  margin: 10px 0;
+}
+
+#button-delete {
+  background-color: #e4572e;
+  color: white;
+  margin: 10px 0;
+}
+
+.error {
+  margin-top: 10px;
+  width: 400px;
+  height: 80px;
+  background-color: #e4572e;
+}
+
+.hidden {
+  visibility: hidden;
+}
