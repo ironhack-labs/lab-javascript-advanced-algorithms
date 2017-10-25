@@ -1,0 +1,38 @@
+h1{
+  margin-bottom: 10px;
+}
+input{
+  width: 300px;
+  height: 30px;
+  border: grey solid 1px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.buttonOne{
+  background-color: blue;
+  width: 300px;
+  height: 30px;
+  color : white;
+  font-family: sans-serif;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.buttonTwo{
+  background-color: red;
+  width: 300px;
+  height: 30px;
+  color : white;
+  font-family: sans-serif;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+div{
+  height: 60px;
+  width: 300px;
+  background-color: #f0f0f0;
+  border: white solid 1px;
+}
