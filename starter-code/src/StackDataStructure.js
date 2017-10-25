@@ -1,7 +1,7 @@
 // Constructor
 function StackDataStructure() {
   this.stackControl = [];
-  this.MAX_SIZE = 0;
+  this.MAX_SIZE = 10;
 }
 
 // Methods
@@ -12,7 +12,7 @@ StackDataStructure.prototype.isEmpty = function() {
 
 // Eval if it can add new item in the stack
 StackDataStructure.prototype.canPush = function() {
-  return this.stackControl.length < this.MAX_SIZE ? false : true;
+  return this.stackControl.length < this.MAX_SIZE ? true : false;
 };
 
 // Add a new element in the Stack

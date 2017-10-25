@@ -1,6 +1,6 @@
 function QueueDataStructure() {
   this.queueControl = [];
-  this.MAX_SIZE = 0;
+  this.MAX_SIZE = 10;
 }
 
 // Eval if the queue is empty
@@ -10,7 +10,7 @@ QueueDataStructure.prototype.isEmpty = function() {
 
 // Eval if it can add new item in the queue
 QueueDataStructure.prototype.canEnqueue = function() {
-  return this.queueControl.length < this.MAX_SIZE ? false : true;
+  return this.queueControl.length < this.MAX_SIZE ? true : false;
 };
 
 // Add a new element in the queue
