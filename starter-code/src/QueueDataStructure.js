@@ -1,3 +1,4 @@
+// Queue Data Structure contructor function
 function QueueDataStructure () {
     this.queueControl = [];
     this.MAX_SIZE = 8;

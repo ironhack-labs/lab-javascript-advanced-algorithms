@@ -1,0 +1,72 @@
+/* CSS styles */
+
+h1 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 5px 3px;
+    border: 1px solid #555;
+    border-radius: 2px;
+}
+
+button {
+    display: block;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+    height: auto;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+.btn-stack-add, .btn-queue-add {
+    background-color: #075ed3;
+}
+
+.btn-stack-take, .btn-queue-take {
+    background-color: #ee6565;
+}
+
+.stack-data-structure, .queue-data-structure {
+    padding: 5px 0;
+}
+
+.stack-element, .queue-element {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    width: 50%;
+    height: 50px;
+    margin: 2px 0;
+    padding-top: 10px;
+    border-radius: 2px;
+    background-color: #d3d3d3;
+}
+
+.in {
+    background-color: #059af4;
+}
+
+.hidden{
+  display: hidden;
+}
+
+.stack-overflow, .queue-overflow, .stack-underflow, .queue-underflow {
+    text-align: center;
+    color: #e33636;
+    font-size: 25px;
+    width: 50%;
+    height: 50px;
+    margin: 5px 0 -5px;
+    border-radius: 2px;
+    border: 3px solid #e33636;
+    background-color: #eeb3b3;
+}

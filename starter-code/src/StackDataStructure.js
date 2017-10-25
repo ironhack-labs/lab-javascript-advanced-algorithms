@@ -1,3 +1,4 @@
+// Stack Data Structure contructor function
 function StackDataStructure () {
     this.stackControl = [];
     this.MAX_SIZE = 8;
