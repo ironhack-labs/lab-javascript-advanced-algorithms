@@ -1,0 +1,30 @@
+.btn {
+  margin: 10px 0 2px 0;
+  width: 100%;
+}
+
+.take {
+  background-color: #b74343;
+  border: 1px solid #b74343;
+}
+
+.take:hover {
+  background-color: #a33a3a;
+  border: 1px solid #a33a3a;
+}
+
+.cells {
+  background-color: #d8d8d8;
+  height: 50px;
+  pointer-events: none;
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+}
+
+h1, h2 {
+  padding: 10px 0;
+  text-align: center;
+}

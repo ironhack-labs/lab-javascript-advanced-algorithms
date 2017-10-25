@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DataStructures | Stacks &amp; Queues</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
 
+<body>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Abstract Data Types</h1>
+      </div>
+    </div>
+    <div class="row">
+      <!-- left column - Stack -->
+      <article class="col-sm-5">
+        <h2>Stack</h2>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></span>
+          <input type="text" class="form-control" placeholder="Add the element in the Stack" aria-describedby="basic-addon1">
+        </div>
+        <button type="button" class="btn btn-primary add" data-toggle="button" aria-pressed="false" autocomplete="off">
+  ADD
+</button>
+        <button type="button" class="btn btn-primary take" data-toggle="button" aria-pressed="false" autocomplete="off">
+      TAKE
+    </button>
+        <div class="btn cells stack"></div>
+        <div class="btn cells stack"></div>
+        <div class="btn cells stack"></div>
+        <div class="btn cells stack"></div>
+        <div class="btn cells stack"></div>
+        <div class="btn cells stack"></div>
+        <div class="btn cells stack"></div>
+        <div class="btn cells stack"></div>
+      </article>
+
+      <!-- space between columns -->
+      <div class="col-sm-2"></div>
+
+      <!-- right column - Queue -->
+      <article class="col-sm-5">
+        <h2>Queue</h2>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></span>
+          <input type="text" class="form-control" placeholder="Add the element in the Queue" aria-describedby="basic-addon1">
+        </div>
+        <button type="button" class="btn btn-primary add" data-toggle="button" aria-pressed="false" autocomplete="off">
+    ADD
+    </button>
+        <button type="button" class="btn btn-primary take" data-toggle="button" aria-pressed="false" autocomplete="off">
+      TAKE
+    </button>
+        <div class="btn cells queue"></div>
+        <div class="btn cells queue"></div>
+        <div class="btn cells queue"></div>
+        <div class="btn cells queue"></div>
+        <div class="btn cells queue"></div>
+        <div class="btn cells queue"></div>
+        <div class="btn cells queue"></div>
+        <div class="btn cells queue"></div>
+      </article>
+
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
@@ -18,4 +76,5 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>

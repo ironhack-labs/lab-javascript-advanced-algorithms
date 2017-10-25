@@ -27,7 +27,7 @@ QueueDataStructure.prototype.enqueue = function(e) {
   }
 };
 
-
+//this method allow us to dequeue from the queue
 QueueDataStructure.prototype.dequeue = function(e) {
      if (this.isEmpty()) {
      return 'Queue Underflow';
