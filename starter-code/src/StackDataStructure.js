@@ -1,3 +1,5 @@
+//FIRST ITERATION
+
 function StackDataStructure () {
 
   this.stackControl = [];
