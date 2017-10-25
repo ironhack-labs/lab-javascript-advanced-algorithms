@@ -1,0 +1,102 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.stackData{
+  display: inline-block;
+  width: 40%;
+}
+
+.queueData{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+
+.insertTextBlock{
+  display: block;
+  width: 80%;
+  border-radius: 7px;
+  border: 1px solid gray;
+  padding: 7px;
+  padding-left: 15px;
+}
+
+.addStack, .addQueue{
+  display: block;
+  width: 80%;
+  margin-top:10px;
+  border-radius: 10px;
+  background-color: #3b85bf;
+  color: white;
+  border:none;
+  padding: 8px;
+}
+
+.takeStack, .takeQueue{
+  display: block;
+  width: 80%;
+  margin-top:10px;
+  border-radius: 10px;
+  background-color: #cf3833;
+  color: white;
+  border:none;
+  padding: 8px;
+}
+
+.stack > p {
+  text-align: center;
+  width: 80%;
+  padding: 2px;
+  margin-top: 10px;
+  border: 1px solid #c3c3c3;
+  background-color: #f3f3f3;
+}
+
+.queue.empty{
+  text-align: center;
+  width: 5%;
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid #c3c3c3;
+  background-color: #e0e0e0;
+  height: 200px;
+  display: inline-block;
+  word-wrap: break-word;
+  font-size: 11px;
+  color: white;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.queue.full{
+  text-align: center;
+  width: 5%;
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid #2f2f2f;
+  background-color: #595a5a;
+  height: 200px;
+  display: inline-block;
+  word-wrap: break-word;
+  font-size: 11px;
+  color: white;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.stack.full > p{
+  text-align: center;
+  width: 80%;
+  padding: 2px;
+  margin-top: 10px;
+  border: 1px solid #2f2f2f;
+  background-color: #595a5a;
+  color: white;
+}
+
+.warning{
+  background-color: red !important;
+  color:white;
+}
