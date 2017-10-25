@@ -1,7 +1,11 @@
 .item{
+
+  background-color: #82FA58;
+}
+.stack-item{
   width: 15vw;
   height: 5vh;
-  background-color: #F7F2E0;
   border:1px solid #fff;
   margin-top:1%;
+  background-color: #F7F2E0;
 }
