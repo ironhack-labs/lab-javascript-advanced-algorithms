@@ -42,7 +42,7 @@ describe("Stack", function() {
       expect(stack.canPush()).toBe(true);
     });
   });
-
+//
   describe ("Stack methods usage", function () {
     it ("Should add the indicated element to the stack", function () {
       stack.push(19);
@@ -91,7 +91,6 @@ describe("Stack", function() {
     it ("Should return 'Stack Underflow' if there are no elements in the stack", function () {
       expect(stack.pop()).toBe('Stack Underflow');
     });
-  });
 });
 
 describe("Queues", function() {
@@ -188,4 +187,5 @@ describe("Queues", function() {
       expect(queue.dequeue()).toBe('Queue Underflow');
     });
   });
+});
 });
