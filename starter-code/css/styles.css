@@ -1,0 +1,101 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.title {
+  width: 100%;
+}
+
+.divStack {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: auto 50px;
+}
+
+.stackFull {
+  background-color: #1BD3F0;
+  border: 1px solid white;
+  text-align: center;
+  width: 100%;
+  height: 34px;
+  color: white;
+}
+
+.stackEmpty {
+  width: 100%;
+  height: 34px;
+  border: 1px solid #DAE1E1;
+}
+
+.divQueue {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px;
+}
+
+.queue {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.queueEmpty {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #DAE1E1;
+}
+
+.queueFull {
+  background-color: #1BD3F0;
+  border: 1px solid white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.textInsertInput {
+  margin-bottom: 20px;
+}
+
+.addBtn {
+  background-color: #F16065;
+}
+
+.takeBtn {
+  margin-bottom: 20px;
+}
+
+.inactive {
+  background-color: white;
+  border:0px;
+  width: 100%;
+  height: 34px;
+}
+
+.active {
+  background-color: #F78E91;
+  border: 1px solid red;
+  color: red;
+  text-align: center;
+  width: 100%;
+  height: 34px;
+}
+
+.underflowQueueElement {
+  width: 100%;
+  height: 100%;
+}
+
+.overflowQueueElement {
+  width: 100%;
+  height: 100%;
+}
