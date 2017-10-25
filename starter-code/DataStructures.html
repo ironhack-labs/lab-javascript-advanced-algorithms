@@ -10,8 +10,47 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
   </section>
+
+  <div class="stackbody col-sm-offset-1 col-sm-4">
+    <h1>Stack</h1>
+    <input type="text" id="inputs" placeholder="Enter text here">
+    <button type="button" name="button" id="add1" class="btn btn-primary">Add</button>
+    <button type="button" name="button" id="danger1" class="btn btn-danger">Take</button>
+    <div class="stackpile">
+      <div class="overflows">OVERFLOW!</div>
+      <div class="stack"></div>
+      <div class="stack"></div>
+      <div class="stack"></div>
+      <div class="stack"></div>
+      <div class="stack"></div>
+      <div class="stack"></div>
+      <div class="stack"></div>
+      <div class="stack"></div>
+      <div class="underflows">UNDERFLOW!</div>
+    </div>
+    <h1 class="newh1"><span id="lefts">Nothing</span> left the stack</h1>
+  </div>
+
+  <div class="queuebody col-sm-offset-1 col-sm-4">
+    <h1>Queue</h1>
+    <input type="text" id="inputq" placeholder="Enter text here"></input>
+    <button type="button" name="button" id="add2" class="btn btn-primary">Add</button>
+    <button type="button" name="button" id="danger2" class="btn btn-danger">Take</button>
+    <div class="queuepile">
+      <div class="overflowq"><p>OVERFLOW!</p></div>
+      <div class="queue"></div>
+      <div class="queue"></div>
+      <div class="queue"></div>
+      <div class="queue"></div>
+      <div class="queue"></div>
+      <div class="queue"></div>
+      <div class="queue"></div>
+      <div class="queue"></div>
+      <div class="underflowq"><p>UNDERFLOW!</p></div>
+    </div>
+    <h1 class="newh1"><span id="leftq">Nothing</span> left the queue</h1>
+  </div>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
