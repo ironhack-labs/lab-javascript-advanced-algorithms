@@ -20,8 +20,9 @@ StackDataStructure.prototype.canPush = function() {
 //1. check if we can add the elements, if is TRUE... will add the element
 // if is FALSE, will return "Stack Overflow"
 StackDataStructure.prototype.push = function(e) {
-  this.stackControl.push(e);
+
   if (this.canPush()) {
+      this.stackControl.push(e);
     return this.stackControl;
   } else {
     return "Stack Overflow";

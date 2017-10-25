@@ -18,8 +18,9 @@ QueueDataStructure.prototype.canEnqueue = function() {
 
 //this method allow us to enqueue elements into the queue
 QueueDataStructure.prototype.enqueue = function(e) {
-this.queueControl.push(e)
   if (this.canEnqueue()) {
+  this.queueControl.push(e);
+  this.queueControl.reverse();
     return this.queueControl;
   } else {
     return "Queue Overflow";
@@ -31,6 +32,7 @@ QueueDataStructure.prototype.dequeue = function(e) {
      if (this.isEmpty()) {
      return 'Queue Underflow';
    } else {
-     return this.queueControl.shift(e);
+     this.queueControl.shift(e);
+     return this.queueControl[0];
    }
 };
