@@ -1,0 +1,26 @@
+h1 {
+  margin-bottom: 20px;
+}
+
+.stack-container {
+  background-color: blue;
+  height: 720px;
+  max-width: 50%;
+  text-align: center;
+}
+
+.stack-item {
+  height: 50px;
+  /*background-color: green;*/
+  margin-bottom: 10px;
+  border: 1px solid #000;
+}
+
+.btn {
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+
+.is-selected {
+  background-color: red;
+}

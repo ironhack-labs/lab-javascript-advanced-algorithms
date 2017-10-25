@@ -12,8 +12,8 @@ StackDataStructure.prototype.canPush = function() {
 }
 
 StackDataStructure.prototype.push = function(qty) {
-  this.stackControl.push(qty);
   if(this.canPush()) {
+    this.stackControl.push(qty);
     return this.stackControl;
   } else {
     return "Stack Overflow";
