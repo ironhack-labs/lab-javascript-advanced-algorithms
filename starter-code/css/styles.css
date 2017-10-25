@@ -4,6 +4,7 @@ body {
 
 li {
   list-style-type: none;
+  text-align: center;
 }
 
 ul {
@@ -36,7 +37,21 @@ button:hover {
 .controls {
   width: 100%;
   padding: 15px;
-  background-color: rgba(255,255,255,0.5);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.controls input {
+  margin-bottom: 1em;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+}
+
+.controls .btn {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .queue, .stack {
@@ -47,35 +62,37 @@ button:hover {
 }
 
 .queue {
-  width: 600px;
-  background-color: #edd3ab;
-  height: 300px;
+  width: 300px;
+  height: 500px;
+  background-color: #d2cecf;
+  border-radius: 4px;
 }
 
 .stack {
   width: 300px;
-  height: 400px;
-  background-color: #ea98b2;
+  height: 500px;
+  background-color: #d2cecf;
+  border-radius: 4px;
 }
 
 .active {
-  background-color: tomato;
+  background-color: #69f76f;
 }
 
-.stack .item {
-  width: 80%;
-  margin: 1em auto 0;
+.stack .item, .queue .item {
+  width: 97%;
+  margin: 5px auto;
   height: 26px;
+  border-radius: 4px;
+  padding: 18px 0px;
+  vertical-align: middle;
+  line-height: 1px;
 }
 
-.queue .item {
-  display: none;
-  width: 40px;
-  margin: 1em 10px;
-  height: 200px;
-  display: block;
-  float: left;
+.queue .item .active {
+  background-color: #69b5f7;
 }
+
 .hidden {
   background-color: gray;
 }
