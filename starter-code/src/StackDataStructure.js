@@ -12,7 +12,6 @@ StackDataStructure.prototype.canPush = function () {
 };
 
 StackDataStructure.prototype.push = function (e) {
-  console.log(this.stackControl.length);
   if(this.canPush()){
     this.stackControl.push(e);
     return this.stackControl;
