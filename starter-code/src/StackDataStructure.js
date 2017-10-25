@@ -15,15 +15,11 @@ StackDataStructure.prototype.push = function (e) {
   if(this.canPush()){
     this.stackControl.push(e);
     return this.stackControl;
-  } else {
-    return 'Stack Overflow';
   }
+    return 'Stack Overflow';
 };
 
 StackDataStructure.prototype.pop = function () {
-  if(this.isEmpty()){
-    return 'Stack Underflow';
-  }  else {
-    return this.stackControl.pop();
-  }
+  return (this.isEmpty()) ? 'Stack Underflow' : this.stackControl.pop();
+
 };

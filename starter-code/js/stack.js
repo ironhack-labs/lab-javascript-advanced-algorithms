@@ -1,32 +1,22 @@
 var stack = new StackDataStructure();
 
 var stackInput = $('#stackelement');
-// var stackDiv = $('stack-div');
 
 $('#add-stack').on('click', function(){
   if(stack.push(stackInput.val()) !== "Stack Overflow"){
-    if(stack.stackControl.length == 1){
-
-      $('.stack-element:last').addClass('addedelement');
-      $('.stack-element:last').text(stackInput.val());
-      stackInput.text("");
-    } else {
-
-      $('.addedelement:first').prev().addClass('addedelement');
-      $('.addedelement:first').text(stackInput.val());
-      stackInput.text("");
-    }
+    $('.stack-element:not(.addedelement):last').addClass('addedelement').text(stackInput.val());
+    $('.error-stack.under').css({display:'none'});
+    //Reset input value
+    stackInput.val("");
   } else {
-    alert("Stack Overflow");
+    $('.error-stack.over').css({display:'flex'});
   }
 
 });
 
 $('#delete-stack').on('click', function(){
-  if(stack.pop() !== 'Stack Underflow'){
-    $('.addedelement:first').text("");
-    $('.addedelement:first').removeClass("addedelement");
-  } else {
-    alert('Stack Underflow');
-  }
+  $('.error-stack.over').css({display:'none'});
+
+  (stack.pop() !== 'Stack Underflow') ? $('.addedelement:first').text("").removeClass("addedelement") :
+  $('.error-stack.under').css({display:'flex'});
 });
