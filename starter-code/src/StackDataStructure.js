@@ -12,11 +12,10 @@ StackDataStructure.prototype.canPush = function() {
 }
 
 StackDataStructure.prototype.push = function(num) {
-  if (this.canPush()) {
-    this.stackControl.push(num)
-  } else {
+  if (!this.canPush()) {
     return "Stack Overflow";
   }
+  this.stackControl.push(num)
   return this.stackControl;
 }
 
