@@ -15,9 +15,7 @@ $('document').ready(function(){
     if (result == ""){
       result = 'NO DATA';
     }
-    console.log(result);
     if (result == 'Stack Overflow'){
-      console.log("OVERFLOW");
         $('.stack.full:first > p').addClass('warning');
         $('.stack.full:first > p').html('Stack Overflow');
     }
@@ -38,6 +36,10 @@ $('document').ready(function(){
       $('.stack > p').removeClass('warning');
       $('.stack.full:first > p').html('EMPTY');
       $('.stack.full:first').toggleClass('empty full');
+      if (items == ""){
+          items = "NO DATA";
+      }
+      $('.stackh2 span').html(' - exit: '+items);
     }
   });
 

@@ -40,8 +40,13 @@ $('document').ready(function(){
       $('.queue.full').toggleClass('empty full');
       for (var z = 0; z < myQueue.queueControl.length; z++){
         $('.queue.empty:last').toggleClass('empty full');
+        // myQueue.queueControl.queueControl[z];
       }
-
+      console.log(items);
+      if (items == ""){
+          items = "NO DATA";
+      }
+      $('.queueh2 span').html(' - exit: '+items);
       // Paint last empty (toggleClass)
     }
   });
