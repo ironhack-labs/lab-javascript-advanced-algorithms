@@ -1,0 +1,34 @@
+
+.cage{
+  width: 410px;
+  height: 800px;
+  margin: 10px;
+}
+
+.c1 *{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.slot{
+  width: 100%;
+  height: 70px;
+  margin-bottom: 5px;
+}
+
+.btn{
+  width: 100%;
+}
+
+.colorAdd{
+  background-color: #4da6ff;
+}
+
+.colorTake{
+  background-color: #d1d1e0;
+}
+
+.colorError{
+  background-color: #ffb380;
+  border: 2px solid: #ff6600;
+}
