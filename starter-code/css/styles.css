@@ -1,0 +1,46 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.stackData{
+  display: inline-block;
+  width: 50%;
+}
+
+.queueData{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+
+.insertTextBlock{
+  display: block;
+  width: 50%;
+  border-radius: 7px;
+  border: 1px solid gray;
+  padding: 7px;
+  padding-left: 15px;
+}
+
+.add{
+  display: block;
+  width: 50%;
+  margin-top:10px;
+  border-radius: 10px;
+  background-color: #3b85bf;
+  color: white;
+  border:none;
+  padding: 8px;
+}
+
+.take{
+  display: block;
+  width: 50%;
+  margin-top:10px;
+  border-radius: 10px;
+  background-color: #cf3833;
+  color: white;
+  border:none;
+  padding: 8px;
+}
