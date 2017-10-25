@@ -22,12 +22,16 @@ StackDataStructure.prototype.canPush = function() {
 }
 
 StackDataStructure.prototype.push = function(number) {
-if (this.stackControl.length >= this.MAX_SIZE){
-return "Stack Overflow";
-}
-this.stackControl.push(number);
-return this.stackControl;
-};
+  console.log("Estoy aqui");
+    console.log(this.stackControl.length,this.MAX_SIZE)
+  if (this.canPush()){
+    this.stackControl.push(number);
+    console.log(this.stackControl.length);
+    return this.stackControl;
+    }else{
+      return "Stack Overflow";
+    }
+  }
 
 
 StackDataStructure.prototype.pop = function() {
