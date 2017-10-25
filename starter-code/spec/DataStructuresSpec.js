@@ -1,5 +1,8 @@
+
 describe("Stack", function() {
   var stack;
+
+    });
 
   beforeEach (function() {
     stack = new StackDataStructure();
@@ -15,7 +18,7 @@ describe("Stack", function() {
     });
   });
 
-  describe ("Stack methods", function () {
+ describe ("Stack methods", function () {
     it ("Should has a method to check if the current stack is empty", function () {
       expect(typeof(stack.isEmpty)).toBe('function');
     });
@@ -55,7 +58,7 @@ describe("Stack", function() {
 
       expect(stack.isEmpty()).toBe(false);
     });
-
+//
     it ("Should return the stack when an element is inserted", function () {
       expect(stack.push(19)).toEqual([19]);
     });
@@ -92,7 +95,7 @@ describe("Stack", function() {
       expect(stack.pop()).toBe('Stack Underflow');
     });
   });
-});
+// });
 
 describe("Queues", function() {
   var queue;
@@ -187,5 +190,5 @@ describe("Queues", function() {
     it ("Should return 'Queue Underflow' if there are no elements in the queue", function () {
       expect(queue.dequeue()).toBe('Queue Underflow');
     });
-  });
+});
 });
