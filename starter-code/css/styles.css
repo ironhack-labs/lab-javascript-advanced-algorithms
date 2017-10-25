@@ -1,26 +1,54 @@
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .stack-container {
-  background-color: blue;
-  height: 720px;
   max-width: 50%;
   text-align: center;
 }
 
 .stack-item {
-  height: 50px;
-  /*background-color: green;*/
-  margin-bottom: 10px;
-  border: 1px solid #000;
+  padding: 35px;
+  background-color: #EDEDED;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.btn-holder {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  align-content: center;
+  margin: 0 auto 50px;
 }
 
 .btn {
-  margin-bottom: 2rem;
   font-size: 20px;
+  width: 40%;
+  padding: 12px 12px;
+  outline: none;
 }
 
+.btn:active:focus,
+.btn:focus{
+  outline: none;
+}
+
+
 .is-selected {
-  background-color: red;
+  background-color: #23ABED;
+}
+
+.input-text {
+  padding: 10px;
+}
+
+.input-text.form-control {
+  width: 80%;
+  padding: 15px;
+  height: auto;
+  font-size: 16px;
+  margin: 0 auto 30px;
 }
