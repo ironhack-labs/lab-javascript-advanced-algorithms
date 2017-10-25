@@ -30,10 +30,11 @@ StackDataStructure.prototype.push = function(arg){
 };
 
 StackDataStructure.prototype.pop = function(){
-  var lastElement = this.stackControl.length -1;
-  if(lastElement == -1){
+  var noElement = this.stackControl.length;
+  if(noElement == 0){
     return 'Stack Underflow';
   } else{
+    var lastElement = this.stackControl.length -1;
     return this.stackControl.pop(lastElement);
   }
 };
