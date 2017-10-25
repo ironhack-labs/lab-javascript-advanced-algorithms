@@ -23,7 +23,7 @@ QueueDataStructure.prototype.enqueue = function(arg){
   if(this.queueControl.length == this.MAX_SIZE){
     return 'Queue Overflow';
   } else{
-    this.queueControl.unshift(arg);
+    this.queueControl.push(arg);
     return this.queueControl;
   }
 };
@@ -33,6 +33,7 @@ QueueDataStructure.prototype.dequeue = function(){
   if(noElements == 0){
     return 'Queue Underflow';
   } else{
+    this.queueControl.shift();
     var firstElement = this.queueControl.length -1;
     return this.queueControl[firstElement];
   }
