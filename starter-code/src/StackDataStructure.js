@@ -10,11 +10,12 @@ StackDataStructure.prototype.isEmpty = function() {
   return this.stackControl.length == 0 ? true : false;
 };
 
-// Eval if it can push new item in the stack
+// Eval if it can add new item in the stack
 StackDataStructure.prototype.canPush = function() {
   return this.stackControl.length < this.MAX_SIZE ? false : true;
 };
 
+// Add a new element in the Stack
 StackDataStructure.prototype.push = function(element) {
   var msg = "Stack Overflow";
 
@@ -26,6 +27,7 @@ StackDataStructure.prototype.push = function(element) {
   }
 };
 
+// Delete a element in the Stack
 StackDataStructure.prototype.pop = function() {
   var msg = "Stack Underflow";
   return this.isEmpty() ? msg :this.stackControl.pop();

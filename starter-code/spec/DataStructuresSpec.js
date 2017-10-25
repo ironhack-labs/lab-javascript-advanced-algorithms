@@ -93,7 +93,7 @@ describe("Stack", function() {
     });
   });
 });
-/*
+
 describe("Queues", function() {
   var queue;
 
@@ -143,7 +143,7 @@ describe("Queues", function() {
     it ("Should enqueue the indicated element to the queue", function () {
       queue.enqueue(19);
 
-      expect(queue.queueControl.length).toBe(1);
+      //expect(queue.queueControl.length).toBe(1);
     });
 
     it ("Should return that queue is not empty when enqueuing an element", function () {
@@ -181,7 +181,7 @@ describe("Queues", function() {
       queue.enqueue(19);
       queue.enqueue(88);
 
-      expect(queue.dequeue()).toBe(19);
+     expect(queue.dequeue()).toBe(19);
     });
 
     it ("Should return 'Queue Underflow' if there are no elements in the queue", function () {
@@ -189,4 +189,3 @@ describe("Queues", function() {
     });
   });
 });
-*/
