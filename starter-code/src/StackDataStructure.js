@@ -4,17 +4,11 @@ function StackDataStructure () {
 }
 
 StackDataStructure.prototype.isEmpty = function() {
-  if (this.stackControl.length == 0){
-    return true;
-  }
-  return false;
- }
+  return this.stackControl.length == 0;
+}
 
 StackDataStructure.prototype.canPush = function() {
-  if (this.stackControl.length < this.MAX_SIZE) {
-    return true;
-  }
-  return false;
+  return this.stackControl.length < this.MAX_SIZE;
 }
 
 StackDataStructure.prototype.push = function(num) {
@@ -23,7 +17,6 @@ StackDataStructure.prototype.push = function(num) {
   } else {
     return "Stack Overflow";
   }
-
   return this.stackControl;
 }
 
