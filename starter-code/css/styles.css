@@ -1,0 +1,255 @@
+html {
+  font-size: 18px;
+}
+body {
+  font: 18px/1 "Helvetica Neue", Helvetica, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.hide {
+  display: none;
+}
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+#tabs {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+}
+#tabs a {
+  flex-basis: 50%;
+  font-size: 2rem;
+  text-decoration: none;
+  padding-top: 3vh;
+}
+#stackTab {
+  background: #F8E71C;
+  color: black;
+  padding-left: 10%;
+}
+#queueTab {
+  background: black;
+  color: white;
+  padding-right: 10%;
+  text-align: right;
+}
+section {
+  height: 90vh;
+  left: 0;
+  top: 10vh;
+  position: absolute;
+  width: 100vw;
+}
+#stack {
+  background: #F8E71C;
+}
+#queue {
+  background: black;
+}
+.button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bold;
+  height: 2.666rem;
+  padding: 0 0 .5rem;
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  width: 2.666rem;
+}
+.button:focus {
+  outline: none;
+}
+.button.take {
+  margin-right: 1rem;
+}
+.button.add {
+  margin-left: -1.5rem;
+}
+#stack .button {
+  background: black;
+  color: white;
+}
+#stack .button:disabled {
+  opacity: .2;
+}
+#stack .button:focus {
+  background: #333;
+}
+#queue .button {
+  background: #F8E71C;
+  color: black;
+}
+#queue .button:disabled {
+  opacity: .2;
+}
+#queue .button:focus{
+  background: #FBF89E;
+}
+.element-box {
+  border: none;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-size: .75rem;
+  height: 2.666rem;
+  line-height: 2.666rem;
+  padding: 0 3rem 0 1rem;
+  width: 10rem;
+}
+.element-box:focus {
+  outline: none;
+}
+.container {
+  height: 80vh;
+  position: relative;
+}
+#stackContainer {
+  margin: 0 auto;
+  width: 16rem;
+}
+#queueContainer {
+  margin: 0 auto;
+  max-width: 40rem;
+  width: 100%;
+}
+.wrapper {
+  display: flex;
+  position: absolute;
+  top: 2rem;
+  bottom: 2rem;
+  height: calc(100% - 4rem);
+  width: 100%;
+}
+.wrapper div {
+  flex-basis: calc(12.5% - .5rem);
+  position: relative;
+}
+.wrapper div span {
+  color: #555;
+  font-size: .75rem;
+  text-align: left;
+}
+.wrapper.elements div {
+  background: white;
+  color: black;
+}
+.wrapper.bg div {
+  background: rgba(255,255,255,.3);
+  position: relative;
+}
+#stack .wrapper {
+  flex-direction: column-reverse;
+}
+#stack .wrapper.bg {
+  align-content: stretch;
+}
+#stack .wrapper.elements {
+  justify-content: flex-start;
+}
+#stack .wrapper div {
+  margin-top: .5rem;
+}
+#stack .wrapper div span {
+  bottom: .5rem;
+  left: .5rem;
+  position: absolute;
+}
+#queue .wrapper {
+  flex-direction: row;
+  padding-left: .5rem;
+}
+#queue .wrapper.bg { }
+#queue .wrapper.elements {
+  align-items: stretch;
+}
+#queue .wrapper div {
+  margin-right: .5rem;
+}
+#queue .wrapper div span {
+  top: .5rem;
+  left: 1rem;
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+.msg {
+  position: absolute;
+  color: #F56206;
+  font-family: monospace;
+  font-size: 0.666rem;
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+#stack .msg.overflow {
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#stack .msg.underflow {
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#queue .msg.overflow {
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#queue .msg.underflow {
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.controls {
+  height: 10vh;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-height: 600px) {
+  .wrapper {
+    top: 5rem;
+    bottom: 5rem;
+    height: calc(100% - 10rem);
+  }
+  #stack .msg.overflow {
+    top: 3rem;
+  }
+  #stack .msg.underflow {
+    bottom: 3rem;
+  }
+}
+@media (min-width: 900px) {
+  #queue .msg.overflow {
+    right: -10rem;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #queue .msg.underflow {
+    bottom: auto;
+    left: -10rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
