@@ -1,4 +1,4 @@
-// function init() {
+function init() {
   var stack = new StackDataStructure();
   var item = $(".stack-item");
 
@@ -27,11 +27,9 @@
       console.log('Stack Underflow');
     } else {
       $(".is-selected").first().removeClass("is-selected");
-      $("#input").text() = "";
-
       stack.pop();
     }
   });
-// }
+}
 
-// $(document).ready(init);
+$(document).ready(init);
