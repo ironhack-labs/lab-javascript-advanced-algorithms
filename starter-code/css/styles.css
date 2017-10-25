@@ -1,0 +1,78 @@
+.container-fluid {
+  margin-left: 50px;
+}
+.container-fluid h1{
+  margin-left: 300px;;
+}
+.col-md-6 h2 {
+  margin-left: 20px;
+}
+
+.table {
+  border: 2px solid black;
+  position: absolute;
+  margin: 50px;
+  width: 200px;
+}
+.table2 {
+  border: 2px solid black;
+  position: absolute;
+  margin: 50px;
+  height: 200px;
+}
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 40px;
+  border: 2px solid black;
+}
+.item2 {
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 40px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
+}
+.stackAdd {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: green;
+  border-width: 0px;
+  color: white;
+}
+.stackAdd2 {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: green;
+  border-width: 0px;
+  color: white;
+}
+.stackRemove {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: red;
+  border-width: 0px;
+  color: white;
+}
+.stackRemove2 {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: red;
+  border-width: 0px;
+  color: white;
+}
+.stackColor {
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 40px;
+  border: 2px solid black;
+}
