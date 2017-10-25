@@ -9,6 +9,16 @@
 	],
 "creatorBuild": "25900",
 "files": {
+	"\/css\/styles-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/styles-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/styles.css": {
 		"aP": 1,
 		"bl": 0,
