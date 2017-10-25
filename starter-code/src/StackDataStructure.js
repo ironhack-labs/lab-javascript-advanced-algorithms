@@ -6,7 +6,6 @@ function StackDataStructure () {
 };
 
 
-
 StackDataStructure.prototype.isEmpty = function() {
  return this.stackControl.length === 0;
 
