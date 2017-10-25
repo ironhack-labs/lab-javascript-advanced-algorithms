@@ -5,10 +5,10 @@ function StackDataStructure () {
 }
 
 StackDataStructure.prototype.isEmpty = function(){
-  if(this.stackControl.length > 0){
-    return false;
-  } else{
+  if(this.stackControl.length == 0){
     return true;
+  } else{
+    return false;
   }
 };
 
