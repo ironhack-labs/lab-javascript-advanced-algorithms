@@ -1,0 +1,41 @@
+.table {
+  border: 2px solid black;
+  position: absolute;
+  margin:50px;
+  width: 200px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 40px;
+  border: 2px solid black;
+}
+
+.stackAdd {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: green;
+  border-width: 0px;
+  color: white;
+}
+
+.stackRemove {
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: red;
+  border-width: 0px;
+  color: white;
+}
+
+.stackColor {
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 40px;
+  border: 2px solid black;
+}
