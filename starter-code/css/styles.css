@@ -1,0 +1,52 @@
+.container {
+  width: 550px;
+  border: 2px solid #EDEDED;
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.stack-container{
+  width: 500px;
+  height: auto;
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+.stack {
+  width: 100%;
+  height: 50px;
+  padding: 35px;
+  background-color: #EDEDED;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  margin: 10px auto;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  margin: 10px auto;
+}
+
+
+.btn:active:focus,
+.btn:focus{
+  outline: none;
+}
+
+.selected {
+  background-color: #95c11f;
+}
+
+.input-text {
+  padding: 10px;
+}
+
+.input-text.form-control {
+  padding: 10px;
+  height: auto;
+  font-size: 16px;
+  margin: 0 auto 20px;
+}
