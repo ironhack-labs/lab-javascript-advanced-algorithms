@@ -1,0 +1,32 @@
+#stack, #queue {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.element {
+  width: 300px;
+  padding-top: .5em;
+  height: 40px;
+  background-color: grey;
+  border: 1px solid white;
+}
+
+input, button {
+  margin-bottom: .5em;
+}
+
+.overflow, .underflow {
+  background-color: tomato;
+}
+
+.hidden {
+  display: none;
+}
+
+.filled {
+  background-color: lightblue;
+  transition: background-color .3s ease;
+}
