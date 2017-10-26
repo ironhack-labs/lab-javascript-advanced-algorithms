@@ -1,8 +1,6 @@
 function StackDataStructure() {
   this.stackControl = [];
-  this.MAX_SIZE = 100;
-  // check if we can add new elements to the stack (to avoid the stack overflow)
-  // check if we can take an element from the stack (to avoid the stack underflow)
+  this.MAX_SIZE = 3;
 }
 
 StackDataStructure.prototype.isEmpty = function() {
@@ -14,24 +12,22 @@ StackDataStructure.prototype.isEmpty = function() {
 };
 
 StackDataStructure.prototype.canPush = function() {
-  return this.stackControl < this.MAX_SIZE;
+  return this.stackControl.length < this.MAX_SIZE;
 };
 
 StackDataStructure.prototype.push = function(item) {
-  if (this.stackControl.length === this.MAX_SIZE) {
-    return "Stack Overflow";
-  } else {
-    this.stackControl.push(item);
+  if (this.canPush()) {
+    this.stackControl.push(parseInt(item));
     return this.stackControl;
+  } else {
+    return "Stack Overflow";
   }
 };
 
 StackDataStructure.prototype.pop = function() {
-  if (this.stackControl.length === 0) {
+  if (this.isEmpty()) {
     return "Stack Underflow";
   } else {
-    const lastValueInStack = this.stackControl[this.stackControl.length - 1];
-    this.stackControl.pop();
-    return lastValueInStack;
+    return this.stackControl.pop();
   }
 };
