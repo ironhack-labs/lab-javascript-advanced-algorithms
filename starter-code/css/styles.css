@@ -3,8 +3,9 @@ h1 {
 }
 
 .stack-container {
-  max-width: 50%;
+  max-width: 100%;
   text-align: center;
+  margin: auto;
 }
 
 .stack-item {
@@ -59,4 +60,10 @@ h1 {
   background-color: #F8E1E1;
   color: #F04C4D;
   box-shadow: inset 0 0 1px #F04C4D;
+}
+
+@media screen and (min-width: 768px) {
+  .stack-container {
+    max-width: 50%;
+  }
 }
