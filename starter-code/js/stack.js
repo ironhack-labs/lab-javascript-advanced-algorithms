@@ -13,7 +13,13 @@ stackAdd.addEventListener("click", () => {
     focusInput("input-stack");
   } else {
     stack.push(stackInput.value);
-    createChildAndAppendChildToParent("div", stackItems, stackInput.value);
+    createChildAndAppendChildToParent(
+      "div",
+      stackItems,
+      stackInput.value,
+      stack,
+    );
+    updateStats();
   }
   stackInput.value = "";
   focusInput("input-stack");
@@ -23,4 +29,5 @@ stackTake.addEventListener("click", () => {
   stack.pop();
   removeLastChildFromParent(stackItems, "stack");
   focusInput("input-stack");
+  updateStats();
 });
