@@ -1,0 +1,14 @@
+.small-width {
+  max-width: 560px;
+}
+
+.inner-margins {
+  margin: 1% 0;
+  max-width: 100%;
+}
+
+.grey-box {
+  background-color: lightgrey;
+  padding: 2%;
+  min-height: 50px;
+}
