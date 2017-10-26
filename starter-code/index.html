@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
+  <title>Stack &amp; Queue</title>
+  <link href="./css/styles.css" rel="stylesheet">
+  <script src="./lib/jquery-3.1.1.min.js"></script>
   <script src="js/interface.js"></script>
 </head>
+
 <body>
   <nav id="tabs">
-    <a href="#stack" id="stackTab" class="disabled">Stack</a>
-    <a href="#queue" id="queueTab">Queue</a>
+    <a href="#stack" id="stackTab">Stack</a>
+    <a href="#queue" id="queueTab" class="disabled">Queue</a>
   </nav>
-  <section id="stack">
+  <section id="stack" class="hide">
     <div id="stackContainer" class="container">
       <div class="wrapper bg">
         <div></div>
@@ -25,7 +27,12 @@
         <div></div>
         <div></div>
       </div>
-      <div class="wrapper elements"></div>
+      <div class="wrapper elements">
+        <div><span>18</span></div>
+        <div><span>24</span></div>
+        <div><span>36</span></div>
+        <div><span>Kander</span></div>
+      </div>
       <div class="msg overflow hide">Stack Overflow!</div>
       <div class="msg underflow hide">Stack Underflow!</div>
     </div>
@@ -36,7 +43,7 @@
       <button class="button add" type="button" id="stackAdd">+</button>
     </div>
   </section>
-  <section id="queue" class="hide">
+  <section id="queue">
     <div id="queueContainer" class="container">
       <div class="wrapper bg">
         <div></div>
@@ -48,7 +55,16 @@
         <div></div>
         <div></div>
       </div>
-      <div class="wrapper elements"></div>
+      <div class="wrapper elements">
+        <div><span>hola</span></div>
+        <div><span>Como</span></div>
+        <div><span>Estas</span></div>
+        <div><span>null</span></div>
+        <div><span></span></div>
+        <div><span></span></div>
+        <div><span></span></div>
+        <div><span></span></div>
+      </div>
       <div class="msg overflow hide">Queue Overflow!</div>
       <div class="msg underflow hide">Queue Underflow!</div>
     </div>
@@ -58,11 +74,10 @@
       <button class="button add" type="button" id="queueAdd">+</button>
     </div>
   </section>
-
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
-
 </body>
+
 </html>
