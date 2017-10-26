@@ -12,11 +12,12 @@
 
 .stack-element {
   width: 100%;
-  padding: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid white;
   background-color: lightgrey;
-  display: flex;
-  justify-content: center;
 
 }
 
@@ -27,10 +28,13 @@
 }
 
 .queue-element {
-  width: 30px;
+  width: 100%;
   height: 100%;
   border: 1px solid white;
   background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   writing-mode: vertical-lr;
 }
 
@@ -59,4 +63,9 @@
   justify-content: center;
   display: none;
 
+}
+
+#queue-container {
+  width: 350px;
+  height: 450px;
 }
