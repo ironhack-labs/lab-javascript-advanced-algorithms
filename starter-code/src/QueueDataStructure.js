@@ -15,10 +15,19 @@ QueueDataStructure.prototype.canEnqueue = function(){
 };
 
 QueueDataStructure.prototype.enqueue = function(a){
+  if (this.canEnqueue()) {
   this.queueControl.unshift(a);
-  return this.queueControl.length < this.MAX_SIZE;
+  return this.queueControl;
+}else{
+  return 'Queue Overflow';
+}
 };
 
 QueueDataStructure.prototype.dequeue = function(){
-  return Underflow;
+  if (this.isEmpty()) {
+    return 'Queue Underflow';
+  } else {
+    this.queueControl.reverse();
+    return this.queueControl.shift();
+}
  };
