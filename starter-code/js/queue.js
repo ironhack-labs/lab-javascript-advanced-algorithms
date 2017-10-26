@@ -1,5 +1,6 @@
 var queue;
 var queueElement;
+var queueElementTxt;
 var qTakeBtn = $("#queueTake");
 var qAddBtn = $("#queueAdd");
 var qOverflowAlert = $("#queue .overflow");
@@ -19,7 +20,12 @@ $(document).ready(function() {
   queue = new QueueDataStructure();
 
   $("#queueAdd").on('click', function() {
-    if (queue.enqueue($('#queueInput').val())) {
+    if ($('#queueInput').val() == '') {
+      queueElementTxt = queue.queueControl.length + 1;
+    } else {
+      queueElementTxt = $('#queueInput').val();
+    }
+    if (queue.enqueue(queueElementTxt)) {
       enqueueElement();
     }
     if (queue.queueControl.length == queue.MAX_SIZE) {

@@ -1,5 +1,6 @@
 var stack;
 var stackElement;
+var stackElementTxt;
 var sTakeBtn = $("#stackTake");
 var sAddBtn = $("#stackAdd");
 var sOverflowAlert = $("#stack .overflow");
@@ -18,7 +19,12 @@ $(document).ready(function() {
   stack = new StackDataStructure();
 
   $("#stackAdd").on('click', function() {
-    if (stack.push($('#stackInput').val())) {
+    if ($('#stackInput').val() == '') {
+      stackElementTxt = stack.stackControl.length + 1;
+    } else {
+      stackElementTxt = $('#stackInput').val();
+    }
+    if (stack.push(stackElementTxt)) {
       pushElement();
     }
     if (stack.stackControl.length == stack.MAX_SIZE) {
