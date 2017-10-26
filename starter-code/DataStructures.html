@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
+  <title>DataStructures | Stacks &amp; Queues</title>
 </head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
 
-  </section>
+<body>
+  <main id="container">
+
+    <h1 id="page-title">Abstract Data Types</h1>
+
+    <section id="stack">
+      <h2>Stack</h2>
+      <input type="text" id="input-stack">
+      <button class="btn" id="btn-add-to-stack">Add</button>
+      <button class="btn" id="btn-take-from-stack">Take</button>
+      <div id="stack-items">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </section>
+
+    <section id="queue">
+      <h2>Queue</h2>
+      <input type="text" id="input-queue">
+      <button class="btn" id="btn-add-to-queue">Add</button>
+      <button class="btn" id="btn-take-from-queue">Take</button>
+      <div id="queue-items">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </section>
+
+  </main>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>
