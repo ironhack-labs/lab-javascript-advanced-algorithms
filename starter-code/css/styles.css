@@ -1,0 +1,48 @@
+.btn {
+  margin: 10px 0 2px 0;
+  width: 100%;
+}
+
+.take {
+  background-color: #b74343;
+  border: 1px solid #b74343;
+}
+
+.take:hover {
+  background-color: #a33a3a;
+  border: 1px solid #a33a3a;
+}
+
+.cells {
+  background-color: #d8d8d8;
+  height: 50px;
+  pointer-events: none;
+}
+
+.cells-queue {
+  background-color: #d8d8d8;
+  height: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
+  pointer-events: none;
+
+}
+.queue{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  width: 100%;
+}
+
+h1, h2 {
+  font-weight: 500;
+  padding: 10px 0;
+  text-align: center;
+
+}
+
+.active{
+  background-color: #3991ba;
+}

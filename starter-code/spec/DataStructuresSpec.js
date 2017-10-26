@@ -97,7 +97,7 @@ describe("Stack", function() {
 describe("Queues", function() {
   var queue;
 
-  beforeEach(function() {
+  beforeEach (function() {
     queue = new QueueDataStructure();
   });
 
@@ -130,7 +130,7 @@ describe("Queues", function() {
   });
 
   describe ("Queue methods default values", function () {
-    it ("Queue has an empty stack", function () {
+    it ("Should has an empty queue", function () {
       expect(queue.isEmpty()).toBe(true);
     });
 
