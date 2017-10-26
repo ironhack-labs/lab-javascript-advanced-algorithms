@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+ul {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  transition: 0.15s background-color ease-in-out;
+  margin-right: 15px;
+}
+
+button:hover {
+  color: white;
+  background-color: tomato;
+}
+
+.container {
+  display: flex;
+}
+
+.controls {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.controls input {
+  margin-bottom: 1em;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+}
+
+.controls .btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.queue, .stack {
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin: 2em;
+}
+
+.queue {
+  width: 300px;
+  height: 500px;
+  background-color: #d2cecf;
+  border-radius: 4px;
+}
+
+.stack {
+  width: 300px;
+  height: 500px;
+  background-color: #d2cecf;
+  border-radius: 4px;
+}
+
+.active {
+  background-color: #69f76f;
+}
+
+.stack .item, .queue .item {
+  width: 97%;
+  margin: 5px auto;
+  height: 26px;
+  border-radius: 4px;
+  padding: 18px 0px;
+  vertical-align: middle;
+  line-height: 1px;
+}
+
+.queue .item .active {
+  background-color: #69b5f7;
+}
+
+.hidden {
+  background-color: gray;
+}

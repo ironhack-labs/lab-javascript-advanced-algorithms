@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
@@ -7,9 +8,51 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+
+    <div class="stack">
+      <div class="controls">
+        <input class="recoger" type="text" placeholder="Stack text (optional)" autofocus></input><br>
+        <button class="btn btn-success add">Add</button>
+        <button class="btn btn-danger remove">Take</button>
+      </div>
+      <ul>
+        <div class="stack-overflow"></div>
+        <!-- li amount created by stack.js (not implemented yet, lack of time)-->
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <div class="stack-underflow"></div>
+      </ul>
+    </div>
+
+    <div class="queue">
+      <div class="controls">
+        <input class="recoger" type="text" placeholder="Queue text (optional)"></input><br>
+        <button class="btn btn-success add">Add</button>
+        <button class="btn btn-danger remove">Take</button>
+      </div>
+      <ul>
+        <div class="stack-overflow"></div>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <li class="item not-piled"></li>
+        <div class="stack-underflow"></div>
+      </ul>
+    </div>
 
   </section>
 
@@ -18,4 +61,5 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>

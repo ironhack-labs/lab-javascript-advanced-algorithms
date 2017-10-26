@@ -93,19 +93,19 @@ describe("Stack", function() {
     });
   });
 });
+//
+    describe("Queues", function() {
+      var queue;
 
-describe("Queues", function() {
-  var queue;
-
-  beforeEach(function() {
-    queue = new QueueDataStructure();
-  });
-
+      beforeEach(function() {
+        queue = new QueueDataStructure();
+      });
+//
   describe ("Queue properties", function () {
     it ("Should has an array to add the elements to the queue", function () {
       expect(Array.isArray(queue.queueControl)).toBe(true);
     });
-
+//
     it ("Should has a max number of items to avoid the queue overflow", function () {
       expect(typeof(queue.MAX_SIZE)).toBe('number');
     });
@@ -119,16 +119,16 @@ describe("Queues", function() {
     it ("Should has a method to check if we can enqueue an element into the queue", function () {
       expect(typeof(queue.canEnqueue)).toBe('function');
     });
-
+//
     it ("Should has a method to enqueue elements into the queue", function () {
       expect(typeof(queue.enqueue)).toBe('function');
     });
-
+//
     it ("Should has a method to dequeue from the queue", function () {
       expect(typeof(queue.dequeue)).toBe('function');
     });
   });
-
+//
   describe ("Queue methods default values", function () {
     it ("Queue has an empty stack", function () {
       expect(queue.isEmpty()).toBe(true);
@@ -187,5 +187,5 @@ describe("Queues", function() {
     it ("Should return 'Queue Underflow' if there are no elements in the queue", function () {
       expect(queue.dequeue()).toBe('Queue Underflow');
     });
-  });
+});
 });
