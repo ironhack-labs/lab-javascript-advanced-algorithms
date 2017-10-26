@@ -9,8 +9,44 @@
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
+    <h1 class="text-center">Abstract Data Types</h1>
 
+    <div class="row">
+      <div class="col-md-5">
+        <div class="row">
+          <h2 class="text-center">Stack</h2>
+          <input type="text" id="stack-num" value="" placeholder="Add element to the stack" class="col-md-12">
+          <button type="button" id="add-num-stack" class="btn btn-primary col-md-6">Add</button>
+          <button type="button" id="take-num-stack" class="btn btn-danger col-md-6">Take</button>
+        </div>
+        <div id="stack" class="row">
+          <div class="well"></div>
+          <div class="well"></div>
+          <div class="well"></div>
+          <div class="well"></div>
+        </div>
+      </div>
+
+      <div class="col-md-2"></div>
+
+      <div class="col-md-5">
+        <div class="row">
+          <h2 class="text-center">Queues</h2>
+          <input type="text" name="queue-element" value="" placeholder="Add element to the queue" class="col-md-12">
+          <button type="button" name="queue-add" class="btn btn-primary col-md-6">Add</button>
+          <button type="button" name="queue-take" class="btn btn-danger col-md-6">Take</button>
+        </div>
+
+
+        <div class="queue row">
+          <div class="well"></div>
+          <div class="well"></div>
+          <div class="well"></div>
+          <div class="well"></div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
