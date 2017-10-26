@@ -2,7 +2,7 @@
 
 # JS | Advanced Algorithms
 
-## Learning Goals
+## Learning Goals -changes
 
 In this exercise, you will be able to:
 
