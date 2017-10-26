@@ -22,7 +22,7 @@ StackDataStructure.prototype.push = function(item) {
     return "Stack Overflow";
   } else {
     this.stackControl.push(item);
-    return [item];
+    return this.stackControl;
   }
 };
 
