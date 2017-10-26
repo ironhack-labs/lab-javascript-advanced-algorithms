@@ -22,15 +22,15 @@ describe("Stack", function() {
 
     it ("Should has a method to check if we can push elements into the stack", function () {
       expect(typeof(stack.canPush)).toBe('function');
-    });
+     });
 
-    it ("Should has a method to push elements into the stack", function () {
-      expect(typeof(stack.push)).toBe('function');
-    });
+     it ("Should has a method to push elements into the stack", function () {
+       expect(typeof(stack.push)).toBe('function');
+     });
 
     it ("Should has a method to take elements from the stack", function () {
-      expect(typeof(stack.pop)).toBe('function');
-    });
+       expect(typeof(stack.pop)).toBe('function');
+   });
   });
 
   describe ("Stack methods default values", function () {
@@ -66,7 +66,7 @@ describe("Stack", function() {
 
       expect(stack.stackControl).toEqual([19, 88]);
     });
-
+    //
     it ("Should return 'Stack Overflow' if the stack is full", function () {
       stack.MAX_SIZE = 1;
       stack.push(19);
