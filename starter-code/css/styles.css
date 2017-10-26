@@ -1,0 +1,29 @@
+.tableStack {
+  border: 2px solid red;
+  position: absolute;
+  margin: 50px;
+}
+.StackItem {
+display: flex;
+flex-wrap: wrap;
+width: 200px;
+height: 40px;
+border: 1px solid black;
+}
+
+.stackColor {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+.stackAdd {
+
+}
+
+.stackRemove {
+
+}
