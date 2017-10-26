@@ -26,8 +26,9 @@ function init() {
     if(stack.isEmpty()) {
       console.log('Stack Underflow');
     } else {
-      $(".is-selected").first().removeClass("is-selected");
+      $(".is-selected").first().removeClass("is-selected").contents().remove();
       stack.pop();
+
     }
   });
 }
