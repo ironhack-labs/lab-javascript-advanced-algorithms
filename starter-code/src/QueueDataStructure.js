@@ -20,7 +20,8 @@ QueueDataStructure.prototype.canEnqueue = function() {
 QueueDataStructure.prototype.enqueue = function(e) {
   if (this.canEnqueue()) {
   this.queueControl.push(e);
-  this.queueControl.reverse();
+  // this.queueControl.reverse(); <-- I will use shift to add an element insteed of pop,
+  //that's why I won't put the reverse.
     return this.queueControl;
   } else {
     return "Queue Overflow";
@@ -28,11 +29,11 @@ QueueDataStructure.prototype.enqueue = function(e) {
 };
 
 //this method allow us to dequeue from the queue
-QueueDataStructure.prototype.dequeue = function(e) {
+QueueDataStructure.prototype.dequeue = function() {
      if (this.isEmpty()) {
      return 'Queue Underflow';
    } else {
-     this.queueControl.shift(e);
+     this.queueControl.shift();
      return this.queueControl[0];
    }
 };

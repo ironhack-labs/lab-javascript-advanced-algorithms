@@ -17,7 +17,19 @@
   background-color: #d8d8d8;
   height: 50px;
   pointer-events: none;
-  width: 100%;
+}
+
+.cells-queue {
+  background-color: #d8d8d8;
+  height: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
+  pointer-events: none;
+
+}
+.queue{
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
@@ -25,6 +37,12 @@
 }
 
 h1, h2 {
+  font-weight: 500;
   padding: 10px 0;
   text-align: center;
+
+}
+
+.active{
+  background-color: #3991ba;
 }

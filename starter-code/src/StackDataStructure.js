@@ -31,7 +31,6 @@ StackDataStructure.prototype.push = function(e) {
 
 //This method let us delete elements from the stack
 StackDataStructure.prototype.pop = function() {
-  this.stackControl[this.stackControl.length - 1];
   if (this.isEmpty()) {
     return 'Stack Underflow';
   } else {
