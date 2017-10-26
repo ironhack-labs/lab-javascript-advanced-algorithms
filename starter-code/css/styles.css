@@ -1,0 +1,48 @@
+
+#maincontainer{
+  margin: 0;
+
+}
+
+
+#stack{
+  display:flex;
+  flex-direction: column;
+  width:300px;
+}
+
+.stackElement{
+  height: 50px;
+  background-color: light-grey;
+  width: auto;
+  border: 2px solid black;
+}
+#add{
+  background-color: green;
+  color: white;
+  height: 50px;
+  width: auto;
+  margin: 5px;
+}
+#remove{
+  background-color: red;
+  color: white;
+  height: 50px;
+  width: auto;
+  margin: 5px;
+}
+#addElemnt{
+  height: 50px;
+}
+.blue{
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+.red{
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
