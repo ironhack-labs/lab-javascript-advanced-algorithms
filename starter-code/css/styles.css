@@ -9,3 +9,37 @@ h2 {
 .btn {
   margin: 15px 0;
 }
+
+
+.btn{
+ width: 30%;
+ }
+
+ .colorAdd{
+   background-color: #4da6ff;
+ }
+
+ .colorTake{
+   background-color: #d1d1e0;
+ }
+
+ .colorError{
+   background-color: #ffb380;
+   border: 2px solid: #ff6600;
+ }
+
+ .stackpile {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .stack {
+    height: 40px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: #D0D1D4;
+    border: 1px solid #949596;
+    border-radius: 4px;
+  }
