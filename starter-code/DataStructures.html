@@ -2,20 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
+  <script src="js/interface.js"></script>
 </head>
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <nav id="tabs">
+    <a href="#stack" id="stackTab" class="disabled">Stack</a>
+    <a href="#queue" id="queueTab">Queue</a>
+  </nav>
+  <section id="stack">
+    <div id="stackContainer" class="container">
+      <div class="wrapper bg">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="wrapper elements"></div>
+      <div class="msg overflow hide">Stack Overflow!</div>
+      <div class="msg underflow hide">Stack Underflow!</div>
+    </div>
 
+    <div class="controls">
+      <button class="button take" type="button" id="stackTake" disabled>&ndash;</button>
+      <input class="element-box" type="text" id="stackInput" placeholder="add to the stack">
+      <button class="button add" type="button" id="stackAdd">+</button>
+    </div>
+  </section>
+  <section id="queue" class="hide">
+    <div id="queueContainer" class="container">
+      <div class="wrapper bg">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="wrapper elements"></div>
+      <div class="msg overflow hide">Queue Overflow!</div>
+      <div class="msg underflow hide">Queue Underflow!</div>
+    </div>
+    <div class="controls">
+      <button class="button take" type="button" id="queueTake" disabled>&ndash;</button>
+      <input class="element-box" type="text" id="queueInput" placeholder="add to the queue">
+      <button class="button add" type="button" id="queueAdd">+</button>
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+
 </body>
 </html>

@@ -70,6 +70,9 @@ section {
 .button:focus {
   outline: none;
 }
+.button:disabled {
+  cursor: default;
+}
 .button.take {
   margin-right: 1rem;
 }
@@ -81,7 +84,7 @@ section {
   color: white;
 }
 #stack .button:disabled {
-  opacity: .2;
+  background: #C7B917;
 }
 #stack .button:focus {
   background: #333;
@@ -91,11 +94,11 @@ section {
   color: black;
 }
 #queue .button:disabled {
-  opacity: .2;
+  background: #312E09;
 }
-#queue .button:focus{
+/*#queue .button:focus{
   background: #FBF89E;
-}
+}*/
 .element-box {
   border: none;
   border-top-left-radius: 1rem;
@@ -115,7 +118,8 @@ section {
 }
 #stackContainer {
   margin: 0 auto;
-  width: 16rem;
+  max-width: 32rem;
+  width: 90%;
 }
 #queueContainer {
   margin: 0 auto;
@@ -165,8 +169,9 @@ section {
   position: absolute;
 }
 #queue .wrapper {
-  flex-direction: row;
+  flex-direction: row-reverse;
   padding-left: .5rem;
+  max-height: 32rem;
 }
 #queue .wrapper.bg { }
 #queue .wrapper.elements {
@@ -222,10 +227,14 @@ section {
 }
 
 @media (min-height: 600px) {
-  .wrapper {
+  #stack .wrapper {
     top: 5rem;
     bottom: 5rem;
     height: calc(100% - 10rem);
+  }
+  #queue .wrapper {
+    top: 50%;
+    transform: translateY(-50%);
   }
   #stack .msg.overflow {
     top: 3rem;

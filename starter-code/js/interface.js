@@ -1,5 +1,11 @@
-function init(){
-	// tabs
+function disable(e) {
+  $(e).prop('disabled', true);
+}
+function enable(e) {
+  $(e).prop('disabled', false);
+}
+
+$(document).ready(function() {
   $('#tabs a').on('click', function(e) {
     if ($($(this).attr('href')).hasClass('hide')) {
       $($(this).attr('href')).toggleClass('hide');
@@ -7,6 +13,4 @@ function init(){
       $('#tabs a').toggleClass('disabled');
     }
   });
-};
-
-$(document).ready(init);
+});
