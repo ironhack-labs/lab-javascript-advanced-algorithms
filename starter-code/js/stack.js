@@ -1,0 +1,3 @@
+function StackDataStructure() {
+  this.stackControl = [];
+}
