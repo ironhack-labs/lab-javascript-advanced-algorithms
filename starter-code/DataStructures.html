@@ -8,6 +8,9 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
+  <script>
+    var counter = 0;
+  </script>
 </head>
 
 <body>
@@ -19,10 +22,10 @@
         <input type="text" class="form-control" id="book">
       </div>
       <div class="col-lg-6 bouton">
-        <button type="button" class="btn btn-success add">Add</button>
+        <button type="button" onclick="counter++" class="btn btn-success add">Add</button>
       </div>
       <div class="col-lg-6 bouton">
-        <button type="button" class="btn btn-danger take">Take</button>
+        <button type="button" onclick="counter--" class="btn btn-danger take">Take</button>
       </div>
     </div>
     <div class="books col-lg-9">
