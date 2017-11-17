@@ -1,0 +1,17 @@
+.active {
+  background-color: lightblue;
+}
+.btn {
+  width: 100%;
+}
+.books {
+  margin-top: 50px;
+}
+.bouton {
+  margin-top: 25px;
+}
+body > section > div.books.col-lg-9 > div.well.well-lg.active > p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+}
