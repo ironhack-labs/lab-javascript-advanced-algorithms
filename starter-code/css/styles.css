@@ -1,0 +1,29 @@
+
+
+
+.element {
+  height: 50px;
+  width: 200px;
+  border: 1px solid black;
+  margin: 2px 10px;
+}  
+
+.off {  
+your input here  background-color: #ffffe6;
+  color: black;
+}
+
+.on {
+  background-color: green;
+  color: black;
+}
+
+/*#stack {
+  display: flex;
+  flex-direction: column-reverse;
+}*/
+
+#queue, #stack {
+  display: flex;
+  flex-direction: column;
+}
