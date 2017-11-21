@@ -28,7 +28,7 @@ describe("Stack", function() {
       expect(typeof(stack.push)).toBe('function');
     });
 
-    it ("Should has a method to take elements from the stack", function () {
+it ("Should has a method to take elements from the stack", function () {
       expect(typeof(stack.pop)).toBe('function');
     });
   });
