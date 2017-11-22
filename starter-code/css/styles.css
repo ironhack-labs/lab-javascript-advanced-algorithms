@@ -1,0 +1,55 @@
+h2{
+    margin-left: -15px;
+}
+
+.btn{
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: white;
+}
+
+.add{
+    background-color: rgb(12, 189, 12);
+}
+
+.take{
+    background-color: rgb(201, 13, 13);
+}
+
+#elements{
+    margin-top: 30px;
+}
+
+.element{
+    background-color: #96b4db;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word; 
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-top: 2px;
+    min-height: 40px;
+}
+
+.horiz{
+    margin-right: 2px;
+    min-height: 150px;
+}
+
+.limit{
+    background-color: rgba(252, 70, 70, 0.445);
+    color: white;
+    font-weight: bold;
+}
+
+.in{
+    background-color: rgba(32, 204, 32, 0.568);
+    color: white;
+    font-weight: bold;
+}
