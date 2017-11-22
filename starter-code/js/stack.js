@@ -1,34 +1,35 @@
 $(function() {
-  StackDaStr = new StackDataStructure();
-  StackDaStr.MAX_SIZE = 9;
+  stackDaStr = new StackDataStructure();
+  stackDaStr.MAX_SIZE = 9;
   $("#btnAdd").click(function() {
-    if(StackDaStr.push($("#inputValue").val())!=="Stack Overflow"){
-      paintStack(StackDaStr.stackControl,true);
+    if(stackDaStr.push($("#inputValue").val())!=="Stack Overflow"){
+      $("#0stack").removeClass('flow');
+      paintStack(stackDaStr.stackControl);
     }else{
-      alert("Stack Overflow");
+      $("#9stack").val("Stack Overflow");
+      $("#9stack").addClass('flow');
+      $("#9stack").prop('disabled', true);
     }
   });
   $("#btnDelete").click(function() {
-    debugger
-    StackDaStr.pop();
-    // $(".stackItem").val("");
-    paintStack(StackDaStr.stackControl, false);
+    if(stackDaStr.pop()!=="Stack Underflow"){
+      $(".stackItem").val("");
+      $(".stackItem").removeClass('blueBackGround');
+      $(".stackItem").prop('disabled', true);
+      paintStack(stackDaStr.stackControl);
+    }else{
+      $("#0stack").val("Stack Underflow");
+      $("#0stack").addClass('flow');
+      $("#0stack").prop('disabled', true);
+    }
   });
 });
 
-function paintStack(array,isPush) {
-  if(isPush){
+function paintStack(array) {
 
-    for (var i = 0; i < array.length; i++) {
-      $("#" + i + "stack").val(array[i]);
-      $("#" + i + "stack").prop("disabled", false);
-      $("#" + i + "stack").addClass('blueBackGround');
-    }
-  }else{
-    // for (var j = 0; j < array.length; j++) {
-      $("#" + array.length-1 + "stack").val("");
-      $("#" + array.length-1 + "stack").prop("disabled", true);
-      $("#" + array.length-1 + "stack").removeClass('blueBackGround');
-    // }
+  for (var i = 0; i < array.length; i++) {
+    $("#" + i + "stack").addClass('blueBackGround');
+    $("#" + i + "stack").val(array[i]);
+    $("#" + i + "stack").prop('disabled', false);
   }
 }

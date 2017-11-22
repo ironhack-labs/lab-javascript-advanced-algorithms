@@ -1,7 +1,10 @@
+.div-main{
+  display: flex;
+}
 .container{
   display: flex;
   flex-direction: column;
-  width:300px;
+  width:350px;
 }
 
 .blueBackGround{
@@ -9,3 +12,8 @@
   color:white;
   text-align: center;
 }
+.flow{
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  }
