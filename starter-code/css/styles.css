@@ -1,0 +1,11 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width:300px;
+}
+
+.blueBackGround{
+  background-color: rgb(0, 147, 219);
+  color:white;
+  text-align: center;
+}
