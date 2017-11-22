@@ -1,0 +1,19 @@
+.div-main{
+  display: flex;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width:350px;
+}
+
+.blueBackGround{
+  background-color: rgb(0, 147, 219);
+  color:white;
+  text-align: center;
+}
+.flow{
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  }
