@@ -30,10 +30,16 @@ h2{
     font-size: 14px;
     text-align: center;
     vertical-align: middle;
+    word-wrap: break-word; 
     border: 1px solid transparent;
     border-radius: 4px;
     margin-top: 2px;
     min-height: 40px;
+}
+
+.horiz{
+    margin-right: 2px;
+    min-height: 150px;
 }
 
 .limit{

@@ -25,26 +25,26 @@ Stack.prototype.divFlow = function (text) {
 
 Stack.prototype.delDivFlow = function (btn) {
     if (btn === 'take') {
-        $('#elements #limit:last').remove();
-        $('.take').removeClass('disabled').css('pointer-events', 'auto');
+        $('#stack #elements #limit:last').remove();
+        $('#stack .take').removeClass('disabled').css('pointer-events', 'auto');
     } else if (btn === 'add') {
-        $('#elements #limit:first').remove();
-        $('.add').removeClass('disabled').css('pointer-events', 'auto');
+        $('#stack #elements #limit:first').remove();
+        $('#stack .add').removeClass('disabled').css('pointer-events', 'auto');
     }
 }
 
 Stack.prototype.runStackControl = function () {
-    this.stackControl.forEach(function(value, index){
+    this.stackControl.forEach(function (value, index) {
         var child = 8 - index;
-        $('#elements').children(':nth-child('+ child +')').children().addClass('in').html(value);
+        $('#stack #elements').children(':nth-child(' + child + ')').children().addClass('in').html(value);
     });
 }
 
 Stack.prototype.checkStackControl = function (btn) {
-    if(btn === 'take'){
-        $('#elements > .row').children().removeClass('in').html('');
+    if (btn === 'take') {
+        $('#stack #elements > .row').children().removeClass('in').html('');
         this.runStackControl();
-    }else{
+    } else {
         this.runStackControl();
     };
 };
@@ -55,22 +55,21 @@ Stack.prototype.push = function (element) {
         this.delDivFlow('take');
         this.checkStackControl('add');
         $('#stack input').val('');
-        console.log(this.stackControl);
     } else {
-        $('#elements').prepend(this.divFlow('Stack Overflow'));
-        $('.add').addClass('disabled').css('pointer-events', 'none');
+        $('#stack #elements').prepend(this.divFlow('Stack Overflow'));
+        $('#stack .add').addClass('disabled').css('pointer-events', 'none');
     }
 }
 
 Stack.prototype.pop = function () {
     if (this.isEmpty() === true) {
-        $('#elements').append(this.divFlow('Stack Underflow'));
-        $('.take').addClass('disabled').css('pointer-events', 'none');
+        $('#stack #elements').append(this.divFlow('Stack Underflow'));
+        $('#stack .take').addClass('disabled').css('pointer-events', 'none');
     } else {
         this.stackControl.splice(this.stackControl.length - 1, 1);
         this.delDivFlow('add');
         this.checkStackControl('take');
-        console.log(this.stackControl);
+        $('#stack input').val('');
     }
 }
 
