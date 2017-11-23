@@ -8,17 +8,17 @@ QueueDataStructure.prototype.isEmpty = function() {
 QueueDataStructure.prototype.canEnqueue = function() {
   return this.queueControl.length < this.MAX_SIZE;
 };
-QueueDataStructure.prototype.enqueue = function(arg) {
-  if (this.canEnqueue()){
-    this.queueControl.enqueue(arg);
+QueueDataStructure.prototype.enqueue = function(elem) {
+  if (this.canEnqueue() ){
+    this.queueControl.unshift(elem);
     return this.queueControl;
   }else{
-    return "Stack Overflow";}
+    return "Queue Overflow";}
 };
 QueueDataStructure.prototype.dequeue = function() {
   if (this.isEmpty()){
-  return "Stack Underflow";
+  return "Queue Underflow";
 }else{
-  return this.queueControl [this.queueControl.length -1];
+  return this.queueControl.pop();
 }
 };
