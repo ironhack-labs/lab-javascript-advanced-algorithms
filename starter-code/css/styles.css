@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgba(47,79,79,0.2)
+}
+
+.container h1{
+  width: 100%;
+  text-align: center;
+}
+
+.stackStructure {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  float: left;
+  align-self: center;
+  width: auto;
+  margin: 20px 100px;
+  padding: 20px;;
+}
+.stackStructure button, .stackStructure input{
+  margin: 5px;
+  width: 200px;
+}
+.add {
+  background-color: rgba(0,0,255,0.5);
+  border-radius: 2px;
+}
+.take {
+  background-color: rgba(139,0,0,0.5);
+  border-radius: 2px;
+}
+.greyBox{
+  background-color: rgba(47,79,79,0.4);
+  width: 200px;
+  border: 0.5px solid grey;
+  height: 30px;
+  margin: 5px;
+}
+.greBoxes{
+  margin-top: 30px;
+}
+
+.queueStructure {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  float: right;
+  align-self: center;
+  width: auto;
+  margin: 20px 100px;
+  padding: 20px;
+}
+
+.queueStructure button, .queueStructure input{
+  margin: 5px;
+  width: 200px;
+}
