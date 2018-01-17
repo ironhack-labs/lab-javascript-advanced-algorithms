@@ -1,0 +1,25 @@
+
+.elemento-pila{
+
+  height: 40px;
+  background-color: #FFF;
+  border: 1px solid grey;
+
+}
+
+.margen-lateral{
+
+  margin-left: 0;
+}
+
+.span{
+
+  text-align: center;
+  padding-top: 10px;
+}
+
+.stackOverFlow{
+
+  text-color: white;
+  text-size: 3em;
+}
