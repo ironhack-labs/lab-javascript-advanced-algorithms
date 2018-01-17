@@ -23,7 +23,7 @@ QueueDataStructure.prototype.enqueue = function(elem){
 
 QueueDataStructure.prototype.dequeue = function(){
   if(this.queueControl.length > 0){
-    return this.queueControl[this.queueControl.length - 1];
+    return this.queueControl.pop();
   } else{
     return "Queue Underflow";
   }

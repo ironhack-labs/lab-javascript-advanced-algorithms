@@ -5,14 +5,21 @@ input{
   width: 45%;
   margin-bottom: 40px;
 }
-.data-showcase{
-  display: flex;
-  flex-direction: column-reverse;
+.data-s-showcase,
+.data-q-showcase{
   border: 5px solid #7a7a7a;
   border-top: 0;
-  border-radius: 0 0 15px 15px;
   padding: 0 10px 5px 10px;
   margin: 16px 0;
+}
+.data-s-showcase{
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 0 0 15px 15px;
+}
+.data-q-showcase{
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 .data, 
 .overflow{
