@@ -1,0 +1,20 @@
+
+.stack-item {
+  background: rgb(211, 211, 211);
+  height: 50px;
+  margin: 5px -15px 0 -15px;
+  border-radius: 5px;
+}
+
+.row {
+  width: 50%;
+}
+
+button {
+  margin: 5px 0;
+  width: 100%;
+}
+
+#top-stack-item {
+  margin: 20px -15px 0 -15px;
+}
