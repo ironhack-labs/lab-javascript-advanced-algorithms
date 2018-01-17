@@ -1,0 +1,72 @@
+input {
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.stack-spot {
+  height: 50px;
+  width: 100%;
+  background-color: #ccc;
+  margin-top: 2px;
+}
+#queue {
+  display: flex;
+  flex-direction: row;
+}
+
+.queue-spot {
+  height: 100px;
+  width: 100%;
+  background-color: #ccc;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.filled {
+  color: white;
+  background-color: aqua;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+#queue > .filled {
+  padding-top: 35px;
+}
+
+.hidden {
+  display: none;
+}
+
+.flow {
+  color: #d94943;
+  border: 1px solid #d94943;
+  background-color: #f4c8c6;
+  height: 50px;
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+#queue > .flow {
+  height: 100px;
+  width: 100%;
+  margin-right: 2px;
+  writing-mode: vertical-rl;
+  padding-top: 0px;
+}
+
+#queue-title,
+#stack-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#queue-message,
+#stack-message {
+  font-size: 20px;
+}
