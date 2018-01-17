@@ -8,7 +8,7 @@ function addToQueue() {
 }
 function removeFromQueue() {
   console.log("removiendo de la cola q" + size);
-  var size = queue.actualSize();
+  var size = (queue.MAX_SIZE- queue.actualSize()+1);
   var element = document.getElementById("q" + size);
 
   queue.dequeue();
