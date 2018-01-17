@@ -8,3 +8,11 @@
 .container {
   background-color: beige;
 }
+
+.div {
+  padding: 1%;
+}
+
+.main {
+  background-image: url('http://ak2.picdn.net/shutterstock/videos/8322742/thumb/1.jpg');
+}
