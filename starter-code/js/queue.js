@@ -1,6 +1,7 @@
 $(document).ready(function () {
   var queue = new QueueDataStructure();
   $('.add-queue').click(function () {
+    $('.queue-element.e' + 1).removeClass('overflow');
     console.log('functiona!');
     var valuequeue = $('.input-queue').val();
     if (queue.canEnqueue()) {
@@ -15,6 +16,8 @@ $(document).ready(function () {
       var indexqueue = queue.queueControl.length;
       $('.queue-element.e' + indexqueue).removeClass('overflow dark').addClass('light').text('');
       queue.queueControl.shift();
+      if (indexqueue === 1) { $('.queue-element.e' + indexqueue).removeClass('light').addClass('overflow').text('QUEUE UNDERFLOW!!!'); indexqueue = queue.MAX_SIZE;
+    }
     }
   })
 });
