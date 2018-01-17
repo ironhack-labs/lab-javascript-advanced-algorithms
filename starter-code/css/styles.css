@@ -1,0 +1,41 @@
+.add_element{
+    width: 700px;
+    height: 45px;
+}
+.add{
+    background-color: green;
+    width: 350px;
+    height: 45px;
+    align-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.btn_add{
+    color: white;
+}
+.delete{
+    background-color: red;
+    width: 350px;
+    height: 45px;
+    align-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.btn_delete{
+    color: white;
+}
+.stacks{
+    
+    display: flex;
+    flex-direction: column;
+}
+.stack{
+    background-color: gray;
+    width: 350px;
+    height: 40px;
+    border: 2px;
+    border-color: black;
+    margin-top: 10px;
+}
+
+
