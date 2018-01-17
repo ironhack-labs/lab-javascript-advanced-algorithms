@@ -9,7 +9,7 @@ QueueDataStructure.prototype.isEmpty = function () {
 };
 
 QueueDataStructure.prototype.canEnqueue = function () {
-  return this.queueControl.length < this.MAX_SIZE;
+  return this.queueControl.length <= this.MAX_SIZE;
 };
 
 QueueDataStructure.prototype.enqueue = function (element) {
