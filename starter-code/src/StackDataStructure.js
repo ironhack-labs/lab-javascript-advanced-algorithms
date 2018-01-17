@@ -1,6 +1,9 @@
 function StackDataStructure() {
   this.stackControl = [];
-  this.MAX_SIZE = 8;
+  this.MAX_SIZE = 9;
+}
+StackDataStructure.prototype.actualSize = function (){
+  return this.stackControl.length
 }
 StackDataStructure.prototype.isEmpty = function(stack) {
   return this.stackControl.length == 0;
@@ -17,11 +20,11 @@ StackDataStructure.prototype.push = function(a) {
       return "Stack Overflow"
   }
 };
-StackDataStructure.prototype.pop = function(a) {
+StackDataStructure.prototype.pop = function() {
   if (this.isEmpty()) {
     return "Stack Underflow";
   }   
-  return this.stackControl.pop(this.stackControl.length-1)
+  return this.stackControl.pop()
     
 };
  

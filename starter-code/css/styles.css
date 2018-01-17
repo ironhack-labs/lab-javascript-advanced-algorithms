@@ -1,0 +1,21 @@
+body {
+}
+.Stack {
+  display: inline-flex;
+  flex-direction: column;
+}
+.queue {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+div > div {
+  width: 100px;
+  height: 100px;
+}
+.empty {
+  background: red;
+}
+.full {
+  background: green;
+}

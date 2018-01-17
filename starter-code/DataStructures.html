@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
+  <script src="src/QueueDataStructure.js"></script>
+  <script src="src/StackDataStructure.js"></script>
+  <script src="js/queue.js"></script>
+  <script src="js/stack.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+
+    <div class="queue">
+      <span>
+        <button onclick="addToQueue();">add queue</button>
+        <button onclick="removeFromQueue();">remove queue</button>
+      </span>
+
+      <div class="qelements" id="q1"></div>
+      <div class="qelements" id="q2"></div>
+      <div class="qelements" id="q3"></div>
+      <div class="qelements" id="q4"></div>
+      <div class="qelements" id="q5"></div>
+      <div class="qelements" id="q6"></div>
+      <div class="qelements" id="q7"></div>
+      <div class="qelements" id="q8"></div>
+      <div class="qelements" id="q9"></div>
+    </div>
+
+
+
+    <div class="Stack">
+
+      <span>
+        <button onclick="addToStack();">add stack</button>
+        <button onclick="removeFromStack();">remove stack</button>
+      </span>
+
+
+      <div class="selements" id="s1"></div>
+      <div class="selements" id="s2"></div>
+      <div class="selements" id="s3"></div>
+      <div class="selements" id="s4"></div>
+      <div class="selements" id="s5"></div>
+      <div class="selements" id="s6"></div>
+      <div class="selements" id="s7"></div>
+      <div class="selements" id="s8"></div>
+      <div class="selements" id="s9"></div>
+    </div>
 
   </section>
 
@@ -18,6 +63,7 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 
-    
+
 </body>
+
 </html>
