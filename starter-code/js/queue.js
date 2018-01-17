@@ -1,13 +1,12 @@
 var queue = new QueueDataStructure();
 
 function updateQueueShowcase(elems) {
-  console.log(elems)
-  for (i = 0; i < queue.MAX_SIZE; i++) {
+  for (i = queue.queueControl.length, j = (queue.MAX_SIZE); i > (queue.queueControl.length - queue.MAX_SIZE - 1); i--, j--) {
     var datas = $("#queue-container .data");
     if (!elems[i]) {
-      $(datas[i]).html("");
+      $(datas[j]).html("");
     } else {
-      $(datas[i]).html(elems[i]);
+      $(datas[j]).html(elems[i]);
     }
   }
 }
