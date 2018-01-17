@@ -1,0 +1,128 @@
+header{
+    background: rgb(12, 23, 129);
+    font: white;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+.cajaGrande{
+    background-color:rgba(70, 67, 67, 0.144);
+    width: 100%;
+    height: 400px;
+
+
+}
+
+.paescribir{
+    float: left;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 0 7px 11px 0;
+    padding: 0 40px;
+    text-align: center;
+  
+    /* Smoothing out hover using css3 transitions, if not, the pressed button effect looks a bit hard */
+    transition: all 0.2s ease;
+  
+    /* Size */
+    line-height: 45px;
+    width: auto;
+    height: 45px;
+    font-size: 120%;
+  
+    /* Colors */
+    background: #f7f7f7;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    color: rgb(10, 37, 153);
+
+}
+
+.btn {
+    float: left;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 100%;
+    margin: 0 7px 11px 0;
+    padding: 0 20px;
+    text-align: center;
+  
+    /* Smoothing out hover using css3 transitions, if not, the pressed button effect looks a bit hard */
+    transition: all 0.2s ease;
+  
+    /* Size */
+    line-height: 45px;
+    width: 100px;
+    height: 45px;
+    font-size: 120%;
+  
+    /* Colors */
+    background: #f7f7f7;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    color: #888;
+  }
+
+  .btn-push {
+    background: #0ab46d;
+    box-shadow: 0 6px #3bc786;
+    color: #fff;
+  }
+  
+  .btn-push:hover {
+    background: #04613a;
+    box-shadow: 0 5px #045234;
+    color: #fff;
+  }
+
+  .btn-pop {
+    background: #e8103b;
+    box-shadow: 0 6px #890923;
+    color: #fff;
+  }
+  
+  .btn-pop:hover {
+    background: #c80e33;
+    box-shadow: 0 5px #69071b;
+    color: #fff;
+  }
+
+
+  .stack {
+    float: left;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    margin: 0 7px 11px 0;
+    padding: 0 20px;
+    text-align: center;
+  
+    /* Smoothing out hover using css3 transitions, if not, the pressed button effect looks a bit hard */
+    transition: all 0.2s ease;
+  
+    /* Size */
+    line-height: 45px;
+    width: 100%;
+    height: 45px;
+    font-size: 120%;
+  
+    /* Colors */
+    background: #f7f7f7;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    color: #888;
+  }
+  
+  .active{
+    background-color: #3bc786;
+  }
