@@ -1,0 +1,36 @@
+.justify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+.container {
+  background-color: beige;
+}
+
+.div {
+  padding: 1%;
+}
+
+.stack-element, .queue-element {
+  height: 40px;
+  width: 100%;
+}
+
+.light {
+   background-color: lightblue;
+   color: white;
+ }
+
+.dark {
+   background-color: darkblue;
+ }
+
+ .a {
+   color: white;
+ }
+
+ .overflow {
+   background-color: red;
+ }
