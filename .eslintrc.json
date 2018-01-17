@@ -17,6 +17,7 @@
         "no-restricted-globals": "off",
         "no-use-before-define": "off",
         "no-shadow": "off",
-        "block-scoped-var": "off"
+        "block-scoped-var": "off",
+        "indent":"off"
     }
 }
