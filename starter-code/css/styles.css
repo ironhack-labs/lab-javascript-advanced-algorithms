@@ -1,0 +1,50 @@
+
+section h1{
+	text-align: center;
+}
+
+section div#cont{
+	padding-right: 20%;
+	padding-left: 0;
+	margin-top: 50px;
+}
+
+section div#cont h2{
+	margin-bottom: 20px;
+}
+
+section div#cont input{
+	margin-bottom: 10px;
+}
+
+section div#cont button#btn-1{
+	background: #3b84c0;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+section div#cont button#btn-2{
+	background: #de5d59;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+section div#cont div.stack{	
+	margin-bottom: 1px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grey{
+	background: #ededed;
+	color: #ededed;
+}
+
+.active{
+	background: #4cade9!important;
+	font-size: 20px;
+	color: #fff;
+	font-weight: lighter;
+}
