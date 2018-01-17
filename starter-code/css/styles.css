@@ -29,3 +29,6 @@ input{
   color: crimson;
   border: 1px solid crimson;
 }
+.has-error input::placeholder{
+  color: crimson;
+}

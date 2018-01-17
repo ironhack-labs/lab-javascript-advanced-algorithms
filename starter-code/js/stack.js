@@ -11,13 +11,23 @@ function updateStackShowcase(elems) {
   }
 }
 
-$("#add-stack").click(function() {
-  var addElem = stack.push($("#stack-elem").val());
+function emptyInputAlert() {
+  $("#stack-form-group").addClass("has-error");
+}
 
-  if (addElem == "Stack Overflow") {
-    $("#stack-overflow").removeClass("hidden");
+$("#add-stack").click(function() {
+  if ($("#stack-elem").val() == "") {
+    emptyInputAlert();
   } else {
-    updateStackShowcase(addElem);
+    $("#stack-form-group").removeClass("has-error");
+    var addElem = stack.push($("#stack-elem").val());
+
+    if (addElem == "Stack Overflow") {
+      $("#stack-overflow").removeClass("hidden");
+    } else {
+      $("#stack-underflow").addClass("hidden");
+      updateStackShowcase(addElem);
+    }
   }
 });
 $("#remove-stack").click(function() {
@@ -26,6 +36,7 @@ $("#remove-stack").click(function() {
   if (removeElem == "Stack Underflow") {
     $("#stack-underflow").removeClass("hidden");
   } else {
+    $("#stack-overflow").addClass("hidden");
     updateStackShowcase(stack.stackControl);
   }
 });
