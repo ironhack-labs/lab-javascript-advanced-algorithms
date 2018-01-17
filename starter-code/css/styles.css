@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* button add / take, with a small hover effect :) 
+I also add the text input field but not sure what to do with, 
+so I will focus on the button */
+
+.btn-stack {
+  width: 30%;
+  height: 45px;
+  margin: 1% 35%;
+  border-radius: 10px;
+  padding-top: 7px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.form {
+  width: 30%;
+  height: 45px;
+  margin: 1% 35%;
+  border-radius: 2px;
+  padding-left: 3px;
+}
+
+.btn-stack.add {
+  background-color: #3b85bf;
+  text-align: center;
+}
+
+.btn-stack.add:hover {
+  border: 2px solid #3b85bf;
+  background-color: white;
+  color: #3b85bf;
+}
+
+.btn-stack.remove {
+  background-color: #de5e59;
+  text-align: center;
+}
+
+.btn-stack.remove:hover {
+  border: 2px solid #de5e59;
+  background-color: white;
+  color: #de5e59;
+}
+
+/* stack bloc empty (grey) vs full (blue) */
+
+.stack.empty {
+  width: 30%;
+  height: 40px;
+  margin: 3px 35%;
+  background-color: lightgray;
+  border-radius: 2px;
+}
+
+.stack.full {
+  width: 30%;
+  height: 45px;
+  margin: 3px 35%;
+  background-color: #4cacea;
+  border-radius: 2px;
+}
+
+.stack.tropdeflow {
+  width: 30%;
+  height: 45px;
+  margin: 3px 35%;
+  border-radius: 2px;
+  border: 1px solid red;
+  color: red;
+  background-color: #f4e2e2;
+  font-size: 23px;
+  padding-top: 5px;
+  text-align: center;
+}
