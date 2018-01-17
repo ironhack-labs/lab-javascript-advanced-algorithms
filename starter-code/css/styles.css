@@ -13,6 +13,24 @@
   padding: 1%;
 }
 
-.main {
-  background-image: url('http://ak2.picdn.net/shutterstock/videos/8322742/thumb/1.jpg');
+.stack-element, .queue-element {
+  height: 40px;
+  width: 100%;
 }
+
+.light {
+   background-color: lightblue;
+   color: white;
+ }
+
+.dark {
+   background-color: darkblue;
+ }
+
+ .p {
+   color: white;
+ }
+
+ .overflow {
+   background-color: red;
+ }
