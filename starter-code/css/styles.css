@@ -1,0 +1,31 @@
+input{
+  margin-bottom: 20px;
+}
+.btn{
+  width: 45%;
+  margin-bottom: 40px;
+}
+.data-showcase{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.data, 
+.overflow{
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 26px;
+  border-radius: 5px;
+}
+.data{
+  background: #eee;
+  font-weight: 600;
+  color: teal;
+}
+.overflow{
+  font-weight: 300;
+  background-color: rgba(237,20, 61,.07);
+  color: crimson;
+  border: 1px solid crimson;
+}

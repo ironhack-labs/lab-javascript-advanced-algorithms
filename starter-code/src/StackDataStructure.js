@@ -22,7 +22,7 @@ StackDataStructure.prototype.push = function(elem){
 
 StackDataStructure.prototype.pop = function(){
   if(this.stackControl.length > 0){
-    return this.stackControl[this.stackControl.length - 1];
+    return this.stackControl.pop();
   }else{
     return "Stack Underflow";
   }

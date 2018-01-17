@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
@@ -7,10 +8,30 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
 
+    <div class="row">
+      <div class="col-sm-4">
+        <h2>Stack</h2>
+        <div class="form-group">
+          <input type="email" class="form-control" id="stack-elem" placeholder="Add an element to the stack">
+        </div>
+          <button id="add-stack" type="button" class="btn btn-primary">+ ADD</button>
+          <button id="remove-stack" type="button" class="btn btn-danger pull-right">- TAKE</button>
+          <div id="stack-overflow" class="overflow hidden">Stack Overflow</div>
+          <div id="stack-container" class="data-showcase">
+            <div class="data"></div>
+            <div class="data"></div>
+            <div class="data"></div>
+            <div class="data"></div>
+            <div class="data"></div>
+          </div>
+          <div id="stack-underflow" class="overflow hidden">Stack Underflow</div>
+      </div>
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
@@ -18,4 +39,5 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>
