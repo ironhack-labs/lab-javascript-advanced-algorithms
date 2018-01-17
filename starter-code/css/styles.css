@@ -1,0 +1,36 @@
+.grey {
+  background-color:#d6dbde;
+	width:100%;
+	height:60px;
+	float:left;
+	margin-top:7px;
+	padding:10px;
+  font-size:64px;
+}
+
+.slacked{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  background-color: #4cade9
+}
+
+.underFlow{
+  background-color: #f4e3e2;
+  border: 1px solid #e6827f;
+  color:#e6827f ;
+  font-size: 30px;
+  text-align: center;
+  
+}
+.overFlow{
+  background-color: #f4e3e2;
+  border: 1px solid #e6827f;
+  color:#e6827f ;
+  font-size: 30px;
+  text-align: center;
+ 
+}
+.visibility{
+  visibility: hidden
+}
