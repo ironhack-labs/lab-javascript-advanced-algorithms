@@ -3,7 +3,7 @@
 
 function StackDataStructure () {
     this.stackControl = [];
-    this.MAX_SIZE = 19;
+    this.MAX_SIZE = 5;
 }
 
 // Method to check if stack is empty

@@ -1,21 +1,39 @@
  $(document).ready(function(){
+
+var stack = new StackDataStructure ();
+
      $('.btn-push').click(function(e){
-         $('.stack').addClass('active');
+        var value = $(".input").val()
+         if (stack.canPush()){
+            stack.stackControl.push(value)
+            $('.grey').last().addClass('active').removeClass("grey").html("<p>" + value + "</p>")
+         } else {
+            $('.top').addClass('red').removeClass("active").html("<p> stack overflow biatch</p>")
+         }
+
+
      })
      $('.btn-pop').click(function(e){
-        $('.stack').removeClass('active');
+        var value = $(".input").val()
+        
+        console.log(stack.stackControl);
+        if (stack.canPush()){
+            $('.active').first().addClass("grey").removeClass('active').html("<p></p>");
+            stack.stackControl.pop(value);
+        } else if(stack.isEmpty()){
+            $('.bottom').addClass('red').removeClass("grey").html("<p> stack underflow biatch</p>");
+        } else {
+            $('.top').addClass('grey').removeClass("red").html("<p></p>");
+            stack.stackControl.pop(value);
+        } 
+    
+  
+
+        
     })
  })
  
+
  
- $(".btn-push").click(function() {
+ 
 
-
-
-    // if ($(".btn-pop").hasClass("active")){
-    //     $(".").hide();
-    //     renderPrice(-5);
-    // } else {
-    //     $(".price > ul > li:nth-child(5)").show();
-    //     renderPrice(5);
-})

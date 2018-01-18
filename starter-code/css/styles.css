@@ -19,7 +19,7 @@ h1{
 
 }
 
-.paescribir{
+.input{
     float: left;
     position: relative;
     top: 10px;
@@ -118,11 +118,24 @@ h1{
     font-size: 120%;
   
     /* Colors */
-    background: #f7f7f7;
-    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
-    color: #888;
+
   }
   
   .active{
     background-color: #3bc786;
+  }
+
+  .grey {
+    background-color: #f7f7f7;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+    color: #888;
+  }
+  .verde {
+    background-color: green;
+  }
+
+  .red {
+    background-color: rgb(128, 0, 0);
+    color: white;
+    font-style: bold; 
   }
