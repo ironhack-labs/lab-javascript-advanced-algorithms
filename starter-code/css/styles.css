@@ -1,0 +1,33 @@
+
+.form-inline .form-control { 
+    width: 250px;
+    margin-bottom: 20px;
+}
+.btn-primary, .btn-danger{
+    margin-bottom: 20px;
+}
+.btn{
+    width: 250px;
+}
+
+.stack{
+    background: rgb(201, 200, 200);
+    width: 65%;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 15px;
+    
+
+}
+.gray{
+    background: rgb(201, 200, 200);
+}
+.blue{
+    background-color: blue;
+    text-align: center;
+}
+.red{
+    background-color: red;
+    text-align: center;
+    
+}
