@@ -6,16 +6,40 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
+  
 </head>
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    <div class="row">
+    <section class="col-md-5" id="stack-section">
+      <h2>Stack</h2>
+      <div class="col-md-10 input-stack">
+        <input type="text" id="input-stack" placeholder="Add the element to the stack...">
+      </div>
+      <div class="col-md-10 btn add-btn">ADD</div>
+      <div class="col-md-10 btn take-btn">TAKE</div>
+      <div class="col-md-10 stack-warning hide-warning" id="warning-0">Stack Overflow</div>
+      <div class="col-md-10 stack-elem inactive"></div>
+      <div class="col-md-10 stack-elem inactive"></div>
+      <div class="col-md-10 stack-elem inactive"></div>
+      <div class="col-md-10 stack-elem inactive"></div>
+      <div class="col-md-10 stack-elem inactive"></div>
+      <div class="col-md-10 stack-elem inactive"></div>
+      <div class="col-md-10 stack-elem inactive"></div>
+      <div class="col-md-10 stack-elem inactive"></div>
+      <div class="col-md-10 stack-warning hide-warning" id="warning-1">Stack Overflow</div>
+      
+
+    </section>
+    <section class="col-md-6" id="queue-section"></section>
+  </div>
 
   </section>
-
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+  
 </body>
 </html>
