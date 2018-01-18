@@ -1,21 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+  </section>
+  <div class="breaker"></div>
+  <section class="stack">
+    <span class="h2">Stack</span>
+    <div class="form-group">
+      <input id="stackInput" type="text" class="form-control inputForm" placeholder="Add an element to the stack" aria-describedby="basic-addon1">
+    </div>
+    <div class="btn-group-vertical btnGrouped" role="group" aria-label="...">
+      <button type="button" class="btn btn-primary btnWidth" id="addStack">ADD</button>
+      <div class="breakerSmall"></div>
+      <button type="button" class="btn btn-danger" id="takeStack">TAKE</button>
+    </div>
+    <div class="breaker"></div>
+    <ul class="list-group stackItems">
+      <li class="list-group-item list-group-item-danger hidden" id="stackOverflow">Stack overflow</li>
+      <li class="list-group-item notStacked"></li>
+      <li class="list-group-item notStacked"></li>
+      <li class="list-group-item notStacked"></li>
+      <li class="list-group-item notStacked"></li>
+      <li class="list-group-item notStacked"></li>
+      <li class="list-group-item notStacked"></li>
+      <li class="list-group-item notStacked"></li>
+      <li class="list-group-item notStacked"></li>
+      <li class="list-group-item list-group-item-danger hidden" id="stackUnderflow">Stack underflow</li>
+    </ul>
+  </section>
 
+  <section class="Queue">
+    <span class="h2">Queue</span>
+    <div class="form-group">
+      <input id="queueInput" type="text" class="form-control inputForm" placeholder="Add an element to the queue" aria-describedby="basic-addon1">
+    </div>
+    <div class="btn-group-vertical btnGrouped" role="group" aria-label="...">
+      <button type="button" class="btn btn-primary btnWidth" id="addQueue">ADD</button>
+      <div class="breakerSmall"></div>
+      <button type="button" class="btn btn-danger" id="takeQueue">TAKE</button>
+    </div>
+    <div class="breaker"></div>
+    <ul class="list-group queueItems">
+      <li class="list-group-item list-group-item-danger hidden" id="queueOverflow">Queue overflow</li>
+      <li class="list-group-item notQueued"></li>
+      <li class="list-group-item notQueued"></li>
+      <li class="list-group-item notQueued"></li>
+      <li class="list-group-item notQueued"></li>
+      <li class="list-group-item notQueued"></li>
+      <li class="list-group-item notQueued"></li>
+      <li class="list-group-item notQueued"></li>
+      <li class="list-group-item notQueued"></li>
+      <li class="list-group-item list-group-item-danger hidden" id="queueUnderflow">Queue underflow</li>
+    </ul>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+  <script src="src/main.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

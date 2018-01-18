@@ -1,0 +1,28 @@
+.stack,
+.btnWidth {
+  width: 250px;
+}
+
+.breaker {
+  margin: 50px;
+}
+
+.breakerSmall {
+  margin: 10px;
+}
+
+.stackItems > li {
+  height: 50px;
+}
+
+.btnGrouped {
+  margin-left: 100px;
+}
+.queueItems {
+  height: 100px;
+}
+
+.queueItems > li {
+  height: 100px;
+  display: inline;
+}
