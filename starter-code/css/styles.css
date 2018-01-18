@@ -1,0 +1,50 @@
+input{
+  margin-bottom: 20px;
+}
+.btn{
+  width: 45%;
+  margin-bottom: 40px;
+}
+.data-s-showcase,
+.data-q-showcase{
+  border: 5px solid #7a7a7a;
+  border-top: 0;
+  padding: 0 10px 5px 10px;
+  margin: 16px 0;
+}
+.data-s-showcase{
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 0 0 15px 15px;
+}
+.data-q-showcase{
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.data, 
+.overflow{
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 26px;
+  border-radius: 5px;
+}
+.data{
+  background: #1caab1;
+  color: #fff;
+  font-weight: 600;
+}
+.data:empty{
+  background: #eee;
+  color: #1caab1;
+}
+.overflow{
+  font-weight: 300;
+  background-color: rgba(237,20, 61,.07);
+  color: crimson;
+  border: 1px solid crimson;
+}
+.has-error input::placeholder{
+  color: crimson;
+}

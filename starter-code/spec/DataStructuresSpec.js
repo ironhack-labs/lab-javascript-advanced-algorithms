@@ -112,22 +112,22 @@ describe("Queues", function() {
   });
 
   describe ("Queue methods", function () {
-    it ("Should has a method to check if the current queue is empty", function () {
+    it ("Should have a method to check if the current queue is empty", function () {
       expect(typeof(queue.isEmpty)).toBe('function');
     });
 
-    it ("Should has a method to check if we can enqueue an element into the queue", function () {
+    it ("Should have a method to check if we can enqueue an element into the queue", function () {
       expect(typeof(queue.canEnqueue)).toBe('function');
     });
 
-    it ("Should has a method to enqueue elements into the queue", function () {
+    it ("Should have a method to enqueue elements into the queue", function () {
       expect(typeof(queue.enqueue)).toBe('function');
     });
 
-    it ("Should has a method to dequeue from the queue", function () {
+    it ("Should have a method to dequeue from the queue", function () {
       expect(typeof(queue.dequeue)).toBe('function');
     });
-  });
+    });
 
   describe ("Queue methods default values", function () {
     it ("Queue has an empty stack", function () {
