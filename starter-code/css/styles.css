@@ -1,0 +1,39 @@
+.form-inline .form-control{
+    margin-bottom: 20px;
+    width: 250px;
+}
+.btn{
+    width: 250px;
+}
+.btn-primary, .btn-danger{
+    margin-bottom: 20px;
+}
+
+.stack, .queue{
+    width: 66%;
+    height: 40px;
+    margin: 2px;
+
+}
+
+.blue{
+    background-color: rgb(94, 94, 255);
+}
+.gray{
+    background-color: rgb(219, 219, 219);
+}
+
+
+.queue-gray{
+    background-color: rgb(209, 209, 209);
+}
+.queue-blue{
+    background-color: rgb(94, 94, 255);
+}
+.l{
+    color:white;
+}
+.overflow{
+background-color: rgb(226, 92, 92);
+
+}
