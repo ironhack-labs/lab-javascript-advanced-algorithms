@@ -1,0 +1,20 @@
+.container{
+    margin-top:50px;
+    }
+    .stack h1{
+        margin-top:30px;
+        font-size:80px;
+    }
+    .btn{
+        padding:20px;
+        margin-top: 30px;
+    }
+    .take .btn{
+        background-color: rgb(177, 63, 63);
+        border:rgb(177, 63, 63);
+    }
+    .form-group .form-control{
+        padding: 30px;
+        margin-top:30px;
+    }
+    
