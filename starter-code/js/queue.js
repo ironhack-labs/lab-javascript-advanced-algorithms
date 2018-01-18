@@ -15,7 +15,7 @@ $(document).ready(function () {
                   $('.queued:nth-child(' + index + ')').addClass('added').html('<span>' + value + '</span>');
                   
             }
-      });
+      }); 
       $('.q-take').click(function () {
             if (!myQueue.isEmpty()) {
                   myQueue.queueControl.pop();
