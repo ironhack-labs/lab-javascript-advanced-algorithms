@@ -1,0 +1,28 @@
+#add {
+  background: blue;
+  width: 100%;
+  padding: 20px 0;
+  color: white;
+}
+#take {
+  background: red;
+  width: 100%;
+  padding: 20px 0;
+  color: white;
+}
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#input {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+}
+.divs {
+  width: 100%;
+  height: 40px;
+  border: 1px solid gray;
+  background: lightgray;
+}
