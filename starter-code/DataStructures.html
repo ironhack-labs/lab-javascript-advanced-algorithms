@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>DataStructures | Stacks &amp; Queues</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="lib/jquery-3.1.1.min.js"></script>
 </head>
@@ -17,14 +17,14 @@
 	<section class="data">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-4">
 					<h2>Stack</h2>
 					<div class="form">
 						<div class="input-group">
 							<span class="input-group-btn">
 								<button class="add btn btn-success" type="button">ADD</button>
 							</span>
-							<input type="text" class="item-to-add form-control" placeholder="Item Name"> 
+							<input type="text" class="item-to-add form-control" placeholder="Push( ) new item">
 							<span class="input-group-btn">
 								<button class="take btn btn-danger" type="button">TAKE</button>
 							</span>
@@ -42,7 +42,31 @@
 						<div class="stacked"></div>
 					</div>
 				</div>
-				<div class="col-sm-6"></div>
+				<div class="col-sm-8">
+					<h2>Queue</h2>
+					<div class="form">
+						<div class="input-group">
+							<span class="input-group-btn">
+								<button class="q-add btn btn-success" type="button">ADD</button>
+							</span>
+							<input type="text" class="q-item-to-add form-control" placeholder="Unshift( ) new item">
+							<span class="input-group-btn">
+								<button class="q-take btn btn-danger" type="button">TAKE</button>
+							</span>
+						</div>
+					</div>
+					<div class="queue">
+						<div class="queued-overflow btn-danger"></div>
+						<div class="queued"></div>
+						<div class="queued"></div>
+						<div class="queued"></div>
+						<div class="queued"></div>
+						<div class="queued"></div>
+						<div class="queued"></div>
+						<div class="queued"></div>
+						<div class="queued"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

@@ -1,30 +1,38 @@
 .header {
-      background: lightblue;
-      height: 200px;
+      background: #394f4d;
+      height: 160px;
       color: antiquewhite;
       text-align: center;
       border-bottom: 4px solid burlywood;
-      letter-spacing: 5px;
-}
-h1 {
-      margin-top: 100px;
-}
-h2 {
-      color: grey;
-      border:1px dotted  grey;
-      padding: 20px;
-      border-radius: 10px;
-      font-size:2.2em;
-      letter-spacing: 15px;
-      margin-bottom: 50px;
-}
-.data {
-      padding: 50px 0;
+      letter-spacing: 10px;
 }
 
-button.btn,input.form-control {
+h1 {
+      margin-top: 60px;
+}
+
+h2 {
+      color: grey;
+      border: 1px dotted grey;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 2.2em;
+      letter-spacing: 15px;
+      margin-bottom: 50px;
+      display: inline-block;
+}
+
+.data {
+      padding: 25px 0;
+}
+
+button.btn,
+input.form-control {
       height: 60px;
 }
+
+
+/* stack */
 
 .stack {
       margin-top: 25px;
@@ -32,25 +40,37 @@ button.btn,input.form-control {
       border-radius: 5px;
       overflow: hidden;
 }
-.stacked,.stacked-overflow,.stacked-underflow {
-      
-      height: 60px;
+
+.stacked,
+.stacked-overflow,
+.stacked-underflow {
+      height: 70px;
       border-bottom: 1px solid #ccc;
+      background: #fdfdfd;
+      transition: .3s all linear;
 }
 
 .stacked:last-child {
-      border-bottom:none;
+      border-bottom: none;
 }
 
-.stacked-overflow,.stacked-underflow {
+.stacked-overflow,
+.stacked-underflow {
       display: none;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
-      color:white;
-      text-align:center;
-      padding-top: 20px;
+      color: #7e3b39;
+      text-align: center;
       letter-spacing: 3px;
+      padding-top: 16px;
       text-transform: uppercase;
+      font-size: 26px;
+      font-weight: 700;
+}
+
+.stacked-overflow.btn-danger,
+.stacked-underflow.btn-danger {
+      background: #d9534f;
 }
 
 .stacked-underflow {
@@ -64,16 +84,86 @@ button.btn,input.form-control {
       border-top-right-radius: initial;
 }
 
-      
+
+/* queue */
+
+.queue {
+      margin-top: 25px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+}
+
+.queued {
+      width: calc(100%/8);
+      background: #fdfdfd;
+      transition: .3s all linear;
+}
+
+.queued,
+.queued-overflow {
+      height: 560px;
+      float: right;
+      border-right: 1px solid #ccc;
+      transition: .3s all linear;
+}
+
+.queued-overflow {
+      width: calc(100% / 9);
+}
+
+.queued-overflow,
+.queued-underflow {
+      display: none;
+      background: #d9534f!important;
+      color: #ab4441!important;
+      transition: .3s all linear;
+}
+
+.queued-underflow {
+      display: block;
+}
+
+.queued-overflow span {
+      margin-left: -7px;
+}
+
+
+/* helpers */
+
 .visible {
       display: block!important;
 }
 
 .added {
-      background: #09a495;
-      color:white;
-      text-align:center;
-      padding-top: 20px;
+      background: #09a495!important;
+}
+
+.added,
+.queued-underflow,
+.queued-overflow {
+      overflow: hidden;
+      color: #1f6a61;
+      text-align: center;
+      padding-top: 17px;
       letter-spacing: 3px;
       text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 700;
+      position: relative;
 }
+
+.added span,
+.queued-underflow span,
+.queued-overflow span {
+      transform: rotate(-90deg);
+      display: inline-block;
+      width: 560px;
+      overflow: hidden;
+      transform-origin: 287px 256px;
+}
+
+
+/* .btn-danger {
+      background-color: #d9534f!important;
+} */
