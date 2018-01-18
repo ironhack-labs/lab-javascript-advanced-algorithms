@@ -18,11 +18,12 @@ $(document).ready(function(){
         
         if(queue.isEmpty()){
             $('.queue-grey').last().addClass('element').removeClass('queue-grey');
+            $('.element').last().addClass('queue-grey-past').removeClass('element').html('<p></p>');
             var value = $('.input').val();
             queue.queueControl.unshift(value);
         }else{
             $('.queue-grey').last().addClass('element').removeClass('queue-grey');
-            $('.element').last().addClass('queue-grey-past').removeClass('element').html('<p></p>');
+            
             
         }
     })
