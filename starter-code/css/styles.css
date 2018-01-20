@@ -1,0 +1,50 @@
+
+#stack li, #queue li {
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#stack button, input, #stack li {
+	margin: 0.5rem 0;
+}
+
+#stack button {
+	width: 100%;
+}
+
+#stack ul {
+	margin: 2rem 0;
+}
+
+div h2:first-of-type {
+	float: left;
+}
+
+div h2:last-of-type {
+	float: right;
+	color: #d9534f;
+}
+
+#queue ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem -0.5rem;
+}
+
+#queue li {
+	flex-grow: 1;
+	margin: 0 0.5rem;
+}
+
+#button-panel {
+	display: flex;
+	justify-content: space-between;
+	margin: 0.5rem -0.5rem;
+}
+
+#button-panel button{
+	flex-grow: 1;
+	margin: 0.5rem;
+}
