@@ -1,0 +1,92 @@
+/* ---- reset ---- */
+ 
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+ 
+ 
+/* ---- typography ---- */
+ 
+body {}
+ 
+h1 {}
+ 
+h2 {}
+ 
+h3 {}
+ 
+/* ---- layout ---- */
+
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; 
+}
+
+.control{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch; 
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+input{
+    margin-bottom: 1vh;
+    border-radius: 5%;
+}
+
+.btn{
+    color: white;
+    margin-bottom: 1vh;
+    border-radius: 5%;
+}
+
+.add-btn{
+    background-color: rgb(77, 77, 187);
+}
+
+.take-btn{
+    background-color: rgb(184, 30, 30);
+}
+
+.element{
+    height: 5vh;
+    background-color: rgb(212, 208, 208);
+    margin-bottom: 1vh;
+    border-radius: 5%;
+}
+
+.state{
+    background-color: pink;
+    height: 5vh;
+    margin-bottom: 1vh;
+    border-radius: 5%;
+}
+
+ 
+#site-header {}
+ 
+#site-footer {}
+ 
+#site-main {}
+ 
+ 
+ 
+ 
+/* ---- components ---- */
