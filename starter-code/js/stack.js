@@ -28,7 +28,7 @@ $(document).ready(function(){
         } else{
             $(".stack-element:nth-last-child("+(stack.stackControl.length+1)+")").text("");
             $(".stack-element:nth-last-child("+(stack.stackControl.length+1)+")").removeClass("addedelement");
-            stack.pop();
+            $("#removed_stack strong").text("Taken stack: "+stack.pop());
             console.log(stack.stackControl);
             var length = stack.stackControl.length;
             for (var i = length; i >0  ; i--){

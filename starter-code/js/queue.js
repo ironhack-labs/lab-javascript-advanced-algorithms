@@ -29,7 +29,7 @@ $(document).ready(function(){
         } else{
             $(".queue-element:nth-child("+queue.queueControl.length+")").text("");
             $(".queue-element:nth-child("+queue.queueControl.length+")").removeClass("addedelement");
-            queue.dequeue();
+            $("#removed_queue strong").text("Taken queue: "+queue.dequeue());
             console.log(queue.queueControl);
             var length = queue.queueControl.length;
             for (var i = length; i >0  ; i--){
