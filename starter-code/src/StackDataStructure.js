@@ -22,7 +22,7 @@ StackDataStructure.prototype.canPush= function () {
 }
 StackDataStructure.prototype.push= function (element) {
     this.stackControl.push(element);
-    if (this.stackControl.length >= this.MAX_SIZE) {
+    if (this.stackControl.length === this.MAX_SIZE) {
         return "Stack Overflow"
         
     }
@@ -33,6 +33,8 @@ StackDataStructure.prototype.push= function (element) {
 StackDataStructure.prototype.pop= function () {
     if (this.stackControl.length ===  0) {
         return "Stack Underflow"
+    } else {
+        this.stackControl.pop();
     }
     return this.stackControl[this.stackControl.length -1];
 }
