@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 //add queue button
 
+
 $('#add-queue').click(function(){
     var queueValue = $("#queue-input").val();
    
@@ -21,6 +22,8 @@ $('#add-queue').click(function(){
     }
 
     $("#queue-input").val("");
+
+
 
 });
 
