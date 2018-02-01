@@ -8,29 +8,33 @@ $(document).ready(function() {
 
     $('#add-stack').click(function(){
         var stackValue = $("#stackelement").val();
-    
         if (stackData.canPush()) {
+            
             stackData.push(stackValue);
-            $(".stack-element:nth-child("+index+")").text(stackValue)
+
+            $(".stack-element:nth-child("+index+")").text(stackValue);
+            $(".stack-element:nth-child("+index+")").addClass("addedelement");
             console.log(index)
             index--
+            $(".stack:first-child > .under").css("display","none");
         } else {
+            $(".stack:first-child > .over").css("display","block");
 
         }
-        console.log(stackData.stackControl)
+        $("#stackelement").val("");
       });
 
     //delete stack button
 
     $('#delete-stack').click(function(){
         if (stackData.isEmpty()) {
-            
+            $(".stack:first-child > .under").css("display","block");
         } else {
             stackData.pop()
             index++
             $(".stack-element:nth-child("+index+")").text("")
-            console.log(stackData.stackControl)
-            console.log(index)
+            $(".stack-element:nth-child("+index+")").removeClass("addedelement");
+            $(".stack:first-child > .over").css("display","none");
         }
       });
 
