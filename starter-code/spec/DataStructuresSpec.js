@@ -62,7 +62,7 @@ describe("Stack", function() {
 
     it ("Should insert the elements in the received order", function () {
       stack.push(19);
-      stack.push(88);
+      stack.push(88);  // ya esta gracias a la function push
 
       expect(stack.stackControl).toEqual([19, 88]);
     });
