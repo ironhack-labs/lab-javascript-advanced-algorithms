@@ -70,7 +70,6 @@ describe("Stack", function() {
     it ("Should return 'Stack Overflow' if the stack is full", function () {
       stack.MAX_SIZE = 1;
       stack.push(19);
-
       expect(stack.push(88)).toEqual("Stack Overflow");
     });
 
