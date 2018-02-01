@@ -22,7 +22,7 @@ QueueDataStructure.prototype.canEnqueue= function () {
 QueueDataStructure.prototype.enqueue= function (element) {
     this.queueControl.push(element);
     this.queueControl.reverse()
-    if (this.queueControl.length >= this.MAX_SIZE) {
+    if (this.queueControl.length === this.MAX_SIZE) {
         return "Queue Overflow"
         
     }
@@ -33,6 +33,8 @@ QueueDataStructure.prototype.enqueue= function (element) {
 QueueDataStructure .prototype.dequeue= function () {
     if (this.queueControl.length ===  0) {
         return "Queue Underflow"
+    } else {
+        this.queueControl.pop();
     }
     return this.queueControl[this.queueControl.length -1];
 }
