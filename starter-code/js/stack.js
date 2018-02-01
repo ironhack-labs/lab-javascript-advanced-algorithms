@@ -14,9 +14,9 @@ $(document).ready(function(){
                 $("#stack-div div:nth-child(15)").css("display", "none");
                 stackedElem--;
             } else if(stackedElem > 4){
-            var newStack = stack.push(inputValue);
-            $("#stack-div div:nth-child(" + stackedElem + ")").text(newStack[newStack.length-1]);
-            $("#stack-div div:nth-child(" + stackedElem + ")").addClass("addedelement");
+                var newStack = stack.push(inputValue);
+                $("#stack-div div:nth-child(" + stackedElem + ")").text(newStack[newStack.length-1]);
+                $("#stack-div div:nth-child(" + stackedElem + ")").addClass("addedelement");
                 stackedElem--;
                 $("#stackelement").prop("value", "");
             } else{
@@ -41,16 +41,20 @@ $(document).ready(function(){
     });
 
     $("#add-queue").on("click", function(){
-        if(enqueuedElem === 0){
-            $("#queue-underflow").css("display", "none");
-            enqueuedElem++;
-        } else if(enqueuedElem < 11){
-            var newQueue = queue.enqueue($("#queue-input").prop("value"));
-            $("#queue-div div:nth-child(" + enqueuedElem +")").text(newQueue[newQueue.length-1]);
-            $("#queue-div div:nth-child(" + enqueuedElem +")").addClass("queue-item")
-            enqueuedElem++;
-        } else {
-            $("#queue-overflow").css("display", "block");
+        var inputValue = $("#queue-input").prop("value");
+        if(inputValue !== ""){
+            if(enqueuedElem === 0){
+                $("#queue-underflow").css("display", "none");
+                enqueuedElem++;
+            } else if(enqueuedElem < 11){
+                var newQueue = queue.enqueue(inputValue);
+                $("#queue-div div:nth-child(" + enqueuedElem +")").text(newQueue[newQueue.length-1]);
+                $("#queue-div div:nth-child(" + enqueuedElem +")").addClass("queue-item")
+                enqueuedElem++;
+                $("#queue-input").prop("value", "")
+            } else {
+                $("#queue-overflow").css("display", "block");
+            }
         }
     });
 
