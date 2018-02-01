@@ -97,12 +97,14 @@ describe("Stack", function() {
 describe("Queues", function() {
   var queue;
 
+
   beforeEach(function() {
     queue = new QueueDataStructure();
+    console.log(queue)
   });
 
   describe ("Queue properties", function () {
-    it ("Should has an array to add the elements to the queue", function () {
+    it ("bliss Should has an array to add the elements to the queue", function () {
       expect(Array.isArray(queue.queueControl)).toBe(true);
     });
 
