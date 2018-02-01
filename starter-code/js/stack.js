@@ -41,14 +41,16 @@ $(document).ready(function(){
     });
 
     $("#add-queue").on("click", function(){
-        var inputValue = $("#queue-input").prop("value");
-        if(inputValue !== ""){
+        var inputQ = $("#queue-input").prop("value");
+        if(inputQ !== ""){
             if(enqueuedElem === 0){
                 $("#queue-underflow").css("display", "none");
                 enqueuedElem++;
             } else if(enqueuedElem < 11){
-                var newQueue = queue.enqueue(inputValue);
-                $("#queue-div div:nth-child(" + enqueuedElem +")").text(newQueue[newQueue.length-1]);
+                var newQueue = queue.enqueue(inputQ);
+                console.log(inputQ);
+                $("#queue-div div:nth-child(" + enqueuedElem +")").text(newQueue[0]);
+                console.log(newQueue[newQueue.length-1]);
                 $("#queue-div div:nth-child(" + enqueuedElem +")").addClass("queue-item")
                 enqueuedElem++;
                 $("#queue-input").prop("value", "")
