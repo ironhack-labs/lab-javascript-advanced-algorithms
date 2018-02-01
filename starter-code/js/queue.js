@@ -11,7 +11,7 @@ $('#add-queue').click(function(){
     if (queueData.canEnqueue()) {
 
         queueData.enqueue(queueValue);
-        $(".queue-element:nth-child("+index+")").text(queueValue);
+        $(".queue-element:nth-child("+index+")").text(queueData.queueControl[0]);
         $(".queue-element:nth-child("+index+")").addClass("addedelement");
         index++
         $("#queue-container > .under").css("display","none");

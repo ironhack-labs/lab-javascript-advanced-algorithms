@@ -13,7 +13,7 @@ $(document).ready(function() {
         if (stackData.canPush()) {
             
             stackData.push(stackValue);
-            $(".stack-element:nth-child("+index+")").text(stackValue);
+            $(".stack-element:nth-child("+index+")").text(stackData.stackControl[0]);
             $(".stack-element:nth-child("+index+")").addClass("addedelement");
             index--
             $(".stack:first-child > .under").css("display","none");
