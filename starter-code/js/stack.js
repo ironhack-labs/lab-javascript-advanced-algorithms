@@ -7,18 +7,22 @@ $(document).ready(function(){
     var enqueuedElem = 1;
 
     $("#add-stack").on("click", function(){
+       
         var inputValue = $("#stackelement").prop("value");
-        $("#stackelement").prop("value", "");
-        if(stackedElem === 15){
-            $("#stack-div div:nth-child(15)").css("display", "none");
-            stackedElem--;
-        } else if(stackedElem > 4){
-        var newStack = stack.push(inputValue);
-        $("#stack-div div:nth-child(" + stackedElem + ")").text(newStack[newStack.length-1]);
-        $("#stack-div div:nth-child(" + stackedElem + ")").addClass("addedelement");
-            stackedElem--;
-        } else{
-            $("#stack-div div:nth-child(4)").css("display", "block");
+        if(inputValue !== ""){
+            if(stackedElem === 15){
+                $("#stack-div div:nth-child(15)").css("display", "none");
+                stackedElem--;
+            } else if(stackedElem > 4){
+            var newStack = stack.push(inputValue);
+            $("#stack-div div:nth-child(" + stackedElem + ")").text(newStack[newStack.length-1]);
+            $("#stack-div div:nth-child(" + stackedElem + ")").addClass("addedelement");
+                stackedElem--;
+                $("#stackelement").prop("value", "");
+            } else{
+                $("#stack-div div:nth-child(4)").css("display", "block");
+            } 
+            $("#stackelement").prop("value", "");
         } 
     });
 
