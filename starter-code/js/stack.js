@@ -1,4 +1,5 @@
-function StackDataStructure () {  
-  this.stackControl = [1];
-  this.MAX_SIZE = 8;
+$(document).ready(function() {
+  $("#add-stack").click(function() {
+      
+  }
 }
