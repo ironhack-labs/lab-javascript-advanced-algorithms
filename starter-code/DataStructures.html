@@ -11,18 +11,19 @@
 </head>
 
 <body>
-  <section class="container">
+  <section>
     <h1>Abstract Data Types</h1>
   </section>
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="col-6" id="stack">
       <h2> STACKS </h2>
       <div class="stack-buttons">
-        <button id="add-stack">Add Stack</button>
-        <button id="remove-stack">Remove Stack</button>
+        <button class="btn" id="add-stack">Add Stack</button>
+        <button class="btn" id="remove-stack">Remove Stack</button>
       </div>
       <div class="stack-boxes">
+        <div class="stack-box" id="stack-msg"></div>
         <div class="stack-box" id="stack1"></div>
         <div class="stack-box" id="stack2"></div>
         <div class="stack-box" id="stack3"></div>
@@ -37,7 +38,7 @@
     </div>
 
 
-    <!-- <div class="col-6" id="queue">
+    <div class="col-6" id="queue">
       <h2>QUEUES</h2>
       <button id="add-queue">Add Queue</button>
       <button id="remove-queue">Add Queue</button>
@@ -52,8 +53,9 @@
       <div class="queue box" id="queue9"></div>
       <div class="queue box" id="queue10"></div>
     </div>
-  </div> -->
+  </div>
 
+</div>
 
     <script src="src/StackDataStructure.js"></script>
     <script src="src/QueueDataStructure.js"></script>

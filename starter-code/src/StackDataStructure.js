@@ -29,7 +29,7 @@ StackDataStructure.prototype.push = function(item) {
 };
 
 StackDataStructure.prototype.pop = function () {
-  if (!this.isEmpty()) {
+  if (!this.isEmpty()) {;
     return this.stackControl.pop()
   } else {
     return "Stack Underflow"
