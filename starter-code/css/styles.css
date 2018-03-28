@@ -4,6 +4,15 @@
 .btn{
   width: 40%;
 }
-.cajas{
-  margin-top: 50px;
+
+.empty{
+  height: 50px;
+  background-color: rgb(240, 238, 238);
+  color:white;
+}
+
+.full{
+  height: 50px;
+  background-color: blue;
+  color: white;
 }
