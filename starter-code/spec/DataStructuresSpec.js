@@ -70,7 +70,6 @@ describe("Stack", function() {
     it ("Should return 'Stack Overflow' if the stack is full", function () {
       stack.MAX_SIZE = 1;
       stack.push(19);
-
       expect(stack.push(88)).toEqual("Stack Overflow");
     });
 
@@ -157,6 +156,7 @@ describe("Queues", function() {
     });
 
     it ("Should insert the elements in the reverse received order", function () {
+
       queue.enqueue(19);
       queue.enqueue(88);
 
@@ -164,6 +164,7 @@ describe("Queues", function() {
     });
 
     it ("Should return 'Stack Overflow' if the stack is full", function () {
+
       queue.MAX_SIZE = 1;
       queue.enqueue(19);
 
@@ -178,6 +179,7 @@ describe("Queues", function() {
     });
 
     it ("Should return the first element inserted in the queue", function () {
+
       queue.enqueue(19);
       queue.enqueue(88);
 
