@@ -34,6 +34,11 @@ $(document).ready(function() {
       var resultEnqueue = queue.enqueue(item);
       printQueue(queue);
 
+      if( resultEnqueue == "Queue Overflow" ) {
+        $("#queue-0").addClass("danger");
+        $("#queue-0").text("Queue Overflow");
+      }
+
       $("#queueItem").val("");
     }
   });
@@ -44,17 +49,16 @@ $(document).ready(function() {
     
     $("#dequeue").text(resultDequeue);
 
-    /* if (resultPop != "Stack Underflow") {
-      $("div#stack-0").addClass("danger");
-      $("div#stack-0").text("Stack Underflow");
-    } else {
-      clearStack(stack);
-    } */
+    if( resultDequeue == "Queue Underflow" ) {
+      $("#queue-0").addClass("danger");
+      $("#queue-0").text("Queue Underflow");
+    }
   });
 
   function printQueue(queue) {
     for (var i = 0; i < queue.queueControl.length; i++) {
       if (queue.queueControl[i] != undefined) {
+        $("div#queue-" + i).removeClass("danger");
         $("div#queue-" + i).addClass("full");
         $("div#queue-" + i).text(queue.queueControl[i]);
       }
@@ -64,6 +68,7 @@ $(document).ready(function() {
   function clearQueue(queue) {
     for (var i = 0; i <= queue.queueControl.length; i++) {
       if (queue.queueControl[i] == undefined) {
+        $("div#queue-" + i).removeClass("danger");
         $("div#queue-" + i).removeClass("full");
         $("div#queue-" + i).text("");
       }

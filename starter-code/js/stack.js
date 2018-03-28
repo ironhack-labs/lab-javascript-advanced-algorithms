@@ -28,10 +28,11 @@ $(document).ready(function() {
     if (item != "") {
       var resultPush = stack.push(item);
       printStack(stack);
-      /* if (resultPush) {
-        printStack(stack);
-      } else if (resultPush == "Stack Overflow") {
-      } */
+
+      if( resultPush == "Stack Overflow" ) {
+        $("#stack-" + (stack.MAX_SIZE-1)).addClass("danger");
+        $("#stack-" + (stack.MAX_SIZE-1)).text("Stack Overflow");
+      }
 
       $("#stackItem").val("");
     }
@@ -43,18 +44,17 @@ $(document).ready(function() {
     
     $("#stack-pop").text(resultPop);
 
-    /* if (resultPop != "Stack Underflow") {
-      $("div#stack-0").addClass("danger");
-      $("div#stack-0").text("Stack Underflow");
-    } else {
-      clearStack(stack);
-    } */
+    if( resultPop == "Stack Underflow" ) {
+      $("#stack-0").addClass("danger");
+      $("#stack-0").text("Stack Underflow");
+    }
   });
 
   // print full cells
   function printStack(stack) {
     for (var i = 0; i < stack.stackControl.length; i++) {
       if (stack.stackControl[i] != undefined) {
+        $("div#stack-" + i).removeClass("danger");
         $("div#stack-" + i).addClass("full");
         $("div#stack-" + i).text(stack.stackControl[i]);
       }
@@ -65,6 +65,7 @@ $(document).ready(function() {
   function clearStack(stack) {
     for (var i = 0; i <= stack.stackControl.length; i++) {
       if (stack.stackControl[i] == undefined) {
+        $("div#stack-" + i).removeClass("danger");
         $("div#stack-" + i).removeClass("full");
         $("div#stack-" + i).text("");
       }
