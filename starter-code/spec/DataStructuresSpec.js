@@ -66,8 +66,9 @@ describe("Stack", function() {
 
       expect(stack.stackControl).toEqual([19, 88]);
     });
-
+   
     it ("Should return 'Stack Overflow' if the stack is full", function () {
+      
       stack.MAX_SIZE = 1;
       stack.push(19);
 
@@ -102,6 +103,7 @@ describe("Queues", function() {
   });
 
   describe ("Queue properties", function () {
+    
     it ("Should has an array to add the elements to the queue", function () {
       expect(Array.isArray(queue.queueControl)).toBe(true);
     });
