@@ -5,14 +5,73 @@
   <title>DataStructures | Stacks &amp; Queues</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
+  </section>
+  
+  <section id="stack" class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Stack (Capacity: <span class="actual">0</span> rows of <span class="total">0</span>)</h2>
+      </div></div>
+    <div class="row">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="maxSize"></label>
+          <input type="text" name="pepe" class="form-control" id="maxSizeStack" placeholder="Introduce the maximum size of your stack">
+        </div>
+        <div class="form-group hide">
+          <label for="element"></label>
+          <input type="text" class="form-control" id="elementStack" placeholder="Introduce the next element to stack">
+        </div>
+      </form>
+    </div>
+    <div class="row">
+        <button type="button" class="btn btn-primary" id="btn-stack">Stack</button>
+    </div>
+    <div class="row">
+        <button type="button" class="btn btn-danger" id="btn-unstack">Unstack</button>
+    </div>
+    <div class="row">
+        <p id="adv-stack"></p>
+    </div>
   </section>
 
+  <section id="queue" class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Queue (Capapcity: <span class="actual">0</span> rows of <span class="total">0</span>)</h2>
+      </div></div>
+    <div class="row">
+      <form class="form-inline ">
+        <div class="form-group">
+          <label for="maxSize"></label>
+          <input type="text" class="form-control" id="maxSizeQueue" placeholder="Introduce the maximum size of your queue">
+        </div>
+        <div class="form-group hide">
+          <label for="element"></label>
+          <input type="text" class="form-control" id="elementQueue" placeholder="Introduce the next element to put on queue">
+        </div>
+      </form>
+    </div>
+    <div class="row">
+        <button type="button" class="btn btn-primary" id="btn-queue">Queue</button>
+    </div>
+    <div class="row">
+        <button type="button" class="btn btn-danger" id="btn-unqueue">Unqueue</button>
+    </div>
+    <div class="row">
+      <p id="adv-queue"></p>
+    </div>
+    <div class="row queueElement">
+      <p></p>
+    </div>
+  </section>
+
+  <script src="lib/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
