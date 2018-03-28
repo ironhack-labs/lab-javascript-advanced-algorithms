@@ -180,7 +180,7 @@ describe("Queues", function() {
     it ("Should return the first element inserted in the queue", function () {
       queue.enqueue(19);
       queue.enqueue(88);
-
+      debugger;
       expect(queue.dequeue()).toBe(19);
     });
 
