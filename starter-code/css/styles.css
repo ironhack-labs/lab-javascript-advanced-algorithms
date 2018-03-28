@@ -1,0 +1,15 @@
+.lleno{
+    background-color: blue;
+    display:block;
+}
+.vacio{
+    background-color: blue;
+    opacity: 75%;
+    display: none;
+}
+.blanco{
+    height: 20px;
+}
+.botonera{
+    text-align: center;
+}
