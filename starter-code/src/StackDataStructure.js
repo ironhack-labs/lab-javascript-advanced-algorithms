@@ -17,13 +17,20 @@ StackDataStructure.prototype.canPush = function(){
         return false;
     }
 };
-StackDataStructure.prototype.push = function(){
-    if(this.stackControl.length< this.MAX_SIZE){
-        return this.stackControl.push(19);
+StackDataStructure.prototype.push = function(n){
+    this.stackControl.push(n);
+    if(this.stackControl.length > this.MAX_SIZE){
+        return "Stack Overflow";
+
     }else {
-        return false;
+        return this.stackControl;
     }
 };
 StackDataStructure.prototype.pop = function(){
+    if(this.stackControl.length == 0){
+        return "Stack Underflow"
 
+    }else {
+        return this.stackControl.pop();
+    }
 };
