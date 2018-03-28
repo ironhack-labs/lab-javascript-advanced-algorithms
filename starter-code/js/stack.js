@@ -5,16 +5,26 @@ function hideItem($e) {
 }
 function stackAdd(item){
   var items = getItems();
-  if(stack.push(item)){
-
+  if(stack.canPush()){
+    stack.push(item);
+    var $e = getItems().last();
+    showItem($e);
+    setText(item, $e);
+    if($('.underflow').last().attr("display") != "none" && getHiddens().length==1){
+      toggleUnderflow();
+    }
     //Mostrar el div con el texto
   }else {
     toggleOverflow();
   }
 }
 function stackTake(){
-  if(stack.pop()){
-    getItems().last().hideItem();
+  if(!stack.isEmpty()){
+    stack.pop()
+    var $e = getHiddens().first();
+    $e.empty();
+    hideItem($e);
+    console.log(stack.stackControl);
   }else {
     toggleUnderflow();
   }
@@ -22,16 +32,19 @@ function stackTake(){
 function getItems() {
   return $('.items > div.item');
 }
+function getHiddens() {
+  return $('.items > div.shown');
+}
 function setText(text, $e) {
   var h3 = $('<h3>'+text+'</h3>');
   $e.append(h3);
   return $e;
 }
 function showItem ($e) {
-  $e.addClass('show').deleteClass('item');
+  $e.addClass('shown').removeClass('item');
 }
 function hideItem ($e) {
-  $e.addClass('item').deleteClass('show');
+  $e.addClass('item').removeClass('shown');
 }
 function toggleOverflow(){
   $('.overflow').first().toggle();
@@ -41,19 +54,19 @@ function toggleUnderflow(){
 }
 window.onload = function() {
  var calculatePriceButton = document.getElementById("calc-prices-button");
- var createItemButton = document.getElementById("new-item-create");
- var deleteButtons = document.getElementsByClassName("btn-delete");
+ var addButton = document.getElementById("btn-add");
+ var takeButton = document.getElementById("btn-take");
 
 //  calculatePriceButton.onclick = getTotalPrice;
 //  createItemButton.onclick = createNewItem;
 
- for (var i = 0; i < deleteButtons.length; i++) {
-   var button = deleteButtons[i];
-   button.onclick = function() {
-     deleteItem(button.parentNode.parentNode);
-   }
-   // button.addEventListener('click', function() {
-   //   deleteItem(button.parentNode.parentNode);
-   // }); 
- }
+
+  addButton.onclick = function() {
+    var texto = $('#add').val();
+     stackAdd(texto);
+  }
+  takeButton.onclick = function() {
+    stackTake();
+  }
+ 
 };

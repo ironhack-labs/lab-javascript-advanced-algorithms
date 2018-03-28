@@ -1,10 +1,10 @@
 function StackDataStructure() {
   this.stackControl = [];
-  this.MAX_SIZE = 6;
+  this.MAX_SIZE = 8;
 }
 
 StackDataStructure.prototype.isEmpty = function() {
-  if (this.stackControl.length === 0) {
+  if (this.stackControl.length == 0) {
     return true;
   } else {
     return false;
