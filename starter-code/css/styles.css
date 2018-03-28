@@ -1,0 +1,20 @@
+body {
+  font-size: 14px;
+}
+.stack {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.btn {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.form-control {
+  margin-bottom: 10px;
+}
+.fila {
+  width: 100%;
+  margin-bottom: 3px;
+  height:60px;
+  background-color: lightgray;
+}
