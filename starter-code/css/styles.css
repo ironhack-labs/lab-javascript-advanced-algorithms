@@ -1,0 +1,44 @@
+.btest{
+    border: 1px solid #f50000;
+}
+
+.container{
+    text-align: center;
+}
+
+.stack{
+    padding: 0;
+}
+
+.stack > h2{
+    margin-left: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.element{
+    height: 40px;
+    background-color: #e4e4e4;
+    margin-bottom: 2px;
+}
+
+.over{
+    background-color: #ff14148a;
+    border: 1px solid #f50000;
+}
+
+.btn-primary, .btn-danger{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer{
+    height: 100px;
+    margin-top: 40px;
+    border-top: 5px solid #6b6b6b;
+    background-color: #333333;
+}
+
+.footer-content{
+    color: #ffffff;
+}
