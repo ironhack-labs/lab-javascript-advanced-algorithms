@@ -1,6 +1,6 @@
-.box {
-  height: 100px;
-  width: 200px;
+.stack-box {
+  height: 50px;
+  width: 400px;
   background-color: grey;
   border: 5px solid white;
 }
