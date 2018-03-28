@@ -23,15 +23,15 @@ StackDataStructure.prototype.canPush = function(){
     }
 }
 
-StackDataStructure.prototype.push = function(elment){
+StackDataStructure.prototype.push = function(element){
    
     if(this.canPush()){
-        this.stackControl.push(elment);
+        this.stackControl.push(element);
         this.isEmpty();
         return this.stackControl;
     }
     else{
-        return "Stack Overflow";
+        return false;
     }
 }
 
@@ -40,6 +40,6 @@ StackDataStructure.prototype.pop = function(){
         return this.stackControl[this.stackControl.length-1];
     }
     else{
-        return "Stack Underflow";
+        return false;
     }   
 }

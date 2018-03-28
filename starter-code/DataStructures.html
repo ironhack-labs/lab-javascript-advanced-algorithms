@@ -11,39 +11,47 @@
   <section class="container">
     <h1>Abstract Data Types</h1>
     <div class="row">
-      <div class="stack col-sm-3 col-lg-offset-2">
+      <div class="stack col-sm-3 col-sm-offset-2">
         <h2>Stack</h2>
         <div class="form-group">
-          <input type="text" class="form-control" id="enter-element-stack" placeholder="Add the element to the stack...">
+          <input type="text" class="form-control" id="input-element-stack" placeholder="Add the element to the stack...">
           <button type="button" class="btn btn-primary" id="add-element-stack">ADD</button>
           <button type="button" class="btn btn-danger" id="take-element-stack">TAKE</button>
         </div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
+        <div class="stack-elements">
+          <ul>
+            <li id="stack-top" class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li id="stack-bottom" class="element"></li>
+          </ul>
+        </div>
       </div>
-      <div class="stack col-sm-3 col-lg-offset-2">
+      <div class="queue col-sm-3 col-sm-offset-2">
         <h2>Queue</h2>
         <div class="form-group">
-          <input type="text" class="form-control" id="enter-element" placeholder="Add the element to the stack...">
-          <button type="button" class="btn btn-primary" id="add-element">ADD</button>
-          <button type="button" class="btn btn-danger" id="take-element">TAKE</button>
+          <input type="text" class="form-control" id="input-element-queue" placeholder="Add the element to the queue...">
+          <button type="button" class="btn btn-primary" id="add-element-queue">ADD</button>
+          <button type="button" class="btn btn-danger" id="take-element-queue">TAKE</button>
         </div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
-        <div class="element"></div>
+        <div class="queue-elements">
+          <ul>
+            <li class="element first"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element last"></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>

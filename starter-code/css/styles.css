@@ -1,3 +1,8 @@
+body{
+    font-size: 62.5%/1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .btest{
     border: 1px solid #f50000;
 }
@@ -6,20 +11,30 @@
     text-align: center;
 }
 
-.stack{
+.stack, .queue{
     padding: 0;
 }
 
-.stack > h2{
+h2{
     margin-left: 10px;
     text-align: left;
     font-weight: bold;
+}
+
+.stack-elements > ul, .queue-elements > ul{
+    padding: 0;
+    list-style-type: none;
 }
 
 .element{
     height: 40px;
     background-color: #e4e4e4;
     margin-bottom: 2px;
+}
+
+.element p{
+    margin-top: 0.3em;
+    font-size: 1.5em;
 }
 
 .over{
