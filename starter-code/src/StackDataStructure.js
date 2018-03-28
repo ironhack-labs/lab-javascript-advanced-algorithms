@@ -29,8 +29,10 @@ StackDataStructure.prototype.push = function(stc){
    }
 
 StackDataStructure.prototype.pop = function(stc){
-    if(this.isEmpty()){
-        this.stackControl.shift(stc)
-        return this.stackControl   
+    if(!this.isEmpty()){
+        var a = this.stackControl.pop(stc)
+        return a  
+        }else{
+            return 'Stack Underflow'
         }
 }
