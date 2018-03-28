@@ -1,0 +1,44 @@
+.ancho{
+  width: 100%;
+  padding: 5px 0;
+}
+.pila-vacia{
+  background-color: rgba(128, 128, 128, 0.164);
+  height: 50px;
+  border: 1px solid white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+
+}
+.pila-llena{
+  background-color: rgb(31, 31, 133);
+  height: 50px;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+}
+
+.container{
+  width: 30%;
+}
+.Stack-Overflow{
+  background-color: tomato;
+  height: 50px;
+  border: 1px solid white;
+  color: white;
+}
+
+Queue-Underflow{
+  background-color: tomato;
+  height: 50px;
+  border: 1px solid white;
+  color: white;
+}
+.btn{
+  margin: 10px 0;
+  height: 50px;
+}
