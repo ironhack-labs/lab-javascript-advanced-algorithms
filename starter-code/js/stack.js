@@ -10,9 +10,10 @@ function stackAdd(item){
     var $e = getItems().last();
     showItem($e);
     setText(item, $e);
-    if($('.underflow').last().attr("display") != "none" && getHiddens().length==1){
-      toggleUnderflow();
-    }
+    $('.underflow').last().css("display", "none");
+    // if($('.underflow').last().attr("display") == "block" && getHiddens().length==0){
+    //   toggleUnderflow();
+    // }
     //Mostrar el div con el texto
   }else {
     toggleOverflow();
@@ -25,6 +26,9 @@ function stackTake(){
     $e.empty();
     hideItem($e);
     console.log(stack.stackControl);
+    if($('.overflow').last().attr("display") != "none" && getItems().length==1){
+      toggleOverflow();
+    }
   }else {
     toggleUnderflow();
   }
