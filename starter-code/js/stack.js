@@ -15,10 +15,10 @@ $(document).ready(function() {
   $("<button class='btn btn-danger col-md-12' id='takeStack'>TAKE</button>").appendTo($stackContainer);
 
   for (var i = stack.MAX_SIZE - 1; i >= 0; i--) {
-    $("<div class='empty form-control col-md-12' id='stack-" + i + "'>").appendTo($stackContainer);
+    $("<div class='form-control col-md-12' id='stack-" + i + "'>").appendTo($stackContainer);
   }
 
-  // show pop value
+  // container where show pop value 
   var $stackPop = $("<div class='col-md-12' id='stack-pop'>");
   $stackPop.appendTo($stackContainer);
 
@@ -27,11 +27,11 @@ $(document).ready(function() {
 
     if (item != "") {
       var resultPush = stack.push(item);
-
-      if (resultPush) {
+      printStack(stack);
+      /* if (resultPush) {
         printStack(stack);
       } else if (resultPush == "Stack Overflow") {
-      }
+      } */
 
       $("#stackItem").val("");
     }
@@ -39,34 +39,33 @@ $(document).ready(function() {
 
   $("#takeStack").on("click", function(e) {
     var resultPop = stack.pop();
+    clearStack(stack);
     
     $("#stack-pop").text(resultPop);
 
-    if (resultPop != "Stack Underflow") {
+    /* if (resultPop != "Stack Underflow") {
       $("div#stack-0").addClass("danger");
       $("div#stack-0").text("Stack Underflow");
     } else {
       clearStack(stack);
-    }
+    } */
   });
 
+  // print full cells
   function printStack(stack) {
     for (var i = 0; i < stack.stackControl.length; i++) {
       if (stack.stackControl[i] != undefined) {
-        $("div#stack-" + i)
-          .removeClass("empty")
-          .addClass("full");
+        $("div#stack-" + i).addClass("full");
         $("div#stack-" + i).text(stack.stackControl[i]);
       }
     }
   }
 
+  // print empty cells
   function clearStack(stack) {
-    for (var i = 0; i < stack.stackControl.length; i++) {
+    for (var i = 0; i <= stack.stackControl.length; i++) {
       if (stack.stackControl[i] == undefined) {
-        $("div#stack-" + i)
-          .removeClass("full")
-          .addClass("empty");
+        $("div#stack-" + i).removeClass("full");
         $("div#stack-" + i).text("");
       }
     }
