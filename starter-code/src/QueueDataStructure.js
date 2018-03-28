@@ -27,7 +27,7 @@ QueueDataStructure.prototype.dequeue = function() {
   if(this.queueControl.length == 0) {
     return "Queue Underflow";
   } else if (this.queueControl.length < this.MAX_SIZE) {
-    return this.queueControl[this.queueControl.length-1];
+    return this.queueControl.pop();
   }
 }
 
