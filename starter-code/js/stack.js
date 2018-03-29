@@ -9,8 +9,9 @@ $(function() {
   $("#add-element-stack").on("click", function() {
     addToStack();
   });
+  //CLEAR INPUT FIELD
   $("#stack-clear-input").on("click", function() {
-    $("#input-element-stack").val('');
+    $("#input-element-stack").val("");
   });
 
   function addToStack() {
@@ -42,17 +43,17 @@ $(function() {
         .html("<p>Stack Underflow</p>")
         .addClass("over");
     } else {
-        debugger;
-        var freeCell = (stack.MAX_SIZE) - stack.stackControl.length;
-        $(".stack-elements > ul > li")
-          .eq(freeCell)
-          .removeClass("occupied")
-          .empty();
+      debugger;
+      var freeCell = stack.MAX_SIZE - stack.stackControl.length;
+      $(".stack-elements > ul > li")
+        .eq(freeCell)
+        .removeClass("occupied")
+        .empty();
 
-          $("#stack-top")
-          .html("<p>Stack Overflow</p>")
-          .removeClass("over")
-          .addClass("hidden");
+      $("#stack-top")
+        .html("<p>Stack Overflow</p>")
+        .removeClass("over")
+        .addClass("hidden");
     }
   }
 });

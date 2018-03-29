@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
+  <title>Stacks &amp; Queues</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -39,13 +39,14 @@
       <div class="queue col-sm-3 col-sm-offset-2">
         <h2>Queue</h2>
         <div class="form-group">
-          <input type="text" class="form-control" id="input-element-queue" placeholder="Add the element to the queue...">
+          <input type="text" class="form-control" id="input-element-queue" placeholder="Add element to queue...">
+          <span id="queue-clear-input" class="glyphicon glyphicon-remove-circle"></span>
           <button type="button" class="btn btn-success" id="add-element-queue">ADD</button>
           <button type="button" class="btn btn-danger" id="take-element-queue">TAKE</button>
         </div>
         <div class="queue-elements">
           <ul>
-            <li class="element first"></li>
+            <li id="queue-top" class="element"></li>
             <li class="element"></li>
             <li class="element"></li>
             <li class="element"></li>
@@ -53,7 +54,7 @@
             <li class="element"></li>
             <li class="element"></li>
             <li class="element"></li>
-            <li class="element last"></li>
+            <li id="queue-bottom" class="element hidden"></li>
           </ul>
         </div>
       </div>
@@ -62,7 +63,7 @@
   <section class="container-fluid footer">
     <div class="container">
       <div class="row">
-        <!-- Info about developer  -->
+        <h3>Developed by Mateus Felix</h3>
       </div>
     </div>
   </section>
