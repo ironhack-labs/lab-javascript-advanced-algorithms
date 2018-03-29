@@ -28,11 +28,12 @@ function addElemento(elemento) {
       .addClass("full")
       .removeClass("empty")
       .html(elemento);
+      
+    $("input").val("");
 
     $(".stack > .final")
       .hide()
       .text("");
-    $(".texto tr").append("<p>" + elemento + "</p>");
   } else {
     $(".pila > .empty:last")
       .addClass("full")
@@ -54,7 +55,8 @@ function borrarElemento() {
     $(".stack > .final")
       .hide()
       .text("");
-    $(".texto p:last-child").remove();
+      
+    $("input").val("");
   } else {
     $(".pila > .full:first")
       .addClass("empty")
