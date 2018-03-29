@@ -16,3 +16,8 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+#stack-overflow,
+#queue-overflow {
+  display: none;
+}

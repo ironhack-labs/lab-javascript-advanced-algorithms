@@ -14,6 +14,9 @@ $(document).ready(function() {
   $("<button class='btn btn-primary col-md-12' id='addStack'>ADD</button>").appendTo($stackContainer);
   $("<button class='btn btn-danger col-md-12' id='takeStack'>TAKE</button>").appendTo($stackContainer);
 
+  var $stackOverflow = $("<div class='col-md-12 form-control danger' id='stack-overflow'>");
+  $stackOverflow.appendTo($stackContainer);
+
   for (var i = stack.MAX_SIZE - 1; i >= 0; i--) {
     $("<div class='form-control col-md-12' id='stack-" + i + "'>").appendTo($stackContainer);
   }
@@ -30,8 +33,8 @@ $(document).ready(function() {
       printStack(stack);
 
       if( resultPush == "Stack Overflow" ) {
-        $("#stack-" + (stack.MAX_SIZE-1)).addClass("danger");
-        $("#stack-" + (stack.MAX_SIZE-1)).text("Stack Overflow");
+        $stackOverflow.css("display","block");
+        $stackOverflow.text("Stack Overflow");
       }
 
       $("#stackItem").val("");
@@ -45,6 +48,7 @@ $(document).ready(function() {
     $("#stack-pop").text(resultPop);
 
     if( resultPop == "Stack Underflow" ) {
+      $stackOverflow.css("display","none");
       $("#stack-0").addClass("danger");
       $("#stack-0").text("Stack Underflow");
     }

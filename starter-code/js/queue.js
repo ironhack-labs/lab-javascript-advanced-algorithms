@@ -7,15 +7,12 @@ $(document).ready(function() {
   $queueContainer.appendTo($container);
 
   $("<h2>Queue</h2>").appendTo($queueContainer);
-  $(
-    "<input class='form-control' id='queueItem' placeholder='Add the element to the queue...'>"
-  ).appendTo($queueContainer);
-  $(
-    "<button class='btn btn-primary col-md-12' id='addQueue'>ADD</butto>"
-  ).appendTo($queueContainer);
-  $(
-    "<button class='btn btn-danger col-md-12' id='takeQueue'>TAKE</button>"
-  ).appendTo($queueContainer);
+  $("<input class='form-control' id='queueItem' placeholder='Add the element to the queue...'>").appendTo($queueContainer);
+  $("<button class='btn btn-primary col-md-12' id='addQueue'>ADD</button>").appendTo($queueContainer);
+  $("<button class='btn btn-danger col-md-12' id='takeQueue'>TAKE</button>").appendTo($queueContainer);
+
+  var $queueOverflow = $("<div class='col-md-12 form-control danger' id='queue-overflow'>");
+  $queueOverflow.appendTo($queueContainer);
 
   for (var i = 0; i < queue.MAX_SIZE; i++) {
     $("<div class='form-control col-md-12' id='queue-" + i + "'>").appendTo(
@@ -35,8 +32,8 @@ $(document).ready(function() {
       printQueue(queue);
 
       if( resultEnqueue == "Queue Overflow" ) {
-        $("#queue-0").addClass("danger");
-        $("#queue-0").text("Queue Overflow");
+        $queueOverflow.css("display","block");
+        $queueOverflow.text("Stack Overflow");
       }
 
       $("#queueItem").val("");
@@ -50,6 +47,7 @@ $(document).ready(function() {
     $("#dequeue").text(resultDequeue);
 
     if( resultDequeue == "Queue Underflow" ) {
+      $queueOverflow.css("display","none");
       $("#queue-0").addClass("danger");
       $("#queue-0").text("Queue Underflow");
     }
