@@ -1,0 +1,23 @@
+.full {
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+}
+
+#takeStack,
+#takeQueue {
+  margin-bottom: 20px;
+}
+
+.danger {
+  border: 1px solid red;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.7);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#stack-overflow,
+#queue-overflow {
+  display: none;
+}
