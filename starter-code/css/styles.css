@@ -1,0 +1,30 @@
+body{
+    background-color: blueviolet;
+}
+
+#input{
+    background-color: red;
+}
+
+
+.container-fluid{
+    margin: 10px 10%;
+}
+.files{
+    background-color: bisque;
+}
+.box .disable{
+    width: 30%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+.box .acitve {
+    width: 30%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    background-color:blue;
+}
