@@ -28,7 +28,6 @@ function anadirElemento(elemento) {
     $(".stack > .final-alert").html("La pila está llena");
   }
 
-  //hay que coger el ultimo elemento que tenga la clase empty
 }
 
 function borrarElemento() {
@@ -45,7 +44,7 @@ function borrarElemento() {
       .html("");
     $(".stack > .final-alert").html("La pila ya está vacía!!.");
   }
-  //hay que coger el primer elemento que tenga la clase ful
+  
 }
 function inicializarPila() {
   var cuantos = pila.MAX_SIZE;

@@ -30,7 +30,7 @@ function anadirElementoCola(elemento) {
     $(".queue>.final-alert").html("La cola está llena");
   }
 
-  //hay que coger el ultimo elemento que tenga la clase empty
+
 }
 
 function borrarElementoCola() {
@@ -48,7 +48,7 @@ function borrarElementoCola() {
       .html("");
     $(".queue >.final-alert").html("La cola ya está vacía!!.");
   }
-  //hay que coger el primer elemento que tenga la clase ful
+ 
 }
 function inicializarCola() {
   var cuantos = cola.MAX_SIZE;
