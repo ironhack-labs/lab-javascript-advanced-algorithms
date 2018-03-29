@@ -1,59 +1,89 @@
-body{
-    font-size: 62.5%/1.5;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.btest{
-    border: 1px solid #f50000;
-}
-
-.container{
-    text-align: center;
-}
-
-.stack, .queue{
-    padding: 0;
-}
-
-h2{
-    margin-left: 10px;
-    text-align: left;
-    font-weight: bold;
-}
-
-.stack-elements > ul, .queue-elements > ul{
-    padding: 0;
-    list-style-type: none;
-}
-
-.element{
-    height: 40px;
-    background-color: #e4e4e4;
-    margin-bottom: 2px;
-}
-
-.element p{
-    margin-top: 0.3em;
-    font-size: 1.5em;
-}
-
-.over{
-    background-color: #ff14148a;
-    border: 1px solid #f50000;
-}
-
-.btn-primary, .btn-danger{
-    width: 100%;
-    margin-top: 10px;
-}
-
-.footer{
-    height: 100px;
-    margin-top: 40px;
-    border-top: 5px solid #6b6b6b;
-    background-color: #333333;
-}
-
-.footer-content{
+body {
+    background-color: #131313;
     color: #ffffff;
+  font-size: 62.5%/1.5;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.btest {
+  border: 1px solid #f50000;
+}
+
+.container {
+  text-align: center;
+}
+
+.stack,
+.queue {
+  padding: 0;
+}
+
+h2 {
+  margin-left: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.stack-elements > ul,
+.queue-elements > ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.element {
+  height: 50px;
+  background-color: #222222;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.element p {
+  margin: 0;
+  padding-top: 0.3em;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.over {
+  padding-top: 0.1em;
+  background-color: #910000;
+  border: 1px solid #af0000;
+  display: block;
+}
+.over > p {
+  color: #fdfdfd;
+  font-size: 1.5em;
+}
+
+.btn-success,
+.btn-danger {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footer {
+  height: 100px;
+  margin-top: 40px;
+  border-top: 5px solid #6b6b6b;
+  background-color: #333333;
+}
+
+.footer-content {
+  color: #ffffff;
+}
+
+.occupied {
+  background-color: #005521;
+}
+
+.hidden{
+    display: none;
+}
+
+#stack-clear-input{
+    position: absolute;
+    right: 8px;
+    top: 72px;
+    color: #a5a5a5;
+    cursor: pointer;
 }
