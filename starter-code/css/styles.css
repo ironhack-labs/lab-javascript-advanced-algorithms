@@ -1,4 +1,9 @@
-.aqua {
-  background-color: aqua;
-  border-color: aqua;
+.stackPlace {
+  background-color: blue;
+  display: none;
 }
+
+.overflow {
+  background-color: red;
+}
+
