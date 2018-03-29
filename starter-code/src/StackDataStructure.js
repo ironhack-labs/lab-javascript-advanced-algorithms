@@ -1,6 +1,7 @@
 function StackDataStructure () {
-  this.MAX_SIZE = 10;
+  this.MAX_SIZE = 9;
   this.stackControl = [];
+  this.position = 9;
 }
 
 StackDataStructure.prototype.canPush = function() {
@@ -32,3 +33,18 @@ StackDataStructure.prototype.pop = function() {
       return this.stackControl.pop(); 
     }
  }
+
+ var stack = new StackDataStructure();
+
+ $("#add").click(function(){
+   /* console.log("1"); */
+   stack.push($("input").val());
+   $("div div .row:nth-of-type("+stack.position+") .slots").text(stack.stackControl[stack.stackControl.length-1]);
+   debugger;
+   $("div div .row:nth-of-type("+stack.position+") .slots").css("backgroundColor", "#30ACED").css("text-align","center").css("font-size","20px").css("color","white")
+   stack.position--;
+ })
+
+ $("#take").click(function(){
+  /* console.log("2"); */
+})
