@@ -3,9 +3,9 @@
     display:block;
 }
 .vacio{
-    background-color: blue;
-    opacity: 75%;
-    display: none;
+    background-color: grey;
+    opacity: 0.5;
+    display: block;
 }
 .blanco{
     height: 20px;
