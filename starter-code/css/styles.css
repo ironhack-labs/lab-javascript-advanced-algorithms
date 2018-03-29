@@ -1,0 +1,41 @@
+.container {
+  width: 50%
+}
+.ancho {
+  width: 100%;
+  padding: 5px 0px;
+}
+.overflow{
+border: 1px solid red;
+opacity: 0.3;
+color: red;
+background-color: rgba(255,0,0, 0.5)
+}
+.underflow{
+  border: 1px solid red;
+  opacity: 0.3;
+  color: red;
+  background-color: rgba(255,0,0, 0.5)
+  }
+
+h1,h2,input,button,div {
+  height: 45px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.pila-vacia {
+  background-color: rgba(220,220,220, 0.9);
+  border: 1px solid white;
+  
+  
+}
+.pila-llena {
+  background-color: aqua;
+  color: black;
+  border: 1px solid white;
+}
