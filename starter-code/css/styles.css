@@ -1,0 +1,57 @@
+.navbar-default {
+  height: 80px;
+}
+
+#stack-container {
+  box-sizing: border-box;
+  width: 30%;
+}
+
+#queue-container {
+  /* box-sizing: border-box; */
+  width: 60%;
+}
+
+.form {
+  margin: 0;
+  padding: 0;
+}
+
+.stack-cell {
+  width: 100%;
+  height: 40px;
+  background-color: grey;
+  margin: 2px 0;
+}
+
+/* .queue-title {
+  width: 20%;
+} */
+
+.queue-cell-wrapper {
+  width: 100%;
+}
+
+.queue-cell {
+  width: 40px;
+  display: block;
+  float: left;
+  height: 100px;
+  background-color: grey;
+  margin: 20px 2px;
+  text-orientation: upright;
+}
+
+div.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+
+.active,
+.activeQueue {
+  text-align: center;
+  color: white;
+  background-color: #337ab7;
+  padding: 6px;
+}
