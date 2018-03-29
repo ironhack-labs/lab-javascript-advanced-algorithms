@@ -1,0 +1,26 @@
+.empty{
+  width: 100px;
+  height: 50px;
+  background-color: grey;
+  
+  margin: 5px;
+  color:white;
+}
+
+.full{
+  
+  width: 100px;
+  height: 50px;
+  background-color: blue;
+  margin: 5px;
+  color: white;
+}
+
+.cola{
+  display: flex;
+  
+}
+
+.stack{
+  height: 500px;
+}
