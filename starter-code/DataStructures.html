@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Stacks &amp; Queues</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
+    <div class="row">
+      <div class="stack col-sm-3 col-sm-offset-2">
+        <h2>Stack</h2>
+        <div class="form-group">
+          <input type="text" class="form-control" id="input-element-stack" maxlength="20" placeholder="Add element to stack...">
+          <span id="stack-clear-input" class="glyphicon glyphicon-remove-circle"></span>
+          <button type="button" class="btn btn-success" id="add-element-stack">ADD</button>
+          <button type="button" class="btn btn-danger" id="take-element-stack">TAKE</button>
+        </div>
+        <div class="stack-elements">
+          <ul>
+            <li id="stack-top" class="element hidden"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li id="stack-bottom" class="element"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="queue col-sm-3 col-sm-offset-2">
+        <h2>Queue</h2>
+        <div class="form-group">
+          <input type="text" class="form-control" id="input-element-queue" placeholder="Add element to queue...">
+          <span id="queue-clear-input" class="glyphicon glyphicon-remove-circle"></span>
+          <button type="button" class="btn btn-success" id="add-element-queue">ADD</button>
+          <button type="button" class="btn btn-danger" id="take-element-queue">TAKE</button>
+        </div>
+        <div class="queue-elements">
+          <ul>
+            <li id="queue-top" class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li id="queue-bottom" class="element hidden"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid footer">
+    <div class="container">
+      <div class="row">
+        <h3>Developed by Mateus Felix</h3>
+      </div>
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
@@ -18,4 +73,5 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>
