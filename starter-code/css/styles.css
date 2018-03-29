@@ -18,8 +18,18 @@ body {
   margin-bottom: 3px;
   height:60px;
 }
+.queue-item {
+  width: 60px;
+  height: 100%;
+  margin-right: 3px;
+  background-color: lightgray;
+  float: left;
+}
 .stack :last-child {
   margin-bottom: 20px;
+}
+.items-queue {
+  height: 400px;
 }
 .shown {
   background-color: lightskyblue;
