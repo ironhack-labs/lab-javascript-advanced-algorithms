@@ -14,6 +14,7 @@ $(document).ready(function() {
   $("<button class='btn btn-primary col-md-12' id='addStack'>ADD</button>").appendTo($stackContainer);
   $("<button class='btn btn-danger col-md-12' id='takeStack'>TAKE</button>").appendTo($stackContainer);
 
+  // div to show stack overflow message
   var $stackOverflow = $("<div class='col-md-12 form-control danger' id='stack-overflow'>");
   $stackOverflow.appendTo($stackContainer);
 

@@ -11,6 +11,7 @@ $(document).ready(function() {
   $("<button class='btn btn-primary col-md-12' id='addQueue'>ADD</button>").appendTo($queueContainer);
   $("<button class='btn btn-danger col-md-12' id='takeQueue'>TAKE</button>").appendTo($queueContainer);
 
+  // div to show queue overflow message
   var $queueOverflow = $("<div class='col-md-12 form-control danger' id='queue-overflow'>");
   $queueOverflow.appendTo($queueContainer);
 
