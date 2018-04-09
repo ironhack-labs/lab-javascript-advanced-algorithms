@@ -1,0 +1,69 @@
+ body {
+     font-size: 16px;
+ }
+
+ .structure {
+     border: 1px solid black;
+     border-radius: 2%;
+
+ }
+
+ .btn {
+     width: 100%;
+     margin-bottom: 10px;
+ }
+
+ #btn-take {
+     margin-bottom: 30px;
+ }
+
+ .form-control {
+     margin-bottom: 10px;
+ }
+
+ .element {
+     width:100%;
+     background-color: rgb(218, 210, 210);
+     margin-bottom:3px;
+     height: 60px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .structure : last-child {
+     margin-bottom: 20px;
+ }
+
+ .shown {
+    background-color: rgb(117, 185, 228);
+    display: flex;
+    width: 100%;
+    margin-bottom: 3px;
+    height: 60px;
+    justify-content: center;
+    align-content: center;
+  }
+
+ .shown h3 {
+     color:white;
+     text-align: center;
+     font-size: 1.5em;
+ }
+
+ .overflow {
+     text-align: center;
+     justify-content: center;
+     background-color:rgb(235, 155, 146);
+     border: 1px solid red;
+     display: flex;
+     display: none;
+ }
+
+ .underflow {
+     text-align: center;
+     justify-content: center;
+     background-color: rgb(235, 155, 146);
+     border: 1px solid red;
+     font-weight: 100;
+     display: none:
+ }
