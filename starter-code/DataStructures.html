@@ -5,17 +5,59 @@
   <title>DataStructures | Stacks &amp; Queues</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
+   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
+    <div class="global">
+      <div id="stack-div" class="stack">
+        <input id="stackelement" class="form-control" type="text" name="" value="" placeholder="Add the element to the stack...">
+        <button id="add-stack" type="button" class="btn btn-primary btn-block" name="button">STACK</button>
+        <button id="delete-stack" type="button" class="btn btn-danger btn-block" name="button">REMOVE</button>
+        <div class="error-stack over" id="over">Stack Overflow</div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="error-stack" id="under">Stack Underflow</div>
+      </div>
+      <div id="removed_stack"><strong></strong></div>
+      <div id="queue-container">
+        <input id="queue-input" class="form-control" type="text" name="" value="" placeholder="Add the element to the queue...">
+        <button id="add-queue" class="btn btn-primary btn-block" type="button" name="button">QUEUE</button>
+        <button id="delete-queue" class="btn btn-danger btn-block" type="button" name="button">REMOVE</button>
+        
+        <div class="queue" id="queue-div">
+          <div class="error-queue under" id="uQ">Queue Underflow</div>
+          <div class="queue-element">1</div>
+          <div class="queue-element">2</div>
+          <div class="queue-element">3</div>
+          <div class="queue-element">4</div>
+          <div class="queue-element">5</div>
+          <div class="queue-element">6</div>
+          <div class="queue-element">7</div>
+          <div class="queue-element">8</div>
+          <div class="queue-element">9</div>
+          <div class="queue-element">10</div>
+          <div class="error-queue over" id="oQ">Queue Overflow</div>
+        </div>
+        
+      </div>
+      <div id="removed_queue"><strong></strong></div>
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+
 </body>
 </html>
