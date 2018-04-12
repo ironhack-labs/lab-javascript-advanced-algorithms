@@ -7,53 +7,53 @@ describe("Stack", function() {
 
   describe ("Stack properties", function () {
     it ("Should has an array to add the elements to the stack", function () {
-      expect(Array.isArray(stack.stackControl)).toBe(true);
+      expect(Array.isArray(stack.stackControl)).toBe(true); //done
     });
 
     it ("Should has a max number of items to avoid the stack overflow", function () {
-      expect(typeof(stack.MAX_SIZE)).toBe('number');
+      expect(typeof(stack.MAX_SIZE)).toBe('number'); //done
     });
   });
 
   describe ("Stack methods", function () {
     it ("Should has a method to check if the current stack is empty", function () {
-      expect(typeof(stack.isEmpty)).toBe('function');
+      expect(typeof(stack.isEmpty)).toBe('function'); //done
     });
 
     it ("Should has a method to check if we can push elements into the stack", function () {
-      expect(typeof(stack.canPush)).toBe('function');
+      expect(typeof(stack.canPush)).toBe('function'); //done
     });
 
     it ("Should has a method to push elements into the stack", function () {
-      expect(typeof(stack.push)).toBe('function');
+      expect(typeof(stack.push)).toBe('function'); //done
     });
 
     it ("Should has a method to take elements from the stack", function () {
-      expect(typeof(stack.pop)).toBe('function');
+      expect(typeof(stack.pop)).toBe('function'); //done
     });
   });
 
   describe ("Stack methods default values", function () {
     it ("Should has an empty stack", function () {
-      expect(stack.isEmpty()).toBe(true);
+      expect(stack.isEmpty()).toBe(true); //done
     });
 
     it ("Should be able to add a new element in the stack", function () {
-      expect(stack.canPush()).toBe(true);
+      expect(stack.canPush()).toBe(true); //done
     });
   });
 
   describe ("Stack methods usage", function () {
     it ("Should add the indicated element to the stack", function () {
-      stack.push(19);
+      stack.push(19); //wtf done
 
-      expect(stack.stackControl.length).toBe(1);
+      expect(stack.stackControl.length).toBe(1); //wtf done
     });
 
     it ("Should return that stack is not empty when adding an element", function () {
-      stack.push(19);
+      stack.push(19); 
 
-      expect(stack.isEmpty()).toBe(false);
+      expect(stack.isEmpty()).toBe(false); //done
     });
 
     it ("Should return the stack when an element is inserted", function () {
