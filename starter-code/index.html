@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <title>STACK - QUEUE</title>
+  </head>
+  <body>
+    <container class="container">
+        <div class = "row">
+            <div class="col-md-5 col-lg-4 stack container">
+                <h1>STACK</h1>
+                <div class="input-group mb-3">
+                    <input id ="stack-value" type="text" class="form-control" placeholder="Add element to the stack..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button id ="add-stack-item" type="button" class="btn btn-success"> Add </button>
+                        <button id ="remove-stack-item" type="button" class="btn btn-danger"> Take </button>
+                    </div>                 
+                </div>
+                <div id="stack-overflow" class="overflow-underflow">
+                    Stack Overflow
+                </div>
+                <div class="array-stack-item">
+                    
+                </div>
+
+                <div id="stack-underflow" class="overflow-underflow">
+                    Stack Underflow
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-4 queue container">
+                <h1>QUEUE</h1>
+                <div class="input-group mb-3">
+                    <input  id="queue-value" type="text" class="form-control" placeholder="Add element to the queue..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button id ="add-queue-item" type="button" class="btn btn-success"> Add </button>
+                        <button id ="remove-queue-item" type="button" class="btn btn-danger"> Take </button>
+                    </div>
+                </div>
+                <div id="queue-overflow" class="overflow-underflow">
+                    Queue Overflow
+                </div>
+                <div class="array-queue-item">
+
+                </div>
+
+                <div id="queue-underflow" class="overflow-underflow">
+                    Queue Underflow
+                </div>
+            </div>
+        </div>
+    </container>
+
+    <div id="template-item"  style="display: none"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <script src="./js/stack.js" ></script>
+    <script src="./src/QueueDataStructure.js" ></script>
+    <script src="./js/queue.js" ></script>
+    <script src="./src/StackDataStructure.js" ></script>
+    </body>
+</html> 

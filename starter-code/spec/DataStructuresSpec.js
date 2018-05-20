@@ -11,7 +11,7 @@ describe("Stack", function() {
     });
 
     it ("Should has a max number of items to avoid the stack overflow", function () {
-      expect(typeof(stack.MAX_SIZE)).toBe('number');
+      expect(typeof(stack.max_size)).toBe('number');
     });
   });
 
@@ -68,14 +68,14 @@ describe("Stack", function() {
     });
 
     it ("Should return 'Stack Overflow' if the stack is full", function () {
-      stack.MAX_SIZE = 1;
+      stack.max_size = 1;
       stack.push(19);
 
       expect(stack.push(88)).toEqual("Stack Overflow");
     });
 
     it ("Should return false if the stack is full", function () {
-      stack.MAX_SIZE = 1;
+      stack.max_size = 1;
       stack.push(19);
 
       expect(stack.canPush()).toBe(false);
@@ -107,7 +107,7 @@ describe("Queues", function() {
     });
 
     it ("Should has a max number of items to avoid the queue overflow", function () {
-      expect(typeof(queue.MAX_SIZE)).toBe('number');
+      expect(typeof(queue.max_size)).toBe('number');
     });
   });
 
@@ -164,14 +164,14 @@ describe("Queues", function() {
     });
 
     it ("Should return 'Stack Overflow' if the stack is full", function () {
-      queue.MAX_SIZE = 1;
+      queue.max_size = 1;
       queue.enqueue(19);
 
       expect(queue.enqueue(88)).toEqual("Queue Overflow");
     });
 
     it ("Should return false if the stack is full", function () {
-      queue.MAX_SIZE = 1;
+      queue.max_size = 1;
       queue.enqueue(19);
 
       expect(queue.canEnqueue()).toBe(false);
