@@ -10,8 +10,58 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
+    <div class="row">
+      <div class="stack col-sm-3 col-sm-offset-2">
+        <h2>Stack</h2>
+        <div class="form-group">
+          <input type="text" class="form-control" id="input-element-stack" maxlength="20" placeholder="Add element to stack...">
+          <button type="button" class="btn btn-info" id="add-element-stack">ADD</button>
+          <button type="button" class="btn btn-danger" id="take-element-stack">TAKE</button>
+        </div>
+        <div class="stack-elements">
+          <ul>
+            <li id="stack-top" class="element hidden"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li id="stack-bottom" class="element"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="queue col-sm-3 col-sm-offset-2">
+        <h2>Queue</h2>
+        <div class="form-group">
+          <input type="text" class="form-control" id="input-element-queue" placeholder="Add element to queue...">
+          <button type="button" class="btn btn-info" id="add-element-queue">ADD</button>
+          <button type="button" class="btn btn-danger" id="take-element-queue">TAKE</button>
+        </div>
+        <div class="queue-elements">
+          <ul>
+            <li id="queue-top" class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li class="element"></li>
+            <li id="queue-bottom" class="element hidden"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
+
+
+  <script src="src/StackDataStructure.js"></script>
+  <script src="src/QueueDataStructure.js"></script>
+  <script src="js/stack.js"></script>
+  <script src="js/queue.js"></script>
+</body>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
