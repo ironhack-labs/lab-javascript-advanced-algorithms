@@ -1,11 +1,11 @@
 function QueueDataStructure() {
-  this.queue = [];
-  this.maxqueue = 10;
+  this.queueControl = [];
+  this.MAX_SIZE = 10;
   //Remember that Queue is a FIFO (First-in First-out) structure
 }
 
 QueueDataStructure.prototype.isEmpty = function() {
-  if (this.queue.length === 0) {
+  if (this.queueControl.length === 0) {
     return true;
   } else {
     return false;
@@ -13,7 +13,7 @@ QueueDataStructure.prototype.isEmpty = function() {
 };
 
 QueueDataStructure.prototype.canEnqueue = function() {
-  if (this.queue.length === this.canEnqueue) {
+  if (this.queueControl.length === this.MAX_SIZE) {
     return false;
   } else {
     return true;
@@ -23,11 +23,11 @@ QueueDataStructure.prototype.canEnqueue = function() {
 QueueDataStructure.prototype.enqueue = function(bloque) {
     if (this.canEnqueue()){
         // this.queue.reverse(this.queue.push(bloque));
-        this.queue.push(bloque);
+        this.queueControl.unshift(bloque);
     } else{
         return "Queue Overflow";
     } 
-    return this.queue;
+    return this.queueControl;
 };
 
 QueueDataStructure.prototype.dequeue = function() {
@@ -36,7 +36,7 @@ QueueDataStructure.prototype.dequeue = function() {
         return "Queue Underflow"
        
     } else {
-      primerBloque =  this.queue.shift();
+      primerBloque =  this.queueControl.pop();
     }
     return primerBloque;;
 };
