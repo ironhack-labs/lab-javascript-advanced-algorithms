@@ -1,0 +1,29 @@
+.stackElement,
+.queueElement{
+    background-color: lightgray;
+    border: solid 1px white;
+    text-align: center;
+    height: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.stackElement.filled, 
+.queueElement.filled{
+    background-color: blue;
+    border: solid 1px white;
+    color: white;
+    text-align: center;
+    height: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+#StackOverflow, #StackUnderflow, 
+#QueueOverflow, #QueueUnderflow {
+    background-color: white;
+    border: solid 1px red;
+    color: red;
+    text-align: center;
+    height: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
