@@ -1,0 +1,26 @@
+.element {
+  background-color:#f0f0f0;
+  margin: 1px 0; 
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.stack {
+  margin-top: 10px;
+}
+
+.warning {
+  color: red;
+  border: 1px solid red;
+  background-color: #E8B0A9;
+  display: none;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+}
+
+.blue {
+  background-color: #4cadea;
+  color: white;
+}
