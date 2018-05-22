@@ -17,10 +17,105 @@
 }
 
 .bloques{
-    background-color: gray;
+    background-color: #e9e9e9;
     text-align: center;
     padding: 10px 16px;
     font-size: 18px;
+
     line-height: 1.3333333;
     border-radius: 6px;
+}
+
+.OverFlow{
+ display: none;
+}
+
+.UnderFlow{
+    display: none;
+}
+
+#btn-add-stack,
+#btn-take-stack,
+#btn-enqueue,
+#btn-dequeue {
+  margin: 10px 0;
+  outline: 0;
+  width: 300px;
+}
+
+#btn-dequeue,
+#btn-take-stack {
+  margin: 0 0 30px;
+}
+
+#txt-insert-stack,
+#txt-queue {
+  outline: 0;
+  width: 300px;
+}
+
+#stack-overflow,
+#stack-underflow,
+#stack .element,
+#queue-overflow,
+#queue-underflow,
+#queue .element {
+  background: #EAEAEA;
+  border: 1px solid #EAEAEA;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  height: 50px;
+  margin-bottom: 1px;
+  padding: 10px 0;
+  text-align: center;
+  width: 300px;
+}
+
+#stack-overflow,
+#stack-underflow,
+#queue-overflow,
+#queue-underflow {
+  background: #f2dede;
+  border: 1px solid #d9534f;
+  color: #d9534f;
+  display: none;
+}
+
+#stack .element.full,
+#queue .element.full {
+  background: #43A3E6;
+  border: 1px solid #43A3E6;
+}
+
+#stack-element,
+#queue-element {
+  font-size: 30px;
+  margin-top: 55px;
+}
+
+#queue .element {
+  float: left;
+  height: 300px;
+  margin-bottom: 0;
+  margin-right: 1px;
+  padding: 135px 0;
+  width: 50px;
+}
+
+#queue-overflow,
+#queue-underflow {
+  float: left;
+  height: 300px;
+  padding-left: 12px;
+  width: 50px;
+  writing-mode: vertical-lr;
+}
+
+#queue-overflow {
+  margin-right: 1px;
+}
+
+#queue-underflow {
+  margin-left: 1px;
 }

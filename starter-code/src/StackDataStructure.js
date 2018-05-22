@@ -4,7 +4,7 @@ function StackDataStructure () { //Remember that Stack is a LIFO (Last-in First-
     this.MAX_SIZE = 8;
 }
 
-StackDataStructure.prototype.isEmpty= function(){ // aun no se s se oucpa prototype
+StackDataStructure.prototype.isEmpty= function(){ 
 
 if (this.stackControl.length === 0){
     return true;
@@ -18,7 +18,7 @@ StackDataStructure.prototype.canPush = function(){
     } else {return true}
 }
 
-StackDataStructure.prototype.insertar = function(bloque){
+StackDataStructure.prototype.push = function(bloque){
     if(this.canPush()){
         this.stackControl.push(bloque);
     }else {
@@ -27,7 +27,7 @@ StackDataStructure.prototype.insertar = function(bloque){
     return this.stackControl;
 }
 
-StackDataStructure.prototype.remover = function(){
+StackDataStructure.prototype.pop = function(){
     var bloqueFinal;
     if(this.isEmpty()){
         return "Stack Underflow";
