@@ -1,0 +1,26 @@
+.OverFlow{
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.UnderFlow{
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.bloques{
+    background-color: gray;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}

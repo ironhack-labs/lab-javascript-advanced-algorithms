@@ -23,7 +23,7 @@ QueueDataStructure.prototype.canEnqueue = function() {
 QueueDataStructure.prototype.enqueue = function(bloque) {
     if (this.canEnqueue()){
         // this.queue.reverse(this.queue.push(bloque));
-        this.queueControl.unshift(bloque);
+        this.queueControl.unshift(bloque);//tambien podria ser shift y reverse 
     } else{
         return "Queue Overflow";
     } 
