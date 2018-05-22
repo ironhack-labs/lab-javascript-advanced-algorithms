@@ -1,6 +1,5 @@
 var stack = new StackDataStructure();
-$(document).ready(function(){
-    alert("pagina loaded");
+$(document).ready(function(){    
     console.log("pagina cargada");
     console.log(stack);
     $("#btAdd").click(function(){
@@ -22,7 +21,7 @@ $(document).ready(function(){
         stack.stackControl.forEach(function (elem, index) {
 
              html += '<div class= "elemento" id="stack_' + elem + '">'             
-             html += '<button type="button" class="btn btn-outline-success">' + elem + '</button>'
+             html += '<input type="button" ' + ' value= "' + elem + '" class="btn btn-warning">'
              html += '</div>';            
              
         });

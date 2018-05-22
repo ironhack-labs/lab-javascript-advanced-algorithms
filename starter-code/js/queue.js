@@ -1,6 +1,5 @@
 var queue = new QueueDataStructure();
-$(document).ready(function(){
-    alert("pagina loaded");
+$(document).ready(function(){    
     console.log("pagina cargada");
     console.log(queue);
     $("#btAddQueue").click(function(){
@@ -22,7 +21,7 @@ $(document).ready(function(){
         queue.queueControl.forEach(function (elem, index) {
 
              html += '<div class= "elemento" id="queue_' + elem + '">'             
-             html += '<button type="button" class="btn btn-outline-success">' + elem + '</button>'
+             html += '<input type="button" ' + ' value= "' + elem + '" class="btn btn-warning">'             
              html += '</div>';            
              
         });
