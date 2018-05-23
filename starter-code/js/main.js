@@ -18,6 +18,10 @@ $(document).ready(function(){
 
   $("#btnAdd").on("click", function() {
     var newTask = $("#inputText").val();
+
+    if(newTask != "")
+    {
+
     $("#inputText").val("");
     $("#qty").text("");
 
@@ -45,6 +49,7 @@ $(document).ready(function(){
       $("#stackOver").text(arrayStack);
       $("#btnAdd").attr("disabled",true);
       $("#btnTake").attr("disabled",true);
+    }
     }
   });
 
