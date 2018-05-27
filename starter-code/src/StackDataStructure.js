@@ -29,6 +29,7 @@ StackDataStructure.prototype.canPush = function() {
         return "Stack Overflow";
     } */
     
+    // why does Jasmine ask to check MAX_SIZE again here? why can't we just check if canPush() is true?
     if (this.stackControl.length == this.MAX_SIZE) {
         return "Stack Overflow";
     } else {
