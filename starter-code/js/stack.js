@@ -17,7 +17,7 @@ function addElement(stack) {
             printStack(stack.stackControl);
             //$("#stack-elements").append("<li>" + InputVal + "</li>");
         } else {
-            //fix: make stack overflow text only appear once
+            //first check to see if we have already shown the warning
             if ($(".overflow").length == 0) {
                 var overflowText = "Stack Overflow";
                 $("#stack-elements").prepend("<div class='overflow'>" + overflowText + "</div>");
@@ -27,8 +27,7 @@ function addElement(stack) {
 }
 
 function removeElement(stack) {
-    $("#remove-stack-button").click(function(){
-            
+    $("#remove-stack-button").click(function(){            
         if(!stack.isEmpty()){
             stack.pop(); 
             printStack(stack.stackControl);

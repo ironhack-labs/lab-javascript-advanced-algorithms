@@ -6,7 +6,7 @@ $(document).ready(function (){
     addElement(queue);
     removeElement(queue);
 
-    //fix: can't bring these elements out of document ready, find out why
+    //fix: can't bring these function out of document ready, find out why
     function addElement(queue) {
         $("#add-queue-button").click(function(){
             
@@ -17,9 +17,10 @@ $(document).ready(function (){
                 printQueue(queue.queueControl);
                 //$("#queue-elements").append("<li>" + InputVal + "</li>");
             } else {
-                //fix: make queue overflow text only appear once
-                var overflowText = "queue Overflow";
-                $("#queue-elements").prepend("<div>" + overflowText + "</div>");
+                if ($(".overflow").length == 0) {
+                    var overflowText = "queue Overflow";
+                    $("#queue-elements").prepend("<div class='overflow'>" + overflowText + "</div>");
+                }
             }
         }); 
     }
@@ -40,7 +41,6 @@ $(document).ready(function (){
 
 // print each element in the queue list as an li
 function printQueue(array) {
-    
     $("#queue-elements").empty();
     jQuery.each(array, function(i, arrayEl) {
         $("#queue-elements").prepend("<li>" + arrayEl + "</li>");
