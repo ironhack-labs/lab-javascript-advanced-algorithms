@@ -10,6 +10,18 @@ flex-direction: column-reverse;
 bottom: 0%;
 }
 
+#queueList,#queueEmptyList{
+    position: absolute;
+display: flex;
+flex-direction: row;
+bottom: 0%;
+right: 0%;
+}
+
+#queueList{
+    z-index: 1;
+}
+
 #stackList li{
   background-color:blueviolet;
   width: 20vw;
@@ -17,12 +29,33 @@ bottom: 0%;
   color: white;
 }
 
+#queueList li{
+    background-color:blueviolet;
+    height: 20vh;
+    width: 10vw;
+    color: white;
+}
+
+
 #stackEmptyList li{
     width:20vw;
     height: 10vh;
 }
 
-#stackEmptyList{
+#queueEmptyList li{
+    height:20vh;
+    width: 10vw;
+}
+
+#stackEmptyList , #queueEmptyList{
 position: absolute;
 bottom: 0%;
+}
+
+#stack{
+    float: left;
+}
+
+#queue{
+    float: right;
 }
