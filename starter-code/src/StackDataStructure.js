@@ -1,2 +1,3 @@
-function StackDataStructure () {
+//LIFO
+function StackDataStructure() {
 }
