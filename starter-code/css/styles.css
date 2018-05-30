@@ -5,6 +5,9 @@
 #stackList{
     position: absolute;
 z-index: 1;
+display: flex;
+flex-direction: column-reverse;
+bottom: 0%;
 }
 
 #stackList li{
@@ -21,4 +24,5 @@ z-index: 1;
 
 #stackEmptyList{
 position: absolute;
+bottom: 0%;
 }
