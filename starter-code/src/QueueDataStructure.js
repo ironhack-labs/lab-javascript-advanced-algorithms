@@ -1,8 +1,8 @@
 //FIFO
-function QueueDataStructure() {
+function QueueDataStructure(max) {
 
     this.queueControl = [];
-    this.MAX_SIZE = 2;
+    this.MAX_SIZE = max ? max : 5;
 
     this.isEmpty = function () {
         return this.queueControl.length ? false : true;

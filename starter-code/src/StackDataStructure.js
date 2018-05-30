@@ -1,7 +1,7 @@
 //LIFO
-function StackDataStructure() {
+function StackDataStructure(max) {
     this.stackControl = [];
-    this.MAX_SIZE = 2;
+    this.MAX_SIZE = max ? max : 5;
 
     this.isEmpty = function () { return this.stackControl.length ? false : true; }
 

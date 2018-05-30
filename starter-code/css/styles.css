@@ -1,0 +1,24 @@
+.dataStructure{
+    width:20%;
+}
+
+#stackList{
+    position: absolute;
+z-index: 1;
+}
+
+#stackList li{
+  background-color:blueviolet;
+  width: 20vw;
+  height: 10vh;
+  color: white;
+}
+
+#stackEmptyList li{
+    width:20vw;
+    height: 10vh;
+}
+
+#stackEmptyList{
+position: absolute;
+}
