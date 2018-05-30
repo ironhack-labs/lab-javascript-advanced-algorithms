@@ -1,0 +1,64 @@
+
+
+.stack {
+ background:lightgray; 
+ padding:10px;
+}
+
+.container{
+  width:300px;
+
+}
+
+.element {
+background-color: #bafcf0;
+height:50px;
+margin:20px;
+text-align: center;
+line-height:50px;
+}
+
+.stacked {
+  background-color: turquoise;
+  height:50px;
+  margin:20px;
+  text-align: center;
+  line-height:50px;
+}
+.overflow {
+  background-color: rgb(214, 132, 132);
+  color:red;
+  height:50px;
+  margin:20px;
+  text-align: center;
+  line-height:50px;
+  border: dotted red;
+}
+
+
+.underflow {
+  background-color:rgb(230, 230, 168);
+  color:black;
+  height:50px;
+  margin:20px;
+  text-align: center;
+  line-height:50px;
+  border: dotted yellow;
+}
+
+.btn-primary {
+  background-color:turquoise;
+  border-color: turquoise;
+  display: center;
+  width:120px;
+  display: center;
+}
+
+
+.take {
+
+  width: 120px;
+  display: center;
+  float:right;
+}
+/* toggle color to #3bf97d */
