@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  margin-bottom: 3vh;
+}
+
+h1 {
+  align-self: center;
+}
+
+.container > * {
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.new-element-input {
+  border: 1px #ededed solid;
+  color: grey;
+}
+
+.stack-container {
+  flex-direction: column-reverse;
+}
+
+.stack-container > * {
+  height: 7vh;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4vh;
+}
+
+.stack-container > *.empty {
+  background-color: #ededed;
+}
+
+.stack-container > *.filled {
+  background-color: #52ade7;
+}
+
+.stack-container > *.alert {
+  background-color: #f3e2e2;
+  color: #df9098;
+}
