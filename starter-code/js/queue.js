@@ -41,6 +41,7 @@ $(document).ready(function() {
     child.addClass("alert");
     child.removeClass("empty filled");
     child.text(text);
+    child.css("background-color", "#f3e2e2");
   }
 
   function setUnderflow(text) {
@@ -52,12 +53,14 @@ $(document).ready(function() {
     child.addClass("empty");
     child.removeClass("filled alert");
     child.text("");
+    child.css("background-color", "#ededed");
   }
 
   function setFilled(child, text) {
     child.addClass("filled");
     child.removeClass("empty alert");
     child.text(text);
+    child.css("background-color", getBackgroundColor(text.split(" ")[0]));
   }
 
   function setAllStackElementsToEmpty() {
