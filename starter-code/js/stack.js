@@ -1,15 +1,18 @@
 var stack = new StackDataStructure(8);
+var counter = 0;
 
 $(document).ready(function() {
   var inputText = $("#new-element-input");
   var stackUI = $("#stack");
 
   $(".btn-add").click(function() {
-    bindStackControl(stack.push(inputText.val()));
+    bindStackControl(stack.push(counter + " " + inputText.val()));
+    counter++;
   });
 
   $(".btn-take").click(function() {
     bindStackControl(stack.pop());
+    if (stack.isEmpty()) counter = 0;
   });
 
   function bindStackControl(stackControl) {

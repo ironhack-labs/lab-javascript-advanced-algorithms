@@ -1,4 +1,5 @@
 var queue = new QueueDataStructure(8);
+var queueCounter = 0;
 
 $(document).ready(function() {
   var inputText = $("#new-element-input");
@@ -6,12 +7,14 @@ $(document).ready(function() {
 
   $(".btn-add").click(function() {
     console.log("onclick!");
-    bindQueueControl(queue.enqueue(inputText.val()));
+    bindQueueControl(queue.enqueue(queueCounter + " " + inputText.val()));
+    queueCounter++;
   });
 
   $(".btn-take").click(function() {
     console.log("onclick!");
     bindQueueControl(queue.dequeue());
+    if (queue.isEmpty()) queueCounter = 0;
   });
 
   function bindQueueControl(queueControl) {
