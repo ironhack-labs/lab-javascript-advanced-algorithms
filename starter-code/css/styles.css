@@ -1,0 +1,41 @@
+
+.group {
+  width: 200px;
+  float: left;
+  margin-left: 200px
+}
+
+input {
+  display: block;
+  width: 200px;
+}
+
+button {
+  display: block;
+  width: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.element, .s-over, .s-under, .q-over, .q-under {
+  background: lightgrey;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  margin: 5px 0px;
+  text-align: center;
+  font: bold 16px arial;
+  padding: 3px 0;
+} 
+
+.s-over, .s-under, .q-over, .q-under {
+  background: #ff000066;
+}
+
+.hide {
+  display: none;
+}
+
+.queue, .stack {
+  margin-top: 20px;
+}

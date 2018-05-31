@@ -10,12 +10,52 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    
+    <div class="group">
+      <h2>Stack</h2>
+      <input id="s-input" type="text">
+      <button id="s-add" class="btn btn-primary">ADD</button>
+      <button id="s-take"  class="btn btn-danger">TAKE</button>
+      <div class="stack">
+        <div class="s-over hide">Stack Overflow</div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="s-under hide">Stack Underflow</div>
+      </div>
+    </div>
 
+    
+    <div class="group">
+      <h2>Queue</h2>
+      <input  id="q-input" type="text">
+      <button  id="q-add" class="btn btn-primary">ADD</button>
+      <button  id="q-take" class="btn btn-danger">TAKE</button>
+      <div class="queue">
+          <div class="q-over hide">Queue Overflow</div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="element"></div>
+          <div class="q-under hide">Queue Underflow</div>
+      </div>
+    </div>
+    
   </section>
-
+  
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+  <script src="src/main.js"></script>
 </body>
 </html>
