@@ -4,11 +4,11 @@ $(document).ready(function() {
   var inputText = $("#new-element-input");
   var stackUI = $("#stack");
 
-  $("#btn-add").click(function() {
+  $(".btn-add").click(function() {
     bindStackControl(stack.push(inputText.val()));
   });
 
-  $("#btn-take").click(function() {
+  $(".btn-take").click(function() {
     bindStackControl(stack.pop());
   });
 

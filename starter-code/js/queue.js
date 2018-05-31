@@ -1,15 +1,15 @@
 var queue = new QueueDataStructure(8);
 
 $(document).ready(function() {
-  var inputText = $("#new-element-input-queue");
+  var inputText = $("#new-element-input");
   var queueUI = $("#queue");
 
-  $("#btn-add-queue").click(function() {
+  $(".btn-add").click(function() {
     console.log("onclick!");
     bindQueueControl(queue.enqueue(inputText.val()));
   });
 
-  $("#btn-take-queue").click(function() {
+  $(".btn-take").click(function() {
     console.log("onclick!");
     bindQueueControl(queue.dequeue());
   });
