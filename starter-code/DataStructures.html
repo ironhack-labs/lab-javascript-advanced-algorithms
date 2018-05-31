@@ -10,72 +10,75 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 
-<body class="container">
-  <section class="m-10 container">
-    <h1>STACK</h1>
-    <input type="text" id="new-element-input" placeholder="Add the element to the stack...">
-    <button id="btn-add" class="btn btn-primary btn-add">ADD</button>
-    <button id="btn-take" class="btn btn-danger btn-take">TAKE</button>
+<body>
+  <section id="stack-container">
+    <section class="m-10 container">
+      <h1>STACK</h1>
+      <input type="text" id="new-element-input" placeholder="Add the element to the stack...">
+      <button id="btn-add" class="btn btn-primary btn-add">ADD</button>
+      <button id="btn-take" class="btn btn-danger btn-take">TAKE</button>
+    </section>
+    <section class="m-10 container" id="stack">
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+    </section>
   </section>
-  <section class="m-10 container stack-container" id="stack">
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
+  <section id="queue-container">
+    <section class="m-10 container">
+      <h1>QUEUE</h1>
+      <input type="text" id="new-element-input-queue" placeholder="Add the element to the queue...">
+      <button id="btn-add-queue" class="btn btn-primary btn-add">ADD</button>
+      <button id="btn-take-queue" class="btn btn-danger btn-take">TAKE</button>
+    </section>
+    <section class="m-10 container" id="queue">
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+      <div class="empty">
+        <div class="element"></div>
+      </div>
+    </section>
   </section>
-  <section class="m-10 container">
-    <h1>QUEUE</h1>
-    <input type="text" id="new-element-input-queue" placeholder="Add the element to the stack...">
-    <button id="btn-add-queue" class="btn btn-primary btn-add">ADD</button>
-    <button id="btn-take-queue" class="btn btn-danger btn-take">TAKE</button>
-  </section>
-  <section class="m-10 container stack-container" id="queue">
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-    <div class="empty">
-      <div class="element"></div>
-    </div>
-  </section>
-
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
   <script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
