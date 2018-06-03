@@ -3,14 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
+    <div class="row">
+      <h1>Abstract Data Types</h1>
+    </div>
+    <div class="row">
+      <input type="text" placeholder="Add element to the stack..." class="input-group-text col-md-4 mb-2" autofocus>
+    </div>
+    <div class="row">
+      <button class="btn btn-primary col-md-4 mb-2">ADD</button>
+    </div>
+    <div class="row">
+      <button class="btn btn-danger col-md-4 mb-2">TAKE</button>
+    </div>
+    <div class="stack">
+      <div class="row">
+        <div id="overflow" class="stack-element col-md-4"><span>STACK OVERFLOW</span></div>
+      </div>
+      <div class="row">
+        <div class="stack-element col-md-4"><span></span></div>
+      </div>
+      <div class="row">
+        <div class="stack-element col-md-4"><span></span></div>
+      </div>
+      <div class="row">
+        <div id="test" class="stack-element col-md-4"><span></span></div>
+      </div>
+      <div class="row">
+        <div class="stack-element col-md-4"><span></span></div>
+      </div>
+      <div class="row">
+        <div class="stack-element col-md-4"><span></span></div>
+      </div>
+      <div class="row">
+        <div id="underflow" class="stack-element col-md-4"><span>STACK UNDERFLOW</span></div>
+      </div>
+    </div>
 
+    <div class="col-md-6">
+      <div class="controls">
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>

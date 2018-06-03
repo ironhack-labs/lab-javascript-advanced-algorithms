@@ -1,6 +1,6 @@
 function StackDataStructure() {
   this.stackControl = [];
-  this.MAX_SIZE = 10;
+  this.MAX_SIZE = 5;
 }
 
 StackDataStructure.prototype.isEmpty = function () {
@@ -22,6 +22,28 @@ StackDataStructure.prototype.push = function (element) {
 };
 
 StackDataStructure.prototype.pop = function () {
-  if (!this.isEmpty()) { return this.stackControl.pop(); }
+  if (!this.isEmpty()) {
+    return this.stackControl.pop();
+  }
   return 'Stack Underflow';
+};
+
+StackDataStructure.prototype.flowControl = function () {
+  if (this.stackControl.length === this.MAX_SIZE) {
+    $('#overflow').show();
+    $('btn-primary').prop('disabled', true);
+  } else { $('overflow').hide(); }
+  if (this.stackControl.length === 0) {
+    $('#underflow').show();
+    $('btn-danger').prop('disabled', true);
+  } else { $('#underflow').hide(); }
+};
+
+StackDataStructure.prototype.updateStack = function (stack) {
+  for (i = 0; i < this.stackControl.length; i++) {
+    if (this.stackControl[i]) {
+      $(stack[i]).text(this.stackControl[i]);
+      $(stack[i]).addClass('stack-blue');
+    }
+  }
 };

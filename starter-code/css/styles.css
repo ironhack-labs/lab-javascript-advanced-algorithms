@@ -1,0 +1,26 @@
+.stack-container {
+  background: #CCC;
+}
+
+.stack-element {
+  text-align: center;
+  padding: 1em;
+  border: 1px solid #FFF;
+  background: #EEE;
+}
+
+.stack-element span {
+  padding: 1em;
+}
+
+.stack-blue {
+  color: #FFF;
+  background: #4444FF;
+}
+
+#overflow, #underflow {
+  display: none;
+  color: #FF5555;
+  background: pink;
+  border: 1px solid #FF5555;
+}
