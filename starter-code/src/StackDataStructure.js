@@ -30,25 +30,24 @@ StackDataStructure.prototype.pop = function () {
 
 StackDataStructure.prototype.flowControl = function () {
   if (this.stackControl.length === this.MAX_SIZE) {
-    $('#overflow').show();
-    $('.btn-primary').prop('disabled', true);
+    $('#stack-overflow').show();
+    $('#stack-btn-primary').prop('disabled', true);
   } else if (this.stackControl.length === 0) {
-    $('#underflow').show();
-    $('.btn-danger').prop('disabled', true);
+    $('#stack-underflow').show();
+    $('#stack-btn-danger').prop('disabled', true);
   } else {
-    $('#overflow').hide();
-    $('.btn-primary').prop('disabled', false);
-    $('#underflow').hide();
-    $('.btn-danger').prop('disabled', false);
+    $('#stack-overflow').hide();
+    $('#stack-btn-primary').prop('disabled', false);
+    $('#stack-underflow').hide();
+    $('#stack-btn-danger').prop('disabled', false);
   }
 };
 
 StackDataStructure.prototype.updateStackPush = function (stack) {
-  $(stack).not('.stack-blue').last().text(this.stackControl[this.stackControl.length - 1]);
-  $(stack).not('.stack-blue').last().addClass('stack-blue');
+  $(stack).not('.blue').last().text(this.stackControl[this.stackControl.length - 1])
+    .addClass('blue');
 };
 
 StackDataStructure.prototype.updateStackPop = function () {
-  $('.stack-blue').first().html('<span></span>');
-  $('.stack-blue').first().removeClass('stack-blue');
+  $('.stack .blue').first().html('<span></span>').removeClass('blue');
 };

@@ -1,7 +1,3 @@
-.stack-container {
-  background: #CCC;
-}
-
 .stack-element {
   text-align: center;
   padding: 1em;
@@ -13,12 +9,18 @@
   padding: 1em;
 }
 
-.stack-blue {
-  color: #FFF;
-  background: #4444FF;
+.queue-element {
+  padding: 3.9em 1em;
+  border: 1px solid #FFF;
+  background: #EEE;
 }
 
-#overflow, #underflow {
+.blue {
+  color: #FFF;
+  background: #0077FF;
+}
+
+.red {
   display: none;
   color: #FF5555;
   background: pink;

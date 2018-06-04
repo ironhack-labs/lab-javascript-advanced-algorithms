@@ -8,46 +8,73 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
+
   <section class="container">
     <div class="row">
-      <h1>Abstract Data Types</h1>
+      <div class="col col-md-6 mb-4"><h1>Abstract Data Types</h1></div>
     </div>
+    <!-- STACK -->
     <div class="row">
-      <input type="text" placeholder="Add element to the stack..." class="input-group-text col-md-4 mb-2" autofocus>
-    </div>
-    <div class="row">
-      <button class="btn btn-primary col-md-4 mb-2">ADD</button>
-    </div>
-    <div class="row">
-      <button class="btn btn-danger col-md-4 mb-2">TAKE</button>
-      <div id="poppedElement" class="col-md-1 mb-2"></div>
-    </div>
-    <div class="stack">
-      <div class="row">
-        <div id="overflow" class="stack-element col-md-4"><span>STACK OVERFLOW</span></div>
+      <div class="col col-md-4">
+        <div class="row">
+          <input type="text" placeholder="Add element to the stack..." class="input-group-text col-md-10 mb-2" autofocus>
+        </div>
+        <div class="row">
+          <button id="stack-btn-primary" class="btn btn-primary col-md-10 mb-2">ADD</button>
+        </div>
+        <div class="row">
+          <button id="stack-btn-danger" class="btn btn-danger col-md-10 mb-2">TAKE</button>
+          <div id="poppedElement" class="col-md-1 mb-2"></div>
+        </div>
+        <div class="stack">
+          <div class="row">
+            <div id="stack-overflow" class="stack-element red col-md-10"><span>STACK OVERFLOW</span></div>
+          </div>
+          <div class="row">
+            <div class="stack-element col-md-10"><span></span></div>
+          </div>
+          <div class="row">
+            <div class="stack-element col-md-10"><span></span></div>
+          </div>
+          <div class="row">
+            <div class="stack-element col-md-10"><span></span></div>
+          </div>
+          <div class="row">
+            <div class="stack-element col-md-10"><span></span></div>
+          </div>
+          <div class="row">
+            <div class="stack-element col-md-10"><span></span></div>
+          </div>
+          <div class="row">
+            <div id="stack-underflow" class="stack-element red col-md-10"><span>STACK UNDERFLOW</span></div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="stack-element col-md-4"><span></span></div>
+      
+      <!-- QUEUE -->
+      <div class="col col-md-8">
+        <div class="row">
+              <input type="text" placeholder="Add element to the queue..." id="queue-input" class="input-group-text col col-md-5 mb-2">
+            </div>
+            <div class="row">
+              <button id="queue-btn-primary" class="btn btn-primary col col-md-5 mb-2">QUEUE</button>
+            </div>
+            <div class="row">
+              <button id="queue-btn-danger" class="btn btn-danger col col-md-5 mb-2">DEQUEUE</button>
+              <div id="dequed-element" class="col col-md-1"></div>
+            </div>
+            <div class="row queue">
+              <div id="queue-underflow" class="queue-element red col"><span>QUEUE UNDERFLOW</span></div>
+              <div class="queue-element col"><span></span></div>
+              <div class="queue-element col"><span></span></div>
+              <div class="queue-element col"><span></span></div>
+              <div class="queue-element col"><span></span></div>
+              <div class="queue-element col"><span></span></div>
+              <div id="queue-overflow" class="queue-element red col"><span>QUEUE OVERFLOW</span></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="stack-element col-md-4"><span></span></div>
-      </div>
-      <div class="row">
-        <div class="stack-element col-md-4"><span></span></div>
-      </div>
-      <div class="row">
-        <div class="stack-element col-md-4"><span></span></div>
-      </div>
-      <div class="row">
-        <div class="stack-element col-md-4"><span></span></div>
-      </div>
-      <div class="row">
-        <div id="underflow" class="stack-element col-md-4"><span>STACK UNDERFLOW</span></div>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="controls">
     </div>
   </section>
 
