@@ -2,24 +2,20 @@ $(document).ready(function () {
   var stackStructure = new StackDataStructure();
   var stack = $('.stack-element').not('#overflow, #underflow');
 
-  // function updateStack() {
-  //   for (i = 0; i < this.stackControl.length; i++) {
-  //     console.log(stack[i]);
-  //     if (stackStructure[i]) {
-  //       stack[i].toggleClass('stack-element');
-  //     }
-  //   }
-  // }
-
+  // PUSH
   $('.btn-primary').click(function () {
     var elementName = $('.input-group-text').val();
     if (elementName.length > 0) {
       stackStructure.push(elementName);
       stackStructure.flowControl();
-      stackStructure.updateStack(stack);
+      stackStructure.updateStackPush(stack);
     }
   });
 
-  // $('btn-danger').click(stackStructure.pop());
-
+  // POP
+  $('.btn-danger').click(function () {
+    $('#poppedElement').text(stackStructure.pop());
+    stackStructure.flowControl();
+    stackStructure.updateStackPop();
+  });
 });
