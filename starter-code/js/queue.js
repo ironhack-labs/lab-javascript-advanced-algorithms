@@ -13,14 +13,12 @@ $('.queue .btn-add').on('click', function(){
     positions[positions.length-1].classList.add('full');
     positions[positions.length-1].innerHTML = element;
     positions[positions.length-1].classList.remove('empty');
-    // $('.queue .message').text('');
     $('.queue .overflow').css('display', 'none');
     $('.queue .underflow').css('display', 'none');
     $('.queue .taken').text('');
   }
   else
   {
-    // $('.queue .message').text('not enough space in the queue');
     $('.queue .overflow').css('display', 'block');
     $('.queue .underflow').css('display', 'none');
     $('.queue .taken').text('');
@@ -40,14 +38,12 @@ $('.queue .btn-take').on('click', function(){
     positions[0].classList.add('empty');
     positions[0].classList.remove('full');
     positions[0].innerHTML = '';
-    // $('.queue .message').text('');
     $('.queue .overflow').css('display', 'none');
     $('.queue .underflow').css('display', 'none');
     $('.queue .taken').text(dequeued);
   }
   else
   {
-    // $('.queue .message').text('no elements in the queue');
     $('.queue .overflow').css('display', 'none');
     $('.queue .underflow').css('display', 'block');
     $('.queue .taken').text('');
