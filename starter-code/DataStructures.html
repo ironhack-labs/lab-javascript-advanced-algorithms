@@ -9,8 +9,45 @@
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
-
+    <div class="col-sm-6 stack">
+      <div class="title">
+        <h1>Stack (LIFO)</h1>
+        <div class="taken"></div>
+      </div>
+      <input class="form-control element" type="text" placeholder="Add the element to the stack...">
+      <button class="btn btn-primary btn-add">ADD</button>
+      <button class="btn btn-danger btn-take">TAKE</button>
+      <div class="overflow border border-danger">Stack Overflow</div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="underflow border border-danger">Stack Underflow</div>
+    </div>
+    <div class="col-sm-6 queue">
+      <div class="title">
+          <h1>Queue (FIFO)</h1>
+          <div class="taken"></div>
+        </div>
+      <input class="form-control element" type="text" placeholder="Add the element to the stack...">
+      <button class="btn btn-primary btn-add">ADD</button>
+      <button class="btn btn-danger btn-take">TAKE</button>
+      <div class="overflow border border-danger">Queue Overflow</div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="underflow border border-danger">Queue Underflow</div>
+      <div class="message"></div>
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
