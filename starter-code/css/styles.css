@@ -1,0 +1,74 @@
+.container > div
+{
+  padding: 20px 100px;
+}
+.title
+{
+  display: flex;
+  justify-content: space-between;
+}
+.taken
+{
+  text-align:right;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 40px;
+}
+input, button
+{
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+.btn-danger
+{
+  margin-bottom: 30px;
+}
+.empty
+{
+  height: 50px;
+  padding: 20px;
+  background-color: lightgray;
+  margin: 1px 0;
+  display: flex;
+  align-content: center;
+}
+.full
+{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  margin: 1px 0;
+  background-color: lightblue;
+  padding: 20px;
+  
+}
+.message
+{
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.overflow, .underflow
+{
+  display: none;
+  padding: 20px;
+  background-color:#ffdddd;
+  color: red;
+  text-align: center;
+  border: red 1px solid;
+  box-sizing: content-box;
+}
+
+@media (max-width: 1000px)
+{
+  .container > div
+  {
+    padding: 20px 20px;
+  }
+}
