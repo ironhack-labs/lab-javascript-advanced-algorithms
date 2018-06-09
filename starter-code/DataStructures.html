@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    <!-- Stacks -->
+    <div class="row">
+      <div class="col group col-centered">
+        <h1>Stack</h1>
+        <input id="stackInput" type="text" placeholder="Add the elem to the stack">
+        <button id="addStack" class="btn btn-primary">ADD</button>
+        <button id="takeStack" class="btn btn-danger">TAKE</button>
+        <div class="stack">
+          <div class="stackOverflow hide">Stack Overflow!!</div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="stackUnderflow hide">Stack Underflow!!</div>
+        </div>
+      </div>
+    </div>
+    <!-- / Stacks -->
+    <!-- Queue -->
+    <div class="row">
+      <div class="col group col-centered">
+        <h1>Queues</h1>
+        <input id="queueInput" type="text" placeholder="Add the elem to the stack">
+        <button id="addQueue" class="btn btn-primary">ADD</button>
+        <button id="takeQueue" class="btn btn-danger">TAKE</button>
+        <div class="queue">
+          <div class="queueOverflow hide">Queue Overflow!!</div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="elem"></div>
+          <div class="queueUnderflow hide">Queue Underflow!!</div>
+        </div>
+      </div>
 
+    </div>
+    <!-- / Queue -->
   </section>
 
   <script src="src/StackDataStructure.js"></script>
@@ -18,4 +65,5 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>

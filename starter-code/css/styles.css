@@ -1,0 +1,52 @@
+h1 {
+	text-align: center;
+}
+
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.group {
+	width: 200px;
+	float: left;
+	margin-left: 200px;
+}
+
+input {
+	display: block;
+	width: 200px;
+}
+
+button {
+	display: block;
+	width: 200px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.elem,
+.stackOverflow,
+.stackUnderflow,
+.queueOverflow,
+.queueUnderflow {
+	background: lightgrey;
+	height: 40px;
+	width: 200px;
+	border-radius: 5px;
+	margin: 5px 0px;
+	text-align: center;
+	font: bold 16px arial;
+	padding: 3px 0;
+}
+
+.stackOverflow,
+.stackUnderflow,
+.queueOverflow,
+.queueUnderflow {
+	background: red;
+}
+
+.hide {
+	display: none;
+}
