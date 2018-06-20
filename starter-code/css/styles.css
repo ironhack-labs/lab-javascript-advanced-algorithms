@@ -1,0 +1,44 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+.colM{
+    display: flex;
+    background-color: lightgray;
+    height:50px;
+    width:300px;
+    border:2px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+.rowContainer{
+    display: flex;
+    flex-direction: row;
+}
+.rowM{
+    display: flex;
+    background-color: lightgray;
+    height:100px;
+    width:100px;
+    justify-content: flex-start ;
+    border:2px solid white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.addQ, .addS{
+    margin-top:10px;
+    width: 300px;
+    height:30px;
+    background-color:pink;
+}
+
+.takeQ, .takeS{
+    margin-top:10px;
+    width:300px;
+    height:30px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+
