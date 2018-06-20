@@ -10,8 +10,6 @@ function StackDataStructure () {
       if(this.stackControl.length < this.MAX_SIZE){
         return true
       } else return false
-      
-      
     }
     this.push = function(x){
       if(this.stackControl.length < this.MAX_SIZE){

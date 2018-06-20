@@ -1,4 +1,6 @@
-var StackDataStructure = function(){
-  this.stackControl = [];
-  this.MAX_SIZE = 8;
-}
+var stackDataStructure = new StackDataStructure()
+$(".blue").on("click", function() {
+  //stackDataStructure.push("element");
+  //$(".stacks ").Class("blue-stack");
+  
+})

@@ -1,3 +1,7 @@
+body {
+  margin: 50px auto;
+  padding: 0 auto;
+}
 .stacks {
   height: 50px;
   width: 300px;
@@ -9,9 +13,21 @@
 }
 .btn {
   display: block;
+  width: 300px;
+  margin-top: 10px;
+  color: white;
 }
 .input {
   width: 300px;
   height: 40px;
   border-radius: 3px;
+}
+.blue{
+  background-color: rgb(35, 105, 211);
+}
+.red{
+  background-color: rgb(255, 72, 72);
+}
+.blue-stack {
+  background-color: rgb(61, 149, 250);
 }
