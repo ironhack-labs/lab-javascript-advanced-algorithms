@@ -1,0 +1,36 @@
+
+.control {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:20px;
+}
+
+
+.form-control {
+  width: 150px;
+}
+
+
+.elements {
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCC;
+    box-sizing: border-box;
+
+    &.error {
+      background-color: $div-error-bg-color;
+      color: red;
+      border: 1px solid red;
+    }
+
+    &.active {
+      background-color: $div-active-bg-color;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+
+#queue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  div {
+    width: 50px;
+    height: 150px;
+    margin: 0 3px;
+  }
+}
