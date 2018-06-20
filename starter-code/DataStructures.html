@@ -3,14 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
+    <div class="row">
+      <div class="col">
+        <h1>Abstract Data Types</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h2>Stack</h2>
+        <div class="form-group">
+          <input class="form-control" type="text" id="stack-input" placeholder="Add the element to the stack...">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" id="stack-add">Add</button>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-danger btn-block" id="stack-take">Take</button>
+        </div>
+        <ul id="stack" class="list-group text-center text-uppercase">
+          <li class="error over list-group-item list-group-item-danger text-capitalize d-none">Stack Overflow</li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="error under list-group-item list-group-item-danger text-capitalize d-none">Stack Underflow</li>
+        </ul>
+      </div>
 
+      <div class="col-12 col-md-6">
+        <h2>Queue</h2>
+        <div class="form-group">
+          <input class="form-control" type="text" id="queue-input" placeholder="Add the element to the stack...">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" id="queue-add">Add</button>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-danger btn-block" id="queue-take">Take</button>
+        </div>
+        <ul id="queue" class="list-group text-center text-uppercase">
+          <li class="error over list-group-item list-group-item-danger text-capitalize d-none">Queue Overflow</li>
+          <li class="error under list-group-item list-group-item-danger text-capitalize d-none">Queue Underflow</li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+          <li class="list-group-item list-group-item-secondary"></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
@@ -18,4 +72,5 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>
