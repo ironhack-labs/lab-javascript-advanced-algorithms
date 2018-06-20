@@ -1,3 +1,4 @@
+var title = $('h1');
 var addBtn = $('#add');
 var takeBtn = $('#take');
 var stackOver = $('#overflow');
@@ -14,6 +15,11 @@ queueBtn.click(function(){
   addBtn.attr('id', 'add-queue');
   takeBtn.removeAttr('id');
   takeBtn.attr('id', 'take-queue');
+  if(title.val() == 'Stack'){
+    title.text('Queue');
+  } else {
+    title.text('Stack');
+  }
 });
 
 $('body').on('click', '#add-queue', function() {
