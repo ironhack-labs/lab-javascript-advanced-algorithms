@@ -1,23 +1,27 @@
 function StackDataStructure () {
   this.stackControl = []
   this.MAX_SIZE = 10
-  this.isEmpty = function () {
-    return stackControl.length < 1
-  }
 }
 
 StackDataStructure.prototype.isEmpty = function () {
-  return stackControl.length < 1
+  return this.stackControl.length < 1
 }
 
 StackDataStructure.prototype.canPush = function () {
-  return isEmpty()
+  return this.stackControl.length < this.MAX_SIZE
 }
 
 StackDataStructure.prototype.push = function (item) {
-  this.stackControl.push(item)
+  if (this.canPush()) {
+    this.stackControl.push(item)
+    return this.stackControl
+  }
+  return "Stack Overflow"
 }
 
 StackDataStructure.prototype.pop = function () {
-  this.stackControl.pop()
+  if (this.isEmpty()) {
+    return "Stack Underflow"
+  }
+  return this.stackControl.pop()
 }
