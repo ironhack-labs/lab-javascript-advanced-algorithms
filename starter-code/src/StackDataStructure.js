@@ -1,20 +1,27 @@
-function StackDataStructure () {
-    this.stackControl = [];
-    this.MAX_SIZE = 8;   
-}
-StackDataStructure.prototype.isEmpty = function (){
-    this.stack = [];
-
+function StackDataStructure() {
+  this.stackControl = [];
+  this.MAX_SIZE = 8;
 }
 
-StackDataStructure.prototype.canPush = function(){
+StackDataStructure.prototype.isEmpty = function() {
+  return this.stackControl.length < 1;
+};
 
-}
+StackDataStructure.prototype.canPush = function() {
+  return this.stackControl.length < this.MAX_SIZE;
+};
 
-StackDataStructure.prototype.push = function(){
-    this.stackControl.length = 1;
-}
+StackDataStructure.prototype.push = function(item) {
+  if (this.canPush()) {
+    this.stackControl.push(item);
+    return this.stackControl;
+  }
+  return "Stack Overflow";
+};
 
-StackDataStructure.prototype.pop = function(){
-
-}
+StackDataStructure.prototype.pop = function() {
+  if (this.isEmpty()) {
+    return "Stack Underflow";
+  }
+  return this.stackControl.pop();
+};
