@@ -1,23 +1,69 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.stackItems {
+  margin: 20px 0;
+}
+
 
 .elementInput{
-  margin: 20px 0px;
+  margin: 15px 0px;
   display: block;
   width: 46%;
+  color: lightgrey;
+  border-radius: 6px;
 }
 .add{
-  margin: 20px 0px;
+  margin: 15px 0px;
   display: block;
   width: 46%;
+  background-color: rgb(103, 103, 204);
+  color: white;
+  border-radius: 6px;
+  border: 1px solid white;
 }
 .take{
-  margin: 20px 0px;
+  margin: 15px 0px;
   display: block;
   width: 46%;
+  background-color: rgb(197, 105, 105);
+  color: white;
+  border-radius: 6px;
+  border: 1px solid white;
 }
 
 .stackItem {
   background-color: lightgray;
   border: 1px solid white;
-  height: 20px;
+  height: 40px;
   width: 46%;
+  text-align: center;
+}
+
+.stackWithItem {
+
+  background-color: lightgray;
+  border: 1px solid white;
+  height: 40px;
+  width: 46%;
+  background-color: rgb(22, 195, 218);
+  text-align: center;
+  color: white;
+  padding: 9x;
+}
+
+.stackOverflow, .stackUnderflow {
+  display: none;
+  background-color: rgb(233, 204, 204);
+  border: 1px solid red;
+  height: 40px;
+  width: 46%;
+  text-align: center;
+  color: red;
+  padding: 9px;
+}
+
+.takeE {
+display: inline-block;
 }
