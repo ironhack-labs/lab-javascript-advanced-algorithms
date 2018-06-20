@@ -8,7 +8,7 @@ StackDataStructure.prototype.isEmpty = function(){
 };
 
 StackDataStructure.prototype.canPush = function(){
-  return (this.stackControl.length < this.MAX_SIZE || this.isEmpty()) ? true : false;
+  return (this.stackControl.length == this.MAX_SIZE) ? false : true;
 };
 StackDataStructure.prototype.push = function(e){
   if(this.canPush()){
@@ -22,6 +22,6 @@ StackDataStructure.prototype.pop = function(){
   if(this.isEmpty()){
     return 'Stack Underflow';
   } else {
-    return this.stackControl[this.stackControl.length-1];
+    return this.stackControl.pop();
   }
 };

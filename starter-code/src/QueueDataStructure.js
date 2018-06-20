@@ -8,7 +8,7 @@ QueueDataStructure.prototype.isEmpty = function(){
 };
 
 QueueDataStructure.prototype.canEnqueue = function(){
-  return (this.queueControl.length < this.MAX_SIZE || this.isEmpty()) ? true : false;
+  return (this.queueControl.length == this.MAX_SIZE) ? false : true;
 };
 
 QueueDataStructure.prototype.enqueue = function(e){
@@ -24,6 +24,6 @@ QueueDataStructure.prototype.dequeue = function(){
   if(this.isEmpty()){
     return 'Queue Underflow';
   } else {
-    return this.queueControl[this.queueControl.length-1];
+    return this.queueControl.pop();
   }
 };
