@@ -1,4 +1,3 @@
-var stack = new StackDataStructure();
 var contador = 8;
 
 $(document).ready(function () {
