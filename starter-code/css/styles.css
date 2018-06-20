@@ -1,0 +1,50 @@
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+  padding-left:0;
+}
+
+button{
+  margin-top: 15px;
+  display: block;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+input{
+  width: 300px;
+  display: block;
+}
+
+.stack-item, .queue-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:5px;
+  padding: 20px;
+  width: 300px;
+  background-color:#D3D3D3;
+  height: 50px;
+}
+
+.btnAdd{
+  color: white;
+  background-color: blue;
+}
+.btnDelete{
+  color: white;
+  background-color:red;
+}
+
+.grey{
+  background-color: #D3D3D3;
+}
+
+.blue{
+  background-color: blue;
+}
