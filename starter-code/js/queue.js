@@ -14,7 +14,7 @@ $(document).ready(function() {
     var inputValue = $("#queue-input").val();
     if (inputValue == "") return;
     if (queueGrey.isEmpty()) {
-      $(".queue-elements > .overflow").prepend(
+      $(".queue-elements").append(
         "<div class='queue-element overflow'></div>"
       );
       $(".queue-elements > .overflow").text("QUEUE OVERFLOW");
@@ -49,7 +49,7 @@ $(document).ready(function() {
     var inputValue = $("#queue-input").val();
     
     if (queueBlue.isEmpty()) {
-      $(".queue-elements").append(
+      $(".queue-elements").prepend(
         "<div class='queue-element overflow'></div>"
       );
       $(".queue-elements > .overflow").text("queue UNDERFLOW");
