@@ -135,6 +135,8 @@ describe("Queues", function() {
     });
 
     it ("Should be able to enqueue a new element in the queue", function () {
+      console.log(queue.queueControl)
+      console.log(queue.MAX_SIZE)
       expect(queue.canEnqueue()).toBe(true);
     });
   });

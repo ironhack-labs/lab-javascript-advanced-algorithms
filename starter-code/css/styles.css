@@ -1,0 +1,81 @@
+.main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+h1{
+    width: 100%
+}
+.stack-div{
+    display:flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin:0
+}
+.queue-div {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:60%;
+    height: 150px;
+
+}
+
+.stack-div > *{
+    width: 100%;
+    
+    margin:10px;
+}
+.queue-div > .control{
+    height: 200px;
+    
+}
+.control > *{
+    width: 100%;
+}
+input,button{
+    height: 30px;
+    border:1px solid black
+}
+.addS,.addQ{
+    background: rgb(45, 45, 173);
+    color:white;
+}
+.takeS,.takeQ{
+    background: rgb(192, 45, 45);
+    color:white
+}
+
+.stack-element{
+    height: 40px;
+    width: 100%;
+    
+    margin-bottom: 5px;
+    text-align: center
+}
+.queue-elements{
+    max-height: 100%;
+
+}
+.queue-element{
+    height: 100%;
+    width: 40px;
+    display:inline-block;
+    text-align: center
+}
+.grey{
+    background: rgb(185, 180, 180);
+}
+
+.blue{
+    background: rgba(33, 100, 189, 0.849);
+    color : black;
+}
+.overflow{
+    background: rgb(219, 151, 151);
+    color:rgb(230, 88, 88);
+    border:1px solid rgb(230, 88, 88)
+}
+.no-clickable{
+    pointer-events: none
+}
