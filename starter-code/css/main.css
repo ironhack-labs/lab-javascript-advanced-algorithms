@@ -1,0 +1,54 @@
+body{
+  width: 100%;
+  height: 100%;
+}
+
+
+.contenedor{
+width: 100%;
+height:100%;
+display:flex;
+justify-content: center;
+}
+.columna{
+  width:400px;
+  height: 1000px;
+ 
+}
+.visible {
+
+  width: 400px;
+  height: 75px;
+
+}
+.ocultar{
+  display: none;
+  width: 400px;
+  height: 75px;
+
+}
+.añadir{
+  background-color: #EDEDED
+}
+
+
+.fila{
+  margin:3px 0px;
+  width: 400px;
+  height: 75px;
+ 
+}
+
+.color{
+  background-color: #4CACE9;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+.red-color{
+  color: red;
+  font-size: 50px;
+  background-color: #F4E3E2;
+  text-align: center;
+}

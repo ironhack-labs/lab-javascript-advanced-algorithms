@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
-
+    <h1>Stack</h1>
   </section>
+  <div class="form-group">
+    <input type="text" class="form-control input" id="formGroupExampleInput" placeholder="Add the element to the Stack">
+  </div>
+
+  <button type="button" class="btn btn-primary btn-lg" id="add">Add</button>
+  <button type="button" class="btn  btn-danger btn-lg" id="take">Take</button>
+  <a href="https://68sczzloglnak4i3tqcnsw-on.drv.tw/Web/starter-code/queue.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Queue</a>
+
+  <div class="contenedor">
+    <div class="columna">
+      <div class="ocultar red-color" id="over">Stack Overflow</div>
+      <div class="fila añadir"></div>
+      <div class="fila añadir"></div>
+      <div class="fila añadir"></div>
+      <div class="fila añadir"></div>
+      <div class="fila añadir"></div>
+      <div class="fila añadir"></div>
+      <div class="fila añadir"></div>
+      <div class="fila añadir"></div>
+      <div class="visible red-color" id="under">Stack Underflow</div>
+
+    </div>
+
+  </div>
+
+
 
   <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
+
   <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
+  
 </body>
+
 </html>

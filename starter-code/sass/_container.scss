@@ -1,0 +1,20 @@
+.container{
+  //height: 80%;
+  //width:80%;
+      .row{
+        //display: flex;
+
+        //width: 30%;
+        .col-md-12{
+         border:5px solid $grey;
+         height: 50px;
+         text-align: center;
+
+        }
+        #ocultar{
+              display: none;
+        }
+      }
+
+
+}

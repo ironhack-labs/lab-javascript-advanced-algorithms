@@ -1,5 +1,5 @@
 describe("Stack", function() {
-  var stack;
+  var stack=[];
 
   beforeEach (function() {
     stack = new StackDataStructure();
@@ -93,6 +93,10 @@ describe("Stack", function() {
     });
   });
 });
+
+
+
+
 
 describe("Queues", function() {
   var queue;
