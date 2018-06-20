@@ -11,7 +11,7 @@ StackDataStructure.prototype.isEmpty = function () {
 }
 
 StackDataStructure.prototype.canPush = function () {
-    if (this.stackControl.length < this.MAX_SIZE){
+    if (this.stackControl.length <= this.MAX_SIZE){
         return true;
     }
     return false;
