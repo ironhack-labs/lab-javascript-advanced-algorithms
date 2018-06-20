@@ -1,0 +1,3 @@
+$(".red").on("click", function() {
+  
+})
