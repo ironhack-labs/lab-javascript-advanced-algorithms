@@ -1,0 +1,41 @@
+h1 {
+  font-weight: bold;
+}
+
+.pink {
+  background: #D7627D;
+  color:white;
+}
+
+.pink:active{
+  background: #D7627D;
+}
+
+input {
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 18px;
+  margin: 25px 0;
+  width: 300px;
+}
+
+button {
+  width: 300px;
+  margin-top: 5px;
+}
+
+
+.elements{
+  list-style: none;
+}
+
+.box {
+  width: 300px;
+  background: lightgray;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: -40px;
+  
+}

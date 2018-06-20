@@ -6,16 +6,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
-
-  </section>
-
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Stack</h1>
+    <div class="row">
+      <div class="column">
+        <input id="inputText" type="text" placeholder="Add the element to the stack">
+      </div>
+      <div class="column">
+        <button type="button" id="add" class="btn btn-primary btn-lg column">ADD</button>
+      </div>
+      <div class="column">
+        <button type="button" id="take" class="btn btn-lg pink column">TAKE</button>
+      </div>
+      <ul id="stack" class="elements"></ul>
+    </div>
+  </div>
 </body>
 </html>
