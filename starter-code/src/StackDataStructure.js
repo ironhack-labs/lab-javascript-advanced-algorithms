@@ -1,9 +1,7 @@
 function StackDataStructure (Array) {
   this.stackControl = [];
-  this.MAX_SIZE = 2;
+  this.MAX_SIZE = 8;
 };
-
-var stack = new StackDataStructure();
 
 StackDataStructure.prototype.isEmpty = function () {
   if (this.stackControl.length == 0) {

@@ -1,0 +1,27 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+button , input{
+  margin-bottom: 10px;
+}
+#stack_container{
+  margin-top: 10px;
+}
+#stack_container div{
+  background: #ededed;
+  height: 50px;
+  margin: 2px auto;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 6px 0;
+  color: #FFF;
+}
+
+#stack_container .stack_added{
+  background: #157EFB;
+}
+
