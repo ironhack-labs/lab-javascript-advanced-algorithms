@@ -18,8 +18,8 @@
                queue.enqueue($("#inputQueue").val());
 
               for(var i = 0; i < arr.length; i++){
-                $('.queue-list:nth-child('+(8-i)+')').addClass('on')
-                $('.queue-list:nth-child('+(8-i)+')').text(arr[i]);
+                $(".queue-list:nth-child(" + (8 - i) + ")").addClass("on")
+                $(".queue-list:nth-child(" + (8 - i) + ")").text(arr[i]);
               }
             }
             showQueue(queue.queueControl)
