@@ -38,13 +38,16 @@ h1{
 
 .red{
      background-color: rgb(177, 49, 49);
-     opacity: .5;
 }
 .blue{
      background-color: rgb(35, 105, 209);
-     opacity: .5;
 }
 
 li{
      text-align: center;
 }
+
+.pepe {
+     animation-duration: 3s;
+     animation-name: slidein;
+   }
