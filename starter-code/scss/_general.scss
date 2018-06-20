@@ -1,0 +1,49 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn{
+  font-weight: bold;
+}
+
+.btn:hover{
+  box-shadow:  2px 3px 8px black;
+}
+
+h1{
+  width: 30%;
+}
+
+.stack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden{
+  display:none;
+}
+
+.stacked-in{
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: 6vh;
+}
+
+#stackcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div{
+    width: 100%;
+  }
+}

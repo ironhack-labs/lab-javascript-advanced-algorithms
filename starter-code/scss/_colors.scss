@@ -1,0 +1,30 @@
+.stacked-element{
+  background-color: $grey;
+}
+
+.queued-element{
+  background-color: $grey;
+}
+
+#add{
+  background-color: $blue;
+  color: white;
+}
+
+#take{
+  background-color: $red;
+  color: white;
+}
+
+.stacked-in{
+  color:white;
+  background: $stacked-in;
+}
+
+.stack{
+  background-color: $stack-back;
+  border: 1px solid $red;
+  span{
+    color: $red;
+  }
+}
