@@ -5,6 +5,16 @@
   width: 80%;
 }
 
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
 .add {
   background-color: #bc5a45;
   color: white;
@@ -13,6 +23,20 @@
 }
 
 .take{
+  background-color: #4040a1;
+  color: white;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.addq {
+  background-color: #bc5a45;
+  color: white;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.takeq{
   background-color: #4040a1;
   color: white;
   border-radius: 10px;
@@ -38,11 +62,30 @@ button red {
   margin: 5px;
 }
 
+.stackelementemptyq{
+  background-color: #c8c3cc;
+  border: 3px;
+  width: 40%;
+  height: 150px;
+  margin: 5px;
+}
+
 .stackelementfull{
   background-color: #87bdd8;
   border: 3px;
   width: 40%;
   height: 60px;
+  margin: 5px;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.stackelementfullq{
+  background-color: #87bdd8;
+  border: 3px;
+  width: 40%;
+  height: 150px;
   margin: 5px;
   font-size: 3rem;
   color: white;
@@ -89,6 +132,20 @@ p {
   padding-top: 10px;
 }
 
+.stackelementstatusq {
+  background-color: white;
+  border: 3px;
+  border-style: solid;
+  border-color: #6a6a6a;
+  width: 40%;
+  height: 150px;
+  margin: 10px;
+  font-size: 2rem;
+  color: #6a6a6a;
+  text-align: center;
+  padding-top: 10px;
+}
+
 .stackunderflow {
   background-color: white;
   border: 3px;
@@ -96,6 +153,33 @@ p {
   border-style: solid;
   width: 40%;
   height: 60px;
+  margin: 5px;
+  font-size: 3rem;
+  color: blue;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.stackoverflowq {
+  background-color: #f9d5e5;
+  border: 3px;
+  border-color: red;
+  width: 40%;
+  height: 150px;
+  margin: 5px;
+  font-size: 3rem;
+  color: red;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.stackunderflowq {
+  background-color: white;
+  border: 3px;
+  border-color: blue;
+  border-style: solid;
+  width: 40%;
+  height: 150px;
   margin: 5px;
   font-size: 3rem;
   color: blue;
