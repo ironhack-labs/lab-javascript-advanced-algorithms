@@ -1,0 +1,70 @@
+.stackClass{
+    text-align: center
+}
+
+.botonadd{
+    width: 180px;
+    background-color: rgb(94, 94, 194);
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.botonremove{
+    width: 180px;
+    background-color: rgb(221, 21, 21);
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.escalones {
+    border: 2px solid rgb(51, 121, 63);
+    border-radius: 5px;
+    width: 255px;
+    margin: 0 auto 0; 
+
+}
+
+.borde{
+    border: 2px solid rgb(51, 121, 63);
+    height: 30px;
+    background-color: rgb(51, 121, 63, 0.32);
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#pila{
+    margin: 0 auto;
+    background-color: black;
+    height: 20px;
+    width: 50px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.porcentaje{
+    border: 1px solid rgb(51, 121, 63);
+    height: 40px;
+    background-color: rgb(206, 206, 206, 0.4);
+    width: 250px;
+    margin: 0 auto;
+}
+
+.removeclass{
+    border: 1px solid rgb(51, 121, 63);
+    height: 40px;
+    background-color: rgb(206, 206, 206, 0.4);
+    width: 250px;
+    margin: 0 auto;
+
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#cola{
+    width: 300px;
+}
