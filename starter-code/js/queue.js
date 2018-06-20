@@ -10,41 +10,24 @@ $(function() {
     var element = $('#queue-input').val();
 
     if (element.length > 0) {
-      if (queueWrp.is(':visible')) {
-        queueWrp.find('.error.under').addClass('d-none');
-        btnTakeQueue.attr('disabled', false);
-      }
-      
       $('#queue-input').val('');
+      hideError(queueWrp.find('.error.under'), btnTakeQueue);
 
-      var result = queue.enqueue(element);
-
-      if (result === 'Queue Overflow') {
-        queueWrp.find('.error.over').removeClass('d-none');
-        $(this).attr('disabled', true);
+      if (queue.enqueue(element) === 'Queue Overflow') {
+        showError(queueWrp.find('.error.over'), $(this));
       } else {
-        queue.queueControl.forEach(function(value, index) {
-          queueWrp.find('li:nth-child(' + (index + 3) + ')')
-            .removeClass('list-group-item-secondary')
-            .addClass('list-group-item-primary')
-            .html(value);
-        });
+        updateDataStructure(queueWrp, queue.queueControl.slice(), 2, false);
       }
     }
   });
 
   btnTakeQueue.click(function() {
-    queueWrp.find('.error.over').addClass('d-none');
-    btnAddQueue.attr('disabled', false);
+    hideError(queueWrp.find('.error.over'), btnAddQueue);
 
     if (queue.dequeue() === 'Queue Underflow') {
-      queueWrp.find('.error.under').removeClass('d-none');
-      $(this).attr('disabled', true);
+      showError(queueWrp.find('.error.under'), $(this));
     } else {
-      queueWrp.find('li.list-group-item-primary').last()
-          .removeClass('list-group-item-primary')
-          .addClass('list-group-item-secondary')
-          .html('&nbsp;');
+      updateDataStructure(queueWrp, queue.queueControl.slice(), 2, false);
     }
   });
 });

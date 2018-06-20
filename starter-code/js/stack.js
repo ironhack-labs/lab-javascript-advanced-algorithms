@@ -4,45 +4,30 @@ $(function() {
   var btnTake = $('#stack-take');
 
   var stackWrp = $('#stack');
-  stackWrp.find('li').not('.error').addClass('empty').html('&nbsp;');
+  stackWrp.find('li').not('.error').html('&nbsp;');
 
   btnAdd.click(function() {
     var element = $('#stack-input').val();
 
     if (element.length > 0) {
-      if (stackWrp.is(':visible')) {
-        stackWrp.find('.error.under').addClass('d-none');
-        btnTake.attr('disabled', false);
-      }
-      
       $('#stack-input').val('');
+      hideError(stackWrp.find('.error.under'), btnTake);
 
-      var result = stack.push(element);
-
-      if (result === 'Stack Overflow') {
-        stackWrp.find('.error.over').removeClass('d-none');
-        $(this).attr('disabled', true);
+      if (stack.push(element) === 'Stack Overflow') {
+        showError(stackWrp.find('.error.over'), $(this));
       } else {
-        stackWrp.find('li.empty').last()
-            .removeClass('empty list-group-item-secondary')
-            .addClass('list-group-item-primary')
-            .html(element);
+        updateDataStructure(stackWrp, stack.stackControl.slice(), 1);
       }
     }
   });
 
   btnTake.click(function() {
-    stackWrp.find('.error.over').addClass('d-none');
-    btnAdd.attr('disabled', false);
+    hideError(stackWrp.find('.error.over'), btnAdd);
 
     if (stack.pop() === 'Stack Underflow') {
-      stackWrp.find('.error.under').removeClass('d-none');
-      $(this).attr('disabled', true);
+      showError(stackWrp.find('.error.under'), $(this));
     } else {
-      stackWrp.find('li.list-group-item-primary').first()
-          .removeClass('list-group-item-primary')
-          .addClass('empty list-group-item-secondary')
-          .html('&nbsp;');
+      updateDataStructure(stackWrp, stack.stackControl.slice(), 1);
     }
   });
 });
