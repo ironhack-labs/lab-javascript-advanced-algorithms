@@ -5,7 +5,7 @@ var stackUnder = $('#underflow');
 var stackContainer = $('#stackcontainer');
 var input = $('#element-input');
 var stackDataStructure = new StackDataStructure();
-
+var queueBtn = $('#queue');
 
 addBtn.click(function() {
 
