@@ -1,0 +1,23 @@
+
+.elementInput{
+  margin: 20px 0px;
+  display: block;
+  width: 46%;
+}
+.add{
+  margin: 20px 0px;
+  display: block;
+  width: 46%;
+}
+.take{
+  margin: 20px 0px;
+  display: block;
+  width: 46%;
+}
+
+.stackItem {
+  background-color: lightgray;
+  border: 1px solid white;
+  height: 20px;
+  width: 46%;
+}
