@@ -3,7 +3,7 @@ function StackDataStructure (Array) {
   this.MAX_SIZE = 2;
 };
 
-var stack = new StackDataStructure ();
+var stack = new StackDataStructure();
 
 StackDataStructure.prototype.isEmpty = function () {
   if (this.stackControl.length == 0) {
@@ -37,7 +37,3 @@ StackDataStructure.prototype.pop = function () {
     return this.stackControl.pop();
   }
 };
-
-//StackDataStructure.prototype.stackFlow = function () {
-//
-//};
