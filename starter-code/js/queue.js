@@ -11,13 +11,17 @@ var queueStructure = new QueueDataStructure();
 
 queueBtn.click(function(){
   elementList.toggleClass('stacked-element').toggleClass('queued-element');
-  addBtn.removeAttr('id');
-  addBtn.attr('id', 'add-queue');
-  takeBtn.removeAttr('id');
-  takeBtn.attr('id', 'take-queue');
-  if(title.val() == 'Stack'){
+  if(title.text() == 'Stack'){
+    addBtn.removeAttr('id');
+    addBtn.attr('id', 'add-queue');
+    takeBtn.removeAttr('id');
+    takeBtn.attr('id', 'take-queue');
     title.text('Queue');
   } else {
+    addBtn.removeAttr('id');
+    addBtn.attr('id', 'add');
+    takeBtn.removeAttr('id');
+    takeBtn.attr('id', 'take');
     title.text('Stack');
   }
 });
