@@ -1,0 +1,50 @@
+.cont{
+     display:flex;
+     flex-direction: row;
+     margin-top:60px;
+     justify-content: space-between;
+}
+
+.lista{
+     height: 400px;;
+     display:flex;
+     flex-direction: column;
+}
+h1{
+     display: flex;
+     justify-content: center;
+}
+
+
+
+.queue {
+     margin-top:10px;
+     width:240px;
+     height:40px;
+}
+
+.stack{
+     margin-top:10px;
+     width:240px;
+     height:40px;
+}
+
+.btn{
+     margin-top:10px;
+     width:240px;
+     height:40px;
+     border: .5px solid black;
+}
+
+.red{
+     background-color: rgb(177, 49, 49);
+     opacity: .5;
+}
+.blue{
+     background-color: rgb(35, 105, 209);
+     opacity: .5;
+}
+
+li{
+     text-align: center;
+}
