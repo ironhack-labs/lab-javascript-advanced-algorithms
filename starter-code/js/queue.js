@@ -13,12 +13,10 @@ $(document).ready(function () {
             if (fullornot == 'Queue Overflow') {
                 alert('Queue Overflow!')
             }else{
-                for (i=index;i>1;i--){
+                for (i=index;i>0;i--){
                     $('.rowM:nth-child(' + i + ')').text(newqueue.queueControl[i-1]);
                     $('.rowM:nth-child(' + i + ')').css({backgroundColor:'pink'});
                 }
-                $('.rowM:nth-child(1)').text(input);
-                $('.rowM:nth-child(1)').css({backgroundColor:'pink'});
             }
             document.getElementById('entradaQ').value = "";
         }
