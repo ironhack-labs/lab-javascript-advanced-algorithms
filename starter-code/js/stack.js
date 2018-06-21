@@ -9,18 +9,25 @@ $(document).ready(function() {
     if (stack.canPush()) {
       var counter = 8 - stack.stackControl.length;
       if (stack.isEmpty()) {
+        stack.push($("#inputStack").val());
         $(".stack-list:last-child").removeClass("flow");
         $(".stack-list:last-child").addClass("on");
-        $(".stack-list:last-child").text($("#inputStack").val());
+        $(".stack-list:last-child").text(stack.stackControl[0]);
       } else {
-        $(".stack-list:nth-child(" + counter + ")").addClass("on");
-        $(".stack-list:nth-child(" + counter + ")").text($("#inputStack").val());
+        function showStack(arr) {
+          stack.push($("#inputStack").val());
+
+          for (var i = 0; i < arr.length; i++) {
+            $(".stack-list:nth-child(" + (8 - i) + ")").addClass("on");
+            $(".stack-list:nth-child(" + (8 - i) + ")").text(arr[i]);
+          }
+        }
+        showStack(stack.stackControl);
       }
-      stack.push($(".stack-list:nth-child(" + counter + ")").text($("#inputStack").val()))
-    } else{
-       $(".stack-list:first-child").addClass("flow");
-       $(".stack-list:first-child").text("Stack Overflow");
-  }
+    } else {
+      $(".stack-list:first-child").addClass("flow");
+      $(".stack-list:first-child").text("Stack Overflow");
+    }
   });
 
   $("#take-stack").click(function(e) {
@@ -28,10 +35,16 @@ $(document).ready(function() {
       $(".stack-list:last-child").addClass("flow");
       $(".stack-list:last-child").text("Stack Underflow");
     } else {
-    $(".stackUl > .on").first().text("");
-    $(".stackUl > .on").first().removeClass("on");
-    $(".stackUl > .flow").first().removeClass("flow");
-    stack.pop();
+      $(".stackUl > .on")
+        .first()
+        .text("");
+      $(".stackUl > .on")
+        .first()
+        .removeClass("on");
+      $(".stackUl > .flow")
+        .first()
+        .removeClass("flow");
+      stack.pop();
     }
-  }); 
+  });
 });
