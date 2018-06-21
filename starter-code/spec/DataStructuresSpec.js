@@ -7,7 +7,7 @@ describe("Stack", function() {
 
   describe ("Stack properties", function () {
     it ("Should has an array to add the elements to the stack", function () {
-      expect(Array.isArray(stack.stackControl)).toBe(true);
+      expect(Array.isArray(stack.stackControles)).toBe(true);
     });
 
     it ("Should has a max number of items to avoid the stack overflow", function () {
@@ -47,7 +47,7 @@ describe("Stack", function() {
     it ("Should add the indicated element to the stack", function () {
       stack.push(19);
 
-      expect(stack.stackControl.length).toBe(1);
+      expect(stack.stackControles.length).toBe(1);
     });
 
     it ("Should return that stack is not empty when adding an element", function () {
@@ -64,14 +64,14 @@ describe("Stack", function() {
       stack.push(19);
       stack.push(88);
 
-      expect(stack.stackControl).toEqual([19, 88]);
+      expect(stack.stackControles).toEqual([19, 88]);
     });
 
     it ("Should return 'Stack Overflow' if the stack is full", function () {
       stack.MAX_SIZE = 1;
       stack.push(19);
 
-      expect(stack.push(88)).toEqual("Stack Overflow");
+      expect(stack.push(88)).toEqual("Hey man! Stack Overflow");
     });
 
     it ("Should return false if the stack is full", function () {
@@ -100,10 +100,11 @@ describe("Queues", function() {
   beforeEach(function() {
     queue = new QueueDataStructure();
   });
+/////////////////////////////////////////////////////////////
 
   describe ("Queue properties", function () {
     it ("Should has an array to add the elements to the queue", function () {
-      expect(Array.isArray(queue.queueControl)).toBe(true);
+      expect(Array.isArray(queue.queueControles)).toBe(true);
     });
 
     it ("Should has a max number of items to avoid the queue overflow", function () {
@@ -143,7 +144,7 @@ describe("Queues", function() {
     it ("Should enqueue the indicated element to the queue", function () {
       queue.enqueue(19);
 
-      expect(queue.queueControl.length).toBe(1);
+      expect(queue.queueControles.length).toBe(1);
     });
 
     it ("Should return that queue is not empty when enqueuing an element", function () {
@@ -160,14 +161,14 @@ describe("Queues", function() {
       queue.enqueue(19);
       queue.enqueue(88);
 
-      expect(queue.queueControl).toEqual([88, 19]);
+      expect(queue.queueControles).toEqual([88, 19]);
     });
 
     it ("Should return 'Stack Overflow' if the stack is full", function () {
       queue.MAX_SIZE = 1;
       queue.enqueue(19);
 
-      expect(queue.enqueue(88)).toEqual("Queue Overflow");
+      expect(queue.enqueue(88)).toEqual("Muchacho! Queue Overflow");
     });
 
     it ("Should return false if the stack is full", function () {
