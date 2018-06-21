@@ -1,0 +1,58 @@
+.global{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}
+.stack-element {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  background-color: lightgrey;
+}
+.queue {
+  display: flex;
+  height: 200px;
+}
+.queue-element {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-lr;
+}
+#stackelement, #queue-input {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+.queue-item, .addedelement {
+  background-color: #66e7ff;
+}
+#delete-stack, #delete-queue {
+  margin-bottom: 5px;
+}
+.error-queue,
+.error-stack {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: #ffcccc ;
+  color: red;
+  justify-content: center;
+  display: none;
+}
+#queue-container {
+  width: 350px;
+  height: 450px;
+}
