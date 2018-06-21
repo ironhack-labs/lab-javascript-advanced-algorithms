@@ -53,7 +53,7 @@ function popQueueElement(){
 }
 
 function outOfQueueBounds(direction){
-    queue.queue = ["I", "R", "O", "N", "H", "A", "C", "K"];
+    queue.queueControl = ["I", "R", "O", "N", "H", "A", "C", "K"];
     var parent = $(".queue");
     console.log(parent);
     if (direction=="overflow"){
