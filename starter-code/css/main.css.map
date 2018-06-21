@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAK,CACD,gBAAgB,CCDP,GAAG,CDGhB,IAAI,CACA,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,MAAM,CAClB,MAAM,CAAE,KAAK",
+"sources": ["../scss/_baseCode.scss","../scss/_variables.scss"],
+"names": [],
+"file": "main.css"
+}
