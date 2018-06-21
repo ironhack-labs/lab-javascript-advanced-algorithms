@@ -34,15 +34,13 @@ button , input{
 
 /* QUEUE */
 #queue_container {
-  margin-top: 
-}
-#queue_container div{
   display: flex;
-  flex-direction: row;
+  flex-direction: row;}
+#queue_container div{
   background: #ededed;
   height: 150px;
   width: 50px;
-  margin: 2px auto;
+  margin-right: 2px;
   text-align: center;
   font-size: 1.5em;
   padding: 6px 0;
