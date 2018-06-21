@@ -31,16 +31,16 @@ $(document).ready(function(){
     $(".stack-element").css(cssElement);
 
     $("#form-stack .btn-primary").click(function (e){
-        pushElement ($("#input-stack").val());
+        pushStackElement ($("#input-stack").val());
 
     });
 
     $("#form-stack .btn-danger").click(function (e){
-        popElement ();
+        popStackElement ();
     });
 });
 
-function outOfBounds(direction){
+function outOfStackBounds(direction){
     stack.stackControl = ["I", "R", "O", "N", "H", "A", "C", "K"];
     var parent = $(".stack");
     console.log(parent);
@@ -50,11 +50,11 @@ function outOfBounds(direction){
         parent.append("<div class='"+direction+"'></div>");
     }
     $("."+direction).css(cssOverflow).text("stack "+direction);
-    reasignValues();
+    reasignStackValues();
     $(".stack-element").css(cssStack);
 }
 
-function reasignValues(){
+function reasignStackValues(){
     $(".stack-element").text("");
     for (var i = stack.stackControl.length; i>0; i--){
         var element = $(".stack-element:nth-child("+parseInt(stack.MAX_SIZE-stack.stackControl.length+i)+")");
@@ -62,7 +62,7 @@ function reasignValues(){
     }
 }
 
-function pushElement(value) {
+function pushStackElement(value) {
     if ($("#input-stack").val()==""){
         return;
     }
@@ -71,19 +71,19 @@ function pushElement(value) {
         $(".underflow").remove();
         var element = $(".stack-element:nth-child("+parseInt(stack.MAX_SIZE-stack.stackControl.length+1)+")");
         element.css(cssStack);
-        reasignValues();
+        reasignStackValues();
     } else {
-        outOfBounds("overflow");
+        outOfStackBounds("overflow");
     }
 }
 
-function popElement(){
+function popStackElement(){
     if(stack.pop()!="Stack Underflow"){
         $(".overflow").remove();
         var element = $(".stack-element:nth-child("+parseInt(stack.MAX_SIZE-stack.stackControl.length)+")");
         element.css(cssElement);
-        reasignValues();
+        reasignStackValues();
     } else {
-        outOfBounds("underflow");
+        outOfStackBounds("underflow");
     }
 }
