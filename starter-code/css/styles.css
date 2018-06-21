@@ -1,0 +1,19 @@
+h1 {
+  font-weight: bold;
+}
+
+.pink {
+  background: #D7627D;
+  color:white;
+}
+
+input {
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+button {
+  width: 23.5%;
+}
