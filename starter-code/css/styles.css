@@ -1,0 +1,55 @@
+.title {
+    font-weight: bold;
+    font-size: 5em;
+    margin-top: 15px;
+}
+
+.stackControl{
+    width: 25%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    
+}
+
+.btn {
+     margin-top:10px;
+     width:25%;
+     height:40px;
+}
+
+.add {
+    border: 1px solid;
+    border-radius: 4px;
+    text-indent: 10px;
+}
+
+.clear {
+    border: 1px solid;
+    border-radius: 4px;
+    text-indent: 10px;
+}
+
+.blue {
+    background-color: rgb(243, 70, 70);
+}
+
+.red{
+    background-color: rgb(37, 95, 182);
+}
+
+.lista {
+    margin-top: 30px;
+    width: 25%;
+}
+
+.queue-group {
+    margin-top: 20px;   
+}
+
+.queueControl{
+    width: 25%;
+}
