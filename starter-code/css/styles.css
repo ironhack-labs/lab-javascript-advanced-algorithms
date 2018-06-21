@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+    
+}
+
+.container-boxes {
+    background-color: #d7dde2;
+    width: 25%;
+    height: auto;
+    padding: 1% 1%;
+}
+
+.text-input {
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+button {
+    width: 100%;
+    margin: 3% auto;
+    align-items: center;
+}
+
+.col {
+    background-color: #ECECEC;
+}
