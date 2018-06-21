@@ -1,0 +1,58 @@
+.container {
+    width: 400px;
+}
+
+.stack {
+    margin: 20px 0 10px 0;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px 3px rgba(209,223,230,1);
+    text-align: center;
+}
+
+.btn {
+    margin: 0 0 10px 0;
+}
+
+.list-group-item {
+    height: 50px;
+    background-color: rgb(228, 228, 228);
+    margin-top: 2px;
+}
+
+.btn-secondary {
+    background-color: rgba(211, 118, 118, 0.842);
+    color: white;
+}
+
+.on {
+    background-color: rgba(103, 140, 209, 0.856);
+    text-align: center;
+    color: white;
+}
+
+.flow{
+    background-color: rgba(218, 103, 103, 0.904);
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+}
+
+.stack-list, .queue-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
