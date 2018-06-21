@@ -8,14 +8,28 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
-
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
+  <div class="container">
+    <h1>Stack</h1>
+    <div class="row">
+      <div class="column">
+          <input type="text" placeholder="Add the element to the stack" id="inputText">
+      </div>
+      <div class="column">
+          <button type="button" class="btn btn-primary btn-lg column" id="add">ADD</button>
+      </div>
+      <div class="column">
+          <button type="button" class="btn btn-primary btn-lg pink column" id="take">TAKE</button>
+      </div>
+      
+      <div id="stack" class="elements">
+        
+      </div>
+    </div>
+  </div>
+      <script src="src/StackDataStructure.js"></script>
+      <script src="src/QueueDataStructure.js"></script>
+      <script src="js/stack.js"></script>
+      <script src="js/queue.js"></script>
 </body>
-</html>
+      
+  </html>
