@@ -1,0 +1,145 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+  /* border:1px solid #bababa; */
+}
+
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'Lato',sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  color:#4b4b4b;
+  background-color: #fff;
+}
+
+h1{
+  font-size: 3rem;
+  padding-top: 3rem;
+}
+
+h2{
+  font-size:2.5rem;
+  padding-top:3rem;
+  margin-bottom:.5rem;
+}
+
+.header{
+  margin:0;
+  padding:0;
+  text-align:center;
+  max-width:1200px;
+  height: 90px;
+}
+
+
+.section{
+  display:flex;
+  max-width:1200px;
+  flex-direction:row;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.article{
+  flex-wrap:wrap;
+  width: 40%;
+  max-width: 20rem;
+  position:relative;
+}
+
+.pop-marker{
+  position: absolute;
+  right: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  top: 2rem;
+  color: #ca2b1c;
+  padding-right: 2.5rem;
+  max-width: 2.1rem;
+  overflow: hidden;
+}
+
+#pop-marker-stack{
+  display:none;
+}
+
+#pop-marker-queue{
+  display:none;
+}
+
+.btn{
+  width:100%;
+  border-radius:.3rem;
+  margin:.2rem 0;
+  font-size:1.5rem;
+  border:0;
+  padding:.5rem;
+  color:white;
+}
+
+.input-text{
+  width:100%;
+  margin:.3rem 0;
+  font-size:1.1rem;
+  color:#999999;
+  border:2px solid rgb(60, 169, 241);
+  border-radius:.3rem;
+  display:block;
+  padding:.3rem .5rem;
+  box-sizing:border-box;
+  outline: none;
+}
+
+.input-text:focus{ 
+  box-shadow: .1rem .1rem 1.1rem #9ecaed;
+  outline: none;
+  border-color: #246ba5;
+}
+
+.add-btn{
+  background-color: #246ba5;
+}  
+
+.take-btn{
+  background-color: #c53c2f;
+  margin-bottom: 1rem;
+}  
+
+.box{
+  display:block;
+  height: 2rem;
+  border:.1rem solid white;
+  background-color:#e7e7e7;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.box-on{
+  background-color: #246ba5;
+  color:white;
+}
+
+.flow-box{
+  border: 1px solid #c53c2f;
+  background-color:rgb(235, 192, 192);
+  color:#c53c2f;
+}
+
+.hide{
+  opacity:0;
+}

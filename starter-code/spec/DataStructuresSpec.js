@@ -6,29 +6,29 @@ describe("Stack", function() {
   });
 
   describe ("Stack properties", function () {
-    it ("Should has an array to add the elements to the stack", function () {
+    it ("Should have an array to add the elements to the stack", function () {
       expect(Array.isArray(stack.stackControl)).toBe(true);
     });
 
-    it ("Should has a max number of items to avoid the stack overflow", function () {
+    it ("Should have a max number of items to avoid the stack overflow", function () {
       expect(typeof(stack.MAX_SIZE)).toBe('number');
     });
   });
 
   describe ("Stack methods", function () {
-    it ("Should has a method to check if the current stack is empty", function () {
+    it ("Should have a method to check if the current stack is empty", function () {
       expect(typeof(stack.isEmpty)).toBe('function');
     });
 
-    it ("Should has a method to check if we can push elements into the stack", function () {
+    it ("Should have a method to check if we can push elements into the stack", function () {
       expect(typeof(stack.canPush)).toBe('function');
     });
 
-    it ("Should has a method to push elements into the stack", function () {
+    it ("Should have a method to push elements into the stack", function () {
       expect(typeof(stack.push)).toBe('function');
     });
 
-    it ("Should has a method to take elements from the stack", function () {
+    it ("Should have a method to take elements from the stack", function () {
       expect(typeof(stack.pop)).toBe('function');
     });
   });
