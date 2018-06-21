@@ -163,7 +163,7 @@ describe("Queues", function() {
       expect(queue.queueControl).toEqual([88, 19]);
     });
 
-    it ("Should return 'Stack Overflow' if the stack is full", function () {
+    it ("Should return 'Queue Overflow' if the stack is full", function () {
       queue.MAX_SIZE = 1;
       queue.enqueue(19);
 
