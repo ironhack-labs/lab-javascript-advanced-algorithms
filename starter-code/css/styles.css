@@ -1,0 +1,58 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  /*max-width: 400px;*/
+  margin: 50px auto;
+}
+
+button , input{
+  margin-bottom: 10px;
+}
+#stack_container{
+  flex-direction: column;
+  margin-top: 10px;
+}
+#stack_container div{
+  background: #ededed;
+  height: 50px;
+  margin: 2px auto;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 6px 0;
+  color: #FFF;
+}
+
+#stack_container .stack_added{
+  background: #157EFB;
+}
+
+#stack_container .flow{
+  background: #f3e2e2;
+  border: 1px solid #d15151;
+  color: #d15151;
+}
+
+/* QUEUE */
+#queue_container {
+  display: flex;
+  flex-direction: row;}
+#queue_container div{
+  background: #ededed;
+  height: 150px;
+  width: 50px;
+  margin-right: 2px;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 6px 0;
+  color: #FFF;
+}
+
+#stack_container .stack_added{
+  background: #157EFB;
+}
+
+#stack_container .flow{
+  background: #f3e2e2;
+  border: 1px solid #d15151;
+  color: #d15151;
+}
