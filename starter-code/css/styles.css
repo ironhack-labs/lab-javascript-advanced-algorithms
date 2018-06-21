@@ -1,0 +1,49 @@
+.body {
+    margin: 0;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.container {
+    width: 100%;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0 60px;
+    margin: 0 auto;
+}
+.row {
+    flex-direction: row;
+}
+.blue-button {
+    height: 40px;
+    text-transform: uppercase;
+    background-color: #407AC1;
+    color: white;
+}
+.red-button {
+    height: 40px;
+    text-transform: uppercase;
+    background-color: #E84B54;
+    color: white;
+}
+.margin {
+    margin: 10px 0;
+}
+.display {
+    display: none;
+}
+.gray {
+    background-color: #ECECEC;
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+input {
+    height: 40px;
+    margin-top: 30px;
+}
