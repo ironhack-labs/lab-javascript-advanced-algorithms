@@ -1,0 +1,30 @@
+h2 {
+    text-align: center
+}
+.stackClass {
+    text-align: center
+}
+
+.plato {
+    height: 35px;
+    background-color: blue;
+    width: 190px;
+    margin: 0 auto;
+    border: 1px;
+    border-color: red;
+    
+    
+}
+.buttonadd {
+    width: 130px;
+    background-color: blueviolet;
+    color: white;
+    margin: 6px;
+    
+}
+
+.buttonremove {
+    width:130px;
+    background-color: red;
+    color: white
+}
