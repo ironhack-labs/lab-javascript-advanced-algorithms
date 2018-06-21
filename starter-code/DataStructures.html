@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
-
-  </section>
-
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Data Structures</h1>
+  </header>
+  <section class="section">
+    <article class="article">
+      <h2>Stack<span id="pop-marker-stack" class="pop-marker"></span></h2>
+      <input id="input-text-stack" class="input-text" type="text" onfocus="this.value=''" value="Add the element to the stack...">
+      <input id="add-btn-stack" class="btn add-btn" type="button" value="ADD">
+      <input id="take-btn-stack" class="btn take-btn" type="button" value="TAKE">
+      <div>
+        <ul>
+          <li class="box flow-box" id="overflow-box-stack" >Stack Overflow</li>
+          <li class="box stack"></li>
+          <li class="box stack"></li>
+          <li class="box stack"></li>
+          <li class="box stack"></li>
+          <li class="box stack"></li>
+          <li class="box stack"></li>
+          <li class="box stack"></li>
+          <li class="box stack"></li>
+          <li class="box flow-box" id="underflow-box-stack">Stack Underflow</li>
+        </ul>
+      </div>
+    </article>
+    <article id="queue" class="article">
+      <h2>Queue<span id="pop-marker-queue" class="pop-marker"></span></h2>
+      <input id="input-text-queue" class="input-text" type="text" onfocus="this.value=''" value="Add the element to the stack...">
+      <input id="add-btn-queue" class="btn add-btn" type="button" value="ADD">
+      <input id="take-btn-queue" class="btn take-btn" type="button" value="TAKE">
+      <div>
+        <ul>
+          <li class="box flow-box" id="overflow-box-queue">Queue Overflow</li>
+          <li class="box queue"></li>
+          <li class="box queue"></li>
+          <li class="box queue"></li>
+          <li class="box queue"></li>
+          <li class="box queue"></li>
+          <li class="box queue"></li>
+          <li class="box queue"></li>
+          <li class="box queue"></li>
+          <li class="box flow-box" id="underflow-box-queue">Queue Underflow</li>
+        </ul>
+      </div>
+    </article>
+  </section>
 </body>
+
 </html>
