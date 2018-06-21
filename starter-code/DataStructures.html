@@ -8,14 +8,56 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
+  <div class="mainTitle">
+    <h1> Abstract Data Types</h1>
+  </div>
   <section class="container">
-    <h1>Abstract Data Types</h1>
-
+   <div class="mainBox">
+    <div class="mainBoxStack" id="stack">
+        <h2>STACK</h2>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+    </div>
+    <div class="mainBoxQueue" id="queue">
+        <h2>QUEUE</h2>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+      <div class=" empty"></div>   
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+      <div class=" empty"></div>
+    </div>
+  </div>
   </section>
-
+<div class="buttonsBox">
+  <input id="inputValue" type="text" placeholder="Introduce número" value="">
+  <button class="push" type="button">Push/Unshift</button>
+  <button class="pop" type="button">Pop/Shift</button>
+  <form>
+      <input type="radio" name="data" value="stack" id="radio1" checked> Stack
+      <input type="radio" name="data" value="queue" id="radio2"> Queue
+      
+    </form> 
+ <h1 class="message">MESSAGE:</h1>
+ 
+ 
+ 
+  
+    
+  </div>
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+
+  
 </body>
 </html>

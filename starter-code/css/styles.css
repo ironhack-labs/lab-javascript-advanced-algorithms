@@ -1,0 +1,74 @@
+.mainBoxStack{
+
+    display:flex;
+    width: 40%;
+    flex-direction: column-reverse;
+    
+align-items: center;
+text-align: center;
+}
+
+
+.mainBoxQueue{
+
+    display:flex;
+    width: 40%;
+    flex-direction: row;
+
+align-items: center;
+text-align: center;
+}
+
+
+
+.empty {
+    background-color: gray;
+    border:2px solid red;
+    height: 80px;
+    width: 100px;
+    padding-top:20px;
+    font-size:30px;
+    color:blue;
+}
+
+
+
+.hidden{
+    display:none;
+}
+
+button {
+
+    height: 30px;
+    width: 100px;
+    background-color:blue;
+    color:yellow;
+}
+
+.buttonsBox{
+
+  
+    margin-top: 40px;
+    margin-left: 770px;
+}
+
+.mainTitle{
+
+   display: flex;
+   justify-content: center;
+   text-decoration: underline;
+
+}
+
+.mainBox{
+
+display:flex;
+justify-content: space-between;
+}
+
+form{
+
+    font-size: 30px;
+
+}
+
