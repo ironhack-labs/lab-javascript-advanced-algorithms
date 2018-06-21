@@ -18,6 +18,21 @@ $(".add").on('click',function(){
   }
 });
 
+$(".take").on('click',function(){
+  if (stack.isEmpty()==false) {
+      var nuevostack = $(".stackelementfull:first")
+      stack.pop()
+      nuevostack.text("");
+      nuevostack.removeClass("stackelementfull");
+      nuevostack.addClass("stackelementempty");
+  } else {
+    var overflow = $(".stackelementstatus")
+    overflow.text("Stack Underflow!!")
+    overflow.removeClass("stackelementstatus")
+    overflow.addClass("stackunderflow")
+  }
+});
+
 
 $(".addq").on('click',function(){
   var val = $('#val2').val();
