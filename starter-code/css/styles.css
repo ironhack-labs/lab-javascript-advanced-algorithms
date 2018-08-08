@@ -1,0 +1,31 @@
+.stack-content {
+  display:flex;
+  flex-direction: column;
+}
+
+.list-group-item {
+  height: 50px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.full {
+  background-color: blue;
+}
+
+.inactive {
+  visibility:hidden;
+}
+
+.active {
+  visibility: visible;
+}
+
+.overflow, .underflow {
+  border: none;
+}
+
+.taken-item {
+  font-size: 2em;
+}

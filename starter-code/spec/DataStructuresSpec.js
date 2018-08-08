@@ -6,7 +6,7 @@ describe("Stack", function() {
   });
 
   describe ("Stack properties", function () {
-    it ("Should has an array to add the elements to the stack", function () {
+    it ("Should have an array to add the elements to the stack", function () {
       expect(Array.isArray(stack.stackControl)).toBe(true);
     });
 
