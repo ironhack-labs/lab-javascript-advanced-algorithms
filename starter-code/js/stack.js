@@ -19,7 +19,6 @@ $(document).ready(function() {
     if (stack.canPush()) {
       stack.push(1);
       fillStack();
-      console.log(stack.stackControl.length);
     } else {
       var html = `<div class='stack flow'>STACK OVERFLOW</div>`;
       container.prepend(html);
