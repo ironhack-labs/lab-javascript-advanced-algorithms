@@ -1,9 +1,3 @@
-// document.getElementById('btn-mode').onclick = function() {
-//   const mode = document.getElementById('btn-mode').innerHTML;
-//   console.log('queue clicked')
-
-// if (mode !== "Switch to Queues") {
-
 $(document).ready(function() {
   const newQueue = new QueueDataStructure([], 4)
   console.log('queue!!!!!!!')
@@ -33,42 +27,22 @@ $(document).ready(function() {
   $('#add').click(() => {
     const inputValue = input.val()
     newQueue.enqueue(inputValue)
-    addItem()
-    input.val('')
+    rerender()
   });
   $('#take').click(() => {
     newQueue.dequeue()
-    takeItem()
-    input.val('')
+    rerender()
   });
 
-  const addItem = () => {
-    newQueue.arr.map((text, index) => {
-      var selector = '#' + (index + 1);
-      $(selector).addClass('active-item')
-      $(selector).text(text)
-    })
-    checkStack()
-  }
-  const takeItem = () => {
-    var removedId = newQueue.arr.length + 1;
-    var selector = '#' + removedId;
-    $(selector).removeClass('active-item')
-    $(selector).text('')
-    checkStack()
+  const rerender = () => {
+    var clearTop = '#' + (newQueue.arr.length + 1);
+    $(clearTop).removeClass('active-item').text('')
     
     newQueue.arr.map((text, index) => {
       var selector = '#' + (index + 1);
-      $(selector).addClass('active-item')
-      $(selector).text(text)
+      $(selector).addClass('active-item').text(text)
     })
+    input.val('')
+    checkStack()
   }
-
 })
-
-
-// }
-
-
-
-// }

@@ -1,13 +1,6 @@
-// document.getElementById('btn-mode').onclick = function() {
-//   const mode = document.getElementById('btn-mode').innerHTML;
-//   console.log('stack clicked')
-
-//   if (mode === "Switch to Stacks") {
-
-  $(document).ready(function() {
+$(document).ready(function() {
     const newStack = new StackDataStructure([], 4)
     console.log('stack!!!!!!!')
-    console.log(newStack)
 
     let html = ''
     for (let i = newStack.maxNum; i > 0; i--) {
@@ -33,36 +26,26 @@
     $('#add').click(() => {
       const inputValue = input.val()
       newStack.push(inputValue)
-      addItem()
-      input.val('')
+      rerender()
     });
     $('#take').click(() => {
       newStack.pop()
-      takeItem()
-      input.val('')
+      rerender()
     });
 
-    const addItem = () => {
+    const rerender = () => {
+      var clearTop = '#' + (newStack.arr.length + 1);
+      $(clearTop).removeClass('active-item').text('')
+
       newStack.arr.map((text, index) => {
         var selector = '#' + (index + 1);
-        $(selector).addClass('active-item')
-        $(selector).text(text)
+        $(selector).addClass('active-item').text(text)
       })
       checkStack()
+      input.val('')
     }
-    const takeItem = () => {
-      var removedId = newStack.arr.length + 1;
-      var selector = '#' + removedId;
-      $(selector).removeClass('active-item')
-      $(selector).text('')
-      checkStack()
-    }
-
   })
 
-//   }
-
-// }
 
 
 
