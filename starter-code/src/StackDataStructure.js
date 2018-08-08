@@ -1,6 +1,8 @@
-function StackDataStructure() {
+console.log("stacks here");
+
+function StackDataStructure(maxSize) {
   this.stackControl = [];
-  this.MAX_SIZE = 10;
+  this.MAX_SIZE = maxSize;
 
   this.isEmpty = function() {
     if (this.stackControl.length === 0) {
@@ -37,7 +39,3 @@ function StackDataStructure() {
     }
   };
 }
-let stack = new StackDataStructure();
-stack.push(19);
-
-console.log(stack);

@@ -1,0 +1,34 @@
+body {
+  background-color: aliceblue;
+}
+
+.stack__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.stack__container--header button {
+  color: white;
+  border: none;
+  padding: 10px 40px;
+}
+.stack__container--header #stack-add {
+  background-color: #012ef7;
+}
+.stack__container--header #stack-take {
+  background-color: #7a0000;
+}
+.stack__container--stack .stack {
+  width: 500px;
+  height: 50px;
+  margin: 5px;
+}
+.stack__container--stack .full {
+  background-color: #005a5a;
+}
+.stack__container--stack .empty {
+  background-color: #7e7e7e;
+}
+
+/*# sourceMappingURL=styles.css.map */

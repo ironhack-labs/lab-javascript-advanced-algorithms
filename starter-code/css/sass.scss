@@ -1,0 +1,41 @@
+body {
+  background-color: aliceblue;
+}
+
+.stack__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &--header {
+    button {
+      color: white;
+      border: none;
+      padding: 10px 40px;
+    }
+
+    #stack-add {
+      background-color: rgb(1, 46, 247);
+    }
+
+    #stack-take {
+      background-color: rgb(122, 0, 0);
+    }
+  }
+
+  &--stack {
+    .stack {
+      width: 500px;
+      height: 50px;
+      margin: 5px;
+    }
+    .full {
+      background-color: rgb(0, 90, 90);
+    }
+
+    .empty {
+      background-color: rgb(126, 126, 126);
+    }
+  }
+}
