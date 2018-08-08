@@ -1,75 +1,77 @@
-// console.log("stacks here");
-
-// function StackDataStructure() {
-//   this.stackControl = [];
-//   this.MAX_SIZE = 10;
-
-//   this.isEmpty = function() {
-//     if (this.stackControl.length === 0) {
-//       return true;
-//     } else {
-//       return false;
-//     }
-//   };
-
-//   // Should have a method to check if we can push elements into the stack
-//   this.canPush = function() {
-//     if (this.stackControl.length < this.MAX_SIZE) {
-//       return true;
-//     } else {
-//       return false;
-//     }
-//   };
-
-//   this.push = function(newItem) {
-//     //"Should return 'Stack Overflow' if the stack is full"
-//     if (this.canPush()) {
-//       this.stackControl.push(newItem);
-//       return this.stackControl;
-//     } else {
-//       return "Stack Overflow";
-//     }
-//   };
-
-//   this.pop = function() {
-//     if (this.isEmpty()) {
-//       return "Stack Underflow";
-//     } else {
-//       return this.stackControl.pop();
-//     }
-//   };
-// }
-
 $(document).ready(function() {
   var stack = new StackDataStructure(8);
   var container = $(".stack__container--stack");
-  //Count the Max number and display that many stacks
+  //get the number of stacks, create them and add them to the stack container
   createStacks(stack.MAX_SIZE);
-
-  //I need take input -- ITERATION TWO
-  //on ADD.click add one new stack item for every input using StackDataStructure.push
-  var addButton = $("#stack-add");
-  addButton.click(function() {
-    stack.push(1);
-    fillStack();
-  });
-
-  //on TAKE.click remove one item from the stack using StackDataStructure.pop
-
   function createStacks(stackSize) {
     var html = "";
     for (var i = 0; i < stackSize; i++) {
       html += `<div class='stack empty'></div>`;
     }
-    // html += `<div class='stack'></div>`;
     container.append(html);
   }
 
+  //when Add button is clicked add one new stack item is added
+  //whenever the max limit is reached show stopper
+  var displayFlow;
+  var addButton = $("#stack-add");
+  addButton.click(function() {
+    if (stack.canPush()) {
+      stack.push(1);
+      fillStack();
+      console.log(stack.stackControl.length);
+    } else {
+      var html = `<div class='stack flow'>STACK OVERFLOW</div>`;
+      container.prepend(html);
+      //disable button
+      addButton.prop("disabled", true);
+      //show warning for 2 seconds and enable the button again
+      handleOverUnderFlow(addButton);
+    }
+  });
+
   function fillStack() {
+    //find the last stack that is empty and fill it
     var lastEmpty = $(
       "body > section > div > div.stack__container--stack .empty"
     );
     lastEmpty.last().addClass("full");
     lastEmpty.last().removeClass("empty");
+  }
+
+  //when Take button is clicked one item from the stack is removed
+  //whenever the min limit is reached show stopper
+  var takeButton = $("#stack-take");
+  takeButton.click(function() {
+    if (!stack.isEmpty()) {
+      stack.pop(1);
+      emptyStack();
+    } else {
+      var html = `<div class='stack flow'>STACK UNDERFLOW</div>`;
+      container.prepend(html);
+      //disable button
+      takeButton.prop("disabled", true);
+      //show warning for 2 seconds and enable the button again
+      handleOverUnderFlow(takeButton);
+    }
+  });
+
+  //find the first item that is full and empty it
+  function emptyStack() {
+    var firstFull = $(
+      "body > section > div > div.stack__container--stack .full"
+    );
+    firstFull.first().removeClass("full");
+    firstFull.first().addClass("empty");
+  }
+
+  function handleOverUnderFlow(button) {
+    clearTimeout(displayFlow);
+    displayFlow = setTimeout(function() {
+      //enable the button again
+      button.prop("disabled", false);
+      //and remove warning block
+      $(".flow").remove();
+    }, 2000);
   }
 });
