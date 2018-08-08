@@ -1,6 +1,6 @@
 function StackDataStructure() {
     this.stackControl = [];
-    this.MAX_SIZE = 1;
+    this.MAX_SIZE = 3;
     this.isEmpty =
         function() {
             if (this.stackControl.length === 0) {
@@ -19,7 +19,7 @@ function StackDataStructure() {
     };
 
     this.push = function(element) {
-        if (this.canPush) {
+        if (this.canPush()) {
             this.stackControl.push(element);
             return this.stackControl;
         } else {
@@ -28,8 +28,7 @@ function StackDataStructure() {
     };
 
     this.pop = function(element) {
-        if (!this.isEmpty) {
-            this.stackControl.pop(element);
+        if (this.stackControl.length > 0) {
             return this.stackControl.pop();
         } else {
             return "Stack Underflow";
