@@ -1,0 +1,38 @@
+.add{
+    background-color: blue;
+    height: 40px;
+    width: 170px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+}
+.take{
+    background-color: red;
+    height: 40px;
+    width: 170px;
+    margin-bottom: 5px;
+    color: white;
+    text-align: center;
+}
+.stack{
+    background-color: lightgrey;
+    height: 40px;
+    width: 170px;
+    margin-bottom: 5px;
+}
+.stackover{
+    color: red;
+    height: 40px;
+    width: 170px;
+    margin-bottom: 5px;
+}
+.stackunder{
+    color: red;
+    height: 40px;
+    width: 170px;
+    margin-bottom: 5px;
+}
+.container{
+    margin-left: 20px;
+}
