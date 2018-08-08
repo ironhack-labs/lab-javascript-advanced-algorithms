@@ -61,10 +61,23 @@ $item-height: 60px;
     .active-item {
       background-color: #2182C2;
     }
-    .warning-item {
+    .warning {
       background-color: #F4E2E2;
       color: $btn-take;
       border: $btn-take solid 1px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 10px;
+    }
+    .inactive {
+      height: 0;
+      display: none;
+    }
+    .active {
+      height: $item-height;
+      display: block;
+      line-height: $item-height;
     }
   }
 }

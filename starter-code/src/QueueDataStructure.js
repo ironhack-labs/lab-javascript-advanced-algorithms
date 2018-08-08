@@ -6,31 +6,23 @@ class QueueDataStructure {
   }
 
   checkIfEmpty() {
-    if (this.arr.length === 0) {
-      return 'Stack Underflow';
-    } else {
-      return this.arr;
-    }
+    return this.arr.length === 0
   }
   checkIfFull() {
-    if (this.arr.length === this.maxNum) {
-      return 'Stack Overflow';
-    } else {
-      return this.arr;
-    }
+    return this.arr.length === this.maxNum
   }
   enqueue(item) {
-    if (this.checkIfFull === 'Stack Overflow') {
+    if (this.checkIfFull()) {
       return 
     } else {
       return this.arr.push(item)
     }
   }
-  dequeue(item) {
-    if (this.checkIfEmpty === 'Stack Underflow') {
+  dequeue() {
+    if (this.checkIfEmpty()) {
       return 
     } else {
-      return this.arr.shift(item)
+      return this.arr.shift()
     }
   }
 }

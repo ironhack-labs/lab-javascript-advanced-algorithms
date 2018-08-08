@@ -49,10 +49,23 @@
 .container .bottom-container .active-item {
   background-color: #2182C2;
 }
-.container .bottom-container .warning-item {
+.container .bottom-container .warning {
   background-color: #F4E2E2;
   color: #F04C4D;
   border: #F04C4D solid 1px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px;
+}
+.container .bottom-container .inactive {
+  height: 0;
+  display: none;
+}
+.container .bottom-container .active {
+  height: 60px;
+  display: block;
+  line-height: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */

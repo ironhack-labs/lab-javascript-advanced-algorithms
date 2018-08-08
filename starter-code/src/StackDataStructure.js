@@ -6,21 +6,13 @@ class StackDataStructure {
   }
 
   checkIfEmpty() {
-    if (this.arr.length === 0) {
-      return 'Stack Underflow';
-    } else {
-      return this.arr;
-    }
+    return this.arr.length === 0;
   }
   checkIfFull() {
-    if (this.arr.length === this.maxNum) {
-      return 'Stack Overflow';
-    } else {
-      return this.arr;
-    }
+    return this.arr.length === this.maxNum
   }
   push(item) {
-    if (this.checkIfFull() === 'Stack Overflow') {
+    if (this.checkIfFull()) {
       console.log('full')
       return 
     } else {
@@ -29,7 +21,7 @@ class StackDataStructure {
     }
   }
   pop() {
-    if (this.checkIfEmpty() === 'Stack Underflow') {
+    if (this.checkIfEmpty()) {
       return 
     } else {
       return this.arr.pop()

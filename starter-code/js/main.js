@@ -1,4 +1,7 @@
-// $(document).ready(function() { 
+// document.getElementById('btn-mode').onclick = function() {
+//   console.log('main clicked')
+
+//   $(document).ready(function() { 
 //   const modeButton = $('#btn-mode');
 //   const modeName = $('#mode-name');
 //   $(modeButton).click(() => {
@@ -14,3 +17,6 @@
 //   }
 
 // })
+// }
+
+

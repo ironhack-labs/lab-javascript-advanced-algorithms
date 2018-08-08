@@ -1,72 +1,70 @@
-$(document).ready(function() {
-  const newArr = []
-  const newStack = new StackDataStructure(newArr, 4)
-  console.log(newStack)
-  const numOfDiv = newStack.maxNum;
-  let hasWarning = false;
+// document.getElementById('btn-mode').onclick = function() {
+//   const mode = document.getElementById('btn-mode').innerHTML;
+//   console.log('stack clicked')
 
-  let html = ''
-  for (let i = numOfDiv; i > 0; i--) {
-    html += `<div class='stack-item' id='${i}'>
-    </div>`
-  }
+//   if (mode === "Switch to Stacks") {
 
-  const input = $('input')
-  document.querySelector('.bottom-container').innerHTML = html
+  $(document).ready(function() {
+    const newStack = new StackDataStructure([], 4)
+    console.log('stack!!!!!!!')
+    console.log(newStack)
 
-  const checkStack = () => {
-    console.log('checkedStack')
-    console.log(newStack.arr)
-    if(newStack.arr.length === 0 && !hasWarning) {
-      hasWarning = true
-      console.log('empty')
-      $('.bottom-container').append(`<div class='stack-item warning-item'>Stack Underflow</div>`)
-    } else if (newStack.arr.length === numOfDiv && !hasWarning){
-      hasWarning = true
-      const lastId = '#' + numOfDiv;
-      console.log(lastId)
-      $(`<div class='stack-item warning-item'>Stack Overflow</div>`).prependTo('.bottom-container')
-    } else if (0 < newStack.arr.length && newStack.arr.length < numOfDiv){
-      hasWarning = false;
-      $('.warning-item').remove()
-    } else {
-      return
+    let html = ''
+    for (let i = newStack.maxNum; i > 0; i--) {
+      html += `<div class='stack-item' id='${i}'>
+      </div>`
     }
-  }
-  checkStack()
 
-  $('#add').click(() => {
-    // console.log('add btn clicked')
-    const inputValue = input.val()
-    newStack.push(inputValue)
-    // console.log(newStack.arr)
-    addItem()
-    input.val('')
-  });
-  $('#take').click(() => {
-    console.log('take btn clicked')
-    const inputValue = input.val()
-    newStack.pop()
-    console.log(newStack.arr)
-    takeItem()
-    input.val('')
-  });
+    const input = $('input')
+    document.querySelector('.stack-container').innerHTML = html
 
-  const addItem = () => {
-    newStack.arr.map((text, index) => {
-      var selector = '#' + (index + 1);
-      $(selector).addClass('active-item')
-      $(selector).text(text)
-    })
+    const checkStack = () => {
+      if(newStack.checkIfEmpty()) {
+        $('#underflow').removeClass('inactive').addClass('active')
+      } else if (newStack.checkIfFull()){
+        $('#overflow').removeClass('inactive').addClass('active')
+      } else {
+        $('#overflow').removeClass('active').addClass('inactive')
+        $('#underflow').removeClass('active').addClass('inactive')
+      } 
+    }
     checkStack()
-  }
-  const takeItem = () => {
-    var removedId = newStack.arr.length + 1;
-    var selector = '#' + removedId;
-    $(selector).removeClass('active-item')
-    $(selector).text('')
-    checkStack()
-  }
 
-  
-})
+    $('#add').click(() => {
+      const inputValue = input.val()
+      newStack.push(inputValue)
+      addItem()
+      input.val('')
+    });
+    $('#take').click(() => {
+      newStack.pop()
+      takeItem()
+      input.val('')
+    });
+
+    const addItem = () => {
+      newStack.arr.map((text, index) => {
+        var selector = '#' + (index + 1);
+        $(selector).addClass('active-item')
+        $(selector).text(text)
+      })
+      checkStack()
+    }
+    const takeItem = () => {
+      var removedId = newStack.arr.length + 1;
+      var selector = '#' + removedId;
+      $(selector).removeClass('active-item')
+      $(selector).text('')
+      checkStack()
+    }
+
+  })
+
+//   }
+
+// }
+
+
+
+
+
