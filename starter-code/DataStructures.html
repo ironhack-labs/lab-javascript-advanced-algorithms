@@ -8,14 +8,29 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <div class='container'>
+    <section class="top-container">
+      <div class='mode-div'>
+          <h1 id='mode-name'>Stacks</h1>
+          <button id='btn-mode'>Switch to Queues</button>
+      </div>
+      <input type="text" placeholder="Add the element to the stack...">
+      <button class='btn btn-add' id='add'>ADD</button>
+      <button class='btn btn-take' id='take'>TAKE</button>
+    </section>
 
-  </section>
+    <section class='bottom-container'>
+      <!-- <div class='stack-item'>
+
+      </div> -->
+    </section>
+  </div>
+  
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

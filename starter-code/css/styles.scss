@@ -1,0 +1,71 @@
+$btn-add: #2182C2;
+$btn-take: #F04C4D;
+$item-height: 60px;
+
+
+
+.container {
+  max-width: 400px;
+  border: 2px aqua solid;
+  font-family: 'Courier New', Courier, monospace;
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+
+    .mode-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      #btn-mode {
+        padding: 10px;
+        background: salmon;
+        border-radius: 5px;
+        // height: 20px;
+      }
+    }
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      padding: 10px;
+      color: white;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .btn-add {
+      background-color: $btn-add;
+    }
+    .btn-take {
+      background-color: $btn-take;
+    }
+  }
+  
+  .bottom-container {
+    // height: 500px;
+    border: 2px sandybrown solid;
+
+    .stack-item {
+      background-color: #EDEDED;
+      height: $item-height;
+      margin: 10px;
+      text-align: center;
+      line-height: $item-height;
+      color: white;
+      font-weight: bold;
+      font-size: 1.5em;
+
+    }
+    .active-item {
+      background-color: #2182C2;
+    }
+    .warning-item {
+      background-color: #F4E2E2;
+      color: $btn-take;
+      border: $btn-take solid 1px;
+    }
+  }
+}
+

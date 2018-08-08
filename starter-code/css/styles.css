@@ -1,0 +1,58 @@
+.container {
+  max-width: 400px;
+  border: 2px aqua solid;
+  font-family: "Courier New", Courier, monospace;
+}
+.container .top-container {
+  display: flex;
+  flex-direction: column;
+}
+.container .top-container .mode-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .top-container .mode-div #btn-mode {
+  padding: 10px;
+  background: salmon;
+  border-radius: 5px;
+}
+.container .top-container input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.container .top-container .btn {
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.container .top-container .btn-add {
+  background-color: #2182C2;
+}
+.container .top-container .btn-take {
+  background-color: #F04C4D;
+}
+.container .bottom-container {
+  border: 2px sandybrown solid;
+}
+.container .bottom-container .stack-item {
+  background-color: #EDEDED;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.container .bottom-container .active-item {
+  background-color: #2182C2;
+}
+.container .bottom-container .warning-item {
+  background-color: #F4E2E2;
+  color: #F04C4D;
+  border: #F04C4D solid 1px;
+}
+
+/*# sourceMappingURL=styles.css.map */
