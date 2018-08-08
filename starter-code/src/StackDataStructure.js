@@ -1,6 +1,6 @@
 function StackDataStructure() {
   this.stackControl = [];
-  this.MAX_SIZE = 4;
+  this.MAX_SIZE = 8;
   this.isEmpty = function() {
     return this.stackControl.length ? false : true;
   };
@@ -8,6 +8,7 @@ function StackDataStructure() {
     return this.stackControl.length >= this.MAX_SIZE ? false : true;
   };
   // WHy cant i execute multiple responses for a single line shorthand??-------
+  //var canDrink = (myAge > legalAge) ? true : false;
   //this.push = function (el) { return (this.canPush()) ? ( [el], this.stackControl.push(el)): "Stack Overflow"};
   this.push = function(el) {
     if (this.canPush()) {
@@ -18,7 +19,6 @@ function StackDataStructure() {
     }
   };
 
-  //var canDrink = (myAge > legalAge) ? true : false;
   this.pop = function() {
     if (this.isEmpty()) {
       return "Stack Underflow";

@@ -3,20 +3,19 @@ body{
     background-color: pink;
 }
 #stack{
-    background-color:white;
+    background-color:antiquewhite;
 }
 #stack div{
 text-align: center;
 height: 7vh;
-margin-top: 0.2vh;
+margin-top: 0.5vh;
 border: 1px dashed aqua;
+line-height:7vh;
 }
 .stacked{
-    background-color:darkgreen;
+    background-color:chartreuse;
+    border:1px solid black;
 }
 .over{
-background-color:darkred;
-}
-.under{
-    background-color:darkred;
+background-color:rgba(255, 0, 0, 0.596);
 }
