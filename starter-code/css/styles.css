@@ -1,0 +1,22 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: pink;
+}
+#stack{
+    background-color:white;
+}
+#stack div{
+text-align: center;
+height: 7vh;
+margin-top: 0.2vh;
+border: 1px dashed aqua;
+}
+.stacked{
+    background-color:darkgreen;
+}
+.over{
+background-color:darkred;
+}
+.under{
+    background-color:darkred;
+}
