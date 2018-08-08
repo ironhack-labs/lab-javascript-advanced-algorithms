@@ -29,7 +29,7 @@ function QueueDataStructure() {
 
     this.dequeue = function(element) {
         if (this.queueControl.length > 0) {
-            return this.queueControl.shift();
+            return this.queueControl.pop();
         } else {
             return "Queue Underflow";
         }
