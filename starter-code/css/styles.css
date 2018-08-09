@@ -23,9 +23,11 @@ body {
   width: 500px;
   height: 50px;
   margin: 5px;
+  transition: all 1s;
 }
 .stack__container--stack .full {
   background-color: #005a5a;
+  transform: translateX(0);
 }
 .stack__container--stack .empty {
   background-color: #7e7e7e;
