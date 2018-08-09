@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    <div class="container-row">
+      <div class="stack-structure">
+        <div class="input">
+          <input id="stack-input" type="text" name="input" placeholder="Add the element to the stack...">
+          <button id="stack-button-add" class="add">ADD</button>
+          <button id="stack-button-take" class="take">TAKE</button>
+        </div>
+
+        <div class="elements-column">
+          <div class="stack-overflow"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div id="stack-underflow" class="stack-element"></div>
+        </div>
+      </div>
+
+      <div class="queue-structure">
+        <div class="input">
+          <input id="queue-input" type="text" name="input" placeholder="Add the element to the queue...">
+          <button id="queue-button-add" class="add">ADD</button>
+          <button id="queue-button-take" class="take">TAKE</button>
+        </div>
+
+        <div class="elements-row">
+          <div id="queue-underflow" class="queue-element"></div>
+          <div class="queue-element"></div>
+          <div class="queue-element"></div>
+          <div class="queue-element"></div>
+          <div class="queue-element"></div>
+          <div class="queue-element"></div>
+          <div class="queue-element"></div>
+          <div class="queue-element"></div>
+          <div class="queue-element"></div>
+          <div class="queue-element"></div>
+          <div class="queue-overflow"></div>
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -18,4 +67,5 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>
