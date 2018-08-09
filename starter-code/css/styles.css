@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.content-wrapper input {
+  margin: 4px 0;
+  padding: 7px 0;
+  width: 280px;
+}
+.content-wrapper button {
+  margin: 4px 0;
+  padding: 7px 0;
+  width: 280px;
+  color: #f5f5f5;
+}
+.content-wrapper #add-btn {
+  background-color: darkblue;
+}
+.content-wrapper #take-btn {
+  background-color: darkred;
+}
+.content-wrapper .stack-elements {
+  margin: 8px 0;
+}
+.content-wrapper .stack-elements .stack-element {
+  margin: 10px 0;
+  width: 280px;
+  height: 40px;
+  background-color: gray;
+  color: #f5f5f5;
+  text-align: center;
+  line-height: 40px;
+}
+.content-wrapper .warning {
+  opacity: 0;
+  border: 2px solid #be3535;
+  color: #be3535;
+  margin: 6px 0;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.content-wrapper .active-warning {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=styles.css.map */
