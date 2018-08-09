@@ -1,0 +1,113 @@
+.container-biggest{
+    display:flex;
+    flex-direction: row;
+    align-content: space-between;
+    padding: 200px;
+}
+
+.container{
+    box-sizing: border-box;
+    height: 500px;
+    width: 200px;
+}
+
+.input1{
+    width: 200px;
+    height: 30px;
+    padding: 10px 0;
+}
+
+.add{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    background-color: red;
+    padding: 10px 0;
+}
+
+.input{
+    width: 200px;
+    height: 30px;
+    padding: 10px 0;
+}
+
+.take{
+    width: 200px;
+    height: 30px;
+    background-color:blue;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.grey-div{
+    width: 200px;
+    height: 30px;
+    background-color: grey;
+    padding: 10px 0;
+    margin: 2px;
+}
+
+.occupied{
+    background-color: green;
+}
+
+
+
+
+
+
+.container2{
+    box-sizing: border-box;
+    height: 500px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+}
+
+.queues{
+    display: flex;
+    flex-direction: row;
+}
+
+.enqueue{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    background-color: red;
+    padding: 10px 0;
+}
+
+
+.dequeue{
+    width: 200px;
+    height: 30px;
+    background-color:blue;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.grey-div-q{
+    width: 30px;
+    height: 200px;
+    background-color: grey;
+    padding: 10px 0;
+    margin: 2px;
+}
+
+.occupied{
+    background-color: green;
+}
+
+.container25{
+    display:flex;
+}
+
+h1{
+    text-align:center;
+}
