@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+ 
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#stack{
+
+    display: flex;
+    width: 35vw;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#queue{
+
+    display: flex;
+    width: 32vw;
+    height: 40vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+button{
+    width: 32vw;
+    height: 5vh;
+    margin: 5px 5px 5px 5px;
+}
+
+.elem{
+    width: 32vw;
+    height: 8vh;
+    background-color: gray;
+    margin: 5px 5px 5px 5px;
+    font-size: 24pt;
+    text-align: center;
+    
+}
+
+
+.elem2{
+    width: 8vw;
+    height: 35vh;
+    background-color: gray;
+    margin: 5px 5px 5px 5px;
+    font-size: 24pt;
+    text-align: center;
+    
+}
+
+.filled{
+    background-color: lightblue;
+}
+
+#add, #add2{
+    background-color: rgb(134, 219, 134);
+}
+
+#take, #take2{
+    background-color: rgb(224, 145, 145);
+}
