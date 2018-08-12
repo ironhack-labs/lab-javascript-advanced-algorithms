@@ -1,14 +1,15 @@
-var s;
+var s = ["this", "is", "a", "test", "array"];
 //var topStack = $('.stacked:first');
+var s = new StackDataStructure();
+var html = "";
+for (let i = 0; i < s.MAX_SIZE; i++) {
+  html +=
+    '<div id="stack-element" class="col alert alert-warning">' +
+    s[i] +
+    "</div>";
+}
 
 $(document).ready(function() {
-  var s = new StackDataStructure();
-  var html = "";
-
-  for (let i = 0; i < s.MAX_SIZE; i++) {
-    html +=
-      '<div id="stack-element" class="col btn-outline-secondary empty">Empty Stack</div>';
-  }
   // Add all divs
   $("#stack").html(html);
 
@@ -22,42 +23,66 @@ $(document).ready(function() {
     if (!$("input").val().length > 0) {
       //empty strings not allowed---------
       console.log("empty string not allowed");
+      $("h2").text("ERROR: Empty Strings not allowed")
+    } else if (s.canPush()){
+      //SUccessful push
+      var stackVal = $("input").val();
+      //$("input").val("");
+      s.push(stackVal);
+      for (let i = 0; i < s.MAX_SIZE; i++) {
+        html += '<div id="stack-element" class="col">' + s[i] + "</div>";
+      }
+      $(".alert-warning")
+      .last()
+      .html(stackVal);
+      $(".alert-warning")
+      .last()
+      .toggleClass("alert-warning alert-success");
+      $("h2").text("Successful Stack!")
+      
+      console.log("stacking");
+    } else {
       // Overflow Condition
-    } else if ($("#stack-element:first").hasClass("stacked")) {
+      $("h2").text("ERROR: Stack Overflow")
       console.log("overflow condition");
-      $(".stacked:first").html("Stack Overflow");
-      $(".stacked:first").addClass("over");
+      var topStack = $(".alert-success:first").html();
+      $(".alert-success:first").html("Stack Overflow");
+      $(".alert-success:first").addClass("alert-danger");
+     //DISABLE CLICKING
+     $("#add").prop("disabled",true);
+     $("#sub").prop("disabled",true);
 
       //RESET
       setTimeout(function() {
-        $(".stacked:first").removeClass("over");
-      }, 2000);
-    } else {
-        //SUccessful push
-      var stackVal = $("input").val();
-      $("input").val("");
-      s.push(stackVal);
-      $("#stack-element").not(".stacked").first().addClass("stacked");
-      $(".stacked:first").html(stackVal);
-      console.log("stacking");
+        $(".alert-success:first").html(topStack);
+        $(".alert-success:first").removeClass("alert-danger");
+     $("#add").prop("disabled",false);
+     $("#sub").prop("disabled",false);
+
+      }, 2500);
     }
   });
   //pop button
   $("#sub").click(function() {
     //Underflow condition
-    if (!$("#stack-element:last").hasClass("stacked")) {
-      $(".empty:last").html("Stack Underflow");
-      $(".empty:last").addClass("over");
+    if (s.isEmpty()) {
+      $("h2").text("ERROR: Stack Underflow")
+
+      console.log("Underflow");
+      $(".alert-warning:last").html("Stack Underflow");
+      $(".alert-warning:last").toggleClass("alert-warning alert-danger");
       //Reset after underflow
       setTimeout(function() {
-        $(".empty:last").html("Empty");
-        $(".empty:last").removeClass("over");
+        $(".alert-danger").html("Empty Stack");
+        $(".alert-danger").toggleClass("alert-warning alert-danger");
       }, 2000);
     } else {
+      $("h2").text("Successful Stack Pop")
+      
       //successfull pop--------------
       s.pop();
-      $(".stacked:first").html("Empty Stack");
-      $(".stacked:first").removeClass("stacked");
+      $(".alert-success:first").html("Empty Stack");
+      $(".alert-success:first").toggleClass("alert-success alert-warning");
       console.log("de stack it");
     }
   });
