@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  var s = new StackDataStructure(5);
+  var s = new StackDataStructure(3);
   var maxSize = s.MAX_SIZE;
   let html = '';
-  for (let i = 0; i <= maxSize; i++) {
+  for (let i = 0; i <maxSize; i++) {
     html += `<div class='list-group-item' id='${i}'>
       </div>`
   };
@@ -11,7 +11,7 @@ $(document).ready(function () {
 
   $('.add').on('click', function () {
     var newTack = $(".input").val();
-    s.stackControl.push(newTack);
+    s.push(newTack);
     console.log(s.stackControl);
     for (var i = 0; i < s.stackControl.length; i++) {
       var selector = '#' + i;
@@ -20,11 +20,11 @@ $(document).ready(function () {
  });
 
  $('.take').on('click', function () {
-  s.stackControl.pop();
-  // for (let i = 0; i < s.stackControl.length; i++) {
+  s.pop();
     var selector = '#' + s.stackControl.length;
-  // }
-  $(selector).text("")
+  $(selector).text("");
+  console.log(s.stackControl);
+
 });
 
  
