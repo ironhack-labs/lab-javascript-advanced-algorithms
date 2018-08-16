@@ -1,0 +1,16 @@
+body{
+  font-family: sans-serif;
+}
+#stack{
+  margin-top: 2%;
+  padding:2% 1%;
+  background-color: lightgray;
+  border-radius: 20px;
+}
+#stack div{
+text-align: center;
+height: 7vh;
+margin-top: 0.5vh;
+border: 1px dashed black;
+line-height:7vh;
+}

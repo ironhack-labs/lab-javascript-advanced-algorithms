@@ -3,6 +3,7 @@ function QueueDataStructure () {
   this.MAX_SIZE = 10;
 }
 
+
 QueueDataStructure.prototype.isEmpty = function(){
   return this.queueControl.length == 0;
 }
