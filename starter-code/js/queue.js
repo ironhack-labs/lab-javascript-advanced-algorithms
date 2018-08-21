@@ -16,10 +16,8 @@ $(document).ready(function(){
 
   $("#delete-queue").click(function() {
 
-    var counter = 11 - queue.queueControl.length;
-
     queue.dequeue()
-    $(".queue-element:nth-child(" + counter + ")").removeClass("addedelement").empty();
+    $(".addedelement:eq(0)").removeClass("addedelement").empty();
 
     $(".error-queue.over").fadeOut(300);
     if (queue.isEmpty()) return $(".error-queue.under").fadeIn(300);
