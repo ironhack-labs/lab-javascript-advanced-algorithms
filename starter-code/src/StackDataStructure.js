@@ -18,7 +18,7 @@ StackDataStructure.prototype.canPush = function() {
 };
 
 StackDataStructure.prototype.push = function(value) {
-  if (this.stackControl.length == this.MAX_SIZE) {
+  if (this.stackControl.length === this.MAX_SIZE) {
     return "Stack Overflow";
   }
   this.stackControl.push(value);

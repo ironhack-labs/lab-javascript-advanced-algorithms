@@ -38,6 +38,7 @@
 }
 .queue-item,
 .addedelement {
+  color: #fff;
   background-color: #66e7ff;
 }
 #delete-stack,
