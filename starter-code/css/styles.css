@@ -1,0 +1,30 @@
+.wrapper {
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+.list > div{
+    height: 3.5rem;
+    border-bottom:1px solid white;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 15px;
+
+}
+
+.list > .busy {
+    background: deepskyblue;
+}
+
+.list > .free {
+    background: lightgrey;
+}
+
+.list > .warning{
+    border: 1px solid red;
+    color: red;
+    background: rgba(220, 53, 68, 0.3);
+    display: none;
+}
+
