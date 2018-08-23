@@ -1,17 +1,28 @@
 $(document).ready(function() {
   var stackDataStructure = new StackDataStructure();
   $("#add-stack").click(function() {
-    var stack = stackDataStructure.push($("#stackelement").val());
-    var cont = stack.length - 1;
-    //console.log(cont);
+    var value = $("#stackelement").val();
 
-    $(`.stack-element:eq(${cont * -1 + 9})`)
-      .text(stack[cont])
-      .addClass("addedelement");
+    if (value !== "") {
+      var stack = stackDataStructure.push(value);
+      var cont = stack.length - 1;
+      //console.log(cont);
 
-    $(".error-stack.over").hide("fast");
-    if (!stackDataStructure.canPush()) {
-      $(".error-stack.over").show("fast");
+      $(`.stack-element:eq(${cont * -1 + 9})`)
+        .text(stack[cont])
+        .addClass("addedelement");
+
+      /*Button Stack */
+      $(".error-stack.under").hide("fast");
+      if (stackDataStructure.isEmpty()) {
+        $(".error-stack.under").show("fast");
+      }
+
+      /*Button Remove */
+      $(".error-stack.over").hide("fast");
+      if (!stackDataStructure.canPush()) {
+        $(".error-stack.over").show("fast");
+      }
     }
   });
 
@@ -23,9 +34,16 @@ $(document).ready(function() {
       .removeClass("addedelement")
       .empty();
 
+    /*Button Stack */
     $(".error-stack.under").hide("fast");
     if (stackDataStructure.isEmpty()) {
       $(".error-stack.under").show("fast");
+    }
+
+    /*Button Remove */
+    $(".error-stack.over").hide("fast");
+    if (!stackDataStructure.canPush()) {
+      $(".error-stack.over").show("fast");
     }
   });
 });
