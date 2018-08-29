@@ -14,22 +14,44 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-    <h3>Stack</h3>
     <div class="row">
-    <div class="col-3">
-      <div class="inputs d-flex flex-column justify-content-center flex-nowrap">
-        <input type="text" placeholder="Insert max size of stack" id="max-size" class="my-2">
-        <button class="btn btn-primary" id="size-button">START</button>
+    <div class="col-6">
+      <h3>Stack</h3>
+      <div class="row">
+        <div class="col-6">
+          <div class="inputs d-flex flex-column justify-content-center flex-nowrap">
+            <input type="text" placeholder="Insert max size of stack" id="max-size" class="my-2">
+            <button class="btn btn-primary" id="size-button">START</button>
 
-        <input type="text" placeholder="Add element to the stack..." class="my-2 d-none" id="push">
-        <button class="btn btn-primary my-1 d-none" id="add">ADD</button>
-        <button class="btn btn-danger my-1 d-none" id="take">TAKE</button>
-      </div>
-      <div class="row d-flex flex-column px-3 mt-3" id="stacks-container">
+            <input type="text" placeholder="Add element to the stack..." class="my-2 d-none" id="push">
+            <button class="btn btn-primary my-1 d-none" id="add">ADD</button>
+            <button class="btn btn-danger my-1 d-none" id="take">TAKE</button>
+          </div>
+          <div class="row d-flex flex-column px-3 mt-3" id="stacks-container">
+          </div>
+        </div>
+        <div class="col-6" id="slotTaken"><span>...</span></div>
       </div>
     </div>
-    <div class="col-3" id="slotTaken"><span>...</span></div>
-  </div>
+    <div class="col-6">
+        <h3>Queue</h3>
+        <div class="row">
+          <div class="col-6">
+            <div class="inputs-q d-flex flex-column justify-content-center flex-nowrap">
+              <input type="text" placeholder="Insert max size of stack" id="max-size-q" class="my-2">
+              <button class="btn btn-primary" id="size-button-q">START</button>
+  
+              <input type="text" placeholder="Add element to the stack..." class="my-2 d-none" id="push-q">
+              <button class="btn btn-primary my-1 d-none" id="add-q">ADD</button>
+              <button class="btn btn-danger my-1 d-none" id="take-q">TAKE</button>
+            </div>
+            <div class="row d-flex flex-column px-3 mt-3" id="stacks-container-q">
+            </div>
+          </div>
+          <div class="col-6" id="slotTaken-q"><span>...</span></div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
