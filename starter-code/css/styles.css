@@ -18,6 +18,7 @@
   height: 70px;
   background-color: #e6e2e2;
   margin: 1px;
+  
 }
 
 .stack-sec2 div:first-of-type{
@@ -29,4 +30,8 @@
   height: 70px;
   margin: 1px;
   background-color: #0dbaf5; 
+  font-size: 28px;
+  text-align: center;
+  color: yellow;
+  padding-top: 15px;
 }
