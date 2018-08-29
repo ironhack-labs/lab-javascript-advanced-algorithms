@@ -1,0 +1,39 @@
+body {
+    border: 1px solid black;
+}
+#stackDiv {
+    border: 1px solid black;
+    height: 800px;
+}
+
+
+.h {
+    height: 50px;
+    background-color: rgb(156, 152, 152);
+}
+
+.hh {
+    height: 50px;
+    background-color: rgb(35, 195, 201);
+    color: white;
+}
+.unders {
+    color: red;
+    font-weight: bolder;
+
+}
+.underq {
+    color: red;
+    font-weight: bolder;
+
+}
+.overs {
+    color: red;
+    font-weight: bolder;
+
+}
+.overq {
+    color: red;
+    font-weight: bolder;
+
+}
