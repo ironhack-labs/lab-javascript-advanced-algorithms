@@ -3,15 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
-
+    <h1>Stack</h1>
+    <div class="Full-Stack">
+    <div><input class="form-control" id="stack-text" placeholder="Add element to the Stack" type="text"></input></div>
+    <div><button class="stack-btn-push btn btn-primary">ADD</button></div>
+    <div><button class="stack-btn-pop btn btn-danger">TAKE</button></div>
+    <div class="Control-Stack col-sm-4">
+      <div id="one" class="stack-element off row justify-content-around"></div>
+      <div id="two" class="stack-element off row justify-content-around"></div>
+      <div id="three" class="stack-element off row justify-content-around"></div>
+      <div id="four" class="stack-element off row justify-content-around"></div>
+      <div id="five" class="stack-element off row justify-content-around"></div>
+      <div id="six" class="stack-element off row justify-content-around"></div>
+      <div id="seven"class="stack-element off row justify-content-around"></div>
+      <div id="eight" class="stack-element off row justify-content-around"></div>
+    </div>
+  </div>
   </section>
+
+<section class="container">
+  <h1>Queue</h1>
+    <div class="Full-Queue">
+        <div><input class="form-control" id="text-queue" placeholder="Add element to the Queue" type="text"></input></div>
+        <div><button class="queue-btn-unshift btn btn-primary">ADD</button></div>
+        <div><button class="queue-btn-pop btn btn-danger">TAKE</button></div>
+    <div class="Control-Queue col-sm-4">
+      <div class="queue-element on off row justify-content-around"></div>
+      <div class="queue-element on off row justify-content-around"></div>
+      <div class="queue-element on off row justify-content-around"></div>
+      <div class="queue-element on off row justify-content-around"></div>
+      <div class="queue-element on off row justify-content-around"></div>
+      <div class="queue-element on off row justify-content-around"></div>
+      <div class="queue-element on off row justify-content-around"></div>
+      <div class="queue-element on off row justify-content-around"></div>
+    </div>
+  </div>
+ </section>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
