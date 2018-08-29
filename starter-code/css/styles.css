@@ -1,0 +1,45 @@
+html {
+	font-size: 16px;
+}
+
+.stack-form {
+	margin-bottom: 2rem;
+}
+.stack-form .btn {
+	margin-top: 0.625rem;
+	margin-bottom: 0.625rem;
+	text-transform: uppercase;
+}
+
+.stack-form .btn-danger [attr='disabled'] {
+	background-color: #cf655e;
+}
+
+.stack-form .btn-primary [attr='disabled'] {
+	background-color: #8eafcf;
+}
+
+.stack-list ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.stack-list li {
+	background-color: #EDEDED;
+	height: 3.438rem;
+	margin-top: 0.3125rem;
+	font-size: 1.5rem;
+	line-height: 3.438rem;
+	text-align: center;
+}
+
+.stack-list li.active {
+	background-color: #65abe4;
+	color: #FFF;
+}
+
+.stack-list li.error {
+	border: 1px solid #d43f3a;
+	background-color: #efdfde;
+	color: #cc4a4a;
+}
