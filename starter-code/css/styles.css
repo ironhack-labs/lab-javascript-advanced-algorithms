@@ -1,0 +1,43 @@
+.box{
+    height:50px;
+    width:30%;
+    background-color:rgb(202, 200, 200);
+    margin-bottom:2px;
+    color:white;
+    text-align:center;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin-left:0;
+}
+
+#add{
+    color:white;
+    background-color:blue;
+    text-align:center;
+    width:30%;
+    height:40px;
+    margin:10px 0;
+
+}
+
+#take{
+    color:white;
+    background-color:red;
+    text-align:center;
+    width:30%;
+    height:40px;
+    margin-bottom:30px;
+}
+#element{
+    width:30%;
+    height:40px;
+}
+#filled{
+    background-color:lightblue;
+    text-align:center;
+    font-size:1.2em;
+}
