@@ -1,0 +1,34 @@
+.group {
+  float: left;
+  width: 200px;
+  margin-left: 200px
+}
+ input {
+  width: 200px;
+}
+ button {
+  width: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+ .element, .stack-overflow, .stack-underflow, .queue-overflow, .queue-underflow {
+  background: lightcyan;
+  height: 50px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px 0px;
+  text-align: center;
+  font: bold 16px;
+  padding: 3px 0;
+  text-align: center;
+} 
+ .stack-overflow, .stack-underflow, .queue-overflow, .queue-underflow {
+  background: #ff000066;
+}
+ .hide {
+  display: none;
+}
+ .queue, .stack {
+  margin-top: 10px;
+} 
