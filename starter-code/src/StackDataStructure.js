@@ -38,5 +38,8 @@ StackDataStructure.prototype.pop = function() {
 	return this.stackControl.pop();
 }
 
+StackDataStructure.prototype.reset = function() {
+	this.stackControl = [];
+}
 
 
