@@ -1,0 +1,50 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  width: 30%;
+  height: 800px;
+}
+
+input {
+  line-height: 30px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 3px;
+
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#add-stack {
+  background-color: rgb(100, 240, 100)
+}
+
+#take-stack {
+  background-color: rgb(247, 62, 62)
+}
+
+.cell, .overflow, .underflow {
+  height: 50px;
+  background-color: rgb(191, 241, 241);
+  border: 1px solid black;
+  border-radius: 3px; 
+  text-align: center;
+}
+
+.underflow {
+  background-color: blue;
+  display: none;
+}
+
+.overflow {
+  background-color: red;
+  display: none;
+}
