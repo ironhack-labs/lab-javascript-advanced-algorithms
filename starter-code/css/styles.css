@@ -1,0 +1,35 @@
+body {
+display: flex;
+margin-bottom: 60px;
+}
+
+.container {
+    flex-direction: column;
+    width: 42%
+}
+
+
+.button {
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+.button-danger {
+    margin-bottom: 50px;
+}
+
+.stack {
+    background-color: #D3D3D3;
+    padding: 36px;
+    margin-top: 2px;
+  }
+
+.row {
+    background-color: #D3D3D3;
+    padding: 36px;
+    margin-top: 2px;
+  }  
+
+input {
+    width: 100%;
+}  
