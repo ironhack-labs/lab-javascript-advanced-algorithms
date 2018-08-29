@@ -1,0 +1,32 @@
+.input-width{
+  width:400px;
+}
+
+.input-width input{
+  height: 50px;
+  font-size: 20px;
+}
+
+.btn-block {
+  display: block;
+  margin-top:10px;
+  width: 400px;
+}
+
+.div-sec{
+  width: 400px;
+  height: 70px;
+  background-color: #e6e2e2;
+  margin: 1px;
+}
+
+.stack-sec2 div:first-of-type{
+  margin-top: 30px;
+}
+
+.stack-div{
+  width: 400px;
+  height: 70px;
+  margin: 1px;
+  background-color: #0dbaf5; 
+}

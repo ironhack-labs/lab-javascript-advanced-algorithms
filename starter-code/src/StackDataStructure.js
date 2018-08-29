@@ -1,6 +1,6 @@
 function StackDataStructure () {
   this.stackControl = [],
-  this.MAX_SIZE = 10
+  this.MAX_SIZE = 8
 }
 
 StackDataStructure.prototype.isEmpty = function(){
@@ -32,8 +32,8 @@ StackDataStructure.prototype.push = function(ele){
 StackDataStructure.prototype.pop = function(){
   if(this.stackControl.length > 0){
     return this.stackControl.pop();
-} else {
-  return 'Stack Underflow'
-}
+  }else{
+    return 'Stack Underflow'
+  }
 }
 
