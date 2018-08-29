@@ -1,7 +1,7 @@
 //LIFO (Last-in First-out)
 function StackDataStructure () {
 	this.stackControl = [];
-	this.MAX_SIZE = 8;
+	this.MAX_SIZE = 9;
 }
 
 StackDataStructure.prototype.isEmpty = function() {
