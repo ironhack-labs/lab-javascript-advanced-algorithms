@@ -1,21 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+    <section class="container">
+        <h1>Abstract Data Types</h1>
+    </section>
+    <section class="main-wrapper">
+        <div class="section-wrapper">
+            <div class="panel" id="stack">
+                <h2>
+                    stack
+                </h2>
+                <div class="interaction" id="stack-interaction">
+                    <input type="text" name="" value="" placeholder="Enter a number">
+                    <button class="add">add</button>
+                    <button class="delete">take</button>
+                </div>
+                <div class="alert overflow hidden">
+                    stack overflow
+                </div>
+                <div class="representation" id="stack-representation">
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+                <div class="alert underflow hidden">
+                    stack underflow
+                </div>
+            </div>
+        </div>
+        <div class="section-wrapper">
+            <div class="panel" id="queue">
+                <h2>
+                    queue
+                </h2>
+                <div class="interaction" id="queue-interaction">
+                    <input type="text" name="" value="" placeholder="Enter a number">
+                    <button class="add">add</button>
+                    <button class="delete">take</button>
+                </div>
+                <div class="alert overflow hidden">
+                    queue overflow
+                </div>
+                <div class="representation" id="queue-representation">
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+                <div class="alert underflow hidden">
+                    queue underflow
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
+    <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script>
+    <script src="js/stack.js"></script>
+    <script src="js/queue.js"></script>
 </body>
+
 </html>
