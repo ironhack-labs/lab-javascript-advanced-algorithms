@@ -1,0 +1,19 @@
+._this-stack :first-child, ._this-queue :last-child {
+  background-color: rgb(252, 255, 105, 1)!important;
+}
+
+._this-stack :nth-child(2), ._this-queue :nth-last-child(2) {
+  background-color: rgb(252, 255, 105, 0.8)!important;
+}
+
+._this-stack :nth-child(3), ._this-queue :nth-last-child(3) {
+  background-color: rgb(252, 255, 105, 0.6)!important;
+}
+
+._this-stack :nth-child(4), ._this-queue :nth-last-child(4) {
+  background-color: rgb(252, 255, 105, 0.4)!important;
+}
+
+._this-stack :nth-child(5), ._this-queue :nth-last-child(5) {
+  background-color: rgb(252, 255, 105, 0.2)!important;
+}

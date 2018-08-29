@@ -3,19 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
+  
   <section class="container">
     <h1>Abstract Data Types</h1>
-
+    <div class="d-flex">
+      <section class="container my-5 w-25" id="stack-column">
+        <h2>Stack</h2>
+        <div class="d-flex flex-column my-3">
+          <input type="text" class="form-control text-success _input-element" placeholder="Add element to the stack...">
+          <button type="button" class="btn btn-primary my-1 _btn-add">ADD</button>
+          <button type="button" class="btn btn-danger _btn-take">TAKE</button>
+        </div>
+        <div class="d-flex align-items-center my-3">
+          <label for="" class="w-50 m-0">Max Stack</label>
+          <div class="w-50">
+            <input type="number" class="form-control _max-stack-input" id="">
+          </div>
+        </div>
+        <div class="d-flex flex-column my-3">
+          <input type="text" class="form-control text-center _status-display" placeholder="Current Max Stack: 5" readonly>
+        </div>
+        <div class="d-flex flex-column my-3 _this-stack">
+        </div>
+      </section>
+      <section class="container my-5 w-25" id="queue-column">
+        <h2>Queue</h2>
+        <div class="d-flex flex-column my-3">
+          <input type="text" class="form-control text-success _input-element" placeholder="Add element to the stack...">
+          <button type="button" class="btn btn-primary my-1 _btn-add">ADD</button>
+          <button type="button" class="btn btn-danger _btn-take">TAKE</button>
+        </div>
+        <div class="d-flex align-items-center my-3">
+          <label for="" class="w-50 m-0">Max Queue</label>
+          <div class="w-50">
+            <input type="number" class="form-control _max-queue-input" id="">
+          </div>
+        </div>
+        <div class="d-flex flex-column my-3">
+          <input type="text" class="form-control text-center _status-display" placeholder="Current Max Queue: 5" readonly>
+        </div>
+        <div class="d-flex flex-column my-3 _this-queue">
+          
+        </div>
+      </section>
+    </div>
+      
   </section>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
