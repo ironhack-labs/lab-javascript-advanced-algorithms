@@ -1,0 +1,15 @@
+.pilas {
+  background-color: #D3D3D3;
+  padding: 36px;
+  margin-top: 2px;
+}
+.btn{
+  margin-top: 11px;
+  margin-bottom: 8px;
+}
+.container{
+  width: 40%;
+}
+.btn-danger {
+  margin-bottom: 50px;
+}
