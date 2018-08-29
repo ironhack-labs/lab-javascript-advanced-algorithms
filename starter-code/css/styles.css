@@ -1,15 +1,30 @@
-.pilas {
+body {
+  display: flex;
+
+}
+
+.stack {
   background-color: #D3D3D3;
   padding: 36px;
   margin-top: 2px;
 }
+
+.row {
+  background-color: #D3D3D3;
+  padding: 36px;
+  margin: 2px 0 0;
+}
+
 .btn{
   margin-top: 11px;
   margin-bottom: 8px;
 }
+
 .container{
+  flex-direction: column;
   width: 40%;
 }
+
 .btn-danger {
   margin-bottom: 50px;
 }
