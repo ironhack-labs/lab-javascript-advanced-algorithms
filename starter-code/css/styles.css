@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-center;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.stack-boxes {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+input {
+ width: 200px;
+ margin-bottom: 5px;
+}
+
+.buttons {
+  width: 200px;
+  margin: 5px 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 90px;
+}
+
+button.add {
+  background-color: blue;
+  border: 2px solid lightseagreen;
+  color: white;
+ 
+}
+
+button.take {
+  background-color: red;
+  border: 2px solid lightcoral;
+  color: white;
+}
+
+.stack-boxes {
+  height: 360px;
+}
+
+.stack-boxes > div {
+  width: 200px;
+  background-color: rgb(243, 241, 237);
+  text-align: center;
+  height: 40px;
+  border: 2px solid grey;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 2rem;
+}
+
+.empty {
+  display: none;
+}
