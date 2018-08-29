@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+.container{
+  flex-direction: column;
+  width: 44%;
+  
+}
+
+
+.stack-element {
+  background-color: gray;
+  padding: 30px;
+  margin-top: 5px;
+  border-radius: 7px;
+}
+
+.queue-element {
+  padding: 30px;
+  margin-top: 5px;
+  border-radius: 7px;
+}
+
+button {
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+input {
+  margin-bottom: 7px;
+}
+
+.off {
+  background-color: gray;
+ }
+
+.on {
+  background-color: aquamarine;
+}
+
+ 
+
+ 
