@@ -17,8 +17,10 @@ $(document).ready(function () {
 	}
 
 	if (stack.isEmpty) {
-		for (var i = 0; i < stack.MAX_SIZE; i++){
+		var i = 0;
+		while(i < stack.MAX_SIZE){
 			html += newItem;
+			i++
 		}
 	}
 
