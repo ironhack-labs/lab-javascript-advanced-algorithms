@@ -15,20 +15,21 @@
   <section class="container">
     <h1>Abstract Data Types</h1>
     <h3>Stack</h3>
-    <div class="cointainer col-3">
+    <div class="row">
+    <div class="col-3">
       <div class="inputs d-flex flex-column justify-content-center flex-nowrap">
         <input type="text" placeholder="Insert max size of stack" id="max-size" class="my-2">
-        <button class="btnn btn-primary" id="size-button">START</button>
+        <button class="btn btn-primary" id="size-button">START</button>
 
         <input type="text" placeholder="Add element to the stack..." class="my-2 d-none" id="push">
         <button class="btn btn-primary my-1 d-none" id="add">ADD</button>
         <button class="btn btn-danger my-1 d-none" id="take">TAKE</button>
       </div>
       <div class="row d-flex flex-column px-3 mt-3" id="stacks-container">
-          <!-- <div class="my-1 border border-dark bg-light d-none" id="overflow"><span>Stack Overflow!!</span></div> -->
       </div>
     </div>
-
+    <div class="col-3" id="slotTaken"><span>...</span></div>
+  </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
