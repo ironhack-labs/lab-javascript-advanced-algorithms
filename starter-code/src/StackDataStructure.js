@@ -33,22 +33,28 @@ function StackDataStructure() {
 
 var stackAdd = document.getElementById("stack-add");
 var stackTake = document.getElementById("stack-take");
+var stack = document.getElementById("stack");
+var newStack = document.getElementById("stack-input");
+
 var queueAdd = document.getElementById("queue-add");
 var queueTake = document.getElementById("queue-take");
-var stack = document.getElementById("stack");
 var queue = document.getElementById("queue");
+var newQueue = document.getElementById("queue-input");
+
+
 
 
 
 stackAdd.addEventListener("click", function () {
-    var stack = StackDataStructure()
-    
-    return stackControl
+    var s = StackDataStructure()
+    return s.push(newStack.value);
+
 });
 stackTake.addEventListener("click", function () {
 
     return
 });
+
 queueAdd.addEventListener("click", function () {
 
     return
