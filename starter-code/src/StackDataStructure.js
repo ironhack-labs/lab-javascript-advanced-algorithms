@@ -39,7 +39,7 @@ StackDataStructure.prototype.pop = function() {
 
 var stack = new StackDataStructure;
 
-$(".btn-primary").click(function() {
+$(".btn-primary").click(function() {    //not my code, this was made with a huge help and I do not understand it completely
   if (stack.push("element") == "Stack Overflow") {
     $("#9").toggleClass("overflow-form")
   } else {
@@ -48,7 +48,7 @@ $(".btn-primary").click(function() {
 }
 )
 
-$(".btn-danger").click(function() {
+$(".btn-danger").click(function() { //not my code, this was made with a huge help and I do not understand it completely
   $("#"+stack.stackControl.length).toggleClass("full-form")
   if (stack.pop("element") == "Stack Underflow") {
     $("#1").toggleClass("underflow-form")
