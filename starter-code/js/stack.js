@@ -19,12 +19,13 @@ $("#add-btn-stack").click(function() {
 
 $("#remove-btn-stack").click(function() {
   stack.pop(x);
-  var x = (stack.MAX_SIZE-1) - stack.stackControl.length ;
+  var x = (stack.MAX_SIZE-1) - stack.stackControl.length;
   if(stack.isEmpty()){
+    $($(".div-sec")[x-1]).removeClass("stack-div");
     $(".div-sec-underflow").addClass("stack-div-underflow");
     $(".div-sec-underflow").html("STACK UNDERFLOW");
   }else {
-    $($(".div-sec")[x]).removeClass("stack-div");
+    $($(".div-sec")[x-1]).removeClass("stack-div");
     $($(".div-sec")[x]).html("");
     $(".div-sec-overflow").removeClass("stack-div-overflow");
     $(".div-sec-overflow").html("");
