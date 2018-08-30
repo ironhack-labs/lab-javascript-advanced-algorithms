@@ -1,0 +1,49 @@
+h1{
+margin-left: 100PX;
+}
+.container {
+width: 40%;
+margin-left: 0px;
+height: 150px;
+
+}
+.input{
+
+height: 30px; 
+width: 300px;
+
+
+}
+.add{
+width: 300px;
+height: 30px; 
+margin-top: 15px;  
+margin-bottom: 15px;
+color: white;
+background-color: rgb(74, 74, 204);
+border-radius: 10px
+}
+.take{
+width: 300px;
+height: 30px;
+background-color: rgb(161, 65, 65);
+border-radius: 10px;
+color: white;
+
+}
+.element{
+width: 300px; 
+height: 40px;
+margin-top: 5px;  
+margin-bottom: 5px; 
+background-color: rgb(11, 56, 56);
+margin-left: 10px;
+}
+.element2 {
+    width: 300px; 
+    height: 40px;
+    margin-top: 5px;  
+    margin-bottom: 5px; 
+    background-color: rgb(90, 21, 21);
+    margin-left: 10px;
+    }
