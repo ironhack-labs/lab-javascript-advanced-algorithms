@@ -3,14 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    <div class="row">
+      <div class="col-6">
+          <input type="text" placeholder="Add element to the stack.." class="col" id="input">
+          <button type="button" class="col btn btn-primary mt-1" id="add-element">ADD</button>
+          <button type="button" class="col btn btn-danger mt-1" id= "rem-element">TAKE</button>
 
+          <div class="empty-rows mt-2 container-of-items">
+            <div class="overflow btn btn-danger col" id="alert-overflow"> Not Possible. Stack Overflow</div>
+            <div class="col vacio btn btn-secondary mt-1" id="s7">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="s6">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="s5">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="s4">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="s3">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="s2">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="s1">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="s0">a</div>
+            <div class="underflow btn btn-danger col" id="alert-underflow"> Not Possible. Stack Underflow</div>
+          </div>
+      </div>
+      <div class="col-6 rotate">
+          <input type="text" placeholder="Add element to the stack.." class="col" id="input-queue">
+          <button type="button" class="col btn btn-primary mt-1" id="add-element-queue">ADD</button>
+          <button type="button" class="col btn btn-danger mt-1" id= "rem-element-queue">TAKE</button>
+
+          <div class="empty-rows mt-2 container-of-items">
+            <div class="overflow btn btn-danger col" id="alert-overflow-queue"> Not Possible. Queue Overflow</div>
+            <div class="col vacio btn btn-secondary mt-1" id="q7">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="q6">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="q5">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="q4">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="q3">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="q2">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="q1">a</div>
+            <div class="col vacio btn btn-secondary mt-1" id="q0">a</div>
+            <div class="underflow btn btn-danger col" id="alert-underflow-queue"> Not Possible. Queue Underflow</div>
+          </div>
+      </div>
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
