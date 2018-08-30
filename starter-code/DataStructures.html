@@ -20,6 +20,9 @@
         <div>
             <button class="take" id="take-stack">TAKE</button>
         </div>
+
+        <div id="s-overflow" class="invisible">STACK OVERFLOW</div>
+
       <div class="stack" id="s-8"> </div>
       <div class="stack" id="s-7"> </div>
       <div class="stack" id="s-6"> </div>
@@ -29,12 +32,14 @@
       <div class="stack" id="s-2"> </div>
       <div class="stack" id="s-1"> </div>
 
+      <div id="s-underflow" class="invisible">STACK UNDERFLOW</div>
+
     </div>
     <div id="queue">
       
       <h2>Queue</h2>
       <div>
-          <input type="text" placeholder="Add the element to the queue" class="texto"/>   
+          <input id="input-queue" type="text" placeholder="Add the element to the queue" class="texto"/>   
       </div>
       <div>
         <button class="add" id="add-queue">ADD</button>
@@ -43,6 +48,8 @@
           <button class="take" id="take-queue">TAKE</button>
       </div>
       
+      <div id="q-underflow" class="queue invisible">QUEUE UNDERFLOW</div>
+
       <div class="queue" id="q-1"></div>
       <div class="queue" id="q-2"></div>
       <div class="queue" id="q-3"></div>
@@ -51,6 +58,9 @@
       <div class="queue" id="q-6"></div>
       <div class="queue" id="q-7"></div>
       <div class="queue" id="q-8"></div>
+    
+      <div id="q-overflow" class="queue invisible">QUEUE OVERFLOW</div>
+
     </div>
   </section>
 

@@ -31,6 +31,7 @@ class QueueDataStructure {
       if(this.isEmpty()){
         return "Queue Underflow"
       }
+      this.queueControl.splice(0,1)
       return this.queueControl[this.queueControl.length-1]
     }
   

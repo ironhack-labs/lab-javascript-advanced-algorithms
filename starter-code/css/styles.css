@@ -6,16 +6,18 @@
 }
 
 #stack{
-    width:50%;
+    width:30%;
 
 }
-
 div .stack{
     background-color:#ECECEC;
     height: 50px;
     width: 300px;
     border: 1px solid lightgray;
     margin: 5px;
+    color: white;
+    padding-top: 15px;
+    transition: 0.8s ease;
 }
 
 div .queue{
@@ -25,8 +27,11 @@ div .queue{
     border: 1px solid lightgray;
     margin: 5px;
     float: left;
+    color: white;
     writing-mode: vertical-lr;
     text-orientation: 90deg;
+    padding-left: 15px;
+    transition: 0.8s ease;
 }
 
 .add{
@@ -59,5 +64,31 @@ div .queue{
     background-color:#26A2EC !important;
     color:white;
     text-align: center;
-    text-align: center;
 }
+
+
+#s-overflow,#s-underflow {
+    background: #e5464e4a;
+    color: #e5464e;
+    text-align: center;
+    border: 1px solid #e5464e;
+    font-weight: 300;
+    width: 300px;
+    height: 50px;
+    padding-top: 15px;
+ }
+
+ #q-underflow,#q-overflow {
+    background: #e5464e4a;
+    color: #e5464e;
+    text-align: center;
+    border: 1px solid #e5464e;
+    font-weight: 300;
+    width: 50px;
+    height: 300px;   
+    padding-left: 15px;
+ }
+
+ .invisible{
+    display: none;
+ }

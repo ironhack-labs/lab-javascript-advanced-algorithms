@@ -8,31 +8,44 @@ stackAnadir.click(function(){
     constructora.push(item.val())
     updateStacks ()
     item.val('')
-    } 
+    $("#s-underflow").addClass("invisible")
+} 
+if(constructora.canPush()== false){
+    $("#s-overflow").removeClass("invisible")
+}
+else{
+    $("#s-overflow").addClass("invisible")
+}
+    
    
 })
 
 stackRemover.click(function(){
     constructora.pop()
     updateStacks ()
-    
+    $("#s-overflow").addClass("invisible")
+    if(constructora.isEmpty()== true){
+        $("#s-underflow").removeClass("invisible")
+    }
+    else{
+        $("#s-underflow").addClass("invisible")
+    }
 })
 
 function updateStacks(){
-    for(var j=0; j<8;j++){
-        if(j>constructora.stackControl.length){
-            $('#s-'+(j+1)).html(" ")
+    
+    for(var i = 0; i<8; i++){
+        if(i>=constructora.stackControl.length){
+            $('#s-'+(i+1)).html(" ")                
         }else{
-        $('#s-'+(j+1)).html(constructora.stackControl[i])
+            $('#s-'+(i+1)).html(constructora.stackControl[i])                
         }
-    }
-
-    for(var i = 0; i<constructora.stackControl.length; i++){
-        if($('#s-'+(i+1)) !== ' '){
+        
+        if($('#s-'+(i+1)).html() !== ' '){
             $('#s-'+(i+1)).addClass('active')
         }else{
-            $('#s-'+(i+1)).removeClass('active')
+        $('#s-'+(i+1)).removeClass('active')
+        $('#s-'+(i+1)).html(" ")                
         }
     }
-    console.log(constructora.stackControl)
 }
