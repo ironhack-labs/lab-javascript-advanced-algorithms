@@ -1,0 +1,63 @@
+.container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#stack{
+    width:50%;
+
+}
+
+div .stack{
+    background-color:#ECECEC;
+    height: 50px;
+    width: 300px;
+    border: 1px solid lightgray;
+    margin: 5px;
+}
+
+div .queue{
+    background-color: #ECECEC;
+    height: 300px;
+    width: 50px;
+    border: 1px solid lightgray;
+    margin: 5px;
+    float: left;
+    writing-mode: vertical-lr;
+    text-orientation: 90deg;
+}
+
+.add{
+    color: white;
+    font-weight: bold;
+    background-color: #2482C5;
+    margin: 5px;
+    width: 300px;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.take{
+    color: white;
+    font-weight: bold;
+    background-color: #F44950;
+    margin: 5px;
+    width: 300px;
+    padding: 8px 0px;
+    border-radius: 5px;
+}
+
+.texto{
+    width: 300px;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.active{
+    background-color:#26A2EC !important;
+    color:white;
+    text-align: center;
+    text-align: center;
+}
