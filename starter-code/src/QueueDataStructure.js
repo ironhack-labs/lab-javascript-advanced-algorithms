@@ -33,7 +33,7 @@ class QueueDataStructure {
     if(this.isEmpty()){
       return "Queue Underflow"
     }
-    return this.queueControl[this.queueControl.length -1]
+    return this.queueControl.shift()
   }
 }
   var queue = new QueueDataStructure();
