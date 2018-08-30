@@ -1,0 +1,10 @@
+h1 {
+    margin: 20px;
+}
+
+
+tbody tr {
+    line-height: 25px;
+    min-height: 25px;
+    height: 30px;
+ }
