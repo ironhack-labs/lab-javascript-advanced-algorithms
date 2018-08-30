@@ -36,8 +36,13 @@
     width:30%;
     height:40px;
 }
-#filled{
+.filled{
     background-color:lightblue;
     text-align:center;
     font-size:1.2em;
+    padding:15px;
+}
+.flow{
+    background-color:red;
+    color:darkred;
 }

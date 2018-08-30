@@ -13,29 +13,28 @@ $("#add").on("click",function(){
     if(stack.canPush()){
         var element=$("#element").val();
         stack.push(element);
-        var x=stack.stackControl.length;
-        for (var i=x;i>x-1;i--)
-        $(".box")[stack.MAX_SIZE-i].append(element);
+        var long=stack.stackControl.length;
+        $($(".box")[stack.MAX_SIZE-long]).text(element);
+        $($(".box")[stack.MAX_SIZE-long]).addClass("filled")
     }
     else{
-        
-        $(".container").append("<div class='box'>Stack overflow</div>")
+        //meter div con stack overflow
     }
     });
 $("#take").on("click",function(){
+    if(stack.isEmpty()){
+        //meter div con underflow
+    }
+    else{
+        stack.pop();
+        var long=stack.stackControl.length;
+        console.log(long);
+        $($(".box")[stack.MAX_SIZE-long-1]).removeClass("filled");
+        $($(".box")[stack.MAX_SIZE-long-1]).empty();
+    }
 
-
-}
-
-
-})
+});
     
-  
-    
-    
-
-
-
 });
 
 
