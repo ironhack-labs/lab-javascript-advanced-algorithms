@@ -4,8 +4,7 @@ $(document).ready(function(){
     var myQueue = new QueueDataStructure();
 
     $('#addq').click(function () {
-        console.log("ADD QUEUE");
-        console.log($('#inputq').prop('value'));
+        
         if (myQueue.canEnqueue()){
             myQueue.enqueue($('#inputq').prop('value'));
             
@@ -23,7 +22,7 @@ $(document).ready(function(){
     });
 
     $('#takeq').click(function () {
-        console.log("TAKE QUEUE");
+        
         if (!myQueue.isEmpty()){
             var poppedq = myQueue.dequeue();
                 document.getElementsByClassName('queue')[myQueue.MAX_SIZE - myQueue.queueControl.length - 1].innerHTML = " ";
