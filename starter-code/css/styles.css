@@ -1,0 +1,32 @@
+h1 {
+  display: flex;
+}
+
+button {
+width: 50%;
+flex-direction: row;
+margin: 10px;
+}
+
+.btn {
+  font-size: 30px;
+}
+
+.form-control {
+  width: 37%;
+  flex-direction: row;
+  margin: 10px;
+  margin-left:140px;
+}
+
+.full-form {
+  background-color: green;
+}
+
+.overflow-form {
+  background-color: pink;
+}
+
+.underflow-form {
+  background-color: pink;
+}
