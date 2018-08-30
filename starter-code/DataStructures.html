@@ -3,16 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    <div class="row">
+      <div class="col-6">
+        <!-- Stack menu-->
+        <div id="column">
+          <h2>Stack</h2>
+          <input id="input" class="form-control" placeholder="Add the element to the stack..." type="text">
+          <button id="add-button" class="btn btn-primary">ADD</button>
+          <button id="remove-button" class="btn btn-danger">TAKE</button>
+        </div class="blocks">
+        <!-- Stack -->
+        <div></div>
+        <div id="message-over"></div>
+        <div id="b7" class="greyBlock"></div>
+        <div id="b6" class="greyBlock"></div>
+        <div id="b5" class="greyBlock"></div>
+        <div id="b4" class="greyBlock"></div>
+        <div id="b3" class="greyBlock"></div>
+        <div id="b2" class="greyBlock"></div>
+        <div id="b1" class="greyBlock"></div>
+        <div id="b0" class="greyBlock"></div>
+        <div id="message-under"></div>
+      </div>
+      <div class="col-6">
+         <!-- Stack menu-->
+         <div>
+          <h2>Queue</h2>
+          <input id="input" class="form-control" placeholder="Add the element to the queue..." type="text">
+          <button id="add-button-q" class="btn btn-primary">ADD</button>
+          <button id="remove-button-q" class="btn btn-danger">TAKE</button>
+        </div class="blocks">
+        <!-- Stack -->
+        <div id="row">
+          <div id="q7" class="greyBlock"></div>
+          <div id="q6" class="greyBlock"></div>
+          <div id="q5" class="greyBlock"></div>
+          <div id="q4" class="greyBlock"></div>
+          <div id="q3" class="greyBlock"></div>
+          <div id="q2" class="greyBlock"></div>
+          <div id="q1" class="greyBlock"></div>
+          <div id="q0" class="greyBlock"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
 
   </section>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
