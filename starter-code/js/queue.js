@@ -7,7 +7,7 @@ $(document).ready(function () {
     var e = $('#queue-input').val();
     $('#queue-input').val("");
 
-    var result = queueDisplay.push(e)
+    var result = queueDisplay.enqueue(e)
 
     if (result === "Queue Overflow") 
       $('.queue-overflow').removeClass('hide')
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 
   $("#queue-take-button").click(function () {
-    var result = queueDisplay.pop();
+    var result = queueDisplay.dequeue();
     $("#queue-input").val("");
 
     if (result === "Queue Underflow")
