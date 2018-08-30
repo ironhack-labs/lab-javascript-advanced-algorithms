@@ -11,8 +11,7 @@ StackDataStructure.prototype.canPush = function() {
 StackDataStructure.prototype.push = function(e) {
   //if MAX_SIZE is reached
   if (!this.canPush()) {
-    var stackOverflow = "Stack Overflow";
-    return stackOverflow;
+    return "Stack Overflow";
   } else {
     this.stackControl.push(e);
     return this.stackControl
@@ -20,8 +19,7 @@ StackDataStructure.prototype.push = function(e) {
 }
 StackDataStructure.prototype.pop = function() {
   if (this.isEmpty()) {
-    var stackUnderflow = "Stack Underflow";
-    return stackUnderflow;
+    return "Stack Underflow";
   } else {
   return this.stackControl.pop();
   }

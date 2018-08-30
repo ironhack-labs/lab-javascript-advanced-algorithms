@@ -17,7 +17,7 @@ QueueDataStructure.prototype.enqueue = function(e) {
   if (!this.canEnqueue()) {
     return "Queue Overflow";
   } else {
-    this.queueControl.reverse().push(e);
+    this.queueControl.push(e);
     return this.queueControl.reverse();
   }
 }
