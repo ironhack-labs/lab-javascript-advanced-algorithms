@@ -20,11 +20,8 @@ $("#add-btn-queue").click(function() {
 
 $("#remove-btn-queue").click(function() {
   queue.dequeue(f);
-  var f = queue.MAX_SIZE - queue.queueControl.length-1; 
-  var x = queue.queueControl.length;
-
+  var f = queue.queueControl.length; 
   console.log(f)
-  console.log(x);
   if(queue.isEmpty()){
     $($(".row-over")[f]).removeClass("queue-div");
     $(".row-over-underflow").addClass("queue-div-underflow");
@@ -33,7 +30,6 @@ $("#remove-btn-queue").click(function() {
     $($(".row-over")[f]).removeClass("queue-div");
     $($(".row-over")[f]).html("");
     $(".row-over-overflow").removeClass("queue-div-overflow");
-    $(".row-over-overflow").html("");
-    
+    $(".row-over-overflow").html(""); 
   }
 });

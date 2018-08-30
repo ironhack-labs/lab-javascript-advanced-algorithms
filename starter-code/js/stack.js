@@ -24,9 +24,10 @@ $("#remove-btn-stack").click(function() {
     $($(".div-sec")[x-1]).removeClass("stack-div");
     $(".div-sec-underflow").addClass("stack-div-underflow");
     $(".div-sec-underflow").html("STACK UNDERFLOW");
+    $(".div-sec").html("");
   }else {
     $($(".div-sec")[x-1]).removeClass("stack-div");
-    $($(".div-sec")[x]).html("");
+    $($(".div-sec")[x-1]).html("");
     $(".div-sec-overflow").removeClass("stack-div-overflow");
     $(".div-sec-overflow").html("");
   }
