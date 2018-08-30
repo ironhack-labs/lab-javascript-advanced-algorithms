@@ -1,0 +1,27 @@
+.stackPosition{
+  height: 50px;
+  width: 100%;
+  background-color:lightblue;
+  margin: 1%;
+  padding-top: 10px;
+  text-align: center;
+  color:white;
+  font-size: 20px;
+}
+
+.stackPosition.overflow {
+  visibility:hidden;
+  background-color:red;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+.stackPosition.underflow {
+  background-color:red;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+.stackPosition.contains {
+  background-color: teal;
+}
