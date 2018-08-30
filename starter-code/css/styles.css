@@ -1,0 +1,149 @@
+.container {
+  display: inline-block;
+}
+
+.align-section{
+  margin-left: 400px;
+}
+
+.input-width{
+  width:400px;
+}
+
+.input-width input{
+  height: 50px;
+  font-size: 20px;
+}
+
+.btn-block {
+  display: block;
+  margin-top:10px;
+  width: 400px; 
+}
+.stack-btn button:last-child{
+  margin-bottom: 20px;
+}
+
+.div-sec{
+  width: 400px;
+  height: 70px;
+  background-color: #e6e2e2;
+  margin: 1px;
+}
+
+.stack-div{
+  width: 400px;
+  height: 70px;
+  margin: 1px;
+  background-color: #0dbaf5; 
+  font-size: 28px;
+  text-align: center;
+  color: yellow;
+  padding-top: 15px;
+}
+.div-sec-overflow .div-sec-underflow{
+  display:none;
+}
+
+.stack-div-overflow{
+  display: block;
+  width: 400px;
+  height: 70px;
+  margin: 1px;
+  background-color: red; 
+  font-size: 28px;
+  text-align: center;
+  color: black;
+  padding-top: 15px;
+}
+
+.stack-div-underflow{
+  display: block;
+  width: 400px;
+  height: 70px;
+  margin: 1px;
+  background-color: red; 
+  font-size: 28px;
+  text-align: center;
+  color: black;
+  padding-top: 15px;
+}
+
+.row{
+  width: 1100px;
+}
+
+.row-over{
+  width: 100px;
+  height: 350px;
+  background-color: #e6e2e2;
+  margin: 1px;
+}
+
+.row-over-underflow{
+  display:none;
+}
+
+.align-row{
+  display:flex;
+  align-items: center;
+  width:950px;
+  margin-left:150px;
+  margin-top:30px;
+  
+}
+
+.align-row:last-child{
+  margin-bottom: 30px;
+}
+.input-width.queue{
+  width: 500px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.btn-under{
+  margin-right: 10px;
+  margin-top:-2px;
+}
+
+.btn-block+.btn-block {
+  margin-top:0;
+}
+
+.queue-div{
+  width: 100px;
+  height: 350px;
+  margin: 1px;
+  background-color: #0dbaf5; 
+  font-size: 28px;
+  text-align: center;
+  color: yellow;
+  padding-top: 15px;
+}
+
+.queue-div-overflow{
+  display: block;
+  width: 100px;
+  height: 350px;
+  margin: 1px;
+  background-color: red; 
+  font-size: 28px;
+  text-align: center;
+  color: black;
+  padding-top: 15px;
+  writing-mode: vertical-lr;
+}
+
+.queue-div-underflow{
+  display: block;
+  width: 100px;
+  height: 350px;
+  margin: 1px;
+  background-color: red; 
+  font-size: 28px;
+  text-align: center;
+  color: black;
+  padding-top: 15px;
+  writing-mode: vertical-lr;
+}
