@@ -1,0 +1,46 @@
+.section{
+    width: 50%;
+    display: flex;
+    align-content: space-around;
+}
+#stack{
+    display: flex;
+    flex-direction: column;
+}
+#stack div{
+    display: inline-block;
+}
+#queue{
+    display: flex;
+    flex-direction: row;
+}
+#queue div{
+    display: inline-block;
+}
+.add{
+    background-color: #00AEFF;
+    color: white;
+}
+.take{
+    background-color: red;
+    color: white;
+}
+
+.element{
+    background-color: #DDDDDD;
+    border: 2px solid white;
+    height: 40px;
+    width: 40px;
+}
+.full{
+    background-color: #00AEFF;
+    border: 2px solid white;
+    height: 40px;
+    width: 40px;
+}
+.overflow{
+    background-color: red;
+    border: 2px solid white;
+    height: 40px;
+    width: 40px;
+}
