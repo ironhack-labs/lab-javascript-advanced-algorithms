@@ -1,0 +1,26 @@
+.container{
+    display:flex;
+    flex-direction:column;
+    width: 50%;
+}
+
+.element{
+    border:1px solid red;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 50%;
+}
+
+    
+
+.elementOff{
+    border:1px solid red;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 50%;
+
+}
