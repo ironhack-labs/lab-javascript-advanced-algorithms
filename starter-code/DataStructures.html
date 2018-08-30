@@ -5,12 +5,65 @@
   <title>DataStructures | Stacks &amp; Queues</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico" rel="stylesheet">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
+  <h1>Abstract Data Types</h1>
   <section class="container">
-    <h1>Abstract Data Types</h1>
+    
+    <div id="stack">
+      <h2>Stack</h2>
+      <input type="text" placeholder="Add the element to the stack" class="texto" id="input-stack"/>
+      <div>
+          <button class="add" id="add-stack">ADD</button>
+        </div>
+        <div>
+            <button class="take" id="take-stack">TAKE</button>
+        </div>
 
+        <div id="s-overflow" class="invisible">STACK OVERFLOW</div>
+
+      <div class="stack" id="s-8"> </div>
+      <div class="stack" id="s-7"> </div>
+      <div class="stack" id="s-6"> </div>
+      <div class="stack" id="s-5"> </div>
+      <div class="stack" id="s-4"> </div>
+      <div class="stack" id="s-3"> </div>
+      <div class="stack" id="s-2"> </div>
+      <div class="stack" id="s-1"> </div>
+
+      <div id="s-underflow" class="invisible">STACK UNDERFLOW</div>
+
+    </div>
+    <div id="queue">
+      
+      <h2>Queue</h2>
+      <div>
+          <input id="input-queue" type="text" placeholder="Add the element to the queue" class="texto"/>   
+      </div>
+      <div>
+        <button class="add" id="add-queue">ADD</button>
+      </div>
+      <div>
+          <button class="take" id="take-queue">TAKE</button>
+      </div>
+      
+      <div id="q-underflow" class="queue invisible">QUEUE UNDERFLOW</div>
+
+      <div class="queue" id="q-1"></div>
+      <div class="queue" id="q-2"></div>
+      <div class="queue" id="q-3"></div>
+      <div class="queue" id="q-4"></div>
+      <div class="queue" id="q-5"></div>
+      <div class="queue" id="q-6"></div>
+      <div class="queue" id="q-7"></div>
+      <div class="queue" id="q-8"></div>
+    
+      <div id="q-overflow" class="queue invisible">QUEUE OVERFLOW</div>
+
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>

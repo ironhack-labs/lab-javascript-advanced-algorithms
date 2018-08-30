@@ -1,0 +1,108 @@
+* {
+    font-family: 'Indie Flower', cursive;
+}
+h1, h2{
+    font-family: 'Pacifico', cursive;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#stack{
+    width:30%;
+
+}
+div .stack{
+    background-color:#E6E6FA;
+    height: 50px;
+    width: 300px;
+    border: 1px solid lightgray;
+    margin: 5px;
+    color: white;
+    padding-top: 15px;
+    transition: 0.8s ease;
+}
+
+div .queue{
+    background-color:  #E6E6FA;
+    height: 300px;
+    width: 50px;
+    border: 1px solid lightgray;
+    margin: 5px;
+    float: left;
+    color: white;
+    writing-mode: vertical-lr;
+    text-orientation: 90deg;
+    padding-left: 15px;
+    transition: 0.8s ease;
+}
+
+.add{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-weight: bold;
+    background-color:	#9370DB;
+    margin: 5px;
+    width: 300px;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.take{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-weight: bold;
+    background-color: #483D8B;
+    margin: 5px;
+    width: 300px;
+    padding: 8px 0px;
+    border-radius: 5px;
+}
+
+.texto{
+    width: 300px;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.active{
+    background-color:#20B2AA !important;
+    color:white;
+    text-align: center;
+}
+
+
+#s-overflow,#s-underflow {
+    background:#E0FFFF;
+    color:#48D1CC;
+    text-align: center;
+    border: 1px dashed #48D1CC;
+    font-weight: 300;
+    width: 300px;
+    height: 50px;
+    padding-top: 15px;
+ }
+
+ #q-underflow,#q-overflow {
+    background:#E0FFFF;
+    color: 	#48D1CC;
+    text-align: center;
+    border: 1px dashed #48D1CC;
+    font-weight: 300;
+    width: 50px;
+    height: 300px;   
+    padding-left: 15px;
+ }
+
+ .invisible{
+    display: none;
+ }
