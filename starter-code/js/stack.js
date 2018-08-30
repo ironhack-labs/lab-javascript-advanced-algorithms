@@ -16,6 +16,7 @@ function init() {
       for (let i = 7; i >= 0; i--){
         $($(".cell")[7-i]).text(myStack.stackControl[i]);
       }
+    //$("#input-stack").val(""); esto reinicia el input en cada ADD. Lo comento por la salud mental del TA
 
     } else {
       $(".overflow").css("display", "block");
