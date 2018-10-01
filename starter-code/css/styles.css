@@ -1,0 +1,62 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 50px;
+}
+.stack{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    height: 300px;
+    width: 100%
+}
+.stack_unit{
+    font-size: 23px;
+    color: white;
+    background: #3A9BDA;
+    margin:5px;
+    text-align: center;
+    
+    
+
+}
+.flow{
+    font-size: 23px;
+    color:red;
+    border: 1px solid red;    
+    margin:5px;
+    text-align: center;
+    
+}
+button{
+    border:none;
+    margin-top: 5px;
+}
+#addbtn, #addbtn2{
+    color: white;
+    background: #3A9BDA;
+
+
+}
+#takebtn, #takebtn2{
+    color: white;
+    background: red;
+}
+.queue{
+    display:flex;
+    flex-direction: column-reverse;
+    transform: rotate(90deg);
+    justify-content:flex-start;
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+}
+
+.all{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
