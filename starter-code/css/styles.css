@@ -1,0 +1,97 @@
+h4 {
+  color: white;
+}
+.floatLeft {
+  float: left;
+}
+
+.boxStack {
+  margin-left: 3%;
+  width: 30%;
+}
+
+.boxQueue {
+  margin-left: 5%;
+  width: 59%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+.addButton {
+  background-color: rgb(59, 133, 191);
+  color: white;
+}
+.takeButton {
+  background-color: rgb(207, 56, 49);
+  color: white;
+}
+.stackButton {
+  width: 20vw;
+  height: 2vw;
+  border-radius: 5px;
+  margin: 2px;
+  border: none;
+}
+.queueButton {
+  height: 20vw;
+  width: 2vw;
+  border-radius: 5px;
+  margin: 2px;
+  border: none;
+}
+
+.stackLine {
+  height: 3vw;
+  width: 20vw;
+  background-color: rgb(4, 202, 252);
+  margin: 5px;
+  text-align: center;
+}
+.queueLine {
+  height: 20vw;
+  width: 3vw;
+  background-color: rgb(4, 202, 252);
+  margin-top: 1vw;
+  margin-left: 2px;
+  text-align: center;
+  justify-content: left;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  align-items: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.inverseColumn {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.overflow {
+  background-color: purple;
+}
+.underflow {
+  background-color: grey;
+}
+.rotar {
+  -webkit-transform: rotate(+90deg);
+  transform: rotate(+90deg);
+}
+
+.textAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputButton {
+  height: 2vw;
+  width: 20vw;
+  border-radius: 5px;
+  border: none;
+}
