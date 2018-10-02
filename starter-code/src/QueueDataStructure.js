@@ -26,6 +26,7 @@ QueueDataStructure.prototype.dequeue = function(){
   } else {
     //this.queueControl.shift();
     //return this.queueControl[0];
-    return this.queueControl.splice(-1,1)[0];
+    //return this.queueControl.splice(-1,1)[0];
+    return this.queueControl.pop();
   }
 }

@@ -1,0 +1,96 @@
+section {
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: space-around;
+  margin-bottom: 3em;
+}
+
+section .header {
+  margin-bottom: 2em;
+}
+
+section .stack, section .queue {
+  width: 30%;
+}
+
+button, input {
+  margin-bottom: .5em;
+  padding: .5em;
+  border-radius: .3em;
+  outline: none;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+}
+
+button {
+  display: block;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+button.add {
+  background-color:#3a85bf ;
+}
+
+button.take {
+  background-color:#de5e59 ;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 1em;
+  background-color:#ededec;
+  border-radius: .3em;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+section li {
+  margin-bottom: .5em;
+  height: 3em;
+}
+
+/* section .queue .lists {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: flex-start;
+}
+
+section .queue ul {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: flex-start;
+}
+section .queue li {
+  margin-right: .5em;
+  width: 3em;
+  height: 20em;
+} */
+
+li.full {
+  background-color: #4cacea;
+}
+
+li#sOverflow, li#sUnderflow, li#qOverflow, li#qUnderflow {
+  background-color: #fdfcfc;
+  border: 1px solid #ededec;
+}
+
+li.overflow, li.underflow{
+  display: block !important;
+  background-color: #f3e2e2;
+  color: #de5e59;
+  border: 1px solid #de5e59 !important;
+}

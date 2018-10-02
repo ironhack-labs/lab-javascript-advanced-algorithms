@@ -5,14 +5,40 @@
   <title>DataStructures | Stacks &amp; Queues</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    <div class="stack">
+      <div class="header">
+        <h2>Stack</h2>
+        <input id="stackInput" type="text" placeholder="Add the element to the stack...">
+        <button id="stackAdd" class="add">ADD</button>
+        <button id="stackTake" class="take">TAKE</button>
+      </div>
+      <div class="lists">
+        <ul><li id="sOverflow"></li></ul>
+        <ul id="stackList"></ul>
+        <ul><li id="sUnderflow"></li></ul>
+      </div>
+    </div>
+    <div class="queue">
+      <div class="header">
+        <h2>Queue</h2>
+        <input id="queueInput" type="text" placeholder="Add the element to the queue...">
+        <button id="queueAdd" class="add">ADD</button>
+        <button id="queueTake" class="take">TAKE</button>
+      </div>
+      <div class="lists">
+        <ul><li id="qOverflow"></li></ul>
+        <ul id="queueList"></ul>
+        <ul><li id="qUnderflow"></li></ul>
+      </div>
+    </div>
 
   </section>
 
+  <script src="lib/jquery-3.1.1.min.js"></script>
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>

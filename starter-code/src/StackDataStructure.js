@@ -27,8 +27,3 @@ StackDataStructure.prototype.pop = function(){
     return this.stackControl.pop();
   }
 }
-
-// .shift() quita el primero
-// .pop quita el último
-// .unshift agrega al inicio
-// .push agrega al final
