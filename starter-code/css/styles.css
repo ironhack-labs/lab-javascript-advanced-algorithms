@@ -9,7 +9,7 @@ section .header {
   margin-bottom: 2em;
 }
 
-section .stack, section .queue {
+section .stack, section .queue .header {
   width: 30%;
 }
 
@@ -62,7 +62,7 @@ section li {
   height: 3em;
 }
 
-/* section .queue .lists {
+section .queue .lists {
   display: flex;
   flex-flow: nowrap row;
   justify-content: flex-start;
@@ -70,14 +70,15 @@ section li {
 
 section .queue ul {
   display: flex;
-  flex-flow: nowrap row;
+  flex-flow: nowrap row-reverse;
   justify-content: flex-start;
 }
 section .queue li {
   margin-right: .5em;
   width: 3em;
   height: 20em;
-} */
+  writing-mode: vertical-lr;
+}
 
 li.full {
   background-color: #4cacea;

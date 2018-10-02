@@ -32,6 +32,7 @@ var qCheckOverflow = function () {
     //$qItems.eq(i).text($qInput.val());
     //$qItems.eq(i).addClass("full");
     //$qInput.val("");
+
     var i = queue.MAX_SIZE - queue.queueControl.length;
     $qItems.eq(i).addClass("full");
     for (var j = 0; j < queue.queueControl.length; j++){
