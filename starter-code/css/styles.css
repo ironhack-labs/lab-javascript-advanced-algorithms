@@ -1,0 +1,37 @@
+.stack-section {
+    
+    padding: 50px;
+    width: 400px;
+}
+.stack-pos {
+text-align: center;
+padding: 7px;
+font-size: 20px;
+border-radius: 4px;
+margin-top: 3px;
+background: rgb(187, 186, 186);
+height: 40px;
+
+}
+.input-stack{
+margin-bottom: bottom 5px;
+
+
+}
+.add{
+
+}
+
+.take{
+margin-top: 5px;
+}
+.stack-element{
+text-align: center;
+padding: 7px;
+border-radius: 4px;
+margin-top: 3px;
+background: rgb(187, 186, 186);
+height:40px;
+font-size: 20px;
+
+}
