@@ -1,0 +1,59 @@
+.main-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -1em;
+}
+
+.column {
+    flex: 1;
+    padding: 0 1em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input, .form button {
+    height: 40px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.btn, .btn:hover, .btn:active, .btn:focus {
+    color: #fff;
+}
+
+
+.btn-add {
+    background-color: rgb(71, 82, 245);
+}
+
+.btn-take {
+   background-color: rgb(237, 99, 118);
+}
+
+input {
+    padding: 0 16px;
+}
+
+.gap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    margin: 2px 0;
+    background-color: #e5efff;
+    color: #63799c;
+}
+
+.gap.empty {
+    background: #f4f8fb;
+}
+
+.gap.error {
+    background: #fbf4f4;
+    color: #ed6376;
+    border: 1px solid #ed6376;
+}
