@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2 {
+  color: magenta;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.data-structure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.elem {
+  background-color: aqua;
+  width: 100%;
+  height: 20px;
+  border: 1px solid chartreuse;
+  color: white;
+  text-align: center;
+}
+
+.active {
+  background-color: blueviolet;
+}
+
+.overflow {
+  background-color: red;
+}
