@@ -1,0 +1,15 @@
+#boxes {
+  display: flex;
+}
+
+h1 {
+  width: 100%;
+}
+
+.elemS, .elemQ {
+  display: flex;
+  width: 160px;
+  height:30px;
+  border: 1px solid grey;
+  background-color: lightgrey;
+}
