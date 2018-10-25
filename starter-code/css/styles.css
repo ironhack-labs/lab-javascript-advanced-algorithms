@@ -1,0 +1,36 @@
+h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#section-one {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.section-content {
+  width: 49%;
+}
+
+#stack-menu-content, #queue-menu-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#stack-ul-content li, #queue-ul-content li {
+  height: 40px;
+  margin-bottom: 2px;
+}
+
+#stack-button-add, #stack-button-take, #stack-select-element,
+#queue-button-add, #queue-button-take, #queue-select-element  {
+  margin-bottom: 20px;
+}
+
+.stack-overflow {
+  background-color: black;
+  border: 1px solid red;
+  color: red;
+  text-align: center;
+}
