@@ -1,13 +1,14 @@
 $(document).ready(function() {
   let controlIndex;
   let stackText;
+  let queueTextArr = [];
 
   $("#toggle-queue-stack").click(function() {
-    stack.stackControl = []
-    queue.queueControl = []
+    stack.stackControl = [];
+    queue.queueControl = [];
     $(".stackEl").removeClass("stackEl-in");
     $(".stackEl").removeClass("stackEl-in-max");
-    $(".stackEl").text('')
+    $(".stackEl").text("");
     $("#stack-push").toggleClass("queue");
     if ($("#stack-push").hasClass("queue")) {
       $("h2").text("Queue");
@@ -42,11 +43,33 @@ $(document).ready(function() {
           );
           $(".stackEl:nth-child(" + controlIndex + ")").text(queue.enqueue());
         } else {
+            if(queue.queueControl.length === 1){
+                queueTextArr.unshift(stackText);
+            $(".stackEl-"+queue.queueControl.length).addClass(
+              "stackEl-in"
+            );
+            $(".stackEl-"+queue.queueControl.length).removeClass(
+              "stackEl-in-max"
+            );
+            $(".stackEl-"+queue.queueControl.length).text(queueTextArr[0]);
+
+            } else if(queue.queueControl.length === 2){
+                $(".stackEl-"+queue.queueControl.length).addClass(
+                    "stackEl-in"
+                  );
+                $(".stackEl-"+queue.queueControl.length).removeClass(
+                    "stackEl-in-max"
+                  );
+                $(".stackEl-"+queue.queueControl.length).text(queueTextArr[0]); 
+            }
+//ADD FOR EACH LOOP FOR THE TEXT IN THE QUEUE MODE//
+
+          /*     
           $(".stackEl:nth-child(" + controlIndex + ")").addClass("stackEl-in");
           $(".stackEl:nth-child(" + controlIndex + ")").removeClass(
             "stackEl-in-max"
           );
-          $(".stackEl:nth-child(" + controlIndex + ")").text(stackText);
+          $(".stackEl:nth-child(" + controlIndex + ")").text(stackText); */
         }
         //Else act like Stack
       } else {
@@ -75,7 +98,7 @@ $(document).ready(function() {
       if (!queue.isEmpty()) {
         queue.dequeue();
         console.log(queue.queueControl.length);
-        controlIndex = queue.queueControl.length +1 ;
+        controlIndex = queue.queueControl.length + 1;
         $(".stackEl:nth-child(" + controlIndex + ")").removeClass(
           "stackEl-in-max"
         );
