@@ -5,8 +5,8 @@ const addToStack = () => {
   let over = document.querySelector('#sts');
   if(stack.stack.length > stack.capacity){
     return over.innerText = 'Stack Overflow'
-  } else if(stack.stack.length <= 0){
-    return over.innerText = 'Stack Underflow'
+//   } else if(stack.stack.length <= 0){
+//     return over.innerText = 'Stack Underflow'
   } else {
     let put = document.getElementsByTagName('input')[0].value;
     let el = document.createElement('div');

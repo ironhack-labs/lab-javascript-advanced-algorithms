@@ -13,9 +13,9 @@ QueueDataStructure.prototype.checkCapacity = function () {
 };
 
 QueueDataStructure.prototype.addElement = function (element) {
-  this.checkCapacity() ? "Stack Overflow" : this.stack.unshift(element);
+  this.checkCapacity() ? null : this.stack.unshift(element);
 };
 
 QueueDataStructure.prototype.removeElement = function () {
-  this.checkCapacity() ? "Stack Underflow" : this.stack.pop();
+  this.checkCapacity() ? null : this.stack.pop();
 };
