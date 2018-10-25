@@ -1,0 +1,51 @@
+.stack-container {
+    width: 300px;
+}
+
+.btn{
+    width: 100%;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    height: 37px;
+    margin-bottom: 10px;
+    
+}
+
+.col-padding{
+    color: #fff;
+    height: 5px;
+}
+
+.stackEl {
+    background-color: #ECECEC;
+    width: 100%;
+    height: 50px;
+    margin: 2.5px;
+}
+
+.stack-input {
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.stacks {
+    padding: 13px;
+}
+
+.stackEl-in {
+    color: #fff;
+    background-color: #4ea2ec;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.stackEl-in-max {
+    color: #E74A55;
+    background-color: rgba(231, 74, 84, 0.514);
+    border: 1px solid #E74A55;
+    text-align: center;
+    padding-top: 10px;
+}
