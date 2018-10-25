@@ -1,0 +1,24 @@
+h1 {
+  text-align: center;
+  color: blueviolet
+}
+
+.elemS {
+    display: flex;
+    width: 100%;
+    height:30px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+  }
+
+.container {
+  width: 40%;
+  float: left;
+  margin-left: 100px;
+}
+
+.container-right {
+  width: 40%;
+  float : right;
+  margin-right: 100px;
+}
