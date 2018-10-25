@@ -1,0 +1,18 @@
+
+#btn-take {
+    padding-top: 1%;
+}
+
+#btn-add {
+    padding-top: 3%;
+}
+
+#div-ul {
+    padding: 5%;
+}
+
+#div-ul li {
+    padding-top: 5%; 
+    border: 2px solid white;
+    background-color: rgb(202, 199, 199)
+}
