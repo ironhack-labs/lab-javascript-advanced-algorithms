@@ -51,16 +51,19 @@ $(document).ready(function() {
             $(".stackEl-"+queue.queueControl.length).removeClass(
               "stackEl-in-max"
             );
-            $(".stackEl-"+queue.queueControl.length).text(queueTextArr[0]);
+            $(".stackEl-1").text(queueTextArr[0]);
 
             } else if(queue.queueControl.length === 2){
+                queueTextArr.unshift(stackText);
                 $(".stackEl-"+queue.queueControl.length).addClass(
                     "stackEl-in"
                   );
                 $(".stackEl-"+queue.queueControl.length).removeClass(
                     "stackEl-in-max"
                   );
-                $(".stackEl-"+queue.queueControl.length).text(queueTextArr[0]); 
+                $(".stackEl-1").text("");
+                $(".stackEl-2").text(queueTextArr[0]);
+                console.log(queueTextArr)
             }
 //ADD FOR EACH LOOP FOR THE TEXT IN THE QUEUE MODE//
 
