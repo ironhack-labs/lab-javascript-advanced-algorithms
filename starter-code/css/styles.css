@@ -1,0 +1,65 @@
+#boxes{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+
+
+}
+.stack-control{
+    display:flex;
+    flex-direction:row; 
+    justify-items: center;
+
+
+}
+
+.container{
+    display: flex;
+    border: 1px solid #f4f4f4;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* .stack ,.queue{
+    display: flex;
+    flex-direction: column;
+} */
+.stack-box{
+    width: 280px;
+    height: 50px;
+    background-color: #f4f4f4;
+    margin-bottom: 4px;
+}
+.queue-box{
+    width: 280px;
+    height: 50px;
+    background-color: #f4f4f4;
+    margin-bottom: 4px;
+
+
+}
+
+.btn{
+
+    display: flex;
+    flex-grow:50;
+    width: 100%;
+    background-color: blue;
+    margin-bottom: 4px;
+    margin-top: 5px;
+    color: #f4f4f4;
+}
+#btn-add{
+    text-align: center;
+    color: #f6f6f6;
+}
+#btn-take{
+    background-color: red;
+}
+#st-input{
+    width: 100%;
+    padding: 12px;   
+}
+#que{
+    margin-right: 180px;
+}
