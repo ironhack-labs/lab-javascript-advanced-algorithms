@@ -28,8 +28,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-.stack-overflow {
-  background-color: black;
+#stack-underflow, #stack-overflow {
   border: 1px solid red;
   color: red;
   text-align: center;

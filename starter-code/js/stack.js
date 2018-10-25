@@ -19,23 +19,30 @@ $(document).ready(function () {
   $('#stack-ul-content').html(htmlBlocks);
 
   $("#stack-button-add").click(function() {
-    if($('#stack-select-element').val() === '' ) {
-      alert('Voce precisa digitar alguma coisa.');
-    } else {
-      stackData.push($('#stack-select-element').val());
-      $('#stack-ul-content li').addClass('active');
-      console.log(stackData.stackControl);
+    if($('#stack-select-element').val() !== '' ) {
+      if(stackData.stackControl.length === stackData.MAX_SIZE && $('#stack-overflow').length !== 1) {
+        $('#stack-ul-content').prepend('<li class = "list-group-item" id = "stack-overflow">Stack Overflow</li>');
+      } else {
+        if($('#stack-overflow').length !== 1 && $('#stack-underflow').length !== 1) {
+          stackData.push($('#stack-select-element').val());
+          $('#stack-ul-content li').addClass('active');
+          console.log(stackData.stackControl);
+        }
+      }
     }
   });
 
   $("#stack-button-take").click(function() {
     if(stackData.stackControl.length === 0) {
-      //Stackunderflow
-      console.log(stackData.stackControl)
+      if($('#stack-underflow').length !== 1) {
+        $('#stack-ul-content').append('<li class = "list-group-item" id = "stack-underflow">Stack Underflow</li>');
+      }
     } else {
-      stackData.pop();
-      $('#stack-ul-content li').removeClass('active');
-      console.log(stackData.stackControl)
+      if($('#stack-overflow').length !== 1 && $('#stack-underflow').length !== 1) {
+        stackData.pop();
+        $('#stack-ul-content li').removeClass('active');
+        console.log(stackData.stackControl);
+      }
     }
 
   });
