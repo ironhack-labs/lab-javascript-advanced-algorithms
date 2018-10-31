@@ -22,9 +22,11 @@ function QueueDataStructure() {
     this.printQueue = function(){
         for (i=0; i<this.MAX_SIZE; i++){
             if(this.queueControl[i]!==undefined){
-               $('.queue-element').eq(this.MAX_SIZE-1-i).text(this.queueControl[i])
+               $('.queue-element').eq(this.MAX_SIZE-1-i).text(this.queueControl[i]);
+               $('.queue-element').eq(this.MAX_SIZE-1-i).addClass('full');
             } else {
-               $('.queue-element').eq(this.MAX_SIZE-1-i).text(`empty`)
+               $('.queue-element').eq(this.MAX_SIZE-1-i).text(`empty`);
+               $('.queue-element').eq(this.MAX_SIZE-1-i).removeClass('full');
             }
             
         }

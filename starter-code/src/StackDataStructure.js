@@ -22,9 +22,11 @@ function StackDataStructure() {
      this.printStack = function(){
          for (i=0; i<this.MAX_SIZE; i++){
              if(this.stackControl[i]!==undefined){
-                $('.stack-element').eq(this.MAX_SIZE-1-i).text(this.stackControl[i])
+                $('.stack-element').eq(this.MAX_SIZE-1-i).text(this.stackControl[i]);
+                $('.stack-element').eq(this.MAX_SIZE-1-i).addClass('full');
              } else {
-                $('.stack-element').eq(this.MAX_SIZE-1-i).text(`empty`)
+                $('.stack-element').eq(this.MAX_SIZE-1-i).text(`empty`);
+                $('.stack-element').eq(this.MAX_SIZE-1-i).removeClass('full');
              }
              
          }
