@@ -14,9 +14,20 @@ function StackDataStructure() {
         this.stackControl.push(value);
         return this.stackControl;
     }
-    this.stack = function () { }
     this.pop = function () {
         if (this.stackControl.length === 0) {return "Stack Underflow"}; 
         return this.stackControl.pop()
      }
+
+     this.printStack = function(){
+         for (i=0; i<this.MAX_SIZE; i++){
+             if(this.stackControl[i]!==undefined){
+                $('.stack-element').eq(this.MAX_SIZE-1-i).text(this.stackControl[i])
+             } else {
+                $('.stack-element').eq(this.MAX_SIZE-1-i).text(`empty`)
+             }
+             
+         }
+     }
+    
 }
