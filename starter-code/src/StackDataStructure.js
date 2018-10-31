@@ -24,9 +24,14 @@ function StackDataStructure() {
              if(this.stackControl[i]!==undefined){
                 $('.stack-element').eq(this.MAX_SIZE-1-i).text(this.stackControl[i]);
                 $('.stack-element').eq(this.MAX_SIZE-1-i).addClass('full');
+                if (this.canPush()===false) {
+                    $('.stack-element').eq(0).text("Stack Oveflow")
+                    $('.stack-element').eq(0).addClass('overflow');
+                }
              } else {
-                $('.stack-element').eq(this.MAX_SIZE-1-i).text(`empty`);
+                $('.stack-element').eq(this.MAX_SIZE-1-i).text(``);
                 $('.stack-element').eq(this.MAX_SIZE-1-i).removeClass('full');
+                $('.stack-element').eq(this.MAX_SIZE-1-i).removeClass('overflow');
              }
              
          }

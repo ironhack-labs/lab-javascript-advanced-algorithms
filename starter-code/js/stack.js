@@ -14,6 +14,7 @@ $(function(){
     stack.printStack();
     
     $('.stack.add').on("click",function(){
+        // if stack.canPush()
         stack.push($('.stack.input').prop("value"));
         stack.printStack();
     });

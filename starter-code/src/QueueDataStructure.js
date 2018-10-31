@@ -24,9 +24,14 @@ function QueueDataStructure() {
             if(this.queueControl[i]!==undefined){
                $('.queue-element').eq(this.MAX_SIZE-1-i).text(this.queueControl[i]);
                $('.queue-element').eq(this.MAX_SIZE-1-i).addClass('full');
+               if (this.canEnqueue()===false) {
+                $('.queue-element').eq(0).text("Queue Oveflow")
+                $('.queue-element').eq(0).addClass('overflow');
+                }
             } else {
-               $('.queue-element').eq(this.MAX_SIZE-1-i).text(`empty`);
+               $('.queue-element').eq(this.MAX_SIZE-1-i).text(``);
                $('.queue-element').eq(this.MAX_SIZE-1-i).removeClass('full');
+               $('.queue-element').eq(this.MAX_SIZE-1-i).removeClass('overflow');
             }
             
         }
