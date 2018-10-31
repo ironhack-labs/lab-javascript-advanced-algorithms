@@ -1,0 +1,54 @@
+.data-types{
+  display:flex;
+  flex-direction: row;
+  
+}
+
+.data-type{
+  flex-grow:1;
+  border: 1px solid black;
+  text-align:center;
+}
+
+.data-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  width: 70%
+}
+
+.element{
+  height: 35px;
+  width: 70%;
+  background: rgb(190,190,190);
+  justify-self: center;
+  border-radius: 4px;
+  color: white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-type *{
+  margin: 3px 0;
+}
+
+.btn{
+  width:70%;
+  color: white;
+}
+
+.btn-add{
+  background-color: blue;
+}
+
+.btn-take{
+  background-color:red;
+}
+
+.filled{
+  background-color: dodgerblue;
+}
