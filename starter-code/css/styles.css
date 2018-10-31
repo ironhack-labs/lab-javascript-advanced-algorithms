@@ -1,7 +1,64 @@
 
+h1{
+  text-align: center;
+  margin-top: 5%;
+  font-weight: bold;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%;
+}
+.col h1{
+  font-size: 26px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.inputS, .inputQ{
+  text-align: center;
+  vertical-align: middle;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding-left: 5%;
+}
+.addS, .addQ{
+  text-align: center;
+  height: 40px;
+  background-color:	#3F86BC;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.takeS, .takeQ{
+  height: 40px;
+  background-color: #DC5F5B;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
 .stack{
-  width: 20%;
-  height: 25px;
-  background-color: lightgrey;
-  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;    
+  width: 300px;
+  height: 40px;
+  background-color: #EDEDED;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.queue{
+  text-align: center;  
+  vertical-align: middle;
+  line-height: 40px;  
+  width: 300px;
+  height: 40px;
+  background-color: #EDEDED;
+  border: 1px solid white;
+  border-radius: 5px;
 }

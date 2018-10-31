@@ -1,40 +1,33 @@
+
 $(document).ready(function () {
+
   var stack = new StackDataStructure();
-  // $('.input')
 
-  $('.add').click(function (e) {
-
-    if ($('.input').val() === "") {
+  $('.addS').click(function (e) {
+    if ($('.inputS').val() === "") {
       alert('Insert a number')
     } else {
-      var valor = $('.input').val(); // toma el valor del input
+      var valor = $('.inputS').val(); 
       if (stack.push(valor) === 'Stack Overflow') alert('Stack Overflow');
-      console.log(stack.stackControl);
       rellenarPila();
+      refreshInput()
     }
-
   });
 
-
-  $('.take').click(function () {
-
+  $('.takeS').click(function () {
     if (stack.pop() === 'Stack Underflow') alert('Stack Underflow');
-    console.log(stack.stackControl);
     rellenarPila();
-
+    refreshInput()
   });
 
   function rellenarPila() {
-
     $(`.stack`).text("");
-
-
     stack.stackControl.forEach(function (element, index) {
-      // debugger
-
-      $(`.${index}`).text(stack.stackControl[index]);
+      $(`.stack.${index}`).text(stack.stackControl[index]);
     });
-
   }
 
+  function refreshInput() {
+    $('.inputS').val('');
+  }
 });
