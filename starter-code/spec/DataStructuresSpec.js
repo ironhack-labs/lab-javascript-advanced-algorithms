@@ -177,7 +177,7 @@ describe("Queues", function() {
       expect(queue.canEnqueue()).toBe(false);
     });
 
-    it ("Should return the first element inserted in the queue", function () {
+    fit ("Should return the first element inserted in the queue", function () {
       queue.enqueue(19);
       queue.enqueue(88);
 
