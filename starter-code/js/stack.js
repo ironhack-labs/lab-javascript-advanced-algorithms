@@ -1,5 +1,4 @@
-
-window.onload = function() {
+window.onload = function () {
     var add_btn = document.querySelector('.add');
     var take_btn = document.querySelector('.take');
     var input_box = document.querySelector('#input-text');
@@ -9,30 +8,43 @@ window.onload = function() {
     stack = new StackDataStructure();
 
 
-    add_btn.addEventListener("click",function(){
+    add_btn.addEventListener("click", function () {
         stack_value = input_box.value;
-        stack.push(stack_value);    
-        var lastStack = stack.stackControl[stack.stackControl.length-1];
-        // Recorrer lista de div y añadir id stack
-        // index -> #s(index)
-      
-        document.querySelectorAll('.stack').forEach(function(element) {
-         if(element.classList[1] === "initial"){
-             console.log(element.classList[1])
-            element.innerText = lastStack;
-            element.classList.add("active");
+        if (stack.canPush()) {
+            stack.push(stack_value);
+            stack.stackControl.forEach((element, index) => {
+                document.querySelector(`#s${index}`).innerHTML = element;
+                document.querySelector(`#s${index}`).classList.add("active");
+            });
+        }else{
+            alert("Stack Overflow");
+        }
+
+    })
+
+
+    take_btn.addEventListener("click", function () {
+        stack_value = input_box.value;
+        if(){
+
+        }else{
             
-         }
-        });
-        
+        }
 
     })
-    take_btn.addEventListener("click",function(){
-     
-    })
 
 
-   
+
 
 };
 
+
+/* // Recorrer lista de div y añadir id stack
+document.querySelectorAll('.stack').forEach(function(element) {
+    if(element.classList[1] === "initial"){
+        console.log(element.classList[1])
+       element.innerText = lastStack;
+       element.classList.add("active");
+       
+    }
+   }); */
