@@ -1,6 +1,6 @@
 function StackDataStructure () {
     this.stackControl = [];
-    this.MAX_SIZE = 5;
+    this.MAX_SIZE = 8;
 }
 
 StackDataStructure.prototype.isEmpty = function (){
@@ -37,4 +37,4 @@ StackDataStructure.prototype.pop = function(){
 }
 
 
-stack = new StackDataStructure();
+
