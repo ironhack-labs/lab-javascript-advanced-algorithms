@@ -1,10 +1,7 @@
 function StackDataStructure() {
-    //LIFO 
-    //METODO PARA INSERTAR Y ELIMINAR ELEMENTOS DE LA PILA
-    //METODO PARA COMPROBAR SI PUEDO AÑADIR Y BORRAR ELEMENTOS
-    // CUIDADO CON AÑADIR ELEMENTOS A LA PILLA LLENA Y AL SACAR ELEMENTOS DE UNA PILA VACIA
+    
     this.stackControl = [],
-        this.MAX_SIZE = 9;
+        this.MAX_SIZE = 8;
 };
 
 StackDataStructure.prototype.isEmpty = function () {
