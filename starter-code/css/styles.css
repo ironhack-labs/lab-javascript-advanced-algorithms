@@ -1,0 +1,57 @@
+
+
+.structures{
+
+  border: 1px gray solid;
+  height: 600px;
+}
+
+button{
+  top: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  margin: 0 7px 11px 0;
+  padding: 0 20px;
+  text-align: center;
+  transition: all 0.2s ease;
+  line-height: 45px;
+  width: 40%;
+  height: 45px;
+  font-size: 120%;
+  background: #f7f7f7;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-weight: bold;
+}
+
+button:hover {
+  box-shadow: 0 5px #aaa;
+}
+
+button:active {
+  top: 5px;
+  box-shadow: none;
+}
+
+.btnAdd{
+  background: rgba(18, 214, 0, 0.8)
+}
+.btnRemove{
+  background: rgba(165, 0, 0, 0.8)
+}
+
+input{
+  display: block;
+  width: 40%;
+  margin-bottom: 10px;
+}
+
+.array{
+  border: gray;
+  width: 100%;
+  text-align: center;
+  background: #aaa;
+  height: 40px;
+  margin-bottom: 5px;
+}
