@@ -1,0 +1,84 @@
+body{
+    height: 1000px;
+}
+
+.container{
+    width: 40%;
+    margin: auto;
+}
+
+.buttons{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+
+.buttons-add{
+    background-color: rgb(47, 112, 177);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttons-take{
+    background-color: rgb(211, 70, 72);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.element{
+    background-color: lightgray;
+    height: 50px;
+    border-bottom: 1px solid white;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px; 
+}
+
+.element-queue{
+    background-color: lightgray;
+    height: 200px;
+    width: 80px;
+    border-right: 1px solid white;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 20px; 
+  
+}
+
+.frontElement{
+    background-color: rgb(63, 155, 228);
+}
+
+.inputs-data{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 3px solid rgb(137, 188, 233,0.5);
+}
+
+
+#dataStructure-Queue{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.error-overFlow, .error-underFlow{
+    background-color: rgb(216, 55, 55,0.2);
+    border: 1px solid rgb(219, 103, 103);
+    padding: 10px;
+    font-size: 30px;
+    color:  rgb(219, 103, 103);
+    text-align: center;
+    visibility: hidden;
+}
+

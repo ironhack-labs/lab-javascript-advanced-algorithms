@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
 
+<body>
+ 
+  <section class="container">
+      <h1>Abstract Data Types</h1>
+      <h2>Stack</h2>
+      <div><input id="input-Data" class="inputs-data" type="text" placeholder="Add the element of the stack" value=""></div>
+      <div><button id="button-Add" class="buttons buttons-add">ADD</button></div>
+      <div><button id="button-Take" class="buttons buttons-take">TAKE</button></div>
+      <div class="error-overFlow">Stack OverFlow</div>
   </section>
+  <section id="dataStructure" class="container">
+  
+  </section>
+  <div class="container error-underFlow ">Stack UnderFlow</div>
+  <section class="container">
+      <h2>Queue</h2>
+      <div><input id="input-Data-Queue" class="inputs-data"  type="text" placeholder="Add the element of the stack" value=""></div>
+      <div><button id="button-Add-Queue" class="buttons buttons-add">ADD</button></div>
+      <div><button id="button-Take-Queue" class="buttons buttons-take">TAKE</button></div>
+  </section>
+  <div class="error-overFlow container">Stack OverFlow</div>
+  <section id="dataStructure-Queue" class="container-queue">
+  </section>
+  <div class="container error-underFlow ">Stack UnderFlow</div>
+
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>
