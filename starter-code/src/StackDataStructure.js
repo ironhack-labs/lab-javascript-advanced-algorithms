@@ -6,20 +6,44 @@ function StackDataStructure () {
 
   StackDataStructure.prototype.isEmpty = function(element){
       if (this.stackControl.length == 0){
-        // return "Stack Underflow";
+       
        return true
       } else {
-        this.stackControl.pop(element);
+       
+        return false;
       }
         
   };
   StackDataStructure.prototype.canPush = function(elemet){
         if (this.stackControl.length !== this.MAX_SIZE){
-        //    return "Stack Overflow"
+        
         return true
         } else {
-            this.stackControl.push(elemet);
+            
+            return false;
         }
         
   };
+  StackDataStructure.prototype.pop = function(elemet){
+    if (this.isEmpty == false){
+        
+    return this.stackControl.pop(element);
+    } else {
+        return "Stack Underflow";
+    }
+    
+};
+  
+StackDataStructure.prototype.push = function(elemet){
+    if (this.canPush == true){
+     
+    return this.stackControl.push(element);
+    } else {
+        
+        return "Stack Overflow";
+        
+    }
+    
+};
+  
 }

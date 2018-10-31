@@ -6,7 +6,7 @@ function QueueDataStructure () {
 
   QueueDataStructure.prototype.isEmpty = function(element){
       if (this.queueControl.length == 0){
-        // "Queue Underflow";
+        // 
        return true
       } else {
      return false
@@ -15,7 +15,7 @@ function QueueDataStructure () {
   };
   QueueDataStructure.prototype.canEnqueue = function(element){
         if (this.queueControl.length !== this.MAX_SIZE){
-        //    "Queue Overflow"
+      
         return true
         } else {
             return false
@@ -24,15 +24,24 @@ function QueueDataStructure () {
   };
 
   QueueDataStructure.prototype.dequeue = function(element){
-    if (this.queueControl.length == this.MAX_SIZE){
-   
-    return true
+     
+    if (this.isEmpty == false){
+        return this.queueControl.shift(element);
     } else {
-        return false
+        return "Queue Underflow";
     }
     
 };
 
+QueueDataStructure.prototype.enqueue = function(element){
+    if (this.canEnqueue == true){
+        
+    return this.queueControl.push(element)
+    } else {
+        return "Queue Overflow";
+    }
+    
+};
 
 }
 
