@@ -1,7 +1,7 @@
 function QueueDataStructure () {
   
   this.queueControl = [];
-  this.MAX_SIZE = 10;
+  this.MAX_SIZE = 8;
 
 
 }

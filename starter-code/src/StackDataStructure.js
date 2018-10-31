@@ -1,11 +1,9 @@
 function StackDataStructure () {
 
     this.stackControl = [];
-    this.MAX_SIZE = 10;
-     
-
+    this.MAX_SIZE = 8;     
 }
-var stack = new StackDataStructure();
+
 
 StackDataStructure.prototype.isEmpty = function(){
   if (this.stackControl.length === 0){
@@ -24,7 +22,7 @@ StackDataStructure.prototype.canPush = function(){
 
 }
 StackDataStructure.prototype.push = function(newItem){
-
+// debugger
   if (this.stackControl.length === this.MAX_SIZE){
     return 'Stack Overflow';
   }else{
@@ -35,14 +33,13 @@ StackDataStructure.prototype.push = function(newItem){
        
 }
 
-
 StackDataStructure.prototype.pop = function(){
-  
+  // debugger
   if(this.stackControl.length === 0){
     return 'Stack Underflow';
   }else{
-    
-    return this.stackControl[this.stackControl.length - 1];
+    // this.stackControl.pop();
+    return this.stackControl.pop();
 
   }
   
