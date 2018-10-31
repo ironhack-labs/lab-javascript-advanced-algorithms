@@ -14,7 +14,6 @@ const queueUnrepresent = () => {
 
 
 $(".add-q").on("click", function () {
-    console.log($("#queue-push").val())
     queue.enqueue($("#queue-push").val());
     queueRepresent();
 });
