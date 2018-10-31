@@ -1,7 +1,12 @@
-.container{
+.stack.container{
     display:flex;
     flex-flow: column wrap;
     
+}
+
+.queue.container{
+    display:flex;
+    flex-direction:column;
 }
 
 .stack-element{
