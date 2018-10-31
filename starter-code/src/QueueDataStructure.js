@@ -1,12 +1,18 @@
-function QueueDataStructure () {
-    
+class QueueDataStructure {
+    constructor() {
+        this.queue = [];
+        this.MAX_SIZE = 10;
+    }
 
+    give(item) {
+        (this.array.length >= 10) ? console.log("Stack Overflow"): this.array.unshift(item);
+        return this.array;
+    }
 
-
+    take() {
+        (this.array.length <= 0) ? console.log("Stack Underflow"): this.array.pop();
+        return this.array;
+    }
 }
 
-
-
-//  push se llena
-//  pop para eliminar la ultima
-//  shif para eliminar la primera
+var stack = new StackDataStructure();
