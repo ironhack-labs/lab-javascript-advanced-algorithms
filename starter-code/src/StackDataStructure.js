@@ -13,6 +13,7 @@ StackDataStructure.prototype.canPush = function () {
 
 StackDataStructure.prototype.push = function (item) {
     if (this.canPush()) {
+        console.log(item)
         this.stackControl.push(item);
         return this.stackControl;
     } else {
@@ -22,7 +23,6 @@ StackDataStructure.prototype.push = function (item) {
 
 StackDataStructure.prototype.pop = function () {
     if (this.isEmpty()) {
-        debugger
         return `Stack Underflow`;
     } else {
         return this.stackControl.pop();

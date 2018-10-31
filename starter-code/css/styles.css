@@ -1,0 +1,80 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#stack-container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.add {
+    border-radius: 5px;
+    color: black;
+    background: rgb(233, 70, 70);
+    box-shadow: 5px 5px 0.2 rgba(0,0,0,0.3);
+
+}
+
+.take {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: black;
+    background: rgb(117, 117, 201);
+    box-shadow: 5px 5px 0.2 rgba(0,0,0,0.3);
+
+}
+
+.stack {
+    background: wheat;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.stacked {
+    background-color: lightblue;
+}
+
+#queue-container {
+    display: flex;
+    width: 20%;
+    height: 500px;
+    margin-right: 50rem;
+}
+
+#queues {
+    display: flex;
+    flex-direction: row;
+}
+
+.queue {
+    background: wheat;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.add-q {
+    border-radius: 5px;
+    color: black;
+    background: rgb(233, 70, 70);
+    box-shadow: 5px 5px 0.2 rgba(0,0,0,0.3);
+}
+
+.take-q {
+    margin-right: 10px;
+    border-radius: 5px;
+    color: black;
+    background: rgb(117, 117, 201);
+    box-shadow: 5px 5px 0.2 rgba(0,0,0,0.3);
+}
+
+.queued {
+    background: lightblue;
+}
