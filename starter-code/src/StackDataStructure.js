@@ -30,7 +30,6 @@ StackDataStructure.prototype.push = function(archive){
 
 StackDataStructure.prototype.pop = function(){
     if (this.isEmpty()){
-        this.stackControl.pop()
         return "Stack Underflow"
     } else {
         return this.stackControl.pop()
