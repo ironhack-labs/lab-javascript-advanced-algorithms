@@ -2,9 +2,7 @@ $(function(){
     var stack = new StackDataStructure;
     stack.MAX_SIZE=8;
     // alert("DOM is Loaded");
-
     var html="";
-
     for(i=0;i<stack.MAX_SIZE;i++){
         html+= '<div class="stack-element"></div> \n'
         // $('.stack.container').append(`<div class="stack-element"></div>`);
@@ -14,7 +12,6 @@ $(function(){
     stack.printStack();
     
     $('.stack.add').on("click",function(){
-        // if stack.canPush()
         stack.push($('.stack.input').prop("value"));
         stack.printStack();
     });
