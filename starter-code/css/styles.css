@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 350px;
+}
+button {
+    border: none;
+}
+.btn-add{
+    background-color: #7FB3D5;
+}
+.take {
+    background-color: #CD6155
+}
+.stack {
+    flex-direction: column;
+}
+.container * {
+    width: 100%;
+    margin: 5px;
+    padding: 2px;
+}
+.tabla-stack div { 
+    height: 60px;
+}
+.overflow {
+    background-color: #FADBD8;
+    border: #CD6155 1px solid;
+}
+.empty {
+    background-color: #F2F3F4;
+}
+.full {
+    background-color: #5DADE2;
+}
