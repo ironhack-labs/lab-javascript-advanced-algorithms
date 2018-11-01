@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.btn-add {
+}
+.btn-take {
+  background-color: red;
+}
