@@ -1,0 +1,48 @@
+
+.stack {
+  display: flex;
+  flex-flow: column;
+
+  width: 30%;
+  position: relative;
+  border: 2px solid black;
+  margin: 0 0 0 40%;
+}
+
+.stack-items {
+  width: 100%;
+  background-color: red;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.queue {
+  display: flex;
+  flex-flow: row;
+  width: 70%;
+  border: 2px solid black;
+
+}
+.queue-items{
+    width: 100%;
+  background-color: red;
+  height: 100px;
+  border: 1px solid black;
+}
+.queue-button{
+    width: 600px;
+}
+.add{
+    background-color: #58D3F7;
+}
+.take{
+    background-color:#F78181
+}
+button{
+    padding: 3%;
+}
+
+.section-two{
+
+    margin-bottom: 500px;
+}

@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+
+  </section>
+  <section class="section section-one">
+
+
+    <div class="stack">
+      <h1>Stack</h1>
+      <input class="type1" type="text" placeholder="Add a element">
+      <button class="add">
+        ADD
+      </button>
+      <button class="take">
+        TAKE
+      </button>
+      <div class="stack-items" id="4"></div>
+      <div class="stack-items" id="3"></div>
+      <div class="stack-items" id="2"></div>
+      <div class="stack-items" id="1"></div>
+      <div class="stack-items" id="0"></div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="section section-two">
+    <h1>Queue</h1>
+    <div class="queue">
+
+      <input type="text" placeholder="Add a element">
+      <button class="add">
+        ADD
+      </button>
+      <button  class="take">
+        TAKE
+      </button>
+      <div class="queue-items"></div>
+      <div class="queue-items"></div>
+      <div class="queue-items"></div>
+      <div class="queue-items"></div>
+      <div class="queue-items"></div>
+
+
+
+    </div>
 
   </section>
 
@@ -18,4 +67,28 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+<script>
+
+$(function() {
+  $(".add").click(function() {
+  var valorAnadido = $(".type1").val()
+  var stack = new StackDataStructure();
+  stack.push(valorAnadido);
+  printRow();
+});
+    
+    var row;
+    for(let i=0; i < stack.MAX_SIZE; i++) {
+      row = document.getElementById(i);
+      row.innerText = stack.stackControl[i]
+    }
+
+});
+
+
+</script>
 </html>
+
+
+
+
