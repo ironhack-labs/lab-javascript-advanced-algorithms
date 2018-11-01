@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #212121;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem .5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+}
+
+section.elements {
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: .5rem;
+  margin: .5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.add {
+  background: #229954;
+}
+
+button.take {
+  background: #E74C3C;
+}
+
+input {
+  padding: .5rem;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+}
+
+.items div {
+  background: #EAECEE;
+  height: 2rem;
+  width: 25rem;
+  margin: .5rem 0;
+  border-radius: 5px;
+}
+
+.item, .over, .under {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.items .item.active {
+  background: #2E86C1;
+}
+
+.items .over, .items .under {
+  display: none;
+  background: #C0392B;
+}
+
+.items .over.active, .items .under.active {
+  display: flex;
+}

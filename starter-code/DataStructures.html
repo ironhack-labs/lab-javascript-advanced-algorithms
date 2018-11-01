@@ -3,14 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
+    <section class="containers">
+      <section class="elements stack">
+        <h2>Stack</h2>
+        <div class="form">
+          <input type="text" name="item" id="stack-item" placeholder="Add the element to the stack...">
+          <button class="add">ADD</button>
+          <button class="take">TAKE</button>
+        </div>
+        <div class="items"></div>
+      </section>
+      <section class="elements queue">
+        <h2>Queue</h2>
+        <div class="form">
+          <input type="text" name="item" id="queue-item" placeholder="Add the element to the queue...">
+          <button class="add">ADD</button>
+          <button class="take">TAKE</button>
+        </div>
+        <div class="items"></div>
+      </section>
+    </section>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
