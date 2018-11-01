@@ -81,6 +81,7 @@
     width: 250px;
     height: 30px;
     border-radius: 2px;
+    margin-left:10px;
 }
 .queue {
     background-color: rgb(178, 174, 174);
@@ -90,6 +91,10 @@
     border-radius: 2px;
 }
 .div-qeue-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width:500px;
 }
 
