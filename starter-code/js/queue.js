@@ -16,9 +16,12 @@ const queueUnrepresent = () => {
 $(".add-q").on("click", function () {
     queue.enqueue($("#queue-push").val());
     queueRepresent();
+    $(".queued:last").text(`${$("#queue-push").val()}`)
+    $("#queue-push").val("")
 });
 
 $(".take-q").on("click", function () {
     queue.dequeue();
+    $(".queued:last").text(`${$("#queue-push").html()}`);
     queueUnrepresent();
 });

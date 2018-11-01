@@ -85,3 +85,11 @@ p {
 .queued {
     background: lightblue;
 }
+
+.overflow {
+    background: red;
+}
+
+.underflow {
+background: green;
+}
