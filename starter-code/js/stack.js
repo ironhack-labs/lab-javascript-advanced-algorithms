@@ -1,0 +1,1 @@
+StackDataStructure(document.getElementById('stack-input').value).onclick
