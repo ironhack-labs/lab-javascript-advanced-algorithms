@@ -1,0 +1,22 @@
+body {
+    background-color: grey;
+}
+
+.stacks-boxes nav{
+    width: 40%;
+    padding-left: 80px;
+}
+.container{
+    
+}
+    
+
+.container form{
+   width: 35%;
+   padding: 20px;
+}
+.container button{
+    width: 420px;
+    margin: 10px;
+    
+}
