@@ -1,0 +1,26 @@
+.btn{
+    display:flex; 
+}
+
+
+.btn-primary{
+    background-color:blue;
+    width:260px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.btn-secundary{
+    background-color:red;
+    color:white;
+    width:260px;
+}
+.list-group-item{
+    width: 260px;
+    height:50px;
+    background-color:#eaeaea;
+
+}
+.item1{
+    margin-top:30px
+}
