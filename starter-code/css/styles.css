@@ -33,17 +33,13 @@ body {
     margin-bottom: 2px;
 }
 
-.filled {
-    font-weight: bold;
-    color: white;
-    background-color: #00ACE4
-}
 
-.stack-overflow, .stack-underflow {
+.stack-overflow, .stack-underflow, .queue-overflow, .queue-underflow {
     background-color: #F7E1E2;
     border: 1px solid red;
     color: red;
 }
+
 
 .queue-container {
     width: 1000px;
@@ -74,4 +70,17 @@ body {
     width: 50px;
     background-color:#ECECEC;
     margin-right: 2px;
+}
+
+.filled {
+    font-weight: bold;
+    color: white;
+    background-color: #00ACE4;
+}
+
+.queue-overflow, .queue-underflow {
+    font-size: 15px;
+    background-color: #F7E1E2;
+    border: 1px solid red;
+    color: red;
 }

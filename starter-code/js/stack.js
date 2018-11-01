@@ -1,22 +1,15 @@
 // New object class Stack
 
 var stackStructure = new StackDataStructure();
-var queueStructure = new QueueDataStructure();
+
 
 stackStructure.MAX_SIZE = 10;
-queueStructure.MAX_SIZE = 10;
+
 
 const containerStack = document.querySelector(".stack");
-const containerQueue = document.querySelector(".queue");
+
 
 // Create Div of Stack Size
-
-for (var i = 0; i < queueStructure.MAX_SIZE; i++) {
-  element = document.createElement("div");
-  element.setAttribute("class", "queue-element");
-  containerQueue.append(element);
-}
-
 
 for (var i = 0; i < stackStructure.MAX_SIZE; i++) {
     element = document.createElement("div");
@@ -32,6 +25,9 @@ function printStack(stackFunction, action) {
       document
         .querySelectorAll(".stack-element")[0]
         .classList.add("stack-overflow");
+        document
+        .querySelectorAll(".stack-element")
+        [0].classList.remove("filled");
     } else {
       stackFunction.forEach(function(value, i) {
         document.querySelectorAll(".stack-element")[
@@ -40,6 +36,9 @@ function printStack(stackFunction, action) {
         document
           .querySelectorAll(".stack-element")
           [stackStructure.MAX_SIZE - 1 - i].classList.add("filled");
+        document
+          .querySelectorAll(".stack-element")
+          [stackStructure.MAX_SIZE - 1 - i].classList.remove("stack-underflow");
       });
     }
   } else {
@@ -50,6 +49,9 @@ function printStack(stackFunction, action) {
       document
         .querySelectorAll(".stack-element")
         [stackStructure.MAX_SIZE - 1].classList.add("stack-underflow");
+        document
+        .querySelectorAll(".stack-element")
+        [stackStructure.MAX_SIZE - 1 - i].classList.remove("filled");
     } else {
       console.log(stackStructure.stackControl.length);
       document.querySelectorAll(".stack-element")[
@@ -60,18 +62,27 @@ function printStack(stackFunction, action) {
         [
           stackStructure.MAX_SIZE - 1 - stackStructure.stackControl.length
         ].classList.remove("filled");
+        document
+        .querySelectorAll(".stack-element")
+        [
+          stackStructure.MAX_SIZE - 1 - stackStructure.stackControl.length
+        ].classList.remove("stack-overflow");
     }
   }
 }
 
 document.querySelector("#addStack").onclick = function() {
-  printStack(
-    stackStructure.push(document.querySelector("#inputStack").value),
-    "push"
-  );
+  if (document.querySelector("#inputStack").value === '') {
+    printStack(stackStructure.push(1),"push");
+  } else {
+    printStack(stackStructure.push(document.querySelector("#inputStack").value),"push");
+  }
+  
   document.querySelector("#inputStack").value = "";
 };
 
 document.querySelector("#takeStack").onclick = function() {
   printStack(stackStructure.pop(), "pop");
 };
+
+
