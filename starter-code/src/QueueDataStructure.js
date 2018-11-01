@@ -1,18 +1,34 @@
-class QueueDataStructure {
-    constructor() {
-        this.queue = [];
-        this.MAX_SIZE = 10;
+function QueueDataStructure () {
+    this.MAX_SIZE= 8;
+    this.queueControl=[];
+    
+  }
+  
+  QueueDataStructure.prototype.isEmpty = function(){
+    return this.queueControl.length ===0 ;
+  }
+  
+  QueueDataStructure.prototype.canEnqueue = function(){
+    return this.queueControl.length !== this.MAX_SIZE;
+  }
+  
+  QueueDataStructure.prototype.enqueue = function(elt){
+    if (this.canEnqueue()){
+      this.queueControl.unshift(elt);
+      return this.queueControl;
     }
+    else{
+      return "Queue Overflow";
+  }
+  }
+  
+  QueueDataStructure.prototype.dequeue = function(){
+    return (this.isEmpty()?`Queue Underflow`:this.queueControl.pop());
+  }
 
-    give(item) {
-        (this.array.length >= 10) ? console.log("Stack Overflow"): this.array.unshift(item);
-        return this.array;
-    }
-
-    take() {
-        (this.array.length <= 0) ? console.log("Stack Underflow"): this.array.pop();
-        return this.array;
-    }
+  class QueueDataStructure {
+    constructor(num) {
+        this.MAX_SIZE= 8;
+        this.queueControl=[];
+    
 }
-
-var stack = new StackDataStructure();

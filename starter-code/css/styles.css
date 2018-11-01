@@ -1,0 +1,60 @@
+.data-types{
+    display:flex;
+    flex-direction: row;
+    
+  }
+  
+  .data-type{
+    margin-top: 50px;
+    flex-grow:1;
+    text-align:center;
+  }
+  
+  .data-container{
+    margin-top: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input{
+    width: 70%
+  }
+  
+  .element{
+    height: 35px;
+    width: 70%;
+    background: rgb(190,190,190);
+    justify-self: center;
+    border-radius: 4px;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .data-type *{
+    margin: 3px 0;
+  }
+  
+  .btn{
+    width:70%;
+    color: white;
+  }
+  
+  .btn-add{
+    background-color: #337ab7;
+  }
+  
+  .btn-take{
+    background-color:#d9534f;
+  }
+  
+  .filled{
+    background-color: #337ab7;
+  }
+  .stack-campo{ /*falta crear los estilos para los botones que se rellena */
+        width:70%;
+        color: white;
+      }
+  }
