@@ -7,24 +7,23 @@ $(document).ready(function() {
   }
 
   $(".stackStructure").html(stackStructure);
+
   function draw() {
     for (var j = 0; j < stack.MAX_SIZE; j++) {
       $(`.arrayContentStack` + j).empty();
       $(`.arrayContentStack` + j).text(stack.stackControl[j]);
-      console.log(stack.stackControl[j]);
     }
   }
 
   $(".addStack").click(function() {
+    if(!stack.canPush())
+      alert(stack.push())
     stack.push($(".inputStack").val());
-    //debugger;
     draw();
   });
 
   $(".removeStack").click(function() {
     stack.pop();
-    console.log(stack);
-    //debugger;
     draw();
   });
 });

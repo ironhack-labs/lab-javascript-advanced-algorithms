@@ -11,20 +11,19 @@ $(document).ready(function() {
     for (var j = 0; j < queue.MAX_SIZE; j++) {
       $(`.arrayContentQueue` + j).empty();
       $(`.arrayContentQueue` + j).text(queue.queueControl[j]);
-      console.log(queue.queueControl[j]);
     }
   }
 
   $(".addQueue").click(function() {
+    if(!queue.canEnqueue())
+      alert(queue.enqueue())
     queue.enqueue($(".inputQueue").val());
-    //debugger;
     draw();
   });
 
   $(".removeQueue").click(function() {
     queue.dequeue();
-    console.log(queue);
-    //debugger;
     draw();
   });
+
 });
