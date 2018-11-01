@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>val demo</title>
+  <style>
+  p {
+    color: blue;
+    margin: 8px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<input type="text" value="some text">
+<p></p>
+ 
+<script>
+$( "input" )
+  .keyup(function() {
+    var value = $( this ).val();
+    console.log(this);
+    $( "p" ).text( value );
+  })
+  .keyup();
+</script>
+ 
+</body>
+</html>

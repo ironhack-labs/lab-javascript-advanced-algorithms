@@ -1,0 +1,54 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+.stack {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.queue {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.stack h2 {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+input {
+  height: 40px;
+  margin: 2px;
+}
+.stack div {
+  padding-top: 8px;
+  height: 40px;
+  margin: 2px;
+  text-align: center;
+}
+.active {
+  background-color: rgb(125, 125, 236);
+}
+.noactive {
+  background-color: rgb(231, 231, 231);
+}
+button {
+  height: 40px;
+  margin: 2px;
+}
+.add-button {
+  background-color: rgb(92, 92, 230);
+}
+.take-button {
+  background-color: rgb(247, 82, 82);
+}
+overflow{
+  background-color: rgb(247, 82, 82);
+}
