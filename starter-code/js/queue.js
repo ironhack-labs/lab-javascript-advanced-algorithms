@@ -16,16 +16,16 @@ var queue = new QueueDataStructure;
  $(".btnadd.btnqueue").click(function(e){
     var result = queue.enqueue($(".inputqueue").val());
   
-    if (result === "Stack Overflow"){
-      alert("Stack Overflow");
+    if (result === "Queue Overflow"){
+      alert("Queue Overflow");
     }
     createQueueElements();
 });
 
  $(".btntake.btnqueue").click(function(e){
   var result = queue.dequeue();
-   if (result === "Stack Underflow"){
-    alert("Stack Underflow");
+   if (result === "Queue Underflow"){
+    alert("Queue Underflow");
   }
   createQueueElements();
 });
