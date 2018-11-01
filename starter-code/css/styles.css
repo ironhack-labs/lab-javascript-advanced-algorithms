@@ -1,25 +1,119 @@
-.container{
-    display:flex;
-    align-content: center;
+/* STACK STYLES */
+.container {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column; 
-    width:100%;
-    margin: 50px;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+}
+
+.container button {
+    width: 400px;
+    height: 30px;
+    margin: 10px;
+    color: aliceblue;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+.container input {
+    width: 400px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.add {
+    background-color: rgb(53, 136, 196);
+}
+
+.take {
+    background-color: rgb(190, 72, 72);
+}
+
+
+
+.stack {
+    background-color: rgb(178, 174, 174);
+    width: 400px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.active {
+    background-color: rgb(37, 161, 192);
+}
+
+.stack-overflow {
+    background-color: rgba(211, 134, 134, 0.7);
+    text-align: center;
+    color: rgb(218, 80, 80);
+    font-size: 20px;
 
 }
-button{
-    width: 400px;
+
+.stack-underflow {
+    background-color: rgba(211, 134, 134, 0.7);
+    text-align: center;
+    color: rgb(218, 80, 80);
+    font-size: 20px;
+}
+
+/* QUEUE STYLES*/
+
+.container-queue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px;
+}
+.container-queue button {
+    width: 250px;
+    height: 30px;
     margin: 10px;
+    color: aliceblue;
+    border: 1px solid grey;
+    border-radius: 2px;
 }
-input{
-    width: 400px;
+.container-queue input {
+    width: 250px;
+    height: 30px;
+    border-radius: 2px;
 }
-.stack{
-    background-color: bisque;
-    width: 400px;
-    height: 20px;;
+.queue {
+    background-color: rgb(178, 174, 174);
+    width: 100px;
+    height: 30px;
     border: 1px solid gray;
+    border-radius: 2px;
 }
-.active{
+.div-qeue-controls{
+    width:500px;
+}
+
+.add-q {
+    background-color: rgb(53, 136, 196);
+}
+
+.take-q {
+    background-color: rgb(190, 72, 72);
+}
+.active-q {
     background-color: rgb(37, 161, 192);
+}
+.queue-overflow {
+    background-color: rgba(211, 134, 134, 0.7);
+    text-align: center;
+    color: rgb(218, 80, 80);
+    font-size: 20px;
+
+}
+
+.queue-underflow {
+    background-color: rgba(211, 134, 134, 0.7);
+    text-align: center;
+    color: rgb(218, 80, 80);
+    font-size: 20px;
 }

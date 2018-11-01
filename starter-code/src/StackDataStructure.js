@@ -32,6 +32,7 @@ StackDataStructure.prototype.pop = function(){
     if(this.stackControl.length === 0){
         return "Stack Underflow";
     }else{
+        this.stackControl.pop();//MAL EN LOS TEST DE JASMINE
         return this.stackControl[[this.stackControl.length-1]];
     }
 }

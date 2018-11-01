@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
-  <section class="container">
+    <section class="container">
         <h1>STACK</h1>
         <input type="text" id="input-text" placeholder="Add an element to the stack...">
         <button class="add" id="add-btn">ADD</button>
-        <button class="take" id ="take-btn">TAKE</button>
-    
+        <button class="take" id="take-btn">TAKE</button>
+
+        <div class="stack stack-overflow">Stack Overflow</div>
         <div class="stack" id="s7"></div>
         <div class="stack" id="s6"></div>
         <div class="stack" id="s5"></div>
@@ -21,12 +25,32 @@
         <div class="stack" id="s3"></div>
         <div class="stack" id="s2"></div>
         <div class="stack" id="s1"></div>
-        <div class="stack initial" id="s0"></div>
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
+        <div class="stack" id="s0"></div>
+        <div class="stack stack-underflow">Stack Underflow</div>
+    </section>
+    <section class="container-queue">
+        <div class="div-qeue-controls">
+            <h1>QUEUE</h1>
+            <input type="text" id="input-text-q" placeholder="Add an element to the queue...">
+            <button class="add-q" id="add-btn-q">ADD</button>
+            <button class="take-q" id="take-btn-q">TAKE</button>
+        </div>
+        
+        <div class="queue queue-underflow">queue Underflow</div>
+        <div class="queue" id="q0"></div>
+        <div class="queue" id="q1"></div>
+        <div class="queue" id="q2"></div>
+        <div class="queue" id="q3"></div>
+        <div class="queue" id="q4"></div>
+        <div class="queue" id="q5"></div>
+        <div class="queue" id="q6"></div>
+        <div class="queue" id="q7"></div>
+        <div class="queue queue-overflow">queue Overflow</div>
+    </section>
+    <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script>
+    <script src="js/stack.js"></script>
+    <script src="js/queue.js"></script>
 </body>
+
 </html>
