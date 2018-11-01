@@ -1,0 +1,59 @@
+section {
+  margin: 150px;
+
+}
+
+section {
+  margin: 150px;
+
+}
+
+.stack {
+  border: 1px solid black;
+  width: 300px;
+  height: 40px;
+  display: block;
+
+}
+
+.queue {
+  border: 1px solid black;
+  width: 300px;
+  height: 40px;
+  display: block;
+}
+
+.btn-addS {
+  border: 1px solid black;
+  width: 300px;
+  height: 40px;
+  display: block;
+  background-color: blue;
+  color: white;
+}
+
+.btn-removeS {
+  border: 1px solid black;
+  width: 300px;
+  height: 40px;
+  display: block;
+  background-color: red;
+  color: white;
+}
+
+.inputS {
+  padding-bottom: 20px;
+}
+
+.fullAlert {
+  background-color: brown;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.fullbox{
+  background-color: purple;
+  color: white;
+}
