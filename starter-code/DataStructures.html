@@ -4,17 +4,50 @@
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.21/css/uikit.min.css" />
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <h1>Abstract Data Types</h1>
+  <div class="containers">
+    <section class="container">
+      <h2>STACK</h2>
+      <input id="input-stack" class="uk-input" type="text" placeholder="Elemento a ingresar">
+      <button id="submitPila" class="uk-button uk-button-default">Añadir</button>
+      <div class="pila">
+        <div id="pila1" class="pilaItem"></div>
+        <div id="pila2" class="pilaItem"></div>
+        <div id="pila3" class="pilaItem"></div>
+        <div id="pila4" class="pilaItem"></div>
+        <div id="pila5" class="pilaItem"></div>
+        <div id="pila6" class="pilaItem"></div>
+        <div id="pila7" class="pilaItem"></div>
+        <div id="pila8" class="pilaItem"></div>
+      </div>
+      <button id="quitarPila" class="uk-button uk-button-default">Quitar elemento</button>
+    </section>
+    <section class="container">
+      <h2>QUEUE</h2>
+      <input id="input-queue" class="uk-input" type="text" placeholder="Elemento a ingresar">
+      <button id="submitQueue" class="uk-button uk-button-default">Añadir</button>
+      <div class="queue">
+          <div id="queue1" class="queueItem"></div>
+          <div id="queue2" class="queueItem"></div>
+          <div id="queue3" class="queueItem"></div>
+          <div id="queue4" class="queueItem"></div>
+          <div id="queue5" class="queueItem"></div>
+          <div id="queue6" class="queueItem"></div>
+          <div id="queue7" class="queueItem"></div>
+          <div id="queue8" class="queueItem"></div>
+      </div>
+      <button id="quitarQueue" class="uk-button uk-button-default">Quitar elemento</button>
+    </section>
+</div>
 
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.21/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.21/js/uikit-icons.min.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
