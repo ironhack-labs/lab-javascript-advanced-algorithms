@@ -26,6 +26,8 @@ $(document).ready(function () {
             elements[myStack.MAX_SIZE - myStack.stackControl.length].classList.add('element-full');
             elements[myStack.MAX_SIZE - myStack.stackControl.length].innerHTML = input.val();
         }
+
+        input.val("");
     });
 
     takeBtn.click(function (e) { 
