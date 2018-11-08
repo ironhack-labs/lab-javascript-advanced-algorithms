@@ -1,3 +1,13 @@
+/* Colors
+WHITE: #FAFAFA
+ADD: #0299DF
+TAKE: #FF5A47
+EMPTY: #F3F3F3 
+FILL: #0EC8EE 
+OVERFLOW: ##F00922 
+*/
+
+
 .container {
   width: 100%;
   margin: 50px auto;
@@ -26,6 +36,7 @@ h1 {
 .element-container p{
   padding: 15px 5px;
   margin: 3px auto;
+  border-radius: 5px;
 }
 
 button {
@@ -45,12 +56,74 @@ input {
   border-radius: 5px;
 }
 
-.add-btn {
+.add-stack {
   background: #0299DF;
   color: #FAFAFA;
 }
 
-.take-btn {
+.take-stack {
   background: #FF5A47;
   color: #FAFAFA;
+}
+
+.add-queue {
+  background: #0299DF;
+  color: #FAFAFA;
+}
+
+.take-queue {
+  background: #FF5A47;
+  color: #FAFAFA;
+}
+
+.take-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.take-container p{
+  background: #0EEEA4;
+  text-align: center;
+  padding: 15px 5px;
+  margin: 3px auto;
+  width: 80px;
+  border-radius: 5px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.fill {
+  background: #0EC8EE;
+  text-align: center;
+  width: 400px;
+  margin: 2px auto;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.fill p{
+  padding: 15px 5px;
+  margin: 3px auto;
+  border-radius: 5px;
+}
+
+.fillq {
+  background: #0EC8EE;
+  text-align: center;
+  width: 400px;
+  margin: 2px auto;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.fillq p{
+  padding: 15px 5px;
+  margin: 3px auto;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
 }
