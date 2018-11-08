@@ -1,0 +1,52 @@
+.cont{
+    display: flex;
+
+}
+
+#queue{
+    margin-left: 150px
+}
+.stack{
+    position: center;
+    height: 40px;
+    width: 250px;
+    margin-left: 5px;
+    background-color: rgb(220, 226, 228);
+    border: 1px solid rgb(181, 222, 247);
+}
+
+.queue{
+    display: inline-block;
+    height: 200px;
+    width: 40px;
+    margin: 0;
+    background-color: rgb(220, 226, 228);
+    border: 1px solid rgb(181, 222, 247);
+}
+
+.add{
+    height: 40px;
+    width: 250px; 
+    background-color: rgb(156, 228, 156);
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.take{
+    height: 40px;
+    width: 250px; 
+    background-color: rgb(252, 122, 122);
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.input{
+    height: 40px;
+    width: 250px; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
