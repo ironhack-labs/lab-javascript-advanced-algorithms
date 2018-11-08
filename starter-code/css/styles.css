@@ -1,0 +1,102 @@
+.stack{
+  width:50%;
+  height:700px;
+  background-color: lightgrey;
+ 
+}
+#stackadd{
+  background-color: lightgreen;
+  width:80%;
+  height:50px;
+  position: relative;
+  top:60px;
+  left:30px;
+}
+#stackinput{
+  height:50px;
+  width:30%;
+  position: relative;
+  top:60px;
+  left:30px;
+}
+#stackdelete{
+  height:50px;
+  width:80%;
+  background-color: red;
+  position: relative;
+  top:60px;
+  left:30px;
+}
+.queue{
+  width:50%;
+  height:700px;
+  background-color: lightblue;
+ 
+}
+#queueadd{
+  background-color: lightgreen;
+  width:80%;
+  height:50px;
+  position: relative;
+  top:60px;
+  left:30px;
+}
+#queueinput{
+  height:50px;
+  width:30%;
+  position: relative;
+  top:60px;
+  left:30px;
+}
+#queuedelete{
+  height:50px;
+  width:80%;
+  background-color: red;
+  position: relative;
+  top:60px;
+  left:30px;
+}
+.stacker{
+  height:400px;
+  width:30%;
+  border:black solid 1px;
+  position: relative;
+  top:100px;
+  left:50px;
+
+ 
+}
+.queuer{
+  height:400px;
+  widows: 80px;
+  border:black solid 1px;
+  position: relative;
+  top:100px;
+  left:50px;
+ 
+}
+.caja{
+  width:95%;
+  height:5px;
+  background-color: blue;
+  color:white;
+}
+.cajaq{
+  width:20px;
+  height:40px;
+  background-color: blue;
+  color:white;
+}
+.svacia{
+  width:95%;
+  height:5px;
+  background-color:white;
+  color:white;
+
+}
+.qvacia{
+width:20px;
+height:40px;
+background-color: blue;
+color:white;
+}

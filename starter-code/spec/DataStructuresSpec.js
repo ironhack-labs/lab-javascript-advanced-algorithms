@@ -1,8 +1,15 @@
 describe("Stack", function() {
-  var stack;
+  function StackDataStructure(){
+   this.stack = []
+   } 
+ 
+
+  
+ 
 
   beforeEach (function() {
     stack = new StackDataStructure();
+    this.stack()
   });
 
   describe ("Stack properties", function () {
@@ -12,12 +19,20 @@ describe("Stack", function() {
 
     it ("Should has a max number of items to avoid the stack overflow", function () {
       expect(typeof(stack.MAX_SIZE)).toBe('number');
+      this.stack.MAX_SIZE = 9
     });
   });
 
   describe ("Stack methods", function () {
     it ("Should has a method to check if the current stack is empty", function () {
       expect(typeof(stack.isEmpty)).toBe('function');
+      this.empty =function(){
+        if (this.stack > 9){
+          alert('stackoverflow!')
+        }else{
+          push.this.stack
+        }
+      }
     });
 
     it ("Should has a method to check if we can push elements into the stack", function () {
@@ -26,6 +41,8 @@ describe("Stack", function() {
 
     it ("Should has a method to push elements into the stack", function () {
       expect(typeof(stack.push)).toBe('function');
+     // document.getElementById("stackinput")
+      //.addEventListener("change", function(){
     });
 
     it ("Should has a method to take elements from the stack", function () {
