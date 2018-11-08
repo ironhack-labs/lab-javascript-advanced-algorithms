@@ -1,0 +1,50 @@
+#stack{
+    width:350px;
+    margin-bottom: 50px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.stack-editor{
+    margin-bottom: 15px;
+}
+input {
+    border-radius: 5px;
+    border:2px solid #eee;
+    padding:10px;
+}
+
+button{
+    margin-top: 6px;
+    height: 40px;
+}
+
+.element-container {
+    background-color: #ccc;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.element-full{
+    background-color: rgb(49, 102, 151);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #stackInfo {
+    display: none;
+} */
+
+.stackInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175, 59, 59);
+    color:white;
+    height: 60px;
+    margin: 10px 0;
+}

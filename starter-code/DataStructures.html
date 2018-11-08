@@ -10,7 +10,31 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    <div id="stack" class="flex-container">
+      <div class="stack-editor flex-container">
+          <h2>Stack</h2>
+          <input type="text" placeholder="Add the element to the stack">
+          <button id="add" class="btn btn-info">
+            ADD
+          </button>
+          <button id="take" class="btn btn-danger">
+            TAKE
+          </button>
+      </div>
+      <div id="stack-overflow" class="stackInfo"></div>
+      <div id="elements">
+      <div class="element-container"></div>
+      <div class="element-container"></div>
+      <div class="element-container"></div>
+      <div class="element-container"></div>
+      <div class="element-container"></div>
+      <div class="element-container"></div>
+      <div class="element-container"></div>
+      <div class="element-container"></div>
+      </div>
+      <div id="stack-underflow" class="stackInfo"></div>
 
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
