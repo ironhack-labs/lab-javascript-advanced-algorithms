@@ -1,0 +1,19 @@
+.container{
+    width:100%;
+    margin:0;
+ 
+}
+
+.stack{
+width: 50%;
+}
+
+.queue{
+    padding-left: 50%;
+    width:50%;
+    display:flex;
+}
+
+li{
+    list-style: none;
+}
