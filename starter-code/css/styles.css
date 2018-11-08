@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  width: 500px;
+}
+
+.art-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.element-container{
+  background: #F3F3F3;
+  text-align: center;
+  width: 400px;
+  margin: 2px auto;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.element-container p{
+  padding: 15px 5px;
+  margin: 3px auto;
+}
+
+button {
+  display: block;
+  margin: 5px auto;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+input {
+  text-align: center;
+  display: block;
+  margin: 5px auto;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.add-btn {
+  background: #0299DF;
+  color: #FAFAFA;
+}
+
+.take-btn {
+  background: #FF5A47;
+  color: #FAFAFA;
+}
