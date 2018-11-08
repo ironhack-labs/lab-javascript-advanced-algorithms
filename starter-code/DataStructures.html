@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
   </section>
+
+  <div class="stacker">
+    <h2>Stack</h2>
+    <form action="">
+      <input id="entradaText" type="text" placeholder="Add the element to the stack">
+      <br>
+      <input id="addStack" class="deepBlue" type="button" value="ADD">
+      <br>
+      <input id="takeStack" class="deepRed" type="button" value="TAKE">
+    </form>
+
+    <ul id="stack">
+      <li id="stackOver" class="displayNone">Stack Overflow</li>
+      <li id="place8" class="gray"></li>
+      <li id="place7" class="gray"></li>
+      <li id="place6" class="gray"></li>
+      <li id="place5" class="gray"></li>
+      <li id="place4" class="gray"></li>
+      <li id="place3" class="gray"></li>
+      <li id="place2" class="gray"></li>
+      <li id="place1" class="gray"></li>
+      <li id="stackUnder" class="displayNone">Stack Underflow</li>
+    </ul>
+  </div>
+
+
+  <div class="queuer">
+    <h2>Queue</h2>
+    <form action="">
+      <input id="entradaText2" type="text" placeholder="Add the element to the queue">
+      <br>
+      <input id="addQueue" class="deepBlue" type="button" value="ADD">
+      <br>
+      <input id="takeQueue" class="deepRed" type="button" value="TAKE">
+    </form>
+
+    <ul id="queue">
+      <li id="queueOver" class="displayNone">Queue Overflow</li>
+      <li id="column8" class="gray"></li>
+      <li id="column7" class="gray"></li>
+      <li id="column6" class="gray"></li>
+      <li id="column5" class="gray"></li>
+      <li id="column4" class="gray"></li>
+      <li id="column3" class="gray"></li>
+      <li id="column2" class="gray"></li>
+      <li id="column1" class="gray"></li>
+      <li id="queueUnder" class="displayNone">Queue Underflow</li>
+    </ul>
+  </div>
+
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>

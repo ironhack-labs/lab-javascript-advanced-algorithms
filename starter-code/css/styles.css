@@ -1,0 +1,98 @@
+
+*{
+    margin: o;
+    padding: 0;
+}
+
+
+.stacker{
+    width: 300px;
+    display: flex;
+   flex-direction: column;
+   margin-left: 100px;
+   float: left;
+}
+
+.queuer{
+    width: 300px;
+    display: flex;
+   flex-direction: column;
+   margin-right: 200px;
+   float: right;
+}
+
+#queue{
+    transform: rotate(90deg)
+}
+
+#entradaText{
+    width: 300px;
+    font-size: 1.5em;
+}
+
+#entradaText2{
+    width: 300px;
+    font-size: 1.5em;
+}
+
+.deepBlue{
+    width: 100%;
+    background-color: rgb(56,124,192);
+    color: white;
+    border: 0;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+.deepRed{
+    width: 100%;
+    background-color: rgb(235,68,85);
+    color: white;
+    border: 0;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+.gray{
+    background-color: rgb(230, 220, 220);
+    margin: 2px auto;
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 60px;
+}
+
+.ironHack{
+    background-color: rgb(65,164,235);
+    margin: 2px auto;
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 60px;
+    color: white;
+}
+
+.outFlow{
+    background-color: rgb(241, 153, 157);
+    margin: 2px auto;
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 60px;
+    color: red;
+    border: 1px solid red;
+}
+
+.displayNone{
+    display: none;
+}
+
+.displayBlock{
+    display: block;
+}
