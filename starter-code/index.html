@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <h3 class="display-4">Queue algorithms!</h3>
+        <p class="lead">J.Miguel Gomez</p>
+        <hr class="my-4">
+        <p>IronHack 2018</p>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Lifo</h5>
+                    <p class="card-text">"Last in, first out", meaning that the last element we put in the stack, is the first element that will go out.</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="queueAdd">Insertar</button>
+                        </div>
+                        <input id="addTextRow" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="container">
+                        <div class="row column" id="rowsFather">
+                            <span class="card-body boxRow"></span>
+                            <span class="card-body boxRow"></span>
+                            <span class="card-body boxRow"></span>
+                        </div>
+                    </div>
+                    <button id="queueDelete" type="button" class="btn btn-outline-danger">Borrar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">FIFO</h5>
+                    <p class="card-text">"First in, First out",first element inserted, will be the first element removed.</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="fifoAdd">Insertar</button>
+                        </div>
+                        <input id="addTextColumn" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="container">
+                        <div class="row" id="columsFather">
+                            <span class="card-body box"></span>
+                            <span class="card-body box"></span>
+                            <span class="card-body box"></span>
+                        </div>
+                    </div>
+                    <button id="fifoDelete" type="button" class="btn btn-outline-danger">Borrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/queue.js"></script>
+    <script src="js/stack.js"></script>
+</body>
+</html>
