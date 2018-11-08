@@ -9,9 +9,32 @@
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
+    <h1>René Manzano Abstract Data Types</h1>
 
   </section>
+  <div class="stack">
+    <div class="header">
+  <h2>Stack</h2>
+  <input type="text" id="texStack" value="Agrega un elemento">
+  <label>Máximo de elementos</label>
+  <input type="number" name="max" id="numStack" value="0">
+  <button id="agstack" class="btn agrega">Agregar</button>
+  <button id="quitstack" class="btn quitar">Quitar</button>
+  </div>
+  <div id="contenedor-stack"></div>
+  </div>
+
+  <div class="queue">
+      <div class="header">
+  <h2>Queue</h2>
+  <input type="text" id="texQueue" value="Agrega un elemento">
+  <label>Máximo de elementos</label>
+  <input type="number" name="max" id="numQueue" value="0">
+  <button id="agqueue" class="btn agrega">Agregar</button>
+  <button id="quitqueue" class="btn quitar">Quitar</button>
+  </div>
+  <div id="contenedor-queue"></div>
+  </div>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
