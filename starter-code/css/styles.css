@@ -1,0 +1,32 @@
+.rectangle{
+    margin:5px;
+    width:256px;
+    height:64px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color:lightblue;
+}
+
+section{
+    width: 100%;
+    margin:10px;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#stackRectangles, #queueRectangles{
+    margin:40px;
+}
+.rectangle{
+    display: flex;
+    justify-content: center;
+}
+span{
+    align-self: center;
+    font-family: Helvetica, sans-serif;
+    color:white;
+    font-size:40px;
+}

@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
 
   </section>
+  <section class="stackSection">
+    <div id="stackControls">
+      <input id="inputStack" placeholder="Elemento" type="text">
+      <button id="addStack">Añadir</button>
+      <button id="removeStack">Remover</button>
+    </div>
+    <div id="stackRectangles">
+      <div class="rectangle" ><span id="stackIndicator9"></span></div>
+      <div class="rectangle" ><span id="stackIndicator8"></span></div>
+      <div class="rectangle" ><span id="stackIndicator7"></span></div>
+      <div class="rectangle" ><span id="stackIndicator6"></span></div>
+      <div class="rectangle" ><span id="stackIndicator5"></span></div>
+      <div class="rectangle" ><span id="stackIndicator4"></span></div>
+      <div class="rectangle" ><span id="stackIndicator3"></span></div>
+      <div class="rectangle" ><span id="stackIndicator2"></span></div>
+      <div class="rectangle" ><span id="stackIndicator1"></span></div>
+      <br><p>removed: </p><p id="removedArray"></p>
+    </div>
+   
 
+
+
+
+  </section>
+
+
+<!-- 
+  <section class="queueSection">
+    <div class="queueControls">
+      <input id="inputQueue" placeholder="Elemento" type="text">
+      <button id="addSQueue">Añadir</button>
+      <button i="removeQueue">Remover</button>
+    </div>
+    <div id="queueRectangles">
+      <div class="rectangle" id="queueIndicator1"></div>
+      <div class="rectangle" id="queueIndicator2"></div>
+      <div class="rectangle" id="queueIndicator3"></div>
+      <div class="rectangle" id="queueIndicator4"></div>
+      <div class="rectangle" id="queueIndicator5"></div>
+      <div class="rectangle" id="queueIndicator6"></div>
+      <div class="rectangle" id="queueIndicator7"></div>
+      <div class="rectangle" id="queueIndicator8"></div>
+      <div class="rectangle" id="queueIndicator9"></div>
+    </div>
+
+
+
+  </section> -->
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 </body>
+
 </html>
