@@ -8,9 +8,58 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
+  <h1 class="container">Abstract Data Types</h1>
   <section class="container">
-    <h1>Abstract Data Types</h1>
+    
+    <div id="stack">
+      <h2>Stack</h2>
+      <div>
+        <input id="input-stack" type="text"  placeholder="Add the element to the stack..." class="texto"/>
+      </div>
+      <div>
+        <button class="add" id="add-stack" onclick="addStack()">Add</button>
+      </div>
+      <div>
+        <button class="take" id="take-stack" onclick="takeStack()">Take</button>
+      </div>
+      <div id="s-overflow" class="invisible">Stack overflow</div>
+      <div class="stack" id="s_8"> </div>
+      <div class="stack" id="s_7"> </div>
+      <div class="stack" id="s_6"> </div>
+      <div class="stack" id="s_5"> </div>
+      <div class="stack" id="s_4"> </div>
+      <div class="stack" id="s_3"> </div>
+      <div class="stack" id="s_2"> </div>
+      <div class="stack" id="s_1"> </div>
+      <div id="s-underflow" class="invisible">Stack underflow</div>
+    </div>
 
+    <div id="queue">
+        <h2>Queue</h2>
+        <div>
+          <input id="input-queue" type="text" placeholder="Add the element to the queue..." class="texto"/>   
+        </div>
+        <div>
+          <button class="add" id="add-queue" onclick="addQueue()">Add</button>
+        </div>
+        <div>
+          <button class="take" id="take-queue" onclick="takeQueue()">Take</button>
+        </div>
+        
+        <div id="q-underflow" class="queue invisible">Queue underflow</div>
+  
+        <div class="queue" id="q_1"></div>
+        <div class="queue" id="q_2"></div>
+        <div class="queue" id="q_3"></div>
+        <div class="queue" id="q_4"></div>
+        <div class="queue" id="q_5"></div>
+        <div class="queue" id="q_6"></div>
+        <div class="queue" id="q_7"></div>
+        <div class="queue" id="q_8"></div>
+      
+        <div id="q-overflow" class="queue invisible">Queue overflow</div>
+  
+      </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>

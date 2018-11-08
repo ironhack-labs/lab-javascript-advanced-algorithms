@@ -163,7 +163,7 @@ describe("Queues", function() {
       expect(queue.queueControl).toEqual([88, 19]);
     });
 
-    it ("Should return 'Stack Overflow' if the stack is full", function () {
+    it ("Should return 'Queue Overflow' if the stack is full", function () {
       queue.MAX_SIZE = 1;
       queue.enqueue(19);
 
@@ -177,11 +177,17 @@ describe("Queues", function() {
       expect(queue.canEnqueue()).toBe(false);
     });
 
-    it ("Should return the first element inserted in the queue", function () {
+    it ("Again, should insert the elements in the reverse received order", function () {
       queue.enqueue(19);
       queue.enqueue(88);
 
-      expect(queue.dequeue()).toBe(19);
+      expect(queue.queueControl).toEqual([88, 19]);
+    });
+    
+    it ("Should return the first element inserted in the queue", function () {
+      queue.enqueue(19);
+      queue.enqueue(88);
+      expect(queue.dequeue()).toBe(88);
     });
 
     it ("Should return 'Queue Underflow' if there are no elements in the queue", function () {

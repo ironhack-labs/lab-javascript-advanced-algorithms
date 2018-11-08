@@ -1,0 +1,92 @@
+.container{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#stack{
+  width:50%;
+
+}
+div .stack{
+  background-color:#ECECEC;
+  height: 50px;
+  width: 300px;
+  border: 1px solid lightgray;
+  margin: 5px;
+  color: white;
+  padding-top: 15px;
+  transition: 0.8s ease;
+}
+
+div .queue{
+  background-color: #ECECEC;
+  height: 300px;
+  width: 50px;
+  border: 1px solid lightgray;
+  margin: 5px;
+  float: left;
+  color: white;
+  writing-mode: vertical-lr;
+  text-orientation: 90deg;
+  transition: 0.8s ease;
+}
+
+.add{
+  color: white;
+  font-weight: bold;
+  background-color: #3486ba;
+  margin: 5px;
+  width: 300px;
+  padding: 10px 0px;
+  border-radius: 5px;
+}
+
+.take{
+  color: white;
+  font-weight: bold;
+  background-color: #e25c5c;
+  margin: 5px;
+  width: 300px;
+  padding: 8px 0px;
+  border-radius: 5px;
+}
+
+.texto{
+  width: 300px;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.active{
+  background-color:#26A2EC !important;
+  color:white;
+  text-align: center;
+}
+
+#s-overflow,#s-underflow {
+  background: #e5464e4a;
+  color: #e5464e;
+  text-align: center;
+  border: 1px solid #e5464e;
+  font-weight: 300;
+  width: 300px;
+  height: 50px;
+  padding-top: 15px;
+}
+
+#q-underflow,#q-overflow {
+  background: #e5464e4a;
+  color: #e5464e;
+  text-align: center;
+  border: 1px solid #e5464e;
+  font-weight: 300;
+  width: 50px;
+  height: 300px;   
+  padding-left: 15px;
+}
+
+.invisible{
+  display: none;
+}
