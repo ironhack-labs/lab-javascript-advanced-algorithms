@@ -1,0 +1,30 @@
+
+.head-functions{
+    margin: 25px 0 50px 0;
+}
+
+.add-btn{ 
+    background-color:rgb(73, 109, 137);
+    margin: 10px;   
+    display: block;
+}
+
+.take-btn{
+    background-color:rgb(128, 26, 21);
+    margin: 10px;  
+    display: block;
+}
+
+.btn > span{
+    color: white;
+}
+
+.elem-itm{
+    background-color:rgb(220, 220, 220);
+    margin: 3px;  
+    text-align: center;
+}
+
+.list-group{
+    display: block; 
+}
