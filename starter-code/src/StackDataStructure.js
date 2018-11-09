@@ -14,7 +14,7 @@ class StackDataStructure {
   canPush(element) {
     if (this.stackControl.length === this.MAX_SIZE) {
       return false;
-    } else {this.push(element)}
+    } else { return true}
     
   }
   push(element) {
@@ -35,6 +35,8 @@ class StackDataStructure {
     }
     return this.stackControl[this.stackControl.length-1]
   }
+
+  
 }
 
 

@@ -13,7 +13,11 @@ isEmpty() {
 }
 
 canEnqueue() {
-return true
+
+  if (this.queueControl.length === this.MAX_SIZE) {
+    return false
+  } else {return true}
+
 }
 
 enqueue(element) {
@@ -28,6 +32,12 @@ enqueue(element) {
 }
 
 dequeue() {
+
+  if (this.queueControl.length === 0) {
+    return 'Queue Underflow'
+  }
+  
+  return this.queueControl[this.queueControl.length - 1]
 
 }
 
