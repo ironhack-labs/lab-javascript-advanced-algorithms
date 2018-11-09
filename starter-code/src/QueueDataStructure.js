@@ -20,7 +20,7 @@ class QueueDataStructure {
     // push(item)
     enqueue(element){
       if(this.queueControl.length < this.MAX_SIZE){
-        this.queueControl.push(element);
+        this.queueControl.unshift(element);
         return this.queueControl;
       } else {
         return "Queue Overflow";
@@ -29,7 +29,7 @@ class QueueDataStructure {
    // pop()
     dequeue(){
       if (this.queueControl.length !== 0) {
-        return this.queueControl.shift();
+        return this.queueControl.pop();
       } else {
         return 'Queue Underflow';
       }
