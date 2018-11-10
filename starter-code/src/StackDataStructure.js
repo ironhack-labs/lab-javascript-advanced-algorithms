@@ -34,10 +34,10 @@ class StackDataStructure {
         pop() {
 
             if (this.stackControl.length === 0) {
-                return "Stack Underflow" }     
-                }
-            
-            
+                return 'Stack Underflow'
+              }
+              return this.stackControl[this.stackControl.length-1]
+            }
 
 
 }
