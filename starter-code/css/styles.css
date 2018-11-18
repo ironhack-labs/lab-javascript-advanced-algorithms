@@ -1,0 +1,112 @@
+input {
+  height: 4.5vh;
+  width: 20vw;
+  border-radius: 5px;
+}
+
+.stack-container {
+  width: 20vw;
+}
+
+.queue-container {
+  width: 50vw;
+}
+
+.hbox-container {
+  width: 20vw;
+}
+
+.vbox-container {
+  display: flex;
+  margin: 1vh 0 4vh;
+  height: 25vh;
+  width: 100%;
+}
+
+/* Objetos */
+.btn {
+  display: block;
+  margin: 0.5vh 0;
+  height: 4.5vh;
+  width: 20vw;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-add {
+  background-color: rgb(72, 63, 196);
+  color: #FFFFFF;
+}
+
+.btn-take {
+  background-color: rgb(255, 62, 62);
+  color: #FFFFFF;
+}
+
+.hbox--grey {
+  height: 4.5vh;
+  width: 100%;
+  background-color: #CCCCCC;
+  border: 1px solid #FFFFFF;
+  /* border-radius: 5px; */
+}
+
+.hbox--full {
+  height: 4.5vh;
+  width: 100%;
+  background-color: rgb(148, 150, 255);
+  border: 1px solid #FFFFFF;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hbox--warning {
+  height: 4.5vh;
+  width: 100%;
+  background-color: rgb(255, 211, 211);
+  border: 1px solid rgb(255, 67, 67);
+  color: rgb(255, 67, 67);
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vbox--grey {
+  display: inline-block;
+  background-color: #CCCCCC;
+  border: 1px solid #FFFFFF;
+  width: 10%;
+  height: 25vh;
+}
+
+.vbox--full {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(148, 150, 255);
+  border: 1px solid #FFFFFF;
+  width: 10%;
+  height: 25vh;
+  color: #FFFFFF;
+}
+
+.vbox--warning {
+  width: 20%;
+  height: 25vh;
+  background-color: rgb(255, 211, 211);
+  border: 1px solid rgb(255, 67, 67);
+  font-weight: lighter;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 67, 67);
+  text-align: center;
+}
+
+/* Transiciones/Animaciones/Etc */
+.btn:hover, .btn:active, .btn:visited, .btn:focus {
+  color: #FFFFFF;
+}
