@@ -1,0 +1,42 @@
+.button {
+  width: 100%;
+  border: none;
+  height: 35px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  color: white;
+}
+
+#title-stack{
+  margin-bottom: 20px;
+}
+
+#stack-container{
+  width: 350px;
+}
+
+#stack-add{
+  background-color:#3b85bf;
+}
+
+#stack-take{
+  background-color:#de5d59;;
+}
+
+.grey{
+  background-color:#ecedec;
+  height: 50px;
+  margin-bottom: 2px;
+}
+
+.blue{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4dade9;
+  color:white;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+}
