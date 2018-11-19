@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
@@ -18,4 +21,53 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
+<div class="container-fluid">
+  <!-- Titulo -->
+  <div class="row">
+
+    <div class="col-sm-2">
+      <h1>Stack</h1>
+    </div>
+  </div>
+
+  <!-- input -->
+  <div class="row">
+    <div class="col-sm-2">
+      <input type="text" placeholder="Add elements to the stack" class="form-control" id="stack-input">
+    </div>
+  </div>
+
+
+  <!-- Botón azul -->
+  <div class="row">
+    <div class="col-sm-2">
+      <button type="button" class="btn btn-primary btn-sm" id="btn-add">ADD</button>
+    </div>
+  </div>
+
+  <!-- botón rojo -->
+  <div class="row">
+    <div class="col-sm-2">
+      <button type="button" class="btn btn-danger btn-sm" id="btn-take">TAKE</button>
+    </div>
+  </div>
+
+  <!-- elementos del stack -->
+  <div class="row" id="element-div">
+    <div class="col-sm-2">
+      <h1 class="stack-element overflow">Stack Overflow!</h1>
+      <h1 class="stack-element">1</h1>
+      <h1 class="stack-element">2</h1>
+      <h1 class="stack-element">3</h1>
+      <h1 class="stack-element">4</h1>
+      <h1 class="stack-element">5</h1>
+      <h1 class="stack-element">6</h1>
+      <h1 class="stack-element">7</h1>
+      <h1 class="stack-element">8</h1>
+      <h1 class="stack-element underflow">Stack UnderFlow!</h1>
+    </div>
+  </div>
+</div>
+
 </html>

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.btn{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#element-div{
+    
+    margin-top: 30px;
+}
+
+.stack-element{
+
+    text-align: center;
+    background: #ededed;
+    padding-top: 1px;
+    margin:1px;
+    color: #ededed;
+
+}
+
+.overflow {
+
+border-color:#de5e59;
+border-style: solid;
+background: #f4e2e2;
+color: #de5e59;
+display: none;
+
+}
+
+.underflow{
+    border-color:#de5e59;
+border-style: solid;
+background: #f4e2e2;
+color: #de5e59;
+display: none;
+
+}
+
+
+
+.element-inside{
+
+    color: #ffffff;
+    background: #4dace9;
+
+}
+
