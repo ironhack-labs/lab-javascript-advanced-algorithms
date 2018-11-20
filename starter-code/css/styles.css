@@ -1,0 +1,58 @@
+.stackContainer .queueContainer{
+    width: auto;
+    height: auto;
+}
+
+.stackBox .queueBox {
+    width: auto;
+    height: auto;
+}
+
+.stackInitial {
+    height: 40px;
+    width: 100%;
+    background-color: gray;
+}
+
+.stackUnderflow {
+    height: 40px;
+    width: 100%;
+    background-color: red;
+}
+
+.stackOverflow{
+    height: 40px;
+    width: 100%;
+    background-color: red;
+}
+
+.stackFinal{
+    height: 40px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+input {
+    width: 300px;
+    height: auto;
+    border-radius: 7px;
+}
+
+.btn {
+    display:block;
+    margin: 10px 0;
+    width: 150px;
+    border: none;
+}
+
+.btn-add {
+    background-color: blue;
+    color: white;
+}
+
+.btn-take {
+    background-color: red;
+    color: white;
+}
