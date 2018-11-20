@@ -30,6 +30,12 @@
   margin-bottom: 2px;
 }
 
+.input{
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
 .blue{
   display: flex;
   align-items: center;
@@ -39,4 +45,5 @@
   text-align: center;
   font-size: 18px;
   height: 50px;
+  margin-bottom: 2px;
 }

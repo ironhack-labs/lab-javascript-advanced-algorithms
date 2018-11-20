@@ -12,9 +12,9 @@ function StackDataStructure () {
 
   this.canPush = function(){
     if(this.stackControl.length === this.MAX_SIZE){
-     return false
+     return false;
     } else {
-     return true
+     return true;
     }
   }
 
@@ -23,7 +23,8 @@ function StackDataStructure () {
       this.stackControl.push(unit);
       return this.stackControl;
     }
-      else { return "Stack Overflow";
+      else { 
+      return "Stack Overflow";
     }
 
   }
