@@ -1,0 +1,61 @@
+h1 {
+  text-align: center;
+}
+.btn {
+  padding: 0 130px 0 130px;
+  height: 40px;
+  margin: 10px 0 20px 0;
+}
+.add {
+  color: white;
+  font-weight: 500;
+  background-color: rgb(11, 127, 204);
+}
+.addq {
+  color: white;
+  font-weight: 500;
+  background-color: rgb(11, 127, 204);
+}
+.take {
+  color: white;
+  font-weight: 500;
+  background-color: rgb(236, 65, 65);
+}
+.takeq {
+  color: white;
+  font-weight: 500;
+  background-color: rgb(236, 65, 65);
+}
+.input {
+  width: 300px;
+  height: 40px;
+  color: rgb(139, 138, 138);
+}
+.inputq {
+  width: 300px;
+  height: 40px;
+  color: rgb(139, 138, 138);
+}
+.box {
+  display: inline;
+}
+h3 {
+  width: 300px;
+  margin: 2px 0 2px 0;
+  padding: 10px;
+  background-color: rgb(221, 217, 217);
+  height: 40px;
+}
+.fill {
+  color: white;
+  background-color: rgb(129, 202, 250);
+  font-weight: 100;
+  text-align: center;
+}
+.overflow {
+  text-align: center;
+  color: rgb(236, 65, 65);
+  background-color: rgb(252, 216, 215);
+  font-weight: 100;
+  border: 1px solid rgb(236, 65, 65);
+}
