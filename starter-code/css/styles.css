@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #464646;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: bolder;
+  margin: 10px 2% 0 2%;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.container {
+  margin: 10px 2%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.type-container {
+  display: block;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-column {
+  width: 300px;
+}
+
+input {
+  box-sizing: border-box;
+  border: 1px solid #1584fb;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 0.7em;
+  height: 35px;
+}
+
+.btn {
+  box-sizing: border-box;
+  border: none;
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.add {
+  background-color: #1584fb;
+
+}
+
+.take {
+  background-color: #e00303;
+  margin-bottom: 30px;
+}
+
+.element {
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 2px;
+  padding-top: 5px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.empty {
+  background-color: rgb(214, 211, 211);
+}
+
+.added {
+  background-color: #4a9ffa;
+  color: #ffffff;
+}
+
+.flow {
+  background-color: rgb(255, 218, 218);
+  border: 1px solid red;
+  box-sizing: border-box;
+  color: red;
+}
+
+.over {
+  display: none;
+}
+
+.under {
+  display: none;
+}
+
+.popped-element {
+  margin: 0 50px;
+  font-size: 1.7em;
+  width: 150px;
+}
