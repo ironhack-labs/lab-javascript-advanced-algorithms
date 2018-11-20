@@ -18,6 +18,9 @@ addButton.onclick = function() {
   var input = parent.querySelector('input');
   var pushOnStack = stack.push(input.value);
   var content = '';
+  var buttonEnabled = parent.querySelector('.take');
+  buttonEnabled.removeAttribute('disabled');
+
 
   if (pushOnStack === 'Stack Overflow'){
     var overflow = parent.querySelector('.over');
@@ -25,6 +28,9 @@ addButton.onclick = function() {
     content = document.createTextNode(pushOnStack);
     overflow.innerHTML = '';
     overflow.appendChild(content);
+    var buttonDisabled = parent.querySelector('.add');
+    buttonDisabled.setAttribute('disabled', '');
+
 
   } else {
     var arrayElementToChange = parent.getElementsByClassName('empty');
@@ -49,6 +55,9 @@ takeButton.onclick = function() {
   var parent = findParent(this, 'stack');
   var popFromStack = stack.pop();
   var content = '';
+  var buttonEnabled = parent.querySelector('.add');
+  buttonEnabled.removeAttribute('disabled');
+
 
   if (popFromStack === 'Stack Underflow'){
     var underflow = parent.querySelector('.under');
@@ -56,6 +65,8 @@ takeButton.onclick = function() {
     content = document.createTextNode(popFromStack);
     underflow.innerHTML = '';
     underflow.appendChild(content);
+    var buttonDisabled = parent.querySelector('.take');
+    buttonDisabled.setAttribute('disabled', '');
 
   } else {
     var arrayElementToChange = parent.getElementsByClassName('added');
