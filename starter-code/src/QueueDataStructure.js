@@ -1,41 +1,38 @@
-function QueueDataStructure () {
+function QueueDataStructure() {
+
   this.queueControl = [];
   this.MAX_SIZE = 8;
 
-  this.isEmpty = function(){
-    if(this.queueControl.length === 0){
+  this.isEmpty = function () {
+    if (this.queueControl.length === 0) {
       return true
-    } else  {
+    } else {
       return false;
-  }
-}
+    }
+  };
 
-  this.canEnqueue =  function(){
-    if(this.queueControl.length === this.MAX_SIZE){
+  this.canEnqueue = function () {
+    if (this.queueControl.length === this.MAX_SIZE) {
       return false
-     } else {
+    } else {
       return true
-     }
-  }
+    }
+  };
 
-  this.enqueue = function(unit){
- 
-      if (this.canEnqueue()) {
-        this.queueControl.unshift(unit)
-        return this.queueControl;
-      }
-        else { 
-          return "Queue Overflow";
-      }
+  this.enqueue = function (unit) {
+    if (this.canEnqueue()) {
+      this.queueControl.unshift(unit)
+      return this.queueControl;
+    } else {
+      return "Queue Overflow";
+    }
+  };
 
-  }
-
-  this.dequeue = function(){
-    if(this.queueControl.length === 0){
+  this.dequeue = function () {
+    if (this.queueControl.length === 0) {
       return 'Queue Underflow';
     } else {
-      return this.queueControl.pop()
+      return this.queueControl.shift()
     }
-  }
-
-}
+  };
+};

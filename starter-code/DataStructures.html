@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
   <section class="container">
     <div id="stack-container">
-      <h1 id='title-stack'>Abstract Data Types</h1>
-      <input id="input-stack" class="input" value="0" type="number"  min="0">
+      <h1 id='title-stack'>Abstract Data Stack</h1>
+      <input id="input-stack" class="input" value="0" type="number" min="0">
       <button class="button" id="stack-add">ADD</button>
-      <button class="button"id="stack-take">TAKE</button>
+      <button class="button" id="stack-take">TAKE</button>
       <div id="stack-div-container">
-      
+
         <!--HERE THE STACK CONTENT-->
+
+      </div>
+    </div>
+
+    <div id="queue-container">
+      <h1 id='title-stack'>Abstract Data Queue</h1>
+      <input id="input-queue" class="input" value="0" type="number" min="0">
+      <button class="button" id="queue-add">ADD</button>
+      <button class="button" id="queue-take">TAKE</button>
+      <div id="queue-div-container">
+
+        <!--HERE THE QUEUE CONTENT-->
 
       </div>
     </div>
@@ -31,5 +43,7 @@
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+
 </body>
+
 </html>
