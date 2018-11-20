@@ -1,35 +1,43 @@
 function StackDataStructure () {
 
   this.stackControl =[];
-  this.MAX_SIZE= 19;
+  this.MAX_SIZE= 8;
   
   this.isEmpty= function(){
 
     if(this.stackControl.length===0){
-      return  false
+      return  true
     }
     else{
-      return true
+      return false
     }
   }
   this.canPush= function(){
-    if(this.MAX_SIZE<=this.stackControl.length){
-      return true
-    }
-    else {
+    if(this.stackControl.length >= this.MAX_SIZE){
       return false
     }
+    else {
+      return true
+    }
   }
-  this.push = function(){
+  this.push = function(elem){
+    
     if (this.canPush()){
-      this.stackControl.push();
+      this.stackControl.push(elem);
       return this.stackControl;
     }
     else{
-      return false
+      return "Stack Overflow"
     }
   }
  this.pop= function(){
+
+   if(this.isEmpty()){
+     return "Stack Underflow"
+   }
+   else{
+     return this.stackControl.pop();
+   }
    
 
 

@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.text{
+  width: 400px;
+  margin: 10px;
+  color:  #BDC3C7
+}
+.stack{
+  background: #E5E7E9;
+  width: 400px;
+  height: 50px;
+   margin-left: 10px;
+  margin-top: 2px;
+  text-indent:-666em;
+  overflow:hidden;
+
+  
+}
+.btn-add{
+  width: 400px;
+  margin: 10px;
+}
+.btn-take{
+  width: 400px;
+  margin: 10px;
+}

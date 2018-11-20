@@ -1,6 +1,6 @@
 function QueueDataStructure () {
   this.queueControl =[];
-  this.MAX_SIZE = 19;
+  this.MAX_SIZE = 8;
 
   this.isEmpty= function(){
     
@@ -12,17 +12,33 @@ function QueueDataStructure () {
     }
   }
   this.canEnqueue = function(){
-    if (this.MAX_SIZE<=queueControl){
-      return true
+    if (this.queueControl.length >= this.MAX_SIZE){
+      return false
     }
-    return false
+    return true
   }
-  this.enqueue = function(){
+  this.enqueue = function(elem){
+
+
+    if (this.canEnqueue()){
+      this.queueControl.unshift(elem);
+      return this.queueControl;
+    }
+  else{
+    return "Queue Overflow";
 
   }
+  }
 
-  this.dequeue= function (){
+  this.dequeue= function () {
 
+    if (this.isEmpty()){
+    return "Queue Underflow";
+  }
+  else{
+    this.queueControl.pop(); 
+  }
+   
   }
 
   }
