@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
       blockedAdd = false;
     } else if (myStack.canPush() === false && blockedAdd === false) {
       var stackOverflowBox = document.createElement("div");
-      stackOverflowBox.setAttribute("class", "hbox--warning");
+      stackOverflowBox.setAttribute("class", "overflow");
       stackOverflowBox.textContent = "Stack Overflow";
       $("#stack-div-container").prepend(stackOverflowBox);
       blockedAdd = true;
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
       blockedTake = false;
     } else if (myStack.isEmpty() && blockedTake === false) {
       var stackUnderflowBox = document.createElement("div");
-      stackUnderflowBox.setAttribute("class", "hbox--warning");
+      stackUnderflowBox.setAttribute("class", "underflow");
       stackUnderflowBox.textContent = "Stack Overflow";
       $("#stack-div-container").last().append(stackUnderflowBox);
       blockedTake = true;
