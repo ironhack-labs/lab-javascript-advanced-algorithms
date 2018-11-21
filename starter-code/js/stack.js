@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
+
   var myStack = new StackDataStructure()
   var blockedAdd = false;
   var blockedTake = false;
@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $('#stack-take').click(function () {
     if (myStack.isEmpty() === false) {
+      printTakeElement(myStack.stackControl);
       myStack.pop();
       containerStackArray(myStack.stackControl);
       blockedTake = false;
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
       stackUnderflowBox.textContent = "Stack Underflow";
       $("#stack-div-container").last().append(stackUnderflowBox);
       blockedTake = true;
+      printTakeElement()
     }
   });
 
@@ -48,11 +50,16 @@ document.addEventListener('DOMContentLoaded', function () {
         divCreated.classList.add('grey');
         $('#stack-div-container').append(divCreated)
       } else {
-        
         divCreated.classList.add('blue');
         divCreated.textContent = array[i];
         $('#stack-div-container').append(divCreated);
       }
     }
   };
+
+  function printTakeElement(array){
+    $("#stack-deleted").empty();
+    var textNode = "Element removed :" + ' ' + array[myStack.stackControl.length - 1]
+    $("#stack-deleted").append(textNode);
+  }
 });

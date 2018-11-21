@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var addValueQueue = $('#input-queue').val();
     if (myQueue.canEnqueue()) {
       myQueue.enqueue(addValueQueue);
+
       containerQueueArray(myQueue.queueControl);
+
       blockedAddQueue = false;
     } else if (myQueue.canEnqueue() === false && blockedAddQueue === false) {
       var queueOverflowBox = document.createElement("div");
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $('#queue-take').click(function () {
     if (myQueue.isEmpty() === false) {
+      printTakeElement(myQueue.queueControl)
       myQueue.dequeue();
       containerQueueArray(myQueue.queueControl);
       blockedTakeQueue = false;
@@ -36,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
       queueUnderflowBox.textContent = "Queue Underflow";
       $("#queue-div-container").last().prepend(queueUnderflowBox);
       blockedTakeQueue = true;
+      printTakeElement()
     }
   });
 
@@ -53,4 +57,11 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   };
+
+  function printTakeElement(array){
+    $("#queue-deleted").empty();
+    var textNode = "Element removed :" + ' ' + array[myQueue.queueControl.length - 1]
+    $("#queue-deleted").append(textNode);
+  }
+
 });

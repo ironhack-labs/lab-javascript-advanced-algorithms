@@ -7,6 +7,19 @@
   font-weight: bolder;
   color: white;
 }
+#queue-deleted{
+  margin: 10px;
+  font-weight: 500;
+  color: blue;
+  font-size:16px;
+}
+
+#stack-deleted{
+  margin: 10px;
+  font-weight: 500;
+  color: blue;
+  font-size:16px;
+}
 
 .alert{
   height: 50px;
@@ -19,7 +32,7 @@
   border: 2px solid red;
   margin-top: 5px;
   margin-bottom: 5px;
- 
+
 }
 
 
@@ -36,7 +49,7 @@
   border: 2px solid red;
   margin-right: 5px;
   margin-left: 5px;
- 
+
 }
 
 .container{
@@ -44,7 +57,8 @@
   flex-direction: row;
   align-content: space-around;
   margin-left: 50px;
-  margin-top:50px;
+  margin-top:10px;
+  zoom: 90%;
 }
 
 #title-stack{
@@ -53,13 +67,13 @@
 
 #stack-container{
   width: 350px;
- 
+
 }
 
 #queue-container{
   width: 350px;
   margin-left: 60px;
-  
+
 }
 
 #stack-add{
@@ -129,4 +143,3 @@
   height: 50px;
   margin-bottom: 2px;
 }
-
