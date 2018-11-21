@@ -1,0 +1,44 @@
+span {
+  font-size: 40px;
+  margin: auto;
+}
+
+p {
+  margin: auto;
+}
+
+.cellStack {
+  background-color: rgb(216, 214, 213);
+  height: 40px;
+  margin: 1px auto;
+}
+
+.cellWarningStack {
+  background-color: rgb(238, 215, 203);
+  height: 40px;
+  margin: 1px auto;
+}
+
+.cellQueue {
+  background-color: rgb(216, 214, 213);
+  height: 270px;
+  margin: 75px 1px;
+  width: 50px;
+}
+
+.cellWarningQueue {
+  background-color: rgb(238, 215, 203);
+  height: 270px;
+  margin: 75px 1px;
+  width: 35px;
+}
+
+.taken {
+  background-color: #2089df;
+  color: #fff;
+}
+
+#queue p{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}

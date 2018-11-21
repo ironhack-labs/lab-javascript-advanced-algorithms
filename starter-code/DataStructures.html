@@ -2,17 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
 
+<body>
+  <section class="container-fluid text-center">
+    <h1 class="mx-auto p-4 bg-warning"><strong><u>Abstract Data Types</u></strong></h1>
+    
+    <div class="row ">
+      <div id="stack" class="col-sm-4 p-1 border border-success">
+        <div class="container">
+          <h3 class="text-center p-2 font-weight-bold"><i>STACK</i></h3>
+          <div class="d-flex align-items-center">
+            <input type="text" id="input-stack" class="form-control col-sm-6 offset-2 my-4" placeholder="Add the element to the stack...">
+            <span id="stack-elem-taken" class="col-sm-4 mx-2 alert-success"></span>
+          </div>
+            
+          <button id="btn-add-stack" class="btn btn-primary btn-block col-sm-8 offset-2">ADD</button>
+          <button id="btn-take-stack" class="btn btn-danger btn-block col-sm-8 offset-2 mb-3">TAKE</button>
+            
+          <div id="stack-overflow" class="col-sm-8 offset-2 cellWarningStack border border-danger text-danger d-flex" style="visibility: hidden">
+            <p><strong>Stack Overflow</strong></p>
+          </div>
+
+          <div id="stack-boxes"></div>
+          
+          <div id="stack-template-box" style="display: none">
+              <div class="col-sm-8 offset-2 cellStack d-flex"></div>
+          </div>
+
+          <div id="stack-underflow" class="col-sm-8 offset-2 cellWarningStack border border-danger text-danger d-flex" style="visibility: hidden">
+            <p><strong>Stack Underflow</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="queue" class="col-sm-8 p-1 border border-success">
+        <div class="container">
+          <h3 class="text-center p-2 font-weight-bold"><i>QUEUE</i></h3>
+          <div class="d-flex align-items-center">
+            <input type="text" id="input-queue" class="form-control col-sm-4 offset-3 my-4" placeholder="Add the element to the queue...">
+            <span id="queue-elem-taken" class="col-sm-3 mx-2 alert-success"></span>
+          </div>
+            
+          <button id="btn-add-queue" class="btn btn-primary btn-block col-sm-5 offset-3">ADD</button>
+          <button id="btn-take-queue" class="btn btn-danger btn-block col-sm-5 offset-3">TAKE</button>
+  
+          <div class="d-flex justify-content-center">
+            <div id="queue-overflow" class="cellWarningQueue border border-danger text-danger d-flex" style="visibility: hidden">
+              <p><strong>Queue Overflow</strong></p>
+            </div>
+            <div id="queue-boxes" class="d-flex"></div>
+
+            <div id="queue-template-box" style="display: none">
+              <div class="cellQueue d-flex"></div>
+            </div>
+  
+            <div id="queue-underflow" class="cellWarningQueue border border-danger text-danger d-flex" style="visibility: hidden">
+              <p><strong>Queue Underflow</strong></p>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
   </section>
 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
