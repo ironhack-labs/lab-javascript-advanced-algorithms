@@ -1,0 +1,18 @@
+li {
+  margin: 3px;
+  height: 40px;
+  display: flex;
+}
+
+.stackEmpty{
+  background-color: #ECECEC;
+}
+
+.stackElement{
+  background-color: #4EA2EC;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
