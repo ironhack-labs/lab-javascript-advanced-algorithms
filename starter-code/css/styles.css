@@ -1,0 +1,79 @@
+
+
+.container input{
+  width: 20rem;
+  height: 3rem;
+}
+
+.container button{
+  width: 20rem;
+  height: 3rem;
+  display: block;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+}
+
+.btn-add {
+  background-color: red;
+}
+.btn-take {
+  background-color: blue;
+  margin-bottom: 25px;
+}
+.container .overflow{
+  width: 20rem;
+  height: 5rem;
+  display: block;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: coral;
+  background-color: rgb(221, 204, 198);
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  border-style: solid; 
+  border-width: 4px;
+  text-align: center;
+  padding-top: 6px;
+}
+.container .underflow{
+  width: 20rem;
+  height: 5rem;
+  display: block;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: coral;
+  background-color: rgb(221, 204, 198);
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  border-style: solid; 
+  border-width: 4px;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.container .box{
+  width: 20rem;
+  height: 5rem;
+  display: block;
+  margin-bottom: 2px;
+  color: white;
+  background-color: lightslategray;
+  font-size: 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 6px;
+}
+.container .occupied{
+  width: 20rem;
+  height: 5rem;
+  display: block;
+  margin-bottom: 2px;
+  color: white;
+  background-color: dodgerblue;
+  font-size: 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 6px;
+}
