@@ -12,7 +12,7 @@ var addButton = document.querySelector('.btn-add');
 var takeButton = document.querySelector('.btn-take');
 var underFlow = document.querySelector(".underflow");
 var overFlow = document.querySelector(".overflow");
-var boxStack = document.querySelector(".box-stack");
+var boxStack = document.getElementById(".box-stack");
 var boxOccupied = document.querySelector(".ocuppied");
 
 addButton.onclick = addStack;
@@ -22,10 +22,11 @@ function addStack(){
 
   var inputStack =  document.querySelector('input[id="stack"]').value;
   var boxRemove = document.querySelector(".box");
+  var boxStack = document.querySelector(".box-stack");
 
   if(stack.canPush() && inputStack !== ""){
     stack.push(inputStack);
-    boxStack.insertBefore(createBox(inputStack), boxOccupied);
+    boxStack.insertBefore(createBox(inputStack), boxSatck.firstChild);
     boxStack.removeChild(boxRemove);
     underFlow.style.display = "none";
   } 
