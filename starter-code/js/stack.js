@@ -5,9 +5,6 @@ stack.stackControl = [];
 
 window.onload = function(){
 
-
-
-
 var addButton = document.querySelector('.btn-add');
 var takeButton = document.querySelector('.btn-take');
 var underFlow = document.querySelector(".underflow");
