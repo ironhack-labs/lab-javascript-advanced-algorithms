@@ -1,55 +1,39 @@
 
+document.addEventListener('DOMContentLoaded', function () {
+
 var stack = new StackDataStructure ();
-
-stack.stackControl = [];
-
-window.onload = function(){
 
 var addButton = document.querySelector('.btn-add');
 var takeButton = document.querySelector('.btn-take');
 var underFlow = document.querySelector(".underflow");
 var overFlow = document.querySelector(".overflow");
-var boxStack = document.getElementById(".box-stack");
-var boxOccupied = document.querySelector(".ocuppied");
 
 addButton.onclick = addStack;
 takeButton.onclick = takeStack;
 
-function addStack(){
+  function addStack(){
 
-  var inputStack =  document.querySelector('input[id="stack"]').value;
-  var boxRemove = document.querySelector(".box");
-  var boxStack = document.querySelector(".box-stack");
-
-  if(stack.canPush() && inputStack !== ""){
-    stack.push(inputStack);
-    boxStack.insertBefore(createBox(inputStack), boxSatck.firstChild);
-    boxStack.removeChild(boxRemove);
-    underFlow.style.display = "none";
-  } 
-  else if(!stack.canPush()){
-    overFlow.style.display = '';
+    var inputStack =  document.querySelector('input[id="stack"]').value;
+    
+    if(stack.canPush() && inputStack !== ""){
+      underFlow.style.display = "none";
+      stack.push(inputStack);
+      $( ".box" ).last().addClass("occupied").removeClass("box").text(stack.stackControl[stack.stackControl.length -1]);
+    } 
+    else if(!stack.canPush()){
+      overFlow.style.display = '';
+    }
   }
-}
 
+  function takeStack(){
+    var boxOccupied = document.getElementById(".ocuppied");
+    if(stack.isEmpty()){
+      underFlow.style.display = "";
+    } else {
+      $(".box-stack").prepend("<div class='box'></div>");
+      $(".occupied").first().remove();
+      stack.stackControl.pop();
+      overFlow.style.display = 'none';}
+  }
 
-function createBox(inputStack){
-
-  var divTag = document.createElement("div");
-  divTag.classList.add("occupied");
-  divTag.appendChild(document.createTextNode(inputStack));
-  
-  return divTag;
-}
-
-function takeStack(){
-  if(!stack.isEmpty){
-    underFlow.style.display = "";
-  } else {
-    stack.stackControl.pop();
-  boxStack.removeChild(boxOccupied);
-  overFlow.style.display = 'none';}
- 
-}
-
-};
+});

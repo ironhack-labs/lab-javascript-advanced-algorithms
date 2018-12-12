@@ -1,17 +1,16 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+
 var queue = new QueueDataStructure ();
 
-queue.queueControl = [];
-
-window.onload = function(){
-
-var addButton = document.querySelector('.btn-add-queue');
-var takeButton = document.querySelector('.btn-take-queue');
+var addButtonQueue = document.querySelector('.btn-add-queue');
+var takeButtonQueue = document.querySelector('.btn-take-queue');
 var underFlow = document.querySelector(".underflow-queue");
 var overFlow = document.querySelector(".overflow-queue");
 
 
-addButton.onclick = addQueue;
-takeButton.onclick = takeQueue;
+addButtonQueue.onclick = addQueue;
+takeButtonQueue.onclick = takeQueue;
 
 function addQueue(){
 
@@ -19,8 +18,15 @@ function addQueue(){
 
   if(queue.canEnqueue() && inputQueue !== ""){
     underFlow.style.display = "none";
-    queue.enqueue(inputQueue);
-    $( ".box-queue" ).last().addClass("occupied").removeClass("box-queue").text(queue.queueControl[0]);
+    if(queue.queueControl.length === 0){
+      queue.enqueue(inputQueue);
+      $(".box-queue").first().addClass("occupied-queue").removeClass("box-queue").text(queue.queueControl[0]);
+    } else {
+      queue.enqueue(inputQueue);
+      var newQueue = $("<div class='occupied-queue'>" + queue.queueControl[0] + "</div>");
+      $(".occupied-queue").first().before(newQueue);
+      $(".box-queue").last().remove();
+    }
   } 
   else if(!queue.canEnqueue()){
     overFlow.style.display = '';
@@ -34,9 +40,9 @@ function takeQueue(){
     underFlow.style.display = "";
   } else {
   $(".box-que").prepend("<div class='box-queue'></div>");
-  $(".occupied").last().remove();
+  $(".occupied-queue").last().remove();
   overFlow.style.display = 'none';
   queue.queueControl.pop();
   }
  };
-}
+});

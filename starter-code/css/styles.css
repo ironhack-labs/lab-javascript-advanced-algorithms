@@ -1,4 +1,6 @@
-
+h1, h2 {
+  text-align: center;
+}
 
 .container input{
   width: 20rem;
@@ -9,10 +11,19 @@
   width: 20rem;
   height: 3rem;
   display: block;
-  margin-top: 1rem;
   color: white;
   font-size: 1.4rem;
   border-radius: 0.5rem;
+}
+
+#stack {
+  width: 20rem;
+  display: inline-block;
+
+}
+#queue {
+  width: 20rem;
+  float: right;
 }
 
 .btn-add {
@@ -115,6 +126,18 @@
   padding-top: 6px;
 }
 .container .occupied{
+  width: 20rem;
+  height: 5rem;
+  display: block;
+  margin-bottom: 2px;
+  color: white;
+  background-color: dodgerblue;
+  font-size: 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 6px;
+}
+.container .occupied-queue{
   width: 20rem;
   height: 5rem;
   display: block;
