@@ -8,13 +8,66 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <div class="container">
+    <div class="col-sm-4">
+      <div class="row">
+        <h1>Stack</h1>
+      </div>
+      <div class="row">
+        <input id="stack-input" type="text" class="form-control">
+      </div>
+      <div class="row">
+        <button id="stack-add" class="btn btn-primary btn-block">Add</button>
+      </div>
+      <div id="stack-take" class="row">
+        <button class="btn btn-danger btn-block">Take</button>
+      </div>
+      <div id="stack-9" class="row row-element"></div>
+      <div id="stack-8" class="row row-element"></div>
+      <div id="stack-7" class="row row-element"></div>
+      <div id="stack-6" class="row row-element"></div>
+      <div id="stack-5" class="row row-element"></div>
+      <div id="stack-4" class="row row-element"></div>
+      <div id="stack-3" class="row row-element"></div>
+      <div id="stack-2" class="row row-element"></div>
+      <div id="stack-1" class="row row-element"></div>
+      <div id="stack-0" class="row row-element"></div>
+    </div>
+    <div class="col-sm-4">
+        <div class="row">
+          <h1>Queue</h1>
+        </div>
+        <div class="row">
+          <input id="queue-input" type="text" class="form-control">
+        </div>
+        <div class="row">
+          <button id="queue-add" class="btn btn-primary btn-block">Add</button>
+        </div>
+        <div id="queue-take" class="row">
+          <button class="btn btn-danger btn-block">Take</button>
+        </div>
+        <div id="queue-9" class="row row-element"></div>
+        <div id="queue-8" class="row row-element"></div>
+        <div id="queue-7" class="row row-element"></div>
+        <div id="queue-6" class="row row-element"></div>
+        <div id="queue-5" class="row row-element"></div>
+        <div id="queue-4" class="row row-element"></div>
+        <div id="queue-3" class="row row-element"></div>
+        <div id="queue-2" class="row row-element"></div>
+        <div id="queue-1" class="row row-element"></div>
+        <div id="queue-0" class="row row-element"></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row">
+          <h3 id="pop-output"></h3>
+        </div>
+      </div>
+  </div>
 
-  </section>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>

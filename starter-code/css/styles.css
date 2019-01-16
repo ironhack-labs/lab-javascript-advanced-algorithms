@@ -1,0 +1,30 @@
+.row {
+  margin: 10px 0;
+}
+
+.row-element {
+  background-color: lightgray;
+  height: 45px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 8px;
+  font-family: monospace;
+}
+
+.row-filled {
+  background-color: blue;
+  color: white;
+  border: darkblue 4px solid;
+}
+
+.row-element-error {
+  background-color: lightcoral;
+  border: darkred 4px solid;
+  color: darkred;
+}
+
+h1 {
+  font-size: 30px;
+}
+
