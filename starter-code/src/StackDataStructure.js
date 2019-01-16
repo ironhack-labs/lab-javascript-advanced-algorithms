@@ -1,6 +1,6 @@
 function StackDataStructure () {
     this.stackControl = [];
-    this.MAX_SIZE = 0;
+    this.MAX_SIZE = 10;
 
     this.isEmpty = function(){
         if (this.stackControl.length == 0){
@@ -11,16 +11,16 @@ function StackDataStructure () {
     }
 
     this.canPush = function(){
-        if (this.MAX_SIZE > this.stackControl.length){
-            return false;
+        if (this.MAX_SIZE != this.stackControl.length){
+            return true;
         }
 
-        return true;
+        return false;
     }
 
     this.push = function(num){
 
-        if (this.MAX_SIZE > this.stackControl.length){
+        if (this.MAX_SIZE == this.stackControl.length){
             return 'Stack Overflow';
        
         } else {

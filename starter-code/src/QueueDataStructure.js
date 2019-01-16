@@ -1,6 +1,6 @@
 function QueueDataStructure () {
     this.queueControl = [];
-    this.MAX_SIZE = 0;
+    this.MAX_SIZE = 10;
 
     this.isEmpty = function (){
         if (this.queueControl.length == 0){
@@ -11,7 +11,7 @@ function QueueDataStructure () {
     };
 
     this.canEnqueue = function (){
-        if (this.MAX_SIZE > this.queueControl.length){
+        if (this.MAX_SIZE == this.queueControl.length){
             return false;
         }
 
@@ -21,7 +21,7 @@ function QueueDataStructure () {
 
     this.enqueue = function (num){
         
-        if (this.MAX_SIZE > this.queueControl.length){
+        if (this.MAX_SIZE == this.queueControl.length){
             return 'Queue Overflow';
         } else {
             this.queueControl.unshift(num);
