@@ -7,39 +7,39 @@ describe("Stack", function() {
 
   describe ("Stack properties", function () {
     it ("Should has an array to add the elements to the stack", function () {
-      expect(Array.isArray(stack.stackControl)).toBe(true);
+      expect(Array.isArray(stack.stackControl)).toBe(true); //done
     });
 
     it ("Should has a max number of items to avoid the stack overflow", function () {
-      expect(typeof(stack.MAX_SIZE)).toBe('number');
+      expect(typeof(stack.MAX_SIZE)).toBe('number'); //done
     });
   });
 
   describe ("Stack methods", function () {
     it ("Should has a method to check if the current stack is empty", function () {
-      expect(typeof(stack.isEmpty)).toBe('function');
+      expect(typeof(stack.isEmpty)).toBe('function'); //done
     });
 
     it ("Should has a method to check if we can push elements into the stack", function () {
-      expect(typeof(stack.canPush)).toBe('function');
+      expect(typeof(stack.canPush)).toBe('function'); //done
     });
 
     it ("Should has a method to push elements into the stack", function () {
-      expect(typeof(stack.push)).toBe('function');
+      expect(typeof(stack.push)).toBe('function'); //done
     });
 
     it ("Should has a method to take elements from the stack", function () {
-      expect(typeof(stack.pop)).toBe('function');
+      expect(typeof(stack.pop)).toBe('function'); //done
     });
   });
 
   describe ("Stack methods default values", function () {
     it ("Should has an empty stack", function () {
-      expect(stack.isEmpty()).toBe(true);
+      expect(stack.isEmpty()).toBe(true); //done
     });
 
     it ("Should be able to add a new element in the stack", function () {
-      expect(stack.canPush()).toBe(true);
+      expect(stack.canPush()).toBe(true); //done
     });
   });
 
@@ -47,49 +47,49 @@ describe("Stack", function() {
     it ("Should add the indicated element to the stack", function () {
       stack.push(19);
 
-      expect(stack.stackControl.length).toBe(1);
+      expect(stack.stackControl.length).toBe(1); //done
     });
 
     it ("Should return that stack is not empty when adding an element", function () {
       stack.push(19);
 
-      expect(stack.isEmpty()).toBe(false);
+      expect(stack.isEmpty()).toBe(false); //done
     });
 
     it ("Should return the stack when an element is inserted", function () {
-      expect(stack.push(19)).toEqual([19]);
+      expect(stack.push(19)).toEqual([19]); //done
     });
 
     it ("Should insert the elements in the received order", function () {
       stack.push(19);
       stack.push(88);
 
-      expect(stack.stackControl).toEqual([19, 88]);
+      expect(stack.stackControl).toEqual([19, 88]); //done
     });
 
     it ("Should return 'Stack Overflow' if the stack is full", function () {
       stack.MAX_SIZE = 1;
       stack.push(19);
 
-      expect(stack.push(88)).toEqual("Stack Overflow");
+      expect(stack.push(88)).toEqual("Stack Overflow"); //done
     });
 
     it ("Should return false if the stack is full", function () {
       stack.MAX_SIZE = 1;
       stack.push(19);
 
-      expect(stack.canPush()).toBe(false);
+      expect(stack.canPush()).toBe(false); //done
     });
 
     it ("Should return the last element inserted in the stack", function () {
       stack.push(19);
       stack.push(88);
 
-      expect(stack.pop()).toBe(88);
+      expect(stack.pop()).toBe(88); //done
     });
 
     it ("Should return 'Stack Underflow' if there are no elements in the stack", function () {
-      expect(stack.pop()).toBe('Stack Underflow');
+      expect(stack.pop()).toBe('Stack Underflow'); //done
     });
   });
 });
@@ -103,29 +103,29 @@ describe("Queues", function() {
 
   describe ("Queue properties", function () {
     it ("Should has an array to add the elements to the queue", function () {
-      expect(Array.isArray(queue.queueControl)).toBe(true);
+      expect(Array.isArray(queue.queueControl)).toBe(true); //done
     });
 
     it ("Should has a max number of items to avoid the queue overflow", function () {
-      expect(typeof(queue.MAX_SIZE)).toBe('number');
+      expect(typeof(queue.MAX_SIZE)).toBe('number'); //done
     });
   });
 
   describe ("Queue methods", function () {
     it ("Should has a method to check if the current queue is empty", function () {
-      expect(typeof(queue.isEmpty)).toBe('function');
+      expect(typeof(queue.isEmpty)).toBe('function'); //done
     });
 
     it ("Should has a method to check if we can enqueue an element into the queue", function () {
-      expect(typeof(queue.canEnqueue)).toBe('function');
+      expect(typeof(queue.canEnqueue)).toBe('function'); //done
     });
 
     it ("Should has a method to enqueue elements into the queue", function () {
-      expect(typeof(queue.enqueue)).toBe('function');
+      expect(typeof(queue.enqueue)).toBe('function'); //done
     });
 
     it ("Should has a method to dequeue from the queue", function () {
-      expect(typeof(queue.dequeue)).toBe('function');
+      expect(typeof(queue.dequeue)).toBe('function'); //done
     });
   });
 
