@@ -1,0 +1,36 @@
+.row-lg{
+  height: 40px;
+}
+
+.width-stack{
+  width: 40%;
+}
+
+.hide{
+  display: none;
+}
+.bgcolor-red{
+
+  background-color: #F3E2E2;
+}
+
+.queue-width{
+  width: 40%;
+  
+}
+
+.col{
+  height: 100px;
+}
+#take-element{
+  display: inline;
+}
+
+
+.blu-back{
+  background-color: #43A3E6;
+}
+
+.free, .freeQ{
+  background-color: rgb(207, 209, 211);
+}
