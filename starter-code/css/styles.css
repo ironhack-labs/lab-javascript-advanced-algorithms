@@ -1,0 +1,27 @@
+.buttonAdd {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.buttonTake {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.into {
+  width: 200px;
+}
+
+.box {
+  width: 200px;
+  height: 30px;
+  background-color: gray;
+  color: black;
+  border: 1px solid black;
+}
