@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+button {
+  width: 301px;
+  height: 40px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.stackCont {
+  display: flex;
+  align-content: flex-start;
+  width: 301px;
+  height: 60px;
+}
+
+h2 {
+  align-content: flex-start;
+}
+
+#add{
+  background-color: #3A85BF;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+}
+
+#take {
+  background-color: #DE5D59;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+
+}
+
+.box {
+  height: 40px;
+  width: 301px;
+  background-color: #EDEDED;
+  margin: 10px;
+}
+
+#param {
+  width: 301px;
+  height: 40px;
+  justify-content: center;
+  align-content: center;
+}
