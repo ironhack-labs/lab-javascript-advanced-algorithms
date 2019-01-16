@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
 
-  </section>
+<body>
+  <div>
+    <section class="container">
+      <h1>STACK</h1>
+
+      <input class="form-control form-control-lg" id="inputS" type="text" placeholder="Default input">
+      <button type="button" class="btn btn-primary btn-lg btnAdd">ADD</button>
+      <button type="button" class="btn btn-danger btn-lg btnTake">TAKE</button>
+      <ul class="list-group">
+        <li class="list-group-item" id="over"></li>
+        <li class="list-group-item" id="7"></li>
+        <li class="list-group-item" id="6"></li>
+        <li class="list-group-item" id="5"></li>
+        <li class="list-group-item" id="4"></li>
+        <li class="list-group-item" id="3"></li>
+        <li class="list-group-item" id="2"></li>
+        <li class="list-group-item" id="1"></li>
+        <li class="list-group-item" id="under"></li>
+      </ul>
+    </section>
+
+    <section class="container">
+      <h1>QUEUE</h1>
+
+      <input class="form-control form-control-lg" id="inputQ" type="text" placeholder="Default input">
+      <button type="button" class="btn btn-primary btn-lg btnAddQ">ADD</button>
+      <button type="button" class="btn btn-danger btn-lg btnTakeQ">TAKE</button>
+      <ul class="list-group" id="queue">
+        <li class="list-group-item" id="underQ"></li>
+        <li class="list-group-item" id="9"></li>
+        <li class="list-group-item" id="10"></li>
+        <li class="list-group-item" id="11"></li>
+        <li class="list-group-item" id="12"></li>
+        <li class="list-group-item" id="13"></li>
+        <li class="list-group-item" id="14"></li>
+        <li class="list-group-item" id="15"></li>
+        <li class="list-group-item" id="overQ"></li>
+      </ul>
+    </section>
+  </div>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

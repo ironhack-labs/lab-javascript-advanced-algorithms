@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 30% !important;
+}
+
+button {
+    width: 100% !important;
+    margin: 10px auto !important;
+}
+
+ul li {
+    height: 30px;
+    text-align: center;
+}
+
+#under {
+    color: white;
+}
+
+h1 {
+    font-weight: bolder;
+    text-align: center;
+}
+
+div {
+    display: flex;
+}
