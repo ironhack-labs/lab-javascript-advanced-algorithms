@@ -1,0 +1,41 @@
+input {
+  margin: 5px 0px;
+}
+button {
+  margin: 5px 0px;
+}
+aside {
+  margin-top: 58px;
+  line-height: 24px;
+  font-size: 2em;
+}
+
+#stack {
+  width: 50%;
+}
+
+.control {
+  margin-bottom: 30px;
+}
+.stack-item {
+  height: 50px;
+  background-color: #ddd;
+  margin: 1px 0px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.2rem;
+}
+.filled {
+  background-color: #007bff;
+  color: #fff;
+
+}
+.flow {
+  background-color: rgb(253, 219, 219);
+  /* border-color: #dc3545; */
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+.again {
+  background-color: #df6e79;
+}
