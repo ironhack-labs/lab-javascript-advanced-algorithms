@@ -1,0 +1,22 @@
+.tamaño{
+    width: 200px;
+    height: 50px;
+    background: grey;
+    border: 1px solid black;
+}
+.selected{
+    width: 200px;
+    height: 50px;
+    background: green;
+    border: 1px solid black;
+}
+.add{
+    width: 200px;
+    height: 50px;
+    background: green;
+}
+.pop{
+    width: 200px;
+    height: 50px;
+    background: red;
+}
