@@ -1,0 +1,65 @@
+h1 {
+    margin: 10px 20px;
+}
+.container{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.last-element {
+    height: 50px;
+    margin: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #de5e59;
+}
+.stack {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.stack input {
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin: 5px 0;
+}
+.btn {
+    border: 1px solid;
+    border-radius: 3px;
+    height: 40px;
+    margin: 5px 0;
+    color: white;
+    font-weight: bold;
+}
+.btn-add {
+    border-color:#3b85bf;
+    background-color: #3b85bf;
+    margin: 5px 0;
+}
+.btn-take {
+    border-color:#de5e59;
+    background-color: #de5e59;
+    margin: 5px 0;
+}
+.elements {
+    margin-top: 10px;
+}
+.item {
+    height: 40px;
+    line-height: 40px;
+    margin: 1px 0;
+    text-align: center;
+    color: black;
+}
+.empty {
+    background-color: #ededed;
+}
+.full {
+    background-color: #1d95f0;
+}
+.overflow, .underflow{
+    color: red;
+    background-color: rgb(245, 206, 206);
+    margin: 0;
+}
