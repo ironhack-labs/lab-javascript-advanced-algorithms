@@ -168,7 +168,7 @@ getJasmineRequireObj().ConsoleReporter = function() {
         var failedExpectation = result.failedExpectations[i];
         printNewline();
         print(indent(failedExpectation.message, 2));
-        print(indent(failedExpectation.stack, 2));
+        print(indent(failedExpectation.queue, 2));
       }
 
       printNewline();

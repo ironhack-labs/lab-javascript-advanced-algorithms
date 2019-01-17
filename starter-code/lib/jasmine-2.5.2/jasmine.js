@@ -650,7 +650,7 @@ getJasmineRequireObj().Env = function(j$) {
         exceptionFormatter = new j$.ExceptionFormatter(),
         expectationResultFactory = function(attrs) {
           attrs.messageFormatter = exceptionFormatter.message;
-          attrs.stackFormatter = exceptionFormatter.stack;
+          attrs.queueFormatter = exceptionFormatter.queue;
 
           return buildExpectationResult(attrs);
         };
@@ -668,7 +668,7 @@ getJasmineRequireObj().Env = function(j$) {
     var maximumSpecCallbackDepth = 20;
     var currentSpecCallbackDepth = 0;
 
-    function clearStack(fn) {
+    function clearQueue(fn) {
       currentSpecCallbackDepth++;
       if (currentSpecCallbackDepth >= maximumSpecCallbackDepth) {
         currentSpecCallbackDepth = 0;
@@ -707,7 +707,7 @@ getJasmineRequireObj().Env = function(j$) {
 
     var queueRunnerFactory = function(options) {
       options.catchException = catchException;
-      options.clearStack = options.clearStack || clearStack;
+      options.clearQueue = options.clearQueue || clearQueue;
       options.timeout = {setTimeout: realSetTimeout, clearTimeout: realClearTimeout};
       options.fail = self.fail;
 
@@ -1496,8 +1496,8 @@ getJasmineRequireObj().ExceptionFormatter = function() {
       return message;
     };
 
-    this.stack = function(error) {
-      return error ? error.stack : null;
+    this.queue = function(error) {
+      return error ? error.queue : null;
     };
   }
 
@@ -1602,12 +1602,12 @@ getJasmineRequireObj().Expectation = function() {
 getJasmineRequireObj().buildExpectationResult = function() {
   function buildExpectationResult(options) {
     var messageFormatter = options.messageFormatter || function() {},
-      stackFormatter = options.stackFormatter || function() {};
+      queueFormatter = options.queueFormatter || function() {};
 
     var result = {
       matcherName: options.matcherName,
       message: message(),
-      stack: stack(),
+      queue: queue(),
       passed: options.passed
     };
 
@@ -1629,7 +1629,7 @@ getJasmineRequireObj().buildExpectationResult = function() {
       return '';
     }
 
-    function stack() {
+    function queue() {
       if (options.passed) {
         return '';
       }
@@ -1642,7 +1642,7 @@ getJasmineRequireObj().buildExpectationResult = function() {
           error = e;
         }
       }
-      return stackFormatter(error);
+      return queueFormatter(error);
     }
   }
 
@@ -1911,7 +1911,7 @@ getJasmineRequireObj().QueueRunner = function(j$) {
   function QueueRunner(attrs) {
     this.queueableFns = attrs.queueableFns || [];
     this.onComplete = attrs.onComplete || function() {};
-    this.clearStack = attrs.clearStack || function(fn) {fn();};
+    this.clearQueue = attrs.clearQueue || function(fn) {fn();};
     this.onException = attrs.onException || function() {};
     this.catchException = attrs.catchException || function() { return true; };
     this.userContext = attrs.userContext || {};
@@ -1942,7 +1942,7 @@ getJasmineRequireObj().QueueRunner = function(j$) {
     var runnerDone = iterativeIndex >= length;
 
     if (runnerDone) {
-      this.clearStack(this.onComplete);
+      this.clearQueue(this.onComplete);
     }
 
     function attemptSync(queueableFn) {
@@ -2787,21 +2787,21 @@ getJasmineRequireObj().matchersUtil = function(j$) {
       return eq(a, b, [], [], customTesters);
     },
 
-    contains: function(haystack, needle, customTesters) {
+    contains: function(hayqueue, needle, customTesters) {
       customTesters = customTesters || [];
 
-      if ((Object.prototype.toString.apply(haystack) === '[object Array]') ||
-        (!!haystack && !haystack.indexOf))
+      if ((Object.prototype.toString.apply(hayqueue) === '[object Array]') ||
+        (!!hayqueue && !hayqueue.indexOf))
       {
-        for (var i = 0; i < haystack.length; i++) {
-          if (eq(haystack[i], needle, [], [], customTesters)) {
+        for (var i = 0; i < hayqueue.length; i++) {
+          if (eq(hayqueue[i], needle, [], [], customTesters)) {
             return true;
           }
         }
         return false;
       }
 
-      return !!haystack && haystack.indexOf(needle) >= 0;
+      return !!hayqueue && hayqueue.indexOf(needle) >= 0;
     },
 
     buildFailureMessage: function() {
@@ -2853,7 +2853,7 @@ getJasmineRequireObj().matchersUtil = function(j$) {
 
   // Equality function lovingly adapted from isEqual in
   //   [Underscore](http://underscorejs.org)
-  function eq(a, b, aStack, bStack, customTesters) {
+  function eq(a, b, aQueue, bQueue, customTesters) {
     var result = true;
 
     var asymmetricResult = asymmetricMatch(a, b);
@@ -2928,15 +2928,15 @@ getJasmineRequireObj().matchersUtil = function(j$) {
 
     // Assume equality for cyclic structures. The algorithm for detecting cyclic
     // structures is adapted from ES 5.1 section 15.12.3, abstract operation `JO`.
-    var length = aStack.length;
+    var length = aQueue.length;
     while (length--) {
       // Linear search. Performance is inversely proportional to the number of
       // unique nested structures.
-      if (aStack[length] == a) { return bStack[length] == b; }
+      if (aQueue[length] == a) { return bQueue[length] == b; }
     }
-    // Add the first object to the stack of traversed objects.
-    aStack.push(a);
-    bStack.push(b);
+    // Add the first object to the queue of traversed objects.
+    aQueue.push(a);
+    bQueue.push(b);
     var size = 0;
     // Recursively compare objects and arrays.
     // Compare array lengths to determine if a deep comparison is necessary.
@@ -2947,7 +2947,7 @@ getJasmineRequireObj().matchersUtil = function(j$) {
       }
 
       while (size--) {
-        result = eq(a[size], b[size], aStack, bStack, customTesters);
+        result = eq(a[size], b[size], aQueue, bQueue, customTesters);
         if (!result) {
           return false;
         }
@@ -2973,15 +2973,15 @@ getJasmineRequireObj().matchersUtil = function(j$) {
     while (size--) {
       key = aKeys[size];
       // Deep compare each member
-      result = has(b, key) && eq(a[key], b[key], aStack, bStack, customTesters);
+      result = has(b, key) && eq(a[key], b[key], aQueue, bQueue, customTesters);
 
       if (!result) {
         return false;
       }
     }
-    // Remove the first object from the stack of traversed objects.
-    aStack.pop();
-    bStack.pop();
+    // Remove the first object from the queue of traversed objects.
+    aQueue.pop();
+    bQueue.pop();
 
     return result;
 

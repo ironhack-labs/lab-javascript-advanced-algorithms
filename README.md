@@ -15,7 +15,7 @@ In this exercise, you will be able to:
 
 A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a particular way to organize your data in the computer so it can be used efficiently. One or more [abstract data types](https://en.wikipedia.org/wiki/Abstract_data_type) can be implemented and they specify the operations that can be performed over a data structure.
 
-In this exercise we will implement two different abstract data types that are very common: `stacks` and `queues`. Let's see what both data structures to understand how they work.
+In this exercise we will implement two different abstract data types that are very common: `queues` and `queues`. Let's see what both data structures to understand how they work.
 
 ## Submission
 
@@ -33,15 +33,15 @@ In the Pull request name, add your name and last names separated by a dash "-"
 
 Create your Pull request with everything you need to run your game properly.
 
-### Stacks
+### Queues
 
- stack is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack. The only element that can be removed is the element that was at the top of the stack.
+ queue is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the queue. The only element that can be removed is the element that was at the top of the queue.
 
-This data structure is also called LIFO queue. LIFO stands for "last in, first out", meaning that the last element we put in the stack, is the first element that will go out.
+This data structure is also called LIFO queue. LIFO stands for "last in, first out", meaning that the last element we put in the queue, is the first element that will go out.
 
 ![Image](https://i.imgur.com/NcuoeUk.png)
 
-**Think about a stack as if it was a stack of books. You can put a book over the others, but you just can take the book on the top of the stack.**
+**Think about a queue as if it was a queue of books. You can put a book over the others, but you just can take the book on the top of the queue.**
 
 
 ### Queues
@@ -60,7 +60,7 @@ The process to add an element into queue is called **enqueue**, and the process 
 
 ### Introduction
 
-The goal of this exercise is to create a visual layout to show how stacks and queues work. We will do it by using advanced JavaScript concepts like closures, scope, context, method invocation...
+The goal of this exercise is to create a visual layout to show how queues and queues work. We will do it by using advanced JavaScript concepts like closures, scope, context, method invocation...
 
 We have created a set of tests to guide you through the abstract data types implementation. After implementing the JavaScript functionality, create a visual layout to show how each data structure works.
 
@@ -93,16 +93,16 @@ Go through this tests to build up your libraries with the specified functionalit
 
 ### First iteration
 
-The first abstract data type we are going to build is the `Stack`. You have to create the requested methods in the `/src/StackDataStructure.js` file.
+The first abstract data type we are going to build is the `queue`. You have to create the requested methods in the `/src/QueueDataStructure.js` file.
 
-Remember that `Stack` is a LIFO (Last-in First-out) structure. So you have to add the right methods to add elements to the structure, and it also should has the necessary methods to remove elements from it. When you take an element, it should be the last one we inserted.
+Remember that `queue` is a LIFO (Last-in First-out) structure. So you have to add the right methods to add elements to the structure, and it also should has the necessary methods to remove elements from it. When you take an element, it should be the last one we inserted.
 
-We should also be careful with Stack Overflow (yes, like the website), and Stack Underflow:
+We should also be careful with queue Overflow (yes, like the website), and queue Underflow:
 
-- Stack Overflow occurs when we try to add an element into an stack that is already full.
-- Stack Underflow occurs when we try to get an element from an empty stack.
+- queue Overflow occurs when we try to add an element into an queue that is already full.
+- queue Underflow occurs when we try to get an element from an empty queue.
 
-So we will also need to have two methods, one to check if we can add new elements to the stack (to avoid the stack overflow), and another one to check if we can take an element from the stack (to avoid the stack underflow).
+So we will also need to have two methods, one to check if we can add new elements to the queue (to avoid the queue overflow), and another one to check if we can take an element from the queue (to avoid the queue underflow).
 
 If you satisfy the set of tests, you will get a solution with all the necessary implementations :)
 
@@ -127,9 +127,9 @@ If you follow the set of tests, you will get a solution with all the necessary i
 
 ### Third iteration
 
-Once we have created all the functionality, let's create a visual representation to see how these stacks and queues work. You have to consider all the options we have coded!
+Once we have created all the functionality, let's create a visual representation to see how these queues and queues work. You have to consider all the options we have coded!
 
-Here we propose how we could visually represent the different steps of the stack structure.
+Here we propose how we could visually represent the different steps of the queue structure.
 
 #### Initial layout
 
@@ -143,16 +143,16 @@ Here we propose how we could visually represent the different steps of the stack
 
 ![](https://i.imgur.com/mVklHXR.png)
 
-#### Stack Overflow
+#### queue Overflow
 
 ![](https://i.imgur.com/oZnRXva.png)
 
-#### Stack Underflow
+#### queue Underflow
 
 ![](https://i.imgur.com/AiGT158.png)
 
 ## Extra Resources
 
 - [Data Structures](https://en.wikipedia.org/wiki/Data_structure)
-- [Stacks](http://www.studytonight.com/data-structures/stack-data-structure)
+- [Queues](http://www.studytonight.com/data-structures/queue-data-structure)
 - [Queues](http://www.studytonight.com/data-structures/queue-data-structure)
