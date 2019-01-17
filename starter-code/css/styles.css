@@ -1,11 +1,11 @@
-.container-biggest{
+.container-outside{
     display:flex;
     flex-direction: row;
     align-content: space-between;
     padding: 200px;
 }
 
-.container{
+.container-inside{
     box-sizing: border-box;
     height: 500px;
     width: 200px;
@@ -51,18 +51,17 @@
     background-color: green;
 }
 
-
-
-
-
-
-.container2{
+.container1{
     box-sizing: border-box;
     height: 500px;
     width: 200px;
     display: flex;
     flex-direction: row;
     
+}
+
+.container2{
+    display:flex;
 }
 
 .container3{
@@ -104,9 +103,6 @@
     background-color: green;
 }
 
-.container25{
-    display:flex;
-}
 
 h1{
     text-align:center;
