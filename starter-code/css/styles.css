@@ -1,0 +1,90 @@
+h1 {
+  text-align: center;
+}
+.mb-5 {
+  margin-bottom:5px
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.stack-element {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 2px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.stack-element-empty {
+  background-color: #ebebeb;
+}
+
+.stack-element-fill {
+  background-color: rgb(36, 182, 250);
+  color: #fff;
+}
+
+.stack-over-underflow {
+  background-color: rgba(255, 91, 91, 0.774);
+  color: #fff;
+}
+
+#pop-value {
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#shift-value {
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container-inline {
+  display: flex;
+  justify-content: space-around;
+}
+
+#queue {
+  display: flex;
+}
+
+.queue-element {
+  width: 60px;
+  height: 300px;
+  margin-right: 2px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+
+  writing-mode: vertical-lr;
+  text-orientation: upright
+}
+
+.queue-element-empty {
+  background-color: #ebebeb;
+}
+
+.queue-element-fill {
+  background-color: rgb(36, 182, 250);
+  color: #fff;
+}
+
+.queue-over-underflow {
+  background-color: rgba(255, 91, 91, 0.774);
+  color: #fff;
+}

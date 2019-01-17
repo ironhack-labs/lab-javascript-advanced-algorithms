@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="lib/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Abstract Data Types</h1>
 
-  </section>
+      <div class="container-inline">
+        <section class="stack-container">
+          <h2>Stack</h2>
+          <input
+            id="stack-input"
+            type="text"
+            class="form-control mb-5"
+            style="width: 300px"
+            placeholder="Add the element to the stack"
+            onfocus="this.value = ''"
+          />
+          <button
+            type="button"
+            id="btn-add"
+            class="btn btn-block btn-info text-uppercase"
+            style="width: 300px"
+          >
+            add
+          </button>
+          <button
+            type="button"
+            id="btn-take"
+            class="btn btn-block btn-danger text-uppercase mb-25"
+            style="width: 300px"
+          >
+            take
+          </button>
 
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
-</body>
+          <div id="stack"></div>
+          <div id="pop-value"></div>
+        </section>
+
+        <section class="queue-container">
+          <h2>Queue</h2>
+          <input
+            id="queue-input"
+            type="text"
+            class="form-control mb-5"
+            style="width: 300px"
+            placeholder="Add the element to the queue"
+            onfocus="this.value = ''"
+          />
+          <button
+            type="button"
+            id="btn-add-queue"
+            class="btn btn-block btn-info text-uppercase"
+            style="width: 300px"
+          >
+            add
+          </button>
+          <button
+            type="button"
+            id="btn-take-queue"
+            class="btn btn-block btn-danger text-uppercase mb-25"
+            style="width: 300px"
+          >
+            take
+          </button>
+          <div id="queue"></div>
+          <div id="shift-value"></div>
+        </section>
+      </div>
+    </section>
+
+    <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script>
+    <script src="js/stack.js"></script>
+    <script src="js/queue.js"></script>
+  </body>
 </html>
