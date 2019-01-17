@@ -1,0 +1,45 @@
+#headStack {
+  display: flex;
+  flex-direction: row;
+}
+
+#headQueue {
+  display: flex;
+  flex-direction: row;
+}
+
+#queueError {
+  color: red;
+}
+
+#stackError {
+  color: red;
+}
+
+.stack {
+  margin-bottom: 5px;
+}
+
+.stack-box {
+  width: 200px;
+  height: 30px;
+  border: 1px solid grey;
+  margin: 2px 0;
+}
+
+.queue {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+.queue-box {
+  height: 70px;
+  width: 30px;
+  border: 1px solid grey;
+  margin: 0px 2px;;
+}
+
+.checked {
+  background-color: black;
+}
