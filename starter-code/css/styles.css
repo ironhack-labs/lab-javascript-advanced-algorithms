@@ -1,0 +1,41 @@
+#add{
+  color:white;
+  width:100px;
+  height:50px;
+  background-color:blue;
+}
+
+#take{
+  color:white;
+  width:100px;
+  height:50px;
+  background-color:red;
+}
+
+#queueAdd{
+  color:white;
+  width:100px;
+  height:50px;
+  background-color:blue;
+}
+
+#queuetake{
+  color:white;
+  width:100px;
+  height:50px;
+  background-color:red;
+}
+
+
+.border{
+  border-radius: 8px;
+}
+
+.col{
+  background:grey;
+  width:200px;
+  height:50px;
+  margin:5px;
+  text-align: center;
+  padding:10px
+}
