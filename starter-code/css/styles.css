@@ -1,0 +1,44 @@
+.container{
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+}
+
+.btn{
+    width: 100%;
+}
+
+.btn-primary{
+    margin-bottom: 2%;
+}
+
+.btn-danger{
+    margin-bottom: 6%;
+}
+
+.stackItem, .queueItem{
+    text-align: center;
+    height: 40px;
+}
+
+.emptyItem{
+    background-color: rgb(240, 240, 240);
+    color: rgb(240, 240, 240);
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+.filledItem{
+    background-color: rgb(36, 24, 216);
+    color: rgb(240, 240, 240);
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+.hideflow{
+    color: white;
+}
+
+.fullflow{
+    color: black;
+}

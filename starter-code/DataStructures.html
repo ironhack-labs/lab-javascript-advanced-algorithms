@@ -8,10 +8,30 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
-
+  <!-- <h1>Abstract Data Types</h1> -->
+  <section class="container" id="stack">
+    <h2>Stack</h2>
+    <form>
+      <div class="form-group">
+        <input type="text/number" class="form-control" id="stackElement" aria-describedby="emailHelp" placeholder="Add an element to the stack">
+      </div>
+      <button type="button" class="btn btn-primary stack-add">ADD</button>
+      <br>
+      <button type="button" class="btn btn-danger stack-take">TAKE</button>
+    </form>
   </section>
+
+  <section class="container" id="queue">
+      <h2>Queue</h2>
+      <form>
+        <div class="form-group">
+          <input type="text/number" class="form-control" id="queueElement" aria-describedby="emailHelp" placeholder="Add an element to the queue">
+        </div>
+        <button type="button" class="btn btn-primary queue-add">ADD</button>
+        <br>
+        <button type="button" class="btn btn-danger queue-take">TAKE</button>
+      </form>
+    </section>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
