@@ -1,0 +1,17 @@
+.size{
+  width: 200px;
+  height: 50px;
+  background: red;
+}
+
+.selected{
+  width: 200px;
+  height: 50px;
+  background: black;
+}
+
+.unselected{
+  width: 200px;
+  height: 50px;
+  background: red;
+}
