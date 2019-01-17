@@ -1,0 +1,20 @@
+.card {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 2rem;
+}
+.active {
+    color: #212529;
+    background-color: #86befb;
+    border-color: #f8f9fa;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 2rem;
+}

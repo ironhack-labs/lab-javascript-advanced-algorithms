@@ -3,16 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
+  <section class="container-fluid text-center mt-3">
     <h1>Abstract Data Types</h1>
-
+  <div class="container mt-5">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <h2>Stack</h2>
+          <div class="d-flex flex-column stack">
+            <input class="form-control mb-2" type="text" name="cards" id="stack-item" placeholder="Add the element to the stack...">
+            <button class="btn btn-primary mb-2">ADD</button>
+            <button class="btn btn-danger mb-2">TAKE</button>
+            <div id="stack-cards" class="d-flex flex-column mb-2"></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h2>Queue</h2>
+          <div class="d-flex flex-column queue">
+            <input class="form-control mb-2" type="text" name="cards" id="queue-item" placeholder="Add the element to the queue...">
+            <button class="btn btn-primary mb-2">ADD</button>
+            <button class="btn btn-danger mb-2">TAKE</button>
+            <div id="queue-cards" class="d-flex flex-column mb-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
