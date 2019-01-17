@@ -3,14 +3,27 @@ let queue = new QueueDataStructure();
 $("#queueItem").click(function() {
   if(queue.canEnqueue()) {
     queue.enqueue("item");
-    let currentItem = queue.queueControl.length;
-    console.log("Current Item: " + currentItem);
-    $(".queue-box:nth-child("+(currentItem)+")").addClass("checked");
-    $("")
-  
-  
+
+    if ( $(".queue-box").hasClass("checked") ) {
+      $(".queue .checked:last").next().addClass("checked");
+    } else {
+      $(".queue-box:first").addClass("checked");
+    }
+
+    if ( $(".queue-box:last").hasClass("checked") ) {
+     setTimeout(function(){
+      let numOfElement = $(".queue-box + .checked").length;
+      $(".queue-box + .checked").removeClass("checked");
+      $("#queueError").text("...moved back");
+      setTimeout(function(){
+        $("#queueError").text("");
+      },1000);
+      $(".queue-box:lt("+numOfElement+")").addClass("checked");
+     },700);
+    }
+
   } else {
-      $("#queueError").text("  Overflow");
+      $("#queueError").text("-Overflow");
       setTimeout(function(){
         $("#queueError").text("");
       },1500);
@@ -19,13 +32,10 @@ $("#queueItem").click(function() {
 
 $("#dequeueItem").click(function() {
   if(!queue.isEmpty()) {
-    let currentItem = queue.queueControl.length-1;
     queue.dequeue();
-    console.log("Current Item: " + currentItem);
     $(".queue .checked:first").removeClass("checked");
-    $(".queue .checked:last").addClass("checked");
   } else {
-      $("#queueError").text("  Underflow");
+      $("#queueError").text("-Underflow");
       setTimeout(function(){
         $("#queueError").text("");
       },1500);
