@@ -1,0 +1,41 @@
+.form-control{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    outline: none;
+}
+
+.list-group{
+    width: 30%;
+}
+
+.stack{
+    margin: 0 auto;
+}
+
+.btn.btn-primary{
+    width: 160px;
+    height: 40px;
+    outline: none;
+    
+}
+
+.btn.btn-primary-red{
+    width: 160px;
+    height: 40px;
+    color: white;
+    background-color: red;  
+    text-align: center;
+}
+
+.list-group-item {
+    width: 320px;
+    height: 32px;
+    border: 3px solid rgba(200,212,200,0.8);
+}
+
+#input-text{
+    width: 300px;
+    height: 32px;
+
+}
