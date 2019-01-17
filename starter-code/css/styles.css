@@ -1,0 +1,85 @@
+h1,
+h2 {
+    text-align: center;
+}
+
+.flex-parent {
+    border: 1px dashed black;
+    width: 100%;
+}
+
+.button-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.button-panel>button {
+    width: 40%;
+    margin-top: 10px;    
+}
+
+.box-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.box-header>input {
+    width: 86%;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.cell {
+    border-radius: 10%;
+    margin: none;
+}
+
+.horizontal {
+    height: 100px;
+    width: 200px;
+}
+
+.vertical {
+    height: 200px;
+    width: 100px;
+}
+.empty {
+    border: 5px solid lightseagreen;
+    background-color: lightgray;
+}
+
+.full {
+    border: 5px solid blueviolet;
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5;
+    font-weight: 500;
+}
+
+.alert {
+    border: 5px solid darkred;
+    background-color: red;
+    color: yellow;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5;
+    font-weight: 500;
+}
+
+#queue-column {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#stack-column {
+    margin: auto;
+}
