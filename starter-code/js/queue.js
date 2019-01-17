@@ -10,31 +10,34 @@ for(var i = 0; i < queue.MAX_SIZE; i++){
   queueDiv.innerHTML+= newElement.outerHTML
 }
 
-$(".add").click(function(){
-  if(queue.canPush() == true){
-    queue.push($("#queue-input").val())
-    $(".element").eq(queue.MAX_SIZE - queue.queueControl.length).html($("#queue-input").val())
-    $(".element").eq(queue.MAX_SIZE - queue.queueControl.length).addClass("has-content")
+$(".queue-controls .add").click(function(){
+  if(queue.canEnqueue() == true){
+    queue.enqueue($("#queue-input").val())
+    $("#queue .element").eq(queue.MAX_SIZE - queue.queueControl.length).html($("#queue-input").val())
+    $("#queue .element").eq(queue.MAX_SIZE - queue.queueControl.length).addClass("has-content")
     $("#queue-input").val("")
-    if($(".element").eq(queue.MAX_SIZE - 1).hasClass("overflow")){
-      $(".element").eq(queue.MAX_SIZE - 1).removeClass("overflow")
+    if($("#queue .element").eq(queue.MAX_SIZE - 1).hasClass("overflow")){
+      $("#queue .element").eq(queue.MAX_SIZE - 1).removeClass("overflow")
     }
   }else{
-    $(".element").eq(0).html("queue Overflow")
-    $(".element").eq(0).addClass("overflow")
+    $("#queue .element").eq(0).html("queue Overflow")
+    $("#queue .element").eq(0).addClass("overflow")
   }
 })
 
-$(".take").click(function(){
+$(".queue-controls .take").click(function(){
   if(queue.isEmpty() == false){
-    $(".element").eq(queue.MAX_SIZE - queue.queueControl.length).html("")
-    $(".element").eq(queue.MAX_SIZE - queue.queueControl.length).removeClass("has-content")
-    if($(".element").eq(0).hasClass("overflow")){
-      $(".element").eq(0).removeClass("overflow")
+    $("#queue .element").eq(queue.MAX_SIZE - queue.queueControl.length).html("")
+    $("#queue .element").eq(queue.MAX_SIZE - queue.queueControl.length).removeClass("has-content")
+    queue.dequeue()
+    queue.queueControl.forEach(function(element, index){
+      $("#queue .element").eq(queue.queueControl.length).html($(element))
+    })
+    if($("#queue .element").eq(0).hasClass("overflow")){
+      $("#queue .element").eq(0).removeClass("overflow")
     }
-    queue.pop()
   }else{
-    $(".element").eq(queue.MAX_SIZE - 1).html("queue Underflow")
-    $(".element").eq(queue.MAX_SIZE - 1).addClass("overflow")
+    $("#queue .element").eq(queue.MAX_SIZE - 1).html("queue Underflow")
+    $("#queue .element").eq(queue.MAX_SIZE - 1).addClass("overflow")
   }
 })

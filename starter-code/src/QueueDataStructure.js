@@ -6,7 +6,7 @@ function QueueDataStructure () {
     else return false
   }
   this.canEnqueue = function(){
-    if(this.MAX_SIZE > this.queueControl.length ) return false
+    if(this.MAX_SIZE === this.queueControl.length ) return false
     else return true
   }
 
