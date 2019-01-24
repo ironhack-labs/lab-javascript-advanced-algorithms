@@ -9,12 +9,7 @@ let stackUnder = document.getElementById('error-stack-under')
 
 addStack.addEventListener('click', e=>{
 if(stack.canPush()) {
-  let guardar = stack.push(stackElement.value)
-  for(i = 0; i<stack.stackControl.length; i++) {
-    stackList[stack.MAX_SIZE - stack.stackControl.length].innerText = guardar[i]
-    stackList[stack.MAX_SIZE - stack.stackControl.length].setAttribute('class','queue-item stack-element')
-    stackUnder.setAttribute('class','error-stack')
-  }
+  stack.push(stackElement.value)
 } else {
     stackOver.setAttribute('class','display error-stack')
   }
@@ -23,12 +18,7 @@ if(stack.canPush()) {
 
 deleteStack.addEventListener('click', e=>{
   if(!stack.isEmpty()){
-  stackList[stack.MAX_SIZE - stack.stackControl.length].innerText = ''
-  stackList[stack.MAX_SIZE - stack.stackControl.length].setAttribute('class','stack-element')
-  let stackDlt = document.createElement('li')
-  stackDlt.innerText = stack.pop()
-  removedStack.appendChild(stackDlt)
-  stackOver.setAttribute('class','error-stack')
+  stack.pop()
   } else {
     stackUnder.setAttribute('class','display error-stack')
   }
