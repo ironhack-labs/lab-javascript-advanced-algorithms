@@ -11,7 +11,48 @@
   <section class="container">
     <h1>Abstract Data Types</h1>
 
-  </section>
+      <div class="global">
+        <div id="stack-div" class="stack">
+          <input id="stackelement" class="form-control" type="text" name="" value="" placeholder="Add the element to the stack">
+          <button id="add-stack" type="button" class="btn btn-primary btn-block" name="button">STACK</button>
+          <button id="delete-stack" type="button" class="btn btn-danger btn-block" name="button">REMOVE</button>
+          <div class="error-stack over" id="over-stack">Stack Overflow</div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="stack-element"></div>
+          <div class="error-stack under" id="under-stack">Stack Underflow</div>
+        </div>
+        <div id="removed_stack"><strong></strong></div>
+        <div id="queue-container">
+          <input id="queue-input" class="form-control" type="text" name="" value="" placeholder="Add the element to the queue">
+          <button id="add-queue" class="btn btn-primary btn-block" type="button" name="button">QUEUE</button>
+          <button id="delete-queue" class="btn btn-danger btn-block" type="button" name="button">REMOVE</button>
+          <div class="error-queue over" id="over-queue">Queue Overflow</div>
+          <div class="queue" id="queue-div">
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+          </div>
+          <div class="error-queue under" id="under-queue">Queue Underflow</div>
+        </div>
+        <div id="removed_queue"><strong></strong></div>
+      </div>
+    </section>
+
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
