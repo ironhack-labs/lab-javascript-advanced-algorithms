@@ -1,49 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 
+#col {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+}
 
-
-body {
-
-
+#row {
+	display: flex;
+	flex-direction: row;
+	width: 400px;
 }
 
 #inputElement {
-    display: block;
-    width: 300px;
-    height: 50px;
-
+	display: block;
+	width: 250px;
+	height: 50px;
 }
 
 #add {
-
-    display: block;
-    width: 300px;
-    height: 50px;
-
+	display: block;
+	width: 300px;
+	height: 50px;
 }
 
 #take {
-    display: block;
-    width: 300px;
-    height: 50px;
-
+	display: block;
+	width: 300px;
+	height: 50px;
 }
 
 #containerLifo {
-
-    width: 300px;
-    
-
+	width: 300px;
 }
 
 .element {
-
-    width: 300px;
-    height: 50px;
-    background:#A6ACAF;
-    margin: auto;
-    border: gray;
-    margin-bottom: 3px;
-
+	width: 250px;
+	height: 50px;
+	background: #a6acaf;
+	text-align: center;
+	border: gray;
+	margin-bottom: 3px;
+	padding-top: 20px;
 }
 
+.elementIn {
+	width: 250px;
+	height: 50px;
+	background: skyblue;
+	text-align: center;
+	border: gray;
+	margin-bottom: 3px;
+	padding-top: 20px;
+}
 
+#elementToken {
+	width: 100px;
+	height: 50px;
+	background: tan;
+	text-align: center;
+	border: palegreen;
+	margin-bottom: 3px;
+	padding-top: 20px;
+}
