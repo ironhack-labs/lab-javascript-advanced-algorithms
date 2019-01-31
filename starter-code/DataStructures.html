@@ -8,30 +8,48 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
+  <section class="container text-center">
     <h1>Abstract Data Types</h1>
+    <input class="form-control" id="input" type="text" name="" value="">
+    <button type="button" id="add-btn" class="btn btn-primary center-block">Add</button>
+    <button type="button" id="remove-btn" class="btn btn-danger center-block">Remove</button>
     <ul class="list-container">
-      <li class="list-group-item text-white disabled ">Cras 1 justo odio</li>
-      <li class="list-group-item text-white disabled ">Cras justo odio</li>
-      <li class="list-group-item text-white disabled ">Cras justo odio</li>
-      <li class="list-group-item text-white disabled ">Cras justo odio</li>
-
+      <li class="list-group-item text-white disabled ">1</li>
+      <li class="list-group-item text-white disabled ">2</li>
+      <li class="list-group-item text-white disabled ">3</li>
+      <li class="list-group-item text-white disabled ">4</li>
     </ul>
   </section>
 
   <script type="text/javascript">
+  let addBtn = document.getElementById('add-btn')
+  let rmBtn = document.getElementById('remove-btn')
+  let liElements = document.getElementsByClassName('list-group-item')
+  let txtValue = document.getElementById('input').value
 
-  document.addEventListener('click', function(){
-      $("<ul>", {
-      class: 'list-group-item disabled',
-      text: 'Example Page'
-  }).prependTo(".list-container");
+  addBtn.addEventListener('click', function(){
+    var liLen = updateLi()
+    if(liLen < 6){
+        $("<ul>", {
+        class: 'list-group-item disabled',
+        text: 'xx'
+    }).prependTo(".list-container");
+       liLen = updateLi()
+    }else{
+      alert('bish is full get out')
+    }
+  })
+  rmBtn.addEventListener('click', function(){
+    $(liElements[0]).remove()
   })
 
 function updateLi(){
-  let numLi = $('.list-group-item').length
+  return $('.list-group-item').length
   console.log(numLi)
 }
+
+rm
+
 
   </script>
 
