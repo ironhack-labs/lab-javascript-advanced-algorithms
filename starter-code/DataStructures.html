@@ -3,16 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- BootStrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
+  <section class="container text-center">
     <h1>Abstract Data Types</h1>
 
+    <div class="row justify-content-around">
+      <div id="stack" class="col-lg-5">
+        <h1>Stack Visualization</h1>
+        <input id="value-stack" class="my-2 rounded p-2" type="text" placeholder="Number to add to stack">
+        <button id="push-stack" class="btn btn-info my-2">Push</button>
+        <button id="pop-stack" class="btn btn-danger my-2">Pop</button>
+      </div>
+      <div id="queue" class="col-lg-5">
+        <h1>Queue Visualization</h1>
+        <input id="value-queue" class="my-2 rounded p-2" type="text" placeholder="Number to add to queue">
+        <button id="enqueue-queue" class="btn btn-info my-2">Enqueue</button>
+        <button id="dequeue-queue" class="btn btn-danger my-2">Dequeue</button>
+      </div>
+    </div>
   </section>
 
+  <!-- BootStrap JS Files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+  <!-- Custom JS Files -->
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
