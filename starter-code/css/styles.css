@@ -1,0 +1,79 @@
+button{
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.addButton {
+  background-color: blue;
+  color: white;
+}
+
+.takeButton {
+  background-color: red;
+  color: white;
+}
+
+div {
+  height: 30px;
+  width: 300px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+
+.box{
+  height: 50px;
+
+}
+
+.box2{
+  height: 50px; 
+  background-color: white;
+  color:white;
+}
+
+.box3{
+  height: 50px; 
+  background-color: white;
+  color: white;
+}
+
+
+input{
+  width: 300px;
+  height: 30px;
+  border-radius: 7px;
+  border-color: aqua;
+}
+
+.overUnder1{
+  font-size: 30px;
+  border: 2px;
+  border-style: solid;
+  border-color:red;
+  background-color: lightcoral;
+  color: red;
+  padding: 2px;
+}
+
+/* .overUnder2{
+  font-size: 20px;
+  border: 2px;
+  border-style: solid;
+  border-color:red;
+  background-color: lightcoral;
+  color: red;
+} */
+
+.none{
+  background-color: gray;
+  color: gray;
+}
+
+.stack{
+  background-color:lightblue;
+  color: white;
+  font-size: 24px;
+  padding: 6px;
+}
