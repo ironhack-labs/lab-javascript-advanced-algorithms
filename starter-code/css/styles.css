@@ -1,0 +1,118 @@
+/* html, body, div, span, applet, object, iframe, */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, input, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1.15;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    font-size: 16pt;
+}
+
+.container {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    font-size: .8rem;
+    padding: 1rem;
+    border: 1px solid blue;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.btn {
+    color: white;
+    font-size: 1rem;
+    padding: .5rem;
+    width: 100%;
+    border-radius: .5rem;
+    margin-bottom: .7rem;
+}
+
+.btn-add {
+    background-color: blue;
+}
+
+.btn-take {
+    background-color: red;
+}
+
+#stack {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.index {
+    width: 100%;
+    background-color: #ccc;
+    height: 2.4rem;
+    border-radius: .3rem;
+    margin-bottom: .1rem;
+    text-align: center;
+}
+
+.overflow, .underflow {
+    position: relative;
+    color: red;
+    border: 1px solid red;
+    background-color: #f1e3e2;
+}
+
+.overflow::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: 'Stack Overflow';
+}
+
+.underflow::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: 'Stack Underflow';
+}
