@@ -49,4 +49,3 @@ class StackDataStructure {
 let arr = new StackDataStructure
 arr.push(3)
 arr.push(5)
-console.log(arr.stackControl.pop());

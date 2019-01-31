@@ -10,8 +10,30 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    <ul class="list-container">
+      <li class="list-group-item text-white disabled ">Cras 1 justo odio</li>
+      <li class="list-group-item text-white disabled ">Cras justo odio</li>
+      <li class="list-group-item text-white disabled ">Cras justo odio</li>
+      <li class="list-group-item text-white disabled ">Cras justo odio</li>
 
+    </ul>
   </section>
+
+  <script type="text/javascript">
+
+  document.addEventListener('click', function(){
+      $("<ul>", {
+      class: 'list-group-item disabled',
+      text: 'Example Page'
+  }).prependTo(".list-container");
+  })
+
+function updateLi(){
+  let numLi = $('.list-group-item').length
+  console.log(numLi)
+}
+
+  </script>
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
