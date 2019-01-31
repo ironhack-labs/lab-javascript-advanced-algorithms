@@ -7,7 +7,12 @@ function take() {
         return void $('#index-1').addClass('underflow');
     }
 
-    $(`#index-${stack.stackControl.length}`).text('');
+    let element = $(`#index-${stack.stackControl.length}`);
+
+    element.text('');
+
+    if (element.hasClass('overflow')) 
+        element.toggleClass('overflow');
 
     stack.stackControl.pop();
 }
@@ -16,12 +21,15 @@ function take() {
 function add() {
 
     let value = $('#input')[0].value;
+    let element = $(`#index-${stack.stackControl.length}`);
 
     if (stack.push(value) === 'Stack Overflow') {
-        $(`#index-${stack.stackControl.length}`).text('');
-        return void $('#index-8').addClass('overflow');
+        element.text('');
+        return void element.addClass('overflow');
     };
 
-    
-    $(`#index-${stack.stackControl.length}`).text(value);
+    if (element.hasClass('underflow')) 
+        element.toggleClass('underflow');
+
+    element.text(value);
 }
