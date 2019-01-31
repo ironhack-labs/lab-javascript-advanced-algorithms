@@ -1,0 +1,29 @@
+body {
+  margin-top: 30px;
+}
+
+
+.container {
+  width: 300px;
+  margin-left: 50px;
+}
+
+.btn {
+  margin-top: 12px;
+  border: none;
+}
+
+.btn-primary {
+  background: rgb(33, 197, 11)
+}
+
+.btn-secondary {
+  background: rgb(252, 33, 33)
+}
+.list-group {
+  margin-top: 12px;
+}
+
+.list-group-item {
+  min-height: 45px;
+}
