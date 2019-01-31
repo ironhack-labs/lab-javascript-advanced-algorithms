@@ -21,9 +21,12 @@ function take() {
 function add() {
 
     let value = $('#input')[0].value;
+
+    let response = stack.push(value);
+
     let element = $(`#index-${stack.stackControl.length}`);
 
-    if (stack.push(value) === 'Stack Overflow') {
+    if (response === 'Stack Overflow') {
         element.text('');
         return void element.addClass('overflow');
     };
