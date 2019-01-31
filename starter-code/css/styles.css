@@ -25,5 +25,15 @@ body {
 }
 
 .list-group-item {
-  min-height: 45px;
+  min-height: 50px;
+
+}
+
+.overflow {
+  background: rgb(247, 166, 166);
+  border: 2px solid rgb(243, 27, 27)
+}
+
+.full {
+  background: rgb(1, 154, 192)
 }
