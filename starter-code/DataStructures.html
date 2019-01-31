@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
+  <section class="container text-center text-align-middle">
     <h1>Abstract Data Types</h1>
-
+    <div class="row contain-row">
     <div class="stack-div col-lg-5 col-md-6 col-sm-12">
-      <div class="row"> <h2>STACK</h2></div>
-      <div class="row"> <input type="text" class="stack-input" placeholder="Add the element to the stack" name="input-value"> </div>
-      <div class="row"> <button type="button" class="add-btn">ADD</button> </div>
-      <div class="row"> <button type="button" class="take-btn">TAKE</button> </div>
+       <h2>STACK</h2>
+      <input type="text" class="stack-input" placeholder="Add the element to the stack" name="input-value"> 
+      <button type="button" class="add-btn" id="stack-add">ADD</button>
+      <button type="button" class="take-btn  stack-take" id="stack-btn">TAKE</button>
 
     </div>
 
     <div class="stack-div col-lg-5 col-md-6 col-sm-12">
-        <div class="row"> <h2>QUEUE</h2></div>
-        <div class="row"> <input type="text" class="stack-input" placeholder="Add the element to the queue" name="input-value"> </div>
-        <div class="row"> <button type="button" class="add-btn">ADD</button> </div>
-        <div class="row"> <button type="button" class="take-btn">TAKE</button> </div>
+         <h2>QUEUE</h2>
+        <input type="text" class="queue-input" placeholder="Add the element to the queue" name="input-value" value=""> 
+        <button type="button" class="add-btn" id="q-add">ADD</button> 
+        <button type="button" class="take-btn  q-take" id="queue-btn">TAKE</button> 
   
       </div>
+    </div>
 
   </section>
 
