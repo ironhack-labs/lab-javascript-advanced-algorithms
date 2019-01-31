@@ -9,9 +9,9 @@ class StackDataStructure {
 
   pop(){
     if(this.isEmpty()){
-      this.stackControl.pop()
+      return 'Stack Underflow'
     }else{
-      console.log('Undeflow');
+      this.stackControl.pop()
     }
   }
 
@@ -19,13 +19,18 @@ class StackDataStructure {
     if(this.canPush()){
       this.stackControl.push(args)
       return this.stackControl
+
     }else{
       return 'Stack Overflow'
     }
   }
 
   isEmpty(){
-        return (this.stackControl.length<1) ? true:false
+         if(this.stackControl.length<1){
+         return true
+       }else{
+         return false
+       }
   }
   canPush(){
     if (this.stackControl.length >= this.MAX_SIZE){
