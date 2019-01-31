@@ -6,19 +6,19 @@ class QueueDataStructure {
   }
 
   enqueue(arg){
-    if(this.canQueue()){
+    if(this.canEnqueue()){
       this.queueControl.unshift(arg)
       return this.queueControl
     }else {
-      return 'Stack Overflow'
+      return 'Queue Overflow'
     }
 
   }
   dequeue(){
     if(this.isEmpty()){
-      return 'Stack Undeflow'
+      return 'Queue Underflow'
     }else{
-      return this.queueControl.shift()
+      return this.queueControl.pop()
     }
   }
   isEmpty(){
@@ -29,7 +29,7 @@ class QueueDataStructure {
   }
   }
 
-  canQueue(){
+  canEnqueue(){
     if(this.queueControl.length<this.MAX_SIZE){
       return true
     }else{
