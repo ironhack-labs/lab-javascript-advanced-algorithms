@@ -27,7 +27,7 @@ $(document).ready(function() {
 
   $('#take-btn').click(function() {
     
-    
+
     $('.list-group-item').filter('.full').first().removeClass('full').empty();
   })
 
