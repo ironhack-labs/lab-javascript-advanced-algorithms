@@ -1,0 +1,46 @@
+.container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.stack-sol{
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 10px; */
+}
+.input{
+  width: 300px;
+}
+.addButton{
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  width: 300px;
+  height: 40px;
+}
+.redButton{
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  width: 300px;
+  height: 40px;
+}
+.greyRect{
+  background-color: lightgrey;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  width: 300px;
+  height: 30px;
+  margin-top: 5px;
+}
+.nowadd{
+  background-color: lightblue;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+}
