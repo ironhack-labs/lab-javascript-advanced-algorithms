@@ -30,10 +30,12 @@
   addBtn.addEventListener('click', function(){
     let txtValue = $('#input').val()
     var liLen = updateLi()
+
     if(liLen < 6){
-        $("<ul>", {
+        $("<li>", {
         class: 'list-group-item disabled',
     }).text(txtValue).prependTo(".list-container");
+
        liLen = updateLi()
     }else{
       alert('bish is full get out')
@@ -47,6 +49,14 @@ function updateLi(){
   return $('.list-group-item').length
   console.log(numLi)
 }
+// function updateLi(){
+//   return $('.list-group-item').length
+//   console.log(numLi)
+// }
+// function updateLi(){
+//   return $('.list-group-item').length
+//   console.log(numLi)
+// }
 
 
 

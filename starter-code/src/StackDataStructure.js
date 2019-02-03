@@ -4,7 +4,7 @@ class StackDataStructure {
 
   constructor() {
     this.stackControl = []
-    this.MAX_SIZE = 3
+    this.MAX_SIZE =
   }
 
   pop(){
