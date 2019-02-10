@@ -36,8 +36,9 @@
             >
               take
             </button>
+            <!-- hidden stack overflow box -->
             <div class="uk-tile-muted uk-text-middle over-box hidden">
-              <p class="uk-margin-remove">Stack Overflow</p>
+              <p>Stack Overflow</p>
             </div>
             <div id="stack">
               <div class="uk-tile-muted stack-item">
@@ -65,6 +66,7 @@
                 <p>&nbsp;</p>
               </div>
             </div>
+            <!-- hidden stack underflow box -->
             <div class="uk-tile-muted uk-text-middle under-box hidden">
               <p class="uk-margin-remove">Stack Underflow</p>
             </div>
@@ -89,12 +91,13 @@
           >
             ADD
           </button>
-          <button
-            id="take-queue"
-            class="uk-button uk-button-danger"
-          >
+          <button id="take-queue" class="uk-button uk-button-danger">
             take
           </button>
+        </div>
+        <!-- hidden queue overflow box -->
+        <div class="uk-tile-muted uk-text-middle uk-margin-small-top over-box hidden">
+          <p class="uk-margin-remove">Queue Overflow</p>
         </div>
         <div id="queue" uk-grid class="uk-flex uk-flex-center uk-padding-small">
           <div class="uk-tile-muted queue-item uk-width-auto">
@@ -121,6 +124,10 @@
           <div class="uk-tile-muted queue-item uk-width-auto">
             <p>&nbsp;</p>
           </div>
+        </div>
+        <!-- hidden queue underflow box -->
+        <div class="uk-tile-muted uk-text-middle under-box hidden">
+          <p class="uk-margin-remove">Queue Underflow</p>
         </div>
       </div>
     </section>
