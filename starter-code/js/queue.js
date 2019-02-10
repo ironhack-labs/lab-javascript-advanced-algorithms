@@ -6,19 +6,27 @@ for(let i = 0; i < testQueue.MAX_SIZE; i++){
 $('#dequeue-queue').after(`<div><span></span></div>`);
 }
 
-let divQueueArray = $('#queue div');
+let divQueueArray = $('#queue div span');
 
 $('#enqueue-queue').click(() => {
   //Add OVERFLOW if an attempt is made to enqueue and there is no more room to enqueue
   if(testQueue.MAX_SIZE == testQueue.queueControl.length && !$('#queue div:first').hasClass('overflow')){
-    $('#enqueue-queue').after(`<div class="overflow"><span>QUEUE OVERFLOW</span></div>`);
+    $('#dequeue-queue').after(`<div class="overflow"><span>QUEUE OVERFLOW</span></div>`);
   }
   //Remove UNDERFLOW if it exists
   if($('#queue div:last').hasClass('underflow')){
     $('#queue div:last').remove();
   } 
-  queueStack.enqueue($('#value-queue').val());
-  $(divQueueArray[testQueue.MAX_SIZE - testQueue.queueControl.length]).children()[0].innerText = $('#value-queue').val();
+  
+
+  //Move each queue val down one divQueueArray index and add the new enqueued value to the last index of divQueueArray
+  if(testQueue.queueControl.length != testQueue.MAX_SIZE){
+    for(let i = 0; i < testQueue.queueControl.length; i++){
+      divQueueArray[testQueue.MAX_SIZE - 2 - i].innerText = testQueue.queueControl[i];
+    }
+  }
+  testQueue.enqueue($('#value-queue').val());
+  divQueueArray[testQueue.MAX_SIZE - 1].innerText = $('#value-queue').val();
 });
 
 $('#dequeue-queue').click(() => {
@@ -30,7 +38,7 @@ $('#dequeue-queue').click(() => {
   if(testQueue.queueControl.length == 0 && !$('#queue div:last').hasClass('underflow')){
     $('#queue div:last').after(`<div class="underflow"><span>QUEUE UNDERFLOW</span></div>`);
   }
-
   testQueue.dequeue();
-  $(divQueueArray[testQueue.MAX_SIZE - testQueue.queueControl.length - 1]).children()[0].innerText = "";
+  divQueueArray[testQueue.MAX_SIZE - testQueue.queueControl.length - 1].innerText = "";
+  
 });

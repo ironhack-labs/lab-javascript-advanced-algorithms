@@ -5,7 +5,7 @@ for(let i = 0; i < testStack.MAX_SIZE; i++){
 $('#pop-stack').after(`<div><span></span></div>`);
 }
 
-let divStackArray = $('#stack div');
+let divStackArray = $('#stack div span');
 
 $('#push-stack').click(() => {
   //Add OVERFLOW if an attempt is made to push and there is no more room to push
@@ -17,7 +17,8 @@ $('#push-stack').click(() => {
     $('#stack div:last').remove();
   } 
   testStack.push($('#value-stack').val());
-  $(divStackArray[testStack.MAX_SIZE - testStack.stackControl.length]).children()[0].innerText = $('#value-stack').val();
+  
+  divStackArray[testStack.MAX_SIZE - testStack.stackControl.length].innerText = $('#value-stack').val();
 });
 
 $('#pop-stack').click(() => {
@@ -31,6 +32,7 @@ $('#pop-stack').click(() => {
   }
 
   testStack.pop();
-  $(divStackArray[testStack.MAX_SIZE - testStack.stackControl.length - 1]).children()[0].innerText = "";
+  
+  divStackArray[testStack.MAX_SIZE - testStack.stackControl.length - 1].innerText = "";
 });
 
