@@ -1,0 +1,49 @@
+/* override margin from uikit */
+p{
+  margin: 0;
+}
+
+/* override default width of uk-container-xsmall */
+.uk-container-xsmall{
+  max-width: 300px;
+}
+
+.stack-item{
+  height: 1.5em;
+  margin: 5px 0;
+  background-color: rgb(236,236,236);
+}
+
+.queue-item{
+  height: 10em;
+  margin: 0 5px;
+  background-color: rgb(236,236,236);
+}
+
+.blue-box{
+  background-color: rgb(30,174,230);
+  color: white;
+  text-align: center;
+}
+
+.over-box{
+  background-color: rgb(245,225,225);
+  color: rgb(237,133,132);
+  border: 2px solid rgb(237,133,132);
+  text-align: center;
+}
+
+.under-box{
+  background-color: rgb(245,225,225);
+  color: rgb(237,133,132);
+  border: 2px solid rgb(237,133,132);
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.queue{
+  max-width: 300px;
+}

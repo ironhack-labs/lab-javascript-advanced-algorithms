@@ -1,21 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1 class="uk-heading-primary">Abstract Data Types</h1>
+    <section class="uk-section uk-section-default">
+      <div class="uk-container uk-container-xsmall">
+        <h2 class="uk-heading-divider">Stack</h2>
+        <section class="uk-section uk-section-default uk-padding-small">
+          <div class="uk-container uk-container-xsmall uk-flex uk-flex-column">
+            <input
+              type="text"
+              name="element"
+              id="inp-stack"
+              placeholder="Add the element to the stack"
+              class="uk-margin-small"
+            />
+            <button
+              id="add-stack"
+              class="uk-button uk-button-primary uk-margin-small"
+            >
+              ADD
+            </button>
+            <button
+              id="take-stack"
+              class="uk-button uk-button-danger uk-margin-small"
+            >
+              take
+            </button>
+            <div class="uk-tile-muted uk-text-middle over-box hidden">
+              <p class="uk-margin-remove">Stack Overflow</p>
+            </div>
+            <div id="stack">
+              <div class="uk-tile-muted stack-item">
+                <p>&nbsp;</p>
+              </div>
+              <div class="uk-tile-muted stack-item">
+                <p>&nbsp;</p>
+              </div>
+              <div class="uk-tile-muted stack-item">
+                <p>&nbsp;</p>
+              </div>
+              <div class="uk-tile-muted stack-item">
+                <p>&nbsp;</p>
+              </div>
+              <div class="uk-tile-muted stack-item">
+                <p>&nbsp;</p>
+              </div>
+              <div class="uk-tile-muted stack-item">
+                <p>&nbsp;</p>
+              </div>
+              <div class="uk-tile-muted stack-item">
+                <p>&nbsp;</p>
+              </div>
+              <div class="uk-tile-muted stack-item">
+                <p>&nbsp;</p>
+              </div>
+            </div>
+            <div class="uk-tile-muted uk-text-middle under-box hidden">
+              <p class="uk-margin-remove">Stack Underflow</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="uk-section uk-section-default uk-padding-remove-top">
+      <div class="uk-container uk-container-small">
+        <h2 class="uk-heading-divider">Queue</h2>
+        <div class="uk-flex uk-flex-center">
+          <input
+            type="text"
+            name="element"
+            id="inp-queue"
+            placeholder="Add the element to the queue"
+            class="uk-margin-right"
+          />
+          <button
+            id="add-queue"
+            class="uk-button uk-button-primary uk-margin-right"
+          >
+            ADD
+          </button>
+          <button
+            id="take-queue"
+            class="uk-button uk-button-danger"
+          >
+            take
+          </button>
+        </div>
+        <div id="queue" uk-grid class="uk-flex uk-flex-center uk-padding-small">
+          <div class="uk-tile-muted queue-item uk-width-auto">
+            <p>&nbsp;</p>
+          </div>
+          <div class="uk-tile-muted queue-item uk-width-auto">
+            <p>&nbsp;</p>
+          </div>
+          <div class="uk-tile-muted queue-item uk-width-auto">
+            <p>&nbsp;</p>
+          </div>
+          <div class="uk-tile-muted queue-item uk-width-auto">
+            <p>&nbsp;</p>
+          </div>
+          <div class="uk-tile-muted queue-item uk-width-auto">
+            <p>&nbsp;</p>
+          </div>
+          <div class="uk-tile-muted queue-item uk-width-auto">
+            <p>&nbsp;</p>
+          </div>
+          <div class="uk-tile-muted queue-item uk-width-auto">
+            <p>&nbsp;</p>
+          </div>
+          <div class="uk-tile-muted queue-item uk-width-auto">
+            <p>&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
-</body>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script>
+    <script src="js/stack.js"></script>
+    <script src="js/queue.js"></script>
+  </body>
 </html>
