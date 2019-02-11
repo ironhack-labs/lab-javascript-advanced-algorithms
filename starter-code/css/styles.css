@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+/* STACK STYLES */
+
+.stack-header {
+  margin-top: 20px;
+}
+
+.stack {
+  display: block;
+  width: 75%;
+  margin-left: 20px; 
+}
+
+.stack-header input, 
+.stack-header button {
+  margin-top: 10px;
+}
+
+.stack-header input {
+  color: lightgray;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.add-btn {
+  background-color: #3b85bf;
+  color: white;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.take-btn {
+  background-color: #de5e59;
+  color: white;
+  height: 35px;
+  border-radius: 4px;
+}
+
+.stack-divs {
+  margin-top: 20px;
+}
+
+.stack-divs div {
+  width: 75%;
+  height: 35px;
+  background-color: lightgrey;
+  border: 1px solid white;
+}
+
+
+/* QUEUE STYLES */
+
+
+.queue-header {
+  margin-top: 20px;
+}
+
+.queue {
+  display: block;
+  width: 75%;
+  margin-left: 20px; 
+}
+
+.queue-header input, 
+.queue-header button {
+  margin-top: 10px;
+}
+
+.queue-header input {
+  color: lightgray;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.queue-divs {
+  margin-top: 20px;
+}
+
+.queue-divs div {
+  width: 75%;
+  height: 35px;
+  background-color: lightgrey;
+  border: 1px solid white;
+}
