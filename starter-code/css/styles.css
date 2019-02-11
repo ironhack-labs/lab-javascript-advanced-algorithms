@@ -3,6 +3,11 @@ body {
   justify-content: center;
 }
 
+.li-full {
+  background-color: #4cacea;
+  color: white;
+}
+
 /* STACK STYLES */
 
 .stack-header {
@@ -41,15 +46,17 @@ body {
   border-radius: 4px;
 }
 
-.stack-divs {
+.stack-list {
   margin-top: 20px;
+  padding: 0;
 }
 
-.stack-divs div {
+.stack-list li {
   width: 75%;
   height: 35px;
   background-color: lightgrey;
   border: 1px solid white;
+  list-style-type: none;
 }
 
 
@@ -78,11 +85,12 @@ body {
   border-radius: 4px;
 }
 
-.queue-divs {
+.queue-list {
   margin-top: 20px;
+  padding: 0;
 }
 
-.queue-divs div {
+.queue-list li {
   width: 75%;
   height: 35px;
   background-color: lightgrey;
