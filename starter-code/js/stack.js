@@ -10,7 +10,6 @@ var stackListFull = document.getElementsByClassName("li-full");
 
 
 stackAddButton.onclick = function () {
-  stackDataStructure.push(stackInput.value);
   if (stackDataStructure.canPush() == false) {
     var stackOverFlow = document.createElement("li");
     stackOverFlow.setAttribute("class", "stack li-flow");
@@ -18,6 +17,7 @@ stackAddButton.onclick = function () {
     stackListContainer.insertBefore(stackOverFlow, stackLi1);
     return stackAddButton.disabled = true;
   } else {
+    stackDataStructure.push(stackInput.value);
     stackListItems[stackListItems.length-1].innerHTML = stackInput.value;
     stackListItems[stackListItems.length-1].setAttribute("class", "stack li-full");
   }
