@@ -3,9 +3,28 @@ body {
   justify-content: center;
 }
 
+input[placeholder] {
+  padding-left: 20px;
+}
+
 .li-full {
+  width: 75%;
+  height: 35px;
   background-color: #4cacea;
+  border: 1px solid white;
+  list-style-type: none;
+  text-align: center;
   color: white;
+}
+
+.li-flow {
+  width: 75%;
+  height: 35px;
+  background-color: #f4e2e2;
+  border: 1px solid red;
+  list-style-type: none;
+  text-align: center;
+  color: red;
 }
 
 /* STACK STYLES */
@@ -26,7 +45,6 @@ body {
 }
 
 .stack-header input {
-  color: lightgray;
   height: 35px;
   font-size: 16px;
   border-radius: 4px;
@@ -51,12 +69,13 @@ body {
   padding: 0;
 }
 
-.stack-list li {
+.stack-list-item {
   width: 75%;
   height: 35px;
-  background-color: lightgrey;
+  background-color: lightgray;
   border: 1px solid white;
   list-style-type: none;
+  text-align: center;
 }
 
 
@@ -79,7 +98,6 @@ body {
 }
 
 .queue-header input {
-  color: lightgray;
   height: 35px;
   font-size: 16px;
   border-radius: 4px;
