@@ -1,7 +1,7 @@
 function QueueDataStructure () {
 
     this.queueControl =  []
-    this.MAX_SIZE = 9
+    this.MAX_SIZE = 8
 }
 
 QueueDataStructure.prototype.isEmpty = function (){
@@ -13,8 +13,8 @@ QueueDataStructure.prototype.canEnqueue = function (){
 }
 
 QueueDataStructure.prototype.enqueue = function (elm){
-    this.queueControl.unshift(elm)
     if (this.canEnqueue()){
+        this.queueControl.unshift(elm)
         return this.queueControl
     }
         return "Queue Overflow"

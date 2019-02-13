@@ -5,24 +5,23 @@ var overflow = document.getElementsByClassName("overflow")[0]
 var underflow = document.getElementsByClassName("overflow")[1]
 var elements = document.getElementsByClassName("stack-element")
 var elementsArr = Array.from(elements);
-var reversed = elementsArr.reverse()
 var newElm = ""
 
 function fillStack(newElm){
-    for (var i = 0; i < reversed.length; i++){
-        if (!reversed[i].className.includes("active")){
-            reversed[i].className += " active"
-            reversed[i].textContent = newElm
+    for (var i = elementsArr.length - 1; i >= 0; i--){
+        if (!elementsArr[i].className.includes("active")){
+            elementsArr[i].className += " active"
+            elementsArr[i].textContent = newElm
             break;
         }
     }
 }
 
 function unfillStack(){
-    for (var i = reversed.length - 1; i >= 0; i--){
-        if(reversed[i].className.includes("active")){
-            reversed[i].className = "stack-element";
-            reversed[i].textContent = ""
+    for (var i = 0; i < elementsArr.length; i++){
+        if(elementsArr[i].className.includes("active")){
+            elementsArr[i].className = "stack-element";
+            elementsArr[i].textContent = ""
             break;
         }
     }

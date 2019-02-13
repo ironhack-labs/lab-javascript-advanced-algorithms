@@ -27,7 +27,7 @@
 }
 
 .active {
-    background-color: #43A3E6;
+    background-color: #43A3E6 !important;
     text-align: center;
     color: white;
     padding-top:5px;
@@ -45,6 +45,54 @@
 }
 
 .queue {
-    display:none;
-    margin: 20px;
+    margin: 20px 0 0 50px;
+    height: 300px;
+    width: 500px;
+}
+
+.queue h2 {
+    text-align: center;
+}
+
+.queue-controls {
+    display: flex;
+    flex-direction:column;
+    justify-content: stretch;
+    align-items: stretch;
+    margin: 0 auto 50px auto;
+    width:400px;
+}
+
+.queue-controls input, .queue button {
+    margin: 5px 0;
+}
+
+.queue-body {
+    display:flex;
+    flex-direction:row;
+}
+
+.queue-element, .queue-overflow {
+    width: 50px;
+    height: 300px;
+    background-color:  #EDEDED;
+    margin: 0 2px;
+}
+
+.queue-overflow {
+    visibility: hidden;
+    border: 1px solid red;
+    background-color: #F4E2E2;
+    color: #E3A2A0;
+    padding-top:5px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.queue-overflow span {
+    width: 300px;
+    display:inline-block;
+    transform: rotate(90deg);
+    margin-left: -125px;
+    margin-top: 125px;
 }

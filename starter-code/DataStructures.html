@@ -9,7 +9,6 @@
 </head>
 <body>
   <div class="container">
-      <h1>Abstract Data Types</h1>
     <div class="flex">
       <div class="stack">
         <h2>Stack</h2>
@@ -30,9 +29,24 @@
         <div class="overflow">Stack Underflow</div>
       </div>
       <div class="queue">
-          <input type="text" class="form-control" id="add-element" placeholder="Add the element to the stack...">
-          <button type="button" class="btn btn-primary">ADD</button>
-          <button type="button" class="btn btn-danger">TAKE</button>
+          <h2>Queue</h2>
+          <div class="queue-controls">
+          <input type="text" class="form-control" id="add-element-to-queue" placeholder="Add the element to the queue...">
+          <button type="button" class="btn btn-primary" id="add-btn">ADD</button>
+          <button type="button" class="btn btn-danger" id="take-btn">TAKE</button>
+          </div>
+          <div class="queue-body">
+            <div class="queue-overflow"><span>Queue Underflow</span></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-element"></div>
+            <div class="queue-overflow"><span>Queue Overflow</span></div>
+          </div>
       </div>
     </div>
   </div>
