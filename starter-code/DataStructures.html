@@ -8,11 +8,34 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
-
-  </section>
-
+  <div class="container">
+      <h1>Abstract Data Types</h1>
+    <div class="flex">
+      <div class="stack">
+        <h2>Stack</h2>
+        <div class="stack-controls">
+          <input type="text" class="form-control" id="add-element" placeholder="Add the element to the stack...">
+          <button type="button" class="btn btn-primary">ADD</button>
+          <button type="button" class="btn btn-danger">TAKE</button>
+        </div>
+        <div class="overflow">Stack Overflow</div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="stack-element"></div>
+        <div class="overflow">Stack Underflow</div>
+      </div>
+      <div class="queue">
+          <input type="text" class="form-control" id="add-element" placeholder="Add the element to the stack...">
+          <button type="button" class="btn btn-primary">ADD</button>
+          <button type="button" class="btn btn-danger">TAKE</button>
+      </div>
+    </div>
+  </div>
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>

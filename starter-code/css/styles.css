@@ -1,0 +1,50 @@
+
+.flex {
+    display: flex;
+}
+
+.stack {
+    margin: 20px;
+    width: 300px;
+}
+
+.stack-controls {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px; 
+}
+
+.stack-controls input, .stack button {
+
+    margin: 5px 0;
+}
+
+.stack-element {
+    width: 100%;
+    height: 50px;
+    background-color:  #EDEDED;
+    margin: 2px;
+}
+
+.active {
+    background-color: #43A3E6;
+    text-align: center;
+    color: white;
+    padding-top:5px;
+    font-size: 2em;
+}
+
+.overflow {
+    visibility: hidden;
+    border: 1px solid red;
+    background-color: #F4E2E2;
+    color: #E3A2A0;
+    padding-top:5px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.queue {
+    display:none;
+    margin: 20px;
+}
