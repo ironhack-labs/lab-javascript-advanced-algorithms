@@ -42,10 +42,8 @@ addBtn.onclick = function () {
     newElm = document.querySelector("#add-element").value
     if (stack.push(newElm) === "Stack Overflow") {
         stackOverflow()
-        console.log(stack.stackControl)
     } else {
         fillStack(newElm)
-        console.log(stack.stackControl)
     }
 }
 
@@ -56,9 +54,7 @@ takeBtn.onclick = function () {
     }
     if (stack.pop() === "Stack Underflow") {
         stackUnderflow()
-        console.log(stack.stackControl)
     } else {
         unfillStack()
-        console.log(stack.stackControl)
     }
 }
