@@ -21,15 +21,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     buttonAdd.onclick = function(){
         elmtoAdd = input.value
-
-        if (stack.push(elmtoAdd)!="Stack Overflow"){
-            stackBoxesUpdate(stackboxes,stack)
-            input.value = ""  //clear input field
-        } else {
-            stackoverflow.style.visibility="visible"
-            setTimeout(function(){
-                stackoverflow.style.visibility="hidden"
-            },1000)
+        if(elmtoAdd.length!==0){
+            if ((stack.push(elmtoAdd)!="Stack Overflow")&&elmtoAdd!=undefined){
+                stackBoxesUpdate(stackboxes,stack)
+                input.value = ""  //clear input field
+            } else {
+                stackoverflow.style.visibility="visible"
+                setTimeout(function(){
+                    stackoverflow.style.visibility="hidden"
+                },1000)
+            }
         }
     }
 

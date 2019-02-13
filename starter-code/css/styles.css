@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 
 
@@ -11,7 +12,7 @@ h1{
 }
 
 h3{
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 100px;
     font-weight: bolder;
 }
