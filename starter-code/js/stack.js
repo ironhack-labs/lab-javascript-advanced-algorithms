@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
         elmtoAdd = input.value
 
         if (stack.push(elmtoAdd)!="Stack Overflow"){
-            stackBoxesUpdate(stackboxes,stack)//clear input field
+            stackBoxesUpdate(stackboxes,stack)
+            input.value = ""  //clear input field
         } else {
             stackoverflow.style.visibility="visible"
             setTimeout(function(){
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 //This function is global scoped because it is called from stack and queue
-//Its purpose is updating the "DOM array"(the visible one) on each button click
+//Its purpose is updating the "DOM stack"(the visible one) on each button click
 function stackBoxesUpdate(boxarray,stack){
     for (var i=0; i<boxarray.length; i++){
         boxarray[i].textContent=stack.stackControl[i]
@@ -57,3 +58,4 @@ function stackBoxesUpdate(boxarray,stack){
         } else {boxarray[i].className="box empty"} 
     }
 }
+
