@@ -3,13 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">  <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
+    <div class="row">
+      <div class="col-12">
+          <h1>Abstract Data Types</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4 centered">
+        <h2>Stack</h2>
+        <input id="stackinput" type="text" placeholder="Write content">
+        <button id="stackadd" class="btn btn-warning">ADD</button>
+        <button id="stacktake" class="btn btn-primary">TAKE</button>
+        <div id="stackoverflow" class="alert">Stack Overflow!</div>
+        <div id="stackboxes">
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+        </div>
+        <div id="stackunderflow" class="alert">Stack Underflow!</div>
+      </div>
+      <div class="col-2">
+        <h3>Last item taken</h3>
+        <p id="stackpops"></p>
+      </div>
+
+
+      <div class="col-2 alright">
+          <h3>Last item taken</h3>
+          <p id="queuepops"></p>
+        </div>
+      <div class="col-4 centered">
+        <h2>Queue</h2>
+        <input id="queueinput" type="text" placeholder="Write content">
+        <button id="queueadd" class="btn btn-warning">ADD</button>
+        <button id="queuetake" class="btn btn-primary">TAKE</button>
+        <div id="queueoverflow" class="alert">Stack Overflow!</div>
+        <div id="queueboxes">
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+          <div class="box empty"></div>
+        </div>
+        <div id="queueunderflow" class="alert">Stack Underflow!</div>
+      </div>
+
+
+
+    </div>
+
 
   </section>
 

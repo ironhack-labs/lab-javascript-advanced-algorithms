@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700');
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+h1{
+    text-align: center;
+    margin: 30px;
+}
+
+h3{
+    font-size: 1.2em;
+    margin-top: 100px;
+    font-weight: bolder;
+}
+
+
+button{
+    display: block;
+    width: 300px;
+    height: 50px;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+}
+
+.alert{
+    color: rgb(194, 56, 56);
+    width: 300px;
+    height: 50px;
+    background-color: rgba(194, 56, 56, 0.1);
+    border: 1px solid rgb(194, 56, 56);
+    margin-bottom: 5px;
+    visibility: hidden;
+}
+
+button, input, .box {
+    margin:5px;
+    text-align: center;
+    padding: 13px;
+}
+
+.alright{
+    text-align: right;
+}
+
+.box {
+    width: 300px;
+    height: 50px;
+}
+
+.empty{
+    background-color: rgb(238, 238, 238);
+}
+
+.full{
+    background-color: rgba(95, 75, 187, 0.699);
+    color: white;
+}
+
+#stackpops{
+    margin-top: 5px;
+    color: rgb(194, 56, 56)
+}
+
+.centered{
+    text-align: center;
+}
+
+.centered div, .centered button{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stacktake, #queuetake{
+    margin-bottom: 20px;
+}
