@@ -1,0 +1,31 @@
+
+.stack-structure {
+  width: 600px;
+  height: 80px;
+  background: rgb(0,0,0,0.2);
+  border: 2px solid rgb(0,0,0,0.8);
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: block;
+  width: 600px;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 2em;
+}
+
+.add {
+  background:#8cb0ea;
+}
+
+.take {
+  background: rgb(255, 128, 128)
+}
+
+input {
+  margin-bottom: 10px;
+  width: 600px;
+  height: 60;
+}
