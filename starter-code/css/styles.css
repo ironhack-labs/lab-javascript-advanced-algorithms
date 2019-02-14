@@ -1,0 +1,22 @@
+    .box {
+    border: 5px solid black;
+    background-color: grey;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+}
+
+.limit {
+    border: 5px solid black;
+    background-color: grey;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+}
+
+.limit {
+    border: 5px solid rgb(61, 7, 7);
+    background-color: rgb(221, 46, 46);
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
