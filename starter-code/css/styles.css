@@ -1,0 +1,31 @@
+.emptyBox {
+  width: 400px;
+  height: 50px;
+  background-color: #ededed;
+  margin-bottom: 1px;
+  border-radius: 3px;
+ }
+input {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.inputData, .outputData {
+  height: 35px;
+  width: 400px;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.redbutton {
+  background-color: #e99b98;
+  border-radius: 8px;
+}
+
+.bluebutton {
+  background-color: #3a85bf;
+  border-radius: 8px;
+}
