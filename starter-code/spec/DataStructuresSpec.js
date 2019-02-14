@@ -8,12 +8,15 @@ describe("Stack", function() {
   describe ("Stack properties", function () {
     it ("Should has an array to add the elements to the stack", function () {
       expect(Array.isArray(stack.stackControl)).toBe(true);
+
     });
 
     it ("Should has a max number of items to avoid the stack overflow", function () {
       expect(typeof(stack.MAX_SIZE)).toBe('number');
     });
   });
+
+
 
   describe ("Stack methods", function () {
     it ("Should has a method to check if the current stack is empty", function () {
