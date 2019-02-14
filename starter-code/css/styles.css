@@ -1,0 +1,12 @@
+.stack {
+    width: 40%;
+    background-color: grey;
+    text-align: center;
+}
+
+.itemStack {
+    height: 100px;
+    width: auto;
+    background-color: blue;
+    margin: 5px;
+}
