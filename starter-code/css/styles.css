@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+button,input{
+width: 100%;
+border-radius: 7px;
+width: 100%;
+padding: 10px;
+color: white;
+margin: 10px 0;
+}
+
+input{
+    color: black;
+}
+
+button#add{
+    background:#3783c1;
+}
+
+button#take{
+    background: #e05d55;
+}
+
+.section{
+    height: 50px;
+    background: #c3c0c0;
+    margin:15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section span{
+    color: white;
+    font-size: 20px;
+}
+
+.active{
+    background:#3783c1;;
+}
