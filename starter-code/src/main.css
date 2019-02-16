@@ -1,0 +1,34 @@
+.console {
+    width:350px;
+    height: 150px;
+    margin: 25px 15px;
+}
+#value {
+    float:right;
+}
+#input {
+    width: 300px;
+    height: 25px;
+}
+.button {
+    display: block;
+    width: 300px;
+    height: 35px;
+}
+.container {
+    margin-left: 15px;
+}
+.element {
+    width: 300px;
+    height: 40px;
+    background-color: lightgrey;
+    /* border: 1px solid white; */
+    text-align: center;
+    margin: 1px;
+}
+.errorElement {
+    width: 298px;
+    background-color: lightpink;
+    border: 1px solid red;
+    color: red;
+}
