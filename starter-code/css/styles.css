@@ -1,0 +1,55 @@
+/* lightblue : #4CACE9 */
+
+.empty-block {
+    height: 50px;
+    width: 300px;
+    background-color: lightgrey;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.block {
+    height: 50px;
+    width: 300px;
+    background-color:#4CACE9;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+.btn {
+    height: 30px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    display: block;
+    color: white;
+    font-weight: bolder;
+
+}
+
+.btn-add {
+    background-color: #3B85BF
+}
+
+.btn-remove {
+    background-color: #DE5E59
+}
+
+#newDataType {
+    height: 30px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    display: block;
+     
+}
+
+.add {
+    height: 50px;
+    width: 300px;
+    background-color: #4CACE9;
+    margin: 10px;
+    border-radius: 5px;
+
+}
