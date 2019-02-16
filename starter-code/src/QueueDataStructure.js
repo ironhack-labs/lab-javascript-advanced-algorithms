@@ -38,3 +38,5 @@ function QueueDataStructure() {
     }
   }
 };
+
+var queue = new QueueDataStructure();
