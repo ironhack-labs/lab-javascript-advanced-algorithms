@@ -1,0 +1,64 @@
+
+h1 {
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10%;
+
+}
+
+.stack{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    width: 30%;
+}
+
+.queue {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+
+#typefield {
+
+}
+
+#addbtn {
+    background: red;
+    color: white;
+}
+
+#addbtn1 {
+    background: red;
+    color: white;
+}
+
+#takebtn {
+    background: blue;
+    color: white;
+}
+
+#takebtn1 {
+    background: blue;
+    color: white;
+}
+
+
+#elements {
+    background-color: lightgray;
+    margin-top: 1px;
+    padding: 2px;
+}
+
+#elements1 {
+    background-color: lightgray;
+    margin-top: 1px;
+    padding: 2px;
+}
