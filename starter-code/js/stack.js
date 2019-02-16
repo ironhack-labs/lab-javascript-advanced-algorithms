@@ -16,7 +16,6 @@ $(document).ready(function () {
       // switch background
       switchBlock(element);
     };
-
   });
 
   $("button.red").on("click", function () {
