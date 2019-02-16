@@ -5,8 +5,6 @@ const stack = new StackDataStructure();
 
 $('document').ready(function() {
     initStackElements();
-    initUnderflowElement();
-
     $('#addButton').click(addButtonClicked);
     $('#takeButton').click(takeButtonClicked);
     $('#input').keypress(inputKeypressed);    
@@ -16,17 +14,8 @@ function initStackElements() {
     for (let i=0; i<stack.MAX_SIZE; i++) {
         let newStackElement = $('<div>').addClass('element');
         newStackElement.attr('id', `stack-element-${stack.MAX_SIZE-i}`);
-        $('.container').append(newStackElement);
+        $('#underflow').before(newStackElement);
     }
-}
-
-function initUnderflowElement() {
-    let underflowElement = $('<div>').addClass('element');
-    underflowElement.addClass('errorElement')
-    underflowElement.attr('id', 'underflow');
-    underflowElement.html('Stack Underflow');
-    $('.container').append(underflowElement);
-    underflowElement.hide();
 }
 
 function inputKeypressed(event) {
@@ -66,21 +55,9 @@ function takeButtonClicked() {
     }
 }
 
-function showUnderflowElement() {
-    $('#underflow').show();
-}
-function hideUnderflowElement() {
-    $('#underflow').hide();
-}
-function showOverflowElement() {
-    $('#overflow').show();
-}
-function hideOverflowElement() {
-    $('#overflow').hide();
-}
-function setPoppedValueDisplay(value) {
-    $('#poppedValue').html(value);
-}
-function clearPoppedValueDisplay() {
-    $('#poppedValue').html('');
-}
+function showUnderflowElement() { $('#underflow').show() }
+function hideUnderflowElement() { $('#underflow').hide() }
+function showOverflowElement() { $('#overflow').show() }
+function hideOverflowElement() { $('#overflow').hide() }
+function setPoppedValueDisplay(value) { $('#poppedValue').html(value) }
+function clearPoppedValueDisplay() { $('#poppedValue').html('') }

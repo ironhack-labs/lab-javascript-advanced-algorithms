@@ -47,9 +47,6 @@ h1 {
 .container {
     margin-left: 15px;
 }
-#overflow {
-    display: none;
-}
 .element {
     width: 300px;
     height: 40px;
@@ -65,6 +62,7 @@ h1 {
     background-color: lightpink;
     border: 1px solid red;
     color: red;
+    display: none;
 }
 .filledElement {
     background-color: lightskyblue;
