@@ -1,20 +1,21 @@
+const POPPED_VAL_DISPLAY_TIME = 2000;
+const ERR_ELEMENT_DISPLAY_TIME = 1000;
+
 const stack = new StackDataStructure();
+
 $('document').ready(function() {
-    // init stack
-    $('#overflow').hide();
     initStackElements();
     initUnderflowElement();
 
-    // init button listeners
-    $('#addButt').click(addButtClicked);
-    $('#takeButt').click(takeButtClicked);
+    $('#addButton').click(addButtonClicked);
+    $('#takeButton').click(takeButtonClicked);
 })
 
 function initStackElements() {
     for (let i=0; i<stack.MAX_SIZE; i++) {
-        let stackElement = $('<div>').addClass('element');
-        stackElement.attr('id', `stack-element-${stack.MAX_SIZE-i}`);
-        $('.container').append(stackElement);
+        let newStackElement = $('<div>').addClass('element');
+        newStackElement.attr('id', `stack-element-${stack.MAX_SIZE-i}`);
+        $('.container').append(newStackElement);
     }
 }
 
@@ -27,7 +28,7 @@ function initUnderflowElement() {
     underflowElement.hide();
 }
 
-function addButtClicked() {
+function addButtonClicked() {
     let input = $('#input').val();
     if (input) {
         if (stack.canPush()) {
@@ -36,41 +37,42 @@ function addButtClicked() {
             stackElement.html(input);
             stackElement.toggleClass('filledElement');
         } else {
-            showOverflow();
-            setTimeout(hideOverflow, 1000);
+            showOverflowElement();
+            setTimeout(hideOverflowElement, ERR_ELEMENT_DISPLAY_TIME);
         }
     }
 }
 
-function takeButtClicked() {
+function takeButtonClicked() {
     if (!stack.isEmpty()) {
         let stackElement = $(`#stack-element-${stack.stackControl.length}`);
         stackElement.html('');
         stackElement.toggleClass('filledElement')
+
         let poppedVal = stack.pop();
-        setPoppedValue(poppedVal);
-        setTimeout(clearPoppedValue, 2000);
+        setPoppedValueDisplay(poppedVal);
+        setTimeout(clearPoppedValueDisplay, POPPED_VAL_DISPLAY_TIME);
     } else {
-        showUnderflow();
-        setTimeout(hideUnderflow, 1000);
+        showUnderflowElement();
+        setTimeout(hideUnderflowElement, ERR_ELEMENT_DISPLAY_TIME);
     }
 }
 
-function showUnderflow() {
+function showUnderflowElement() {
     $('#underflow').show();
 }
-function hideUnderflow() {
+function hideUnderflowElement() {
     $('#underflow').hide();
 }
-function showOverflow() {
+function showOverflowElement() {
     $('#overflow').show();
 }
-function hideOverflow() {
+function hideOverflowElement() {
     $('#overflow').hide();
 }
-function setPoppedValue(value) {
+function setPoppedValueDisplay(value) {
     $('#poppedValue').html(value);
 }
-function clearPoppedValue() {
+function clearPoppedValueDisplay() {
     $('#poppedValue').html('');
 }

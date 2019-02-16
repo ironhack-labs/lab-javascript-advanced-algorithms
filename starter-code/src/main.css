@@ -35,10 +35,10 @@ h1 {
     font-size: 12px;
     font-weight: 500;
 }
-#addButt {
+#addButton {
     background-color: #2239A3;
 }
-#takeButt {
+#takeButton {
     background-color: #B43727;
 }
 #poppedValue {
@@ -46,6 +46,9 @@ h1 {
 }
 .container {
     margin-left: 15px;
+}
+#overflow {
+    display: none;
 }
 .element {
     width: 300px;
