@@ -32,7 +32,7 @@ function initUnderflowElement() {
 function inputKeypressed(event) {
     if (event.which == 13) {
         addButtonClicked();
-        return false;
+        event.preventDefault();
     }
 }
 
