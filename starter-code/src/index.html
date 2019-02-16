@@ -13,12 +13,16 @@
 <body>
     <section class="console">
         <h1>Stack</h1>
-        <h2 id="poppedValue"></h2>
-        <form>
-            <input type="text" id="input">
-        </form>
-        <button class="button" id="addButt">ADD</button>
-        <button class="button" id="takeButt">TAKE</button>
+        <div id="flex-container">
+            <div id="console-input">
+                <form>
+                    <input type="text" id="input" placeholder="Add the element to the stack...">
+                </form>
+                <button class="button" id="addButt">ADD</button>
+                <button class="button" id="takeButt">TAKE</button>
+            </div>
+            <h2 id="poppedValue"></h2>
+        </div>
     </section>
     <section class="stack">
         <div class="container">

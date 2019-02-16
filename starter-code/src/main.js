@@ -32,23 +32,27 @@ function addButtClicked() {
     if (input) {
         if (stack.canPush()) {
             stack.push(input);
-            $(`#stack-element-${stack.stackControl.length}`).html(input);
+            let stackElement = $(`#stack-element-${stack.stackControl.length}`);
+            stackElement.html(input);
+            stackElement.toggleClass('filledElement');
         } else {
             showOverflow();
-            setTimeout(hideOverflow, 2000);
+            setTimeout(hideOverflow, 1000);
         }
     }
 }
 
 function takeButtClicked() {
     if (!stack.isEmpty()) {
-        $(`#stack-element-${stack.stackControl.length}`).html('');
+        let stackElement = $(`#stack-element-${stack.stackControl.length}`);
+        stackElement.html('');
+        stackElement.toggleClass('filledElement')
         let poppedVal = stack.pop();
         setPoppedValue(poppedVal);
         setTimeout(clearPoppedValue, 2000);
     } else {
         showUnderflow();
-        setTimeout(hideUnderflow, 2000);
+        setTimeout(hideUnderflow, 1000);
     }
 }
 

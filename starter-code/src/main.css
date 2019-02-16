@@ -1,19 +1,48 @@
+body {
+    font-family: Helvetica;
+}
 .console {
     width:350px;
-    height: 150px;
+    height: 160px;
     margin: 25px 15px;
 }
-#value {
-    float:right;
+h1 {
+    margin: 5px;
+    font-size: 30px;
+}
+#flex-container {
+    display: flex;
+    align-items: flex-start;
+}
+#console-input button {
+    margin: 8px 0;
 }
 #input {
-    width: 300px;
-    height: 25px;
+    width: 284px;
+    height: 30px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid lightblue;
 }
 .button {
     display: block;
     width: 300px;
     height: 35px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+#addButt {
+    background-color: #2239A3;
+}
+#takeButt {
+    background-color: #B43727;
+}
+#poppedValue {
+    margin-left: 20px;
 }
 .container {
     margin-left: 15px;
@@ -22,13 +51,19 @@
     width: 300px;
     height: 40px;
     background-color: lightgrey;
-    /* border: 1px solid white; */
     text-align: center;
+    line-height: 40px;
     margin: 1px;
+    font-size: 18px;
+    font-weight: 300;
 }
 .errorElement {
     width: 298px;
     background-color: lightpink;
     border: 1px solid red;
     color: red;
+}
+.filledElement {
+    background-color: lightskyblue;
+    color: white;
 }
