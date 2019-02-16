@@ -9,6 +9,7 @@ $('document').ready(function() {
 
     $('#addButton').click(addButtonClicked);
     $('#takeButton').click(takeButtonClicked);
+    $('#input').keypress(inputKeypressed);    
 })
 
 function initStackElements() {
@@ -26,6 +27,13 @@ function initUnderflowElement() {
     underflowElement.html('Stack Underflow');
     $('.container').append(underflowElement);
     underflowElement.hide();
+}
+
+function inputKeypressed(event) {
+    if (event.which == 13) {
+        addButtonClicked();
+        return false;
+    }
 }
 
 function addButtonClicked() {
