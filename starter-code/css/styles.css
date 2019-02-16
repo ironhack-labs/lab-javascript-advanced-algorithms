@@ -1,0 +1,68 @@
+#stack-container {
+  margin: 50px;
+}
+
+#stack-container input {
+  width: 300px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  border: 1px solid rgba(196, 168, 138, 0.5);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+button {
+  width: 300px;
+  padding: 5px;
+  text-align: center;
+  display: block;
+  color: white;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+/* Buttons */
+button:last-of-type {
+  margin-bottom: 30px;
+}
+
+.red {
+  background-color: rgb(231, 65, 65);
+  border: 1px solid  rgb(231, 65, 65);
+}
+
+.blue {
+  background-color: rgb(68, 120, 179);
+  border: 1px solid  rgb(68, 120, 179);
+}
+
+/* Boxes */
+.box {
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 1px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.grey {
+  background-color: rgba(196, 168, 138, 0.5);
+}
+
+.blue-input {
+  background-color: rgba(44, 148, 233, 0.5);
+  color: white;
+}
+
+.overflow, .underflow {
+  background-color: rgba(248, 212, 170, 0.658);
+  color: rgb(196, 60, 60);
+  border: 1px solid rgb(196, 60, 60);
+}
+
+.hidden {
+  display: none;
+}
