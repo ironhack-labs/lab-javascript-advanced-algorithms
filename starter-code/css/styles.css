@@ -1,0 +1,37 @@
+
+
+.container {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.btn {
+  height: 5rem;
+  margin: 10px 0;
+  border-radius: 5%;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.btn-add{
+  background-color: rgb(46, 151, 250);
+}
+
+.btn-take {
+  background-color: rgba(248, 82, 82, 0.945);
+}
+
+.input-top{
+  height: 5rem;
+  margin: 10px 0;
+  border-radius: 5%;
+  border: lightskyblue solid 2px;
+  color: rgb(184, 183, 183);
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 0 10px;
+}
