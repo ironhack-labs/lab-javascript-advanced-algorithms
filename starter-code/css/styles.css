@@ -1,28 +1,77 @@
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+header, section, footer, article, details {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+button {
+  color: white;
+}
 
 .container {
   width: 30%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
 
+.container h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 10px 0;
 }
 
 .btn {
   height: 5rem;
   margin: 10px 0;
-  border-radius: 5%;
+  border-radius: 3px;
   color: white;
   font-weight: 700;
   font-size: 2rem;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
 }
+
+.btn:hover {
+  color: white;
+}
+
+.btn:focus {
+  color: white;
+}
+
 
 .btn-add{
   background-color: rgb(46, 151, 250);
+  border: rgb(37, 120, 197) solid 2px;
+  color: white;
+}
+
+
+.btn-add:hover {
+  background-color: rgb(39, 113, 184);
 }
 
 .btn-take {
-  background-color: rgba(248, 82, 82, 0.945);
+  background-color: rgba(248, 82, 82);
+  border: rgba(250, 46, 46, 0.945) solid 2px;
+  color: white;
+}
+
+
+.btn-take:hover {
+  background-color: rgb(251, 54, 54);
 }
 
 .input-top{
@@ -35,3 +84,23 @@
   font-size: 1.8rem;
   padding: 0 10px;
 }
+
+.data-container {
+  margin-top: 40px;
+}
+
+.data-element {
+  height: 6rem;
+  background-color: rgb(218, 216, 216);
+  margin: 1px 0;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.fill {
+  color: white;
+  font-weight: 700;
+  background-color: lightskyblue;
+}
+
