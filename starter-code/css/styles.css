@@ -1,0 +1,53 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+}
+
+.btn {
+width: 100%;
+border-radius: 5px;
+font-weight: bold;
+color: white;
+}
+
+li {
+  height: 30px;
+  width: 100%;
+  list-style: none;
+  border: 1px solid black;
+  background-color: lightskyblue;
+  color: white;
+  border-color: white;
+  border-radius: 5px; 
+  padding-left: 125px;
+
+}
+
+ul{
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+
+}
+
+#inputField {
+  border-radius: 5px;
+}
+
+#addBtn {
+  background-color: lightblue;
+  margin: 10px 0;
+}
+
+#takeBtn {
+  background-color: lightcoral;
+  margin-bottom: 25px 0;
+}
+
+.flow {
+  color: red;
+  border-color: red;
+  background-color:lightpink;
+}
