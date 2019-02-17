@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+  border-bottom: 3px solid #2ec5fa;
+  padding-bottom: 10px;
+  margin: 50px 0 20px 0;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: 3px solid darkgrey;
+  padding: 0 40% 10px 0;
+  margin-bottom: 20px;
+}
+
+.containerStack {
+  width: 50%;
+  margin: 0 auto;
+}
+
+input {
+  margin: 20px 0;
+  height: 30px;
+}
+
+.stack div, .queue div {
+  height: 60px;
+  background: grey;
+  margin-bottom: 1px;
+}
+
+.stack { 
+  margin-top: 40px;
+}
+
+.queue {
+  margin: 40px 0;
+} 
+.queue div {
+  background: grey;
+  margin-left: 1px;
+  height: 300px;
+}
+.queue div:first-child{
+  margin-left: 0;
+}
