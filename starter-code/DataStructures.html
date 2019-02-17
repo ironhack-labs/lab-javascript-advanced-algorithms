@@ -10,8 +10,42 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
   </section>
+  <section class="container">
+    <div class="row">
+      <div id="stack" class="col-sm-6">
+        <h2>Stack</h2>
+        <div class="box-number">
+            <input type="text" class="form-control" placeholder="Add the element to the stack..." aria-describedby="basic-addon">
+            <span class="display-value">19</span>
+        </div>
+        <div class="btn-in-style">
+            <button id="add" type="button" class="btn btn-primary btn-block">ADD</button>
+        </div>
+        <div class="btn-in-style">
+            <button id="take" type="button" class="btn btn-danger btn-block">TAKE</button>
+        </div>
+        <ul class="list-group btn-in-style">
+          <li class="list-group-item new-data">19</li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item under-flow">Stack Underflow</li>
+        </ul>
+      </div>
+      
+      <div id="queue" class="col-sm-6">
+        <h2>Queue</h2>
+      </div>
+    </div>
+  </section>
+
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>

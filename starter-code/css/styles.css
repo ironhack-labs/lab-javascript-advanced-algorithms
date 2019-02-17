@@ -1,0 +1,45 @@
+.btn-in-style {
+  width: 60%;
+  padding-bottom: 10px;
+}
+
+.list-group-item {
+  background-color: #f1f1f1;
+  border-color: white;
+  height: 40px;
+}
+
+.under-flow {
+  background-color: rgb(245, 194, 194);
+  border: 2px solid red;
+  color: red;
+  height: auto;
+  text-align: center;
+  font-size: 2rem;
+  padding: 5px 0;
+}
+
+.new-data {
+  background-color: rgb(79, 166, 238);
+  color: white;
+  height: auto;
+  text-align: center;
+  font-size: 2rem;
+  padding: 5px 0;
+}
+
+.display-value {
+  font-size: 2.75rem;
+  margin-left: 15px;
+}
+
+.box-number {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.form-control {
+  width: 60%;
+}
