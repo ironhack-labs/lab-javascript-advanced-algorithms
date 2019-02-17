@@ -3,7 +3,7 @@
 .empty-block {
     height: 50px;
     width: 300px;
-    background-color: lightgrey;
+    background-color: #EDEDED;
     margin: 10px;
     border-radius: 5px;
 }
@@ -14,7 +14,12 @@
     background-color:#4CACE9;
     margin: 10px;
     border-radius: 5px;
-
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    
 }
 
 .btn {
@@ -33,7 +38,8 @@
 }
 
 .btn-remove {
-    background-color: #DE5E59
+    background-color: #DE5E59;
+    /* margin-bottom: 50px; */
 }
 
 #newDataType {
@@ -42,6 +48,7 @@
     margin: 10px;
     border-radius: 5px;
     display: block;
+    border: 1.5px solid #4CACE9;
      
 }
 
@@ -52,4 +59,34 @@
     margin: 10px;
     border-radius: 5px;
 
+}
+
+.overflow {
+    height: 50px;
+    width: 300px;
+    background-color: #F4E3E2;
+    margin: 10px;
+    border-radius: 5px;
+    color:#DE5E59;
+    border: 1.5px solid #DE5E59;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.underflow {
+    height: 50px;
+    width: 300px;
+    background-color: #F4E3E2;
+    margin: 10px;
+    border-radius: 5px;
+    color:#DE5E59;
+    border: 1.5px solid #DE5E59;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.hidden {
+    display: none;
 }

@@ -4,7 +4,7 @@ function StackDataStructure() {
 
 StackDataStructure.prototype.pushOnArray = function (data) {
     var arrayRef = this.array;
-    if (arrayRef.length <= 10) {
+    if (arrayRef.length < 10) {
         arrayRef.push(data);
         return arrayRef;
     } console.log("Stackoverflow. Remove data to continue")
