@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <h1>Abstract Data Types</h1>
+  <div class="main-container">
+    <div class="container">
+      <h2>Stack</h2>
+      <div><input type="text" value="Add element" class="input-element"></div>
+      <button class="button add">ADD</button>
+      <button class="button take">TAKE</button>
+      <div class="stack-rows">
+        <div class="stack row-1"></div>
+        <div class="stack row-2"></div>
+        <div class="stack row-3"></div>
+        <div class="stack row-4"></div>
+        <div class="stack row-5"></div>
+      </div>
+    </div>
 
-  </section>
 
+    <div class="container">
+      <h2>Queue</h2>
+      <div><input type="text" value="Add element" class="input-element-queue"></div>
+      <button class="button add-queue">ADD</button>
+      <button class="button take-queue">TAKE</button>
+      <div class="queue-cols">
+        <div class="queue col-1"></div>
+        <div class="queue col-2"></div>
+        <div class="queue col-3"></div>
+        <div class="queue col-4"></div>
+        <div class="queue col-5"></div>
+      </div>
+    </div>
+  </div>
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+
+
 </body>
+
 </html>

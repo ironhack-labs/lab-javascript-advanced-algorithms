@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  height: 800px;
+  width: 100%
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 800px;
+  width: 50%;
+}
+
+.stack-rows {
+  height: 400px;
+  width: 70%;
+}
+
+
+/* div wwith input filed. */
+button,
+div {
+  width: 20%;
+  height: 50px;
+}
+
+
+/* buttons */
+.add, .take, .add-queue, .take-queue {
+  background-color: blue;
+  color:white;
+  border-radius: 4px;
+  border:none;
+  font-weight: bold;
+}
+
+/* take-buttons - have different colors */
+
+.take, .take-queue {
+  background-color: orangered;
+}
+
+input {
+  width: 100%;
+  color: grey;
+  text-align: center;
+}
+
+.stack {
+  width: 100%;
+  height: 20%;
+  border: 1px solid white;
+  background-color: lightgray;
+}
+
+
+/* if stack or queue is full we can not add elements in it. Add button will be grey. The same is for take button.  */
+.blocked {
+  pointer-events: none;
+  background-color: grey;
+}
+
+.queue-cols {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 400px;
+  justify-content: center;
+}
+
+
+.queue {
+  width: 15%;
+  height: 100%;
+  border: 1px solid white;
+  background-color: lightgray;
+}
+
+/* class is common for active queue and stuck cells. Active cell is ceel in queue with inserted element */
+.active {
+  background-color: #90EE90;
+  color: green;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* part for warning dives. Stack/Queue full or empty */
+.row-0,
+.row-6,
+.col-0,
+.col-6 {
+  background-color: lightcoral;
+  color: white;
+  font-size: 25px;
+  border: 2px dotted black;
+  text-align: center;
+  padding: 20px;
+}
+
+.queue {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
+  padding: 0;
+  font-size: 20px;
+}
