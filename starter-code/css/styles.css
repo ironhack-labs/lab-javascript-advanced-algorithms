@@ -1,0 +1,53 @@
+.container{
+    margin-left: 5%;
+    margin-top: 5px;
+}
+h1{
+    font-size: 30px;
+    margin-left: 50%;
+}
+.data {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 20%;
+}
+h2{
+    font-size: 30px;
+
+}
+input{
+    width: 300px;
+    padding: 5px;
+    border-radius: 7px;
+}
+.add-btn{
+    background-color: steelblue;
+    color: white;
+    width: 312px;
+    padding: 5px;
+    border-radius: 7px;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: steelblue;
+}
+.take-btn{
+    background-color: indianred;
+    color: white;
+    width: 312px;
+    padding: 5px;
+    border-radius: 7px;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: indianred;
+    margin-bottom: 5%;
+}
+
+ [class|="stack"] {
+    background-color: lightgray;
+    color: white;
+    padding: 25px;
+    border-style: solid;
+    border-color: lightgray;
+    margin-top: 2px;
+    width: 260px;
+}
