@@ -21,7 +21,7 @@ button {
 }
 
 .head-container{
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -87,7 +87,7 @@ button {
 
 .stack-data-container {
   margin-top: 40px;
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -102,7 +102,35 @@ button {
   font-size: 2rem;
 }
 
-.fill {
+.stack-underflow {
+  height: 6rem;
+  background-color: rgb(250, 198, 198);
+  margin: 1px 0;
+  text-align: center;
+  color: rgb(253, 36, 36);
+  border: rgb(253, 36, 36) solid 1px;
+  padding: 15px;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.stack-overflow {
+  height: 6rem;
+  background-color: rgb(250, 198, 198);
+  margin: 1px 0;
+  text-align: center;
+  color: rgb(253, 36, 36);
+  border: rgb(253, 36, 36) solid 1px;
+  padding: 15px;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.fill-stack-element {
+  height: 6rem;
+  margin: 1px 0;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
   color: white;
   font-weight: 700;
   background-color: lightskyblue;
@@ -111,7 +139,7 @@ button {
 /*this is the queue styling*/
 
 .bottom-container{
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -152,18 +180,42 @@ button {
 
 .queue-data-container {
   margin: 40px auto;
-  width: 60%;
-  height: 20rem;
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
 .queue-data-element {
-  width: 6rem;
+  height: 28rem;
   background-color: rgb(218, 216, 216);
   margin: 0 1px;
   text-align: center;
   padding: 20px;
   font-size: 2rem;
+}
+
+.queue-underflow {
+  height: 28rem;
+  width: 6rem;
+  background-color: rgb(250, 198, 198);
+  margin: 0 1px;
+  text-align: center;
+  color: rgb(253, 36, 36);
+  border: rgb(253, 36, 36) solid 1px;
+  padding: 15px;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.queue-overflow {
+  height: 28rem;
+  width: 6rem;
+  background-color: rgb(250, 198, 198);
+  margin: 0 1px;
+  text-align: center;
+  color: rgb(253, 36, 36);
+  border: rgb(253, 36, 36) solid 1px;
+  padding: 15px;
+  font-size: 2rem;
+  font-weight: 200;
 }
