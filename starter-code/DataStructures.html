@@ -14,17 +14,19 @@
       <h3>Element taked: <span>-</span></h3>
       <div class="containerStack form-group">
         <input type="text" placeholder="Add the element to stack" class="w-100 p-3 form-control form-control-lg"/>
-        <button type="button" class="btn btn-primary btn-lg btn-block">ADD</button>
-        <button type="button" class="btn btn-danger btn-lg btn-block">TAKE</button>
+        <button type="button" onclick="pushNumber(this.parentElement)" class="btn-push btn btn-primary btn-lg btn-block">ADD</button>
+        <button type="button" onclick="takeNumber(this.parentElement)" class="btn btn-danger btn-lg btn-block">TAKE</button>
         <div class="d-flex flex-column stack">
-            <div class="p-2"></div>
-            <div class="p-2"></div>
-            <div class="p-2"></div>
-            <div class="p-2"></div>
-            <div class="p-2"></div>
-            <div class="p-2"></div>
-            <div class="p-2"></div>
-            <div class="p-2"></div>
+            <div class="p-2 stackOverflow text-center h3" hidden >STACK OVERFLOW</div>
+            <div class="p-2 text-center h3">3</div>
+            <div class="p-2 text-center h3"></div>
+            <div class="p-2 text-center h3"></div>
+            <div class="p-2 text-center h3"></div>
+            <div class="p-2 text-center h3"></div>
+            <div class="p-2 text-center h3"></div>
+            <div class="p-2 text-center h3"></div>
+            <div class="p-2 text-center h3 last"></div>
+            <div class="p-2 underFlow text-center h3" hidden >STACK UNDERFLOW</div>
         </div>
       </div>
     </article>
@@ -33,19 +35,19 @@
       <h3>Element taked: <span>-</span></h3>
       <div class="containerStack form-group">
         <input type="text" placeholder="Add the element to stack" class="w-100 p-3 form-control form-control-lg"/>
-        <button type="button" class="btn btn-primary btn-lg btn-block">ADD</button>
-        <button type="button" class="btn btn-danger btn-lg btn-block">TAKE</button>
+        <button type="button" onclick="insertEnqueue(this.parentElement)" class="btn-enqueue btn btn-primary btn-lg btn-block">ADD</button>
+        <button type="button" onclick="dequeue(this.parentElement)" class="btn-dequeue btn btn-danger btn-lg btn-block">TAKE</button>
         <div class="d-flex flex-row queue align-items-stretch">
-            <div class="p-2 overFlow flex-fill"></div>
-            <div class="p-2 flex-fill"></div>
-            <div class="p-2 flex-fill"></div>
-            <div class="p-2 flex-fill"></div>
-            <div class="p-2 flex-fill"></div>
-            <div class="p-2 flex-fill"></div>
-            <div class="p-2 flex-fill"></div>
-            <div class="p-2 flex-fill"></div>
-            <div class="p-2 flex-fill"></div>
-            <div class="p-2 underFlow flex-fill"></div>
+            <div class="p-2 underFlow text-center h3" hidden>UNDERFLOW</div>
+            <div class="p-2 flex-fill text-center h3 first"></div>
+            <div class="p-2 flex-fill text-center h3"></div>
+            <div class="p-2 flex-fill text-center h3"></div>
+            <div class="p-2 flex-fill text-center h3"></div>
+            <div class="p-2 flex-fill text-center h3"></div>
+            <div class="p-2 flex-fill text-center h3"></div>
+            <div class="p-2 flex-fill text-center h3"></div>
+            <div class="p-2 flex-fill text-center h3"></div>
+            <div class="p-2 overFlow text-center h3" hidden>OVERFLOW</div>
         </div>        
       </div>
     </article>
@@ -56,5 +58,10 @@
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+  <script>
+    var stack = new StackDataStructure();
+    var queue = new QueueDataStructure ();
+    
+  </script>
 </body>
 </html>

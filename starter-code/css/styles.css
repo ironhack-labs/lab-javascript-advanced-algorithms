@@ -24,7 +24,7 @@ input {
 
 .stack div, .queue div {
   height: 60px;
-  background: grey;
+  background: #ededed;
   margin-bottom: 1px;
 }
 
@@ -32,14 +32,35 @@ input {
   margin-top: 40px;
 }
 
+.stack div {
+  padding: 15px 0 !important;
+}
+
 .queue {
   margin: 40px 0;
 } 
 .queue div {
-  background: grey;
+  background: #ededed;
   margin-left: 1px;
-  height: 300px;
+  height: 325px;
+  padding: 26% 0 !important;
+  word-wrap: break-word;
+  width: 10%;
+}
+
+.queue .underFlow, .queue .overFlow { 
+  background: rgb(240, 190, 190);
+  color: rgb(95, 0, 0);
 }
 .queue div:first-child{
   margin-left: 0;
+}
+
+.queue .underFlow, .queue .overFlow {
+  word-wrap: break-word;
+  width: 12.25%;
+  padding: 15px 18px !important;
+}
+.queue .overFlow {
+  padding-top: 32px !important;
 }
