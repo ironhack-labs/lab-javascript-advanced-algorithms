@@ -20,7 +20,7 @@ button {
   color: white;
 }
 
-.container {
+.head-container{
   width: 30%;
   display: flex;
   flex-wrap: wrap;
@@ -52,25 +52,25 @@ button {
 }
 
 
-.btn-add{
+.btn-add-stack{
   background-color: rgb(46, 151, 250);
   border: rgb(37, 120, 197) solid 2px;
   color: white;
 }
 
 
-.btn-add:hover {
+.btn-add-stack:hover {
   background-color: rgb(39, 113, 184);
 }
 
-.btn-take {
+.btn-take-stack {
   background-color: rgba(248, 82, 82);
   border: rgba(250, 46, 46, 0.945) solid 2px;
   color: white;
 }
 
 
-.btn-take:hover {
+.btn-take-stack:hover {
   background-color: rgb(251, 54, 54);
 }
 
@@ -85,11 +85,15 @@ button {
   padding: 0 10px;
 }
 
-.data-container {
+.stack-data-container {
   margin-top: 40px;
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.data-element {
+.stack-data-element {
   height: 6rem;
   background-color: rgb(218, 216, 216);
   margin: 1px 0;
@@ -104,3 +108,62 @@ button {
   background-color: lightskyblue;
 }
 
+/*this is the queue styling*/
+
+.bottom-container{
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.btn-add-queue{
+  background-color: rgb(46, 151, 250);
+  border: rgb(37, 120, 197) solid 2px;
+  color: white;
+}
+
+
+.btn-add-queue:hover {
+  background-color: rgb(39, 113, 184);
+}
+
+.btn-take-queue {
+  background-color: rgba(248, 82, 82);
+  border: rgba(250, 46, 46, 0.945) solid 2px;
+  color: white;
+}
+
+
+.btn-take-queue:hover {
+  background-color: rgb(251, 54, 54);
+}
+
+.input-bottom{
+  height: 5rem;
+  margin: 10px 0;
+  border-radius: 5%;
+  border: lightskyblue solid 2px;
+  color: rgb(184, 183, 183);
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 0 10px;
+}
+
+.queue-data-container {
+  margin: 40px auto;
+  width: 60%;
+  height: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.queue-data-element {
+  width: 6rem;
+  background-color: rgb(218, 216, 216);
+  margin: 0 1px;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
