@@ -189,10 +189,22 @@ button {
 .queue-data-element {
   height: 28rem;
   background-color: rgb(218, 216, 216);
-  margin: 0 1px;
+  margin: 1px 1px;
   text-align: center;
   padding: 20px;
   font-size: 2rem;
+}
+
+.fill-queue-element {
+  width: 6rem;
+  height: 28rem;
+  margin: 1px 1px;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  background-color: lightskyblue;
 }
 
 .queue-underflow {
