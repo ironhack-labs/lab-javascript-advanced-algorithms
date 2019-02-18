@@ -33,9 +33,9 @@ function takeQueue (obj) {
     var arrQSlots = [].slice.call(queueSlots);
     var inputVal = $(arrQSlots[0]).html()
     obj.queueControl.shift(inputVal)
-    $(arrQSlots[0]).toggleClass("fill-queue-element");
-    $(arrQSlots[0]).toggleClass("queue-data-element");
-    $(arrQSlots[0]).html("");
+    $(arrQSlots[arrQSlots.length-1]).toggleClass("fill-queue-element");
+    $(arrQSlots[arrQSlots.length-1]).toggleClass("queue-data-element");
+    $(arrQSlots[arrQSlots.length-1]).html("");
   }
 }
 
