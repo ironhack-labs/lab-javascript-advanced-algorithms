@@ -39,6 +39,7 @@ window.onload = function() {
     if(stack.isEmpty()) {
       stackUnderFlow();
     } else {
+      stack.pop();
       boxFull[0].innerText="";
       boxFull[0].classList.remove("box-full");
       boxFull[0].classList.add("box-empty");
