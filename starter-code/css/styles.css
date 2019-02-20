@@ -1,0 +1,100 @@
+/*this is the queue styling*/
+
+.bottom-container{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .btn-add-queue{
+    background-color: rgb(46, 151, 250);
+    border: rgb(37, 120, 197) solid 2px;
+    color: white;
+  }
+  
+  
+  .btn-add-queue:hover {
+    background-color: rgb(39, 113, 184);
+  }
+  
+  .btn-take-queue {
+    background-color: rgba(248, 82, 82);
+    border: rgba(250, 46, 46, 0.945) solid 2px;
+    color: white;
+  }
+  
+  
+  .btn-take-queue:hover {
+    background-color: rgb(251, 54, 54);
+  }
+  
+  .input-bottom{
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5%;
+    border: lightskyblue solid 2px;
+    color: rgb(184, 183, 183);
+    font-weight: 700;
+    font-size: 1em;
+    padding: 0 10px;
+  }
+  
+  .queue-data-container {
+    margin: 40px auto;
+    width: 60%;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .stack-data-container {
+    margin: 40px auto;
+    width: 60%;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .stack-data-element {
+    height: 180px;
+    background-color: rgb(218, 216, 216);
+    margin: 0 1px;
+    margin: 1px 1px;
+    text-align: center;
+    padding: 20px;
+    font-size: 2px;
+  }
+  .queue-data-element {
+    height: 180px;
+    background-color: rgb(218, 216, 216);
+    margin: 0 1px;
+    margin: 1px 1px;
+    text-align: center;
+    padding: 20px;
+    font-size: 2px;
+  }
+  .fill-stack-element {
+    width: 6rem;
+    height: 28px;
+    margin: 1px 1px;
+    text-align: center;
+    padding: 20px;
+    font-size: 2px;
+    color: white;
+    font-weight: 700;
+    background-color: lightskyblue;
+  }
+  .fill-queue-element {
+    width: 6px;
+    height: 180px;
+    margin: 1px 1px;
+    text-align: center;
+    padding: 20px;
+    font-size: 2px;
+    color: white;
+    font-weight: 700;
+    background-color: lightskyblue;
+  }
+  .clearfix{
+	clear: both;
+}
