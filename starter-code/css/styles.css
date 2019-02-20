@@ -1,0 +1,46 @@
+.container {
+    
+    width:300px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    
+    margin-bottom: 30px;
+}
+ input {
+     width: 100%;
+    margin-bottom:10px ;
+ }
+
+#add {
+    width: 100%;
+    margin-bottom:5px ;
+    color: white;
+    background-color:rgb(53, 110, 216);
+   
+}
+
+#take {
+    background-color: rgb(241, 125, 125);
+    width: 100%;
+    margin-bottom:px ;
+    color: white;
+}
+#addQ {
+    width: 100%;
+    margin-bottom:5px ;
+    color: white;
+    background-color:rgb(53, 110, 216);
+   
+}
+
+#takeQ {
+    background-color: rgb(241, 125, 125);
+    width: 100%;
+    margin-bottom:px ;
+    color: white;
+}
+
+li{
+    border: 1px solid grey;
+   list-style: none;
+}
