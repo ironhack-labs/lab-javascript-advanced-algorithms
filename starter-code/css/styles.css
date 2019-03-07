@@ -1,0 +1,42 @@
+.container-inline{
+
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.text-center{
+
+   align-items: center
+}
+
+.div-stack{
+width: 300px;
+height:10px;   
+margin-top: 10px;
+background: #56adea;
+border: 1px  solid white;
+color:white;
+display: flex;
+flex-wrap:wrap;
+
+
+}
+
+
+.div-queue{
+
+    width: 300px;
+    height:13px;   
+    margin-top: 10px;
+    background: #56adea;
+    border: 1px  solid white;
+    color:white;
+    display: flex;
+    flex-wrap:wrap;
+    
+    
+    }
+

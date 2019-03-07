@@ -83,7 +83,7 @@ describe("Stack", function() {
 
     it ("Should return the last element inserted in the stack", function () {
       stack.push(19);
-      stack.push(88);
+      stack.push(88);   
 
       expect(stack.pop()).toBe(88);
     });
