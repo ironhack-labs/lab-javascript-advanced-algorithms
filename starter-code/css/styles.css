@@ -1,0 +1,49 @@
+/*{
+    border: 1px solid black;
+}*/
+.row {
+    display: flex;
+    height: 90%;
+    width: 90%;
+}
+.col-sm{
+    align-content: space-around;
+    height: 100%;
+    width: 97%;
+    align-content: center;
+    justify-content: center;
+}
+.text{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+button{
+        display: flex;
+        height: 97%;
+        width: 96%;
+        align-content: center;
+        justify-content: center;
+        margin-bottom:2%;
+        margin-left:4px;
+        margin-top:2%;
+}
+.list-group-item-info{
+    display: flex;
+    margin:1px;
+    align-content: center;
+    justify-content: center;
+    height: 45px;
+    width: 100%;
+}
+.list-group{
+    margin-top:3%;
+    width: 97%;
+}
+.form-control{
+    width: 96%;
+    margin-bottom:2%;
+    margin-left:4px;
+    margin-top:2%;
+}

@@ -52,7 +52,6 @@ describe("Stack", function() {
 
     it ("Should return that stack is not empty when adding an element", function () {
       stack.push(19);
-
       expect(stack.isEmpty()).toBe(false);
     });
 
