@@ -1,0 +1,53 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.input-stack {
+    height: 30px;
+    width: 80%;
+}
+
+.add-btn {
+    height: 30px;
+    width: 50%;
+    margin: 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+.take-btn {
+    height: 30px;
+    width: 50%;
+    background-color: darkred;
+    border: none;
+    color: white;
+}
+
+table {
+    width: 80%;
+    margin: 10px;
+    background-color: #eeeeee;
+}
+
+tr {
+    height: 30px;
+    width: 100%;
+    margin: 2px;
+    border: 1px solid gray;
+}
+
+.alerta {
+    background-color: beige;
+    height: 30px;
+    width: 80%;
+    margin-top: 10px;
+}
