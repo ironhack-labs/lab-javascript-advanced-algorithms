@@ -23,16 +23,22 @@ function updateTable() {
 
 
 addBtn.addEventListener('click', function(){
+    alerta.innerHTML = '';
     let value = document.querySelector('.input-stack').value;
-    stack.push(value);
+    if(stack.push(value) == "Stack Overflow"){
+        alerta.innerHTML = '<h3>Stack Overflow!</h3>'
+    };
     updateTable();
-    console.log(stack);
 });
 
+var alerta = document.querySelector('.alerta');
 
 takeBtn.addEventListener('click', function(){
+    alerta.innerHTML = '';
     trs = document.querySelectorAll('tr');
-    stack.pop();
+    if (stack.pop() == 'Stack Underflow'){
+        alerta.innerHTML = '<h3>Stack Underflow!</h3>'
+    }
+    
     updateTable();
-    console.log(stack.stackControl)
 });
