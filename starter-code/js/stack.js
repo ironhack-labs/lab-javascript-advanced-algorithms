@@ -57,11 +57,7 @@ function canTake(){
 function reachedStackOverflow(){
   toggleStackOverflow();
   Pile.stack.add.onclick = null;
-}
-
-function reachedStackOverflow(){
-  toggleStackOverflow();
-  Pile.stack.take.onclick = null;
+  Pile.stack.take.onclick = takeFromStack;
 }
 
 function toggleStackOverflow(){
@@ -70,8 +66,8 @@ function toggleStackOverflow(){
 
 function reachedStackUnderflow(){
   toggleStackUnderflow();
-  canTake();
   Pile.stack.take.onclick = null;
+  Pile.stack.add.onclick = addToStack;
 }
 
 function toggleStackUnderflow(){
