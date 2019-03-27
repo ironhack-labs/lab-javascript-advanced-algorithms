@@ -1,0 +1,72 @@
+html
+{
+  font-size: 10px;
+}
+
+body
+{
+  display: flex;
+}
+
+h1
+{
+  font-size: 4rem;
+}
+
+h3
+{
+  font-size: 3rem;
+}
+
+h1, h3
+{
+  margin: 1.5rem;
+}
+
+.container
+{
+  margin 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.textInput
+{
+  height: 5rem;
+  width: 30rem;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+button
+{
+  height: 5rem;
+  width: 30rem;
+  padding: 5px;
+}
+
+button.add
+{
+  background-color: blue;
+}
+
+button.take
+{
+  background-color: red;
+}
+
+.container.stack div
+{
+  height: 5rem;
+  width: 30rem;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.container.queue div
+{
+  height: 5rem;
+  width: 30rem;
+  padding: 5px;
+  border: 1px solid black;
+}
