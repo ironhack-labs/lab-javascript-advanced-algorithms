@@ -1,7 +1,7 @@
 class StackDataStructure {
   constructor() {
     this.stackControl = [];
-    this.MAX_SIZE = 8;
+    this.MAX_SIZE = 6;
   }
   isEmpty() {
     if (this.stackControl.length === 0) return true;
@@ -19,7 +19,7 @@ class StackDataStructure {
     return "Stack Overflow";
   }
   pop() {
-    if (this.stackControl.length === 0) return "Stack Underflow";
+    if (this.isEmpty()) return "Stack Underflow";
     return this.stackControl.pop();
   }
 } 
