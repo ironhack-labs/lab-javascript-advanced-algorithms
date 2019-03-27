@@ -22,17 +22,26 @@ class StackDataStructure {
 
 
 
-    push(params) {
-        if (this.stackControl.canPush()) {
-            return "Stack Overflow"
-        } else {
-            this.stackControl.push(params)
+    push(param) {
+        if (this.canPush()) {
+            this.stackControl.push(param)
             return this.stackControl
+        } else {
+            return "stack Overflow"
+
         }
 
     }
 
     pop(params) {
+        if (this.stackControl.length > 0)
+            return this.stackControl.pop() {
+
+            } else {
+
+
+            }
+
 
 
     }
