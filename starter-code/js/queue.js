@@ -6,6 +6,8 @@ function initQueue(){
   Pile.queue.overflow = document.querySelector('#queue-overflow');
   Pile.queue.underflow = document.querySelector('#queue-underflow');
   Pile.queue.input = document.querySelector('#queue-input');
+  Pile.queue.add.onclick = addToQueue;
+  Pile.queue.take.onclick = takeFromQueue;
 
   fillStackQueue();
 }
@@ -13,49 +15,49 @@ function initQueue(){
 function addToQueue(){
   if(canAddQueue()){
     let value = Pile.queue.input.value;
-    Pile.queue.obj.push(value);
+    Pile.queue.obj.enqueue(value);
     addToPileQueue(value);
   }
   if(Pile.queue.underflowShowed){
-    toggleStackUnderflow();
+    toggleQueueUnderflow();
   }
 }
 
 function takeFromQueue(){
   if(canTakeQueue()){
-    Pile.queue.obj.pop();
+    Pile.queue.obj.dequeue();
     deleteFromPileQueue();
   }
 
   if(Pile.queue.overflowShowed){
-    toggleStackOverflow();
+    toggleQueueOverflow();
   }
   
 }
 
 function canAddQueue(){
-  if(!Pile.queue.obj.canPush() && !Pile.queue.overflowShowed){
-    reachedStackOverflow();
+  if(!Pile.queue.obj.canEnqueue() && !Pile.queue.overflowShowed){
+    reachedQueueOverflow();
     return false;
   }
-  Pile.queue.add.onclick = addToStack;
+  Pile.queue.add.onclick = addToQueue;
 
   return true;
 }
 
 function canTakeQueue(){
   if(Pile.queue.obj.isEmpty() && !Pile.queue.underflowShowed){
-    reachedStackUnderflow();
+    reachedQueueUnderflow();
     return false;
   }
-  Pile.queue.take.onclick = takeFromStack;
+  Pile.queue.take.onclick = takeFromQueue;
   return true;
 }
 
 function reachedQueueOverflow(){
   toggleQueueOverflow();
   Pile.queue.add.onclick = null;
-  Pile.queue.take.onclick = takeFromStack;
+  Pile.queue.take.onclick = takeFromQueue;
 }
 
 function toggleQueueOverflow(){
@@ -65,7 +67,7 @@ function toggleQueueOverflow(){
 function reachedQueueUnderflow(){
   toggleQueueUnderflow();
   Pile.queue.take.onclick = null;
-  Pile.queue.add.onclick = addToStack;
+  Pile.queue.add.onclick = addToQueue;
 }
 
 function toggleQueueUnderflow(){
