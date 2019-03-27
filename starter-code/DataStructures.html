@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
+    <div class="column">
+      <h2>StackDataStructure</h2>
+    </div>
+    <input type="text" name="newStack" id="newStack">
+    <button class="btn-success" style="margin: 20px 0;" id="addStack">Add to stack</button>
+    <button class="btn-warning" onclick="lista()" id="stackWarning">Remove from stack</button>
+    </div>
+    <div id="myItemList">
+      <ul class="list-unstyled" id="stack">
+        <li class="gray" id="lis0"></li>
+        <li class="gray" id="lis1"></li>
+        <li class="gray" id="lis2"></li>
+        <li class="gray" id="lis3"></li>
+        <li class="gray" id="lis4"></li>
+        <li class="gray" id="lis5"></li>
+        <li class="gray" id="lis6"></li>
+        <li class="gray" id="lis7"></li>
+      </ul>
+    </div>
+    <div class="column">
+      <h2>QueueDataStructure</h2>
+    </div>
+    <input type="text" name="newQueue" id="newQueue">
+    <button class="btn-success" style="margin: 20px 0;"  id="addQueue">Add to queue</button>
+    <button class="btn-warning" id="removeQueue">Remove from queue</button>
+    </div>
+    <div id="myItemList row">
+      <ul class="list-unstyled" style="display: flex;" id="queue">
+        <li class="gray" id="que0"></li>
+        <li class="gray" id="que1"></li>
+        <li class="gray" id="que2"></li>
+        <li class="gray" id="que3"></li>
+        <li class="gray" id="que4"></li>
+        <li class="gray" id="que5"></li>
+        <li class="gray" id="que6"></li>
+        <li class="gray" id="que7"></li>
+
+      </ul>
+    </div>
+    </div>
 
   </section>
 
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
+  <script src="./src/StackDataStructure.js"></script>
+  <script src="./src/QueueDataStructure.js"></script>
+  <script src="./js/stack.js"></script>
+  <script src="./js/queue.js"></script>
 </body>
+
 </html>
