@@ -1,7 +1,7 @@
 class QueueDataStructure{
   constructor(){
     this.queueControl = [];
-    this.MAX_SIZE = 255;
+    this.MAX_SIZE = 8;
   }
 
   isEmpty(){

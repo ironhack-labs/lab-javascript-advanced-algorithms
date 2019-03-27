@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+.container{
+  max-width: 120rem;
+}
+
+h1{
+  text-align: center;
+}
+
+.controller{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.controller h2{
+  align-self: flex-start;
+  font-weight: bold;
+}
+
+.controller input{
+  padding: 1rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.btn{
+  width: 100%;
+  margin: .25rem;
+  text-transform: uppercase;
+  border-radius: .5rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.btn--primary{
+  background-color: hsl(220, 50%, 30%);
+  color: white;
+}
+
+.btn--danger{
+  background-color: hsl(0, 50%, 50%);
+  color: white;
+}
+
+#stack-pile,
+#queue-pile{
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.pile-unit{
+  text-align: center;
+  padding: 3rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-weight: 200;
+  background-color: hsl(0, 0%, 90%);
+  border: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 10%)
+}
+
+.pile-unit.active{
+  background-color: hsl(210, 50%, 50%);
+  color: hsl(0, 0%, 90%);
+  border: 1px solid hsl(210, 50%, 55%);
+}
+
+.error{
+  width: 100%;
+  border-radius: .1rem;
+  border: 1px solid hsl(0, 50%, 50%);
+  color: hsl(0, 50%, 50%);
+  font-weight: 200;
+  background-color: hsl(0, 50%, 70%);
+}
+
+.hidden{
+  display: none;
+}

@@ -3,19 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
-
+    <h1>Queues and Stacks</h1>
+    <div id="stack" class="controller">
+      <h2>Stack</h2>
+      <input type="text" placeholder="Add the element to the stack...">
+      <button class="btn btn--primary" id="add-stack">Add</button>
+      <button class="btn btn--danger" id="take-stack">Take</button>
+      <div id="stack-pile">
+        <div id="#stack-overflow" class="pile-unit error hidden">Stack overflow</div>
+        <!-- <div class="pile-unit">lorem</div> -->
+        <div id="#stack-underflow" class="pile-unit error hidden">Stack underflow</div>
+      </div>
+    </div>
+    <div id="queue" class="controller">
+      <h2>Queue</h2>
+      <input type="text" placeholder="Add the element to the queue...">
+      <button class="btn btn--primary" id="add-queue">Add</button>
+      <button class="btn btn--danger" id="take-queue">Take</button>
+      <div id="queue-pile">
+        <div id="#queue-overflow" class="pile-unit error hidden">Stack overflow</div>
+        <!-- <div class="pile-unit active">lorem</div> -->
+        <div id="#queue-underflow" class="pile-unit error hidden">Stack underflow</div>
+      </div>
+    </div>
   </section>
-
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
+  <script src="js/load.js"></script>
 </body>
 </html>
