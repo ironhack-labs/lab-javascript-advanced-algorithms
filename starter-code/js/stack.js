@@ -5,12 +5,16 @@ var addStack = document.querySelector("#addStack");
 addStack.onclick = () => {
 
 var inputStack = document.querySelector("#newStack").value;
-    stack.push(inputStack);
+    let push = stack.push(inputStack);
+    
     for (let index = 0; index < stack.stackControl.length; index++) {
         document.querySelector(`#lis${index}`).innerHTML = stack.stackControl[index];
         
         //  debugger
-     }
+     };
+     if (push === "Stack Overflow") {
+         alert("Stack Overflow");
+     };
     
     // .forEach(element => {
     //     document.getElementById(`lis-${element}`).innerHTML = `${stack.stackControl[element]}`
@@ -30,8 +34,11 @@ var inputStack = document.querySelector("#newStack").value;
 var stackWarning = document.querySelector("#stackWarning");
 
 stackWarning.onclick = () => {
-    stack.pop();
+    let pop = stack.pop();
     let i = stack.stackControl.length;
     document.querySelector(`#lis${i}`).innerHTML = "";
+    if (pop === "Stack Underflow") {
+        alert("Stack Underflow");
+    }
 
 }

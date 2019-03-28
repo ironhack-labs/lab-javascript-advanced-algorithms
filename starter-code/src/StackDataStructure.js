@@ -30,7 +30,6 @@ function StackDataStructure() {
       this.stackControl.push(element);
       return this.stackControl;
     } else {
-        alert("Stack Overflow");
       return "Stack Overflow";
     }
 
@@ -46,7 +45,6 @@ function StackDataStructure() {
   };
   this.pop = function() {
     if (this.isEmpty()) {
-        alert("Stack Underflow");
       return "Stack Underflow";
     } else {
       return this.stackControl.pop();
