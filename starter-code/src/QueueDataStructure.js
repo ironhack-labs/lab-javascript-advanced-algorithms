@@ -28,7 +28,6 @@ function QueueDataStructure () {
     };
     this.dequeue = ()=>{
         if (this.isEmpty()) {
-            alert('Queue Underflow');
           return 'Queue Underflow';
         } else {
           return this.queueControl.pop();
