@@ -1,0 +1,30 @@
+*{
+    font-size: 10px;
+}
+
+.container>*{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60rem;
+}
+.addBut {
+    height: 4rem;
+    background-color: blue;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: gainsboro;
+}
+.takeBut {
+    height: 4rem;
+    background-color: red;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: gainsboro;
+}
+.elemCont {
+    height: 4rem;
+    background-color: gainsboro;
+    border: 1px;
+    border-color: white;
+    margin-top: 1rem;
+}
