@@ -1,0 +1,50 @@
+.stack {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.input {
+    border-radius:5px;
+    padding: 5px 10px;
+    border: 1px solid lightgray; 
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+}
+
+.btn-add {
+    background-color:blue;
+    margin: 10px 0;
+} 
+
+.btn-add:hover {
+    background-color:#fff;
+    border-color: blue;
+    color: blue; 
+}
+
+.btn-take {
+    background-color:red;
+    margin-bottom:20px; 
+} 
+
+.btn-take:hover {
+    background-color:#fff;
+    border-color: red;
+    color: red; 
+}
+
+.element-slack {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 2px 0;
+}
+
