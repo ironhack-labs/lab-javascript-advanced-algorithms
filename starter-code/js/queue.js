@@ -84,14 +84,16 @@ function fillStackQueue(){
   
 }
 
+// Change
 function addToPileQueue(value){
-  let childrenLength = Pile.queue.pile.children;
-  let availableChilds = [...childrenLength].filter(x => ![...x.classList].includes('error'));
+  let children = Pile.queue.pile.children;
+  let referenceNode = Pile.queue.pile.children[children.length-2];
+  let availableChilds = [...children].filter(x => ![...x.classList].includes('error'));
   let emptyChilds = availableChilds.filter(x => ![...x.classList].includes('active'));
-  if(emptyChilds.length > 0){
-    emptyChilds[emptyChilds.length-1].classList = 'pile-unit active';
-    emptyChilds[emptyChilds.length-1].innerText = value;
-  }
+  let nodeToFill = emptyChilds[emptyChilds.length-1]
+  nodeToFill.classList = 'pile-unit active';
+  nodeToFill.innerText = value;
+  referenceNode.parentNode.insertBefore(nodeToFill, referenceNode.nextSibling);
 }
 
 function deleteFromPileQueue(){
