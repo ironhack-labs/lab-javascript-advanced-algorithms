@@ -6,21 +6,21 @@ html
 body
 {
   display: flex;
+  justify-content: space-around;
 }
 
 h1
 {
   font-size: 4rem;
+  align-content: center;
+  margin: 1.5rem;
 }
 
 h3
 {
   font-size: 3rem;
-}
-
-h1, h3
-{
-  margin: 1.5rem;
+  justify-content: center;
+  text-align: center;
 }
 
 .container
@@ -28,6 +28,7 @@ h1, h3
   margin 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .textInput
@@ -41,8 +42,9 @@ h1, h3
 button
 {
   height: 5rem;
-  width: 30rem;
+  width: 31rem;
   padding: 5px;
+  margin: 5px 0;
 }
 
 button.add
@@ -55,18 +57,18 @@ button.take
   background-color: red;
 }
 
-.container.stack div
+div.box
 {
   height: 5rem;
   width: 30rem;
   padding: 5px;
   border: 1px solid black;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.container.queue div
+input
 {
-  height: 5rem;
-  width: 30rem;
-  padding: 5px;
-  border: 1px solid black;
+  font-size: 2rem;
+  text-align: center;
 }
