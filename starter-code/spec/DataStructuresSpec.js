@@ -141,6 +141,7 @@ describe("Queues", function() {
 
   describe ("Queue methods usage", function () {
     it ("Should enqueue the indicated element to the queue", function () {
+      console.log(queue.queueControl.length);
       queue.enqueue(19);
 
       expect(queue.queueControl.length).toBe(1);
