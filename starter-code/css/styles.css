@@ -1,0 +1,25 @@
+.form-group {
+    width: 250px;
+    margin-left: 35px;
+}
+
+ul {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    width: 250px;
+    height: 20px;
+    background-color: azure;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.btn {
+    width: 100px;
+    margin-left: 40px;
+}
