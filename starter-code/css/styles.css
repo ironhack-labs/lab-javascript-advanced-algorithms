@@ -1,0 +1,41 @@
+.item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+#item {
+  width: 300px;
+  height: 30px;
+  border-radius: 3%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 300px;
+  border-radius: 4px;
+}
+
+.btn-add {
+  background-color: rgb(33, 130, 194);
+  color: white;
+}
+
+.btn-take {
+  background-color: rgb(240, 76, 77);
+  color: white;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.table-cell {
+  width: 300px;
+  height: 50px;
+  margin-top: 3px;
+  background-color: rgb(237, 237, 237);
+}
