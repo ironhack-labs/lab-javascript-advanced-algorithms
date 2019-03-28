@@ -66,7 +66,7 @@ function clearStacks(nodesClass, newColor = "#EDEDED") {
 function assignStack(stackArray, nodesClass, newColor = "#3B85BF",error = false){
   const nodelist = document.querySelectorAll('.'+nodesClass);  
   var offSet = nodelist.length - stackArray.length;
-  debugger
+  
   for (var i = 0; i < stackArray.length; i++) {
     if (stackArray[i].includes('Stack') && error){
     nodelist[offSet + i].style.backgroundColor =  '#F4E3E2';
@@ -82,7 +82,6 @@ function assignStack(stackArray, nodesClass, newColor = "#3B85BF",error = false)
 function add(){
   var getStack = stack.push(document.getElementById("valueadd").value);
   clearStacks("stack-place", "#EDEDED");
-  //debugger
   if(getStack === 'Stack Overflow'){
     arrayToPrint = [getStack, 'I','R','O','N','H','A','C','K' ];
     assignStack(arrayToPrint, "stack-place", "#3B85BF" , true);
