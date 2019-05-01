@@ -1,21 +1,44 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="lib/jquery-3.1.1.min.js"></script>
+  </head>
 
-  </section>
+  <body>
+    <section class="container">
+      <h1>Abstract Data Types</h1>
+      <div class="container">
+        <div class="row top-row">
+          <div class="col-4">
+            <h2>Stack</h2>
+          </div>
+          <div class="col-4" id="stackNuevo"></div>
+          <div class="col-4">
+            <form>
+              <input type="text" placeholder="Añada su Stack aquí" />
+            </form>
+            <button class="btn btn-success btn-add" id="add">
+              Añada usted
+            </button>
+            <button class="btn btn-danger btn-remove" id="remove">
+              Borre usted
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
-</body>
+    <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script>
+    <script src="js/stack.js"></script>
+    <script src="js/queue.js"></script>
+  </body>
 </html>
