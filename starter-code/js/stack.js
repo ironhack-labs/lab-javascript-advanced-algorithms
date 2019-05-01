@@ -8,3 +8,16 @@ for(let i = 0; i<maxSize; i++){
     div.setAttribute('class','box')
     container.appendChild(div)
 }
+
+//let inputValue=document.getElementById('field').value
+//console.log(inputValue)
+
+let btnAdd=document.getElementsByClassName('add')
+let divitos= document.getElementsByClassName('box')
+let divitosArray=[...divitos]
+
+//divitosArray.forEach(div => {
+//    btnAdd.onclick = e => e.currentTarget.style.background = 'red'
+//})
+
+
