@@ -1,0 +1,40 @@
+div {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  color: white;
+  text-transform: uppercase;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  width: 151px;
+}
+input {
+  text-align: center; 
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.empty-array-cell {
+  margin-top: 2px;
+  text-align: center;
+  width: 151px;
+  height: 25px;
+  background-color: rgb(208, 208, 208);
+}
+.fill-array-cell {
+  margin-top: 2px;
+  text-align: center;
+  width: 151px;
+  height: 25px;
+  background-color: rgb(69, 158, 196);
+}
+.selected{
+
+}
