@@ -1,0 +1,36 @@
+#stack {
+  background-color: rgb(156, 179, 180);
+  padding: 10px;
+}
+
+#queue {
+  display: flex;
+  background-color: rgb(186, 197, 228);
+  padding: 10px;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  padding: 4px 0;
+  text-transform: uppercase;
+}
+
+.col-4 {
+  text-align: center;
+}
+
+
+li {
+  padding: 20px;
+  border: .5px black solid;
+  list-style-type: none;
+  margin: 3px;
+  background-color: rgb(212, 212, 212);
+}
+
+.queueElement {
+  display: inline-block;
+  padding: 100px 10px;
+}
