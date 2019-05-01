@@ -36,21 +36,7 @@ function stackClick(){
 }
 stackBtn.onclick = stackClick
 
-
-// Queue button
-// function popClick(){
-//   popBtn.onclick = function(){
-//     if(!stack.isEmpty()){
-//       document.querySelectorAll(".selected")[0].classList.toggle("fill-array-cell")
-//       document.querySelectorAll(".selected")[0].classList.toggle("empty-array-cell")
-//       document.querySelectorAll(".selected")[0].innerText = ''
-//       document.querySelectorAll(".selected")[0].classList.remove("selected")
-//       stack.pop()
-//     }
-//     input.value = ""
-//   }
-// }
-// popClick()
+// Pop button
 function popClick(){
   if(!stack.isEmpty()){
     document.querySelectorAll(".selected")[0].classList.toggle("fill-array-cell")
@@ -63,11 +49,12 @@ function popClick(){
 }
 popBtn.onclick = popClick
 
-  input.addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-      stackClick();
-    }
-  });
+// Input listener
+input.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    stackClick();
+  }
+});
 
 
