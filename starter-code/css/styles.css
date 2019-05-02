@@ -1,0 +1,56 @@
+body {
+  background-color: light-green;
+}
+
+h1 {
+  width: 100vw;
+}
+
+/* 
+li {
+  line-height: 3em;
+  border: 1px solid grey;
+  list-style-type: none;
+} */
+
+input {
+  height: 40px;
+  margin: 7px;
+  width: 250px;
+}
+
+.header {
+  text-align: left;
+}
+
+.container {
+  width: 300px;
+}
+
+.btn {
+  display: block;
+  margin: 7px 10px;
+  width: 250px;
+  color: white;
+}
+
+.blue-btn {
+  background-color: rgb(43, 43, 182)
+}
+
+.red-btn {
+  background-color: rgb(182, 72, 72)
+}
+
+.cell {
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+.element {
+  line-height: 40px;
+  background-color: rgb(187, 187, 187);
+  width: 230px;
+  padding-left: 5px;
+  margin
+}
