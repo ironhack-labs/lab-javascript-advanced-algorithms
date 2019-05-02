@@ -1,0 +1,51 @@
+.button.add {
+    display: block;
+    width: 40%;
+    background: rgb(29, 170, 135);
+    padding: 8px;
+    text-align: center;
+    margin: 10px auto;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.button.take {
+    display: block;
+    width: 40%;
+    background:rgb(240, 76, 76);
+    padding: 8px;
+    text-align: center;
+    margin: 10px auto;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 10px;
+}
+button:hover{
+    text-decoration: none;
+}
+input{
+    padding: 8px;
+    width: 40%;
+}
+.box{
+    background: #e2e2e2;
+    width: 40%;
+    padding: 25px;
+    margin: 6px auto 6px auto ;
+
+}
+.active{
+    background: rgb(44, 145, 212);
+    padding: 15px;
+    color: white;
+
+}
+body{
+    text-align: center;
+}
