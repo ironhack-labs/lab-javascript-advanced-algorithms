@@ -1,0 +1,2 @@
+new QueueDataStructure();
+new StackDataStructure();

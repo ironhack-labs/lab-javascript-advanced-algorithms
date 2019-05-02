@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+}
+.container {
+}
+.columna {
+  max-width: 330px;
+}
+.border {
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  font-size: 2em;
+}
+.input {
+  font-size: 1.1em;
+}
+
+.size {
+  width: 100%;
+  margin: 10px auto;
+}
+.size2 {
+  width: 100%;
+}
+.red {
+  background-color: red;
+  color: white;
+  padding: 30px auto;
+}
+.dblue {
+  background-color: rgb(40, 120, 170);
+  color: white;
+  padding: 10px auto;
+  margin-bottom: 20px;
+}
+.lblue {
+  background-color: rgb(70, 170, 220);
+  color: white;
+}
+.gray {
+  background-color: silver;
+}
+.padding {
+  padding: 20px 165px;
+}
