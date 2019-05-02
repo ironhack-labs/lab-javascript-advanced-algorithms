@@ -1,0 +1,35 @@
+.addButton {
+    color: white;
+    background-color: rgb(75, 137, 189);
+    width: 200px;
+    padding: 5px 30px;
+    border:none
+
+}
+.takeButton{
+    color: white;
+    background-color: rgb(207, 60, 60);
+    width: 200px;
+    padding: 5px 30px;
+    border:none
+
+}
+input{
+    width:200px;
+    padding: 5px 30px;
+}
+.row{
+    padding:1px 0
+}
+.box{
+    background-color: rgb(201, 195, 186);
+    height: 40px;
+    width: 200px;
+    margin: 5px 0
+}
+.fillBox{
+    background-color: rgb(75, 137, 189)
+    height: 40px;
+    width: 200px;
+    margin: 5px 0
+}
