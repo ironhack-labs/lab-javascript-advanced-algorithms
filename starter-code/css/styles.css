@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  text-align: center;
+  border: 1px solid black;
+  width: 180px; 
+}
+
+#container {
+  margin-top: 30px;
+}
+
+.celda {
+  background: rgba(194, 161, 161, 0.342);
+  width: 300px; 
+  border: 1px solid white;
+  height: 40px;
+
+}
+
+.elementStack {
+  background: rgba(100, 204, 252);
+  width: 300px; 
+  border: 1px solid white;
+  height: 40px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
