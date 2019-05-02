@@ -1,7 +1,7 @@
 class QueueDataStructure {
   constructor() {
     this.queueControl = [],
-      this.MAX_SIZE = 100
+      this.MAX_SIZE = 5
   }
 
   isEmpty() {
@@ -20,8 +20,10 @@ class QueueDataStructure {
 
   }
   dequeue() {
-    if (!this.isEmpty()) return this.queueControl[this.queueControl.length - 1]
-    else return `Queue Underflow`
+    if (!this.isEmpty())
+      return this.queueControl.pop()
+    else
+      return `Queue Underflow`
   }
 
 }
