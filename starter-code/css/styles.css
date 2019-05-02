@@ -1,0 +1,17 @@
+.botones {
+  display: block;
+  color: white;
+  width: 100%;
+}
+.box {
+  background-color: grey;
+  width: 400px;
+  height: 100px;
+  border: 1px solid rgb(227, 227, 227);
+}
+.blue {
+  background-color: rgb(84, 177, 216);
+  width: 400px;
+  height: 100px;
+  border: 1px solid rgb(227, 227, 227);
+}
