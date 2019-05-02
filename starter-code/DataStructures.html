@@ -10,7 +10,26 @@
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
+    <section class="row">
+      <article class="col-lg-6" id="stack">
+        <form action="#">
+          <label for="stackInput">
+          <input type="text" placeholder="Add element to the stack..." name="stackInput" id="stackInput">
+        </label>
+        </form>
+        <a href="#" class="btn add" id="newStack">Add</a>
+        <a href="#" class="btn take" id="deleteStack">Take</a>
+      </article>
+      <article class="col-lg-6" id="queue">
+        <form action="#">
+          <label for="queueInput">
+          <input type="text" placeholder="Add element to the stack..." id="queueInput">
+          </label>
+        </form>
+        <a href="#" class="btn add" id="enqueue">Add</a>
+        <a href="#" class="btn take" id="dequeue">Take</a>
+      </article>
+    </section>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
