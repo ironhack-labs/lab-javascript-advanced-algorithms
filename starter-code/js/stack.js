@@ -58,9 +58,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     currentElementPos++
 
-    // elementsStack[currentStackPosition].innerHTML = ''
-    // elementsStack[currentStackPosition].className = 'celda'
-
   }
 
 })
@@ -68,16 +65,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 function introduceDiv(numeroDivs) {
-  // let html = `<div class="row celda"></div>`
   const divContainer = document.getElementById('container')
 
-  // le aplica la clase col-2
-
-
   for (let i = 0; i < numeroDivs; i++) {
-    // divContainer.innerHTML = html;
-    // console.log("a")
-
     let html = document.createElement('div')
     html.setAttribute('class', 'row celda')
     divContainer.appendChild(html)
