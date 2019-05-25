@@ -1,0 +1,25 @@
+#stack{
+  width: 300px;
+  padding: 10px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+
+.stack-element{
+  height: 25px;
+  background: lightgray;
+  border-top: 1px solid white;
+  text-align: center;
+}
+
+button, input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#stack-overflow{
+  color: red;
+  text-align: center
+}
