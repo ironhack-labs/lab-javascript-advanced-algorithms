@@ -2,7 +2,7 @@ class QueueDataStructure {
 
     constructor() {
         this.queueControl = [];
-        this.MAX_SIZE = 100;
+        this.MAX_SIZE = 10;
     }
 
 
@@ -29,7 +29,7 @@ class QueueDataStructure {
             return 'Queue Underflow';
         }
 
-        let item = this.queueControl[0];
+        let item = this.queueControl[this.queueControl.length-1];
 
         this.queueControl.shift();
 

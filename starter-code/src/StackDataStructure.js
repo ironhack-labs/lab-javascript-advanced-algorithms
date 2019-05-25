@@ -2,7 +2,7 @@ class StackDataStructure {
 
     constructor() {
         this.stackControl = [];
-        this.MAX_SIZE = 100;
+        this.MAX_SIZE = 10;
     }
 
     isEmpty() {
