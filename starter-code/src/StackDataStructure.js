@@ -31,7 +31,7 @@ class StackDataStructure {
 
         let item = this.stackControl[this.stackControl.length - 1];
 
-        this.stackControl.splice( this.stackControl.length-1,1);
+        this.stackControl.pop();
 
         return item;
     }
