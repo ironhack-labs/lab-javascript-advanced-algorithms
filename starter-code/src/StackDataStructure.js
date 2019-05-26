@@ -29,10 +29,8 @@ class StackDataStructure {
             return 'Stack Underflow';
         }
 
-        let item = this.stackControl[this.stackControl.length - 1];
+        return this.stackControl.pop();
 
-        this.stackControl.pop();
 
-        return item;
     }
 }

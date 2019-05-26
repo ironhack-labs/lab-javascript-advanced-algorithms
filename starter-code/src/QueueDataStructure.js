@@ -31,7 +31,7 @@ class QueueDataStructure {
 
 
 
-        return this.queueControl.shift();
+        return this.queueControl.pop();
 
 
     }
