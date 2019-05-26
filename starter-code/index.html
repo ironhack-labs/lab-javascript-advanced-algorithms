@@ -52,11 +52,23 @@
             </button>
             <div style="margin-top: 20px">
 
+
+                <div class="cajaGris " style="color:red; background-color: #F4E2E2 ; border:1px solid red; text-align: center"
+                    v-show="stackMsgError==='Stack Overflow'"
+                >
+                    Stack Overflow
+                </div>
                 <div v-for="item in getListaStack"
                      v-bind:key="item"
                      class="cajaGris"
                 >
                     {{item}}
+                </div>
+
+                <div class="cajaGris " style="color:red; background-color: #F4E2E2 ; border:1px solid red; text-align: center"
+                     v-show="stackMsgError==='Stack Underflow'"
+                >
+                    Stack Underflow
                 </div>
             </div>
         </div>
@@ -88,6 +100,11 @@
             </button>
             <div style="margin-top: 20px">
 
+                <div class="cajaGris " style="color:red; background-color: #F4E2E2 ; border:1px solid red; text-align: center"
+                     v-show="qMsgError==='Queue Overflow'"
+                >
+                    Queue Overflow
+                </div>
                 <div v-for="item in getListaQ"
                      v-bind:key="item"
                      class="cajaGris"

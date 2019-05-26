@@ -4,8 +4,11 @@ const app = new Vue({
     el: '#panApp',
     data: {
         stack: new StackDataStructure(),
+        stackMsgError:null,
         queue: new QueueDataStructure(),
+        qMsgError:null,
         newStackItem: '',
+
         stackItemTaked: '',
         newQItem: '',
         qItemTaked: ''
@@ -18,19 +21,29 @@ const app = new Vue({
             }
             let ope = this.stack.push(this.newStackItem);
 
+            if(ope==='Stack Overflow'){
+                this.stackMsgError=ope;
+            }else{
+                this.stackMsgError=null;
+            }
+
+
             this.newStackItem = '';
         },
         stackTake: function () {
 
-            if (this.stack.isEmpty()) {
-                return;
+
+             let ope = this.stack.pop();
+
+            if( ope ==='Stack Underflow'){
+                this.stackMsgError=ope;
+            }else{
+                this.stackItemTaked=ope;
+                this.stackMsgError=null;
+                setTimeout(() => {
+                    app.stackItemTaked = '';
+                }, 3000);
             }
-
-            this.stackItemTaked = this.stack.pop();
-
-            setTimeout(() => {
-                app.stackItemTaked = '';
-            }, 3000);
 
         },
 
