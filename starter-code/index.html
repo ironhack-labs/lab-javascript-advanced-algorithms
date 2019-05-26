@@ -111,6 +111,12 @@
                 >
                     {{item}}
                 </div>
+                <div class="cajaGris " style="color:red; background-color: #F4E2E2 ; border:1px solid red; text-align: center"
+                     v-show="qMsgError==='Queue Underflow'"
+                >
+                    Queue Underflow
+                </div>
+
             </div>
         </div>
         <div class="col-md-4">

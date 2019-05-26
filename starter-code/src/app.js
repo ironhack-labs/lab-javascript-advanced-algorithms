@@ -4,9 +4,9 @@ const app = new Vue({
     el: '#panApp',
     data: {
         stack: new StackDataStructure(),
-        stackMsgError:null,
+        stackMsgError: null,
         queue: new QueueDataStructure(),
-        qMsgError:null,
+        qMsgError: null,
         newStackItem: '',
 
         stackItemTaked: '',
@@ -21,10 +21,10 @@ const app = new Vue({
             }
             let ope = this.stack.push(this.newStackItem);
 
-            if(ope==='Stack Overflow'){
-                this.stackMsgError=ope;
-            }else{
-                this.stackMsgError=null;
+            if (ope === 'Stack Overflow') {
+                this.stackMsgError = ope;
+            } else {
+                this.stackMsgError = null;
             }
 
 
@@ -32,14 +32,13 @@ const app = new Vue({
         },
         stackTake: function () {
 
+            let ope = this.stack.pop();
 
-             let ope = this.stack.pop();
-
-            if( ope ==='Stack Underflow'){
-                this.stackMsgError=ope;
-            }else{
-                this.stackItemTaked=ope;
-                this.stackMsgError=null;
+            if (ope === 'Stack Underflow') {
+                this.stackMsgError = ope;
+            } else {
+                this.stackItemTaked = ope;
+                this.stackMsgError = null;
                 setTimeout(() => {
                     app.stackItemTaked = '';
                 }, 3000);
@@ -55,19 +54,21 @@ const app = new Vue({
             let ope = this.queue.enqueue(this.newQItem);
 
             if (ope === 'Queue Overflow') {
-
+                this.qMsgError = ope;
+            }else{
+                this.qMsgError = null;
             }
 
             this.newQItem = '';
         },
         qTake: function () {
 
-            let item = this.queue.dequeue();
+            let ope = this.queue.dequeue();
 
-            if (item === 'Queue Underflow') {
-
+            if (ope === 'Queue Underflow') {
+                this.qMsgError = ope;
             } else {
-                this.qItemTaked = item;
+                this.qItemTaked = ope;
                 setTimeout(() => {
                     app.qItemTaked = '';
                 }, 3000);
