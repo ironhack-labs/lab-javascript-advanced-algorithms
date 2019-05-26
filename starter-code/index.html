@@ -20,7 +20,12 @@
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <style>
-        .cajaGris{background-color: #EDEDED; border:1px solid #fff}
+        .cajaGris {
+            background-color: #EDEDED;
+            border: 1px solid #fff;
+            min-height: 30px;
+            padding: 5px
+        }
     </style>
 </head>
 <body>
@@ -36,12 +41,22 @@
                        class="form-control"
                 >
             </div>
-            <button class="btn-md btn-primary btn-block "
+            <button class="btn btn-md btn-primary btn-block "
                     @click="stackAddItem"
-            >ADD</button>
-            <button class="btn-md btn-danger btn-block ">TAKE</button>
-            <div>
+            >ADD
+            </button>
+            <button class="btn btn-md btn-danger btn-block"
+                    @click="stackTake"
+            >TAKE
+            </button>
+            <div style="margin-top: 20px">
 
+                <div v-for="item in getListaStack"
+                     v-bind:key="item"
+                     class="cajaGris"
+                >
+                    {{item}}
+                </div>
             </div>
         </div>
         <div class="col-md-4">

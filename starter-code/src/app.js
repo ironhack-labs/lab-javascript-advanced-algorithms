@@ -28,16 +28,27 @@ const app = new Vue({
 
             this.stackItemTaked = this.stack.pop();
 
+            setTimeout(() => {
+                app.stackItemTaked = '';
+            }, 2000);
+
         },
     },
 
     computed: {
 
         getListaStack: function () {
-            return this.stack.stackControl;
+
+            let listaReserve = [];
+            for (let i = 0; i < this.stack.stackControl.length; i++) {
+                let index = this.stack.stackControl.length -1 - i;
+                listaReserve[i] = this.stack.stackControl[index];
+            }
+            console.log(listaReserve);
+            return listaReserve;
         }
     },
-    mounted(){
+    mounted() {
 
     }
 });
