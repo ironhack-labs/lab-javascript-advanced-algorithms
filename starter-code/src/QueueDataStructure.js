@@ -29,11 +29,11 @@ class QueueDataStructure {
             return 'Queue Underflow';
         }
 
-        let item = this.queueControl[this.queueControl.length-1];
 
-        this.queueControl.shift();
 
-        return item;
+        return this.queueControl.shift();
+
+
     }
 
 

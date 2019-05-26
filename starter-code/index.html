@@ -38,6 +38,7 @@
                 <input type="text"
                        placeholder="Add the element to the stack..."
                        v-model="newStackItem"
+                       v-on:keyup.enter="stackAddItem"
                        class="form-control"
                 >
             </div>
@@ -65,6 +66,44 @@
 
         </div>
     </div>
+
+    <div class="row" style="margin-top: 40px">
+        <div class="col-md-4 offset-md-4">
+            <h3>Queue</h3>
+            <div class="form-group">
+                <input type="text"
+                       placeholder="Add the element to the queue..."
+                       v-model="newQItem"
+                       v-on:keyup.enter="qAddItem"
+                       class="form-control"
+                >
+            </div>
+            <button class="btn btn-md btn-primary btn-block "
+                    @click="qAddItem"
+            >ADD
+            </button>
+            <button class="btn btn-md btn-danger btn-block"
+                    @click="qTake"
+            >TAKE
+            </button>
+            <div style="margin-top: 20px">
+
+                <div v-for="item in getListaQ"
+                     v-bind:key="item"
+                     class="cajaGris"
+                >
+                    {{item}}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h4>{{qItemTaked}}</h4>
+
+
+        </div>
+    </div>
+
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

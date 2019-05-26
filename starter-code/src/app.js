@@ -7,8 +7,8 @@ const app = new Vue({
         queue: new QueueDataStructure(),
         newStackItem: '',
         stackItemTaked: '',
-
-        newQItem: ''
+        newQItem: '',
+        qItemTaked: ''
     },
     methods: {
 
@@ -30,9 +30,36 @@ const app = new Vue({
 
             setTimeout(() => {
                 app.stackItemTaked = '';
-            }, 2000);
+            }, 3000);
 
         },
+
+        qAddItem: function () {
+            if (this.newQItem === '') {
+                return;
+            }
+
+            let ope = this.queue.enqueue(this.newQItem);
+
+            if (ope === 'Queue Overflow') {
+
+            }
+
+            this.newQItem = '';
+        },
+        qTake: function () {
+
+            let item = this.queue.dequeue();
+
+            if (item === 'Queue Underflow') {
+
+            } else {
+                this.qItemTaked = item;
+                setTimeout(() => {
+                    app.qItemTaked = '';
+                }, 3000);
+            }
+        }
     },
 
     computed: {
@@ -41,11 +68,17 @@ const app = new Vue({
 
             let listaReserve = [];
             for (let i = 0; i < this.stack.stackControl.length; i++) {
-                let index = this.stack.stackControl.length -1 - i;
+                let index = this.stack.stackControl.length - 1 - i;
                 listaReserve[i] = this.stack.stackControl[index];
             }
             console.log(listaReserve);
             return listaReserve;
+        },
+
+        getListaQ: function () {
+
+            console.log(this.queue.queueControl);
+            return this.queue.queueControl;
         }
     },
     mounted() {
