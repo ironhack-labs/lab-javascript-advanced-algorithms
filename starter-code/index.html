@@ -30,20 +30,33 @@
         <div class="col-md-4 offset-md-4">
             <h3>Stack</h3>
             <div class="form-group">
-                <input type="text" placeholder="Add the element to the stack..."
+                <input type="text"
+                       placeholder="Add the element to the stack..."
+                       v-model="newStackItem"
                        class="form-control"
                 >
             </div>
-            <button class="btn-md btn-primary btn-block ">ADD</button>
+            <button class="btn-md btn-primary btn-block "
+                    @click="stackAddItem"
+            >ADD</button>
             <button class="btn-md btn-danger btn-block ">TAKE</button>
             <div>
-                <div>
 
-                </div>
             </div>
+        </div>
+        <div class="col-md-4">
+            <h4>{{stackItemTaked}}</h4>
+
+
         </div>
     </div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./src/QueueDataStructure.js"></script>
+<script src="./src/StackDataStructure.js"></script>
+<script src="./src/app.js"></script>
+
+
 </body>
 </html>

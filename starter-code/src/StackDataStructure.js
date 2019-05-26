@@ -17,7 +17,7 @@ class StackDataStructure {
 
         if (!this.canPush()) {
             return 'Stack Overflow';
-            0
+
         }
         this.stackControl.push(item);
         return this.stackControl;
