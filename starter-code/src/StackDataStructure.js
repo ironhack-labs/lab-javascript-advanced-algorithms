@@ -1,32 +1,35 @@
 function StackDataStructure() {
-    this.MAX_SIZE = 10
     this.stackControl = []
+    this.MAX_SIZE = 3
+
     this.isEmpty = function() {
-        return (this.stackControl.length == 0)
+        if (this.stackControl.length == 0) {
+            return true
+        } else {
+            return false
+        }
     }
     this.canPush = function() {
-        if (this.stackControl.length == this.MAX_SIZE) {
-            return false
+        if (this.stackControl.length + 1 > this.MAX_SIZE) {
+            return false;
         } else {
-            return true
+            return true;
         }
-
     }
-    this.push = function(newItem) {
+    this.push = function(elements) {
         if (this.stackControl.length == this.MAX_SIZE) {
-            return 'Stack Overflow'
+            return "Stack Overflow"
         } else {
-            this.stackControl.push(newItem)
+            this.stackControl.push(elements)
             return this.stackControl
         }
-    }
+    };
+
     this.pop = function() {
         if (this.stackControl.length == 0) {
-            return 'Stack Underflow'
+            return "Stack Underflow";
         } else {
             return this.stackControl.pop()
         }
-
-    }
-}
-f
+    };
+};

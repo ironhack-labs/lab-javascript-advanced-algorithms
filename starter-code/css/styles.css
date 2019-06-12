@@ -1,0 +1,101 @@
+.html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#elementTaked {
+    width: 10rem;
+    height: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    vertical-align: text-bottom;
+    margin: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inputValue {
+    width: 19.8rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    vertical-align: text-bottom;
+    margin: 0.25rem;
+    border: 0.1rem solid #96c9ee;
+    box-shadow: -0.1rem 0.1rem 0.5rem 0.3rem rgba(150, 201, 238, 0.75);
+}
+
+#addButton {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin: 0.25rem;
+    background-color: #3e86bd;
+}
+
+#takeButton {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin: 0.25rem;
+    margin-bottom: 2rem;
+    background-color: #dc5f5c;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemEmpty {
+    width: 20rem;
+    height: 3rem;
+    background-color: #ededed;
+    margin: 0.1rem;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+.itemAdded {
+    width: 20rem;
+    height: 3rem;
+    background-color: #52ade7;
+    color: white;
+    margin: 0.1rem;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+.stackHidden {
+    display: none;
+}
+
+.stackShowed {
+    width: 19.8rem;
+    height: 3rem;
+    padding-top: 1rem;
+    background-color: #f3e2e2;
+    border: 0.1rem solid #e69d9c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: #e69d9c;
+    text-align: center;
+    /* vertical-align: text-bottom; */
+}
