@@ -9,7 +9,7 @@
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
+    <h1>Stack</h1>
 
   </section>
 
@@ -18,4 +18,51 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+<input type="text">
+<button id="add">ADD</button>
+<button id="Take">TAKE</button>
+<p id="stack-counter">0</p>
+ <div>
+  <ul>
+
+  </ul>
+ </div>
+ 
+
+   
+
+  <script src="src/StackDataStructure.js">
+  let ADD = document.getElementsById("add")
+  let take = document.getElementById("take");
+  let inputButton = document.querySelector("button") 
+
+  ADD.onclick = function addElement(e) {
+    e.preventDefault()
+
+    var node = document.createElement("li");
+    var textNode = document.getElementsByTagName("input").innerHTML;
+
+
+    node.appendChild(textNode);
+    document.querySelector("ul").appendChild(node);
+     
+    
+
+  }
+    
+
+  
+
+
+   
+
+
+
+  
+    
+   
+  
+  
+  </script>
+
 </html>

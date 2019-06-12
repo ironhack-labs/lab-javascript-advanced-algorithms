@@ -2,7 +2,7 @@ describe("Stack", function() {
   var stack;
 
   beforeEach (function() {
-    stack = new StackDataStructure();
+    stack = new stackDataStructure();
   });
 
   describe ("Stack properties", function () {

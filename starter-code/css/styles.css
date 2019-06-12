@@ -1,0 +1,107 @@
+
+section {
+margin-bottom: 30px;
+margin-left: 60px;
+box-sizing: border-box;
+width: 40vw;
+
+
+}
+
+
+h1{
+box-sizing: border-box;
+width: 40vw;
+margin-left:25px;
+font-size: 50px;
+
+font-weight: 600
+
+
+}
+body {
+display: flex;
+flex-direction: column;
+justify-content: left; 
+height: 90vh;
+
+ 
+
+}
+
+div {
+    border: solid black;
+    margin-left: 86px;
+    margin-right: 85px;
+    height: 800px;
+    width: 24.5vw;
+    margin-top: 4px;
+   
+}
+
+input {
+    width: 24.8vw;
+    margin-left: 86px;
+    margin-right: 76vh;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    font-size: 22px;
+
+}
+
+button {
+
+    width: 24.94vw;
+    
+    margin-left: 84px;
+    margin-right: 76vh;
+    height: 60px;
+    margin-bottom: 50px;
+    border: solid;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(83, 83, 209);
+    color: aliceblue;
+    font-size: 17px;
+}
+
+button:hover{
+transition: 0.4s all;
+background-color: black;
+
+
+
+
+
+
+}
+
+
+#Take:hover {
+    transition: 0.4s all;
+    background-color: black;
+
+
+
+}
+#Take {
+    background-color: rgb(224, 34, 34);
+    margin-bottom: 50px;
+    color: white;
+    font-size: 17px;
+}
+
+
+p {
+margin-left: 500px;
+margin-top: -90px;
+font-size: 60px;
+box-sizing: border-box;
+width: 30vw;
+position: relative;
+top: -125px;
+padding-top: 0px;
+
+}
