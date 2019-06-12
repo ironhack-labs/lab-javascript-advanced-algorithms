@@ -1,0 +1,98 @@
+.html {
+  font-size: 10px;
+}
+
+#inputValue2 {
+  width: 20rem;
+  height: 3rem;
+  font-size: 1rem;
+  margin: 0.25rem;
+  border: 0.1rem solid #96c9ee;
+  /* box-shadow: 5px 5px 5px #96c9ee; */
+  box-shadow: -1px 1px 5px 3px rgba(150, 201, 238, 0.75);
+}
+
+#addButton {
+  width: 20rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin: 0.25rem;
+  background-color: #3e86bd;
+}
+
+#takeButton {
+  width: 20rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin: 0.25rem;
+  margin-bottom: 2rem;
+  background-color: #dc5f5c;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.items {
+  width: 20rem;
+  height: 3rem;
+  /* border: 0.1rem solid black; */
+  background-color: #ededed;
+  margin: 0.1rem;
+}
+
+
+/* .stackBox {
+  padding: 40px 0;
+  border: 1px solid black;
+}
+
+.btn {
+  width: 30%;
+  background-color: whitesmoke;
+  text-transform: uppercase;
+}
+
+input {
+  display: inline-block;
+
+
+}
+
+.add {
+  background-color: lightblue;
+
+}
+
+.take {
+  background-color: lightcoral;
+}
+
+.fill {
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+a {
+  color: black;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.queueBox {
+  padding: 40px 0;
+  border: 1px solid black;
+}
+
+h1 {
+  text-align: center;
+}  */
