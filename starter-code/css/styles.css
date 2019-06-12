@@ -1,0 +1,49 @@
+.html {
+    font-size: 10px;
+}
+
+
+#inputValue2 {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    margin: 0.25rem;
+    border: 0.1rem solid #96c9ee;
+    box-shadow: -1px 1px 5px 3px rgba(150, 201, 238, 0.75);
+    text-align: center;
+}
+
+#addButton {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin: 0.25rem;
+    background-color: #3e86bd;
+}
+
+#takeButton {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin: 0.25rem;
+    margin-bottom: 2rem;
+    background-color: #dc5f5c;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.items {
+    width: 20rem;
+    height: 3rem;
+    background-color: #ededed;
+    margin: 0.1rem;
+}
