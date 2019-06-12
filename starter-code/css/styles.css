@@ -1,0 +1,73 @@
+body {
+  background: radial-gradient(rgba(8, 57, 182, 0.67), rgba(45, 63, 121, 0.67));
+}
+h1 {
+  text-align: center;
+  color: blanchedalmond;
+  margin-bottom: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.stack,
+.queue {
+    color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 25vw;
+  border: 3px solid peru;
+  /* background: transparent; */
+  transition: background 1s;
+}
+
+.stack:hover,
+.queue:hover {
+  background: rgba(72, 160, 82, 0.67);
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.btn :hover {
+  opacity: 1;
+}
+
+.add {
+  background: rgb(16, 16, 139);
+}
+
+.take {
+  background: rgb(168, 20, 20);
+}
+
+.list {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.list li {
+  background: rgb(34, 133, 133);
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.list li:hover {
+  opacity: 1;
+}
