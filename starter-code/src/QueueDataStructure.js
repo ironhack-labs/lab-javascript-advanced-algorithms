@@ -18,7 +18,7 @@ function QueueDataStructure () {
     return this.queueControl;
     }
     else {
-      return "Stack Overflow";
+      return "Queue Overflow";
     }
   };
 
