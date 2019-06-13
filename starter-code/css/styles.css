@@ -34,9 +34,11 @@
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  /*flex-direction: column;*/
   justify-content: center;
+  
+  
 }
 
 .items {
@@ -45,4 +47,14 @@
   /* border: 0.1rem solid black; */
   background-color: #ededed;
   margin: 0.1rem;
+}
+
+.elementStack {
+  background: rgba(100, 204, 252);
+  width: 300px; 
+  border: 1px solid white;
+  height: 40px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
 }

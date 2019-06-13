@@ -1,9 +1,11 @@
 var stack = new StackDataStructure();
+
 // class StackDataStructure {
 //   constructor(stackControl, MAX_SIZE) {
 //       this.stackControl = [];
 //       this.MAX_SIZE = 8;
 //   }
+
 function StackDataStructure() {
   this.stackControl = [];
   this.MAX_SIZE = 8;
