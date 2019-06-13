@@ -2,12 +2,12 @@ window.onload = function() {
     var myStack = new StackDataStructure
 
     document.querySelector('#addButton').onclick = function() {
+
         let newItem = document.querySelector('#inputValue').value
         if (newItem != "") {
             if (myStack.canPush()) {
                 myStack.push(newItem)
                 addItemToTheStack(newItem)
-
             } else {
                 document.querySelector("#stackOverflow").classList = "stackShowed"
             }
@@ -17,6 +17,7 @@ window.onload = function() {
             }
         }
     }
+
     document.querySelector('#takeButton').onclick = function() {
 
         result = myStack.pop()
@@ -29,12 +30,10 @@ window.onload = function() {
 
             document.querySelector("#elementTaked").innerHTML = result
             document.querySelector("#stackUnderflow").classList = "stackHidden"
-
             if (!myStack.isEmpty()) {
                 document.querySelector("#stackOverflow").classList = "stackHidden"
             }
         }
-
     }
 
     function addItemToTheStack(newItem) {

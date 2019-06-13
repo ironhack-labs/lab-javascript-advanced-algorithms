@@ -7,7 +7,8 @@ body {
     justify-content: center;
 }
 
-#elementTaked {
+#elementTaked,
+#elementTakedQeue {
     width: 10rem;
     height: 3rem;
     font-size: 3rem;
@@ -23,7 +24,16 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#inputValue {
+.wrapperQeue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inputValue,
+#inputValueQeue {
     width: 19.8rem;
     height: 3rem;
     font-size: 1.2rem;
@@ -34,7 +44,8 @@ body {
     box-shadow: -0.1rem 0.1rem 0.5rem 0.3rem rgba(150, 201, 238, 0.75);
 }
 
-#addButton {
+#addButton,
+#addButtonQeue {
     width: 20rem;
     height: 3rem;
     font-size: 1rem;
@@ -44,7 +55,8 @@ body {
     background-color: #3e86bd;
 }
 
-#takeButton {
+#takeButton,
+#takeButtonQeue {
     width: 20rem;
     height: 3rem;
     font-size: 1rem;
@@ -55,7 +67,8 @@ body {
     background-color: #dc5f5c;
 }
 
-.wrapper {
+.wrapper,
+#wrapperQeue {
     display: flex;
     flex-direction: column;
     justify-content: center;
