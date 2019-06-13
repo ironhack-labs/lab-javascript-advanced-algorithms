@@ -1,0 +1,57 @@
+h2{
+    font-size: 40px;
+}
+
+.stack-container{
+    margin-left: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row{
+    width: 30vw;
+    height: 50px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.row-empty{
+    background-color:#E9E9E9;
+}
+
+.row-content{
+    background-color: #4CACEA;
+    width: 30vw;
+    height: 50px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+
+.btn{
+    width: 30vw;
+    height: 35px;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-style: none;
+}
+
+.add-btn{
+    background-color:#86B2D6;
+}
+
+.take-btn{
+    background-color: #DE5E59;
+}
+
+.stack-input{
+    width: 30vw;
+    height: 35px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-color: #96CAF0;
+    margin-bottom: 10px;
+}
