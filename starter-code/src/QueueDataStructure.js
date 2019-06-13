@@ -1,17 +1,18 @@
-function QueueDataStructure () {
-
+class QueueDataStructure {
+  constructor() {
   this.queueControl =[]
-  this.MAX_SIZE = 8;
+  this.MAX_SIZE = 8
+}
 
-  this.isEmpty = function() {
+ isEmpty = function() {
     return this.queueControl.length === 0
   } 
 
-  this.canEnqueue = function() {
+ canEnqueue = function() {
     return this.queueControl.length < this.MAX_SIZE
   } 
 
-  this.enqueue = function(item){
+enqueue = function(item){
 
     if (!this.canEnqueue()) { 
     return  'Queue Overflow'
@@ -21,7 +22,7 @@ function QueueDataStructure () {
   }  
   } 
 
-  this.dequeue = function(element) {
+ dequeue = function(element) {
 
     if (this.isEmpty()){ 
       return  'Queue Underflow'

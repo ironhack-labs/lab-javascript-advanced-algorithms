@@ -5,66 +5,48 @@
   <title>DataStructures | Stacks &amp; Queues</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
+  <section>
     <h1>Abstract Data Types</h1>
+  </section>
 
-    <!-- <section class="row">
-      <article class="col-lg-6" id="stack">
-        <form action="#">
-          <label for="stackInput">
-          <input type="text" placeholder="Add element to the stack..." name="stackInput" id="stackInput">
-        </label>
-        </form>
-        <a href="#" class="btn add" id="newStack">Add</a>
-        <a href="#" class="btn take" id="deleteStack">Take</a>
-      </article>
-      <article class="col-lg-6" id="queue">
-        <form action="#">
-          <label for="queueInput">
-          <input type="text" placeholder="Add element to the stack..." id="queueInput">
-          </label>
-        </form>
-        <a href="#" class="btn add" id="enqueue">Add</a>
-        <a href="#" class="btn take" id="dequeue">Take</a>
-      </article>
-    </section>
+    <div class="container">
+      <div>
+        <div class="stack-container">
+          <h2>Stack</h2>
+  
+          <form>
+            <div class="flex">
+  
+              <input type="text" class="inputField" id="stack-item-text" placeholder="Add the element to the stack">
+              <button id="add-stack-item" class="btn btn-info">ADD </button>
+              <button id="take-stack-item" class="btn btn-danger">TAKE </button>
+            </div>
+          </form>          <div id="stack-overflow">STACK OVERFLOW, SOMETHING IS GOING TO EXPLODE</div>
 
-  </section> -->
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width" initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Stack and Clues</title>
-</head>
-
-<body> -->
-    <input type="text" id="inputValue2" placeholder="Add the element to the stack">
-    <div class="wrapper">
-        <button id="addButton">ADD</button>
-        <button id="takeButton">TAKE</button>
-        <div id="elementTaked"></div>
-        <div id="retain">
-        <div class="items"></div>
-        <div class="items"></div>
-        <div class="items"></div>
-        <div class="items"></div>
-        <div class="items"></div>
-        <div class="items"></div>
-        <div class="items"></div>
-        <div class="items"></div>
+  <div class="flex">
+          <div class="stackdiv">
+            <ul id="stack"></ul></div>
+  
+          </div><div id="stack-underflow">STACK UNDERFLOW, NOTHING THERE SO NO EXPLOSIONS I GUESS</div></div>
         </div>
-    </div>
-</body>
-
-</html>
+        <div class="queue-container">
+          <h2>Queue</h2>
+          <form>
+            <div class="flex">
+  
+              <input type="text" class="inputField" id="queue-item-text" placeholder="Add the item to the queue">
+              <button id="add-queue-item" class="btn btn-info">ADD</button>
+              <button id="take-queue-item" class="btn btn-danger">TAKE </button>
+            </div>
+          </form>
+            <div class="flex">
+          <ul id="queue">
+          </ul></div>
+        </div>
+      </div>
+    
 
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
