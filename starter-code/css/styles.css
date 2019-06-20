@@ -1,0 +1,101 @@
+.box1{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-left: 25px;
+}
+#stack-add{
+  background-color: blue;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 30px;
+}
+#queue-add{
+  background-color: blue;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 30px;
+}
+#queue-take{
+  background-color: red;
+  color: white;
+  margin-bottom: 10px;
+  height: 30px;
+}
+.display{
+  display: flex;
+}
+.whole-stack{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.whole-queue{
+  display: flex;
+  flex-direction: column;
+}
+#stack-take{
+  background-color: red;
+  color: white;
+  margin-bottom: 10px;
+  height: 30px;
+}
+.not-filled{
+  background-color: lightgray;
+  height: 40px;
+  margin: 3px 0;
+  width: 100%;
+}
+.filled{
+  background-color: lightblue;
+  color: white;
+  text-align-last: center;
+  font-size: 18px;
+  height: 40px;
+  margin: 3px 0;
+}
+#removed-list{
+  align-self: center;
+  padding-left: 40px;
+}
+#cant-push{
+  background-color: lightcoral;
+  color: red;
+  text-align-last: center;
+  font-size: 18px;
+  height: 40px;
+  margin: 3px 0;
+  display: none;
+}
+#cant-pull{
+  background-color: lightcoral;
+  color: red;
+  text-align-last: center;
+  font-size: 18px;
+  height: 40px;
+  margin: 3px 0;
+  display: none;
+}
+#cant-enqueue{
+  background-color: lightcoral;
+  color: red;
+  text-align-last: center;
+  font-size: 18px;
+  height: 40px;
+  margin: 3px 0;
+  display: none;
+}
+#cant-dequeue{
+  background-color: lightcoral;
+  color: red;
+  text-align-last: center;
+  font-size: 18px;
+  height: 40px;
+  margin: 3px 0;
+  display: none;
+}
+#removed-list-queue{
+  align-self: center;
+  padding-left: 40px;
+}

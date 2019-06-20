@@ -8,11 +8,57 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-  <section class="container">
+  <div class="display">
+  <section class="box1">
     <h1>Abstract Data Types</h1>
-
+    <h2>Stack</h2>
+    <input type="text" id="stack-input" placeholder="Add element to the stack...">
+    <button id="stack-add">ADD</button>
+    <button id="stack-take">TAKE</button>
+    <div class="whole-stack">
+    <div id="cant-pull">Stack Underflow</div>
+     <div class="stacker not-filled"></div>
+     <div class="stacker not-filled"></div>
+     <div class="stacker not-filled"></div>
+     <div class="stacker not-filled"></div>
+     <div class="stacker not-filled"></div>
+     <div class="stacker not-filled"></div>
+     <div class="stacker not-filled"></div>
+     <div class="stacker not-filled"></div>
+     <div class="stacker not-filled"></div>
+     <div class="stacker not-filled"></div>
+     <div id="cant-push">Stack Overflow</div>
+    </div>
   </section>
+  <ol id="removed-list">Items that were removed
 
+  </ol>
+</div>
+<div class="display">
+    <section class="box1">
+      <h2>Queue</h2>
+      <input type="text" id="queue-input" placeholder="Add element to the queue...">
+      <button id="queue-add">ADD</button>
+      <button id="queue-take">TAKE</button>
+      <div class="whole-queue">
+      <div id="cant-dequeue">Queue Underflow</div>
+       <div class="queued not-filled"></div>
+       <div class="queued not-filled"></div>
+       <div class="queued not-filled"></div>
+       <div class="queued not-filled"></div>
+       <div class="queued not-filled"></div>
+       <div class="queued not-filled"></div>
+       <div class="queued not-filled"></div>
+       <div class="queued not-filled"></div>
+       <div class="queued not-filled"></div>
+       <div class="queued not-filled"></div>
+       <div id="cant-enqueue">Queue Overflow</div>
+      </div>
+    </section>
+    <ol id="removed-list-queue">Items that were removed
+  
+    </ol>
+  </div>
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
