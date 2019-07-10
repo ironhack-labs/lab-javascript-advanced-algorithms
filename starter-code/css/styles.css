@@ -1,0 +1,37 @@
+.stack,
+.queue {
+	background: #e5e5e5;
+	height: 25px;
+	width: 400px;
+	margin: 10px 0;
+	text-align: center;
+}
+
+h3 {
+	color: red;
+	background: lightcoral;
+	height: 25px;
+	width: 400px;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.flexbox {
+	display: flex;
+}
+
+#btn-add-stack,
+#btn-add-queue {
+	background: #2779e5;
+	border: 0;
+	color: white;
+	padding: 5px 15px;
+}
+
+#btn-take-stack,
+#btn-take-queue {
+	background: #e53627;
+	border: 0;
+	color: white;
+	padding: 5px 15px;
+}
