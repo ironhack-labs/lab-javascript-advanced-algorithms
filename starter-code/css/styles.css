@@ -1,0 +1,27 @@
+
+p {
+  background-color: rgb(211, 198, 198);
+  height: 30px;;
+}
+
+.blueCamp {
+background-color: rgb(49, 197, 197);
+color: white;
+}
+button {
+  color: white;
+  padding: 10px 60px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+input {
+  width: 60%;
+  height: 40px;;
+}
