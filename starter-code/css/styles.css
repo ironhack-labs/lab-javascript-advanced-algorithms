@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+}
+h2{
+text-align: left;
+}
+
+button {
+    margin: 4px 0;
+    color: white;
+    height: 35px;
+}
+
+.b-blue{
+background-color: blue;
+}
+
+.b-red{
+background-color: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 32%;
+}
+
+.b-add{
+    margin: 10px 0;
+    height: 30px;
+}
+
+.box{
+    background-color: lightgrey;
+    border: 1px black solid;
+    margin-top: 10px;
+    height: 50px;
+
+}
