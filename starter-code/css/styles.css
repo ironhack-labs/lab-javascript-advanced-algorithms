@@ -1,0 +1,80 @@
+#s11 {
+      background-color: grey;
+      padding: 20px;
+      border: 10px;
+      border-color: black;
+      color: white;
+      font-size: 20px;
+}
+#s10 {
+    background-color: lightcyan;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+}
+#s9 {
+    background-color: lightcyan;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+}
+#s8 {
+    background-color: lightcyan;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+}
+#s7 {
+    background-color: lightcyan;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+}  
+#s6 {
+    background-color: lightcyan;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+}  
+#s5 {
+    background-color: lightcyan;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+}
+#s4 {
+    background-color: lightcyan;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+}
+#s3 {
+    background-color: lightcyan;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+}  
+#s2 {
+    background-color: lightcyan;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+}
+#s1 {
+    background-color: lightcyan;
+    padding: 20px;
+    border: 10px;
+    border-color: black;
+}
+#push_btn {
+    background-color: greenyellow;
+}
+#pop_btn {
+    background-color: red;
+}
+.fill{
+    background-color: grey;
+}
+body {
+    
+}
