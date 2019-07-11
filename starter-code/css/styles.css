@@ -1,0 +1,46 @@
+.box{
+    margin-left: 100px;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(200,200,200);
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center
+}
+.input{
+    margin-left: 100px;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(200,200,200);
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center
+}
+
+.button{
+    margin-left: 100px;
+    width: 225px;
+    height: 50px;
+    background-color:red;
+    border: 1px solid black
+}
+
+.add{
+    background-color:red;
+    margin-left: 100px;
+    width: 500px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center
+}
+
+.remove{
+    background-color:blue;
+    margin-left: 100px;
+    width: 500px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center
+}
