@@ -1,0 +1,43 @@
+input {
+  width: 300px;
+  margin: 20px 0 10px 0;
+  padding: 5px;
+  border-radius: 1px;
+  color: #c4c4c4;
+}
+
+button {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  color: white;
+}
+
+.add {
+  background: #345eb9;
+  color: white;
+}
+
+.take {
+  background: #dd5e59;
+  color: white;
+  margin-bottom: 20px;
+}
+
+div {
+  width: 300px;
+  margin-bottom: 5px;
+  border: 1px solid #c4c4c4;
+  padding: 20px 0;
+  background: #c4c4c4;
+}
+
+.added {
+  width: 300px;
+  margin-bottom: 5px;
+  border: 1px solid #3cacec;
+  padding: 20px 0;
+  background: #3cacec;
+}
+
