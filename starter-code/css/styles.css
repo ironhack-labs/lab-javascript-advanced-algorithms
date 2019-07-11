@@ -1,0 +1,41 @@
+.button{
+  border: 1px solid #333;
+  color: black;
+  display: block;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: 1px;
+  width: 250px;
+  text-align: center;
+  margin: 28px 0;
+  border-radius: 6px;
+  height: 40px;
+  font-weight: bold
+  }
+
+  .position{
+  background-color: #ededed;
+  margin-top: 10px;
+  padding: 14px;
+  width: 250px;
+  border-radius: 6px;
+  }
+
+  .red{
+    background-color: red;
+  }
+
+  .blue{
+    background-color: #32c3ff;
+  }
+  input{
+  width: 250px;
+  border-radius: 6px;
+  height: 40px;
+  }
+
+  .position_full{
+    background-color: blue;
+  }
+  
