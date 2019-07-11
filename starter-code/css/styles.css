@@ -1,0 +1,53 @@
+.div-size {
+  width: 300px;
+  height: 60px;
+  background-color: grey;
+  border: solid 1px white;
+}
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+h2 {
+  margin-bottom: 30px;
+}
+.bar {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  width: 300px;
+  height: 40px;
+  border-radius: 10%;
+  color: white;
+}
+
+.btn-blue {
+  background-color: blue;
+  margin-bottom: 5px;
+}
+
+.btn-red {
+  background-color: red;
+  margin-bottom: 30px;
+}
+
+.blue-box {
+  background-color: lightblue;
+  color: white;
+}
+
+.grey-div {
+  background-color: grey;
+}
+
+.stack-div {
+  width: 300px;
+  height: 60px;
+  background-color: rgb(204, 169, 169);
+  color: red;
+  border: solid 1px rgb(187, 53, 53);
+}
