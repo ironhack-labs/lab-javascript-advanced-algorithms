@@ -1,0 +1,61 @@
+
+
+
+.btnAdd{
+    background: #3B85C0;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 10px;
+    padding: 14px 130px;
+    transition: background .3s ease-in-out;
+}
+.btnTake{
+    background: #DE5E59;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 10px;
+    padding: 14px 130px;
+    transition: background .3s ease-in-out;
+    width: 300px;
+}
+
+.boxes{
+    background-color: #EDEDED;
+    margin-top: 10px;
+    height: 50px;
+    padding: 14px;
+    width: 300px;
+    border-radius: 6px;
+}
+#underflow{
+    background-color:blue;
+    margin-top: 10px;
+    height: 50px;
+    padding: 14px;
+    width: 300px;
+    border-radius: 6px;
+    display: none;
+}
+#overflow{
+    background-color:green;
+    margin-top: 10px;
+    height: 50px;
+    padding: 14px;
+    width: 300px;
+    border-radius: 6px;
+    display: none;
+}
+.input_num{
+    width: 300px;
+    border-radius: 6px;
+}
