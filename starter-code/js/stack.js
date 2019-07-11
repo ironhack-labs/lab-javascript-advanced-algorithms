@@ -6,6 +6,7 @@ addButton.onclick = () => {
     let stackedElms = document.getElementsByClassName("stacked-elms")
     let inputVal = document.getElementById("input-add")
     stack.push(inputVal.value)
-    stackedElms[0].innerHTML = stack.stackControl[stack.stackControl.length - 1]
+    stackedElms[stack.MAX_SIZE - 1].innerHTML = stack.stackControl[stack.stackControl.length - 1]
+    console.log(stackedElms)
 }
 
