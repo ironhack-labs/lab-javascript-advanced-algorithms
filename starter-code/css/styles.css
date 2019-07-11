@@ -28,6 +28,10 @@ h3 {
 	padding: 5px 15px;
 }
 
+.blue {
+	background: #85f7f3;
+}
+
 #btn-take-stack,
 #btn-take-queue {
 	background: #e53627;
