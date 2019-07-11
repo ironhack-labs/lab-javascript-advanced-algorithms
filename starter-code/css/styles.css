@@ -1,0 +1,58 @@
+.button {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    width: 180px; 
+    
+  text-transform: uppercase;
+  border-radius: 12px;
+  padding: 5px 0;
+  margin: 5px 0;  
+  width: 300px;
+  text-align: center;  
+    
+  }
+  
+  #container {
+    margin-top: 30px;
+  }
+  
+  
+  .elementStack {
+    background: rgba(100, 204, 252);
+    width: 300px; 
+    border: 1px solid white;
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+  } 
+
+  .stack {
+      background: rgba(194, 161, 161, 0.342);
+    width: 300px; 
+    border: 1px solid white;
+    height: 40px;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  input {
+      width: 300px;
+  }
+
+  #add {
+      background-color: rgb(33, 33, 179);
+      color: white
+  }
+
+  #take {
+      background-color: brown;
+      color: white
+  }
+
+  #overflow, #underflow {
+      margin-left: 50px;
+      font-size: 2em;
+
+  }
