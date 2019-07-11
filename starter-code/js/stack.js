@@ -4,6 +4,8 @@ addButton = document.getElementById("button-add")
 
 addButton.onclick = () => {
     let stackedElms = document.getElementsByClassName("stacked-elms")
-    console.log(isEmpty())
+    let inputVal = document.getElementById("input-add")
+    stack.push(inputVal.value)
+    stackedElms[0].innerHTML = stack.stackControl[stack.stackControl.length - 1]
 }
 
