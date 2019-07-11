@@ -1,0 +1,16 @@
+.mainCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.myStack {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.stackElem {
+  border: 1px solid black;
+  padding: 50px;
+  margin: 20px;
+}
