@@ -52,4 +52,5 @@ console.log(myStack.stackControl) // Va ok
 let insertMe = myStack.stackControl.indexOf(inputCamp.value)
 console.log(insertMe) // ok entra
 arrP[7-insertMe].innerHTML = inputCamp.value
+arrP[7-insertMe].className = 'blueCamp'
 }
