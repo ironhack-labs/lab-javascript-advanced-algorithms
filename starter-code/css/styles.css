@@ -1,0 +1,54 @@
+.stack{
+ background-color: white;
+ border: 2px solid gray;
+ padding: 20px 30px;
+ margin: 5px 30px;
+ border-radius: 5%;
+ 
+}
+.stackBlue{
+border: 2px solid gray;
+background-color: blue;
+color:white;
+ padding: 5px 30px;
+ margin: 5px 30px;
+ border-radius: 5%;
+
+}
+.stackRed{
+border: 2px solid gray;
+background-color:red;
+color:white;
+ padding: 5px 30px;
+ margin: 5px 30px;
+ border-radius: 5%;
+
+}
+
+.container2{
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 9%;
+    margin-top: 20px;
+    
+}
+#add{
+    background-color: blue;
+    color: white;
+    border-radius: 5%;
+}
+
+#take{
+    background-color: red;
+    color: white;
+    border-radius: 5%;
+}
+
+#txt{
+background-color: gray;
+color:white;
+}
