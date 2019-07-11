@@ -1,0 +1,29 @@
+.stack {
+    width: 60%;
+}
+
+.upp {
+    text-transform: uppercase;
+}
+.btn {
+    border: 1px rgb(187, 187, 187) solid;
+    border-radius: 5px;
+    width: 70%;
+    margin-bottom: 10px;
+    color: white;
+}
+.blue {
+    background-color: rgb(104, 143, 211);
+}
+.red {
+    background-color: rgb(218, 49, 49);
+}
+.block {
+    border: 1px rgb(187, 187, 187) white;
+    border-radius: 5px;
+    width: 70%;
+    height: 40px;
+    margin-bottom: 2px;
+    text-align: center;
+    background-color:  rgb(238, 235, 235);
+}
