@@ -1,0 +1,54 @@
+body{
+    margin:5%;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    text-align:center;
+
+}
+
+.container > * {
+    display:flex;
+    flex-direction:column;
+    margin:2%;
+    width:50%;
+}
+
+.data *{
+    border-radius:5%;
+}
+
+
+.element > div{
+    color:white;
+    border:solid 1px;
+    padding-top:2%;
+    border-radius:12px;
+    box-shadow: 12px blac;
+}
+
+.data > * {
+    margin:5%;
+    border-radius:12px;
+
+}
+
+.queue{
+    background-color:lightblue;
+}
+
+.stack{
+    background-color:rgba(255,0,0,0.5);
+}
+
+.add{
+    background-color:green;
+    color:yellow;
+}
+
+.take{
+    background-color:yellow;
+    color:green;
+}
