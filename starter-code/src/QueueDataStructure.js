@@ -1,11 +1,11 @@
 // Initialize variable as an object
 let queue = {};
 
-// Define Stack Class
+// Define Queue Class
 class Queue {
   constructor() {
-    this.queueControl = []; // Contains elements of stack object
-    this.MAX_SIZE = 16; // Maximum number of elements allowed in stack object
+    this.queueControl = []; // Contains elements of queue object
+    this.MAX_SIZE = 10; // Maximum number of elements allowed in queue object
   }
 
   // Return true if number of elements is 0
@@ -20,20 +20,23 @@ class Queue {
     return true;
   }
 
-  // Add element to end of stack
+  // Add element to end of queue
   enqueue(queueElement) {
     // Verify if max size not reached
     if (this.canEnqueue() === true) {
-      for (let i = this.queueControl.length + 1; i > 0; i--) {
-        if (i === 1) this.queueControl[i - 1] = queueElement;
-        else this.queueControl[i - 1] = this.queueControl[i - 2];
+      // Start loop with index incremental and shift from previous place (n) to new place (n+1)
+      for (let i = this.queueControl.length; i > -1; i--) {
+        // Last iteration places new queue element to index 0
+        if (i === 0) this.queueControl[i] = queueElement;
+        // Shift from previous place (n) to new place (n+1)
+        else this.queueControl[i] = this.queueControl[i - 1];
       }
       return this.queueControl;
     }
     return "Queue Overflow"; // When max size is reached
   }
 
-  // Return last element of stack
+  // Return last element of queue
   dequeue() {
     if (!this.isEmpty()) return this.queueControl.pop();
     return "Queue Underflow";

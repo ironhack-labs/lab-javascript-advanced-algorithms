@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  border: navy solid 2px;
+}
+
+.container .header-container {
+  width: 100%;
+}
+
+.stack-container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  box-sizing: border-box;
+  border: navy solid 2px;
+}
+
+.stack-container .stack {
+  height: 10vh;
+  box-sizing: border-box;
+  border: navy solid 2px;
+}

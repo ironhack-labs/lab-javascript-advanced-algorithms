@@ -5,7 +5,7 @@ let stack = {};
 class Stack {
   constructor() {
     this.stackControl = []; // Contains elements of stack object
-    this.MAX_SIZE = 16; // Maximum number of elements allowed in stack object
+    this.MAX_SIZE = 10; // Maximum number of elements allowed in stack object
   }
 
   // Return true if number of elements is 0
