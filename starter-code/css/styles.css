@@ -1,0 +1,112 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+#data-structures {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.data-structure {
+  width: 40%;
+  min-height: 30vh;
+  padding-bottom: 2%;
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-button,
+.take-button,
+.input-box,
+.displays {
+  width: 90%;
+  margin: 1% 0;
+  font-size: 1rem;
+}
+
+.take-button {
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+}
+
+.take-button:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.add-button {
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+}
+
+.add-button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.displays {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#stack-display {
+  flex-direction: column-reverse;
+}
+
+/* classes that change */
+
+.queue-place,
+.stack-place {
+  width: 100%;
+  background-color: gold;
+  border: 1px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.queue-place {
+  height: 40px;
+}
+
+.stack-place {
+  height: 20px;
+}
+
+.queue_value {
+  text-align: center;
+  margin: 0;
+}
+
+.error_msg {
+  width: 100%;
+  background-color: lightcoral;
+  border: 1px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+}
+
+.error-content {
+  text-align: center;
+  margin: 0;
+  color: darkred;
+}
+
+.error-content p {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

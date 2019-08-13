@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
-
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="lib/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Abstract Data Types</h1>
+      <div id="data-structures">
+        <div class="data-structure" id="container-stack">
+          <h2>Stack</h2>
+          <input
+            type="text"
+            name="stack-input"
+            id="stack-input"
+            class="input-box"
+            placeholder="what value do you want to add to the stack"
+          />
+          <button class="add-button" id="stack-add">ADD</button>
+          <button class="take-button" id="stack-take">TAKE</button>
+          <div class="displays" id="stack-display"></div>
+        </div>
+        <div class="data-structure" id="container-queue">
+          <h2>Queue</h2>
+          <input
+            type="text"
+            name="queue-input"
+            id="queue-input"
+            class="input-box"
+            placeholder="what value do you want to add to the queue"
+          />
+          <button class="add-button" id="queue-add">ADD</button>
+          <button class="take-button" id="queue-take">TAKE</button>
+          <div class="displays" id="queue-display"></div>
+        </div>
+      </div>
+    </section>
+    <!-- <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script> -->
+    <script type="module" src="js/stack.js"></script>
+    <script type="module" src="js/queue.js"></script>
+  </body>
 </html>
