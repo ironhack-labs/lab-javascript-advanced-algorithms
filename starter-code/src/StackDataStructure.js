@@ -41,15 +41,18 @@ const stack = new StackDataStructure({
   MAX_SIZE: 6,
 });
 
-const input = document.querySelector("input");
+const input = document.getElementById("input-stack");
 const btnAddStack = document.querySelector(".addStack");
 const btnRemoveStack = document.querySelector(".removeStack");
 
 btnAddStack.onclick = function (){
   if(stack.stackControl.length === 0){
-  document.querySelector(".container>.stack").classList.add("is-active")}
+  document.querySelector(".container>.stack").classList.add("is-active");
+  document.querySelector(".container>.is-active").innerHTML = input.value;}
   else if (stack.canPush()){
-    document.querySelector(".stack:not(.is-active)").classList.add("is-active")}
+    document.querySelector(".stack:not(.is-active)").classList.add("is-active");
+    const active = document.querySelectorAll(".stack.is-active");
+    active[active.length-1].innerHTML = input.value;}
   else {window.alert("Stack Overflow")};
   stack.push(input.value);
   console.log(stack.stackControl)
