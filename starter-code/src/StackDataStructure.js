@@ -17,10 +17,8 @@ class StackDataStructure {
       this.stackControl.length < this.MAX_SIZE ||
       this.stackControl.length == 0
     ) {
-      console.log("es pusheable");
       return true;
     } else {
-      console.log("noes pusheable");
       return false;
     }
   }
