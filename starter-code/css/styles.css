@@ -7,6 +7,38 @@ body {
   width: 100%;
 }
 
+#stack-add-btn {
+  background: rgb(46, 46, 156);
+  color: #fff;
+  border: rgb(1, 1, 32) solid 1px;
+  font-weight: bold;
+}
+
+#stack-take-btn {
+  border: #000 solid 1px;
+  background: #991212;
+  color: #fff;
+  font-weight: bold;
+}
+
+#queue-add-btn {
+  background: rgb(46, 46, 156);
+  color: #fff;
+  border: rgb(1, 1, 32) solid 1px;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+#queue-take-btn {
+  border: #000 solid 1px;
+  background: #991212;
+  color: #fff;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
 .container1 {
   display: flex;
   flex-direction: column;
@@ -23,28 +55,27 @@ body {
 .container1 .form-container {
   display: flex;
   flex-direction: column;
-  height: 77%;
+  height: 25vh;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  border: navy solid 2px;
 }
 
 .container1 .input-container {
   display: flex;
   height: 7.5vh;
   width: 80%;
-  box-sizing: border-box;
-  border: navy solid 2px;
   justify-content: center;
 }
 
-.container1 .input-container .input {
+.container1 .input-container #stack-value {
   width: 50%;
 }
 
-.container1 .element {
+.container1 #element1 {
+  display: flex;
   width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .container1 .button-container {
@@ -52,8 +83,6 @@ body {
   width: 80%;
   height: 7.5vh;
   align-items: center;
-  box-sizing: border-box;
-  border: navy solid 2px;
 }
 
 .container1 .button-container button {
@@ -61,21 +90,40 @@ body {
   height: 80%;
 }
 
-.container1 .stack-container {
+.container1 #stack-container {
   display: flex;
   flex-direction: column;
   height: 70vh;
-  box-sizing: border-box;
-  border: navy solid 2px;
   justify-content: center;
   align-items: center;
 }
 
-.container1 .stack-container .stack {
+.container1 #stack-container .stack {
+  display: flex;
   width: 80%;
   height: 10vh;
   box-sizing: border-box;
-  border: navy solid 2px;
+  border: rgb(1, 1, 32) solid 1px;
+  background: rgb(46, 46, 156);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(1, 1, 32);
+  font-weight: bold;
+}
+
+.container1 #stack-container .stack.empty {
+  border: gray solid 1px;
+  background: #fff;
+  color: #757575;
+  font-weight: bold;
+}
+
+.stack-alert {
+  border: darkred solid 1px;
+  background: #991212;
+  color: #757575;
+  font-weight: bold;
 }
 
 .container2 {
@@ -89,7 +137,7 @@ body {
 .container2 .header_container {
   display: flex;
   flex-direction: column;
-  height: 25vh;
+  height: 30vh;
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -99,7 +147,9 @@ body {
 
 .container2 .form-container {
   display: flex;
+  height: 25vh;
   width: 100%;
+  align-items: center;
 }
 
 .container2 .input-container {
@@ -128,26 +178,35 @@ body {
   height: 30vh;
   width: 10%;
   justify-content: center;
-  box-sizing: border-box;
-  border: navy solid 2px;
 }
 
 .container2 .button-container button {
   width: 75%;
 }
 
-.container2 .queue-container {
+.container2 #queue-container {
   display: flex;
   height: 70vh;
-  box-sizing: border-box;
-  border: navy solid 2px;
   justify-content: center;
   align-items: center;
 }
 
-.container2 .queue-container .queue {
+.container2 #queue-container .queue {
+  display: flex;
   width: 7.5%;
   height: 30vh;
   box-sizing: border-box;
   border: navy solid 2px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.container2 #queue-container .queue.empty {
+  width: 7.5%;
+  height: 30vh;
+  box-sizing: border-box;
+  border: #757575 solid 2px;
 }

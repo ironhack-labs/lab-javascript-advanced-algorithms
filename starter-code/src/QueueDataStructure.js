@@ -48,5 +48,5 @@ function QueueDataStructure() {
   return queue;
 }
 
-StackDataStructure();
-console.log(stack);
+QueueDataStructure();
+console.log(queue);
