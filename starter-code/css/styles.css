@@ -78,7 +78,7 @@ input{
 
 .container2{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: center;
   width: 1000px;
