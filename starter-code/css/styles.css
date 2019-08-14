@@ -1,0 +1,97 @@
+*{
+    box-sizing : border-box;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    height:80vh;
+    text-align : left;
+    justify-content:flex-start;
+    width : 20vw;
+
+}
+
+input{
+    border-bottom:solid black 1px;
+ 
+
+}
+
+.btn{
+    margin-top:1px;
+    height: 12vh;
+    border :solid white 1px; 
+    margin-bottom:10px;
+
+}
+
+.box{
+    background-color:#c5c3c3;
+    height: 10vh;
+    margin : 1px 0;
+  
+}
+
+.box-queue{
+    background-color:#c5c3c3;
+    width: 10vw;
+    height : 20vh;
+    margin : 0 1px;
+  
+}
+.box-full{
+    background-color:rgb(75, 75, 187);
+    color : white;
+    text-align: center;
+    
+}
+.queue-full{
+    background-color:rgb(75, 75, 187);
+    color : white;
+    text-align: center;
+    
+}
+
+#box-alert{
+    visibility: hidden;
+    border: solid red 1px;
+    height : 10vh;
+    background-color:rgba(179, 77, 77, 0.5);
+    color:white;
+    text-align:center;
+}
+#box-underflow{
+    visibility: hidden;
+    border: solid red 1px;
+    height : 10vh;
+    background-color:rgba(179, 77, 77, 0.5);
+    color:white;
+    text-align:center;
+}
+#queue-alert{
+    visibility: hidden;
+    border: solid red 1px;
+    height : 10vh;
+    margin : 0 1px;
+    background-color:rgba(179, 77, 77, 0.5);
+    color:white;
+    text-align:center;
+}
+#queue-underflow{
+    visibility: hidden;
+    border: solid red 1px;
+    height : 10vh;
+    margin : 0 1px;
+    background-color:rgba(179, 77, 77, 0.5);
+    color:white;
+    text-align:center;
+}
+
+#flexbox{
+    display: flex;
+    flex-flow: row;
+    
+
+}
+

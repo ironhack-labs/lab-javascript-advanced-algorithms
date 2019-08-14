@@ -5,17 +5,56 @@
   <title>DataStructures | Stacks &amp; Queues</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
+  <script type="module" src="lib/jquery-3.1.1.min.js"></script>
+  
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
+    <h1>Stack</h1>
+    <input type="text" placeholder="Insert your text here" id="text_places" class="form-control">
+    <button id="add" class="btn btn-primary"><h3>Add</h3></button>
+    <button id ="remove" class="btn btn-danger"><h3>Remove</h3></button>
+    <div id="box-alert"></div>
+    <div class="box" id = "box_7"></div>
+    <div class="box" id = "box_6"></div>
+    <div class="box" id = "box_5"></div>
+    <div class="box" id = "box_4"></div>
+    <div class="box" id = "box_3"></div>
+    <div class="box" id = "box_2"></div>
+    <div class="box" id = "box_1"></div>
+    <div class="box" id = "box_0"></div>
+    <div id="box-underflow"></div>
+
+
+  </section>
+ 
+  <section class="container" id="queue">
+    <h1>Queue</h1>
+    <input type="text" placeholder="Insert your text here" id="text_queue" class="form-control"><br/>
+    
+    <button id="add_queue" class="btn btn-primary"><h3>Add</h3></button>
+    <button id ="remove_queue" class="btn btn-danger"><h3>Remove</h3></button>
+    <div id="queue-underflow"></div>
+    <div id="flexbox">
+    
+    <div class="box-queue" id = "queue_0"></div>
+    <div class="box-queue" id = "queue_1"></div>
+    <div class="box-queue" id = "queue_2"></div>
+    <div class="box-queue" id = "queue_3"></div>
+    <div class="box-queue" id = "queue_4"></div>
+    <div class="box-queue" id = "queue_5"></div>
+    <div class="box-queue" id = "queue_6"></div>
+    <div class="box-queue" id = "queue_7"></div>
+    
+    
+    </div>
+<div id="queue-alert"></div>
 
   </section>
 
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
+  <script type="module" src="src/StackDataStructure.js"></script>
+  <script type="module" src="src/QueueDataStructure.js"></script>
+  <script type="module" src="js/stack.js"></script>
+  <script type="module" src="js/queue.js"></script>  
 </body>
 </html>
