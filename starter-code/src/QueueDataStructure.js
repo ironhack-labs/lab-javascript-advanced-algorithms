@@ -52,10 +52,12 @@ btnAddQueue.onclick = function (){
 
 btnRemoveQueue.onclick = function (){
   if(!queue.canEnqueue()){
-  document.querySelector(".container2 :last-child").classList.remove("is-active")}
+  document.querySelector(".container2 :last-child").classList.remove("is-active");
+  document.querySelector(".container2 :last-child").innerHTML=""}
   else  if(queue.queueControl.length > 0){
     const active = document.querySelectorAll(".queue.is-active");
-    active[active.length-1].classList.remove("is-active")}
+    active[active.length-1].classList.remove("is-active")
+    active[active.length-1].innerHTML = "";}
   else {window.alert("Queue Underflow")};
   queue.dequeue()
   console.log(queue.queueControl)

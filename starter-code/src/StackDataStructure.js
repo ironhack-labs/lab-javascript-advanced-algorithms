@@ -60,10 +60,12 @@ btnAddStack.onclick = function (){
 
 btnRemoveStack.onclick = function (){
   if(!stack.canPush()){
-  document.querySelector(".container :last-child").classList.remove("is-active")}
+  document.querySelector(".container :last-child").classList.remove("is-active");
+  document.querySelector(".container :last-child").innerHTML=""}
   else  if(stack.stackControl.length > 0){
     const active = document.querySelectorAll(".is-active");
-    active[active.length-1].classList.remove("is-active")}
+    active[active.length-1].classList.remove("is-active");
+    active[active.length-1].innerHTML=""}
   else {window.alert("Stack Underflow")};
   stack.pop()
   console.log(stack.stackControl)

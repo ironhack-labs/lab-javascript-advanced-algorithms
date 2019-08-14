@@ -3,47 +3,113 @@
   margin: 0;
 }
 
+html{
+  font-size: 10px;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+input{
+  width: 300px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.btn{
+  width: 300px;
+  color: #fff;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px 0 10px;;
+}
+
+.addStack{
+  background-color: blue;
+}
+
+.removeStack{
+  background-color: red;
+}
+
 .container{
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
   width: 300px;
   height: 600px;
-  border: 2px solid black;
   position: relative;
   padding: 0;
+  margin: 10px 0 ;
+}
+
+.stack{
+  width: 100%;
+  height: 99px;
+  background-color:#EDECEC;
+  border: 2px solid white;
+  border-radius: 3px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 4rem;
 }
 
 .container2{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   width: 1000px;
   height: 300px;
-  border: 2px solid black;
   position: relative;
-  left: 200px;
   padding: 0;
+  margin: 20px 0 50px;
 }
 
-.stack{
-  width: 100%;
-  height: 99px;
-  background-color: grey;
-  border: 2px solid white;
-  position: relative;
-  bottom: 0;
-  left: 0;
+.addQueue{
+  background-color: blue;
 }
+
+.removeQueue{
+  background-color: red;
+}
+
 
 .queue{
   width: 199px;
   height: 100%;
-  background-color: grey;
+  background-color: #EDECEC;
   border: 2px solid white;
+  border-radius: 3px;
   position: relative;
   bottom: 0;
   left: 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 4rem;
 }
 
 .is-active {
