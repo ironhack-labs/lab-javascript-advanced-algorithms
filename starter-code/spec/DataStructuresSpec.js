@@ -1,3 +1,4 @@
+
 describe("Stack", function() {
   var stack;
 
@@ -93,6 +94,9 @@ describe("Stack", function() {
     });
   });
 });
+
+
+
 
 describe("Queues", function() {
   var queue;
