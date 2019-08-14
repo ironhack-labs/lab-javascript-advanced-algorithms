@@ -9,13 +9,21 @@
 </head>
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
-
+    <h1 class="section-name">Stack</h1>
+    <div class="stack">
+      <input id ="stack-input" type="text" placeholder="Add the element to the stack ...">
+      <h1 id = "taken-element"></h1>
+    </div>
+    <button class="btn add-btn">ADD</button>
+    <button class ="btn take-btn">TAKE</button>
+    <section id= "elements-list">
+      <div id="list-of-elements"></div>
+  </section>
   </section>
 
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
+  <!-- <script src="src/StackDataStructure.js"></script>
+  <script src="src/QueueDataStructure.js"></script> -->
+  <script type="module" src="js/stack.js"></script>
+  <script type="module" src="js/queue.js"></script>
 </body>
 </html>

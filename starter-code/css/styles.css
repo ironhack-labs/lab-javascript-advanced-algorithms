@@ -1,0 +1,93 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 320px; 
+}
+
+.section-name{
+  text-align: left;
+}
+.stack{
+  display: flex;
+  flex-direction: row; 
+  align-items: baseline;
+  justify-content: space-between; 
+  margin : 0px;
+}
+
+
+#stack-input{
+  height: 32px; 
+  min-width: 220px;
+  max-width: 220px;
+  border: solid skyblue 1px;
+  border-radius: 5px;
+}
+
+.empty-element{
+  background: lightgrey;
+
+}
+
+.list {
+  height: 32px;
+  width: 220px;
+  margin-bottom: 1px;
+  text-align: center;
+  background: lightgrey;
+}
+.filled-element{
+  background : skyblue;
+}
+
+.flowed{
+  /* Over and underflow */
+  background : pink;
+  height: 32px;
+  width: 220px;
+  margin-bottom: 1px;
+  text-align: center;
+  color:red;
+  border: solid 1px red;
+}
+
+/* .under-flow{
+  background : pink;
+  height: 32px;
+  width: 220px;
+  margin-bottom: 1px;
+  text-align: center;
+  color: red;
+  border: solid 1px red;
+} */
+
+#taken-element{
+  display: flex;
+  
+}
+
+.btn.add-btn{
+  background-color :lightblue;
+  margin-top : 10px; 
+}
+
+.btn.take-btn{
+  background-color: red;
+}
+
+.btn{
+  border: none; 
+  color : white;
+  font-size: 16px;
+  text-align: center; 
+  display: block;
+  height: 32px;
+  width: 220px;
+  margin-bottom : 10px; 
+}
+
+#elements-list{
+  margin-top : 15px;
+}
+
