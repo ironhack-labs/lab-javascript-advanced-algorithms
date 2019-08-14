@@ -7,28 +7,103 @@ body {
   width: 100%;
 }
 
-.container {
+.container1 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 30%;
   height: 100vh;
   box-sizing: border-box;
   border: navy solid 2px;
 }
 
-.container .header-container {
+.container1 .header_container {
+  height: 30vh;
+  width: 100%;
+  text-align: center;
+}
+
+.container1 .form-container {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 .input-container {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
 }
 
-.stack-container {
+.container1 .input-container .input {
+  width: 40%;
+}
+
+.container1 .button-container {
+  width: 80%;
+}
+
+.container1 .button-container button {
+  width: 100%;
+}
+
+.container1 .stack-container {
   display: flex;
   flex-direction: column;
   height: 70vh;
   box-sizing: border-box;
   border: navy solid 2px;
+  justify-content: center;
+  align-items: center;
 }
 
-.stack-container .stack {
+.container1 .stack-container .stack {
+  width: 80%;
+  height: 10vh;
+  box-sizing: border-box;
+  border: navy solid 2px;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 70%;
+  justify-content: center;
+}
+
+.container2 .header_container {
+  height: 25vh;
+  width: 100%;
+  text-align: center;
+}
+
+.container2 .input-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.container2 .input-container .input {
+  width: 40%;
+}
+
+.container2 .button-container button {
+  width: 100%;
+}
+
+.container2 .stack-container {
+  display: flex;
+  height: 70vh;
+  box-sizing: border-box;
+  border: navy solid 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 .stack-container .stack {
+  width: 80%;
   height: 10vh;
   box-sizing: border-box;
   border: navy solid 2px;
