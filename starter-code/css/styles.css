@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+
+/* boxes */
+.box {
+  background-color: lightgray;
+  height: 30px;
+  margin-bottom: 1px;
+}
+
+.blueBox {
+  background-color: rgb(102, 198, 230);
+}
+
+input {
+  opacity: 0.33;
+  margin-bottom:10px;
+}
+
+/* buttons */
+.btn {
+  height: 30px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+.add-btn {
+  background-color: rgb(37, 101, 173);
+}
+
+.take-btn {
+  background-color: rgb(214, 60, 60);
+  margin-bottom: 20px;
+}
+
+#overflow {
+  visibility: hidden;
+  height: 0px; 
+}
+#underflow {
+  visibility: hidden;
+  height: 0px; 
+}
+
+.flowbox {
+  text-align: center;
+  color: red;
+  border: 2px red solid;
+}
+
+
+/* QUEUE TIME */
+.queue-box {
+  background-color: lightgray;
+  height: 30px;
+  margin-bottom: 1px;
+}
