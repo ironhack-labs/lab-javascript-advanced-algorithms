@@ -1,0 +1,57 @@
+
+
+/* 1st div */
+/* id's */
+#btn-blue {
+    background-color: blue;
+}
+
+#btn-red {
+    background-color: red;
+    
+}
+
+
+/* classes */
+.btn-style {
+    height: 35px;
+    color: white;
+    border: none;
+}
+
+.div-container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 150px;
+
+}
+
+.style {
+    width: 250px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 3px 10px;
+    opacity: 0.7;
+}
+
+
+#div-bars {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    margin: 10px 0;
+}
+
+
+.bars {
+    width: 250px;
+    height: 50px;
+    padding: 5px 10px;
+    margin: 1px 10px;
+    background-color: #d2d6d3;
+    border: none;
+}
+

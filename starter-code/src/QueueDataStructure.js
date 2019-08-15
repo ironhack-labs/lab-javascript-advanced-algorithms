@@ -3,7 +3,7 @@
 
 function QueueDataStructure () {
     this.queueControl = [];
-    this.MAX_SIZE = 5;
+    this.MAX_SIZE = 8;
     //this.MIN_SIZE = 1;
 }
 

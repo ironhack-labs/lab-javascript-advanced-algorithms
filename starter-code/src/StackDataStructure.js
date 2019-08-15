@@ -37,10 +37,6 @@ StackDataStructure.prototype.pop = function() {
 }
 
 
-const stack = new StackDataStructure();
-const stack2 = new StackDataStructure();
-const stack3 = new StackDataStructure();
-
 console.log(stack.isEmpty());
 console.log(stack.canPush());
 console.log(stack.push('hello'));
