@@ -3,6 +3,7 @@ let newQueueElement = document.getElementById("queue-value");
 let addQueueBtn = document.getElementById("queue-add-btn");
 let takeQueueBtn = document.getElementById("queue-take-btn");
 let queueElements = document.getElementsByClassName("queue");
+let queueValueElement = document.getElementById("element2");
 
 addQueueBtn.addEventListener("click", addToQueue);
 takeQueueBtn.addEventListener("click", takeFromQueue);
@@ -12,9 +13,18 @@ function addToQueue() {
   console.log(newQueueElement.value);
 
   if (queue.canEnqueue()) {
-    queue.enqueue(newQueueElement.value);
+    queueValueElement.style.color = "#2E2E9C";
+    if (newQueueElement.value.length === 0) {
+      queueValueElement.innerText = "";
+      queueValueElement.innerText = `Added "No Value Entered"`;
+      queue.enqueue('NO VALUE ENTERED');
+    }
+    else {
+      queueValueElement.innerText = "";
+      queueValueElement.innerText = `Added "${newQueueElement.value}"`;
+      queue.enqueue(newQueueElement.value);
+    }
     let queueIndex = getQueuePosition() + 1;
-    let position = queueIndex;
 
     for (let i = 0; i < queueIndex; i++) {
       queueElements[i].innerText = queue.queueControl[i];
@@ -22,30 +32,36 @@ function addToQueue() {
     }
   } else {
     let queueIndex = getQueuePosition();
-    let position = queueElements.length - queueIndex - 1;
-    queueElements[position].innerText = "Queue Overflow";
-    queueElements[position].style.background = "#991212";
+    queueValueElement.style.color = '#991212';
+    queueValueElement.innerText = "";
+    queueValueElement.innerText = `Queue Overflow`;
+    queueElements[queueIndex].innerText = "Queue Overflow";
+    queueElements[queueIndex].style.background = "#991212";
     setTimeout(() => {
-      queueElements[position].innerText = queue.queueControl[queueIndex];
-      queueElements[position].removeAttribute("style");
+      queueElements[queueIndex].innerText = queue.queueControl[queueIndex];
+      queueElements[queueIndex].removeAttribute("style");
     }, 1000);
   }
 }
 
 function takeFromQueue() {
   let queueIndex = getQueuePosition();
-  let position = queueElements.length - queue - 1;
+  queueValueElement.style.color = '#991212';
 
   if (!queue.isEmpty()) {
-    queue.dequeue();
-    queueElements[position].innerText = "EMPTY";
-    queueElements[position].classList.toggle("empty");
+    queueValueElement.innerText = "";
+    queueValueElement.innerText = queue.dequeue();
+    queueElements[queueIndex].innerText = "EMPTY";
+    queueElements[queueIndex].classList.toggle("empty");
   } else {
-    queueElements[9].innerText = "Queue Underflow";
-    queueElements[9].style.background = "#991212";
+    queueValueElement.innerText = "";
+    queueValueElement.innerText = `Queue Underflow`;
+    queueElements[queueIndex+1].style.color = '#FFFFFF';
+    queueElements[queueIndex+1].innerText = "Queue Underflow";
+    queueElements[queueIndex+1].style.background = "#991212";
     setTimeout(() => {
-      queueElements[9].innerText = "EMPTY";
-      queueElements[9].removeAttribute("style");
+      queueElements[queueIndex+1].innerText = "EMPTY";
+      queueElements[queueIndex+1].removeAttribute("style");
     }, 1000);
   }
 }
