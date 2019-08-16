@@ -35,6 +35,11 @@ body{
 
 }
 
+.element > *:nth-child(odd){
+    background-color:black;
+    color:white;
+}
+
 .queue{
     background-color:lightblue;
 }

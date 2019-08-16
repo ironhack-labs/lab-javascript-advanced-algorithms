@@ -15,7 +15,7 @@ function stackCreate(){
     const newDiv = document.createElement("div")
     newDiv.innerHTML = toAdd;
 
-    if (stack.push(toAdd)) stackList.appendChild(newDiv);
+    (stack.push(toAdd)) ? stackList.appendChild(newDiv):alert("!!!!");
     
     console.log(stack.stackControl)
 
@@ -26,7 +26,7 @@ function stackRemove(){
     
     let to_rmv = stackList.lastChild;
 
-    (stack.stackControl.pop()) ? stackList.removeChild(to_rmv):alert(`Stack Underflow : ${stack.stackControl}`);
+    (stack.stackControl.pop()) ? stackList.removeChild(to_rmv):alert(`Stack Underflow : stack = ${stack.stackControl.length}, sorry dude`);
     console.log(stack.stackControl)
 
 }

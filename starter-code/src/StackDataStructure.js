@@ -16,18 +16,14 @@ StackDataStructure.prototype.canPush = function(){
 }
 
 StackDataStructure.prototype.push = function(arr){
-    if (!this.canPush()) {
-        alert("Stack Overflow");
-        return false;
-
-    }
+    if (!this.canPush()) return false;
     this.stackControl.push(arr);
     return this.stackControl;
 }
 
 
 StackDataStructure.prototype.pop = function(){
-    if (this.isEmpty()) return false;
+    if (this.isEmpty()) return false
     return this.stackControl.pop();
 }
 

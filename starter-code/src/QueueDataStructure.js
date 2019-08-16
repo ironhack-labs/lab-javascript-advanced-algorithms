@@ -1,7 +1,9 @@
+let a = "coucou"
+
 function QueueDataStructure (max) {
 
     this.queueControl = [];
-    this.MAX_SIZE = max;
+    this.MAX_SIZE = Number(max);
 
 }
 
@@ -11,19 +13,19 @@ QueueDataStructure.prototype.isEmpty = function(){
 
 
 QueueDataStructure.prototype.canEnqueue = function(){
-    return this.queueControl.length < this.MAX_SIZE;
-    
+    return this.MAX_SIZE > this.queueControl.length;    
 }
 
 QueueDataStructure.prototype.enqueue = function(arr){
-    if (!this.canEnqueue()) return "Queue Overflow";
-    this.queueControl.unshift(arr);
+    
+    if (!this.canEnqueue()) return false;;
+    console.log(this.queueControl);
+    this.queueControl.push(arr);
     return this.queueControl;
 }
 
 
-QueueDataStructure.prototype.dequeue = function(arr){
-    if (this.isEmpty()) return "Queue Underflow"
-    this.queueControl.shift(arr);
-    return this.queueControl[0]
+QueueDataStructure.prototype.dequeue = function(){
+    if (this.isEmpty()) return false;
+    return this.queueControl.shift();
 }
