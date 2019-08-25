@@ -1,0 +1,115 @@
+* {
+    transition: .2s all;
+    font-weight: 600;
+    color: #212121;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+h1{
+    color: #F4F4F4;
+    margin: 2rem 0;
+}
+
+.section{
+    padding: 5% 10%;
+}
+
+.col-sm-1 {
+    text-align: right;
+}
+
+.container-fluid{
+    background-color: #F4F4F4;
+    height: 100%;
+    width: 100%;
+}
+
+.stack-body{
+    background-color: #F4F4F4;
+    padding: 0 20%;
+}
+
+.header {
+    background-color:  #407088;
+    color: #F4F4F4;
+    border-radius: 0 0 10px 0;
+}
+
+.header > div {
+    margin: .5rem 0;
+}
+
+#main {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#add-btn, #take-btn {
+    border: none;
+    font-size: 4rem;
+}
+
+#add-btn{
+    color: #EDABAD;
+}
+
+#take-btn{
+    color: #E39090;    
+}
+
+.form-control {
+    height: 80px;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+.stack {
+    height: 6rem;
+    margin: .5rem 0;
+    line-height: 6rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.fa-layer-group {
+    color: #B5B5FF;
+}
+
+p {
+    color: #ecf1f3;
+    word-spacing: 2em;
+}
+
+.stack-row-occupied {
+    color: #F1F1F1;
+    background-color: #78AAC4;
+}
+
+.stack-row-empty {
+    background-color: #3F7B9A;
+}
+
+.error {
+    height: 0;
+}
+
+.stack-overflow, .stack-underflow {
+    background-color: #FFB5B5;
+    height: 3rem;
+    line-height: 3rem;
+    display: block;
+}
+
+.stack-underflow:after {
+  content: "STACK UNDERFLOW";
+}
+
+.stack-overflow:after {
+    content: "STACK OVERFLOW";
+}

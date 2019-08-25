@@ -1,6 +1,6 @@
 function StackDataStructure() {
     this.stackControl = []
-    this.MAX_SIZE = 32
+    this.MAX_SIZE = 8
 
     this.isEmpty = function () {
         return !Boolean(this.stackControl.length)

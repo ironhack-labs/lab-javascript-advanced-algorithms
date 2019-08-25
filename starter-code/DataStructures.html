@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/10c33226a7.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
-
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
+    <div class="main">
+        <div class="section container-fluid header">
+            <div class="col-sm-12">
+                <h1>Overflowing Stack</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-11">
+                    <input id="element-input" class="form-control" placeholder="Add the element to the stack...">
+                
+                </div>
+                <div class="col-sm-1">
+                    <i id="add-btn" class="far fa-plus-square"></i>
+                    <i id="take-btn"class="far fa-minus-square"></i>
+                </div>
+            </div>
+        </div>
+        <div class="section stack-body">
+            <div class="col-sm-12">
+                <div class="stack error" id="overflow"></div>
+            </div>
+            <div id="body" class="container-fluid">
+            </div>
+            <div class="col-sm-12">
+                <div class="stack error" id="underflow"></div>
+            </div>
+        </div>
+    </div>
+    <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script>
+    <script src="js/stack.js"></script>
+    <script src="js/queue.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
