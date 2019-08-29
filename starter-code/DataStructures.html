@@ -1,21 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <h1 class="main-title">Abstract Data Types</h1>
+      <div class="container">
+        <div class="structure structure-stack">
+          <h2 class="structure-title">Stack</h2>
+          <div class="structure-buttons">
+            <form action="#" method="post">
+              <input
+                type="text"
+                name="stack-added-value"
+                id="stack-added-value"
+                autocomplete="off"
+                placeholder="Item to add"
+              />
+              <button class="button button-add">ADD</button>
+              <button class="button button-take">TAKE</button>
+            </form>
+          </div>
+          <div class="structure-body structure-body-stack">
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+          </div>
+        </div>
+        <div class="structure structure-queue">
+          <h2 class="structure-title">Queue</h2>
+          <div class="structure-buttons">
+            <form action="#" method="post">
+              <input
+                type="text"
+                name="queue-added-value"
+                id="queue-added-value"
+                autocomplete="off"
+                placeholder="Item to add"
+              />
+              <button class="button button-add">ADD</button>
+              <button class="button button-take">TAKE</button>
+            </form>
+          </div>
+          <div class="structure-body structure-body-queue">
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+            <div class="structure-row"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
-</body>
+    <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script>
+    <script src="src/PaintStackStructure.js"></script>
+    <script src="src/PaintQueueStructure.js"></script>
+    <!-- <script src="js/stack.js"></script> -->
+    <!-- <script src="js/queue.js"></script> -->
+    <script src="js/app.js"></script>
+  </body>
 </html>
