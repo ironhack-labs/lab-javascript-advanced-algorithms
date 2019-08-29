@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  padding: 30px 0;
+}
+
+.greydiv {
+  border: 1px solid whitesmoke;
+  width: 400px;
+  height: 50px;
+  background: rgb(181, 187, 192);
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.inputbox {
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btn {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+}
+
+.bluebtn {
+  background: lightskyblue;
+}
+
+.redbtn {
+  background: lightcoral;
+  margin-bottom: 30px;
+}
+
