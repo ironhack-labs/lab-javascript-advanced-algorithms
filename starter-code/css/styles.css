@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+h1 {
+  padding: 0;
+  border: 0;
+  font-size: 4rem;
+  display: contents;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding-top: 0;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  margin: 0;
+  width: 50rem;
+  padding: 3rem;
+}
+input, button, li {
+  height: 5rem;
+  width: 50rem;
+  padding: 2rem;
+  margin: 1rem;
+}
+input {
+  font-size: 2rem;
+}
+li {
+  background: rgb(194, 192, 192);
+  text-decoration: none;
+  list-style-type: none;
+}
+li.active {
+  background: blue;
+}
