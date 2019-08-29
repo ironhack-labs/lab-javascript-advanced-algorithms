@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="lib/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Abstract Data Types</h1>
+      <div class="columns">
+        <div class="col-sm-6 column">
+          <h2>Stack</h2>
+          <input type="text" class="stack-item" placeholder="add the element to the stack..." />
+          <button class="btn btn-primary add-stack">Add</button>
+          <button class="btn btn-success take-stack">Take</button>
+          <ul>
+            <li class="position-0 empty"></li>
+            <li class="position-1 empty"></li>
+            <li class="position-2 empty"></li>
+            <li class="position-3 empty"></li>
+            <li class="position-4 empty"></li>
+            <li class="position-5 empty"></li>
+            <li class="position-6 empty"></li>
+            <li class="position-7 empty"></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 column">
+          <h2>Queue</h2>
+          <input type="text" class="queue-item" placeholder="add the element to the queue..." />
+          <button class="btn btn-primary">Add</button>
+          <button class="btn btn-success">Take</button>
+          <ul>
+            <li class="position-0 empty"></li>
+            <li class="position-1 empty"></li>
+            <li class="position-2 empty"></li>
+            <li class="position-3 empty"></li>
+            <li class="position-4 empty"></li>
+            <li class="position-5 empty"></li>
+            <li class="position-6 empty"></li>
+            <li class="position-7 empty"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
-</body>
+    <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script>
+    <script src="js/stack.js"></script>
+    <script src="js/queue.js"></script>
+  </body>
 </html>

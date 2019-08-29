@@ -20,8 +20,9 @@ function QueueDataStructure() {
   };
 
   this.dequeue = function() {
-      if (!this.isEmpty) {
-        return this.queueControl.shift();
+      if (!this.isEmpty()) {
+        let lastInQueue = this.queueControl.length-1;
+        return this.queueControl.pop(lastInQueue);
       } else {
         return "Queue Underflow";
       }

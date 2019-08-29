@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: auto 30px;
+}
+
+.column > * {
+    width: 100%;
+    margin: 5px auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    height: 50px;
+    margin-top: 1px;
+}
+
+.empty {
+    background-color: #ededed;
+}
+
+.btn {
+    text-transform: uppercase;
+}
