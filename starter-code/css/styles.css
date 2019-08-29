@@ -1,0 +1,13 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack-column {
+  display: flex;
+  flex-direction: column;
+  background-color: turquoise;
+  height: 600px;
+  width: 500px;
+}
