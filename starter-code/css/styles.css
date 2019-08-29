@@ -8,7 +8,7 @@
 }
 
 body {
-  padding: 0 0 2rem;
+  padding: 0 0 4rem;
   font-family: sans-serif;
   background-color: #34495e;
 }
@@ -17,6 +17,10 @@ body {
   font-size: 1rem;
   margin-bottom: 1rem;
   padding: .75rem 1rem;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .button:focus,
@@ -37,6 +41,7 @@ input:focus {
   cursor: pointer;
   background-color: #00000000;
   border: 2px solid;
+  transition: background-color .2s;
 }
 
 .button-add {
@@ -62,10 +67,11 @@ input:focus {
 .main-title {
   text-align: center;
   margin-bottom: 2rem;
-  background-color: #ce93d8;
+  background-color: #00FFFF88;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .35);
   color: #FFFFFF;
   padding: 2rem 1rem;
+  text-shadow: 0 0 4px #000000AA;
 }
 
 .container {
@@ -86,7 +92,7 @@ input:focus {
 
 .structure-title {
   margin-bottom: 2rem;
-  color: #ce93d8;
+  color: #00FFFF;
   text-shadow: 0 0 3px #000000;
   text-transform: uppercase;
 }
@@ -102,6 +108,7 @@ input:focus {
   border: 2px solid #FFFFFFCC;
   text-align: center;
   color: #FFFFFF;
+  transition: background-color .2s, border-color .2s;
 }
 
 input::placeholder {
@@ -110,6 +117,7 @@ input::placeholder {
 
 .structure-buttons input:focus {
   background-color: #FFFFFF33;
+  border-color: #FFFFFF;
 }
 
 .structure-buttons .button:last-of-type {
@@ -129,6 +137,14 @@ input::placeholder {
   border-radius: 5px;
   color: #FFFFFF;
   background-color: #1abc9c33;
+  background-color: #00FFFF22;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+  transition: background-color .2s;
+}
+
+.structure-row:first-child {
+  background-color: #00000000;
+  box-shadow: none;
 }
 
 .structure-row:not(:last-child) {
@@ -137,6 +153,7 @@ input::placeholder {
 
 .structure-row-filled {
   background-color: #1abc9c99;
+  background-color: #00BBBBee;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .35);
 }
 
