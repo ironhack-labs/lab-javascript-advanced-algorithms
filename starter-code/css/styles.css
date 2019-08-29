@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.btn-add {
+  height: 7rem;
+  font-size: 1.6rem;
+  width: 20rem;
+  margin-right: 1rem;
+}
+.btn-take {
+}
+h2 li {
+  
+}
