@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
-    <h1>Abstract Data Types</h1>
-
+    <div class="stack-vs-queue">
+      <div style="display: flex; width: 50%">
+        <div id="stack" class="column">
+          <h2>Stack</h2>
+          <input type="text" id="stack-input">
+          <button id="add-to-stack" class="btn btn-primary">ADD</button>
+          <button id="remove-from-stack" class="btn btn-danger">Take</button>
+          <ul class="stack-list"></ul>
+        </div>
+        <div class="current-take current-stack-take"></div>
+      </div>
+      <div style="display: flex; width: 50%">
+        <div id="queue" class="column">
+          <h2>Queue</h2>
+          <input type="text" id="queue-input">
+          <button id="add-to-queue" class="btn btn-primary">ADD</button>
+          <button id="remove-from-queue" class="btn btn-danger">Take</button>
+          <ul class="queue-list"></ul>
+        </div>
+        <div class="current-take current-queue-take"></div>
+      </div>
+    </div>
   </section>
 
   <script src="src/StackDataStructure.js"></script>
@@ -18,4 +41,5 @@
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>

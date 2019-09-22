@@ -1,0 +1,25 @@
+body {
+  margin: 0
+}
+h2 {
+  text-align: center;
+}
+.stack-vs-queue {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.current-take{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  font-size: 36px
+}

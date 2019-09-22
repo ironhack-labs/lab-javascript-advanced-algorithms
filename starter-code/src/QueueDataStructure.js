@@ -21,7 +21,7 @@ class QueueDataStructure {
     if (this.isEmpty()){
       return "Queue Underflow"
     } else {
-      return  this.queueControl[this.queueControl.length-1]
+      return this.queueControl.pop()
     }
   }
 }
