@@ -1,0 +1,56 @@
+h2 {
+    margin-left: 150px;
+}
+.buttons {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+#input {
+    margin-bottom: 10px;
+    height: 35px;
+    border: solid 1px #3A7CFF;
+    border-radius: 5px;
+    color: black;
+    padding-left: 10px;
+}
+#addButton {
+    margin-bottom: 10px;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: #3A7CFF;
+    border: none
+}
+#takeButton {
+    margin-bottom: 30px;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: #FF4F3A;   
+    border: none
+}
+.elements {
+    margin-left: 150px;
+}
+.elements * {
+    height: 50px;
+    width: 300px;
+    background-color: #DADADA;
+    margin-bottom: 1px;
+    text-align: center;
+    font-weight: 800;
+    text-align: center;
+}
+.colored {
+    background-color:#5E96FF;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
