@@ -1,0 +1,12 @@
+header, section, .btn .input{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10 px;
+    font-weight: 500;
+
+}
+h1, h2 {
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: 800;
+}
+

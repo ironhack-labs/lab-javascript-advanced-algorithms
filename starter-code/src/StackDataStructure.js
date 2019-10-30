@@ -1,7 +1,7 @@
 class StackDataStructure {
     constructor() {
         this.stackControl = [];
-        this.MAX_SIZE = 1;
+        this.MAX_SIZE = 8;
     };
     isEmpty() {
         if (this.stackControl.length === 0) {
@@ -13,12 +13,14 @@ class StackDataStructure {
     };
     canPush() {
         if (this.stackControl.length === this.MAX_SIZE) {
+            ;console.log("over")
             return false;
         } else return true;
     };
     push(val) {
         this.stackControl.push(val);
         if (this.stackControl.length > this.MAX_SIZE) {
+        
             return "Stack Overflow";
         }
         return this.stackControl;
