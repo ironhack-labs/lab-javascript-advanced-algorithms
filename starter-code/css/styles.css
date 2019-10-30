@@ -1,0 +1,10 @@
+div {
+    background: powderblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+.flex{
+    display:flex
+
+}
