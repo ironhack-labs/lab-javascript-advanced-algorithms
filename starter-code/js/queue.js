@@ -1,0 +1,1 @@
+var queueLove = new QueueDataStructure();

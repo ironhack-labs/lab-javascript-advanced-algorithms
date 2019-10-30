@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+button {
+  display: block;
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.add {
+  border: 1px solid #8c72e8;
+  padding: 10px 100px;
+  background-color: #8c72e8;
+  margin: 0 auto;
+}
+.take {
+  border: 1px solid #6ceb7a;
+  padding: 10px 97px;
+  background-color: #6ceb7a;
+  margin: 0 auto;
+}
+.putIn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 100px;
+  font-size: 0.9em;
+}
+
+.blankP {
+  border: 1px solid rgb(204, 87, 87);
+  width: 236px;
+  background-color: blanchedalmond;
+  height: 45px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
