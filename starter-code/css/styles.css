@@ -1,0 +1,42 @@
+button {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 7px 0;
+    border-radius: 2%;
+    font-size: 16px;
+    font-weight: bold
+}
+
+button.red {
+    background: red;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+button.blue {
+    background: blue;
+
+}
+
+.graybackground div {
+    background: lightgray;
+    background-size: cover;
+    border-top: 5px solid white;
+    padding: 25px 25px
+}
+
+.form {
+    border: 1px solid gray;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 7px 8px;
+    font-size: 16px;
+}
+
+body {
+    text-align: center;
+}
