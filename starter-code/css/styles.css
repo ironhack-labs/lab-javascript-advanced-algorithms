@@ -1,0 +1,12 @@
+
+.list-group-item{
+    background: #2299D4;
+    color: white;
+    text-align: center;
+}
+.bg{
+    background: none;
+}
+.over{
+    background: rgba(229,97,64,.5);
+}

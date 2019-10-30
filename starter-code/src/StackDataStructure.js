@@ -1,7 +1,7 @@
 class StackDataStructure{
     constructor(){
         this.stackControl = [];
-        this.MAX_SIZE = 1;  
+        this.MAX_SIZE = 8;  
     };
     isEmpty(){
         if(this.stackControl.length === 0) return true;
@@ -9,17 +9,21 @@ class StackDataStructure{
 
     }
     canPush(){
-        if(this.stackControl.length === this.MAX_SIZE){
+        if(this.stackControl.length >= this.MAX_SIZE){
             return false;
         }return true;
 
     }
-    push(val){
-        this.stackControl.push(val);
 
-        if(this.stackControl.length > this.MAX_SIZE){
+    push(val){
+        
+        if(this.stackControl.length >= this.MAX_SIZE){
             return "Stack Overflow";
-        }return this.stackControl;
+
+        }else{
+            this.stackControl.push(val)
+            return this.stackControl
+        }
     }
     pop(){
         if(this.stackControl.length  === 0){
