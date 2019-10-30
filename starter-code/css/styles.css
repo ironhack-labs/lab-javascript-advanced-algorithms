@@ -1,0 +1,70 @@
+* {
+    box-sizing: border;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(#fff, #aaa);
+}
+
+input {
+    font-size: 2rem;
+    border: none;
+    box-shadow:  .5em .5em .5em #888;
+    padding: .5em;
+}
+
+
+.btn {
+    font-size: 2rem;
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: .5em 0;
+    border: none;
+    padding: .5em;
+    border-radius: 10px;
+    background-color: teal;
+    color: white;
+}
+
+.take {
+    background-color: tomato;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 3rem;
+    color: teal;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.col {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.overflow, .underflow {
+    background-color: purple;
+}

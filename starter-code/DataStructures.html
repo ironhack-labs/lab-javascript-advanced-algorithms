@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <h1>Abstract Data Types</h1>
+    <section class="container">
+      <div class="col stack">
+        <form id="stack-form" action="#">
+          <input type="text" placeholder="New stack element" value="" />
+        </form>
+        <button class="btn stack">Stack It!</button>
+        <button class="btn stack take">Take It!</button>
+        <h3 class="btn hidden overflow">Stack Overflow</h3>
+        <ul id="stack-list">
+          <!-- populate from js with li-->
+        </ul>
+        <h3 class="btn hidden underflow">Stack Underflow</h3>
+      </div>
+      <div class="col cue">
+        <form id="cue-form" action="#">
+          <input type="text" placeholder="New queue element" value="" />
+        </form>
+        <button class="btn cue">Queue It!</button>
+        <button class="btn cue take">Take It!</button>
+        <h3 class="btn hidden underflow">Stack Overflow</h3>
+        <ul id="stack-list">
+          <!-- populate from js with li-->
+        </ul>
+        <h3 class="btn hidden overflow">Stack Underflow</h3>
+      </div>
+    </section>
 
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
-</body>
+    <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script>
+    <script src="js/stack.js"></script>
+    <script src="js/queue.js"></script>
+  </body>
 </html>
