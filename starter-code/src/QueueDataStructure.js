@@ -29,12 +29,12 @@ class QueueDataStructure {
       return this.queueControl.reverse();
     }
   
-    dequeue(lastElem) {
+    dequeue(eElem) {
       if (this.queueControl.length === 0) {
           return "Queue Underflow";
         }
   
-        let last = this.queueControl.pop(lastElem);
+        let last = this.queueControl.pop(eElem);
     
         return last;
     }
