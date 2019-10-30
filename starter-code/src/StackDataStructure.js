@@ -1,2 +1,10 @@
-function StackDataStructure () {
+class StackDataStructure{
+
 }
+
+// function StackDataStructure () {
+
+    
+// }
+
+
