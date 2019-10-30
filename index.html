@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,34 @@
     <title>DA FRANCESCO PIZZERIA</title>
 
 </head>
+
 <body>
 
     <main>
+        <!-- <div id="alert"><span>MENSAJE DE PRUEBA!</span> </div>-->
         <div id="stack" class="container">
-            <h1 class="title">Cajas de Pizza VACIAS</h1>
+            <h1 class="title">PIZZAS A ENTREGAR</h1>
             <h2>Técnicamente conocidas como STACK</h2>
             <div class="form stack-form">
-                <input type="text" value="Inserta el nombre de la Pizza">
-                <input type="submit" value="Submit">
-                <input type="submit" value="Remove">
+                <input type="text" value="¿Qué pizza es?">
+                <div class="buttons">
+                    <button type="button">Add</button>
+                    <button type="button">Remove</button>
+                </div>
+            </div>
+            <ul class="stack-container">
+              
+            </ul>
+        </div>
+        <div id="queue" class="container">
+            <h1 class="title">EL HORNO</h1>
+            <h2>Técnicamente conocido como QUEUE</h2>
+            <div class="form stack-form">
+                <input type="text" value="¿Que pizza va al horno?">
+                <div class="buttons">
+                    <button type="button">Add</button>
+                    <button type="button">Remove</button>
+                </div>
             </div>
             <ul class="stack-container">
                 <li>Test 1</li>
@@ -26,10 +45,11 @@
                 <li>Test 4</li>
                 <li>Test 5</li>
                 <li>Test 6</li>
+
             </ul>
         </div>
-        <div id="queue" class="container"></div>
     </main>
-    
+
 </body>
+
 </html>
