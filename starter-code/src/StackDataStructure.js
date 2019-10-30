@@ -29,4 +29,8 @@ class StackDataStructure {
             return this.stackControl.pop();
         }
     }
+
+    getArray() {
+        return this.stackControl;
+    }
 }

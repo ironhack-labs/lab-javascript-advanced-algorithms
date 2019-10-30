@@ -19,7 +19,7 @@ body {
 input {
     font-size: 2rem;
     border: none;
-    box-shadow:  .5em .5em .5em #888;
+    box-shadow:  .5rem .5rem .5rem #888;
     padding: .5em;
 }
 
@@ -29,10 +29,10 @@ input {
     text-align: center;
     width: 90%;
     display: block;
-    margin: .5em 0;
+    margin: .5rem 0;
     border: none;
-    padding: .5em;
-    border-radius: 10px;
+    padding: .5rem;
+    border-radius: 1rem;
     background-color: teal;
     color: white;
 }
@@ -67,4 +67,15 @@ h1 {
 
 .overflow, .underflow {
     background-color: purple;
+}
+
+li {
+    width: 90%;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #888;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
