@@ -30,4 +30,8 @@ class QueueDataStructure {
         }
     }
 
+    getArray() {
+        return this.queueControl;
+    }
+
 }
