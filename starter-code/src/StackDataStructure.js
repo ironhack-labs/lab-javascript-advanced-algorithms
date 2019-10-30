@@ -1,7 +1,7 @@
 class StackDataStructure {
     constructor() {
         this.stackControl = []
-        this.MAX_SIZE = 10;
+        this.MAX_SIZE = 6;
     }
 
     isEmpty() {

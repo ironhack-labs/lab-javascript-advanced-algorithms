@@ -79,7 +79,9 @@ button{
     font-size: 1rem;
     transition:0.2s;
 }
-
+.blocked{
+pointer-events: none;
+}
 button:hover{
     transition:0.2s;
     background-color: rgba(117, 187, 219,1);
