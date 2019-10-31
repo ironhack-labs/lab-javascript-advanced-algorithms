@@ -32,9 +32,10 @@ queueAddBtn.addEventListener("click", function (e) {
 })
 
 queueRmvBtn.addEventListener("click", function (e) {
+    let a;
     e.preventDefault()
     queue.dequeue()
-    removeQueueEl()
+    removeQueueEl(a)
     if (queue.queueControl.length === 0) {
         queueRmvBtn.setAttribute("class", "queue-remove blocked")
     }
@@ -52,8 +53,13 @@ function printQueueEl() {
     queueLastLi.appendChild(t)
 }
 
-function removeQueueEl() {
-    let qRev = queue.queueControl.reverse()
+function removeQueueEl(a) {
+    // no se hacer un switch true false :(
+    // a = !a
+    // let qRev = queue.queueControl.reverse()
+    // if(a === true){
+    // qRev = queue.queueControl.reverse()
+    // }
     for (i = 1; i <= queue.queueControl.length; i++) {
         let actual = document.querySelector(`.b${i}`)
         actual.innerHTML = qRev[i - 1]
@@ -63,4 +69,10 @@ function removeQueueEl() {
             actual.className = `emptyqueue b${i+1}`
         }
     }
+    if(queue.queueControl.length === 0){
+        let actual = document.querySelector(`.b1`)
+            actual.innerHTML = "EMPTY"
+            actual.className = `emptyqueue b1`
+    }
+    
 }
