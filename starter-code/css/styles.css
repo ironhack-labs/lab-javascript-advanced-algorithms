@@ -1,0 +1,44 @@
+
+html {
+    font-size: 9px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+#input {
+    padding-left: 0,5rem;
+    
+}
+
+#redButton {
+    background:red;
+    color:white;
+}
+
+#blueButton {
+    background: blue;
+    color: white;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 40rem;
+    width: 40rem;
+    border: 3px solid;
+   
+}
+.block{
+    height: 3rem;
+    width: 20rem;
+    margin-bottom: 0.5rem;
+    border: 2px;
+   
+}
