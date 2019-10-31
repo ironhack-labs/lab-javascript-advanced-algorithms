@@ -1,0 +1,43 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+#input {
+    background: rgb(187, 178, 178);
+}
+
+#redButton {
+    background: rgb(99, 38, 38);
+    color: white;
+}
+
+#blueButton {
+    background: rgb(63, 63, 117);
+    color: white;
+}
+
+.container {
+    background: rgb(91, 119, 129);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    width: 40rem;
+    border: 5px solid rgb(134, 69, 69);
+}
+
+.block {
+    height: 3rem;
+    width: 30rem;
+    margin-bottom: 0.5rem;
+    background: rgb(153, 137, 137);
+    border: 1px solid black;
+}
