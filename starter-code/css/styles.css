@@ -1,0 +1,26 @@
+body {
+display:flex;
+justify-content: center;
+}
+.container{
+    border: 1px solid gray;
+    height:100px;
+    width:300px;
+    
+} 
+#box{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#redButton{
+    background-color: red;
+    margin-top: 10px;
+    
+}
+
+#blueButton{
+    background-color: blue;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
