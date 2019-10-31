@@ -11,28 +11,52 @@
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+<body class="container p-4">
+    <h1 class="mb-4">Abstract Data Types</h1>
 
-    <div id="stack" class=" w-50 col col-6 ">
+  <section class="container d-flex align-items-start  justify-content-center">
+
+    <div id="stack" class="col col-6 mr-4">
       <h2>Stack</h2>
       <div class="p-0 d-flex flex-column flex-wrap mb-4">
-        <input id="text-input" type="text" placeholder="Add the element to the stack" class="mb-3">
+        <input id="text-input" type="text" placeholder="Add the element to the queue" class="mb-3 p-2">
         <button id="add-btn" class="btn btn-primary mb-3">Add</button>
         <button id="take-btn" class="btn btn-danger">Take</button>
       </div>
 
       <ul class="list-group">
-        <li class="list-group-item bg-light"></li>
-        <li class="list-group-item bg-light"></li>
-        <li class="list-group-item bg-light"></li>
-        <li class="list-group-item bg-light"></li>
-        <li class="list-group-item bg-light"></li>
-        <li class="list-group-item bg-light"></li>
-        <li class="list-group-item bg-light"></li>
-        <li class="list-group-item bg-light"></li>
+        <li class="list-group-item bg-light" style ="height: 50px;"></li>
+        <li class="list-group-item bg-light" style ="height: 50px;"></li>
+        <li class="list-group-item bg-light" style ="height: 50px;"></li>
+        <li class="list-group-item bg-light" style ="height: 50px;"></li>
+        <li class="list-group-item bg-light" style ="height: 50px;"></li>
+        <li class="list-group-item bg-light" style ="height: 50px;"></li>
+        <li class="list-group-item bg-light" style ="height: 50px;"></li>
+        <li class="list-group-item bg-light" style ="height: 50px;"></li>
       </ul>
+
+    </div>
+
+
+    <div id="queue" class="col col-6 ml-4">
+      <h2>Queue</h2>
+      <div class="p-0 d-flex flex-column flex-wrap mb-4">
+        <input id="text-input" type="text" placeholder="Add the element to the stack" class="mb-3 p-2">
+        <button id="add-btn" class="btn btn-primary mb-3">Add</button>
+        <button id="take-btn" class="btn btn-danger">Take</button>
+      </div>
+
+      <ul class="list-group">
+          <li class="list-group-item bg-light" style ="height: 50px;"></li>
+          <li class="list-group-item bg-light" style ="height: 50px;"></li>
+          <li class="list-group-item bg-light" style ="height: 50px;"></li>
+          <li class="list-group-item bg-light" style ="height: 50px;"></li>
+          <li class="list-group-item bg-light" style ="height: 50px;"></li>
+          <li class="list-group-item bg-light" style ="height: 50px;"></li>
+          <li class="list-group-item bg-light" style ="height: 50px;"></li>
+          <li class="list-group-item bg-light" style ="height: 50px;"></li>
+        </ul>
+  
 
     </div>
   </section>

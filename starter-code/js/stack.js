@@ -3,12 +3,12 @@ const stack = new StackDataStructure();
 const addBtn = document.querySelector("#add-btn");
 const takeBtn = document.querySelector("#take-btn");
 const inputEl = document.querySelector("#text-input");
-let listEl = document.querySelector(".list-group")
+let listEl = document.querySelector("#stack .list-group")
 let messageEl = document.createElement("div");
 
 
 addBtn.onclick = function () {
-    let listGroup = [...document.querySelectorAll('.bg-light')];
+    let listGroup = [...document.querySelectorAll('#stack .bg-light')];
     let lastItemOfList = listGroup[listGroup.length - 1];
 
     if (inputEl.value) {
@@ -30,7 +30,10 @@ addBtn.onclick = function () {
             messageEl.innerText = stack.push();
             listEl.prepend(messageEl)
         }
+    }else {
+        alert("Value to input needed")
     }
+
 }
 
 
