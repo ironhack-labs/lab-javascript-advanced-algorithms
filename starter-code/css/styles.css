@@ -1,0 +1,124 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+    height : 100vh;
+    width: 100vw;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.container h1 {
+    font-size: 4rem;
+    padding: 5rem 2rem 3rem 2rem;
+    text-align: center;
+}
+
+.second-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#layout {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: block;
+    width: 30vw;
+    height: 4rem;
+    margin-bottom: 1rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background: none;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.li-element {
+    background-color: grey;
+    width: 30vw;
+    height: 4rem;
+    background: rgba(223, 217, 217, 0.582);
+    border: 1px solid grey;
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.btn.input {
+    border: 2px solid grey;
+    color: grey;
+    cursor: auto;
+}
+
+.add-btn {
+    background-color: rgb(37, 94, 69);
+    color: white;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.take-btn {
+    background-color: rgb(189, 43, 43);
+    color: white;
+    border: 1px solid rgb(66, 15, 15);
+    cursor: pointer;
+}
+
+.filled {
+    background-color: rgba(38, 34, 230, 0.801);
+    color: white;
+    
+}
+
+#overflow {
+    background-color: red;
+    color: white;
+}
+
+#underflow{
+    background-color: rgb(16, 85, 37);
+    color: white;
+}
+
