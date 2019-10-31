@@ -2,7 +2,7 @@
 class StackDataStructure {
     constructor() {
         this.stackControl = []; //properties
-        this.MAX_SIZE = 10;
+        this.MAX_SIZE = 12;
     }
     //actions
 
