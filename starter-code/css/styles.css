@@ -1,0 +1,23 @@
+body {
+    text-align: center
+}
+
+.stack-boxes div {
+    background-color: #8FBC8B;
+    padding: 25px 10px;
+    margin: 0 100px 5px
+}
+
+.btn-add {
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 5px;
+    border: none
+}
+
+.btn-take {
+    text-decoration: none;
+    background-color: red;
+    border-radius: 5px;
+    border: none
+}
