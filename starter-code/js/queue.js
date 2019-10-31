@@ -7,18 +7,24 @@ let textQueue = document.getElementById("nameQueue")
 
 function addQueue() {
     queue.enqueue(textQueue.value)
-    let num = queue.queueControl.length -1
-    elementosQueue[num].innerText = textQueue.value
-    elementosQueue[num].style.backgroundColor = "green"
+    for(i=0; i< queue.queueControl.length; i++) {
+    elementosQueue[i].innerText = queue.queueControl[i]
+    elementosQueue[i].style.backgroundColor = "green"
+    }       
+    console.log(queue.queueControl)
 }
 
 function takeQueue() {
-    
-    let num = queue.queueControl.length
-    elementosQueue[num].innerText = ""
-    elementosQueue[num].style.backgroundColor = "white"
-}
+    queue.dequeue()
+    for(let i=queue.queueControl.length; i>=0; i--) {
+        elementosQueue[i].innerText = queue.queueControl[i]       
+    }
+    elementosQueue[queue.queueControl.length].innerText=""
+    elementosQueue[queue.queueControl.length].style.backgroundColor="white"
 
+        // (elementosQueue.length-1).innerText = ""
+        // elementosQueue[i].style.backgroundColor = "green"
+        }    
 
 addQueueButton.addEventListener("click", function () {
 if(queue.canEnqueue()){
@@ -29,9 +35,10 @@ if(queue.canEnqueue()){
 })
 
 takeQueueButton.addEventListener("click", function () {
-    if(queue.isEmpty()){
-        alert("Queue Underflow")
-    } else if (queue.dequeue()){    
-        takeQueue()
-    }
-    })
+ if(queue.isEmpty()){
+     alert("Queue Underflow")
+ } else {
+     takeQueue()
+ }
+    
+})

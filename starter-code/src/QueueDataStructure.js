@@ -16,8 +16,6 @@ class QueueDataStructure {
         }
     }
 
-    // Esto también podría ser más corto: return this.queueControl.length < this.MAX_SIZE
-
     enqueue(elm) {
         if (this.canEnqueue()) {
         this.queueControl.unshift(elm)
