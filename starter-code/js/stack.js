@@ -1,19 +1,22 @@
 let stack = new StackDataStructure()
 const stackUlDOMEl = document.querySelector(".stack-container")
-const stackLiDOMEl = document.querySelectorAll("li");
+const stackLiDOMEl = document.querySelectorAll(".emptyqueue");
 const stackAddBtn = document.querySelector(".stack-add");
 const stackRmvBtn = document.querySelector(".stack-remove");
 
 for(i=0; i< stack.MAX_SIZE; i++){
     let e = document.createElement("li")
-    let c = e.className = `empty a${stack.MAX_SIZE-i}`;
+    e.className = `empty a${stack.MAX_SIZE-i}`;
     let t = document.createTextNode("EMPTY")
     stackUlDOMEl.appendChild(e).appendChild(t)
 }
 
+
+
+
 stackAddBtn.addEventListener("click", function(e){
     e.preventDefault()
-    let inputText = document.querySelector("input").value
+    let inputText = document.querySelector(".stackAddFld").value
     if(inputText === ""){
         alert("¡Pon el nombre de la pizza! ;)")
         return false
@@ -55,4 +58,6 @@ function removeStackEl(){
     stackLastLi.className = `empty a${liID2}`
     stackLastLi.innerHTML = "EMPTY"
 }
+
+
 
