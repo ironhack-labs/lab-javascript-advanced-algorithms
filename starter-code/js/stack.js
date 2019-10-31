@@ -5,13 +5,21 @@ let input = document.querySelector("#text");
 let newLi = document.createElement("li");
 
 
+
 let stack = new StackDataStructure;
 console.log(stackContainer);
 
 add.onclick = function () {
     let elem = input.value;
-    let listItem = document.querySelectorAll(".bg-light");
-    if (stack.canPush()) {
+    let over = document.querySelector(".bg-danger")
+    
+    if (over){
+        over.innerHTML = ("");
+       over.setAttribute("class", "list-group-item");
+
+   
+    } else if (stack.canPush()) {
+        let listItem = document.querySelectorAll(".bg-light");
         stack.push(elem);
         let lastEmpty = listItem[listItem.length - 1];
         lastEmpty.innerHTML = elem;
@@ -24,6 +32,8 @@ add.onclick = function () {
     }
 
 }
+
+
 
 take.onclick = function () {
     let elem = input.value;

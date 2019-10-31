@@ -10,3 +10,8 @@ h1, h2 {
     font-weight: 800;
 }
 
+.list-group-item{
+    border: none;
+}
+
+    
