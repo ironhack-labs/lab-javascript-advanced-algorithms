@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+button {
+    width: 100%;
+
+}
+
+input {
+    width: 100%;
+}
+
+button.red {
+    background-color: red;
+}
+
+button.blue {
+    background-color: blue;
+}
+
+.greyBack div {
+    background: rgb(131, 118, 118);
+    padding: 25px 20px;
+    border: 1px solid white;
+
+
+}
+
+.flex {
+    display: flex
+}
+
+#btnAStack {}
+
+#btnTStack {}
+
+#btnAQueue {}
+
+#btnAQueue {}
+
+#stackItem {}
+
+#queueItem {}
+
+.divStack{}
+
+.divQueue{}
