@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+/* ELEMENTOS */
+
+.boton {
+    width: 350px;
+    height: 40px;
+    font-size: 20px
+}
+
+.contain {
+    border: 2px solid grey;
+    padding: 0 5px;
+}
+
+.ton {
+    background-color: #43a3e6;
+    color: white;
+    text-align: center;
+    margin: 5px 0 5px 0;
+    text-transform: uppercase;
+
+}
+
+.tox {
+    background-color: #dd5e59;
+    color: white;
+    text-align: ;
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
+
+}
+
+.grey {
+    background-color: #e9e9e9;
+    margin: 4px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
