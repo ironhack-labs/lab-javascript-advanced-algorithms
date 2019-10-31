@@ -1,14 +1,14 @@
 class Stack {
     
     array = [];
-    MAX_SIZE = 8;
+    max_size = 8;
 
     isEmpty(){
         return this.array.length === 0;
     }
 
     canPush(){
-        return this.array.length < 8;
+        return this.array.length < this.max_size;
     }
 
     push(element){
@@ -45,14 +45,13 @@ let span = document.querySelectorAll("span");
 add.onclick = function(btn){
     btn.preventDefault();
     stack.push(input.value);
-    console.log(stack.array);
     paintFunction();
 }
 
 take.onclick = function(btn){
     btn.preventDefault();
     stack.pop();
-    console.log(stack.array);
+    deleteFunction();
 }
 
 function paintFunction(){
@@ -60,4 +59,12 @@ function paintFunction(){
     for(let i=1; i<stack.array.length; i++){
         span[i].innerHTML = stack.array[stack.array.length - i -1];
     }
+    input.value = "";
+}
+
+function deleteFunction(){
+    for(let i=0; i<stack.array.length; i++){
+        span[i].innerHTML = stack.array[stack.array.length - i -1];
+    }
+    span[stack.array.length].innerHTML = "";
 }

@@ -11,6 +11,7 @@ body {
 
 #input {
     background: rgb(187, 178, 178);
+    padding-left: 0.5rem;
 }
 
 #redButton {
@@ -39,5 +40,10 @@ body {
     width: 30rem;
     margin-bottom: 0.5rem;
     background: rgb(153, 137, 137);
-    border: 1px solid black;
+    border: 2px solid rgb(172, 151, 151);
+}
+
+div{
+    padding-left: 0.5rem;
+    padding-top: 0.4rem;
 }
