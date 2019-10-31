@@ -1,0 +1,41 @@
+h2{
+    padding-left: 60px;
+}
+li{
+    background-color: lightgrey;
+    border: 1px solid white;
+    width: 200px;
+    padding: 15px 0;
+    list-style: none;
+    color : white
+}
+input{
+    width: 200px;
+    padding: 10px 0;
+}
+.flex{
+    display: flex;
+}
+.around{
+    justify-content: space-around;
+}
+.column{
+    flex-direction: column;
+}
+.button-size{
+    width: 200px;
+    font-size: 1.2em;
+    color: white
+}
+.button-blue{
+    background-color: blue;
+}
+.button-red{
+    background-color: red;
+}
+.yellow{
+    color:rgb(0, 17, 255);
+}
+.white{
+    color:white;
+}
