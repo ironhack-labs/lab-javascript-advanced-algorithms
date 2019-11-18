@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    border: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+  }
+  h1 {
+    text-align: center;
+    margin: 5% auto;
+    font-weight: bold;
+  }
+  .global {
+    display: flex;
+    justify-content: space-around;
+  }
+  .stack {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+  }
+  .stack-tile {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    background-color: lightgrey;
+  }
+  .queue {
+    display: flex;
+    height: 200px;
+  }
+  .queue-tile {
+    width: 30px;
+    height: 100%;
+    border: 1px solid white;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    writing-mode: vertical-lr;
+  }
+  #stack-input,
+  #queue-input {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+  }
+  .queue-item,
+  .stack-item {
+    background-color: #5eeeb2;
+  }
+  #delete-stack,
+  #delete-queue {
+    margin-bottom: 5px;
+  }
+  .error-stack {
+    width: 100%;
+    height: auto;
+    padding:10px;
+    border: 1px solid red;
+    margin: 1px;
+    background-color: #ffcccc;
+    color: red;
+    text-align: center;
+    display: none;
+  }
+  .error-queue{
+      width: auto;
+      height: 100%;
+      padding:10px;
+      border: 1px solid red;
+      margin: 1px;
+      background-color: #ffcccc;
+      color: red;
+      text-align: center;
+      writing-mode: vertical-lr;
+      display: none;
+  }
+  .error-active {
+    display: block;
+  }
+  #queue-container {
+    width: auto;
+    height: 450px;
+  }
+  #queue-div{
+      flex-flow: row-reverse
+  }
