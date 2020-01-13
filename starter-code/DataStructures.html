@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="lib/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Abstract Data Types</h1>
 
-  </section>
+      <input
+        class="uk-input uk-form-width-medium"
+        type="text"
+        id="stack__input"
+        placeholder="Add the element to the stack..."
+      />
 
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
-</body>
+      <button class="uk-button uk-button-primary" id="btn__add">ADD</button>
+      <button class="uk-button uk-button-danger" id="btn__take">TAKE</button>
+
+      <label id="taked__label">Taken: </label>
+      <span id="data__taken">Data Taken</span>
+    </section>
+    <section class="stack__section">
+      <div id="overflow" class="flow__hide">Overflow!!</div>
+      <div class="stack stack__empty "></div>
+      <div class="stack stack__empty "></div>
+      <div class="stack stack__empty "></div>
+      <div class="stack stack__empty "></div>
+      <div class="stack stack__empty"></div>
+      <div id="underflow" class="flow__hide">Underflow!!</div>
+    </section>
+
+    <script src="./src/StackDataStructure.js"></script>
+    <script src="./src/QueueDataStructure.js"></script>
+    <script src="./js/stack.js"></script>
+    <script src="./js/queue.js"></script>
+  </body>
 </html>
