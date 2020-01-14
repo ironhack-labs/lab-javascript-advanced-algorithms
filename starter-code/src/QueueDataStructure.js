@@ -26,7 +26,7 @@ QueueDataStructure.prototype.enqueue = function(elem) {
 }
 
 QueueDataStructure.prototype.dequeue = function() {
-    return this.isEmpty() ? 'Queue Underflow' :this.queueControl[this.queueControl.length-1];
+    return this.isEmpty() ? 'Queue Underflow' : this.queueControl[this.queueControl.length-1];
 }
 
 

@@ -1,0 +1,49 @@
+body {
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+#stack > input, #queue > input {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#stack > #add,  #queue > #add-queue {
+    margin: 20px 0;
+    width: 200px;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+}
+
+#stack > #take,  #queue > #take-queue {
+    width: 200px;
+    background-color: red;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+}
+
+.element, .element-queue {
+    width: 200px;
+    background-color: silver;
+    border-radius: 5px;
+    height: 40px;
+    color:white;
+    margin-bottom: 5px;
+    line-height: 40px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
