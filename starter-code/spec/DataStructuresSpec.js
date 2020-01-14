@@ -1,4 +1,4 @@
-describe("Stack", function() {
+-describe("Stack", function() {
   var stack;
 
   beforeEach (function() {
