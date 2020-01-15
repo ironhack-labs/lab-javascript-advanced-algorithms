@@ -1,7 +1,8 @@
 class StackDataStructure {
-  constructor() {
+
+  constructor(config) {
     this.stackControl = [];
-    this.MAX_SIZE = 1000;
+    this.MAX_SIZE = config.maxsize || 1000;
     this.OVERFLOW_MSG = 'Stack Overflow';
     this.UNDERFLOW_MSG = 'Stack Underflow';
   }
@@ -27,6 +28,12 @@ class StackDataStructure {
   pop() {
     if (!this.canPop()) { return this.UNDERFLOW_MSG; }
     return this.stackControl.pop();
+  }
+
+  updateMaxSize(newSize) {
+    if (this.MAX_SIZE < 0) { return }
+    this.MAX_SIZE = newSize;
+    this.stackControl.splice(newSize);
   }
 
 }
