@@ -1,32 +1,23 @@
 
 btnAdd = document.getElementById("add");
 btnTake = document.getElementById("take");
+stack1 = new StackDataStructure()
+stack1=getStackedStack();
 
 btnAdd.onclick = function() {
-    stackInitial = new StackDataStructure();
-    stackInitial=getStackedStack();
 
-    let stackFinal = stackInitial.push(document.getElementById("stack-input").value);
+    let pushBack=stack1.push(document.getElementById("stack-input").value);
 
-    if (typeof stackFinal === "string") {
-        alert(stackFinal)
-    }
-    else {displayStack(stackInitial);}
+    typeof pushBack === "string" ? alert(pushBack) : displayStack(stack1);
+
 }
 
 btnTake.onclick = function() {
-    stackInitial = new StackDataStructure();
-    stackInitial=getStackedStack();
 
-    let stackFinal = stackInitial.pop(document.getElementById("stack-input").value);
+    let takeBack = stack1.pop(document.getElementById("stack-input").value);
 
-    if (stackFinal === 'Stack Underflow') {
-        alert(stackFinal)
-    }
-    else {
-        stackInitial.stackControl.pop();
-        displayStack(stackInitial);
-    }
+    takeBack === 'Stack Underflow' ? alert(takeBack) : displayStack(stack1);
+
 }
 
 function getStackedStack() {
@@ -51,8 +42,8 @@ function displayStack(stack) {
     let elems=document.getElementsByClassName("element");
     
     for (let i=0 ;i<elems.length ;i++) {
-        if (i<stack.stackControl.length) {
-            elems[elems.length-1-i].textContent=stack.stackControl[i];
+        if (i<stack1.stackControl.length) {
+            elems[elems.length-1-i].textContent=stack1.stackControl[i];
         }
         else {elems[elems.length-1-i].textContent=""}
     }

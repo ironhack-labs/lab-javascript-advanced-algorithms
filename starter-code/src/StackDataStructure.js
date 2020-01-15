@@ -1,7 +1,7 @@
 function StackDataStructure() {
 
     this.stackControl =[],
-    this.MAX_SIZE = 20;
+    this.MAX_SIZE = 7;
        
 }
 
@@ -26,5 +26,5 @@ StackDataStructure.prototype.push = function(elem){
 }
 
 StackDataStructure.prototype.pop = function(){
-    return this.isEmpty() ? 'Stack Underflow' : this.stackControl[this.stackControl.length-1]
+    return this.isEmpty() ? 'Stack Underflow' : this.stackControl.pop();
 }
