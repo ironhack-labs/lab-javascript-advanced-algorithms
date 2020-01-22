@@ -13,9 +13,9 @@ let stack = document.getElementById("stack");
 let input = document.getElementById("input");
 let add = document.getElementById("add");
 let deleter = document.getElementById("delete");
-let items = document.querySelectorAll("li");
-let over = document.querySelector(".over");
-let under = document.querySelector(".under");
+let items = stack.querySelectorAll("li");
+let Sover = document.querySelector(".overS");
+let Sunder = document.querySelector(".underS");
 
 // add.addEventListener("click", () => {
 //   StackData.push(input.value);
@@ -33,7 +33,7 @@ add.addEventListener("click", () => {
     } else {
   StackData.push(input.value);
   paintStack();
-  clearMessage()
+  clearMessageStack()
   console.log(StackData.stackControl);
     }
 });
@@ -44,7 +44,7 @@ deleter.addEventListener("click", () => {
     } else {
   StackData.pop();
   paintStack();
-  clearMessage()
+  clearMessageStack()
   console.log(StackData.stackControl);
     }
 });
@@ -57,16 +57,16 @@ function paintStack() {
 }
 
 function paintStackOverflow() {
-    over.innerText = "STACK OVERFLOW"
+    Sover.innerText = "STACK OVERFLOW"
 }
 
 function paintStackUnderFlow() {
-    under.innerText = "STACK UNDERFLOW"
+    Sunder.innerText = "STACK UNDERFLOW"
 }
 
-function clearMessage() {
-   if (over.innerText !== "" || under.innerText !== ""){
-       over.innerText = ""
-       under.innerText = ""
+function clearMessageStack() {
+   if (Sover.innerText !== "" || Sunder.innerText !== ""){
+       Sover.innerText = ""
+       Sunder.innerText = ""
    }
 }
