@@ -1,0 +1,55 @@
+.container {
+    max-width: 400px;
+  }
+  
+  .font-weight-bolder {
+    font-weight: bolder!important;
+  }
+  
+  input {
+    min-height: 48px;
+  }
+  
+  .list-group-item {
+    background: #ededed;
+    border-color: white;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    min-height: 48px;
+  }
+  
+  .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  
+  .btn-block+.btn-block {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  
+  #element-value {
+    font-size: 16px;
+    padding: .375rem .75rem;
+    display: block;
+  }
