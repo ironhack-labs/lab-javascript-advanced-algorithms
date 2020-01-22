@@ -1,0 +1,100 @@
+
+.container {
+    
+
+
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.stacks {
+    display: flex;
+    flex-direction: column;
+}
+
+.queues {
+    display: flex;
+    flex-direction: column;
+}
+
+header div input {
+ margin-bottom: 5px;
+ border-radius: 10px;
+ padding: 10px;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.add {
+    background-color: red;
+}
+
+.take {
+    background-color: blue;
+}
+
+
+
+.empty {
+    background-color: grey;
+}
+
+.full {
+    background-color: steelblue;
+}
+
+.colums {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stacksColum {
+    margin-right: 37px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.queuesColum {
+
+    margin-right: 22px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.stack {
+    color: white;
+    font-weight: bold;
+    padding: 10px 100px;
+    margin-bottom: 5px;
+}
+
+.queue {
+    padding: 10px 100px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
