@@ -1,15 +1,42 @@
-h1 {
+h1,
+h2 {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
+}
+
+.inputbox {
+    text-align: center;
+}
+
+input {
+    width: 50%;
 }
 
 .box {
+    text-align: center;
     border: 1px solid blue;
     background-color: lightcyan;
-    padding: 15px 0;
-    width: 60%;
+    padding: 3px 0;
+    height: 30px;
+    width: 50%;
     border-radius: 5px;
     margin: 5px auto;
+}
+
+.box.active {
+    background-color: turquoise;
+}
+
+.underflow {
+    visibility: hidden;
+}
+
+.overflow {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
 }
 
 button .input {
@@ -21,8 +48,8 @@ button .input {
     border-radius: 5px;
     background-color: #3a85bf;
     color: white;
-    padding: 10px 0;
-    width: 60%;
+    padding: 5px 0;
+    width: 50%;
     margin: 0 auto;
 
 }
@@ -31,12 +58,15 @@ button .input {
     border: 1px solid red;
     border-radius: 5px;
     background-color: #de5e59;
-    padding: 10px 0;
-    width: 60%;
+    color: white;
+    padding: 5px 0;
+    width: 50%;
     margin: 0 auto;
 
 }
 
 .buttons {
-    padding: 50px 0;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0 auto;
 }

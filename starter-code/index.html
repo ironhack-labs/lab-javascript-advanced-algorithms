@@ -25,34 +25,43 @@
     <div class="container">
         <h1>Abstract Data Types</h1>
         <div class="row">
-            <div class="col-xl-6">
+            <div class="col-md-6 stack">
                 <h2>STACK</h2>
-                <input type="text" placeholder="Insert text here">
-                <div class="row buttons">
-                    <button class="btn-add">ADD</button>
-                    <button class="btn-take">TAKE</button>
+                <div class="inputbox">
+                    <input id="inputText" type="text" placeholder="Add the element to the stack...">
                 </div>
-                <div class="box overflow"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box"> </div>
-                <div class="box underflow"> </div>
+                <div class="buttons">
+                    <button id="addStack" class="btn-add">ADD</button>
+                </div>
+                <div class="buttons">
+                    <button id="takeStack" class="btn-take">TAKE</button>
+                </div>
+                <div class="box overflow hidden"> </div>
+                <div class="box stack">
+                </div>
+                <div class="box stack"></div>
+                <div class="box stack"></div>
+                <div class="box stack"></div>
+                <div class="box stack"></div>
+                <div class="box stack"></div>
+                <div class="box stack"></div>
+                <div class="box stack"></div>
+                <div class="box stack"></div>
+                <div class="box stack"></div>
+                <div class="box stack underflow"></div>
             </div>
 
-            <div class="col-xl-6">
+            <div class="col-md-6 queue">
                 <h2>QUEUE</h2>
-                <input type="text" placeholder="Insert text here">
-                <div class="row buttons">
-                    <button class="btn-add">ADD</button>
-                    <button class="btn-take">TAKE</button>
+                <div class="inputbox">
+                    <input id="inputText" type="text" placeholder="Insert text here">
                 </div>
-                <div class="box overflow"> </div>
+                <div class="buttons">
+                    <button id="addQueue" class="btn-add">ADD</button>
+                </div>
+                <div class="buttons">
+                    <button id="takeQueue" class="btn-take">TAKE</button>
+                </div>
                 <div class="box"> </div>
                 <div class="box"> </div>
                 <div class="box"> </div>
@@ -62,7 +71,9 @@
                 <div class="box"> </div>
                 <div class="box"> </div>
                 <div class="box"> </div>
-                <div class="box underflow"> </div>
+                <div class="box"> </div>
+                <div class="box"> </div>
+                <div class="box"></div>
             </div>
         </div>
     </div>
