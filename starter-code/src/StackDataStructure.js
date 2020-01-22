@@ -1,13 +1,13 @@
 class StackDataStructure {
     constructor() {
         this.stackControl = [];
-        this.MAX_SIZE = 8;
+        this.MAX_SIZE = 6;
     }
     
     isEmpty() {
         if(this.stackControl.length === 0) {
             return true;
-        } 
+        }
         return false;
     }
 
@@ -19,14 +19,12 @@ class StackDataStructure {
     }
 
     push(elem) {
-        if(this.canPush()) {
+        if(this.canPush() === true) {
             this.stackControl.push(elem);
             return this.stackControl;
         } else {
             return 'Stack Overflow';
         }
-
-        
     }
 
     pop() {
