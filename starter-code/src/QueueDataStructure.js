@@ -1,2 +1,4 @@
-function QueueDataStructure () {
+class QueueDataStructure {
+
+
 }
