@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+}
+
+.space {
+    background-color: rgba(200, 200, 200, .8);
+    padding: 10px 5px;
+    margin: 5px;
+    border: 1px solid rgb(250, 250, 250);
+}
+
+section button {
+    padding: 5px 250px;
+}
+
+.space.full {
+    background-color: blueviolet;
+}
+
+section input {
+    padding: 5px 150px;
+}
+
+.flow {
+    display: block;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.normal {
+    display: none;
+}
