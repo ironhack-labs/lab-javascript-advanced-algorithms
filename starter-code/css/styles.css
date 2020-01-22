@@ -1,0 +1,59 @@
+
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+ul.stack{
+    flex-direction: column;
+}
+
+li{
+    width:200px;
+    height:30px;
+    margin:3px;
+}
+
+.queue li{
+    width: 30px;
+    height: 200px;
+}
+
+.empty{
+    background-color: grey;
+}
+
+.full{
+    background-color: seagreen;
+}
+
+
+
+.beauty{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    width: 100%;
+    margin:10px;
+    background-color: whitesmoke;
+}
+
+.button{
+    padding:10px;
+    width:40%;
+    margin:10px;
+}
+
+.button.add{
+    background-color:lightgreen;
+}
+
+.button.take{
+    background-color: tomato;
+}
