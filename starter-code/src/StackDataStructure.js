@@ -30,7 +30,7 @@ class StackDataStructure {
 
 
         if(this.stackControl.length === this.MAX_SIZE){
-            return false
+            return false;
             
         }else{
             return true;
