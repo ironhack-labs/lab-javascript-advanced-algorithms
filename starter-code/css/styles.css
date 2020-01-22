@@ -17,12 +17,12 @@ input {
 
 }
 
-.button.blue {
-    background-color: blueviolet;
+.button.add {
+    background-color: green;
     color: white;
 }
 
-.button.red {
+.button.take {
     background-color: red;
     color: white;
 }
