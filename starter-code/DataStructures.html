@@ -3,52 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
 <body>
+  <h1>Abstract Data Types</h1>
   <section class="container">
-    <h1>Abstract Data Types</h1>
-    <header>
+    <div  class="stacksColum">
+      <h1>Stack</h1>
+      <input type="text" id="input-stack" placeholder="Insert stack element">
+      <button class="button add">ADD</button>
+      <button class="button take">TAKE</button>
       <div class="stacks">
-        <h1>Stack</h1>
-        <input type="text" placeholder="Insert stack element">
-        <button class="button add">ADD</button>
-        <button class="button take">TAKE</button>
+        <div class= "stack empty"></div>
+        <div class= "stack empty"></div>
+        <div class= "stack empty"></div>
+        <div class= "stack empty"></div>
+        <div class= "stack empty"></div>
+        <div class= "stack empty"></div>
+        <div class= "stack empty"></div>
+        <div class= "stack full"></div>
+    </div>
+  </div>
+    <div class="queuesColum">
+      <h1>Queue</h1>
+      <input type="text" id="input-queue" placeholder="Insert queue element">
+      <button class="button add">ADD</button>
+      <button class="button take">TAKE</button>
+      <div class="Queues">
+        <div class="queue empty"></div>
+        <div class="queue empty"></div>
+        <div class="queue empty"></div>
+        <div class="queue empty"></div>
+        <div class="queue empty"></div>
+        <div class="queue empty"></div>
+        <div class="queue full"></div>
+        <div class="queue full"></div>
       </div>
-      <div class="queues">
-        <h1>Queue</h1>
-        <input type="text" placeholder="Insert queue element">
-        <button class="button add">ADD</button>
-        <button class="button take">TAKE</button>
-      </div>
-    </header>
-    <div class="colums">
-      <div class="stacksColum">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="queuesColum">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+
     </div>
   </section>
   <script src="src/StackDataStructure.js"></script>
