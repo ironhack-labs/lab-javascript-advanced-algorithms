@@ -1,11 +1,14 @@
 .elm {
     margin: 2px 400px 2px 0px;
     border: 1px solid black;
-    background-color: beige;
+    
     color: black;
     padding: 20px 30px
 }
 
+.empty {
+    background-color: beige;
+}
 .full {
     background-color: cornflowerblue;
     padding: 20px 30px;
