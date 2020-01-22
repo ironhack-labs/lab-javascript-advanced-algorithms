@@ -1,12 +1,4 @@
-class StackDataStructure {
-    constructor() {
-        this.stackControl = [];
-        this.MAX_SIZE = 5
-    }
-
-
-
-
-}
-
-//console.log(typeof MAX_SIZE)
+let stackAdd = document.querySelector("#stackAdd")
+let stackTake = document.querySelector("#stackTake")
+let queueAdd = document.querySelector("#queueAdd")
+let queueTake = document.querySelector("#queueTake")
