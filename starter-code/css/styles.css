@@ -1,0 +1,36 @@
+h1 {
+    margin: 20px 0
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00897B;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5)
+}
+
+.element-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: Red;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5)
+}
+
+.element-container {
+    margin-top: 40px;
+}

@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="lib/jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
   <section class="container">
     <h1>Abstract Data Types</h1>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-center">Queue</h2>
+          <div class="form-group">
+            <input type="text" id="queue-value" class="form-control" />
+          </div>
+          <button id="queue-add-btn" class="btn btn-primary btn-block">ADD</button>
+          <button id="queue-take-btn" class="btn btn-primary btn-block btn-danger">TAKE</button>
+          <ul id="queue-element-container" class="element-container">
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-center">Stack</h2>
+          <div class="form-group">
+            <input type="text" id="stack-value" class="form-control" />
+          </div>
+          <button id="stack-add-btn" class="btn btn-primary btn-block">ADD</button>
+          <button id="stack-take-btn" class="btn btn-primary btn-block btn-danger">TAKE</button>
+          <ul id="stack-element-container" class="element-container">
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
-
   <script src="src/StackDataStructure.js"></script>
   <script src="src/QueueDataStructure.js"></script>
   <script src="js/stack.js"></script>
   <script src="js/queue.js"></script>
 </body>
+
 </html>
