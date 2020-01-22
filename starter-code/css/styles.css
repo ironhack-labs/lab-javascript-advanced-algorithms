@@ -1,0 +1,57 @@
+input {
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+#add {
+    background-color: green;
+    padding: 3%;
+    margin-top: 3%;
+    font-size: 2em;
+    color: white
+}
+#take{
+    background-color: red;
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 2em;
+    color: white
+}
+
+.center {
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.celd {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.botton{
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: 270px;
+}
+
+.full{
+    background-color: blue;
+}
+.botton.full {
+    padding-bottom: 270px;
+}
+
+.flow{
+    background-color: red;
+}
