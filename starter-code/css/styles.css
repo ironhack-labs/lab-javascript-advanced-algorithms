@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.box {
+    border: 1px solid blue;
+    background-color: lightcyan;
+    padding: 15px 0;
+    width: 60%;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+button .input {
+    width: 100%;
+}
+
+.btn-add {
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #3a85bf;
+    color: white;
+    padding: 10px 0;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.btn-take {
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: #de5e59;
+    padding: 10px 0;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.buttons {
+    padding: 50px 0;
+}
