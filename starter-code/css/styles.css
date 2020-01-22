@@ -1,0 +1,28 @@
+.bg-blue {
+    background-color: blue;
+    height: 30px;
+    width: 50%;
+    border: 1px solid black
+}
+
+input {
+    width: 50%;
+}
+.button {
+    display: block;
+    border: 2px solid white;
+    width: 50%;
+    padding: auto 40px;
+    border-radius: 10px;
+
+}
+
+.button.blue {
+    background-color: blueviolet;
+    color: white;
+}
+
+.button.red {
+    background-color: red;
+    color: white;
+}
