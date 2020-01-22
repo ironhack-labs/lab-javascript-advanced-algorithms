@@ -12,22 +12,26 @@
   <section class="container align-items-center">
     <h1>Abstract Data Types</h1>
     <div class="row d-flex justify-content-center">
-      <div class="col-4 my-3 mx-2 justify-content-center">
-        <input type="text" name="" class="form-control input-lg" value="" placeholder="Add the element to the stack">
-        <button type="button" id="add" class="btn btn-primary my-2 btn-sm btn-block">ADD</button>
-        <button type="button" id="take" class="btn btn-danger my-2 btn-sm btn-block">TAKE</button>
+      <div id="stack" class="col-4 my-3 mx-2 justify-content-center">
+        <h2>Stack</h2>
+        <input type="text" name="" class="form-control input-lg input-stack" value="" placeholder="Add the element to the stack">
+        <button type="button" id="add-stack" class="btn btn-primary my-2 btn-sm btn-block">ADD</button>
+        <button type="button" id="take-stack" class="btn btn-danger my-2 btn-sm btn-block">TAKE</button>
+        <div id="errorAddStack" class="alert alert-danger errorAddStack">You can´t insert more elements</div>
         <ul class="stack list-group">
-          
         </ul>
+        <div id="errorTakeStack" class="alert alert-danger errorTakeStack">You can´t delete more elements</div>
       </div>
-      <div class="col-4 my-3 mx-2 align-items-center">
-        <input type="number" name="" class="form-control input-lg" value="" placeholder="Add the element to the stack">
-        <button type="button" class="btn btn-primary my-2 btn-sm btn-block">ADD</button>
-        <button type="button" class="btn btn-danger my-2 btn-sm btn-block">TAKE</button>
+      <div id="queue" class="col-4 my-3 mx-2 align-items-center">
+        <h2>Queue</h2>
+        <input type="text" name="" class="form-control input-lg input-queue" value="" placeholder="Add the element to the queue">
+        <button type="button" id="add-queue" class="btn btn-primary my-2 btn-sm btn-block">ADD</button>
+        <button type="button" id="take-queue" class="btn btn-danger my-2 btn-sm btn-block">TAKE</button>
+        <div id="errorAddQueue" class="alert alert-danger errorAddQueue">You can´t insert more elements</div>
         <ul class="queue list-group">
-        
         </ul>
-      </div>
+        <div id="errorTakeQueue" class="alert alert-danger errorTakeQueue">You can´t delete more elements</div>
+      </div id="stack">
     </div>
 
   </section>

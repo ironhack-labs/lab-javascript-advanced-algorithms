@@ -2,8 +2,8 @@ let stack = new StackDataStructure();
 
 printList();
 
-let addStack = document.getElementById("add").addEventListener("click", addItem);
-let takeStack = document.getElementById("take").addEventListener("click", takeItem);
+let addStack = document.getElementById("add-stack").addEventListener("click", addStackItem);
+let takeStack = document.getElementById("take-stack").addEventListener("click", takeStackItem);
 let valueStackInput = '';
 let stackItemsEmpty = '';
 let stackItemsFull = '';
@@ -15,39 +15,58 @@ function printList() {
 
     for (i = 0; i < stack.MAX_SIZE; i++) {
         stackItem = document.createElement('li');
-        stackItem.classList.add('empty');
-        // row.className.add('row')
+        stackItem.classList.add('empty-stack');
         stackDOMEl.appendChild(stackItem);
     }
 }
 
-function addItem() {
-    valueStackInput = document.querySelector('.input-lg').value;
+function addStackItem() {
+    valueStackInput = document.querySelector('.input-stack').value;
     if (valueStackInput == ''){
-        alert("Debes ingresar una cantidad")
+        alert("You must put a value")
     } else {
         if (stack.canPush()) {
-            stackItemsEmpty = document.querySelectorAll('.empty');
+
+            let takeErrorDivDOMEl = document.getElementById("errorTakeStack");
+            takeErrorDivDOMEl.style.display = "none";
+            takeErrorDivDOMEl.disabled = false;
+            let takeStack = document.getElementById("take-stack")
+            takeStack.classList.remove('disabled');
+
+            stackItemsEmpty = document.querySelectorAll('.empty-stack');
             stackItemsEmpty[stackItemsEmpty.length - 1].innerHTML = valueStackInput;
-            stackItemsEmpty[stackItemsEmpty.length - 1].classList.remove('empty');
-            stackItemsEmpty[stackItemsEmpty.length - 1].classList.add('full');
+            stackItemsEmpty[stackItemsEmpty.length - 1].classList.remove('empty-stack');
+            stackItemsEmpty[stackItemsEmpty.length - 1].classList.add('full-stack');
             stackItemsEmpty[stackItemsEmpty.length - 1].classList.add('list-group-item');
             stack.push(valueStackInput);
         } else {
-            alert("No se puede ingresar mas elementos");
+            let stackErrorDivDOMEl = document.getElementById("errorAddStack");
+            stackErrorDivDOMEl.style.display = "block";
+            stackErrorDivDOMEl.disabled = true;
+            let addStack = document.getElementById("add-stack")
+            addStack.classList.add('disabled');
         }
     }
 
     
 }
 
-function takeItem() {
+function takeStackItem() {
+    let stackErrorDivDOMEl = document.getElementById("errorAddStack");
+    stackErrorDivDOMEl.style.display = "none";
+    let addStack = document.getElementById("add-stack")
+    addStack.classList.remove('disabled');
+
     if(stack.pop()){
-        alert("No puedes sacar mas elementos")
+        let takeErrorDivDOMEl = document.getElementById("errorTakeStack");
+        takeErrorDivDOMEl.style.display = "block";
+        takeErrorDivDOMEl.disabled = true;
+        let takeStack = document.getElementById("take-stack")
+        takeStack.classList.add('disabled');
     } else {
-        stackItemsFull = document.querySelectorAll('.full');
+        stackItemsFull = document.querySelectorAll('.full-stack');
         stackItemsFull[0].innerHTML = '';
-        stackItemsFull[0].classList.remove('full');
-        stackItemsFull[0].classList.add('empty');
+        stackItemsFull[0].classList.remove('full-stack');
+        stackItemsFull[0].classList.add('empty-stack');
     }
 }
