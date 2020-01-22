@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.stack{
+    list-style: none;
+    padding: 10px;
+}
+
+.empty {
+    background-color: rgb(158, 158, 160);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.full {
+    background-color: rgb(72, 72, 73);
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
