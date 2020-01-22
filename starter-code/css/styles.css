@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+}
+.button {
+    display: block;
+    text-align: center;
+    width: 180px;
+    padding: 3px 0;
+    margin: 3px 0;
+    width: 300px;
+
+}
+
+.stack {
+    background: #cfcfcf;
+    width: 300px;
+    border: 1px solid white;
+    height: 40px;
+}
+
+input {
+    width: 300px;
+    border-radius: 3px;
+}
+
+.add {
+    background-color: #3b85bf;
+    color: white
+}
+
+.take {
+    background-color: red;
+    color: white
+}
+
+
+
+/* #overflow,
+#underflow {
+    margin-left: 50px;
+    font-size: 2em; */
