@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: left;
+}
+h2{
+    font-weight: bold;
+    text-align: center;
+}
+ul{
+    margin: 0;
+}
+li{
+    height: 40px;
+    margin: 1px 0;
+    list-style: none;
+}
+.empty{
+    background-color:rgb(234,234,234);
+}
+.full{
+    background-color: rgb(63, 155, 227);
+}
+.btn{
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    margin: 10px 0;
+    align-items: center;
+}
+.takestack{
+    background-color: rgb(211, 71, 72);
+}
+.addstack{
+    background-color: rgb(47, 113, 177);
+}
+
+#in-text{
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px 0;
+}
+.underflow{
+    opacity: 0;
+    border-radius: 5px;
+    width: 100%;
+    color: rgb(219,115,115);
+    border: 1px solid rgb(219,115,115);
+    margin: 10px 0;
+    align-items: center;
+}
+.overflow{
+    opacity: 0;
+    border-radius: 5px;
+    width: 100%;
+    color: rgb(219,115,115);
+    border: 1px solid rgb(219,115,115);
+    margin: 10px 0;
+    align-items: center;
+}
