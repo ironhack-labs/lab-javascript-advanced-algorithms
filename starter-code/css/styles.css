@@ -1,0 +1,4 @@
+#botonera{
+    display: flex;
+    flex-direction: column;
+}
