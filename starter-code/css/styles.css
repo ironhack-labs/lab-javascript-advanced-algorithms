@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li, .empty{
+    height: 35px;
+    background-color: #e7e6e4;
+    margin-top: 5px;
+    border-radius: 3px;;
+}
+
+.full {
+    background-color: #9d9b95;
+    color: white;
+    display: flex;
+    align-items: center;
+}
