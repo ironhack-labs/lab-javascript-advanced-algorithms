@@ -1,0 +1,31 @@
+.stack{
+    display: flex;
+    width: 30vw;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text{
+    width: 30vw;
+    height: 10vh;
+    font-size: 25px;
+}
+ul{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+li{
+    display: flex;
+    width: 30vw;
+    height: 10vh;
+    background-color: grey;
+    justify-content: center;
+    margin: 10px;
+    text-decoration: none;
+    
+}
