@@ -3,6 +3,7 @@ class QueueDataStructure {
     constructor() {
         this.queueControl = []
         this.MAX_SIZE=10
+        this.index=0
     }
 
     isEmpty() {
@@ -27,4 +28,7 @@ class QueueDataStructure {
         return elm
     }
 
+    reorder(){
+        
+    }
 }

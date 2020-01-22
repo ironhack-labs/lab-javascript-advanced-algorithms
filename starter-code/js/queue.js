@@ -8,22 +8,23 @@ let queue = new QueueDataStructure()
 
 qadd.addEventListener("click", () => {
 
-    if (!queue.canEnqueue()) {
+    if (queue.index>=queue.MAX_SIZE) {
         qover[0].classList.add("flow")
         qover[0].classList.remove("normal")
 
     } else {
 
-        if (queue.isEmpty()) {
+        if (!queue.isEmpty()) {
             qunder[0].classList.remove("flow")
             qunder[0].classList.add("normal")
 
         }
         queue.enqueue(qinput.value)
 
-        qdivs[queue.queueControl.length - 1].classList.add("full")
-        qdivs[queue.queueControl.length - 1].classList.remove("empty")
-        qdivs[queue.queueControl.length - 1].innerHTML = qinput.value
+        qdivs[queue.index].classList.add("full")
+        qdivs[queue.index].classList.remove("empty")
+        qdivs[queue.index].innerHTML = qinput.value
+        queue.index++
     }
 
 
@@ -31,19 +32,20 @@ qadd.addEventListener("click", () => {
 
 qtake.addEventListener("click", () => {
 
-    if (queue.isEmpty()) {
+    if (!queue.index) {
 
         qunder[0].classList.add("flow")
         qunder[0].classList.remove("normal")
 
     } else {
         if (!queue.canEnqueue()) {
-            qover[0].classList.remove("flow")
-            qover[0].classList.add("normal")
+            qover[queue.index-1].classList.remove("flow")
+            qover[queue.index-1].classList.add("normal")
         }
         queue.enqueue()
-        qdivs[queue.queueControl.length - 1].classList.add("empty")
-        qdivs[queue.queueControl.length - 1].classList.remove("full")
-        qdivs[queue.queueControl.length - 1].innerHTML = ""
+        qdivs[queue.index-1].classList.add("empty")
+        qdivs[queue.index-1].classList.remove("full")
+        qdivs[queue.index-1].innerHTML = ""
+        queue.index--
     }
 })
