@@ -16,19 +16,16 @@ ul li {
 }
 
 .element {
+    color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00897B;
+    background-color: #009688;
     box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5)
 }
 
-.element-red {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: Red;
-    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5)
+.element.red {
+    background-color: #FF1744;
 }
 
 .element-container {

@@ -8,6 +8,7 @@ let queueTakeBtn = document.querySelector('#queue-take-btn')
 // CREAMOS UN OBJETO
 let queue = new QueueDataStructure
 
+// FUNCION PARA MOSTRAR LOS ELEMENTOS EN EL HTML
 function showHTML() {
     // CARGA LOS ELEMENTOS DEL ARRAY
     queue.queueControl.forEach((arrPos) => {
@@ -19,43 +20,52 @@ function showHTML() {
     })
 }
 
+// BOTON ANADIR
 queueAddBtn.addEventListener("click", () => {
     // RESETEA EL HTML
     queueContainer.innerHTML = ""
 
     // SELECCIONA EL VALOR DEL INPUT
     queueValue = document.querySelector('#queue-value').value
+    // SI SE PUEDE ANADIR
     if (queue.canEnqueue()) {
+        // ANADE ELEMENTO AL ARRAY
         queue.enqueue(queueValue)
         // INSERTA EL ARRAY EN LA PAGINA
         showHTML()
         //console.log(queue.queueControl)
+
+        //SI NO INSERTA EL FALLO
     } else {
         // INSERTA EL ARRAY EN LA PAGINA
         showHTML()
         // CREA EL ELEMENTO ERROR HTML E INSERTA POR APPEND CHILD
         queueElement = document.createElement("li")
-        queueElement.classList.add("element-red")
+        queueElement.classList.add("element", "red")
         queueElement.innerHTML = `${queue.enqueue(queueValue)}`
         queueContainer.appendChild(queueElement)
         //console.log(queue.queueControl)
     }
 })
 
+// BOTON QUITAR
 queueTakeBtn.addEventListener("click", () => {
     //console.log(queue.queueControl)
     // RESETEA EL HTML
     queueContainer.innerHTML = ""
-    // ELIMINA EL VALOR DEL ARRAY
+    // SI ESTA VACIO
     if (queue.isEmpty()) {
         // INSERTA EL ARRAY EN LA PAGINA
         showHTML()
         // CREA EL ELEMENTO ERROR HTML E INSERTA POR APPEND CHILD
         queueElement = document.createElement("li")
-        queueElement.classList.add("element-red")
+        queueElement.classList.add("element", "red")
         queueElement.innerHTML = `${queue.dequeue(queueValue)}`
         queueContainer.appendChild(queueElement)
+
+        // SI SE PUEDE QUITAR
     } else {
+        // QUITA DEL ARRAY
         queue.dequeue()
         // INSERTA EL ARRAY EN LA PAGINA
         showHTML()

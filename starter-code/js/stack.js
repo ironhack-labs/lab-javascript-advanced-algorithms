@@ -23,43 +23,50 @@ function showHTMLStack() {
     })
 }
 
+// BOTON ANADIR
 stackAddBtn.addEventListener("click", () => {
     // RESETEA EL HTML
     stackContainer.innerHTML = ""
 
     // SELECCIONA EL VALOR DEL INPUT
     stackValue = document.querySelector('#stack-value').value
+    // SI SE PUEDE ANADIR
     if (stack.canPush()) {
+        // ANADE ELEMENTO AL ARRAY
         stack.push(stackValue)
         // INSERTA EL ARRAY EN LA PAGINA
         showHTMLStack()
-        console.log(stack.stackControl)
+        //console.log(stack.stackControl)
+
+        //SI NO INSERTA EL FALLO
     } else {
         // INSERTA EL ARRAY EN LA PAGINA
         showHTMLStack()
         // CREA EL ELEMENTO ERROR HTML E INSERTA POR APPEND CHILD
         stackElement = document.createElement("li")
-        stackElement.classList.add("element-red")
+        stackElement.classList.add("element", "red")
         stackElement.innerHTML = `${stack.push(stackValue)}`
         stackContainer.appendChild(stackElement)
         console.log(stack.stackControl)
     }
 })
 
+// BOTON QUITAR
 stackTakeBtn.addEventListener("click", () => {
     console.log(stack.stackControl)
     // RESETEA EL HTML
     stackContainer.innerHTML = ""
-    // ELIMINA EL VALOR DEL ARRAY
+    // SI ESTA VACIO
     if (stack.isEmpty()) {
         // INSERTA EL ARRAY EN LA PAGINA
         showHTMLStack()
         // CREA EL ELEMENTO ERROR HTML E INSERTA POR APPEND CHILD
         stackElement = document.createElement("li")
-        stackElement.classList.add("element-red")
+        stackElement.classList.add("element", "red")
         stackElement.innerHTML = `${stack.pop(stackValue)}`
         stackContainer.appendChild(stackElement)
     } else {
+        // QUITA DEL ARRAY
         stack.pop()
         // INSERTA EL ARRAY EN LA PAGINA
         showHTMLStack()
