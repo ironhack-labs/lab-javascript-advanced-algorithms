@@ -22,7 +22,7 @@ function printList() {
 
 function addItem(){
     if (stack.canPush()){
-        valueStack = document.querySelector(".input-lg").value;
+        valueStack = document.querySelector(".input-lg").value; //Lo que escribes para añadir
         valueStackList = document.querySelectorAll(".empty");
         valueStackList[valueStackList.length-1].innerHTML = valueStack;
         valueStackList[valueStackList.length-1].classList.remove("empty");
