@@ -1,0 +1,107 @@
+body{
+
+}
+
+.color-border {
+    border: 2px solid  grey;
+    
+}
+
+.canvas {
+    height: 800px;
+    width: 1200px;
+    align-items: center;
+    align-content: center;
+    margin: 20px;
+}
+
+.container {
+margin: 10px;
+}
+
+.row {    
+    height: 790px;
+    width: 1190px;
+    align-items: center;
+    align-content: center;
+}
+
+.col-md-6{
+    
+    height: 780px;
+    
+
+}
+
+.arraybox {
+    height: 80px;
+    width: 500px;
+}
+
+.arrayboxqueue {
+    height: 500px;
+    width: 80px;
+}
+
+#buttonaddstack{
+    height: 60px;
+    width: 200px;
+    background-color:blue;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+
+
+}
+
+#buttonaddqueue{
+    height: 60px;
+    width: 200px;
+    background-color:blue;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#buttontakestack{
+    height: 60px;
+    width: 200px;
+    background-color: red;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+
+
+}
+
+#buttontakequeue{
+    height: 60px;
+    width: 200px;
+    background-color: red;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+
+
+}
+
+input{
+    height: 60px;
+    width: 200px;
+    border: 2px solid  grey;
+    margin: 10px;
+
+}
+
+.blueboxbg{
+    background-color:paleturquoise ;
+    color: transparent;
+}
