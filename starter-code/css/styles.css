@@ -1,0 +1,11 @@
+.celda {
+    border: 1px solid black;
+    background-color: cadetblue;
+    height: 30px;
+}
+
+.celd {
+    border: 1px solid black;
+    background-color: chocolate;
+    height: 30px;
+}
