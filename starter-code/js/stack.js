@@ -16,14 +16,14 @@ buttonAdd.addEventListener("click", () => {
 
 
     if (!stack.canPush()) {
-        overflowS[0].classList.add("show")
-        overflowS[0].classList.remove("")
+        overflowS[0].classList.add("showA")
+        overflowS[0].classList.remove("pieceS")
 
     } else {
 
         if (stack.isEmpty()) {
             underflowS[0].classList.remove("hidde")
-            underflowS[0].classList.add("normal")
+            underflowS[0].classList.add("showB")
         }
         stack.push(stackInput.value)
 
