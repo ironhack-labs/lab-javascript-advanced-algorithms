@@ -26,3 +26,7 @@ input {
     background-color: red;
     color: white;
 }
+
+.button.in {
+    background-color: yellow;
+}

@@ -1,18 +1,26 @@
 let stack = new StackDataStructure();
 let queue = new QueueDataStructure();
-let value = document.querySelector('input').innerText
+let value
 
 let addClick = document.querySelector('.add').onclick = e => {
-    // stack.push(value)
-    console.log(`has pulsado ADD ${value}`)
-}
+    value = document.querySelector('#stack-place').value
+    stack.push(value);
+
+    stack.stackControl.forEach((element) => {
+        document.querySelector('#stack1')
+
+
+        console.log(`has pulsado ADD`);
+        console.log(stack.stackControl)
+        // let charge = document.querySelector('bg-blue').
+    }
 
 let takeClick = document.querySelector('.take').onclick = e => {
-    console.log("has pulsado TAKE");
-    stack.pop()
-}
+        console.log("has pulsado TAKE");
+        stack.pop()
+    }
 
-let XXXX =
+
 
 
 // document.querySelector('bg-blue').
