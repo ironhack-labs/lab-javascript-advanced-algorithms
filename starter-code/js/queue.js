@@ -2,12 +2,15 @@ let queue = new QueueDataStructure();
 
 let queueVal = document.querySelector('.queue input').value
 
-let pos = 1
 
 console.log(queueVal)
 
 
 let qArrli = document.querySelectorAll('.queue li')
+let fullLi = document.querySelectorAll('.full')
+
+let pos = 1
+let delpos = 1
 
 let qAddBut = document.querySelector('.queue.add')
 console.log(qAddBut)
@@ -18,6 +21,7 @@ console.log(qAddBut)
 
 
 qAddBut.addEventListener("click",()=>{
+    delpos=1
     if(queue.canEnqueue()){
         queueVal = document.querySelector('.queue input').value
         queue.enqueue(queueVal)
@@ -31,13 +35,17 @@ qAddBut.addEventListener("click",()=>{
     }
 })
 qTakeBut.addEventListener("click",()=>{
+    
+    console.log(delpos)
+
     if(!queue.isEmpty()){
         queueVal = document.querySelector('.queue input').value
         pos--
         queue.dequeue()
-        qArrli[pos].className="empty"
-        qArrli[pos].innerText=""
+        qArrli[delpos].className="empty"
+        qArrli[delpos].innerText=""
         qArrli[9].innerText=""
+        delpos++
     }else{
         qArrli[0].innerText=queue.dequeue()
 
