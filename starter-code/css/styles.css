@@ -1,0 +1,76 @@
+body {
+    margin: auto 30vw;
+}
+
+.container {
+    display: column;
+    justify-content: center;
+    align-content: center;
+}
+
+div {
+    display: column;
+    margin-top: 30px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+ul {
+    padding: 0;
+    width: 100%;
+    margin-top: 16px;
+}
+
+ul>li {
+    background-color: rgb(236, 233, 233);
+    margin: 2px;
+    list-style-type: none;
+    height: 25px;
+}
+
+#input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    color: rgb(206, 195, 195);
+    width: 34vw;
+    padding: 4px 0;
+    margin:8px auto;
+    
+}
+
+
+/*input:focus-visible   ?????*/
+
+button{
+display: flex;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-weight: bold;
+color: white;
+font-size: 10px;
+width: 34vw;
+border-radius: 3%;
+margin:8px auto;
+padding-top: 6px;
+padding-bottom: 6px;
+border: none;
+}
+
+.btn-add {
+  background-color: rgb(74, 94, 161);  
+}
+
+.btn-take{
+    background-color: rgb(214, 66, 66);
+}
+
