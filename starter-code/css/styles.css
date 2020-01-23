@@ -31,6 +31,10 @@ input {
     visibility: hidden;
 }
 
+.color {
+    background-color: rgb(145, 204, 204);
+}
+
 .overflow {
     visibility: hidden;
 }

@@ -1,4 +1,5 @@
   let stack = document.querySelectorAll(".stack");
+
   let addStackButton = document.getElementById("addStack")
   let takeStackButton = document.getElementById("takeStack")
 
@@ -24,7 +25,13 @@
 
 
   addStackButton.addEventListener('click', function () {
+      let pushResult = stackDataStructure.push(inputStack.value)
+      let stackArr = stackDataStructure.stackControl.length
+      let textToPrint = '';
 
+      stack.forEach((elm, idx) => elm.classList.add('color')
+          //       const element = stack[idx]; element.innerHTML = elm[idx]
+      )
       //   console.log(inputStack.value)
 
       //   stackDataStructure.push(inputStack.value)
@@ -78,13 +85,14 @@
       //   CAMBIAR CLASE
       //   underflow.setAttribute('class', 'box underflow visible')
 
-      let pushResult = stackDataStructure.push(inputStack.value)
-      let stackArr = stackDataStructure.stackControl.length
-      let textToPrint = '';
+
+
       if (Array.isArray(pushResult)) {
           textToPrint = inputStack.value;
 
       } else if (typeof pushResult === 'string') {
+          //   underflow.setAttribute('class', 'box underflow visible')
+
           textToPrint = pushResult;
 
       }
@@ -95,8 +103,13 @@
 
   takeStackButton.addEventListener('click', function () {
       //   console.log('hola')
+      let stackArr = stackDataStructure.stackControl.length
 
       stackDataStructure.pop()
+      document.getElementsByClassName('box stack')[stackArr - 1].innerText = ''
+
+
+
       //   console.log(stackDataStructure.stackControl)
 
   })
