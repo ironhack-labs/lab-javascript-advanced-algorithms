@@ -27,6 +27,8 @@ class StackDataStructure {
             this.changeBlue()
             return this.stackControl
         } else {
+            document.querySelector(".overa").className = "celd overa flow"
+            document.querySelector(".overa").innerText = "Stack Overflow"
             return "Stack Overflow"
         }
 
@@ -35,6 +37,8 @@ class StackDataStructure {
     pop() {
 
         if (this.isEmpty()) {
+            document.querySelector(".undera").className = "celd undera flow"
+            document.querySelector(".undera").innerText = "Stack Underflow"
             return "Stack Underflow"
         } else {
             this.changeWhite()
@@ -53,6 +57,8 @@ class StackDataStructure {
 
         if (this.stackControl.length == 1) {
             celdA.className = "celd a full"
+            document.querySelector(".undera").className = "celd undera"
+            document.querySelector(".undera").innerText = ""
         } else if (this.stackControl.length == 2) {
             celdB.className = "celd b full"
         } else if (this.stackControl.length == 3) {
@@ -82,6 +88,9 @@ class StackDataStructure {
             celdD.className = "celd d"
         } else if (this.stackControl.length == 5) {
             celdE.className = "celd e"
+            document.querySelector(".overa").className = "celd overa"
+            document.querySelector(".overa").innerText = ""
+            
         }
 
     }
