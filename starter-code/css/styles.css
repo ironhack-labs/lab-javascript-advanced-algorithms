@@ -1,0 +1,83 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 700px;
+    width: 100%;
+}
+
+.stack, .queue{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    
+}
+
+button {
+
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: small;
+    margin: 5px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.blue {
+    background-color: rgb(136, 136, 246);
+}
+
+.red {
+    background-color: rgb(241, 115, 115);
+}
+
+
+.alerta {
+    background-color: rgb(245, 185, 185);
+    color: rgb(119, 0, 0);
+    border: solid 1px rgb(255, 200, 200);
+    height: 30px;
+}
+
+
+.visual-stack,  .visual-queue {
+    height: 30px;
+    border: 1px solid rgb(231, 231, 231);
+    background-color: lightgray;
+}
+
+.stack-uflow, .queue-uflow{
+    margin-top: 20px;
+}
+
+.invisible {
+    opacity: 1;
+}
+
+
+
+.visual-stack.filled ,  .visual-queue.filled {
+    height: 30px;
+    border: 1px solid rgb(214, 255, 255);
+    background-color: rgb(133, 176, 255);
+}
+
+.invisible {
+
+    opacity: 1;
+
+}
