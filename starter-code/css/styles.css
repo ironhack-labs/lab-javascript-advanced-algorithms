@@ -1,0 +1,38 @@
+h2 {
+
+    text-align: center;
+
+
+}
+
+h1 {
+
+    text-align: center;
+}
+
+input {
+
+    text-align: center;
+}
+
+article div {
+
+    background-color: aqua;
+
+
+
+}
+
+ol {
+
+    background-color: aqua;
+
+
+}
+
+ol li {
+
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style: none;
+}
