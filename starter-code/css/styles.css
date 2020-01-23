@@ -1,0 +1,88 @@
+
+
+.container {
+    max-width: 700px;
+}
+
+.container-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    padding: 20px 20px;
+
+}
+
+h2 {
+    text-align: left;
+}
+
+ul {
+
+
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    background-color: lightgray;
+    height: 60px;
+    margin: 10px auto;
+    align-self: auto;
+
+}
+
+.full {
+    background-color: gray;
+}
+
+button {
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    
+  
+}
+#btn-add {
+    background-color:blue;
+
+}
+
+#btn-take {
+    background-color: crimson;
+}
+
+input {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+  
+  }
+
+h2 {
+    font-size: 3em;
+    margin-left: 20px;
+
+} 
+
+/* 
+//      <div class="col-5">
+<h2 class="col-5">Stack</h2>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+
+</div>
+<div class="col-5"></div> */

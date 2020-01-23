@@ -1,45 +1,38 @@
-
-
-
 class StackDataStructure {
     constructor() {
-        this.stackControl =[];
-        this.MAX_SIZE=10;
+        this.stackControl = [];
+        this.MAX_SIZE = 2;
     }
     isEmpty() {
-      if (this.stackControl.length===0) {
-        return true;
-      } 
-      else {
-          return false;
-      }
+        if (this.stackControl.length === 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
     canPush() {
         if (this.stackControl.length === this.MAX_SIZE) {
             return false
-        }
-        else {
+        } else {
             return true;
         }
     }
     push(elem) {
         if (this.canPush()) {
             this.stackControl.push(elem);
-           
+
             return this.stackControl
 
-        }
-        else{
+        } else {
             this.stackControl;
             return `Stack Overflow`
         }
 
     }
-    pop(){
+    pop() {
         if (this.isEmpty()) {
             return `Stack Underflow`
-        }
-        else {
+        } else {
             return this.stackControl.pop()
         }
 
