@@ -1,0 +1,84 @@
+body {
+    background-image: url(./repeated-square.png);
+}
+
+h1 {
+    font-size: 4em;
+    color: salmon;
+}
+
+h2 {
+    font-size: 3em;
+    color: chocolate;
+    margin-bottom: 20px;
+}
+
+
+
+/* Buttons */
+
+.btn {
+    display: block;
+    width: 250px;
+    height: 60px;
+    padding: 20px 0;
+    margin: 10px auto;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+
+}
+
+.btn.blue {
+    background: #4682B4;
+    border: 1px solid #62C2F9;
+}
+
+.btn.red {
+    background-color: tomato;
+    border: 1px solid rgb(209, 62, 62);
+}
+
+/* Input */
+input {
+    width: 250px;
+    height: 40px;
+    border-radius: 3%;
+    border: 1px solid grey;
+}
+
+/* Piezas Stack */
+.recipe {
+    display: inline-block;
+}
+
+.pieceS,
+.pieceQ {
+
+    width: 200px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.hidde {
+    display: none;
+}
+
+.showA,
+.showB {
+    color: white;
+    background-color: rgb(170, 161, 161);
+    width: 200px;
+    padding: 20px;
+    border: 3px solid red;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.show {
+    background-color: purple;
+    text-align: center;
+}
