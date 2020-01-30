@@ -24,10 +24,3 @@ function StackDataStructure() {
       : this.stackControl.pop();
   };
 }
-
-// structure = new StackDataStructure();
-// //console.log(structure.isEmpty());
-// structure.push(19);
-
-// structure.MAX_SIZE = 1;
-// structure.push(18);
