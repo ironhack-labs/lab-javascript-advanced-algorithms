@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+body {
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+h1 {
+    font-size: 4rem;
+}
+
+input {
+    font-size: 1.6rem;
+    color: darkgray;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+button {
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 10px;
+    display: block;
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+#add {
+    background-color:rgb(91, 125, 187)
+}
+#take {
+    background-color: rgb(238, 131, 131);
+}
+
+.panel {
+    margin-top: 30px;
+}
+#data div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    margin-top: 1px;
+    width: 350px;
+    height: 55px;
+}
+.empty {
+    background-color: rgb(224, 224, 224);
+}
+.occupied {
+    background-color: rgb(100, 171, 192);
+}
+.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 1px solid red;
+    font-size: 3rem;
+    margin-top: 1px;
+    width: 350px;
+    height: 55px;
+}
+.hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
