@@ -1,4 +1,4 @@
-![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
+![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
 # JS | Advanced Algorithms
 
@@ -10,39 +10,40 @@ In this exercise, you will be able to:
 - Learn how to model real-life situations and objects into proper data structures
 - Use tests to develop your solution
 
-
 ## Data Structures
 
 A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a particular way to organize your data in the computer so it can be used efficiently. One or more [abstract data types](https://en.wikipedia.org/wiki/Abstract_data_type) can be implemented and they specify the operations that can be performed over a data structure.
 
 In this exercise we will implement two different abstract data types that are very common: `stacks` and `queues`. Let's see what both data structures to understand how they work.
 
+## Requirements
+
+- Fork this repo
+- Then clone this repo.
+
 ## Submission
 
-Upon completion, run the following commands
-```
+- Upon completion, run the following commands:
+
+```shell
 $ git add .
 $ git commit -m "done"
 $ git push origin master
 ```
-Navigate to your repo and create a Pull Request -from your master branch to the original repository master branch.
 
-In the Pull request name, add your name and last names separated by a dash "-"
+- Create Pull Request so your TAs can check up your work.
 
-## Deliverables
-
-Create your Pull request with everything you need to run your game properly.
+## Useful information
 
 ### Stacks
 
- stack is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack. The only element that can be removed is the element that was at the top of the stack.
+Stack is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack. The only element that can be removed is the element that was at the top of the stack.
 
 This data structure is also called LIFO queue. LIFO stands for "last in, first out", meaning that the last element we put in the stack, is the first element that will go out.
 
 ![Image](https://i.imgur.com/NcuoeUk.png)
 
 **Think about a stack as if it was a stack of books. You can put a book over the others, but you just can take the book on the top of the stack.**
-
 
 ### Queues
 
@@ -56,32 +57,13 @@ The process to add an element into queue is called **enqueue**, and the process 
 
 **Hint**: Think about a queue as if it was a queue in a bank. When you arrive, you are the last in the line, and you have to wait until it's your turn to being attended.
 
-## Exercise
+## Instructions
 
 ### Introduction
 
 The goal of this exercise is to create a visual layout to show how stacks and queues work. We will do it by using advanced JavaScript concepts like closures, scope, context, method invocation...
 
 We have created a set of tests to guide you through the abstract data types implementation. After implementing the JavaScript functionality, create a visual layout to show how each data structure works.
-
-### Requirements
-
-- [Fork this repo](https://guides.github.com/activities/forking/)
-- Clone this repo into your `~/code/labs`
-- Make sure you pass all the tests
-- Make sure to use JavaScript closures, scope, shadowing, hoisting, context, and method invocation
-
-### Submission
-
-- Upon completion, run the following commands
-
-	```
-	git add .
-	git commit -m"done"
-	git push origin master
-	```
-
-- Navigate to your repo and [create a Pull Request](https://help.github.com/articles/creating-a-pull-request/)
 
 ### Starter code
 
@@ -91,7 +73,7 @@ Open in you browser the `SpecRunner.html` file to see the set of tests we have c
 
 Go through this tests to build up your libraries with the specified functionality. Let's go step by step:
 
-### First iteration
+### Iteration 1
 
 The first abstract data type we are going to build is the `Stack`. You have to create the requested methods in the `/src/StackDataStructure.js` file.
 
@@ -106,9 +88,9 @@ So we will also need to have two methods, one to check if we can add new element
 
 If you satisfy the set of tests, you will get a solution with all the necessary implementations :)
 
-**You can't use the append or prepend jQuery methods to do this exercise. The goal is not to do the exercise fast, but to have a first approach with the Data Structures.**
+<!-- **You can't use the append or prepend jQuery methods to do this exercise. The goal is not to do the exercise fast, but to have a first approach with the Data Structures.** -->
 
-### Second iteration
+### Iteration 2
 
 The second abstract data type we are going to build is the `Queue`. You have to create the requested methods in the `/src/QueueDataStructure.js` file.
 
@@ -123,9 +105,9 @@ So we will also need to have two methods, one to check if we can add new element
 
 If you follow the set of tests, you will get a solution with all the necessary implementations :)
 
-**Again, you can't use the append or prepend jQuery methods to do this exercise. Remember that the goal is not to do the exercise fast, but to understand these Data Structures.**
+<!-- **Again, you can't use the append or prepend jQuery methods to do this exercise. Remember that the goal is not to do the exercise fast, but to understand these Data Structures.** -->
 
-### Third iteration
+### Iteration 3
 
 Once we have created all the functionality, let's create a visual representation to see how these stacks and queues work. You have to consider all the options we have coded!
 
@@ -156,3 +138,5 @@ Here we propose how we could visually represent the different steps of the stack
 - [Data Structures](https://en.wikipedia.org/wiki/Data_structure)
 - [Stacks](http://www.studytonight.com/data-structures/stack-data-structure)
 - [Queues](http://www.studytonight.com/data-structures/queue-data-structure)
+
+**Happy coding!** :heart:
