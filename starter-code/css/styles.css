@@ -4,6 +4,12 @@
     border-color: #dc3546;
 }
 
+.hideRBtmQ {
+    display: none;
+    background-color: #f4e2e3;
+    border-color: #dc3546;
+}
+
 .showRTop, .showRBtm {
     background-color: #f4e2e3;
     border-color: #dc3546;

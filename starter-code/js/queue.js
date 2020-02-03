@@ -13,15 +13,19 @@ queueData.MAX_SIZE = 8;
 const addQueue = () => {
   const inputValue = queue.querySelector("input").value;
   const pushResult = queueData.enqueue(inputValue);
-  queueUnderflow.classList.replace("showRBtm", "hideRBtm");
+  queueUnderflow.classList.replace("showRBtm", "hideRBtmQ");
 
   if (pushResult === "Queue Overflow") {
     queueOverflow.classList.replace("hideRTop", "showRTop");
   } else {
     for (let i = 0, t = divArrayQueue.length; t >= 0; t--, i++) {
+      // left the 't' there, because in row mode, it can be used to fill from bottom to top.
+      // Right now, it does not do anything.
       if (queueData.queueControl[i] !== undefined) {
-        divArrayQueue[t - 1].innerText = queueData.queueControl[i];
-        divArrayQueue[t - 1].className = "col-sm p-2 border queue bg-dark text-light";
+        // divArrayQueue[t - 1].innerText = queueData.queueControl[i];
+        // divArrayQueue[t - 1].className = "col-sm p-2 border queue bg-dark text-light";
+        divArrayQueue[i].innerText = queueData.queueControl[i];
+        divArrayQueue[i].className = "col-sm p-2 border queue bg-dark text-light";
       }
     }
   }
@@ -33,10 +37,10 @@ const removeQueue = () => {
   queueOverflow.classList.replace("showRTop", "hideRTop");
 
   if (popResult === "Queue Underflow") {
-    queueUnderflow.classList.replace("hideRBtm", "showRBtm");
+    queueUnderflow.classList.replace("hideRBtmQ", "showRBtm");
   } else {
-    divPopArrayQueue[0].innerHTML = "&nbsp";
-    divPopArrayQueue[0].className = "col-sm p-2 border queue bg-light text-dark";
+    divPopArrayQueue[divPopArrayQueue.length - 1].innerHTML = "&nbsp";
+    divPopArrayQueue[divPopArrayQueue.length - 1].className = "col-sm p-2 border queue bg-light text-dark";
   }
 };
 
