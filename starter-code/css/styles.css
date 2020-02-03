@@ -1,0 +1,76 @@
+h3 {
+  font-size: 2em;
+}
+
+.btn {
+    display:inline-block;
+    box-sizing: border-box;
+    margin: 5px 0px 5px 0px;
+    height: 40px;
+    width: 250px;
+    font-size:inherit;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius:4px;
+  }
+  .intext, .intextQueue {
+    width: 250px;  
+    height: 40px; 
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    font-size: small;
+    border-radius:4px;
+  }
+  .btn-add, .btn-queue-add {
+    color: #fff;
+    background-color: #2191ad;
+    border-color: #2191ad;
+  }
+  .btn-take, .btn-queue-take {
+    color: #fff;
+    background-color: #e6531e;
+    border-color: #e6531e;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stack-container, .queue-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  h3,
+  .cta,
+  h2 {text-align:center;}
+
+  .element {
+    display:inline-block;
+    box-sizing: border-box;
+    width: 250px;  
+    height: 40px; 
+    padding-top: 10px;
+    font-size:inherit;  
+    background-color: lightgrey;
+    border: 1px solid white;
+    text-align: center;
+  }
+
+.divFlexCol {
+   width: 300px;
+   display: flex;
+   margin-left: 50px;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.divFlexCol aside {
+   margin-left: 10px;
+   font-size: 2em;
+}
