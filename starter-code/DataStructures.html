@@ -1,21 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>DataStructures | Stacks &amp; Queues</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="lib/jquery-3.1.1.min.js"></script>
-</head>
-<body>
-  <section class="container">
-    <h1>Abstract Data Types</h1>
-
-  </section>
-
-  <script src="src/StackDataStructure.js"></script>
-  <script src="src/QueueDataStructure.js"></script>
-  <script src="js/stack.js"></script>
-  <script src="js/queue.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Abstract Data Types</h1>
+    </section>
+    <section class="container m-5" id="stack">
+      <h2>Stack</h2>
+      <div class="container">
+        <div class="row">
+          <label>
+            <div class="col-fluid pr-4 input-group mb-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Amount</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Type a number"
+                aria-label="Type a number"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </label>
+          <div class="col-fluid">
+            <button type="button" class="btn btn-danger">ADD</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-info">TAKE</button>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="stackStart">
+        <div class="row">
+          <div id="stackOverflow" class="col-8 p-2 border text-danger text-center hideRTop">
+            Stack Overflow
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8 p-2 border bg-light text-dark">&nbsp;</div>
+        </div>
+        <div class="row ">
+          <div class="col-8 p-2 border bg-light text-dark">&nbsp;</div>
+        </div>
+        <div class="row ">
+          <div class="col-8 p-2 border bg-light text-dark">&nbsp;</div>
+        </div>
+        <div class="row ">
+          <div class="col-8 p-2 border bg-light text-dark">&nbsp;</div>
+        </div>
+        <div class="row ">
+          <div class="col-8 p-2 border bg-light text-dark">&nbsp;</div>
+        </div>
+        <div class="row ">
+          <div class="col-8 p-2 border bg-light text-dark">&nbsp;</div>
+        </div>
+        <div class="row ">
+          <div class="col-8 p-2 border bg-light text-dark">&nbsp;</div>
+        </div>
+        <div class="row ">
+          <div class="col-8 p-2 border bg-light text-dark">&nbsp;</div>
+        </div>
+        <div class="row">
+          <div id="stackUnderflow" class="col-8 p-2 border text-danger text-center hideRBtm">
+            Stack Underflow
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container m-5" id="queue">
+      <h2>Queue</h2>
+      <div class="container">
+        <div class="row">
+          <label>
+            <div class="col-fluid pr-4 input-group mb-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Amount</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Type a number"
+                aria-label="Type a number"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </label>
+          <div class="col-fluid">
+            <button type="button" class="btn btn-danger">ADD</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-info">TAKE</button>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="queueStart">
+        <div class="row h-100">
+          <div id="queueOverflow" class="col-sm p-2 border text-danger text-center hideRTop">Queue Overflow</div>
+          <div class="col-sm p-2 border queue bg-light text-dark">&nbsp;</div>
+          <div class="col-sm p-2 border queue bg-light text-dark">&nbsp;</div>
+          <div class="col-sm p-2 border queue bg-light text-dark">&nbsp;</div>
+          <div class="col-sm p-2 border queue bg-light text-dark">&nbsp;</div>
+          <div class="col-sm p-2 border queue bg-light text-dark">&nbsp;</div>
+          <div class="col-sm p-2 border queue bg-light text-dark">&nbsp;</div>
+          <div class="col-sm p-2 border queue bg-light text-dark">&nbsp;</div>
+          <div class="col-sm p-2 border queue bg-light text-dark">&nbsp;</div>
+          <div id="queueUnderflow" class="col-sm p-2 border text-danger text-center hideRBtm">Queue Underflow</div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/StackDataStructure.js"></script>
+    <script src="src/QueueDataStructure.js"></script>
+    <script src="js/stack.js"></script>
+    <script src="js/queue.js"></script>
+  </body>
 </html>
