@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 50px;
+}
+
+/* STACK STYLE */
+
+#inputStack {
+    color: grey;
+    border-radius: 5px;
+    border: 1px solid #EDEDED;
+    margin: 10px 0px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#addStack {
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    margin: 5px 0px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#takeStack {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    margin: 5px 0px 20px 0px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.stackBox {
+    background-color: #EDEDED;
+    margin: 1px 0px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* QUEUE STYLE */
+
+#inputQueue {
+    color: grey;
+    border-radius: 5px;
+    border: 1px solid #EDEDED;
+    margin: 10px 0px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#addQueue {
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    margin: 5px 0px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#takeQueue {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    margin: 5px 0px 20px 0px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.queueBox {
+    background-color: #EDEDED;
+    margin: 1px 0px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 10px;
+}
