@@ -1,31 +1,40 @@
 class QueueDataStructure{
-    constructor(){
-        this.MAX_SIZE = 19;
+    constructor(capacity){
+        this.capacity = capacity;
         this.queueControl = [];
+        this.lastPosition = 0;
+    }
+    display(){
+        return this.queueControl;
     }
 
     isEmpty(){
-        return this.queueControl.length === 0;
+        return this.lastPosition === 0;
     }
 
-    enqueue(e){
-        if(this.canEnqueue()){
-            this.queueControl.unshift(e)
-            return this.queueControl;
+    isFull(){
+        return this.lastPosition === this.capacity;
+    }
+
+    enqueue(item){
+        if(this.isFull() === true){
+            return -1;
         }else{
-            return 'Queue Overflow'
+            this.lastPosition +=1
+            this.queueControl.push(item)
+            return this.queueControl;
         }
     }
 
     dequeue(){
-        if(!this.isEmpty()){
-            return this.queueControl.pop()
+        if(this.isEmpty() === true){
+            return -1;
         }else{
-            return 'Queue Underflow'
+            this.lastPosition -= 1;
+            this.queueControl.shift();
+            return this.queueControl;
         }
     }
 
-    canEnqueue(){
-        return this.queueControl.length < this.MAX_SIZE
-    }
+   
 }
