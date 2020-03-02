@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DataStructures | Stacks &amp; Queues</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="lib/jquery-3.1.1.min.js"></script>
+  </head>
+
+  <body>
+    <h1 class="text-center">Data Structures</h1>
+
+    <div class="container" id="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>Stack</h2>
+          <div class="form-group">
+            <label for=""></label>
+            <input class="form-control" id="stack-input" placeholder="Add element to the stack" />
+          </div>
+          <button id="add-stack" type="button" class="btn btn-primary btn-block">
+            Add to stack
+          </button>
+          <button id="take-stack" type="button" class="btn btn-danger btn-block">
+            Remove from stack
+          </button>
+          <div class="stack-container" id="stack-container">
+            <div class="warning-top alert alert-danger"></div>
+            <ul id="stack-list" class="list-stack"></ul>
+            <div class="warning-bottom alert alert-danger"></div>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-7">
+          <h2>Queue</h2>
+          <div class="form-group">
+            <label for=""></label>
+            <input class="form-control queue-input" id="queue-input" placeholder="Add element to the queue" />
+          </div>
+          <button id="add-queue" type="button" class="btn btn-primary btn-block btn-add-queue">
+            Add to queue
+          </button>
+          <button id="take-queue" type="button" class="btn btn-danger btn-block btn-take-dequeue">
+            Remove from queue
+          </button>
+
+          <div class="stack-container" id="queue-container">
+            <div class="warning-top alert alert-danger"></div>
+            <ul id="queue-list" class="list-queue"></ul>
+            <div class="warning-bottom alert alert-danger"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/stack/stack-data-structure.js"></script>
+    <script src="js/queue/queue-data-structure.js"></script>
+
+    <script src="js/stack/stack-dom.js"></script>
+    <script src="js/queue/queue-dom.js"></script>
+  </body>
+</html>
