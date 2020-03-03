@@ -47,11 +47,11 @@ This data structure is also called **LIFO** queue. LIFO stands for "last in, fir
 
 ### Queues
 
-Queues are the other abstract data type we are going to see. It is also called as linear data structure, in which the first element is inserted from one end called **rear**, and the deletion of an existing element takes place from the other end called as **front**.
+Queues are the other abstract data type we are going to see. It is also called a linear data structure. This means that the first element is inserted from one end called **rear**, and the deletion of an existing element takes place from the other end called **front**.
 
 This makes a queue a **FIFO** data structure, which means that the first element inserted, will be the first element removed.
 
-The process to add an element into the queue is called **enqueue**, and the process of removal of an element from the queue is called **dequeue**.
+The process of adding an element into the queue is called **enqueue**, and the process of removal of an element from the queue is called **dequeue**.
 
 ![](https://i.imgur.com/Qo1SQQ7.png)
 
@@ -90,7 +90,10 @@ We should also be careful with Stack Overflow (yes, like the website), and Stack
 - Stack Overflow occurs when we try to add an element into a stack that is already full.
 - Stack Underflow occurs when we try to get an element from an empty stack.
 
-So we will also need to have two methods, one to check if we can add new elements (`canPush()`) to the stack (to avoid the stack overflow), and another one to check if we can take an element (`isEmpty()`) from the stack (to avoid the stack underflow).
+So we will also need to have two methods:
+
+- `canPush()` to check if we can add new elements to the stack (to avoid the stack overflow), and
+- `isEmpty()` to check if we can take an element from the stack (to prevent the stack underflow).
 
 If you satisfy the set of tests, you will get a solution with all the necessary implementations.
 
@@ -100,16 +103,18 @@ At this point, you can either proceed to iteration 2 and build the logic for the
 
 The second abstract data type we are going to build is the `queue`. You have to create the requested methods in the `js/queue/queue-data-structure.js` file. The same as in iteration 1, we gave you some starter code. Follow the tests to build a proper queue data structure.
 
-Remember that `queue` is a **FIFO (First-In-First-Out)** structure. You have to add the right methods to add (`enqueue()`) elements to the structure, and it also should has the necessary methods to remove (`dequeue()`) elements from it in the same order we added them.
+Remember that `queue` is a **FIFO (First-In-First-Out)** structure. You have to add the right methods to add (`enqueue()`) elements to the structure, and it also should have the necessary methods to remove (`dequeue()`) elements from it in the same order we added them.
 
 The same as we mentioned for the stack, we should be careful with Queue Overflow and Queue Underflow:
 
 - Queue Overflow occurs when we try to add an element into a queue that is already full.
 - Queue Underflow occurs when we try to get an element from an empty queue.
 
-So we will also need to have two methods, one to check if we can add new elements (`canEnqueue()`) to the queue (it will avoid the queue overflow), and another one to check if we can remove (`isEmpty()`) an element from the queue (it will avoid the queue underflow).
+So we will also need to have two methods:
 
-If you follow the set of tests, you will get a solution with all the necessary implementations.
+- `canEnqueue()` to check if we can add new elements to the queue (it will avoid the queue overflow), and
+- `isEmpty()` to check if we can remove an element from the queue (it will avoid the queue underflow).
+  If you follow the set of tests, you will get a solution with all the necessary implementations.
 
 ### Iteration 3
 
@@ -128,10 +133,12 @@ We already provided you with full HTML code in the `index.html`. Also, we gave y
 #### Stack Underflow
 ![](https://i.imgur.com/AiGT158.png) -->
 
+<br>
+
+**Happy coding!** :heart:
+
 ## Extra Resources
 
 - [Data Structures](https://en.wikipedia.org/wiki/Data_structure)
 - [Stacks](http://www.studytonight.com/data-structures/stack-data-structure)
 - [Queues](http://www.studytonight.com/data-structures/queue-data-structure)
-
-**Happy coding!** :heart:

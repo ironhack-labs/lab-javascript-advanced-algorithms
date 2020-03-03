@@ -94,8 +94,8 @@ describe('Stack', () => {
   });
 });
 
-describe('Queues', () => {
-  var queue;
+describe('Queue', () => {
+  let queue;
 
   beforeEach(() => {
     queue = new QueueDataStructure();
