@@ -7,13 +7,23 @@ const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new StackDataStructure();
+const size = newStack.MAX_SIZE
+const actualStack = size - newStack.stackControl.length
+
+
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ""
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  for (let i = 0; i < actualStack; i++) {
+    let newLi = document.createElement('li')
+    newLi.classList.add('inactive')
+    newLi.innerHTML = '&nbsp;'
+    stackList.appendChild(newLi)
+  }
+
 };
 
 renderListStack();
@@ -27,11 +37,39 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  if (newStack.canPush()) {
+    newStack.push(stackInput.value)
+    let getLi = document.querySelectorAll('.inactive')
+
+    getLi[0].classList.toggle('active')
+    getLi[0].classList.toggle('inactive')
+    getLi[0].innerHTML = stackInput.value
+
+
+
+    clearStackInput()
+    console.log(newStack.stackControl)
+  } else {
+    alert('Maaaaaal')
+  }
+
 };
+console.log(actualStack)
+console.log(newStack.stackControl.length)
 
 const removeFromStack = () => {
-  // ... your code goes here
+  if (!newStack.isEmpty()) {
+    newStack.pop()
+
+    let getLi = document.querySelectorAll('.active')
+    let activeSize = getLi[getLi.length - 1]
+
+    activeSize.classList.toggle('active')
+    activeSize.classList.toggle('inactive')
+    activeSize.innerHTML = '&nbsp;'
+
+  }
+
 };
 
 addStackBtn.addEventListener('click', addToStack);
