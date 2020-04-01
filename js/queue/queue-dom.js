@@ -11,7 +11,7 @@ const queueTemplate = document.querySelector('#queue-list .template')
 const queue = new QueueDataStructure()
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = ''
 }
 
 const generateListQueue = () => {
