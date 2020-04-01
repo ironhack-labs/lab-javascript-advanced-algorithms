@@ -22,9 +22,9 @@ renderListStack()
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    console.log('underflow')
+    warningBottomStack.style.display = 'block'
   } else if (type === 'overflow') {
-    console.log('overflow')
+    warningTopStack.style.display = 'block'
   }
 }
 
@@ -35,6 +35,9 @@ const addToStack = () => {
   if (!canPush) {
     generateWarningStack('overflow')
   } else {
+    if (warningBottomStack.style.display == 'block') {
+      warningBottomStack.style.display = 'none'
+    }
     inactiveStackElements[0].innerHTML = 'test'
     inactiveStackElements[0].classList.remove('inactive')
     inactiveStackElements[0].classList.add('active')
@@ -49,6 +52,9 @@ const removeFromStack = () => {
   if (isUnderflow) {
     generateWarningStack('underflow')
   } else {
+    if (warningTopStack.style.display == 'block') {
+      warningTopStack.style.display = 'none'
+    }
     activeStackElements[activeStackElements.length - 1].innerHTML = ''
     activeStackElements[activeStackElements.length - 1].classList.remove(
       'active'
