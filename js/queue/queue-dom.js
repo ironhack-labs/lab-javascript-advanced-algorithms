@@ -17,6 +17,7 @@ const generateListQueue = () => {
   for (let i = 0; i < queue.MAX_SIZE; i++) {
     liElement = document.createElement("li")
     liElement.className = "inactive"
+    liElement.innerHTML = "&nbsp;"
     queueUL.appendChild(liElement)
     
   }
