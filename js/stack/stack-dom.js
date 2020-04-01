@@ -30,9 +30,11 @@
 
  const generateWarningStack = type => {
    if (type === 'underflow') {
-     // ... your code goes here
+     warningBottomStack.style.display = 'block'
+     warningBottomStack.innerHTML = newStack.pop(type)
    } else if (type === 'overflow') {
-     // ... your code goes here
+     warningTopStack.style.display = 'block'
+     warningTopStack.innerHTML = newStack.push(type)
    }
  };
 
@@ -50,7 +52,7 @@
      clearStackInput()
      console.log(newStack.stackControl)
    } else {
-     alert('Maaaaaal')
+     generateWarningStack('overflow')
    }
 
  };
@@ -67,7 +69,7 @@
 
      newStack.pop()
    } else {
-     alert('no borres a')
+     generateWarningStack('underflow')
    }
  };
 

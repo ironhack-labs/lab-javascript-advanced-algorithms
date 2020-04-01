@@ -27,9 +27,11 @@ generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomQueue.style.display = 'block'
+    warningBottomQueue.innerHTML = queue.dequeue(type)
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopQueue.style.display = 'block'
+    warningTopQueue.innerHTML = queue.enqueue(type)
   }
 };
 
@@ -46,7 +48,7 @@ const addToQueue = () => {
       getLi[i].classList.add('active')
     }
   } else {
-    alert('Maaaaaal')
+    generateWarningQueue('overflow')
   }
 };
 
@@ -61,6 +63,8 @@ const removeFromQueue = () => {
     queueL.classList.remove('active')
     queueL.classList.add('inactive')
     queueL.innerHTML = '&nbsp;'
+  } else {
+    generateWarningQueue('underflow')
   }
 };
 
