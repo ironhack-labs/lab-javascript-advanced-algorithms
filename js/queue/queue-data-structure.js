@@ -9,7 +9,7 @@ class QueueDataStructure {
   }
 
   canEnqueue() {
-    // ... your code goes here
+    return this.queueControl.length < this.MAX_SIZE ? true : false
   }
 
   isEmpty() {
