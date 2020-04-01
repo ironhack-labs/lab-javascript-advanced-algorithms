@@ -16,12 +16,9 @@ const clearStackInput = () => {
 }
 
 const renderListStack = () => {
-  const stackNode = stackTemplate.cloneNode()
-  stackNode.classList = 'stack-element inactive'
   for (let i = 0; i < newStack.MAX_SIZE; i++) {
     const stackNode = stackTemplate.cloneNode()
     stackNode.classList = 'stack-element inactive'
-    console.log(i)
     stackList.append(stackNode)
   }
 }

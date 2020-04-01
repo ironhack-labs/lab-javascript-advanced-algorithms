@@ -1,21 +1,28 @@
-const queueUL = document.querySelector('.list-queue');
-const queueInput = document.querySelector('.queue-input');
-const warningTopQueue = document.querySelector('#queue-container .warning-top');
-const warningBottomQueue = document.querySelector('#queue-container .warning-bottom');
-const addQueue = document.querySelector('.btn-add-queue');
-const dequeue = document.querySelector('.btn-take-dequeue');
+const queueUL = document.querySelector('.list-queue')
+const queueInput = document.querySelector('.queue-input')
+const warningTopQueue = document.querySelector('#queue-container .warning-top')
+const warningBottomQueue = document.querySelector(
+  '#queue-container .warning-bottom'
+)
+const addQueue = document.querySelector('.btn-add-queue')
+const dequeue = document.querySelector('.btn-take-dequeue')
+const queueTemplate = document.querySelector('#queue-list .template')
 
-const queue = new QueueDataStructure();
+const queue = new QueueDataStructure()
 
 const clearQueueInput = () => {
   // ... your code goes here
-};
+}
 
 const generateListQueue = () => {
-  // ... your code goes here
-};
+  for (let i = 0; i < queue.MAX_SIZE; i++) {
+    const queueNode = queueTemplate.cloneNode()
+    queueNode.classList = 'queue-element inactive'
+    queueUL.append(queueNode)
+  }
+}
 
-generateListQueue();
+generateListQueue()
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
@@ -23,15 +30,15 @@ const generateWarningQueue = type => {
   } else if (type === 'overflow') {
     // ... your code goes here
   }
-};
+}
 
 const addToQueue = () => {
   // ... your code goes here
-};
+}
 
 const removeFromQueue = () => {
   // ... your code goes here
-};
+}
 
-addQueue.addEventListener('click', addToQueue);
-dequeue.addEventListener('click', removeFromQueue);
+addQueue.addEventListener('click', addToQueue)
+dequeue.addEventListener('click', removeFromQueue)
