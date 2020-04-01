@@ -22,27 +22,42 @@ renderListStack()
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    console.log('underflow')
   } else if (type === 'overflow') {
-    console.log("overflow")
+    console.log('overflow')
   }
 }
 
 const addToStack = () => {
-  const stackElements = document.querySelectorAll('.inactive')
+  const inactiveStackElements = document.querySelectorAll('.inactive')
   const isOverflow = newStack.canPush()
+
   if (!isOverflow) {
     generateWarningStack('overflow')
   } else {
-    stackElements[0].innerHTML = "test"
-    stackElements[0].classList.remove("inactive")
-    stackElements[0].classList.add("active")
-    newStack.push("test")
+    inactiveStackElements[0].innerHTML = 'test'
+    inactiveStackElements[0].classList.remove('inactive')
+    inactiveStackElements[0].classList.add('active')
+    newStack.push('test')
   }
 }
 
 const removeFromStack = () => {
-  // ... your code goes here
+  const activeStackElements = document.querySelectorAll('.active')
+  const isUnderflow = newStack.isEmpty()
+
+  if (isUnderflow) {
+    generateWarningStack('underflow')
+  } else {
+    activeStackElements[activeStackElements.length - 1].innerHTML = ''
+    activeStackElements[activeStackElements.length - 1].classList.remove(
+      'active'
+    )
+    activeStackElements[activeStackElements.length - 1].classList.add(
+      'inactive'
+    )
+    newStack.pop()
+  }
 }
 
 addStackBtn.addEventListener('click', addToStack)
