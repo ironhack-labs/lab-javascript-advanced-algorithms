@@ -30,9 +30,9 @@ const generateWarningStack = type => {
 
 const addToStack = () => {
   const inactiveStackElements = document.querySelectorAll('.inactive')
-  const isOverflow = newStack.canPush()
+  const canPush = newStack.canPush()
 
-  if (!isOverflow) {
+  if (!canPush) {
     generateWarningStack('overflow')
   } else {
     inactiveStackElements[0].innerHTML = 'test'
