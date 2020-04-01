@@ -53,7 +53,7 @@ const addToStack = () => {
 }
 
 const removeFromStack = () => {
-  const activeStackElements = document.querySelectorAll('.active')
+  const activeStackElements = document.querySelectorAll('.stack-element.active')
   const isUnderflow = newStack.isEmpty()
 
   if (isUnderflow) {

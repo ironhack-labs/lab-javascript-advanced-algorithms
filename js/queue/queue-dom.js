@@ -26,9 +26,9 @@ generateListQueue()
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    console.log("underflow")
   } else if (type === 'overflow') {
-    // ... your code goes here
+    console.log("overflow")
   }
 }
 
@@ -54,7 +54,24 @@ const addToQueue = () => {
 }
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  const activeQueueElements = document.querySelectorAll('.queue-element.active')
+  const isUnderflow = queue.isEmpty()
+
+  if (isUnderflow) {
+    generateWarningQueue('underflow')
+  } else {
+    if (warningTopQueue.style.display == 'block') {
+      warningTopQueue.style.display = 'none'
+    }
+    activeQueueElements[activeQueueElements.length - 1].innerHTML = ''
+    activeQueueElements[activeQueueElements.length - 1].classList.remove(
+      'active'
+    )
+    activeQueueElements[activeQueueElements.length - 1].classList.add(
+      'inactive'
+    )
+    queue.dequeue()
+  }
 }
 
 addQueue.addEventListener('click', addToQueue)
