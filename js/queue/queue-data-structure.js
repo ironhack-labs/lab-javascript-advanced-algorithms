@@ -13,7 +13,7 @@ class QueueDataStructure {
   }
 
   isEmpty() {
-    // ... your code goes here
+    return this.queueControl.length == 0 ? true : false
   }
 
   enqueue(item) {
