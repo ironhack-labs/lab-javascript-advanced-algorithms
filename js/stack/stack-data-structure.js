@@ -13,14 +13,23 @@ class StackDataStructure {
   }
 
   isEmpty() {
-    // ... your code goes here
+    return this.stackControl.length <= 0 ? true : false
   }
 
   push(item) {
-    // ... your code goes here
+    if (this.canPush()) {
+      this.stackControl.push(item)
+      return this.stackControl
+    } else {
+      return 'Stack Overflow'
+    }
   }
 
   pop() {
-    // ... your code goes here
+    if (this.isEmpty()) {
+      return 'Stack Underflow'
+    } else {
+      return this.stackControl.pop()
+    }
   }
 }
