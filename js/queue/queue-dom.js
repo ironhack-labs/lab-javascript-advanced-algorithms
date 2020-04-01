@@ -63,11 +63,11 @@ const removeFromQueue = () => {
     if (warningTopQueue.style.display == 'block') {
       warningTopQueue.style.display = 'none'
     }
-    activeQueueElements[activeQueueElements.length - 1].innerHTML = ''
-    activeQueueElements[activeQueueElements.length - 1].classList.remove(
+    activeQueueElements[0].innerHTML = ''
+    activeQueueElements[0].classList.remove(
       'active'
     )
-    activeQueueElements[activeQueueElements.length - 1].classList.add(
+    activeQueueElements[0].classList.add(
       'inactive'
     )
     queue.dequeue()
