@@ -11,7 +11,7 @@ const takeStackBtn = document.getElementById('take-stack')
 const newStack = new StackDataStructure()
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ""
 }
 
 const renderListStack = () => {
@@ -25,6 +25,7 @@ const generateWarningStack = type => {
     warningBottomStack.style.display = 'block'
   } else if (type === 'overflow') {
     warningTopStack.style.display = 'block'
+    clearStackInput()
   }
 }
 
@@ -38,7 +39,8 @@ const addToStack = () => {
     if (warningBottomStack.style.display == 'block') {
       warningBottomStack.style.display = 'none'
     }
-    inactiveStackElements[0].innerHTML = 'test'
+    inactiveStackElements[0].innerHTML = stackInput.value
+    clearStackInput()
     inactiveStackElements[0].classList.remove('inactive')
     inactiveStackElements[0].classList.add('active')
     newStack.push('test')
