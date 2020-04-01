@@ -45,17 +45,20 @@ const addToQueue = () => {
 
     let queueInputValue = queueInput.value
     let queueDOMArray = queueUL.querySelectorAll("li")
-
-    queueDOMArray[queue.queueControl.length].innerHTML = queueInputValue
-    queueDOMArray[queue.queueControl.length].classList.toggle("inactive")
-    queueDOMArray[queue.queueControl.length].classList.toggle("active")
-
+    
     queue.enqueue(queueInputValue)
+
+    // That one was tricky
+    for (let i = 0; i < queue.queueControl.length; i++) {
+      
+      queueDOMArray[i].innerHTML = queue.queueControl[i]
+      queueDOMArray[i].classList.remove("inactive")
+      queueDOMArray[i].classList.add("active")
+    }
 
     // He sustituido la llamada a la función clearQueueInput (line 11) por la siguiente línea:
 
     queueInput.value = ""
-
     
   } else {
     generateWarningQueue("overflow")
@@ -68,12 +71,13 @@ const removeFromQueue = () => {
 
     warningTopQueue.style.display = "none"
     
-    let queueDOMArray = queueUL.querySelectorAll("li")
-    queueDOMArray[queue.queueControl.length - 1].innerHTML = ""
-    queueDOMArray[queue.queueControl.length - 1].classList.toggle("inactive")
-    queueDOMArray[queue.queueControl.length - 1].classList.toggle("active")
-
     queue.dequeue()
+    
+    // This one was also tricky
+    let queueDOMArray = queueUL.querySelectorAll("li")
+    queueDOMArray[queue.queueControl.length].innerHTML = ""
+    queueDOMArray[queue.queueControl.length].classList.add("inactive")
+    queueDOMArray[queue.queueControl.length].classList.remove("active")
 
   } else {
     generateWarningQueue("underflow")
