@@ -1,26 +1,49 @@
 class StackDataStructure {
-  constructor() {
-    this.stackControl = [];
-    this.MAX_SIZE = 10;
-  }
+    constructor() {
+        this.stackControl = [];
+        this.MAX_SIZE = 10;
+    }
 
-  canPush() {
-    // ... your code goes here
-  }
+    canPush() {
+        //TODO: poner limite en cuanto a los push que podamos realizar
 
-  display() {
-    // ... your code goes here
-  }
+        return this.stackControl.length < this.MAX_SIZE ? true : false
 
-  isEmpty() {
-    // ... your code goes here
-  }
+    }
 
-  push(item) {
-    // ... your code goes here
-  }
+    display() {
+        // ... your code goes here
+        return this.stackControl
 
-  pop() {
-    // ... your code goes here
-  }
+    }
+
+    isEmpty() {
+        // ... your code goes here
+        return this.stackControl.length === 0
+
+    }
+
+    push(item) {
+        // ... your code goes here
+        if (this.canPush()) {
+
+            this.stackControl.push(item)
+
+            return this.stackControl
+
+        } else {
+
+            return 'Stack Overflow'
+
+        }
+
+    }
+
+    pop() {
+        // ... your code goes here
+
+        return this.isEmpty() ? 'Stack Underflow' : this.stackControl.pop()
+
+
+    }
 }
