@@ -35,7 +35,7 @@ const generateWarningStack = type => {
 }
 
 const addToStack = () => {
-  const inactiveStackElements = document.querySelectorAll('.inactive')
+  const inactiveStackElements = document.querySelectorAll('.stack-element.inactive')
   const canPush = newStack.canPush()
 
   if (!canPush) {
@@ -45,10 +45,10 @@ const addToStack = () => {
       warningBottomStack.style.display = 'none'
     }
     inactiveStackElements[0].innerHTML = stackInput.value
-    clearStackInput()
     inactiveStackElements[0].classList.remove('inactive')
     inactiveStackElements[0].classList.add('active')
-    newStack.push('test')
+    newStack.push(stackInput.value)
+    clearStackInput()
   }
 }
 

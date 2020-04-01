@@ -33,7 +33,24 @@ const generateWarningQueue = type => {
 }
 
 const addToQueue = () => {
-  // ... your code goes here
+  const inactiveQueueElements = document.querySelectorAll(
+    '.queue-element.inactive'
+  )
+  const canEnqueue = queue.canEnqueue()
+
+  if (!canEnqueue) {
+    generateWarningQueue('overflow')
+  } else {
+    if (warningBottomQueue.style.display == 'block') {
+      warningBottomQueue.style.display = 'none'
+    }
+    inactiveQueueElements[0].innerHTML = queueInput.value
+
+    inactiveQueueElements[0].classList.remove('inactive')
+    inactiveQueueElements[0].classList.add('active')
+    queue.enqueue(queueInput.value)
+    clearQueueInput()
+  }
 }
 
 const removeFromQueue = () => {
