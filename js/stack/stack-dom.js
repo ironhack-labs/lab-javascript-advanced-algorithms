@@ -7,15 +7,23 @@ const warningBottomStack = document.querySelector(
 )
 const addStackBtn = document.getElementById('add-stack')
 const takeStackBtn = document.getElementById('take-stack')
+const stackTemplate = document.querySelector('#stack-list > .template')
 
 const newStack = new StackDataStructure()
 
 const clearStackInput = () => {
-  stackInput.value = ""
+  stackInput.value = ''
 }
 
 const renderListStack = () => {
-  // ... your code goes here
+  const stackNode = stackTemplate.cloneNode()
+  stackNode.classList = 'stack-element inactive'
+  for (let i = 0; i < newStack.MAX_SIZE; i++) {
+    const stackNode = stackTemplate.cloneNode()
+    stackNode.classList = 'stack-element inactive'
+    console.log(i)
+    stackList.append(stackNode)
+  }
 }
 
 renderListStack()
