@@ -8,30 +8,74 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new StackDataStructure();
 
-const clearStackInput = () => {
-  // ... your code goes here
-};
+// Unnecessary
+// const clearStackInput = () => {
+//   // ... your code goes here
+// };
 
 const renderListStack = () => {
-  // ... your code goes here
+  let liElement
+  for (let i = 0; i < newStack.MAX_SIZE; i++) {
+    
+    liElement = document.createElement("li")
+    liElement.className = "inactive"
+    stackList.appendChild(liElement)
+  }
 };
 
 renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    
+    warningBottomStack.innerHTML = type
+    warningBottomStack.style.display = "block"
+    
   } else if (type === 'overflow') {
-    // ... your code goes here
+    
+    warningTopStack.innerHTML = type
+    warningTopStack.style.display = "block"
   }
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  
+  if (newStack.canPush()) {
+
+    warningBottomStack.style.display = "none"
+
+    let stackInputValue = stackInput.value
+    let stackDOMArray = stackList.querySelectorAll("li")
+
+    stackDOMArray[newStack.stackControl.length].innerHTML = stackInputValue
+    stackDOMArray[newStack.stackControl.length].classList.toggle("inactive")
+    stackDOMArray[newStack.stackControl.length].classList.toggle("active")
+
+    newStack.push(stackInputValue)
+    // He sustituido la llamada a la función "clearStackInput (line 12) por la siguiente línea:"
+    stackInput.value = ""
+
+  } else {
+    generateWarningStack("overflow")
+  }
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+
+  if (!newStack.isEmpty()) {
+
+    warningTopStack.style.display = "none"
+
+    let stackDOMArray = stackList.querySelectorAll("li")
+    stackDOMArray[newStack.stackControl.length - 1].innerHTML = ""
+    stackDOMArray[newStack.stackControl.length - 1].classList.toggle("active")
+    stackDOMArray[newStack.stackControl.length - 1].classList.toggle("inactive")
+
+    newStack.pop()
+    
+  } else {
+    generateWarningStack("underflow")
+  }
 };
 
 addStackBtn.addEventListener('click', addToStack);

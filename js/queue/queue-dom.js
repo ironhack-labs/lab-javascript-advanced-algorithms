@@ -7,30 +7,77 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 
 const queue = new QueueDataStructure();
 
-const clearQueueInput = () => {
-  // ... your code goes here
-};
+//Unnecessary
+// const clearQueueInput = () => {
+//   // ... your code goes here
+// };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  let liElement
+  for (let i = 0; i < queue.MAX_SIZE; i++) {
+    liElement = document.createElement("li")
+    liElement.className = "inactive"
+    queueUL.appendChild(liElement)
+    
+  }
 };
 
 generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    
+    warningBottomQueue.innerHTML = type
+    warningBottomQueue.style.display = "block"
+    
   } else if (type === 'overflow') {
-    // ... your code goes here
+    
+    warningTopQueue.innerHTML = type
+    warningTopQueue.style.display = "block"
   }
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+  
+  if (queue.canEnqueue()) {
+
+    warningBottomQueue.style.display = "none"
+
+    let queueInputValue = queueInput.value
+    let queueDOMArray = queueUL.querySelectorAll("li")
+
+    queueDOMArray[queue.queueControl.length].innerHTML = queueInputValue
+    queueDOMArray[queue.queueControl.length].classList.toggle("inactive")
+    queueDOMArray[queue.queueControl.length].classList.toggle("active")
+
+    queue.enqueue(queueInputValue)
+
+    // He sustituido la llamada a la función clearQueueInput (line 11) por la siguiente línea:
+
+    queueInput.value = ""
+
+    
+  } else {
+    generateWarningQueue("overflow")
+  }
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  
+  if (!queue.isEmpty()) {
+
+    warningTopQueue.style.display = "none"
+    
+    let queueDOMArray = queueUL.querySelectorAll("li")
+    queueDOMArray[queue.queueControl.length - 1].innerHTML = ""
+    queueDOMArray[queue.queueControl.length - 1].classList.toggle("inactive")
+    queueDOMArray[queue.queueControl.length - 1].classList.toggle("active")
+
+    queue.dequeue()
+
+  } else {
+    generateWarningQueue("underflow")
+  }
 };
 
 addQueue.addEventListener('click', addToQueue);
