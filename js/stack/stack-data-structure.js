@@ -14,7 +14,7 @@ class StackDataStructure {
   }
 
   display() {
-
+    return this.stackControl
   }
 
   isEmpty() {
@@ -28,7 +28,7 @@ class StackDataStructure {
   push(item) {
     if (this.canPush()) {
       this.stackControl.push(item)
-      return [item]
+      return this.stackControl
     } else {
       return 'Stack Overflow'
     }

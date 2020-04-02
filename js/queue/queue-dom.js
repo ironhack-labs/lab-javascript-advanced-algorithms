@@ -12,7 +12,17 @@ const clearQueueInput = () => {
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  let maxElements = newStack.MAX_SIZE;
+  let renderListStack = ""
+  let wrapper = ("#queue-list")
+  console.log($(wrapper))
+  for (let i = 1; i <= maxElements; i++) {
+    renderListStack += $(wrapper).append('<li class="inactive"></li>');
+  }
+
+  let list = document.querySelectorAll("#queue-list li")
+  array = [...list]
+
 };
 
 generateListQueue();
