@@ -9,29 +9,54 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ""
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  for (i = 0; i < newStack.MAX_SIZE; i++) {
+    let listElement = document.createElement('li')
+    stackList.appendChild(listElement)
+    listElement.classList.toggle('inactive')
+  }
 };
 
 renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.style.display = "block"
+    warningBottomStack.innerHTML = "Stack Underflow"
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.style.display = "block"
+    warningTopStack.innerHTML = "Stack Overflow"
   }
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  if (newStack.canPush()) {
+    let allLi = document.querySelectorAll('li')
+    let index = newStack.stackControl.length
+    allLi[index].classList.toggle('inactive')
+    allLi[index].classList.toggle('active')
+    allLi[index].innerHTML = stackInput.value
+    newStack.push(stackInput.value)
+    clearStackInput()
+  } else {
+    generateWarningStack("overflow")
+  }
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  if (newStack.isEmpty()) {
+    generateWarningStack("underflow")
+  } else {
+    let allLi = document.querySelectorAll('li')
+    let index = newStack.stackControl.length - 1
+    allLi[index].classList.toggle('active')
+    allLi[index].classList.toggle('inactive')
+    allLi[index].innerHTML = ""
+    newStack.pop()
+  }
 };
 
 addStackBtn.addEventListener('click', addToStack);
