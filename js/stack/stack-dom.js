@@ -54,7 +54,6 @@ const addToStack = () => {
     generateWarningStack('overflow')
   }
   warningBottomStack.style.display = 'none';
-  //warningTopStack.style.display = 'none';
 };
 
 const removeFromStack = () => {
@@ -69,7 +68,6 @@ const removeFromStack = () => {
     generateWarningStack('underflow')
   }
   warningTopStack.style.display = 'none';
-  //warningBottomStack.style.display = 'none';
 }
 
 addStackBtn.addEventListener('click', addToStack);
