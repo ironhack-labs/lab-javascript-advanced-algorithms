@@ -1,7 +1,7 @@
 class StackDataStructure {
   constructor() {
     this.stackControl = [];
-    this.MAX_SIZE = 10;
+    this.MAX_SIZE = 2;
   }
 
   canPush() {
@@ -9,11 +9,9 @@ class StackDataStructure {
   }
 
   display() {
-    // ... your code goes here
   }
 
   isEmpty() {
-    // ... your code goes here
     return this.stackControl.length === 0 ? true : false
     
   }
