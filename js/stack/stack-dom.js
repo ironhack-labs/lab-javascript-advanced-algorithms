@@ -1,3 +1,4 @@
+//Node elements 
 const stackList = document.getElementById('stack-list');
 const stackInput = document.getElementById('stack-input');
 const container = document.getElementById('container');
@@ -5,33 +6,57 @@ const warningTopStack = document.querySelector('#stack-container .warning-top');
 const warningBottomStack = document.querySelector('#stack-container .warning-bottom');
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
-
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ""
 };
 
+let counterLi = 0;
 const renderListStack = () => {
-  // ... your code goes here
+  const li = document.createElement("li")
+  li.setAttribute("class", "inactive")
+  stackList.appendChild(li);
+  counterLi++
+  if (counterLi < 10) renderListStack()
 };
 
 renderListStack();
+const stackLis = document.querySelectorAll(".list-stack li");
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.innerHTML = "Stack Underflow"
+    warningBottomStack.style.display = "block"
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.innerHTML = "Stack Overflow"
+    warningTopStack.style.display = "block"
   }
 };
 
+const changeState = (text, length) => {
+  stackLis[length].innerHTML = text
+  stackLis[length].classList.toggle("active");
+  stackLis[length].classList.toggle("inactive");
+}
+
 const addToStack = () => {
-  // ... your code goes here
+  if (newStack.push(stackInput.value) === "Stack Overflow") {
+    generateWarningStack("overflow")
+  } else {
+    if (warningBottomStack.style.display === "block") warningBottomStack.style.display = "none"
+    changeState(stackInput.value, newStack.stackControl.length - 1)
+  }
+  clearStackInput()
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  if (newStack.pop() === "Stack Underflow") {
+    generateWarningStack("underflow")
+  } else {
+    if (warningTopStack.style.display === "block") warningTopStack.style.display = "none"
+    changeState("", newStack.stackControl.length)
+  }
 };
 
 addStackBtn.addEventListener('click', addToStack);
