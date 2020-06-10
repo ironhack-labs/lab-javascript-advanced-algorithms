@@ -1,26 +1,59 @@
 class StackDataStructure {
   constructor() {
-    this.stackControl = [];
-    this.MAX_SIZE = 10;
+    this.stackControl = []; //Array que almacena con push y elimina con POP
+    this.MAX_SIZE = 10; // El número de elementos que puede haber
   }
 
   canPush() {
-    // ... your code goes here
+
+    if (this.stackControl.length < this.MAX_SIZE) {
+      return true
+    } else {
+      return false
+    }
+
   }
 
   display() {
-    // ... your code goes here
+
+    return this.stackControl
   }
 
   isEmpty() {
-    // ... your code goes here
+
+    if (this.stackControl.length === 0) {
+      return true
+    } else {
+      return false
+    }
   }
 
   push(item) {
-    // ... your code goes here
+
+    let xxxx = document.querySelectorAll('li')
+
+    xxxx.forEach(elm => {
+      elm.style.background = 'blue'
+      elm.innerText = 'Este texto no es el incial :3'
+    })
+
+
+    if (this.canPush()) {
+      this.stackControl.push(item) //<=//Debe de incrementar un elemento
+    } else {
+      return 'Stack Overflow'
+    }
+    return this.display()
   }
 
   pop() {
-    // ... your code goes here
+
+    if (this.isEmpty()) {
+      return 'Stack Underflow'
+    } else {
+      return this.stackControl.pop() // Debe eliminar un elemento
+    }
+
+    return this.display()
   }
 }
