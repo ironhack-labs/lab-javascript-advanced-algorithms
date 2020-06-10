@@ -9,11 +9,13 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+
+stackInput.value = ''
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+
+
 };
 
 renderListStack();
@@ -27,10 +29,24 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
-};
+
+  let list = document.createElement('li')
+
+  stackList.appendChild(list)
+
+  list.className = 'active'
+}
+
 
 const removeFromStack = () => {
+
+
+  let list = document.querySelector('li')
+
+  stackList.remove(list)
+
+  list.className = 'inactive'
+
   // ... your code goes here
 };
 
