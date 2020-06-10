@@ -10,6 +10,7 @@ const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
   // ... your code goes here
+  stackInput.value = ''
 };
 
 const renderListStack = () => {
@@ -19,19 +20,25 @@ const renderListStack = () => {
 renderListStack();
 
 const generateWarningStack = type => {
-  if (type === 'underflow') {
-    // ... your code goes here
-  } else if (type === 'overflow') {
-    // ... your code goes here
-  }
+  // ... your code goes here
+
 };
 
 const addToStack = () => {
-  // ... your code goes here
+
+  let li = document.querySelectorAll('li')
+
+
+
 };
+
+
 
 const removeFromStack = () => {
   // ... your code goes here
+
+  let li = document.querySelectorAll('li')
+
 };
 
 addStackBtn.addEventListener('click', addToStack);

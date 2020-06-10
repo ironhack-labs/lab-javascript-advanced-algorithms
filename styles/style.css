@@ -6,7 +6,7 @@ ul.list-stack {
   margin-bottom: 0px;
 }
 
-ul.list-stack > li {
+ul.list-stack>li {
   list-style: none;
   margin: 4px 0px 4px 0px;
   padding: 5px;
@@ -33,7 +33,7 @@ ul.list-queue {
   padding-left: 0;
 }
 
-ul.list-queue > li {
+ul.list-queue>li {
   list-style: none;
   margin: 0px 4px 0px 4px;
   padding: 5px;
