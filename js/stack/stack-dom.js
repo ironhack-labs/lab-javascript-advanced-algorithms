@@ -9,6 +9,7 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
+  stackInput.value = ''
   // ... your code goes here
 };
 
@@ -28,6 +29,7 @@ const generateWarningStack = type => {
 
 const addToStack = () => {
   // ... your code goes here
+  
 };
 
 const removeFromStack = () => {
