@@ -34,12 +34,13 @@ class StackDataStructure {
     return this.stackControl
   }
 
-  pop(item) {
+  pop() {
     //pila.pop(elemento) borra elemento final de la pila
-    if (this.stackControl.length === 0) {
+    if (this.isEmpty()) {
       return "Stack Underflow"
     } else {
-      let popedItem = this.stackControl.pop(item)
+      let popedItem = this.stackControl[this.stackControl.length - 1]
+      this.stackControl.pop()
       return popedItem
     }
   }

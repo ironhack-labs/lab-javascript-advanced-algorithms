@@ -12,9 +12,13 @@ const clearStackInput = () => {
   stackInput.value = " "
 };
 
-const renderListStack = () => {
-  // ... your code goes here
-  stackList
+const renderListStack = () => { //esta parte tuvimos que mirarla de alguien porque no teniamos ni idea
+  stackList.innerHTML = '';
+  newStack.stackControl.forEach(item => {
+    const newStackItem = document.createElement('li');
+    newStackItem.innerHTML = item;
+    stackList.appendChild(newStackItem);
+  })
 };
 
 renderListStack();
