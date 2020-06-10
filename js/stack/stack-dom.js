@@ -14,6 +14,22 @@ const clearStackInput = () => {
 
 const renderListStack = () => {
   // ... your code goes here
+  warningTopStack.style.display = 'none';
+  warningBottomStack.style.display = 'none';
+  stackList.innerHTML = '';
+  let length = newStack.display().length;
+  let size = stackSize - length;
+  newStack.display().forEach(item => {
+    let li = document.createElement('li');
+    li.className = 'active';
+    li.innerText = item;
+    stackList.appendChild(li);
+  });
+  for (let i = 0; i < size; i++) {
+    let li = document.createElement('li');
+    li.className = 'inactive';
+    li.innerHTML = '&nbsp;';
+    stackList.appendChild(li);
 };
 
 renderListStack();
@@ -28,6 +44,15 @@ const generateWarningStack = type => {
 
 const addToStack = () => {
   // ... your code goes here
+
+    let newStackColumn = document.createElement('li')
+    console.log(newStackColumn)
+    newStackColumn.setAttribute('class', 'active')
+    stackList.appendChild(newStackColumn)
+    newStack.push()
+
+  
+
 };
 
 const removeFromStack = () => {
