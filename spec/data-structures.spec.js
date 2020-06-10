@@ -33,7 +33,7 @@ describe('Stack', () => {
     });
   });
 
-  describe('Stack methods default values', () => {
+  describe('Stack methods default values', () => { 
     it('Should has an empty stack', () => {
       expect(stack.isEmpty()).toBe(true);
     });

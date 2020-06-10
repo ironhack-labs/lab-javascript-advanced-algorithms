@@ -9,7 +9,7 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  queueInput.value = ''
 };
 
 const renderListStack = () => {
