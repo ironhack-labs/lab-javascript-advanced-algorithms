@@ -6,31 +6,60 @@ const addQueue = document.querySelector('.btn-add-queue');
 const dequeue = document.querySelector('.btn-take-dequeue');
 
 const queue = new QueueDataStructure();
-
+let qcount = 0
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = ""
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  for (let i = 0; i < queue.MAX_SIZE; i++) {
+    let liElm = document.createElement('li')
+    liElm.classList.add("inactive")
+    queueUL.appendChild(liElm)
+  }
 };
 
 generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomQueue.style.display = "flex"
+    warningBottomQueue.innerHTML = "Stack Underflow"
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopQueue.style.display = "flex"
+    warningTopQueue.innerHTML = "Stack Overflow"
+
   }
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+  warningTopQueue.style.display = "none"
+  if (queue.enqueue() === "Queue Overflow") {
+    generateWarningQueue("overflow")
+  } else {
+    if (document.querySelectorAll("#queue-list .active")[qcount]) {
+
+      document.querySelectorAll("#queue-list .inactive")[qcount + 1].classList.add("active")
+      document.querySelectorAll("#queue-list .inactive")[qcount + 1].innerHTML = queueInput.value
+    }
+
+
+
+    clearQueueInput()
+    qcount++
+  }
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  warningBottomQueue.style.display = "none"
+  if (queue.dequeue() === "Stack Underflow") {
+    generateWarningStack("underflow")
+  } else {
+    document.querySelectorAll("#queue-list .inactive", ".active")[qcount - 1].classList.remove("active")
+    document.querySelectorAll("#queue-list .inactive", ".active")[qcount - 1].innerHTML = ""
+    clearQueueInput()
+    qcount--
+  }
 };
 
 addQueue.addEventListener('click', addToQueue);
