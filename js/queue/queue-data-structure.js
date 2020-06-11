@@ -20,6 +20,12 @@ class QueueDataStructure {
   }
   enqueue(item) {
     // ... your code goes here
+    if (this.canEnqueue()) {
+      this.queueControl.unshift(item)
+      return this.queueControl
+    } else {
+      return "Queue Overflow"
+    }
   }
 
   dequeue() {
