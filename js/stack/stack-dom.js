@@ -10,10 +10,12 @@ const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
   // ... your code goes here
+  stackInput = " "
 };
 
 const renderListStack = () => {
   // ... your code goes here
+  renderListStack()
 };
 
 renderListStack();
@@ -21,13 +23,16 @@ renderListStack();
 const generateWarningStack = type => {
   if (type === 'underflow') {
     // ... your code goes here
+    alert('underflow')
   } else if (type === 'overflow') {
     // ... your code goes here
+    alert('overflow')
   }
 };
 
 const addToStack = () => {
   // ... your code goes here
+  
 };
 
 const removeFromStack = () => {
