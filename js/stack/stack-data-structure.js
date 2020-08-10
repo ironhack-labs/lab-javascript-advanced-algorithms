@@ -1,26 +1,29 @@
 class StackDataStructure {
-  constructor() {
-    this.stackControl = [];
-    this.MAX_SIZE = 10;
-  }
+    constructor() {
+        this.stackControl = [];
+        this.MAX_SIZE = 10;
+    }
 
-  canPush() {
-    // ... your code goes here
-  }
+    canPush() {
+        return this.stackControl.length < this.MAX_SIZE ? true : false
+    }
 
-  display() {
-    // ... your code goes here
-  }
+    display() {
+        return this.stackControl;
+    }
 
-  isEmpty() {
-    // ... your code goes here
-  }
+    isEmpty() {
+        return this.stackControl.length === 0 ? true : false
+    }
 
-  push(item) {
-    // ... your code goes here
-  }
+    push(item) {
+        let initialState = this.canPush()
+        if (this.canPush()) this.stackControl.push(item)
+        return initialState ? this.stackControl : 'Stack Overflow'
 
-  pop() {
-    // ... your code goes here
-  }
+    }
+
+    pop() {
+        return this.isEmpty() ? "Stack Underflow" : this.stackControl.pop();
+    }
 }
