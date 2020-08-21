@@ -5,22 +5,43 @@ class StackDataStructure {
   }
 
   canPush() {
-    // ... your code goes here
+    return this.stackControl.length < this.MAX_SIZE ? true : false;
   }
 
   display() {
-    // ... your code goes here
+    let stringReturn = "";
+    let pattern = "<li>-replace-</li>"
+
+    this.stackControl.forEach(elem => {
+      stringReturn += pattern.replace("-replace-", elem)
+    })
+
+    return stringReturn;
+
   }
 
   isEmpty() {
-    // ... your code goes here
+    return this.stackControl.length == 0 ? true : false;
   }
 
   push(item) {
-    // ... your code goes here
+    if(this.canPush())
+    {
+      this.stackControl.push(item)
+      return this.stackControl;
+    }
+    else
+      return "Stack Overflow"
   }
 
   pop() {
-    // ... your code goes here
+    if(!this.isEmpty())    
+    {
+      let item = this.stackControl[this.stackControl.length-1]
+      this.stackControl.pop()
+      return item
+    }
+    else
+      return "Stack Underflow"    
   }
 }

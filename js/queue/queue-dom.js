@@ -8,30 +8,58 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new QueueDataStructure();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = "";  
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  while (queueUL.firstChild) {
+    queueUL.removeChild(queueUL.firstChild);
+  }
+  
+  if(!queue.isEmpty()){
+    queueUL.innerHTML = queue.display();
+    generateWarningQueue("")
+    
+    if (!queue.canEnqueue()) 
+    generateWarningQueue("overflow")
+  }
+  else  
+  generateWarningQueue("underflow")
 };
 
-generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    dequeue.disabled = true;
+    dequeue.innerHTML = "Cant Remove More"
+    
   } else if (type === 'overflow') {
-    // ... your code goes here
+    
+    addQueue.disabled = true;
+    addQueue.innerHTML = "Cant Add More"
+  }
+  else{
+    addQueue.disabled = false;
+    addQueue.innerHTML = "Add to queue"
+    dequeue.disabled = false;
+    dequeue.innerHTML = "Remove from queue"
   }
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+  if(queueInput.value.trim() != "")
+  {
+    queue.enqueue(queueInput.value)
+    clearQueueInput()
+    generateListQueue();
+  }
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  queue.dequeue()
+  generateListQueue();
 };
 
+generateListQueue();
 addQueue.addEventListener('click', addToQueue);
 dequeue.addEventListener('click', removeFromQueue);

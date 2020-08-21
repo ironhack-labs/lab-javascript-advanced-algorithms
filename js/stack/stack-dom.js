@@ -9,30 +9,57 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = "";  
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  while (stackList.firstChild) {
+    stackList.removeChild(stackList.firstChild);
+  }
+
+  if(!newStack.isEmpty()){
+    stackList.innerHTML = newStack.display();
+    generateWarningStack("")
+    
+    if (!newStack.canPush()) 
+      generateWarningStack("overflow")
+  }
+  else  
+    generateWarningStack("underflow")  
 };
 
-renderListStack();
-
 const generateWarningStack = type => {
-  if (type === 'underflow') {
-    // ... your code goes here
+    if (type === 'underflow') {
+    takeStackBtn.disabled = true;
+    takeStackBtn.innerHTML = "Cant Remove More"
+    
   } else if (type === 'overflow') {
-    // ... your code goes here
+    
+    addStackBtn.disabled = true;
+    addStackBtn.innerHTML = "Cant Add More"
+  }
+  else{
+    addStackBtn.disabled = false;
+    addStackBtn.innerHTML = "Add to stack"
+    takeStackBtn.disabled = false;
+    takeStackBtn.innerHTML = "Remove from stack"
   }
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  if(stackInput.value.trim() != "")
+  {
+    newStack.push(stackInput.value)
+    clearStackInput()
+    renderListStack();
+  }
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  newStack.pop()
+  renderListStack();
 };
 
+renderListStack();
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);
