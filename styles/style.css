@@ -17,10 +17,14 @@ ul.list-stack > li {
 }
 
 li.inactive {
+  transition-property: background-color;
+  transition-duration: .3s;
   background-color: rgb(224, 224, 224);
 }
 
 li.active {
+  transition-property: background-color;
+  transition-duration: .3s;
   background-color: rgb(50, 130, 221);
   color: white;
 }

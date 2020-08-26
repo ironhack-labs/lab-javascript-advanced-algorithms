@@ -31,9 +31,15 @@ renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+
+    warningBottomStack.style.display = 'block'
+    warningBottomStack.textContent = 'underflow'
+
   } else if (type === 'overflow') {
-    // ... your code goes here
+
+    warningTopStack.style.display = 'block'
+    warningTopStack.textContent = 'overflow'
+
   }
 };
 
@@ -66,8 +72,7 @@ const addToStack = () => {
   } else {
 
     // If stack is full we display the top warning
-    warningTopStack.style.display = 'block'
-    warningTopStack.textContent = 'overflow'
+    generateWarningStack('overflow')
 
   }
 
@@ -96,8 +101,7 @@ const removeFromStack = () => {
 
   } else {  // If we cannot, means that the stack is empty so we display the bottom warning
 
-    warningBottomStack.style.display = 'block'
-    warningBottomStack.textContent = 'underflow'
+    generateWarningStack('underflow')
 
   }
 };

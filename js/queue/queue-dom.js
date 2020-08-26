@@ -30,9 +30,15 @@ generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+
+    warningBottomQueue.style.display = 'block'
+    warningBottomQueue.textContent = 'underflow'
+
   } else if (type === 'overflow') {
-    // ... your code goes here
+
+    warningTopQueue.style.display = 'block'
+    warningTopQueue.textContent = 'overflow'
+
   }
 };
 
@@ -87,8 +93,7 @@ const addToQueue = () => {
   } else {
 
     // If stack is full we display the top warning
-    warningTopQueue.style.display = 'block'
-    warningTopQueue.textContent = 'overflow'
+    generateWarningQueue('overflow')
 
   }
 
@@ -117,8 +122,7 @@ const removeFromQueue = () => {
 
   } else {  // If we cannot, means that the stack is empty so we display the bottom warning
 
-    warningBottomQueue.style.display = 'block'
-    warningBottomQueue.textContent = 'underflow'
+    generateWarningQueue('underflow')
 
   }
 
