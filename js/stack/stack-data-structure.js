@@ -5,22 +5,46 @@ class StackDataStructure {
   }
 
   canPush() {
-    // ... your code goes here
+    // Check the length of the stack to not do an overflow
+    if (this.stackControl.length < this.MAX_SIZE) {
+      return true
+    } else if (this.stackControl.length >= this.MAX_SIZE) {
+      return false
+    }
+   
   }
 
   display() {
-    // ... your code goes here
+    return this.stackControl.length
   }
 
   isEmpty() {
-    // ... your code goes here
+    // Check the length of the stack to not do an underflow
+    if (this.stackControl.length === 0) {
+      return true
+    } else {
+      return false
+    }
   }
 
   push(item) {
-    // ... your code goes here
+    // Add a new item only when is possible
+    this.stackControl.push(item)
+    if (this.canPush() == false) {
+      // The return is changed to compare in the DOM
+      return "overflow"
+    }
+    return this.stackControl
   }
 
   pop() {
-    // ... your code goes here
+    // Remove a new item only when is possible
+    if (this.isEmpty()) {
+      // The return is changed to compare in the DOM
+      return "underflow"
+    }
+    let lastElement = this.stackControl.pop()
+    return lastElement
+    
   }
 }

@@ -5,22 +5,48 @@ class QueueDataStructure {
   }
 
   display() {
-    // ... your code goes here
+    return this.queueControl.length
+
   }
 
   canEnqueue() {
-    // ... your code goes here
+    // Check the length of the stack to not do an overflow
+    if (this.display() < this.MAX_SIZE) {
+      return true
+    } else if (this.display() >= this.MAX_SIZE) {
+      return false
+    }
   }
 
   isEmpty() {
-    // ... your code goes here
+    // Check the length of the stack to not do an underflow
+    if (this.display() === 0) {
+      return true
+    } else {
+      return false
+    }
   }
 
   enqueue(item) {
-    // ... your code goes here
+    // Add a new item only when is possible
+    
+    this.queueControl.unshift(item)
+    if (this.canEnqueue() == false) {
+      // The return is changed to compare in the DOM
+      return "overflow"
+    }
+    return this.queueControl
   }
 
   dequeue() {
-    // ... your code goes here
+    // Remove a new item only when is possible
+    if (this.isEmpty()) {
+      // The return is changed to compare in the DOM
+      return "underflow"
+    }
+    let lastElement = this.queueControl.pop()
+    return lastElement
+
+  
   }
 }
