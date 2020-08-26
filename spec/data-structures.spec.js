@@ -46,7 +46,6 @@ describe('Stack', () => {
   describe('Stack methods usage', () => {
     it('Should add the indicated element to the stack', () => {
       stack.push(19);
-
       expect(stack.stackControl.length).toBe(1);
     });
 
