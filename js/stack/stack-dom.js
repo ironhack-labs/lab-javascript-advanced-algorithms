@@ -57,8 +57,8 @@ const addToStack = () => {
     const targetItem = stackList.childNodes[itemsAmount - 1]
 
     // We "display" it
-    targetItem.classList.toggle('inactive')
-    targetItem.classList.toggle('active')
+    targetItem.classList.remove('inactive')
+    targetItem.classList.add('active')
     targetItem.textContent = textToAdd
 
     clearStackInput()
@@ -89,8 +89,8 @@ const removeFromStack = () => {
     // We store the element we have to "remove" from the DOM
     const lastItem = stackList.childNodes[newStack.stackControl.length]
 
-    lastItem.classList.toggle('active')
-    lastItem.classList.toggle('inactive')
+    lastItem.classList.remove('active')
+    lastItem.classList.add('inactive')
 
     lastItem.textContent = ""
 

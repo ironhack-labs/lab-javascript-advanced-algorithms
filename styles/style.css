@@ -25,6 +25,13 @@ li.active {
   color: white;
 }
 
+.queue {
+
+  width : 10%;
+  height: 100px;
+
+}
+
 ul.list-queue {
   margin-top: 20px;
   display: flex;
