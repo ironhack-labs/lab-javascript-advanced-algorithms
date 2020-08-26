@@ -8,12 +8,12 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new StackDataStructure();
 
-// CLEAR DE INPUT FIELD
+// CLEAR THE INPUT FIELD
 const clearStackInput = () => {
     stackInput.value = ''
 };
 
-// CREATE DE STACK LIST
+// CREATE STACK LIST
 const renderListStack = () => {
   for (let i = 0; i < newStack.MAX_SIZE; i++) {
   const newListStack = document.createElement('li')
