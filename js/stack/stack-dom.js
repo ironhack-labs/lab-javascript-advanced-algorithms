@@ -8,31 +8,83 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new StackDataStructure();
 
+// CLEAR DE INPUT FIELD
 const clearStackInput = () => {
-  // ... your code goes here
+    stackInput.value = ''
 };
 
+// CREATE DE STACK LIST
 const renderListStack = () => {
-  // ... your code goes here
-};
-
-renderListStack();
-
-const generateWarningStack = type => {
-  if (type === 'underflow') {
-    // ... your code goes here
-  } else if (type === 'overflow') {
-    // ... your code goes here
+  for (let i = 0; i < newStack.MAX_SIZE; i++) {
+  const newListStack = document.createElement('li')
+  newListStack.setAttribute('class', 'inactive')
+  stackList.appendChild(newListStack)
   }
 };
 
+// GENERATE WARNINGS
+const generateWarningStack = type => {
+  if (type === 'underflow') {
+    warningBottomStack.style.display = 'block'
+    warningBottomStack.innerText = type
+    
+  } else if (type === 'overflow') {
+    warningTopStack.style.display = 'block'
+    warningTopStack.innerText = type
+  }
+};
+
+// ADD ITEMS 
 const addToStack = () => {
-  // ... your code goes here
+
+  warningBottomStack.style.display = 'none'
+  warningTopStack.style.display = 'none'
+
+ // Check if add is possible, and if it's not, generate warning
+ if (newStack.push(stackInput.value) === 'Stack Overflow') {
+
+   generateWarningStack('overflow')
+ 
+  } else {
+ 
+ // Select the new item and change the class and content
+ const listItems = document.querySelectorAll('#stack-list li')
+ const indexLastItem = newStack.stackControl.length - 1
+ listItems[indexLastItem].classList.add('active')
+ listItems[indexLastItem].classList.remove('inactive')
+ listItems[indexLastItem].innerText = stackInput.value
+
+}
+
+ // Call the clear function 
+ clearStackInput()
+
 };
 
+// REMOVE ITEMS
 const removeFromStack = () => {
-  // ... your code goes here
+
+  warningBottomStack.style.display = 'none'
+  warningTopStack.style.display = 'none'
+
+  if (newStack.pop() === 'Stack Underflow') {
+    generateWarningStack('underflow')
+
+  } else {
+
+  // Select the last item and change the class and content
+  const listItems = document.querySelectorAll('#stack-list li')
+  const indexLastItem = newStack.stackControl.length 
+
+  listItems[indexLastItem].classList.remove('active')
+  listItems[indexLastItem].classList.add('inactive')
+  listItems[indexLastItem].innerText = ''
+  
+ }
+
 };
 
+// EXECUTION
+renderListStack();
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);
