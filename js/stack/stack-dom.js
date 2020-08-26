@@ -8,31 +8,48 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new StackDataStructure();
 
+
+
 const clearStackInput = () => {
-  // ... your code goes here
+  // stackInput =
 };
 
+
 const renderListStack = () => {
-  // ... your code goes here
-};
+  for (i = 0; i < newStack.MAX_SIZE; i++){
+    let stackLi = document.createElement("li")
+    stackList.appendChild(stackLi)
+    //console.log({stackLi})
+    stackLi.classList.toggle("inactive")
+  }  };
+
 
 renderListStack();
 
+
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.style.display = "flex" //
+    warningBottomStack.innerHTML = "Stack Underflow"
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.style.display = "flex" //dudo de qué poner en el display
+    warningTopStack.innerHTML = "Stack Overflow"
   }
 };
 
+
 const addToStack = () => {
-  // ... your code goes here
-};
+  warningBottomStack.style.display =''
+  //... no sé si podría llamar  a newStack.push(item)
+}
+
 
 const removeFromStack = () => {
-  // ... your code goes here
+  warningTopStack.style.display = ''
+  //...no sé si podría llamar a newStack.pop()
 };
+
+
 
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);
