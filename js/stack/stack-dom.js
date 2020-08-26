@@ -40,13 +40,26 @@ const generateWarningStack = type => {
 
 const addToStack = () => {
   warningBottomStack.style.display =''
-  //... no sé si podría llamar  a newStack.push(item)
+  //if(newStack.push()) === false) {
+    //generateWarningStack('overflow')
+  //} else {
+    //for ( i =0; i <= newStack.stakControl.length -1; i++){
+      //let li = document.querySelectorAll('li')
+      //li[i].classList.add('active')
+      //li[i].classList.remove('inactive')
+  //  }
+  //}
 }
 
 
 const removeFromStack = () => {
   warningTopStack.style.display = ''
-  //...no sé si podría llamar a newStack.pop()
+ // if(newStack.pop === false) {
+   // generateWarningStack('underflow')
+  // else {
+    //for (i=0; i<= newStack.stackControl.length; i++)
+    //No sé cómo seguir!!!!
+  
 };
 
 
