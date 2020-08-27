@@ -12,7 +12,11 @@ const clearQueueInput = () => {
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  for(let i=0;i<queue.MAX_SIZE;i++){
+    let li= document.createElement("li")
+    li.classList="inactive"
+    queueUL.appendChild(li)
+  }
 };
 
 generateListQueue();
@@ -26,11 +30,27 @@ const generateWarningQueue = type => {
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+  queue.enqueue(queueInput.textContent)
+  let lista = queueUL.querySelectorAll('#queue-list li') 
+  console.log(lista)
+  
+  console.log(queue.queueControl)
+  
+  lista[queue.queueControl.length-1].classList.add('active')
+  lista[queue.queueControl.length-1].classList.remove('inactive')
+  lista[queue.queueControl.length-1].innerText = queueInput.value
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  let lista= queueUL.querySelectorAll('#queue-list li')
+  queue.dequeue()
+  console.log(lista)
+  console.log(queue.queueControl.length)
+  
+  
+  lista[queue.queueControl.length].classList.remove("active")
+  lista[queue.queueControl.length].classList.add("inactive")
+  lista[queue.queueControl.length].innerText=""
 };
 
 addQueue.addEventListener('click', addToQueue);

@@ -9,30 +9,59 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value=""
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  for(let i=0;i<newStack.MAX_SIZE;i++){
+    let li= document.createElement("li")
+    li.classList="inactive"
+    stackList.appendChild(li)
+  }
 };
 
 renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.style.display="block"
+    warningBottomStack.style.textAlign="center"
+    warningBottomStack.innerText="Underflow"
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.style.display="block"
+    warningTopStack.style.textAlign="center"
+    warningTopStack.innerText="Overflow"
   }
 };
 
 const addToStack = () => {
-  // ... your code goes here
-};
+  
+  warningBottomStack.style.display="none"
+  warningTopStack.style.display="none"
+  if(newStack.push(stackInput.value) === 'Stack Overflow') generateWarningStack('overflow')
+  
+  else{
+    let lista = stackList.querySelectorAll('#stack-list li') 
+    lista[newStack.stackControl.length-1].classList.add('active')
+    lista[newStack.stackControl.length-1].classList.remove('inactive')
+    lista[newStack.stackControl.length-1].innerText = stackInput.value
+  }
+  clearStackInput()
+  
+}
 
 const removeFromStack = () => {
-  // ... your code goes here
+  warningBottomStack.style.display="none"
+  warningTopStack.style.display="none"
+  if(newStack.pop()==='Stack Underflow') generateWarningStack('underflow')
+  else{
+  let lista= stackList.querySelectorAll('#stack-list li')
+  lista[newStack.stackControl.length].classList.remove("active")
+  lista[newStack.stackControl.length].classList.add("inactive")
+  lista[newStack.stackControl.length].innerText=""
+}
 };
 
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);
+

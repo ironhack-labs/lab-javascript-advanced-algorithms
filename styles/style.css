@@ -15,7 +15,6 @@ ul.list-stack > li {
   height: 40px;
   text-align: center;
 }
-
 li.inactive {
   background-color: rgb(224, 224, 224);
 }
@@ -24,6 +23,7 @@ li.active {
   background-color: rgb(50, 130, 221);
   color: white;
 }
+
 
 ul.list-queue {
   margin-top: 20px;
