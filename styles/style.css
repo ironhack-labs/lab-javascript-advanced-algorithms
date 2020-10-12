@@ -39,6 +39,7 @@ ul.list-queue > li {
   padding: 5px;
   text-align: center;
   display: inline;
+  height: 40px;
 }
 
 div.warning-top {
