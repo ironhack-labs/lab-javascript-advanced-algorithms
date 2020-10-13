@@ -8,29 +8,47 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new QueueDataStructure();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = "";
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  while(queueUL.firstChild){
+    queueUL.removeChild(queueUL.lastChild);
+  }
+  queue.display();
 };
-
-generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningTopQueue.innerHTML = "Cannot remove items from empty queue";
+    warningTopQueue.style.display = "unset";
+    setTimeout(() => {
+      warningTopQueue.style.display = "none";
+    }, 5000);
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopQueue.innerHTML = "Cannot add items to full queue";
+    warningTopQueue.style.display = "unset";
+    setTimeout(() => {
+      warningTopQueue.style.display = "none";
+    }, 5000);
   }
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+  if(queueInput.value !== ""){
+    if(queue.enqueue(queueInput.value) === "Queue Overflow"){
+      generateWarningQueue("overflow");
+    }
+    generateListQueue();
+    clearQueueInput();
+  }
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  if(queue.dequeue() === "Queue Underflow"){
+    generateWarningQueue("underflow");
+  }
+  generateListQueue();
 };
 
 addQueue.addEventListener('click', addToQueue);
