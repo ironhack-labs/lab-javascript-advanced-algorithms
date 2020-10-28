@@ -6,7 +6,6 @@ class StackDataStructure {
 
   canPush() {
     // ... your code goes here
-    
     if (this.stackControl.length < this.MAX_SIZE) {
       return true
     } else {
