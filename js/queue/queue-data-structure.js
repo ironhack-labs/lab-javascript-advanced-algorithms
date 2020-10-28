@@ -1,3 +1,5 @@
+// FIFO (First-In-First-Out) structure
+
 class QueueDataStructure {
   constructor() {
     this.queueControl = [];
@@ -9,18 +11,40 @@ class QueueDataStructure {
   }
 
   canEnqueue() {
-    // ... your code goes here
+
+    if (this.queueControl.length === this.MAX_SIZE) {
+      return false
+    }
+    return true
+
   }
 
   isEmpty() {
-    // ... your code goes here
+
+    if (this.queueControl.length !== 0) {
+      return false
+    } else {
+      return true
+    }
   }
 
   enqueue(item) {
-    // ... your code goes here
+
+    if (this.queueControl.length === this.MAX_SIZE) {
+      return 'Queue Overflow'
+    }
+    this.queueControl.unshift(item)
+
+    if (this.queueControl.length !== 0) {
+      return this.queueControl
+    }
+
   }
 
   dequeue() {
-    // ... your code goes here
+    if (this.queueControl.length === 0) {
+      return 'Queue Underflow'
+    }
+    return this.queueControl[this.queueControl.length - 1]
   }
 }
