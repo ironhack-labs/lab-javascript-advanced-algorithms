@@ -58,7 +58,7 @@ const addToStack = () => {
   }
 };
 
-const removeFromStack = () => {
+const removeFromStack = () => { // Should be LIFO
   // ... your code goes here
   if (newStack.isEmpty()) {
     generateWarningStack('underflow');

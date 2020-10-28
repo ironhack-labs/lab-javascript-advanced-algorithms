@@ -42,7 +42,7 @@ class QueueDataStructure {
     if (this.isEmpty() === true) {
      return "Queue Underflow";
     } else {
-      return this.queueControl.pop();
+      return this.queueControl.shift(); // Should be FIFO
     }
   }
 }

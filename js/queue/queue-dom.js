@@ -55,16 +55,15 @@ const addToQueue = () => {
   }
 };
 
-const removeFromQueue = () => {
+const removeFromQueue = () => { // Should be FIFO
   // ... your code goes here
   if (queue.isEmpty()) {
     generateWarningQueue('underflow');
   } else {
     warningTopQueue.style.display = 'none';
-    const items = document.querySelectorAll('#queue-list .active');
-    const lastItem = items[items.length-1]
-    lastItem.classList = 'inactive';
-    lastItem.innerHTML = "";
+    const item = document.querySelector('#queue-list .active');
+    item.classList = 'inactive';
+    item.innerHTML = "";
     queue.dequeue();
   }
 };

@@ -43,7 +43,7 @@ class StackDataStructure {
    if (this.isEmpty()) {
      return "Stack Underflow";
     } else {
-      return this.stackControl.pop();
+      return this.stackControl.pop(); //Should be LIFO
     }
   }
 }
