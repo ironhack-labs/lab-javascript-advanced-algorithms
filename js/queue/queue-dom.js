@@ -26,11 +26,22 @@ const generateWarningQueue = type => {
 };
 
 const addToQueue = () => {
-  // ... your code goes here
-};
+addQueue.addEventListener("click", (e) => {
+  if (queue.canEnqueue()) {
+       const lista = document.querySelector('.list-queue .inactive');
+      lista.classList = 'active'
+    }
+    })
+}
+
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  dequeue.addEventListener("click", (e) => {
+    if (queue.dequeue) {
+      const lista = document.querySelector('.list-queue .active')
+      lista.classList='inactive'
+   }
+ })
 };
 
 addQueue.addEventListener('click', addToQueue);

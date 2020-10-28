@@ -9,7 +9,8 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ''
+
 };
 
 const renderListStack = () => {
@@ -27,11 +28,29 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  // addStackBtn.addEventListener("click", (e) => {
+  if (newStack.canPush()) {
+      newStack.stackControl.push('a')
+    const lista = document.querySelector('#stack-list .inactive');
+    lista.innerHTML = stackInput.value
+    stackInput.value = ""
+      // clearStackInput()
+    lista.classList = 'active'
+  } else {
+    alert('está lleno')
+    }
+// })
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  if (newStack.canpop() != 'Stack Underflow') {
+    const lista = document.querySelectorAll('#stack-list .active');
+    lista[lista.length - 1].classList = 'inactive'
+    lista[lista.length - 1].innerHTML = ""
+    
+  } else {
+    alert('Está vacío')
+  }
 };
 
 addStackBtn.addEventListener('click', addToStack);
