@@ -12,6 +12,7 @@ const clearQueueInput = () => {
 };
 
 const generateListQueue = () => {
+
   // ... your code goes here
 };
 

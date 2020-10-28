@@ -9,10 +9,14 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
+
   // ... your code goes here
 };
 
 const renderListStack = () => {
+  for (let i = 0; i < newStack.MAX_SIZE; i++) {
+    stackList.innerHTML += "<li class = 'inactive'></li>"
+  }
   // ... your code goes here
 };
 
@@ -20,6 +24,7 @@ renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
+
     // ... your code goes here
   } else if (type === 'overflow') {
     // ... your code goes here
@@ -27,6 +32,7 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
+
   // ... your code goes here
 };
 
