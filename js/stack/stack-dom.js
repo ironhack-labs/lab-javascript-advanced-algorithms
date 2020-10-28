@@ -6,14 +6,20 @@ const warningBottomStack = document.querySelector('#stack-container .warning-bot
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
 
+
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ''
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+
+  for (let i = 0; i < newStack.MAX_SIZE; i++) {
+    const newLis = document.createElement("li")
+    stackList.appendChild(newLis).classList.add('inactive')
+  }
+
 };
 
 renderListStack();
@@ -27,11 +33,28 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
+
+  newStack.push(stackInput.value)
+
+  newStack.stackControl.forEach(elm => {
+    const lis = document.querySelector('#stack-list .inactive')
+    lis.className = 'active'
+    lis.innerHTML = elm
+  })
+
+  clearStackInput()
+
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  newStack.pop()
+
+  newStack.stackControl.forEach(elm => {
+    const lis = document.querySelector('#stack-list .active')
+    lis.className = 'inactive'
+    lis.innerHTML = ''
+  })
+  console.log(newStack.stackControl)
 };
 
 addStackBtn.addEventListener('click', addToStack);
