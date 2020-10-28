@@ -38,10 +38,6 @@ const addToStack = () => {
     warningDiv.innerHTML = 'overflow'
     warningDiv.setAttribute('style', 'display: block;')
 
-    const queueList = document.querySelector('.list-stack')
-
-    // document.querySelector('.stack-container').insertBefore(newDiv, queueList)
-    console.log(warningDiv)
   } if (newStack.stackControl.length > 0) {
     const warningDiv = document.querySelector('#stack-container .warning-bottom')
     warningDiv.setAttribute('style', '')
@@ -59,10 +55,6 @@ const removeFromStack = () => {
     warningDiv.innerHTML = 'underflow'
     warningDiv.setAttribute('style', 'display: block;')
 
-    const queueList = document.querySelector('.list-queue')
-
-    // document.querySelector('.stack-container').insertBefore(newDiv, queueList)
-    console.log(warningDiv)
   } if (newStack.stackControl.length < 10) {
     const warningDiv = document.querySelector('#stack-container .warning-top')
     warningDiv.setAttribute('style', '')
