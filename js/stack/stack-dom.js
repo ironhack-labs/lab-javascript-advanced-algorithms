@@ -10,6 +10,8 @@ const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
   // ... your code goes here
+  stackInput.value = '';
+  
 };
 
 const renderListStack = () => {
