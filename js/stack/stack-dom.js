@@ -13,6 +13,7 @@ const clearStackInput = () => {
 };
 
 const renderListStack = () => {
+
   // ... your code goes here
 };
 
