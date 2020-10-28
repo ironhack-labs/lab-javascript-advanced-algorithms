@@ -4,23 +4,48 @@ class QueueDataStructure {
     this.MAX_SIZE = 10;
   }
 
-  display() {
-    // ... your code goes here
-  }
+  // display() {
+  //   // ... your code goes here
+  // }
 
-  canEnqueue() {
-    // ... your code goes here
-  }
 
-  isEmpty() {
-    // ... your code goes here
-  }
+  canEnqueue = () => this.queueControl.length <= this.MAX_SIZE ? this.queueControl.enqueue(item) : false
+
+  // canEnqueue() {
+  //   if (this.queueControl.length < this.MAX_SIZE) {
+  //     return this.queueControl.enqueue(item)
+  //   }
+  // }
+
+  isEmpty = () => this.queueControl.length === 0 ? true : false
+
+  // isEmpty() {
+  //   if (this.queueControl.length === 0) {
+  //     return true
+  //   }
+  // }
 
   enqueue(item) {
-    // ... your code goes here
+
+    if (this.canEnqueue()) {
+      this.queueControl.shift(item)
+      return this.queueControl
+
+    } else {
+      return 'Stack Overflow'
+    }
   }
 
-  dequeue() {
-    // ... your code goes here
-  }
+
+  dequeue = () => this.isEmpty() ? 'Stack Underflow' : this.queueControl.unshift()
+
+  // dequeue() {
+  //   if (this.isEmpty()) {
+  //     return 'Stack Underflow'
+  //
+  //   } else {
+  //     return this.queueControl.unshift()
+  //   }
+  // }
 }
+

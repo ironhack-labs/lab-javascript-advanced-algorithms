@@ -4,23 +4,49 @@ class StackDataStructure {
     this.MAX_SIZE = 10;
   }
 
-  canPush() {
-    // ... your code goes here
-  }
+  // display() {
+  //   // ... your code goes here
+  // }
 
-  display() {
-    // ... your code goes here
-  }
 
-  isEmpty() {
-    // ... your code goes here
-  }
+  canPush = () => this.stackControl.length <= this.MAX_SIZE ? this.stackControl.push(item) : false
+
+  // canPush() {
+  //   if (this.stackControl.length <= this.MAX_SIZE) {
+  //     return this.stackControl.push(item)
+  //   }
+  // }
+
+  isEmpty = () => this.stackControl.length === 0 ? true : false
+
+  // isEmpty() {
+  //   if (this.stackControl.length === 0) {
+  //     return true
+  //   }
+  // }
+
+
 
   push(item) {
-    // ... your code goes here
+
+    if (this.canPush()) {
+      this.stackControl.push(item)
+      return this.stackControl
+
+    } else {
+      return 'Stack Overflow'
+    }
   }
 
-  pop() {
-    // ... your code goes here
-  }
+
+  pop = () => this.isEmpty() ? 'Stack Underflow' : this.stackControl.pop()
+
+  // pop() {
+  //   if (this.isEmpty()) {
+  //     return 'Stack Underflow'
+  //
+  //   } else {
+  //     return this.stackControl.pop()
+  //   }
+  // }
 }
