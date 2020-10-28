@@ -4,23 +4,47 @@ class StackDataStructure {
     this.MAX_SIZE = 10;
   }
 
+
   canPush() {
-    // ... your code goes here
+    
+    return (this.stackControl.length < this.MAX_SIZE) 
+
   }
 
   display() {
-    // ... your code goes here
+
   }
 
+
   isEmpty() {
-    // ... your code goes here
+
+    return (this.stackControl.length === 0)
+
   }
 
   push(item) {
-    // ... your code goes here
+
+    this.stackControl.push(item)
+    
+    if (this.stackControl.length-1 === this.MAX_SIZE) {
+      return 'Stack Overflow'
+    }
+    else {
+      return (this.stackControl)
+    }
+    
   }
 
+  
   pop() {
-    // ... your code goes here
+
+    if (this.stackControl.length === 0) {
+      return 'Stack Underflow'
+    }
+    else {
+      return (this.stackControl.pop())
+    }
+
   }
+
 }
