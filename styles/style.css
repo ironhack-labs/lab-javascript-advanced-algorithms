@@ -51,3 +51,19 @@ div.warning-bottom {
   margin-top: 0px;
   display: none;
 }
+
+
+.button1 {
+  border: none;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.button2 {
+  margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
