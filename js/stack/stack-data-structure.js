@@ -26,7 +26,6 @@ class StackDataStructure {
     return false;
   }
   
-
   push(item) {
     // ... your code goes here
   }
@@ -34,4 +33,6 @@ class StackDataStructure {
   pop() {
     // ... your code goes here
   }
+  this.stackControl.pop()
+
 }
