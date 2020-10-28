@@ -12,6 +12,19 @@ const clearStackInput = () => {
   // ... your code goes here
 };
 
+
+
+let allSubtotal = document.querySelectorAll('.subtotal span');
+let stackClass = document.querySelectorAll('#queue-list .inactive');
+stackList.setAttribute('id', 'yabadu')
+
+
+console.log(stackClass);
+
+
+
+
+
 const renderListStack = () => {
   // ... your code goes here
 };
@@ -27,7 +40,7 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  newStack.push()
 };
 
 const removeFromStack = () => {
