@@ -5,7 +5,11 @@ class StackDataStructure {
   }
 
   canPush() {
-    // ... your code goes here
+    let canPush = true
+    if (this.stackControl.length === this.MAX_SIZE) {
+      canPush = false
+    }
+    return canPush
   }
 
   display() {
@@ -13,14 +17,23 @@ class StackDataStructure {
   }
 
   isEmpty() {
-    // ... your code goes here
+    return (this.stackControl.length === 0)
   }
 
   push(item) {
-    // ... your code goes here
+    if (!this.canPush()) {
+      return 'Stack Overflow'
+    } else {
+      this.stackControl.push(item)
+      return this.stackControl
+    }
   }
 
   pop() {
-    // ... your code goes here
+    if (this.stackControl.length === 0) {
+      return 'Stack Underflow'
+    } else {
+      return this.stackControl.pop()
+    }
   }
 }

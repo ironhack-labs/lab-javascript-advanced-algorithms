@@ -12,7 +12,36 @@ const clearQueueInput = () => {
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  const newQueue1 = document.createElement('li')
+  newQueue1.setAttribute('class', 'inactive')
+  const newQueue2 = document.createElement('li')
+  newQueue2.setAttribute('class', 'inactive')
+  const newQueue3 = document.createElement('li')
+  newQueue3.setAttribute('class', 'inactive')
+  const newQueue4 = document.createElement('li')
+  newQueue4.setAttribute('class', 'inactive')
+  const newQueue5 = document.createElement('li')
+  newQueue5.setAttribute('class', 'inactive')
+  const newQueue6 = document.createElement('li')
+  newQueue6.setAttribute('class', 'inactive')
+  const newQueue7 = document.createElement('li')
+  newQueue7.setAttribute('class', 'inactive')
+  const newQueue8 = document.createElement('li')
+  newQueue8.setAttribute('class', 'inactive')
+  const newQueue9 = document.createElement('li')
+  newQueue9.setAttribute('class', 'inactive')
+  const newQueue10 = document.createElement('li')
+  newQueue10.setAttribute('class', 'inactive')
+  queueUL.appendChild(newQueue1)
+  queueUL.appendChild(newQueue2)
+  queueUL.appendChild(newQueue3)
+  queueUL.appendChild(newQueue4)
+  queueUL.appendChild(newQueue5)
+  queueUL.appendChild(newQueue6)
+  queueUL.appendChild(newQueue7)
+  queueUL.appendChild(newQueue8)
+  queueUL.appendChild(newQueue9)
+  queueUL.appendChild(newQueue10)
 };
 
 generateListQueue();
