@@ -10,6 +10,7 @@ const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
   // ... your code goes here
+  stackInput.value = ""
 };
 
 const renderListStack = () => {
@@ -20,9 +21,11 @@ renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
+    warningBottomStack.innerHTML = "Stack Underflow"
     // ... your code goes here
   } else if (type === 'overflow') {
     // ... your code goes here
+     warningBottomStack.innerHTML = "Stack Overflow";
   }
 };
 
