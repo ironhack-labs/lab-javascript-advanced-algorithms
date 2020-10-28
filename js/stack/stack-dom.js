@@ -9,7 +9,7 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ''
 };
 
 const renderListStack = () => {
@@ -19,19 +19,30 @@ const renderListStack = () => {
 renderListStack();
 
 const generateWarningStack = type => {
-  if (type === 'underflow') {
-    // ... your code goes here
-  } else if (type === 'overflow') {
-    // ... your code goes here
+  if (type === 'Underflow') {
+    warningBottomStack.style.display = 'block'
+    warningBottomStack.innerText = type
+  } else if (type === 'Overflow') {
+    warningTopStack.style.display = 'block'
+    warningTopStack.innerText = type
   }
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  if (newStack.push(stackInput.value) === 'Stack Overflow') {
+    generateWarningStack('Overflow')
+  } else {
+    clearStackInput()
+    renderListStack()
+  }
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  if (newStack.pop() === 'Stack Underflow') {
+    generateWarningStack('Underflow')
+  } else {
+    renderListStack()
+  }
 };
 
 addStackBtn.addEventListener('click', addToStack);
