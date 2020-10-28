@@ -24,7 +24,7 @@ class StackDataStructure {
 
   isEmpty() {
     // ... your code goes here
-    if(this.stackControl.lenght <= 0){ 
+    if(this.stackControl.lenght === 0){ 
     return true
   } else {
     return false
@@ -32,7 +32,7 @@ class StackDataStructure {
 }
   push(item) {
     // ... your code goes here
-    if(this.canPush(item)){
+    if(this.canPush()){
       this.stackControl.push(item)
       return this.stackControl
     } else {
@@ -42,7 +42,7 @@ class StackDataStructure {
 
   pop() {
     // ... your code goes here
-    if(this.stackControl.isEmpty()){
+    if(this.isEmpty()){
       return "Stack Underflow"
     } else {
       return this.stackControl.pop()
