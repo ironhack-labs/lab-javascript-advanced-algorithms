@@ -30,7 +30,7 @@ class StackDataStructure {
 
   push(item) {
     // ... your code goes here
-    if (this.canPush() === true) {
+    if (this.canPush()) {
       this.stackControl.push(item);
       return this.stackControl;
     } else {
@@ -40,7 +40,7 @@ class StackDataStructure {
 
   pop() {
     // ... your code goes here
-   if (this.isEmpty() === true) {
+   if (this.isEmpty()) {
      return "Stack Underflow";
     } else {
       return this.stackControl.pop();
