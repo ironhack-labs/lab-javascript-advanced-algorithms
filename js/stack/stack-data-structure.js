@@ -16,7 +16,7 @@ class StackDataStructure {
 
   display() {
     // ... your code goes here
-  
+  return this.stackControl
   
   }
 

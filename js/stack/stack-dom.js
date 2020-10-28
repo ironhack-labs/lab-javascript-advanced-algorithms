@@ -18,6 +18,7 @@ const renderListStack = () => {
 
   for (let i =0; i < newStack.MAX_SIZE; i++){
     stackList.innerHTML += "<li class = 'inactive'></li>" 
+  
   }
 
 };
@@ -27,15 +28,18 @@ renderListStack();
 const generateWarningStack = type => {
   if (type === 'underflow') {
     // ... your code goes here
-    warningBottomStack.innerHTML =
+    warningBottomStack.innerHTML = 'underflow'
+    warningBottomStack.style.display = "none"
   } else if (type === 'overflow') {
     // ... your code goes here
+    warningBottomStack.innerHTML = 'overflow'
+    warningBottomStack.style.display = "none"
   }
 };
 
 const addToStack = () => {
   // ... your code goes here
-  if (type === 'underflow')
+  if (newStack.canPush)
 };
 
 const removeFromStack = () => {
