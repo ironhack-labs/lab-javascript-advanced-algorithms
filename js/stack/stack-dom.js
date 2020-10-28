@@ -27,12 +27,51 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  console.log(newStack.canPush())
+  if (newStack.canPush() === true) {
+    newStack.push('*')
+    for (let i = 0; i < newStack.stackControl.length; i++) {
+      document.querySelectorAll('#stack-list li')[i].setAttribute('class', 'active')
+    }
+  } else {
+    const warningDiv = document.querySelector('#stack-container .warning-top')
+    warningDiv.innerHTML = 'overflow'
+    warningDiv.setAttribute('style', 'display: block;')
+
+    const queueList = document.querySelector('.list-stack')
+
+    // document.querySelector('.stack-container').insertBefore(newDiv, queueList)
+    console.log(warningDiv)
+  } if (newStack.stackControl.length > 0) {
+    const warningDiv = document.querySelector('#stack-container .warning-bottom')
+    warningDiv.setAttribute('style', '')
+  }
+
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  console.log(newStack.isEmpty())
+  if (newStack.isEmpty() === false) {
+    document.querySelectorAll('#stack-list li')[newStack.stackControl.length - 1].setAttribute('class', 'inactive')
+    newStack.pop()
+  } else {
+    const warningDiv = document.querySelector('#stack-container .warning-bottom')
+    warningDiv.innerHTML = 'underflow'
+    warningDiv.setAttribute('style', 'display: block;')
+
+    const queueList = document.querySelector('.list-queue')
+
+    // document.querySelector('.stack-container').insertBefore(newDiv, queueList)
+    console.log(warningDiv)
+  } if (newStack.stackControl.length < 10) {
+    const warningDiv = document.querySelector('#stack-container .warning-top')
+    warningDiv.setAttribute('style', '')
+  }
+
+
+
 };
 
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);
+

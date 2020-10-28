@@ -26,11 +26,41 @@ const generateWarningQueue = type => {
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+  console.log(queue.canEnqueue())
+  if (queue.canEnqueue() === true) {
+    queue.enqueue('*')
+    for (let i = 0; i < queue.queueControl.length; i++) {
+      document.querySelectorAll('#queue-list li')[i].setAttribute('class', 'active')
+    }
+  } else {
+    const warningDiv = document.querySelector('#queue-container .warning-top')
+    warningDiv.innerHTML = 'overflow'
+    warningDiv.setAttribute('style', 'display: block;')
+
+  } if (queue.queueControl.length > 0) {
+    const warningDiv = document.querySelector('#queue-container .warning-bottom')
+    warningDiv.setAttribute('style', '')
+  }
+
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  console.log(queue.isEmpty())
+  if (queue.isEmpty() === false) {
+    document.querySelectorAll('#queue-list li')[queue.queueControl.length - 1].setAttribute('class', 'inactive')
+    queue.dequeue()
+    console.log(queue.queueControl)
+  } else {
+    const warningDiv = document.querySelector('#queue-container .warning-bottom')
+    warningDiv.innerHTML = 'underflow'
+    warningDiv.setAttribute('style', 'display: block;')
+
+  } if (queue.queueControl.length < 10) {
+    const warningDiv = document.querySelector('#queue-container .warning-top')
+    warningDiv.setAttribute('style', '')
+  }
+
+
 };
 
 addQueue.addEventListener('click', addToQueue);
