@@ -9,29 +9,39 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  (stackInput.value != '') ? return stackInput.value = '' : false
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  for (let i = 0; i < 10; i++) {
+    const newStack = document.createElement('li')
+    newStack.classList.add('inactive')
+    stackList.appendChild(newStack)
+  }
 };
 
 renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    return warningBottomStack.style.display = 'block'
   } else if (type === 'overflow') {
-    // ... your code goes here
+    return warningTopStack.style.display = 'block'
   }
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  const actStackElm = stackList.querySelectorAll('.inactive')
+  actStackElm[0].classList.replace('inactive', 'active')
+  const inputText = stackInput.value
+  actStackElm[0].innerText = inputText
+  clearStackInput()
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  const inactStackElm = stackList.querySelectorAll('.active')
+  inactStackElm[inactStackElm.length - 1].classList.replace('active', 'inactive')
+  inactStackElm[inactStackElm.length - 1].innerText = ''
 };
 
 addStackBtn.addEventListener('click', addToStack);

@@ -8,29 +8,44 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new QueueDataStructure();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  (queueInput.value != '') ? return queueInput.value = '' : false
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  for (let i = 0; i < 10; i++) {
+  const newQueue = document.createElement('li')
+  newQueue.classList.add('inactive')
+  queueUL.appendChild(newQueue)
+  }
 };
 
 generateListQueue();
 
+
+
+
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    return warningBottomQueue.style.display = 'block'
   } else if (type === 'overflow') {
-    // ... your code goes here
-  }
+    return warningTopQueue.style.display = 'block'
 };
 
+
+
+
 const addToQueue = () => {
-  // ... your code goes here
+  const actQueueElm = queueUL.querySelectorAll('.inactive')
+  actQueueElm[0].classList.replace('inactive', 'active')
+  const inputText = queueInput.value
+  actQueueElm[0].innerText = inputText
+  clearQueueInput()
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  const inactQueueElm = queueUL.querySelectorAll('.active')
+  inactQueueElm[inactQueueElm.length - 1].classList.replace('active', 'inactive')
+  inactQueueElm[inactQueueElm.length - 1].innerText = ''
 };
 
 addQueue.addEventListener('click', addToQueue);
