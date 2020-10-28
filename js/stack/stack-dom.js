@@ -19,7 +19,7 @@ const clearStackInput = () => {
 
 const renderListStack = () => {
   // ... your code goes here
-  for (let index = 0; index < newStack.MAX_SIZE; index++) {
+  for (let i = 0; i < newStack.MAX_SIZE; i++) {
     stackList.innerHTML += '<li class="inactive"></li>'
   }
 };
