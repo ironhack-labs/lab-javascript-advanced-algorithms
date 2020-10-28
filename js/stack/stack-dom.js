@@ -27,11 +27,25 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
-};
+
+  let newColum = document.querySelectorAll("#columns");
+  console.log(newColum)
+
+  newColum.forEach(function (elm) {
+    elm.classList.replace("inactive", "active");
+   })
+}
+
 
 const removeFromStack = () => {
-  // ... your code goes here
+
+  let removeStack = document.querySelectorAll("#columns");
+  console.log(removeStack)
+
+  removeStack.forEach(function (elm) {
+    elm.classList.replace("active", "inactive");
+  })
+  
 };
 
 addStackBtn.addEventListener('click', addToStack);

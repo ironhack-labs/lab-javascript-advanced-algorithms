@@ -26,11 +26,19 @@ const generateWarningQueue = type => {
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+
+  let newQueu = document.getElementById("row");
+  console.log(newQueu)
+  newQueu.classList.replace("inactive", "active");
+  console.log(newQueu)
+
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  let newQueu = document.getElementById("row");
+  console.log(newQueu)
+  newQueu.classList.replace("active", "inactive");
+  console.log(newQueu)
 };
 
 addQueue.addEventListener('click', addToQueue);

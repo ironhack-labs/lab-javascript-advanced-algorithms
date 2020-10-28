@@ -6,8 +6,8 @@ class StackDataStructure {
 
 
   canPush() {
-    
-    return (this.stackControl.length < this.MAX_SIZE) 
+
+    return (this.stackControl.length < this.MAX_SIZE)
 
   }
 
@@ -25,17 +25,17 @@ class StackDataStructure {
   push(item) {
 
     this.stackControl.push(item)
-    
-    if (this.stackControl.length-1 === this.MAX_SIZE) {
+
+    if (this.stackControl.length - 1 === this.MAX_SIZE) {
       return 'Stack Overflow'
     }
     else {
       return (this.stackControl)
     }
-    
+
   }
 
-  
+
   pop() {
 
     if (this.stackControl.length === 0) {
