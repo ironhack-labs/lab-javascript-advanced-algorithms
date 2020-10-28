@@ -16,6 +16,10 @@ const clearStackInput = () => {
 const renderListStack = () => {
   // ... your code goes here
 
+  for (let i =0; i < newStack.MAX_SIZE; i++){
+    stackList.innerHTML += "<li class = 'inactive'></li>" 
+  }
+
 };
 
 renderListStack();
@@ -23,6 +27,7 @@ renderListStack();
 const generateWarningStack = type => {
   if (type === 'underflow') {
     // ... your code goes here
+    warningBottomStack.innerHTML =
   } else if (type === 'overflow') {
     // ... your code goes here
   }
