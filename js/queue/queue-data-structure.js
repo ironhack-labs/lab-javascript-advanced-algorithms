@@ -19,7 +19,7 @@ class QueueDataStructure {
 
   isEmpty() {
     // ... your code goes here
-    if(this.queueControl.lenght === 0){ 
+    if(this.queueControl.length === 0){ 
       return true
     } else {
       return false
