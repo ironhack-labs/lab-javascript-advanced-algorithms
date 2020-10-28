@@ -6,7 +6,13 @@ class StackDataStructure {
 
   canPush() {
     // ... your code goes here
+   if (this.stackControl.length < this.MAX_SIZE) { 
+   return true;
+  } else {
+    return false;
+   }
   }
+
 
   display() {
     // ... your code goes here
@@ -14,7 +20,12 @@ class StackDataStructure {
 
   isEmpty() {
     // ... your code goes here
+    if (this.stackControl.lenght === 0){ 
+    return true;
   }
+    return false;
+  }
+  
 
   push(item) {
     // ... your code goes here
