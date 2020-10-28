@@ -16,23 +16,29 @@ class StackDataStructure {
 
   display() {
     // ... your code goes here
+  
+  
   }
+
+
+
+
 
   isEmpty() {
     // ... your code goes here
-    if (this.stackControl.lenght === 0){ 
-    return true;
+    if (this.stackControl.lenght <= 0){ 
+    return true
+  } else{
+    return false
   }
-    return false;
-  }
-  
+}
   push(item) {
     // ... your code goes here
     if(this.canPush()){
-      this.stackControl.push(item);
-      return this.stackControl;
+      this.stackControl.push(item)
+      return this.stackControl
     }else{
-      return "Stack Overflow";
+      return "Stack Overflow"
     }
   }
 
@@ -41,8 +47,7 @@ class StackDataStructure {
     if(this.isEmpty()){
       return "Stack Underflow"
     }else{
-      return this.stackControl.pop();
+      return this.stackControl.pop()
     }
-
   }
 }
