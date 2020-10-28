@@ -28,7 +28,7 @@ class StackDataStructure {
     // ... your code goes here
     if (this.stackControl.lenght <= 0){ 
     return true
-  } else{
+  } else {
     return false
   }
 }
