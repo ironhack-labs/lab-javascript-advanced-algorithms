@@ -9,20 +9,33 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+
+  stackInput.value = ""
+
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+
+  for (let i = 0; i < newStack.MAX_SIZE; i++) {
+
+    let li = document.createElement("li")
+    li.classList = "inactive"
+    stackList.appendChild(li)
+
+  }
 };
 
 renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.style.display = "block"
+    warningBottomStack.style.textAlign = "center"
+    warningBottomStack.innerText = "Underflow"
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.style.display = "block"
+    warningTopStack.style.textAlign = "center"
+    warningTopStack.innerText = "Overflow"
   }
 };
 
