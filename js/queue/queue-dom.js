@@ -9,10 +9,11 @@ const queue = new QueueDataStructure();
 
 const clearQueueInput = () => {
   // ... your code goes here
+
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  // ... your code goes here  
 };
 
 generateListQueue();
@@ -27,10 +28,12 @@ const generateWarningQueue = type => {
 
 const addToQueue = () => {
   // ... your code goes here
+
 };
 
 const removeFromQueue = () => {
   // ... your code goes here
+  
 };
 
 addQueue.addEventListener('click', addToQueue);
