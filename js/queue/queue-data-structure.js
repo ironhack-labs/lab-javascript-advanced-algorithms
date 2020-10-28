@@ -30,7 +30,7 @@ class QueueDataStructure {
     // ... your code goes here
     if(this.canEnqueue()){
       this.queueControl.push(item)
-      return this.dequeueControl
+      return this.queueControl
     } else {
       return "Queue Overflow"
     }
@@ -41,7 +41,7 @@ class QueueDataStructure {
     if(this.isEmpty()){
       return "Queue Underflow"
     } else {
-      return this.enqueueControl.pop()
+      return this.queueControl.pop()
     }
   }
 }
