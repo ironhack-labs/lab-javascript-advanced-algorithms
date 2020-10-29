@@ -55,11 +55,21 @@ const generateWarningQueue = type => {
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+  const activeQueue = document.createElement('li')
+  activeQueue.setAttribute('class', 'active')
+  if (queue.canEnqueue(activeQueue)) {
+    document.querySelectorAll('ul')[1].appendChild(activeQueue)
+    const elimQueue = queueUL.querySelectorAll('li')[0]
+    document.querySelectorAll('ul')[1].removeChild(elimQueue)
+  } else if (!queue.canEnqueue(activeQueue)) {
+    
+  } else if (isEmpty()) {
+    
+  }
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  
 };
 
 addQueue.addEventListener('click', addToQueue);

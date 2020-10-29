@@ -49,23 +49,21 @@ renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    
   } else if (type === 'overflow') {
     // ... your code goes here
   }
 };
 
 const addToStack = () => {
-  if (newStack.canPush()) {
-    for (i = 0; i < newStack.stackControl.length; i++) {
-      const activeStack = document.createElement('li')
-      activeStack.setAttribute('class', 'active')
-      document.querySelectorAll('ul')[0].appendChild(activeStack)
-      const elimStack = document.querySelectorAll('li')[i]
-      document.querySelectorAll('ul')[0].removeChild(elimStack)
-    }
+  const activeStack = document.createElement('li')
+  activeStack.setAttribute('class', 'active')
+  if (newStack.canPush(activeStack)) {
+    document.querySelectorAll('ul')[0].appendChild(activeStack)
+    const elimStack = document.querySelectorAll('li')[0]
+    document.querySelectorAll('ul')[0].removeChild(elimStack)
   } else {
-    generateWarningStack
+    return generateWarningStack
   }
 };
 
