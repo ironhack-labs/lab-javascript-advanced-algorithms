@@ -27,11 +27,11 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  push(item)
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  pop()
 };
 
 addStackBtn.addEventListener('click', addToStack);

@@ -26,11 +26,11 @@ const generateWarningQueue = type => {
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+  enqueue(item)
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  dequeue()
 };
 
 addQueue.addEventListener('click', addToQueue);
