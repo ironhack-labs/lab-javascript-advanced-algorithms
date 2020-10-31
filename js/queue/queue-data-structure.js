@@ -33,8 +33,8 @@ class QueueDataStructure {
 
   enqueue(item) {
     // ... your code goes here
-    if (this.MAX_SIZE == this.queueControl.length) {
-      return "Stack Overflow"
+    if ( this.queueControl.length>= this.MAX_SIZE ) {
+      return 'Queue Overflow'
     } else {
 
       this.queueControl.unshift(item)
@@ -50,7 +50,6 @@ class QueueDataStructure {
 }
 
 let test = new QueueDataStructure
-// test.MAX_SIZE = 1;
-test.enqueue(19)
-// console.log(test);
+test.MAX_SIZE = 1;
+console.log(test.enqueue(19));
 console.log(test.enqueue(88));
