@@ -3,7 +3,7 @@ class StackDataStructure {
     this.stackControl = [];
     this.MAX_SIZE = 10;
   }
-
+//() to check if we can add new elements to the stack (to avoid the stack overflow), a
   canPush() {
     // ... your code goes here
   }
@@ -11,7 +11,7 @@ class StackDataStructure {
   display() {
     // ... your code goes here
   }
-
+// check if we can take an element from the stack (to prevent the stack underflow).
   isEmpty() {
     // ... your code goes here
   }
