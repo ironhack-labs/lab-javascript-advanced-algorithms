@@ -27,9 +27,15 @@ class StackDataStructure {
 
   push(item) {
     // ... your code goes here
-    this.stackControl.push(item);
-    this.stackControl[this.stackControl.length - 1]
-    return this.stackControl
+    if (this.MAX_SIZE == this.stackControl.length  ) {
+      return  "Stack Overflow"
+    } else {
+      this.stackControl.push(item);
+
+      this.stackControl[this.stackControl.length - 1]
+
+      return this.stackControl
+    }
 
   }
 
@@ -39,5 +45,6 @@ class StackDataStructure {
 }
 
 let test = new StackDataStructure
-
+test.MAX_SIZE = 1;
 console.log(test.push(19));
+console.log(test.push(88));
