@@ -46,7 +46,13 @@ class QueueDataStructure {
 
   dequeue() {
     // ... your code goes here
-    return this.queueControl[this.queueControl.length - 1  ]
+    if (this.queueControl.length == 0) {
+
+      return 'Queue Underflow'
+    } else{
+      return this.queueControl[this.queueControl.length - 1  ]
+    }
+
   }
 }
 
