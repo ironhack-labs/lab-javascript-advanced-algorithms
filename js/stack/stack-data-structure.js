@@ -28,9 +28,16 @@ class StackDataStructure {
   push(item) {
     // ... your code goes here
     this.stackControl.push(item);
+    this.stackControl[this.stackControl.length - 1]
+    return this.stackControl
+
   }
 
   pop() {
     // ... your code goes here
   }
 }
+
+let test = new StackDataStructure
+
+console.log(test.push(19));
