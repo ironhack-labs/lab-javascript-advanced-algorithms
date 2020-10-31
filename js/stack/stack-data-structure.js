@@ -6,6 +6,7 @@ class StackDataStructure {
   //() to check if we can add new elements to the stack (to avoid the stack overflow), a
   canPush() {
     // ... your code goes here
+    return true
   }
 
   display() {
@@ -19,6 +20,7 @@ class StackDataStructure {
 
   push(item) {
     // ... your code goes here
+
   }
 
   pop() {
