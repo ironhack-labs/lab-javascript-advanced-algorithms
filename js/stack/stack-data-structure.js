@@ -56,8 +56,3 @@ class StackDataStructure {
     }
   }
 }
-
-let test = new StackDataStructure
-test.MAX_SIZE = 1;
-console.log(test.push(19));
-console.log(test.push(88));
