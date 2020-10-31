@@ -20,7 +20,7 @@ class StackDataStructure {
 
   push(item) {
     // ... your code goes here
-
+    this.stackControl.push(item);
   }
 
   pop() {
