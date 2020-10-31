@@ -47,7 +47,13 @@ class StackDataStructure {
 
   pop() {
     // ... your code goes here
-    return this.stackControl[this.stackControl.length - 1]
+    if (this.stackControl.length == 0) {
+
+      return 'Stack Underflow'
+    } else {
+
+      return this.stackControl[this.stackControl.length - 1]
+    }
   }
 }
 
