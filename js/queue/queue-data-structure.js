@@ -10,10 +10,25 @@ class QueueDataStructure {
 
   canEnqueue() {
     // ... your code goes here
+
+
+      if (this.MAX_SIZE <= this.queueControl.length) {
+        return false;
+      } else {
+
+        return true
+      }
+
   }
 
   isEmpty() {
     // ... your code goes here
+    if (this.queueControl.length == 0) {
+
+      return true
+    } else {
+      return false
+    }
   }
 
   enqueue(item) {
