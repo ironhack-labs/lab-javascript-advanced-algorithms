@@ -47,6 +47,7 @@ class StackDataStructure {
 
   pop() {
     // ... your code goes here
+    return this.stackControl[this.stackControl.length - 1]
   }
 }
 
