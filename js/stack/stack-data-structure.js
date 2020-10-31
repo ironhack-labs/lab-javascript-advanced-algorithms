@@ -15,7 +15,14 @@ class StackDataStructure {
   // check if we can take an element from the stack (to prevent the stack underflow).
   isEmpty() {
     // ... your code goes here
-    return true
+    if (this.stackControl.length == 0 ) {
+
+      return true
+    }else {
+      return false
+    }
+
+
   }
 
   push(item) {
