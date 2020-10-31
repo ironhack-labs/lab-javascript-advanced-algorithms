@@ -46,10 +46,12 @@ class QueueDataStructure {
 
   dequeue() {
     // ... your code goes here
+    return this.queueControl[this.queueControl.length - 1  ]
   }
 }
 
 let test = new QueueDataStructure
-test.MAX_SIZE = 1;
+// test.MAX_SIZE = 1;
 console.log(test.enqueue(19));
 console.log(test.enqueue(88));
+console.log(test.dequeue());
