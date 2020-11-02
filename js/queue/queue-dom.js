@@ -8,29 +8,74 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new QueueDataStructure();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = '';
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  for (let i = 0; i < queue.MAX_SIZE; i++) {
+    let newElem = document.createElement('li');
+    newElem.setAttribute('class', 'inactive');
+    queueUL.appendChild(newElem);
+  }
 };
 
 generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomQueue.style.display = 'block';
+    warningBottomQueue.innerHTML = 'underflow';
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopQueue.style.display = 'block';
+    warningTopQueue.innerHTML = 'overflow';
   }
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+  let elemPos = 0;
+
+  if (!queue.canEnqueue()) {
+    generateWarningQueue('overflow');
+  } else {
+    warningTopQueue.style.display = 'none';
+  }
+  
+  if (queueInput.value === null || queueInput.value === undefined) {
+    clearQueueInput();
+  }
+
+  queue.enqueue(queueInput.value);
+  //The position on which the element should be
+  elemPos = queue.queueControl.length - 1;
+
+  queueUL.children[elemPos].setAttribute('class','active');
+  queueUL.children[elemPos].innerHTML = queueInput.value;
+
+  clearQueueInput();
+
+  //underflow warning must not show unless necessary.
+  warningBottomQueue.style.display = 'none';
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  let elemPos = 0;
+
+  //overflow warning must not show unless necessary.
+  warningTopQueue.style.display = 'none';
+
+  if (queue.isEmpty()) {
+    generateWarningQueue('underflow');
+  } else {
+    warningBottomQueue.style.display = 'none';
+  }
+
+
+  queue.dequeue();
+  elemPos = queue.queueControl.length;
+
+  queueUL.children[elemPos].innerHTML = '&nbsp;';
+  queueUL.children[elemPos].setAttribute('class','inactive');
+
 };
 
 addQueue.addEventListener('click', addToQueue);
