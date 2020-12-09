@@ -5,12 +5,10 @@ class QueueDataStructure {
   }
 
   display() {
-    // ... your code goes here
     return this.queueControl
   }
 
   canEnqueue() {
-    // ... your code goes here
     if (this.queueControl.length < this.MAX_SIZE) {
       return true
     } else {
@@ -19,7 +17,6 @@ class QueueDataStructure {
   }
 
   isEmpty() {
-    // ... your code goes here
     if (this.queueControl.length === 0) {
       return true
     } else {
@@ -28,7 +25,6 @@ class QueueDataStructure {
   }
 
   enqueue(item) {
-    // ... your code goes here
     if (this.canEnqueue()) {
       this.queueControl.unshift(item);
       return this.queueControl
@@ -39,7 +35,6 @@ class QueueDataStructure {
   }
 
   dequeue() {
-    // ... your code goes here
     if (this.isEmpty()) {
       return 'Queue Underflow'
     } else {

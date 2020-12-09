@@ -9,29 +9,54 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ''
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  for (i=0; i<newStack.MAX_SIZE; i++) {
+    stackList.innerHTML += `<li class="inactive">&nbsp;</li>`
+  }
 };
 
 renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.innerHTML = `underflow`
+    warningBottomStack.style.display = 'block';
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.innerHTML = `overflow`
+    warningTopStack.style.display = 'block';
   }
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  if (newStack.canPush()) {
+    stackList.querySelector('.inactive').innerHTML = stackInput.value;
+    stackList.querySelector('.inactive').classList.add("active");
+    stackList.querySelector('.inactive').classList.remove("inactive")
+    clearStackInput();
+    newStack.push(stackInput.value)
+    if (!newStack.isEmpty()) {
+      warningBottomStack.style.display = 'none';
+    }
+  } else {
+    generateWarningStack('overflow')
+  }
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  if (newStack.isEmpty()) {
+    generateWarningStack('underflow')
+  } else {
+    stackList.querySelectorAll('.active')[(stackList.querySelectorAll('.active')).length-1].innerHTML = '';
+    stackList.querySelectorAll('.active')[(stackList.querySelectorAll('.active')).length-1].classList.add("inactive");
+    stackList.querySelectorAll('.active')[(stackList.querySelectorAll('.active')).length-1].classList.remove("active")
+    newStack.pop()
+    if (newStack.canPush()) {
+      warningTopStack.style.display = 'none';
+    }
+  }
 };
 
 addStackBtn.addEventListener('click', addToStack);

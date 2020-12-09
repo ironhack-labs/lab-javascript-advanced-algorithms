@@ -5,7 +5,6 @@ class StackDataStructure {
   }
 
   canPush() {
-    // ... your code goes here
     if (this.stackControl.length < this.MAX_SIZE) {
       return true
     } else {
@@ -14,12 +13,10 @@ class StackDataStructure {
   }
 
   display() {
-    // ... your code goes here
     return this.stackControl
   }
 
   isEmpty() {
-    // ... your code goes here
     if (this.stackControl.length === 0) {
       return true
     } else {
@@ -28,7 +25,6 @@ class StackDataStructure {
   }
 
   push(item) {
-    // ... your code goes here
     if (this.canPush()) {
       this.stackControl.push(item)
       return this.stackControl
@@ -38,7 +34,6 @@ class StackDataStructure {
   }
 
   pop() {
-    // ... your code goes here
     if (this.isEmpty()) {
       return 'Stack Underflow'
     } else {
