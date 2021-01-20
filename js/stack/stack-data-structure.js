@@ -28,10 +28,6 @@ class StackDataStructure {
         if (this.isEmpty()) {
             return 'Stack Underflow'
         }
-        const removedElement = this.stackControl[this.stackControl.length - 1]
-        this.stackControl.pop(removedElement)
-        return (removedElement)
-
-
+        return this.stackControl.pop()
     }
 }
