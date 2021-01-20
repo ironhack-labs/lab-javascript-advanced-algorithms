@@ -21,7 +21,6 @@ class StackDataStructure {
   }
 
 
-
   isEmpty() {
     // ... your code goes here
     if(this.stackControl.length === 0){ 
