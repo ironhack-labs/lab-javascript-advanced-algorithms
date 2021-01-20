@@ -27,7 +27,9 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
+ 
+  
+
 };
 
 const removeFromStack = () => {
