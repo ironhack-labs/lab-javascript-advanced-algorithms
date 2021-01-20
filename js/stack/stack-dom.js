@@ -9,29 +9,50 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+    // ... your code goes here
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+    const stackItems = stackList.querySelectorAll('li')
+    stackItems.forEach((elm, idx) => {
+        const stackItem = newStack.stackControl[idx]
+        if (stackItem || stackItem === '') {
+            elm.className = 'active'
+            elm.textContent = stackItem
+        } else {
+            elm.className = 'inactive'
+        }
+    })
 };
 
 renderListStack();
 
 const generateWarningStack = type => {
-  if (type === 'underflow') {
-    // ... your code goes here
-  } else if (type === 'overflow') {
-    // ... your code goes here
-  }
+    let warningMsg
+    if (type === 'underflow') {
+        // ... your code goes here
+    } else if (type === 'overflow') {
+        // ... your code goes here
+        warningMsg = document.querySelector('.stack-container .warning-top')
+        console.log(warningMsg.style)
+        warningMsg.style.display = 'block'
+        warningMsg.textContent = 'Stack Overflow'
+
+    }
 };
 
 const addToStack = () => {
-  // ... your code goes here
+    // ... your code goes here
+    const elementPush = newStack.push(stackInput.value)
+    if (elementPush === 'Stack Overflow') {
+        generateWarningStack('overflow')
+    } else {
+        renderListStack()
+    }
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+    // ... your code goes here
 };
 
 addStackBtn.addEventListener('click', addToStack);
