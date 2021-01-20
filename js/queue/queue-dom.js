@@ -1,37 +1,64 @@
-const queueUL = document.querySelector('.list-queue');
-const queueInput = document.querySelector('.queue-input');
-const warningTopQueue = document.querySelector('#queue-container .warning-top');
-const warningBottomQueue = document.querySelector('#queue-container .warning-bottom');
-const addQueue = document.querySelector('.btn-add-queue');
-const dequeue = document.querySelector('.btn-take-dequeue');
+const queueUL = document.querySelector('.list-queue')
+const queueInput = document.querySelector('.queue-input')
+const warningTopQueue = document.querySelector('#queue-container .warning-top')
+const warningBottomQueue = document.querySelector('#queue-container .warning-bottom')
+const addQueue = document.querySelector('.btn-add-queue')
+const dequeue = document.querySelector('.btn-take-dequeue')
 
-const queue = new QueueDataStructure();
+const queue = new QueueDataStructure()
 
 const clearQueueInput = () => {
-  // ... your code goes here
-};
+  queueInput.value = ''
+}
 
-const generateListQueue = () => {
-  // ... your code goes here
-};
+const generateListQueue = () => {       // Así mejor :)
+  queueUL.querySelectorAll('li.active').forEach((elm, i) => {
+    elm.textContent = queue.queueControl[i]
+  })
+  queueUL.querySelectorAll('li.inactive').forEach(elm => {
+    elm.textContent = ''
+  })
+}
 
-generateListQueue();
+generateListQueue()
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomQueue.innerHTML = type
+    warningBottomQueue.className = 'alert alert-danger'
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopQueue.innerHTML = type
+    warningTopQueue.className = 'alert alert-danger'
   }
-};
+}
 
 const addToQueue = () => {
-  // ... your code goes here
-};
+  if (queue.canEnqueue()) {
+    if (queue.isEmpty()) {
+      warningBottomQueue.className = "warning-top alert alert-danger"
+    }
+    queue.enqueue(queueInput.value)
+    queueUL.querySelector('.inactive').className = 'active'
+    generateListQueue()
+    clearQueueInput()
+  } else {
+    generateWarningQueue('overflow')
+    clearQueueInput()
+  }
+}
 
 const removeFromQueue = () => {
-  // ... your code goes here
-};
+  if (!queue.isEmpty()) {
+    if (!queue.canEnqueue()) {
+      warningTopQueue.className = "warning-bottom alert alert-danger"
+    }
+    queue.queueControl.pop()
+    queueUL.querySelectorAll('.active')[queueUL.querySelectorAll('.active').length - 1].className = 'inactive'
+    generateListQueue()
+  } else {
+    generateWarningQueue('underflow')
+  }
+}
 
-addQueue.addEventListener('click', addToQueue);
-dequeue.addEventListener('click', removeFromQueue);
+addQueue.addEventListener('click', addToQueue)
+dequeue.addEventListener('click', removeFromQueue)
