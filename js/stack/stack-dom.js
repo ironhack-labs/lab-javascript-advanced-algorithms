@@ -25,10 +25,10 @@ const renderListStack = () => {
   warningBottomStack.style.display = 'none'
   stackList.innerHTML = '';
 
-  let largo = newStack.display.length
+  let largo = newStack.display().length
   let tamaño = stackSize - largo
 
-  newStack.display.forEach(item => {
+  newStack.display().forEach(item => {
     let li = document.createElement('li')
     li.className = 'active'
     li.innerText = item

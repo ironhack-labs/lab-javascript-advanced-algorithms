@@ -25,10 +25,10 @@ const generateListQueue = () => {
   warningBottomQueue.style.display = 'none'
   queueList.innerHTML = '';
 
-  let largo = newQueue.display.length
+  let largo = newQueue.display().length
   let tamaño = queueSize - largo
 
-  newQueue.display.forEach(item => {
+  newQueue.display().forEach(item => {
     let li = document.createElement('li')
     li.className = 'active'
     li.innerText = item
