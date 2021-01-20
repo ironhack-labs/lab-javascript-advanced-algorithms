@@ -27,10 +27,15 @@ const generateWarningQueue = type => {
 
 const addToQueue = () => {
   // ... your code goes here
+  document.querySelector(".list-queue .inactive").classList.add("active")
+  document.querySelector(".list-queue .inactive").classList.remove("inactive")
 };
 
 const removeFromQueue = () => {
   // ... your code goes here
+  const item = document.querySelectorAll(".list-queue .active")
+  item[item.length-1].classList.add("inactive")
+  item[item.length-1].classList.remove("active")
 };
 
 addQueue.addEventListener('click', addToQueue);

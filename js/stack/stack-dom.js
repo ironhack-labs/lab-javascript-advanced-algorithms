@@ -20,7 +20,10 @@ renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
+    warningBottomStack.setAttribute("style", "display:inline;");
+    console.log(warningBottomStack)
     // ... your code goes here
+    
   } else if (type === 'overflow') {
     // ... your code goes here
   }
@@ -28,10 +31,26 @@ const generateWarningStack = type => {
 
 const addToStack = () => {
   // ... your code goes here
+  //console.log(stackList)
+  document.querySelector(".list-stack .inactive").classList.add("active")
+  document.querySelector(".list-stack .inactive").classList.remove("inactive")
+  // console.log(warningBottomStack)
+
+
 };
 
 const removeFromStack = () => {
   // ... your code goes here
+  const item = document.querySelectorAll(".list-stack .active")
+  item[item.length-1].classList.add("inactive")
+  item[item.length-1].classList.remove("active")
+
+
+  // console.log(document.querySelectorAll(".list-stack .active")[1])
+  // document.querySelector(".list-stack .active").classList.add("inactive")
+  // document.querySelector(".list-stack .active").classList.remove("active")
+
+
 };
 
 addStackBtn.addEventListener('click', addToStack);
