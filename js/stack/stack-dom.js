@@ -13,8 +13,8 @@ const clearStackInput = () => {
 };
 
 const renderListStack = () => {
-    document.querySelector('.stack-container .warning-bottom').style.display = 'none'
-    document.querySelector('.stack-container .warning-top').style.display = 'none'
+    document.querySelector('#stack-container .warning-bottom').style.display = 'none'
+    document.querySelector('#stack-container .warning-top').style.display = 'none'
     const stackItems = stackList.querySelectorAll('li')
     stackItems.forEach((elm, idx) => {
         const stackItem = newStack.stackControl[idx]
@@ -34,10 +34,10 @@ renderListStack();
 const generateWarningStack = type => {
     let warningMsg
     if (type === 'underflow') {
-        warningMsg = document.querySelector('.stack-container .warning-bottom')
+        warningMsg = document.querySelector('#stack-container .warning-bottom')
         warningMsg.textContent = 'Stack Underflow'
     } else if (type === 'overflow') {
-        warningMsg = document.querySelector('.stack-container .warning-top')
+        warningMsg = document.querySelector('#stack-container .warning-top')
         warningMsg.textContent = 'Stack Overflow'
     }
     warningMsg.style.display = 'block'

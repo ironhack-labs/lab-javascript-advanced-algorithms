@@ -30,8 +30,9 @@ class QueueDataStructure {
         if (this.isEmpty()) {
             return 'Queue Underflow'
         }
-        this.queueControl.shift()
-        return this.queueControl[0]
+        const dequeuedElement = this.queueControl[this.queueControl.length - 1]
+        this.queueControl.pop()
+        return dequeuedElement
 
     }
 }
