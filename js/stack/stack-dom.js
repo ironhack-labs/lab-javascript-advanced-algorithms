@@ -20,20 +20,65 @@ renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    const warningBottomStackStyle = warningBottomStack.style
+    warningBottomStackStyle.display = 'block'
+    
   } else if (type === 'overflow') {
-    // ... your code goes here
+    const warningTopStackStyle = warningTopStack.style
+    warningTopStackStyle.display = 'block'
   }
 };
 
 const addToStack = () => {
- 
   
+  newStack.push(stackInput.value)
 
+  if (newStack.canPush()) {
+
+    newStack.stackControl.forEach((element, index) => {
+      
+      const childNodeIndex = (index*2) + 1
+      const childNode= stackList.childNodes[childNodeIndex]
+      childNode.setAttribute('class', 'active')
+      childNode.innerText = element
+      
+    })
+    const warningBottomStackStyle = warningBottomStack.style
+    warningBottomStackStyle.display = 'none'
+
+  } else {generateWarningStack('overflow')}
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  
+  
+if (newStack.isEmpty()) {
+
+  generateWarningStack('underflow')
+
+} else if (newStack.stackControl.length === 1) {
+  newStack.stackControl.pop()
+  const childNode = stackList.childNodes[1]
+  childNode.setAttribute('class', 'inactive')
+  
+  
+  
+  
+
+}else {
+  const warningTopStackStyle = warningTopStack.style
+  warningTopStackStyle.display = 'none'
+  newStack.stackControl.pop()
+    newStack.stackControl.forEach (element => {
+      index = (newStack.stackControl.length*2) + 1
+      const childNode = stackList.childNodes[index]
+      childNode.setAttribute('class', 'inactive')
+      childNode.innerText= ''
+    })
+  
+}
+
+
 };
 
 addStackBtn.addEventListener('click', addToStack);

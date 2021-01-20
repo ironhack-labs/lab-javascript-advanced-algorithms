@@ -45,6 +45,7 @@ div.warning-top {
   display: none;
   margin-top: 10px;
   margin-bottom: 0px;
+  text-align: center;
 }
 
 div.warning-bottom {
