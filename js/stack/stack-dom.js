@@ -10,6 +10,7 @@ const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
     // ... your code goes here
+    stackInput.value = ''
 };
 
 const renderListStack = () => {
@@ -23,16 +24,14 @@ const renderListStack = () => {
             elm.className = 'inactive'
         }
     })
+    clearStackInput()
 };
 
 renderListStack();
 
 const generateWarningStack = type => {
     let warningMsg
-    if (type === 'underflow') {
-        // ... your code goes here
-    } else if (type === 'overflow') {
-        // ... your code goes here
+    if (type === 'underflow') {} else if (type === 'overflow') {
         warningMsg = document.querySelector('.stack-container .warning-top')
         console.log(warningMsg.style)
         warningMsg.style.display = 'block'
@@ -42,7 +41,6 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-    // ... your code goes here
     const elementPush = newStack.push(stackInput.value)
     if (elementPush === 'Stack Overflow') {
         generateWarningStack('overflow')
