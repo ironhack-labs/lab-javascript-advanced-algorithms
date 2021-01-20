@@ -17,15 +17,21 @@ class StackDataStructure {
     }
 
     push(item) {
-        if (this.canPush()) {
-            this.stackControl[this.stackControl.length] = item
-            return this.stackControl
-        } else {
+        if (!this.canPush()) {
             return 'Stack Overflow'
         }
+        this.stackControl[this.stackControl.length] = item
+        return this.stackControl
     }
 
     pop() {
-        // ... your code goes here
+        if (this.isEmpty()) {
+            return 'Stack Underflow'
+        }
+        const removedElement = this.stackControl[this.stackControl.length - 1]
+        this.stackControl.pop(removedElement)
+        return (removedElement)
+
+
     }
 }
