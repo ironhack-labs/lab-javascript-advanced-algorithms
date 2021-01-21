@@ -20,7 +20,8 @@ class StackDataStructure {
         if (!this.canPush()) {
             return 'Stack Overflow'
         }
-        this.stackControl[this.stackControl.length] = item
+        // this.stackControl[this.stackControl.length] = item
+        this.stackControl.push(item)
         return this.stackControl
     }
 
