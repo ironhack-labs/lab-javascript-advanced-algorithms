@@ -36,7 +36,7 @@ const cleanWarningStack = () => {
 };
 
 const addToStack = () => {
-	let inactivesLiElem = document.getElementsByClassName("inactive");
+	let inactivesLiElem = stackList.getElementsByClassName("inactive");
 
 	if (newStack.canPush()) {
 		newStack.push(stackInput.value);
@@ -52,7 +52,7 @@ const addToStack = () => {
 };
 
 const removeFromStack = () => {
-	let activesLiElem = document.getElementsByClassName("active");
+	let activesLiElem = stackList.getElementsByClassName("active");
 
 	if (!newStack.isEmpty()) {
 		newStack.pop();
