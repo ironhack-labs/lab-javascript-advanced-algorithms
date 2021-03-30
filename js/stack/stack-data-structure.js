@@ -23,7 +23,6 @@ class StackDataStructure {
 	}
 
 	pop() {
-		if (this.isEmpty()) return "Stack Underflow";
-		return this.stackControl.pop();
+		return this.isEmpty() ? "Stack Underflow" : this.stackControl.pop();
 	}
 }
