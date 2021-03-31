@@ -16,7 +16,7 @@ const renderListStack = () => {
   // ... your code goes here
 };
 
-renderListStack();
+// renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
@@ -27,12 +27,53 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
+
+  if(newStack.canPush()) {
+
+    const itemToChange = document.querySelector('li.inactive')
+    console.log(itemToChange)
+    newStack.display(itemToChange)
+    newStack.push(itemToChange)
+    console.log(newStack.stackControl)
+
+  } else {
+    const itemOverflow = document.createElement('li')
+    itemOverflow.className = 'overflow'
+    itemOverflow.textContent = 'Warning Overflow'
+    document.querySelector('ul.list-stack').appendChild(itemOverflow)
+    newStack.push(itemOverflow)
+    console.log(newStack.stackControl)
+  }
+
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+
+    const itemToRemove = newStack.stackControl[newStack.stackControl.length - 1]
+     
+  if (newStack.stackControl.length <= newStack.MAX_SIZE && newStack.stackControl.length > 0) {
+      console.log(itemToRemove)
+      itemToRemove.className = 'inactive'
+      newStack.stackControl.pop(itemToRemove)
+     }
+    else if (newStack.stackControl.length > newStack.MAX_SIZE) {
+    itemToRemove.remove()
+    newStack.stackControl.pop(itemToRemove)
+    console.log(newStack.stackControl)
+    } 
+    else {
+    const itemUnderflow = document.createElement('li')
+    itemUnderflow.className = 'overflow'
+    itemUnderflow.textContent = 'Warning Underflow'
+    const parentNode = document.querySelector('ul.list-stack')
+    parentNode.insertBefore(itemUnderflow, parentNode.firstChild)
+    newStack.unshift(itemUnderflow)
+    console.log(newStack.stackControl)
+    console.log(itemToRemove)
+    }
 };
 
 addStackBtn.addEventListener('click', addToStack);
+// addStackBtn.addEventListener('click', Overflow);
+
 takeStackBtn.addEventListener('click', removeFromStack);

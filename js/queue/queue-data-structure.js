@@ -5,22 +5,43 @@ class QueueDataStructure {
   }
 
   display() {
-    // ... your code goes here
+    let item = document.querySelector('li.inactive')
+    item.className = 'active'
+    console.log(item)
+    return item
   }
 
   canEnqueue() {
-    // ... your code goes here
+    if (this.queueControl.length < this.MAX_SIZE) {
+      return true
+    } else {
+      return false
+    }
   }
 
   isEmpty() {
-    // ... your code goes here
+    if (this.queueControl.length === 0) {
+      return true
+    } else {
+      return false
+    }
   }
 
   enqueue(item) {
-    // ... your code goes here
+    this.queueControl.unshift(item)
+
+    if (this.queueControl.length > this.MAX_SIZE) {
+      return 'Queue Overflow'
+    } else if (this.queueControl.length === this.MAX_SIZE) {
+      return false
+    }
+    return this.queueControl
   }
 
   dequeue() {
-    // ... your code goes here
+    if (this.queueControl.length === 0) {
+      return 'Queue Underflow'
+    }
+    return this.queueControl[this.queueControl.length-1]
   }
 }

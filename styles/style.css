@@ -24,6 +24,10 @@ li.active {
   background-color: rgb(50, 130, 221);
   color: white;
 }
+li.overflow {
+  background-color: rgb(230, 129, 129);
+  color: rgb(131, 4, 4)
+}
 
 ul.list-queue {
   margin-top: 20px;
