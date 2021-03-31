@@ -9,30 +9,55 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ""
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  for (let i = 0; i < newStack.MAX_SIZE; i++){
+  const spaceBlock = document.createElement('li')
+  spaceBlock.setAttribute('class', 'inactive')
+  document.querySelector('#stack-list').appendChild(spaceBlock)
+  }
 };
 
 renderListStack();
 
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.innerText = newStack.pop()
+    warningBottomStack.style.display = 'block'
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.innerText = newStack.push()
+    warningTopStack.style.display = 'block'
   }
 };
 
 const addToStack = () => {
-  // ... your code goes here
+  const blockValue = stackInput.value
+  clearStackInput()
+  if (newStack.push(blockValue) !== "Stack Overflow") activateStackBlock(blockValue)
+  else generateWarningStack('overflow')
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+  if (newStack.pop() !== "Stack Underflow") deactivateStackBlock()
+  else generateWarningStack('underflow')
 };
 
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);
+
+const activateStackBlock = blockText => {
+  warningBottomStack.style.display = 'none'
+  const newBlock = document.querySelector('#stack-list .inactive')
+  newBlock.innerText = blockText
+  newBlock.setAttribute('class', 'active')
+}
+
+const deactivateStackBlock = () => {
+  warningTopStack.style.display = 'none'
+  const totalActiveBlocks = document.querySelectorAll('#stack-list .active')
+  newestActiveBlock = totalActiveBlocks[totalActiveBlocks.length - 1]
+  newestActiveBlock.innerText = ""
+  newestActiveBlock.setAttribute('class', 'inactive')
+}
