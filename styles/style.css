@@ -25,6 +25,15 @@ li.active {
   color: white;
 }
 
+li.inactiveq {
+  background-color: rgb(224, 224, 224);
+}
+
+li.activeq {
+  background-color: rgb(50, 130, 221);
+  color: white;
+}
+
 ul.list-queue {
   margin-top: 20px;
   display: flex;

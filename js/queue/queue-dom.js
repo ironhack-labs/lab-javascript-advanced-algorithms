@@ -19,18 +19,39 @@ generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomQueue.style.display = 'block'
+    warningBottomQueue.innerHTML = 'underflow'
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopQueue.style.display = 'block'
+    warningTopQueue.innerHTML = 'overflow'
+
   }
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+// console.log("We are trying to add a new Queue")
+if (!queue.canEnqueue()){
+  generateWarningQueue('overflow')
+}
+  queue.enqueue()
+  // console.log(queue.queueControl.length)
+  const lastInactiveLi = document.querySelector(".inactiveq")
+  // console.log(lastInactiveLi)
+  lastInactiveLi.classList.add('activeq')
+  lastInactiveLi.classList.remove('inactiveq')
+  lastInactiveLi.innerHTML = queueInput.value
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  if (queue.isEmpty()){
+  generateWarningQueue('underflow')
+}
+  queue.dequeue()
+  const lastActiveLi = document.querySelector(".activeq")
+  // console.log(lastInactiveLi)
+  lastActiveLi.classList.add('inactiveq')
+  lastActiveLi.classList.remove('activeq')
+  lastActiveLi.innerHTML = ''
 };
 
 addQueue.addEventListener('click', addToQueue);
