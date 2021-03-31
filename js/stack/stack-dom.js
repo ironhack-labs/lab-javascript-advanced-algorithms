@@ -8,16 +8,19 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new StackDataStructure();
 
+//menos importante limpia el input
 const clearStackInput = () => {
   // ... your code goes here
 };
 
+//pinta las cajas despues de add() o pop()
 const renderListStack = () => {
   // ... your code goes here
 };
 
 renderListStack();
 
+//muestra la alerta
 const generateWarningStack = type => {
   if (type === 'underflow') {
     // ... your code goes here
@@ -26,8 +29,10 @@ const generateWarningStack = type => {
   }
 };
 
+//añaden o eliminan
 const addToStack = () => {
   // ... your code goes here
+  console.log(newStack)
 };
 
 const removeFromStack = () => {
