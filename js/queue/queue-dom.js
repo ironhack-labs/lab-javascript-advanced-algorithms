@@ -8,29 +8,78 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new QueueDataStructure();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = ""
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  for (let i = 0; i < 10; i++) {
+    const listitem = document.createElement('li');
+    listitem.classList.toggle('inactive')
+    queueUL.appendChild(listitem);
+  }
 };
 
 generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomQueue.style.display = 'block';
+    warningBottomQueue.textContent = "Queue Underflow"
+
+    setInterval(() => {
+      warningBottomQueue.style.display = 'none';
+    }, 5000)
+
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopQueue.style.display = 'block';
+    warningTopQueue.textContent = "Queue Overflow"
+
+    setInterval(() => {
+      warningTopQueue.style.display = 'none';
+    }, 5000)
   }
 };
 
+let queueAdd = 0;
+
 const addToQueue = () => {
-  // ... your code goes here
+  if (event.target.id == 'add-queue' && queue.canEnqueue()) {
+
+    let item = queueUL.children.item(queueAdd);
+
+    if (queueInput.value) {
+      item.innerText = queueInput.value;
+      clearQueueInput();
+    }
+
+    item.classList.toggle('inactive')
+    item.classList.toggle('active')
+
+    queue.enqueue(`box[${queueAdd}]`);
+    queueAdd++;
+
+  } else if (!queue.canEnqueue() && event.target.id == 'add-queue') {
+
+    generateWarningQueue('overflow');
+  }
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  if (event.target.id === 'take-queue' && !queue.isEmpty()) {
+    let item = queueUL.children.item(queue.queueControl.length - 1);
+    item.textContent = "";
+
+    item.classList.toggle('inactive')
+    item.classList.toggle('active')
+
+    queue.dequeue();
+
+    console.log(queue)
+
+    queueAdd--;
+  } else if (event.target.id === 'take-queue' && queue.isEmpty()) {
+    generateWarningQueue('underflow');
+  }
 };
 
 addQueue.addEventListener('click', addToQueue);
