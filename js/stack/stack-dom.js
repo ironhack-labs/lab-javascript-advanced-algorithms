@@ -9,29 +9,53 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
-  // ... your code goes here
+	stackInput.value = "";
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+	stackList.innerHTML = "";
+	newStack.stackControl.forEach(elem => {
+		let listItem = document.createElement("li");
+		let text = document.createTextNode(elem);
+
+		listItem.appendChild(text);
+		stackList.appendChild(listItem);
+	})
 };
 
 renderListStack();
 
 const generateWarningStack = type => {
-  if (type === 'underflow') {
-    // ... your code goes here
-  } else if (type === 'overflow') {
-    // ... your code goes here
-  }
+	if (type === 'underflow') {
+		warningBottomStack.innerHTML = "Underflow";
+		warningBottomStack.style = "display: block";
+	} else if (type === 'overflow') {
+		warningTopStack.innerHTML = "Overflow";
+		warningTopStack.style = "display: block";
+	}
 };
 
 const addToStack = () => {
-  // ... your code goes here
+	let result = newStack.push(stackInput.value);
+	if (result === "Stack Overflow") {
+		generateWarningStack("overflow");
+	} else {
+		warningBottomStack.style = "display: none";
+	}
+
+	renderListStack();
+	clearStackInput();
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+	let result = newStack.pop();
+	if (result === "Stack Underflow") {
+		generateWarningStack("underflow");
+	} else {
+		warningTopStack.style = "display: none";
+	}
+
+	renderListStack();
 };
 
 addStackBtn.addEventListener('click', addToStack);
