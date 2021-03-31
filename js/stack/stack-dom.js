@@ -9,6 +9,7 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
+
   // ... your code goes here
 };
 
@@ -18,19 +19,36 @@ const renderListStack = () => {
 
 renderListStack();
 
+
+//--------------------------o--------------------------
+
+ 
 const generateWarningStack = type => {
+ 
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.innerHTML = type
+    warningBottomStack.className = 'alert alert-danger'
+
+
+
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.innerHTML = type
+    warningTopStack.className = 'alert alert-danger'
   }
+
 };
 
+//--------------------------o--------------------------
+
 const addToStack = () => {
-  // ... your code goes here
+
+
 };
 
 const removeFromStack = () => {
+
+
+
   // ... your code goes here
 };
 

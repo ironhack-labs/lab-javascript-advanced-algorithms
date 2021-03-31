@@ -19,10 +19,12 @@ generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.innerHTML = type
+    warningBottomStack.className = 'alert alert-danger'
+
   } else if (type === 'overflow') {
-    // ... your code goes here
-  }
+    warningTopStack.innerHTML = type
+    warningTopStack.className = 'alert alert-danger'
 };
 
 const addToQueue = () => {
@@ -35,3 +37,4 @@ const removeFromQueue = () => {
 
 addQueue.addEventListener('click', addToQueue);
 dequeue.addEventListener('click', removeFromQueue);
+}
