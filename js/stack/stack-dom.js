@@ -27,12 +27,21 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  // ... your code goes here
-};
+  if (event.target.id == 'add-stack' && newStack.canPush()) {
+    const items = document.createElement('li')
+    stackList.appendChild(items).setAttribute('class', 'item')
+    newStack.push(items)
+  }
+}
 
 const removeFromStack = () => {
-  // ... your code goes here
-};
+  if (event.target.id == 'take-stack') {
+    const rmv = () => {
+      newStack.removeChild('item')
+      newStack.pop(rmv)
+    }
+  }
+}
 
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);

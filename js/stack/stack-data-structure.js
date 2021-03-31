@@ -5,7 +5,12 @@ class StackDataStructure {
   }
 
   canPush() {
-    // ... your code goes here
+
+    if (this.stackControl.length === this.MAX_SIZE) {
+      return false
+    } else {
+      return true
+    }
   }
 
   display() {
@@ -13,14 +18,29 @@ class StackDataStructure {
   }
 
   isEmpty() {
-    // ... your code goes here
+    if (this.stackControl.length <= 0) {
+      return true
+    } else {
+      return false
+    }
   }
 
   push(item) {
-    // ... your code goes here
+    if (this.canPush() === true) {
+      this.stackControl.push(item)
+      return this.stackControl
+    } else if (this.canPush() === false) {
+      return 'Stack Overflow'
+    }
   }
 
   pop() {
-    // ... your code goes here
+    if (this.stackControl.length <= 0){
+      this.stackControl.pop()
+      return 'Stack Underflow'
+    } return this.stackControl[this.stackControl.length - 1]
   }
+
+
+
 }
