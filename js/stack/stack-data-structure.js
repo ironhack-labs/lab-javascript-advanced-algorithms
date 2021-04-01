@@ -13,7 +13,7 @@ class StackDataStructure {
   }
 
   display() {
-    //
+    return this.stackControl;
   }
 
   isEmpty() {

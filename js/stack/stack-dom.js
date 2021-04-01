@@ -24,7 +24,6 @@ renderListStack();
 
 const generateWarningStack = (type) => {
   if (type === "underflow") {
-    console.log("underflow");
     warningBottomStack.innerHTML = "underflow";
     warningBottomStack.style.display = "block";
   } else if (type === "overflow") {
@@ -32,6 +31,7 @@ const generateWarningStack = (type) => {
     warningTopStack.style.display = "block";
   } else {
     warningTopStack.style.display = "none";
+    warningBottomStack.style.display = "none";
   }
 };
 
