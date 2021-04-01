@@ -10,6 +10,7 @@ const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
   // ... your code goes here
+
 };
 
 const renderListStack = () => {
@@ -28,10 +29,12 @@ const generateWarningStack = type => {
 
 const addToStack = () => {
   // ... your code goes here
+  
 };
 
 const removeFromStack = () => {
   // ... your code goes here
+  const remove = newStack.pop()
 };
 
 addStackBtn.addEventListener('click', addToStack);
