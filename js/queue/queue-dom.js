@@ -49,17 +49,21 @@ dequeue.addEventListener('click', removeFromQueue);
 
 const activateQueueBlock = blockText => {
   warningBottomQueue.style.display = 'none'
+  // const newBlock = document.querySelector('#queue-list .inactive')
+  // newBlock.innerText = blockText
+  // newBlock.setAttribute('class', 'active')
+  const firstBlock = document.querySelector('#queue-list li')
   const newBlock = document.querySelector('#queue-list .inactive')
-  newBlock.innerText = blockText
   newBlock.setAttribute('class', 'active')
+  const activeBlocks = document.querySelectorAll('#queue-list .active')
+  console.log(activeBlocks)
+  for (let i = activeBlocks.length - 1; i > 0; i--){
+    activeBlocks[i].innerText = activeBlocks[i].previousSibling.innerText
+  }
+
+  firstBlock.innerText = blockText
 }
-//^^No pude averiguar ni ingeniarmelas para hacer que funcione como queue, 
-//intente durante literalmente horas mil iteraciones y no lo logre.
-//La logica par esto estaba muy complicado, hice dibujos y arrays y .reverse() y mil cosas mas 
-//pero no lo pude lograr ni en la vida real.
-//Me gusto el ejercicio en general, pero he de decir que me duermo con 
-//un mal sabor de boca por no lograr esto y estoy triste por no haber resuleto el problema.....
-// :,(
+//LO LOGRE!!!!!!!!!!
 
 const deactivateQueueBlock = () => {
   warningTopQueue.style.display = 'none'
