@@ -10,6 +10,7 @@ const allActiveLi = document.querySelectorAll(".active")
 const newStack = new StackDataStructure();
 
 const clearStackInput = () => {
+  stackInput.value = ''
 };
 
 const renderListStack = () => {
@@ -28,12 +29,16 @@ const generateWarningStack = type => {
     // console.log("The Stack is Empty")
     warningTopStack.style.display = "block"
     warningTopStack.innerHTML = 'underflow'
+  } else {
+    warningTopStack.style.display = "none"
+    warningBottomStack.style.display = "none"
   }
 };
 
 const addToStack = () => {
   // console.log("We are trying to add a new Stack") test
-  newStack.push()
+  newStack.push(stackInput.value)
+  console.log(newStack.stackControl)
   if (!newStack.canPush()) {
          generateWarningStack('overflow')
   } else {
@@ -44,6 +49,7 @@ const addToStack = () => {
   liEntryInactive.classList.add('active')
   liEntryInactive.classList.remove('inactive')
   liEntryInactive.innerHTML = stackInput.value
+  clearStackInput ()
 };
 
 const removeFromStack = () => {
@@ -51,6 +57,8 @@ const removeFromStack = () => {
   newStack.pop()
   if (newStack.isEmpty()) {
     generateWarningStack('underflow')
+  } else {
+    warningBottomStack.style.display = "none"
   }
   // console.log(newStack.stackControl.length) test
   const allActiveLi = document.querySelectorAll(".active")

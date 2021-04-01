@@ -8,7 +8,7 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new QueueDataStructure();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = ''
 };
 
 const generateListQueue = () => {
@@ -24,7 +24,9 @@ const generateWarningQueue = type => {
   } else if (type === 'overflow') {
     warningTopQueue.style.display = 'block'
     warningTopQueue.innerHTML = 'overflow'
-
+  } else {
+    warningTopQueue.style.display = 'none'
+    warningTopQueue.style.display = 'none'
   }
 };
 
@@ -32,14 +34,23 @@ const addToQueue = () => {
 // console.log("We are trying to add a new Queue")
 if (!queue.canEnqueue()){
   generateWarningQueue('overflow')
+} else {
+  queue.enqueue(queueInput.value)
+  // console.log(queue.queueControl)
+  const liEntry = document.createElement("li")
+  liEntry.classList.add('active')
+  liEntry.innerHTML = queueInput.value
+  // console.log(liEntry)
+  const allQueueLi = queueUL.getElementsByTagName("li")
+  // console.log(allQueueLi)
+  const lastLiQueue = allQueueLi[0]
+  // console.log(lastLiQueue)
+  lastLiQueue.remove()
+  queueUL.appendChild(liEntry)
+  // console.log(queueUL)
+  // console.log(allQueueLi)
 }
-  queue.enqueue()
-  // console.log(queue.queueControl.length)
-  const lastInactiveLi = document.querySelector(".inactiveq")
-  // console.log(lastInactiveLi)
-  lastInactiveLi.classList.add('activeq')
-  lastInactiveLi.classList.remove('inactiveq')
-  lastInactiveLi.innerHTML = queueInput.value
+  clearQueueInput()
 };
 
 const removeFromQueue = () => {
@@ -47,11 +58,11 @@ const removeFromQueue = () => {
   generateWarningQueue('underflow')
 }
   queue.dequeue()
-  const lastActiveLi = document.querySelector(".activeq")
-  // console.log(lastInactiveLi)
-  lastActiveLi.classList.add('inactiveq')
-  lastActiveLi.classList.remove('activeq')
-  lastActiveLi.innerHTML = ''
+  const firstActiveLi = queueUL.querySelector(".active")
+  console.log(firstActiveLi)
+  firstActiveLi.classList.add('inactive')
+  firstActiveLi.classList.remove('active')
+  firstActiveLi.innerHTML = ''
 };
 
 addQueue.addEventListener('click', addToQueue);
