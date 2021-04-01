@@ -45,7 +45,7 @@ const addToStack = () => {
     warningTopStack.style.display = "none"
   }
  // console.log(newStack.stackControl.length)
-  const liEntryInactive = document.querySelector('.inactive')
+  const liEntryInactive = stackList.querySelector('.inactive')
   liEntryInactive.classList.add('active')
   liEntryInactive.classList.remove('inactive')
   liEntryInactive.innerHTML = stackInput.value
@@ -61,7 +61,7 @@ const removeFromStack = () => {
     warningBottomStack.style.display = "none"
   }
   // console.log(newStack.stackControl.length) test
-  const allActiveLi = document.querySelectorAll(".active")
+  const allActiveLi = stackList.querySelectorAll(".active")
   const lastActiveLi = allActiveLi[allActiveLi.length-1]
   // console.log(lastActiveLi) test
   lastActiveLi.classList.add('inactive')
