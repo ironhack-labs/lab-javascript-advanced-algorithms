@@ -19,9 +19,9 @@ generateListQueue();
 
 const generateWarningQueue = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    
   } else if (type === 'overflow') {
-    // ... your code goes here
+    
   }
 };
 
@@ -30,7 +30,9 @@ const addToQueue = () => {
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+
+  
+
 };
 
 addQueue.addEventListener('click', addToQueue);

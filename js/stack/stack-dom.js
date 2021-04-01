@@ -8,30 +8,66 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new StackDataStructure();
 
+const buttonRemove = document.querySelector('#take-stack')
+
+const buttonAdd = document.querySelector('#add-stack')
+
+
+
+console.log(newStack)
+
+
+
+//menos importante, limpia el input
 const clearStackInput = () => {
-  // ... your code goes here
+
+  
+  
+
+
 };
 
+//pinta las cajas despus de cada add o pop
 const renderListStack = () => {
-  // ... your code goes here
+
+  
 };
 
 renderListStack();
 
+//saca el mensaje de alerta
 const generateWarningStack = type => {
   if (type === 'underflow') {
-    // ... your code goes here
+    
+   
+
   } else if (type === 'overflow') {
-    // ... your code goes here
+   
+  
   }
 };
 
+//añade al stack
 const addToStack = () => {
-  // ... your code goes here
+
+  buttonAdd.onclick = () =>{
+   const addStack = document.querySelectorAll(".inactive")
+   addStack[0].classList.replace("inactive", "active") 
+
+}
+
 };
 
 const removeFromStack = () => {
-  // ... your code goes here
+
+  buttonRemove.onclick = () =>{
+    const removeStack = document.querySelectorAll("li")
+    removeStack.classList.remove("active")
+    removeStack.classList.add("inactive")
+
+  }
+
+  
 };
 
 addStackBtn.addEventListener('click', addToStack);
