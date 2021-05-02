@@ -6,9 +6,9 @@
 
 In this exercise, you will be able to:
 
-- use data structures to organize your application information,
-- learn how to model real-life situations and objects into proper data structures and
-- use tests to develop your solution.
+- Use data structures to organize your application information
+- Learn how to model real-life situations and objects into proper data structures
+- Use tests to develop your solution.
 
 ## Data Structures
 
@@ -26,9 +26,9 @@ In this exercise, we will implement two different abstract data types that are v
 - Upon completion, run the following commands:
 
 ```shell
-$ git add .
-$ git commit -m "done"
-$ git push origin master
+git add .
+git commit -m "done"
+git push origin master
 ```
 
 - Create Pull Request so your TAs can check up your work.
@@ -39,23 +39,23 @@ $ git push origin master
 
 A stack is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack. The only element that can be removed is the element that was at the top of the stack.
 
-This data structure is also called **LIFO** queue. LIFO stands for "last in, first out", meaning that the last element we put in the stack, is the first element that will go out.
+This data structure is also called a **LIFO** data structure. LIFO stands for "_last in, first out_", meaning that the last element we put in the stack, is the first element that will go out.
 
 ![Image](https://i.imgur.com/NcuoeUk.png)
 
-**Think about a stack as if it was a stack of books. You can put a book over the others, but you just can take the book on the top of the stack.**
+**Think about LIFO data structure as if it were a stack of books. You can put a book on top of the others, and you only remove books from the top of the pile.**
 
 ### Queues
 
-Queues are the other abstract data type we are going to see. It is also called a linear data structure. This means that the first element is inserted from one end called **rear**, and the deletion of an existing element takes place from the other end called **front**.
+Queues are the other abstract data type we are going to be looking at. They are also referred to as a linear data structure. This means that the first element is inserted from one end called **rear**, and the deletion of an existing element takes place from the other end called **front**.
 
-This makes a queue a **FIFO** data structure, which means that the first element inserted, will be the first element removed.
+This makes a queue a **FIFO** ("_first in, first out_") data structure, which means that the first element inserted, will also be the first element removed.
 
 The process of adding an element into the queue is called **enqueue**, and the process of removal of an element from the queue is called **dequeue**.
 
 ![](https://i.imgur.com/Qo1SQQ7.png)
 
-**Hint**: Think about a queue as if it was a queue in a bank. When you arrive, you are the last in the line, and you have to wait until it is your turn to being attended.
+**Hint**: Think about a queue as if it was a queue in a bank. When you arrive, you are the last in the line, and you have to wait until it is your turn to being received.
 
 ## Instructions
 
@@ -73,11 +73,7 @@ This exercise is split into two parts:
 
 We have created a set of tests to guide you through the abstract data types implementation. After implementing the JavaScript functionality, create a visual layout to show how each data structure works.
 
-Open in your browser the `SpecRunner.html` file to see the set of tests we have created:
-
-![](https://i.imgur.com/dQUAyYL.png)
-
-Go through these tests to build up your libraries with the specified functionality. Let's go step by step:
+Please, open your terminal, change directories into the root of the lab, and run `npm install` to install the test runner. Now, you can run the `npm run test:watch` command to run automated tests in _watch mode_. Open the resulting `lab-solution.html` file with the "Live Server" VSCode extension to always see the most up to date test results.
 
 ### Iteration 1
 

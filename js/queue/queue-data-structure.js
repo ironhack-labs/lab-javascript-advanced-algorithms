@@ -24,3 +24,7 @@ class QueueDataStructure {
     // ... your code goes here
   }
 }
+
+if (typeof module !== 'undefined') {
+  module.exports = QueueDataStructure;
+}

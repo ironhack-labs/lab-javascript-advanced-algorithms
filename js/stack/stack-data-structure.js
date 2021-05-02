@@ -24,3 +24,7 @@ class StackDataStructure {
     // ... your code goes here
   }
 }
+
+if (typeof module !== 'undefined') {
+  module.exports = StackDataStructure;
+}
