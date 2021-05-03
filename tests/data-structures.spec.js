@@ -8,51 +8,59 @@ describe('Stack', () => {
     stack = new StackDataStructure();
   });
 
-  describe('Properties', () => {
-    it('should hold a stackControl array to store the elements of the stack', () => {
+  describe('Property "stackControl"', () => {
+    it('should be an array used to store the elements of the stack', () => {
       expect(Array.isArray(stack.stackControl)).toBe(true);
     });
+  });
 
-    it('should have a max number of items to avoid the stack overflow', () => {
+  describe('Property "MAX_SIZE"', () => {
+    it('should be a maximum number of items to avoid the stack overflow', () => {
       expect(typeof stack.MAX_SIZE).toBe('number');
     });
   });
 
-  describe('Methods', () => {
-    it('should have a method to check if the current stack is empty', () => {
+  describe('Method "isEmpty"', () => {
+    it('should be declared', () => {
       expect(typeof stack.isEmpty).toBe('function');
     });
 
-    it('should have a method to check if we can push elements into the stack', () => {
-      expect(typeof stack.canPush).toBe('function');
-    });
-
-    it('should have a method to push elements into the stack', () => {
-      expect(typeof stack.push).toBe('function');
-    });
-
-    it('should have a method to take elements from the stack', () => {
-      expect(typeof stack.pop).toBe('function');
-    });
-
-    it('should have an empty stack', () => {
+    it('should return true if stack is empty, false if it contains any elements', () => {
       expect(stack.isEmpty()).toBe(true);
     });
 
-    it('should be able to add a new element in the stack', () => {
+    it('should return false if stack contains any elements', () => {
+      stack.stackControl.push(1);
+      expect(stack.isEmpty()).toBe(false);
+    });
+  });
+
+  describe('Method "canPush"', () => {
+    it('should be declared', () => {
+      expect(typeof stack.canPush).toBe('function');
+    });
+
+    it('should return true is stack is empty', () => {
       expect(stack.canPush()).toBe(true);
     });
 
-    it('should add the indicated element to the stack', () => {
-      stack.push(19);
+    it('should return false if stack is full', () => {
+      stack.MAX_SIZE = 1;
+      stack.stackControl.push(1);
+      expect(stack.canPush()).toBe(false);
+    });
+  });
 
-      expect(stack.stackControl.length).toBe(1);
+  describe('Method "push"', () => {
+    it('should be declared', () => {
+      expect(typeof stack.push).toBe('function');
     });
 
-    it('should return that stack is not empty when adding an element', () => {
-      stack.push(19);
-
-      expect(stack.isEmpty()).toBe(false);
+    it('should add the indicated element to the stack', () => {
+      const value = 19;
+      stack.push(value);
+      expect(stack.stackControl.length).toBe(1);
+      expect(stack.stackControl[stack.stackControl.length - 1]).toBe(value);
     });
 
     it('should return the stack when an element is inserted', () => {
@@ -62,28 +70,24 @@ describe('Stack', () => {
     it('should insert the elements in the received order', () => {
       stack.push(19);
       stack.push(88);
-
       expect(stack.stackControl).toEqual([19, 88]);
     });
 
     it("Should return 'Stack Overflow' if the stack is full", () => {
       stack.MAX_SIZE = 1;
       stack.push(19);
-
       expect(stack.push(88)).toEqual('Stack Overflow');
     });
+  });
 
-    it('should return false if the stack is full', () => {
-      stack.MAX_SIZE = 1;
-      stack.push(19);
-
-      expect(stack.canPush()).toBe(false);
+  describe('Method "pop"', () => {
+    it('should be declared', () => {
+      expect(typeof stack.pop).toBe('function');
     });
 
     it('should return the last element inserted in the stack', () => {
       stack.push(19);
       stack.push(88);
-
       expect(stack.pop()).toBe(88);
     });
 
