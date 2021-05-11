@@ -1,4 +1,4 @@
-class QueueDataStructure {
+class Queue {
   constructor() {
     this.queueControl = [];
     this.MAX_SIZE = 10;
@@ -25,6 +25,5 @@ class QueueDataStructure {
   }
 }
 
-if (typeof module !== 'undefined') {
-  module.exports = QueueDataStructure;
-}
+// This is required to enable the automated tests, please ignore it.
+if (typeof module !== 'undefined') module.exports = Queue;

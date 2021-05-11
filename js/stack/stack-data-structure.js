@@ -1,4 +1,4 @@
-class StackDataStructure {
+class Stack {
   constructor() {
     this.stackControl = [];
     this.MAX_SIZE = 10;
@@ -25,6 +25,5 @@ class StackDataStructure {
   }
 }
 
-if (typeof module !== 'undefined') {
-  module.exports = StackDataStructure;
-}
+// This is required to enable the automated tests, please ignore it.
+if (typeof module !== 'undefined') module.exports = Stack;

@@ -1,11 +1,11 @@
-const StackDataStructure = require('../js/stack/stack-data-structure');
-const QueueDataStructure = require('../js/queue/queue-data-structure');
+const Stack = require('../js/stack/stack-data-structure');
+const Queue = require('../js/queue/queue-data-structure');
 
 describe('Stack', () => {
   let stack;
 
   beforeEach(() => {
-    stack = new StackDataStructure();
+    stack = new Stack();
   });
 
   describe('Property "stackControl"', () => {
@@ -51,6 +51,17 @@ describe('Stack', () => {
     });
   });
 
+  describe('Method "display"', () => {
+    it('should be declared', () => {
+      expect(typeof stack.display).toBe('function');
+    });
+
+    it('should return contents of stack', () => {
+      stack.push(10);
+      expect(stack.display()).toEqual([10]);
+    });
+  });
+
   describe('Method "push"', () => {
     it('should be declared', () => {
       expect(typeof stack.push).toBe('function');
@@ -73,10 +84,10 @@ describe('Stack', () => {
       expect(stack.stackControl).toEqual([19, 88]);
     });
 
-    it("Should return 'Stack Overflow' if the stack is full", () => {
+    it('should throw error with message "STACK_OVERFLOW" if the stack is full', () => {
       stack.MAX_SIZE = 1;
       stack.push(19);
-      expect(stack.push(88)).toEqual('Stack Overflow');
+      expect(() => stack.push(88)).toThrow(new Error('STACK_OVERFLOW'));
     });
   });
 
@@ -85,14 +96,14 @@ describe('Stack', () => {
       expect(typeof stack.pop).toBe('function');
     });
 
-    it('should return the last element inserted in the stack', () => {
+    it('should return the element removed from the end of the stack', () => {
       stack.push(19);
       stack.push(88);
       expect(stack.pop()).toBe(88);
     });
 
-    it("Should return 'Stack Underflow' if there are no elements in the stack", () => {
-      expect(stack.pop()).toBe('Stack Underflow');
+    it('should throw error with message "STACK_UNDERFLOW" if there are no elements in the stack', () => {
+      expect(() => stack.pop()).toThrow(new Error('STACK_UNDERFLOW'));
     });
   });
 });
@@ -101,90 +112,105 @@ describe('Queue', () => {
   let queue;
 
   beforeEach(() => {
-    queue = new QueueDataStructure();
+    queue = new Queue();
   });
 
-  describe('Properties', () => {
-    it('should have an array to add the elements to the queue', () => {
+  describe('Property "queueControl"', () => {
+    it('should be an array used to store the elements of the queue', () => {
       expect(Array.isArray(queue.queueControl)).toBe(true);
     });
+  });
 
-    it('should have a max number of items to avoid the queue overflow', () => {
+  describe('Property "MAX_SIZE"', () => {
+    it('should be a maximum number of items to avoid the queue overflow', () => {
       expect(typeof queue.MAX_SIZE).toBe('number');
     });
   });
 
-  describe('Methods', () => {
-    it('should have a method to check if the current queue is empty', () => {
+  describe('Method "isEmpty"', () => {
+    it('should be declared', () => {
       expect(typeof queue.isEmpty).toBe('function');
     });
 
-    it('should have a method to check if we can enqueue an element into the queue', () => {
-      expect(typeof queue.canEnqueue).toBe('function');
-    });
-
-    it('should have a method to enqueue elements into the queue', () => {
-      expect(typeof queue.enqueue).toBe('function');
-    });
-
-    it('should have a method to dequeue from the queue', () => {
-      expect(typeof queue.dequeue).toBe('function');
-    });
-
-    it('Queue has an empty stack', () => {
+    it('should return true if queue is empty, false if it contains any elements', () => {
       expect(queue.isEmpty()).toBe(true);
     });
 
-    it('should be able to enqueue a new element in the queue', () => {
+    it('should return false if queue contains any elements', () => {
+      queue.queueControl.push(1);
+      expect(queue.isEmpty()).toBe(false);
+    });
+  });
+
+  describe('Method "canEnqueue"', () => {
+    it('should be declared', () => {
+      expect(typeof queue.canEnqueue).toBe('function');
+    });
+
+    it('should return true is queue is empty', () => {
       expect(queue.canEnqueue()).toBe(true);
     });
 
-    it('should enqueue the indicated element to the queue', () => {
-      queue.enqueue(19);
+    it('should return false if queue is full', () => {
+      queue.MAX_SIZE = 1;
+      queue.queueControl.push(1);
+      expect(queue.canEnqueue()).toBe(false);
+    });
+  });
 
+  describe('Method "display"', () => {
+    it('should be declared', () => {
+      expect(typeof queue.display).toBe('function');
+    });
+
+    it('should return contents of queue', () => {
+      queue.enqueue(10);
+      expect(queue.display()).toEqual([10]);
+    });
+  });
+
+  describe('Method "enqueue"', () => {
+    it('should be declared', () => {
+      expect(typeof queue.enqueue).toBe('function');
+    });
+
+    it('should add the indicated element to the end of the queue', () => {
+      const value = 19;
+      queue.enqueue(value);
       expect(queue.queueControl.length).toBe(1);
+      expect(queue.queueControl[queue.queueControl.length - 1]).toBe(value);
     });
 
-    it('should return that queue is not empty when enqueuing an element', () => {
-      queue.enqueue(19);
-
-      expect(queue.isEmpty()).toBe(false);
-    });
-
-    it('should return the queue when an element is queued', () => {
+    it('should return the queue when an element is inserted', () => {
       expect(queue.enqueue(19)).toEqual([19]);
     });
 
-    it('should insert the elements in the reverse received order', () => {
+    it('should insert the elements in the received order', () => {
       queue.enqueue(19);
       queue.enqueue(88);
-
-      expect(queue.queueControl).toEqual([88, 19]);
+      expect(queue.queueControl).toEqual([19, 88]);
     });
 
-    it("Should return 'Stack Overflow' if the stack is full", () => {
+    it('should throw error with message "QUEUE_OVERFLOW" if the queue is full', () => {
       queue.MAX_SIZE = 1;
       queue.enqueue(19);
+      expect(() => queue.enqueue(88)).toThrow(new Error('QUEUE_OVERFLOW'));
+    });
+  });
 
-      expect(queue.enqueue(88)).toEqual('Queue Overflow');
+  describe('Method "dequeue"', () => {
+    it('should be declared', () => {
+      expect(typeof queue.dequeue).toBe('function');
     });
 
-    it('should return false if the stack is full', () => {
-      queue.MAX_SIZE = 1;
-      queue.enqueue(19);
-
-      expect(queue.canEnqueue()).toBe(false);
-    });
-
-    it('should return the first element inserted in the queue', () => {
+    it('should return the element removed from the beggining of the queue', () => {
       queue.enqueue(19);
       queue.enqueue(88);
-
       expect(queue.dequeue()).toBe(19);
     });
 
-    it("Should return 'Queue Underflow' if there are no elements in the queue", () => {
-      expect(queue.dequeue()).toBe('Queue Underflow');
+    it('should throw error with message "QUEUE_UNDERFLOW" if there are no elements in the queue', () => {
+      expect(() => queue.dequeue()).toThrow(new Error('QUEUE_UNDERFLOW'));
     });
   });
 });
