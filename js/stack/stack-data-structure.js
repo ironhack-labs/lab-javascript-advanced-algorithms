@@ -5,22 +5,36 @@ class StackDataStructure {
   }
 
   canPush() {
-    // ... your code goes here
+    return this.stackControl.length < this.MAX_SIZE ? true : false;
   }
 
   display() {
-    // ... your code goes here
+    if (this.stackControl.length === 0) {
+      return "Stack Underflow";
+    } else if (this.stackControl.length === this.MAX_SIZE) {
+      return "Stack Overflow";
+    } else {
+      return this.stackControl;
+    }
   }
 
   isEmpty() {
-    // ... your code goes here
+    return this.stackControl.length <= 0 ? true : false;
   }
 
   push(item) {
-    // ... your code goes here
+    if (this.canPush()) {
+      this.stackControl.push(item);
+      return [item];
+    }
+    return "Stack Overflow";
   }
 
   pop() {
-    // ... your code goes here
+    if (this.isEmpty()) {
+      return "Stack Underflow";
+    } else {
+      return this.stackControl.pop();
+    }
   }
 }
