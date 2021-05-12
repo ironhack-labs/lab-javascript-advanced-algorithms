@@ -9,7 +9,7 @@ class StackDataStructure {
   }
 
   display() {
-    if (this.stackControl.length === 0) {
+    if (this.stackControl.length <= 0) {
       return "Stack Underflow";
     } else if (this.stackControl.length === this.MAX_SIZE) {
       return "Stack Overflow";
