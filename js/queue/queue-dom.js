@@ -8,11 +8,28 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new QueueDataStructure();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = '';
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+
+  queueUL.innerHTML = ''
+
+  const items = queue.display()
+
+  for (let item of items) {
+    const li = document.createElement('li');
+    li.classList.add('active');
+    li.innerText = item;
+    queueUL.appendChild(li);
+  }
+
+  for (let i = 0; i < newStack.MAX_SIZE - items.length; i++) {
+    const li = document.createElement('li');
+    li.classList.add('inactive');
+    queueUL.appendChild(li);
+  }
+
 };
 
 generateListQueue();
@@ -26,11 +43,14 @@ const generateWarningQueue = type => {
 };
 
 const addToQueue = () => {
-  // ... your code goes here
+  queue.enqueue(queueInput.value)
+  generateListQueue()
+  clearQueueInput()
 };
 
 const removeFromQueue = () => {
-  // ... your code goes here
+  queue.dequeue()
+  generateListQueue()
 };
 
 addQueue.addEventListener('click', addToQueue);
