@@ -18,17 +18,18 @@ In this exercise, we will implement two different abstract data types that are v
 
 ## Requirements
 
-- Fork this repo
+- Fork this repo.
 - Then clone this repo.
+- Visit the "actions" tab in your fork, and enable workflows.
 
 ## Submission
 
 - Upon completion, run the following commands:
 
 ```shell
-git add .
-git commit -m "done"
-git push origin master
+$ git add .
+$ git commit -m "Solved lab"
+$ git push origin master
 ```
 
 - Create Pull Request so your TAs can check up your work.
