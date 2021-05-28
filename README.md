@@ -10,17 +10,23 @@ In this exercise, you will be able to:
 - Learn how to model real-life situations and objects into proper data structures
 - Use tests to develop your solution.
 
+<br>
+
 ## Data Structures
 
 A [data structure](https://en.wikipedia.org/wiki/Data_structure) is a particular way to organize your data so it can be used efficiently. One or more [abstract data types](https://en.wikipedia.org/wiki/Abstract_data_type) can be implemented and they specify the operations that can be performed over a data structure.
 
 In this exercise, we will implement two different abstract data types that are very common: `stacks` and `queues`. Let's take a look at both data structures to understand how they work.
 
+<br>
+
 ## Requirements
 
 - Fork this repo.
 - Then clone this repo.
-- Visit the "actions" tab in your fork, and enable workflows.
+- Visit the "Actions" tab in your fork, and enable workflows.
+
+<br>
 
 ## Submission
 
@@ -32,7 +38,9 @@ $ git commit -m "Solved lab"
 $ git push origin master
 ```
 
-- Create Pull Request so your TAs can check up your work.
+- Create a Pull Request so your TAs can check up your work.
+
+<br>
 
 ## Useful information
 
@@ -46,6 +54,8 @@ This data structure is also called a **LIFO** data structure. LIFO stands for "_
 
 **Hint:** Think about LIFO data structure as if it were a stack of books. You can put a book on top of the others, and you only remove books from the top of the pile.
 
+<br>
+
 ### Queues
 
 Queues are the other abstract data type we are going to be looking at. They are also referred to as a linear data structure. This means that the first element is inserted from one end called **rear**, and the deletion of an existing element takes place from the other end called **front**.
@@ -57,6 +67,8 @@ The process of adding an element into the queue is called **enqueue**, and the p
 ![](https://i.imgur.com/Qo1SQQ7.png)
 
 **Hint**: Think about a queue as if it was a line in a supermarket. When you arrive, you are the last in the line, and the next person to pay for their groceries is the one that had arrived first.
+
+<br>
 
 ## Instructions
 
@@ -70,11 +82,15 @@ This exercise is split into two parts:
 
 - **Visual**: where you will use your DOM manipulation skills to demonstrate how actually stack and queue work. When you come to this part, you will be working on the `js/stack/stack-dom.js` and `js/queue/queue-dom.js`.
 
+<br>
+
 ### Tests, tests!
 
 We have created a set of tests to guide you through the abstract data types implementation. After implementing the JavaScript functionality, create a visual layout to show how each data structure works.
 
-Please, open your terminal, change directories into the root of the lab, and run `npm install` to install the test runner. Now, you can run the `npm run test:watch` command to run automated tests in _watch mode_. Open the resulting `lab-solution.html` file with the "Live Server" VSCode extension to always see the most up to date test results.
+Please, open your terminal, change directories into the root of the lab, and run `npm install` to install the test runner. Next, you can run the `npm run test:watch` command to run automated tests. Open the resulting `lab-solution.html` file with the "Live Server" VSCode extension to see the test results.
+
+<br>
 
 ### Iteration 1 - The Stack
 
@@ -126,6 +142,8 @@ If the value returned by `isEmpty` is `true`, we have a case of "**Stack Underfl
 #### Stack method `display`
 
 Lastly, let's add a method called `display` to the Stack class. The method should simply return the list of items stored in the stack.
+
+<br>
 
 ### Iteration 2 - The Queue
 
