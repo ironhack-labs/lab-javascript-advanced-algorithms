@@ -4,10 +4,6 @@ class Queue {
     this.MAX_SIZE = 10;
   }
 
-  display() {
-    // ... your code goes here
-  }
-
   canEnqueue() {
     // ... your code goes here
   }
@@ -23,6 +19,10 @@ class Queue {
   dequeue() {
     // ... your code goes here
   }
+
+  display() {
+    // ... your code goes here
+  }  
 }
 
 // This is required to enable the automated tests, please ignore it.
