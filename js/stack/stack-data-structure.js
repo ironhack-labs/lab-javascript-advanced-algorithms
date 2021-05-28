@@ -8,10 +8,6 @@ class Stack {
     // ... your code goes here
   }
 
-  display() {
-    // ... your code goes here
-  }
-
   isEmpty() {
     // ... your code goes here
   }
@@ -23,6 +19,10 @@ class Stack {
   pop() {
     // ... your code goes here
   }
+
+  display() {
+    // ... your code goes here
+  }  
 }
 
 // This is required to enable the automated tests, please ignore it.
