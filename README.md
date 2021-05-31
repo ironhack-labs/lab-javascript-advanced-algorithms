@@ -46,7 +46,7 @@ $ git push origin master
 
 ### Stacks
 
-A stack is a simple data structure that allows adding and removing elements in a particular order. Every time an element is added, it goes on the top of the stack. The only element that can be removed is the element that was at the top of the stack.
+A stack is a simple data structure that allows adding and removing elements in a particular order. Every time you add a new element, it goes on the top of the stack. The only element that can be removed is the element that was at the top of the stack.
 
 This data structure is also called a **LIFO** data structure. LIFO stands for "_last in, first out_", meaning that the last element we put in the stack, is the first element that will go out.
 
@@ -94,9 +94,13 @@ Please, open your terminal, change directories into the root of the lab, and run
 
 ### Iteration 1 - The Stack
 
-The first abstract data structure we are going to build is the `Stack`. For this iteration, you'll be working in the **`js/stack/stack-data-structure.js`** file. To start, we've provided you with a `Stack` class. `Stack` has been given a `constructor` where a `stackControl` array has been initialized, and a `MAX_SIZE` property declared. `stackControl` will be used to store the items inside of our stack, and `MAX_SIZE` determines the maximum amount of items that can be held by the stack.
+The first abstract data structure we are going to build is the `Stack`. For this iteration, you'll be working in the **`js/stack/stack-data-structure.js`** file. The tests you will be using while developing the solution are in the `tests/01-stack-data-structure.spec.js` file.
 
-Remember, the `stack` is a **LIFO (Last-In-First-Out)** structure. That means that, **when taking an element out, it should be the last one that had been inserted**. In the end, you'll see that a `Stack` behaves essentially like a JavaScript `Array`. Our goal is to study how that logic it could be implemented from scratch.
+<br>
+
+To start, we've provided you with a `Stack` class. `Stack` has been given a `constructor` where a `stackControl` array has been initialized, and a `MAX_SIZE` property declared. `stackControl` will be used to store the items inside of our stack, and `MAX_SIZE` determines the maximum amount of items that can be held by the stack.
+
+Remember, the `stack` is a **LIFO (Last-In-First-Out)** structure. That means that, **when taking an element out, it should be the last one that had been inserted**. In the end, you'll see that a `Stack` behaves essentially like a JavaScript `Array`. Our goal is to study how that logic could be implemented from scratch.
 
 We'll also have to pay attention to any possible **Stack Overflow** (yes, like the website), and **Stack Underflow**:
 
@@ -147,13 +151,18 @@ Lastly, let's add a method called `display` to the Stack class. The method shoul
 
 ### Iteration 2 - The Queue
 
-The second abstract data type we are going to build is the `Queue`. For this iteration, you'll be working in the **`js/queue/queue-data-structure.js`** file.`Queue` has been given a `constructor` where a `queueControl` array has been initialized, and a `MAX_SIZE` property declared. `queueControl` will be used to store the items inside of our queue, and `MAX_SIZE` determines the maximum amount of items that can be held by the queue.
+The second abstract data type we are going to build is the `Queue`. For this iteration, you'll be working in the **`js/queue/queue-data-structure.js`** file.
+The tests you will be using while developing the solution are in the `tests/02-queue-data-structure.spec.js` file.
+
+<br>
+
+`Queue` has been given a `constructor` where a `queueControl` array has been initialized, and a `MAX_SIZE` property declared. `queueControl` will be used to store the items inside of our queue, and `MAX_SIZE` determines the maximum amount of items that can be held by the queue.
 
 Remember that `queue` is a **FIFO (First-In-First-Out)** structure. That means that, **when taking an element out, it should be the first one that had been inserted**.
 
 You have to add the right methods to add (`enqueue()`) elements to the structure, and it also should have the necessary methods to remove (`dequeue()`) elements from it in the same order we added them.
 
-Similarly to the edge scenarios we had to cover for the `Stack` data structure, we'll have to be aware of **Queue Overflow** and **Queue Underflow**.
+Similar to the edge scenarios we had to cover for the `Stack` data structure, we'll have to be aware of **Queue Overflow** and **Queue Underflow**.
 
 - Queue Overflow occurs when we try to add an element into a queue that is already full.
 - Queue Underflow occurs when we try to get an element from an empty queue.
@@ -216,9 +225,13 @@ We already provided you with full HTML code in the `index.html`. Also, we gave y
 #### Stack Underflow
 ![](https://i.imgur.com/AiGT158.png) -->
 
-Most of the bare-bones are already implemented, and the interface is self explanatory. Make it work to the best of your ability.
+Most of the bare-bones are already implemented, and the interface is self-explanatory. Make it work to the best of your ability.
+
+<br>
 
 **Happy coding!** :heart:
+
+<br>
 
 ## Extra Resources
 
