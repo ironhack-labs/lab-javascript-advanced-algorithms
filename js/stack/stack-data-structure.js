@@ -28,7 +28,7 @@ class Stack {
       this.stackControl.push(item)
       return this.stackControl
     } else {
-      throw 'STACK_OVERFLOW'
+      throw console.error('STACK_OVERFLOW')
     }
     // ... your code goes here
   }
@@ -37,7 +37,7 @@ class Stack {
     if (!this.isEmpty()) {
       return this.stackControl.pop()
     } else {
-      throw 'STACK_UNDERFLOW'
+      throw console.error('STACK_UNDERFLOW')
     }// ... your code goes here
   }
   /**

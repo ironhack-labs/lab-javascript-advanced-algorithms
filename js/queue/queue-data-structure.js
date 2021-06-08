@@ -19,7 +19,7 @@ class Queue {
       this.queueControl.push(item)
       return this.queueControl
     } else {
-      throw 'QUEUE_OVERFLOW'
+      throw console.error('QUEUE_OVERFLOW')
     }// ... your code goes here
   }
 
@@ -27,7 +27,7 @@ class Queue {
     if (!this.isEmpty()) {
       return this.queueControl.shift()
     } else {
-      throw 'QUEUE_UNDERFLOW'
+      throw console.error('QUEUE_UNDERFLOW')
     }// ... your code goes here
   }
 

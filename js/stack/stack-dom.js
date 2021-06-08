@@ -12,35 +12,59 @@ const newStack = new Stack();
 
 const clearStackInput = () => {
   // ... your code goes here
+  ///??????
 };
 
 const renderListStack = () => {
   // ... your code goes here
+  ///??????
 };
 
 renderListStack();
-
+//NO SE COMO FUNCIONA EL TRY--CATCH!!!(8'''''O)
 const generateWarningStack = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    const divWarningUvf = document.getElementById("warning-bottom")
+    divWarningUvf.style.display = 'block';
+    divWarningUvf.textContent = 'UNDERFLOW'// ... your code goes here
   } else if (type === 'overflow') {
-    // ... your code goes here
+    const divWarningOvf = document.getElementById("warning-top")
+    divWarningOvf.style.display = 'block';
+    divWarningOvf.textContent = 'OVERFLOW'// ... your code goes here
   }
 };
 
 const addToStack = () => {
-  try {
-    // ... your code goes here
-  } catch (error) {
-    // there was an overflow error, handle it
+  if (newStack.canPush()) {
+    console.log(newStack.canPush());
+    console.log("I'm adding stack")
+    const liStack = document.createElement('li')
+    liStack.className = 'active'
+    stackList.appendChild(liStack)
+    console.log(newStack.canPush())
+    newStack.push()
   }
-};
+  else if (!newStack.canPush()) {
+    // if(canPush() === false){
+    console.log('this is false:     ', newStack.canPush());
+    // const divWarningOvf = document.getElementById("warning-top")
+    // divWarningOvf.style.display = 'block';
+    // divWarningOvf.textContent= 'OVERFLOW'
+    generateWarningStack('overflow')
+
+  }
+  //  generateWarningStack('overflow') // there was an overflow error, handle it
+}
+
 
 const removeFromStack = () => {
-  try {
-    // ... your code goes here
-  } catch (error) {
-    // there was an underflow error, handle it
+  if (!newStack.isEmpty()) {//Code wins--Luca lose--- I tried, so hard-- como pueder salir esto???
+    console.log("I'm removing stack")
+    const liStack = document.querySelector('#stack-list li')
+    stackList.removeChild(stackList.lastElementChild)
+    newStack.pop() // ... your code goes here
+  } else if (newStack.isEmpty()) {
+    generateWarningStack('underflow')
   }
 };
 

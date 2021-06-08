@@ -28,16 +28,25 @@ const generateWarningQueue = (type) => {
 };
 
 const addToQueue = () => {
-  try {
-    // ... your code goes here
+  try {//no se come funciona try!!!!
+    console.log("I'm adding queue")
+    const liQueue = document.createElement('li')
+    liQueue.className = 'active'
+    queueUL.appendChild(liQueue)
+   // console.log(queue.canPush())
+    queue.enqueue()// ... your code goes here
   } catch (error) {
-    // there was an overflow error, handle it
+    const liQueue = document.createElement('li')
+    // liQueue.className = 'inactive'
+    liQueue.innerText = 'QUEUE_OVERFLOW'
+
   }
 };
 
 const removeFromQueue = () => {
   try {
-    // ... your code goes here
+    console.log("I'm removing queue")
+    queueUL.removeChild(queueUL.lastElementChild)  // ... your code goes here
   } catch (error) {
     // there was an underflow error, handle it
   }
