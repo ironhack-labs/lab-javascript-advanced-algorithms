@@ -11,6 +11,8 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
+  //stackInput.value
+  console.log(stackInput.value)
   // ... your code goes here
 };
 
