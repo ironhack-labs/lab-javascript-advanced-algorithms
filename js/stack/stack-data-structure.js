@@ -28,29 +28,18 @@ class Stack {
       this.stackControl.push(item)
       return this.stackControl
     } else {
-      return new Error('STACK_OVERFLOW')
+      throw 'STACK_OVERFLOW'
     }
     // ... your code goes here
   }
-  /**Stack method pop
-  Add a method called pop to the Stack class.
-  pop will be used to remove the last element in the stack.
   
-  When pop is called,
-  you should first check whether the stack holds any items.
-  To do so, you can call the stack's isEmpty method.
-  
-  If the value returned by isEmpty is false,
-  you should remove the last item of the stackControl array.
-  
-  If the value returned by isEmpty is true,
-  we have a case of "Stack Underflow".
-  Stack Underflow occurs when we try to remove an item from an empty stack.
-  This operation shouldn't be allowed.
-  As such, we should throw an error with the message 'STACK_UNDERFLOW'.
-   */
   pop() {
-    // ... your code goes here
+    if (!this.isEmpty()) {
+      this.stackControl.pop()
+      return this.stackControl.pop()
+    } else {
+      throw 'STACK_UNDERFLOW'
+    }// ... your code goes here
   }
   /**
   Stack method display
