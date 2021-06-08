@@ -11,8 +11,10 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
-};
+  if (this.queue.queueControl === this.MAX_SIZE) return false
+  if (this.queue.queueControl < this.MAX_SIZE) return true
+
+}
 
 const renderListStack = () => {
   // ... your code goes here
