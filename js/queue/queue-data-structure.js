@@ -5,24 +5,38 @@ class Queue {
   }
 
   canEnqueue() {
-    // ... your code goes here
+    return this.getSize() < this.MAX_SIZE
+    // console.log(this.getSize())
   }
 
   isEmpty() {
-    // ... your code goes here
+    return !this.getSize()
   }
 
   enqueue(item) {
-    // ... your code goes here
+    if( !this.canEnqueue() ){
+      console.log('QUEUE_OVERFLOW')
+      throw new Error('QUEUE_OVERFLOW');
+    }
+    this.queueControl.push(item)
+    return this.queueControl
+
   }
 
   dequeue() {
-    // ... your code goes here
+    if(this.isEmpty()){
+      throw new Error('QUEUE_UNDERFLOW');
+    }
+    return this.queueControl.shift()
   }
 
   display() {
-    // ... your code goes here
+    return this.queueControl
   }  
+
+  getSize(){
+    return this.queueControl.length
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.

@@ -2,47 +2,67 @@ const stackList = document.getElementById('stack-list');
 const stackInput = document.getElementById('stack-input');
 const container = document.getElementById('container');
 const warningTopStack = document.querySelector('#stack-container .warning-top');
-const warningBottomStack = document.querySelector(
-  '#stack-container .warning-bottom'
-);
+const warningBottomStack = document.querySelector('#stack-container .warning-bottom');
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
+
+const lis = document.querySelectorAll('.list-stack > li')
+// console.log(lis)
+// lis.forEach( el => el.className='active')
 
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = '';
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  setTheActiveElements(newStack)
 };
 
 renderListStack();
 
 const generateWarningStack = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    console.log('STACK_OVERFLOW')
   } else if (type === 'overflow') {
-    // ... your code goes here
+    console.log('STACK_UNDERFLOW')
   }
 };
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    const newElement = stackInput.value;
+    newStack.stackControl.push(newElement)
+    renderListStack(newStack)
+    clearStackInput()
   } catch (error) {
-    // there was an overflow error, handle it
+    alert(error)
   }
 };
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
+    newStack.pop()
+    renderListStack(newStack)
   } catch (error) {
-    // there was an underflow error, handle it
+    alert(error)
   }
 };
 
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);
+
+function setTheActiveElements(stack){
+  lis.forEach( el => el.className='inactive')
+  for(let i = 0; i < stack.stackControl.length; i++ ){
+    // try{
+      lis[i].className='active'
+      lis[i].textContent=stack.stackControl[i];
+      console.log(i)
+    // }catch(err){
+    //   alert(err)
+    // }
+
+  }
+}

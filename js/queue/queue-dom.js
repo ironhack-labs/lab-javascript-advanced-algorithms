@@ -7,41 +7,59 @@ const warningBottomQueue = document.querySelector(
 const addQueue = document.querySelector('.btn-add-queue');
 const dequeue = document.querySelector('.btn-take-dequeue');
 
+const qLis = document.querySelectorAll('.list-queue > li')
 const queue = new Queue();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = ''
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  setQueueTheActiveElements(queue)
 };
 
 generateListQueue();
 
 const generateWarningQueue = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    console.log('STACK_UNDERFLOW')
   } else if (type === 'overflow') {
-    // ... your code goes here
+    console.log('STACK_OVERFLOW')
   }
 };
 
 const addToQueue = () => {
   try {
-    // ... your code goes here
+    const newQElement = queueInput.value;    
+    console.log(newQElement)    
+    queue.enqueue(newQElement)    
+    console.log(newQElement)    
+    console.log(queue.display())
+    generateListQueue(queue)
+    clearQueueInput()
   } catch (error) {
-    // there was an overflow error, handle it
+    alert(error)
   }
 };
 
 const removeFromQueue = () => {
   try {
-    // ... your code goes here
+    queue.dequeue()
+    generateListQueue(queue)
   } catch (error) {
-    // there was an underflow error, handle it
+    alert(error)
   }
 };
 
 addQueue.addEventListener('click', addToQueue);
 dequeue.addEventListener('click', removeFromQueue);
+
+
+function setQueueTheActiveElements(queue){
+  qLis.forEach( el => el.className='inactive')
+  for(let i = 0; i < queue.getSize(); i++ ){
+    qLis[i].className='active'
+    qLis[i].textContent=queue.queueControl[i];
+  }
+}
+
