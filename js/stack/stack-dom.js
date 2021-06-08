@@ -11,16 +11,29 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ''
 };
 
 const renderListStack = () => {
+  //rellenar los cuadraos gris => azules
+  const stackArr = newStack.display()
+  const liItems = document.querySelectorAll('.list-stack li')
+  console.log(liItems)
+
+  liItems.forEach((element, index) => {
+    if (stackArr.length < index) {
+      element.className = 'active'
+    }
+  });
+
+
   // ... your code goes here
 };
 
 renderListStack();
 
 const generateWarningStack = (type) => {
+  //generar el error en el dom
   if (type === 'underflow') {
     // ... your code goes here
   } else if (type === 'overflow') {
@@ -30,8 +43,10 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
+    renderListStack()
     // ... your code goes here
   } catch (error) {
+    console.log(error, "el error")
     // there was an overflow error, handle it
   }
 };
