@@ -12,10 +12,14 @@ const newStack = new Stack();
 
 const clearStackInput = () => {
   // ... your code goes here
+
+
 };
 
 const renderListStack = () => {
   // ... your code goes here
+
+
 };
 
 renderListStack();
@@ -23,6 +27,7 @@ renderListStack();
 const generateWarningStack = (type) => {
   if (type === 'underflow') {
     // ... your code goes here
+
   } else if (type === 'overflow') {
     // ... your code goes here
   }
