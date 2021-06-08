@@ -11,36 +11,60 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = '';
+
+  warningBottomStack.style.display = 'none';
+  warningBottomStack.textContent = '';
+  warningTopStack.style.display = 'none';
+  warningTopStack.textContent = '';
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  let visualStack = document.querySelectorAll('.container .list-stack li');
+  for (let i = 0; i < newStack.display().length; i++) {
+    visualStack[i].classList.replace('inactive', 'active');
+    visualStack[i].textContent = newStack.display()[i];
+  }
+
+  for (let i = newStack.display().length; i < newStack.MAX_SIZE; i++) {
+    visualStack[i].classList.replace('active', 'inactive');
+    visualStack[i].textContent = '';
+  }
 };
 
 renderListStack();
 
 const generateWarningStack = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    // alert('STACK UNDERFLOW!');
+    warningBottomStack.style.display = 'block';
+    warningBottomStack.textContent = 'STACK UNDERFLOW';
   } else if (type === 'overflow') {
-    // ... your code goes here
+    // alert('STACK OVERFLOW!');
+    warningTopStack.style.display = 'block';
+    warningTopStack.textContent = 'STACK OVERFLOW';
   }
 };
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    newStack.push(stackInput.value);
+
+    clearStackInput();
+    renderListStack();
   } catch (error) {
-    // there was an overflow error, handle it
+    generateWarningStack('overflow');
   }
 };
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
+    newStack.pop();
+
+    clearStackInput();
+    renderListStack();
   } catch (error) {
-    // there was an underflow error, handle it
+    generateWarningStack('underflow');
   }
 };
 
