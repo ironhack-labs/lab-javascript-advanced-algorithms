@@ -1,4 +1,48 @@
-const stackList = document.getElementById('stack-list');
+/* creacion */
+const newStack = document.createElement('li')
+newStack.setAttribute('class', 'inactive')
+
+const text = document.createTextNode('Nuevo item')
+newStack.appendChild(text)
+
+
+/*const removeStack = document.querySelectorAll('li')[0]
+document.querySelector('.list-stack').removeChild(removeStack)*/
+        
+
+
+
+const listStack = []
+
+
+const stackList = document.querySelectorAll('.list-stack li')
+
+const buttonAdd = document.querySelector('#add-stack')
+
+buttonAdd.onclick = function () {
+  listStack.push(1)
+  console.log(listStack)
+  document.querySelector('.list-stack').appendChild(newStack)
+}
+
+
+
+/*const buttonRemove = document.querySelector('#take-stack')
+
+buttonAdd.onclick = function () {
+  listStack.pop()
+  console.log(listStack)
+  document.querySelector('.list-stack').appendChild(removeStack)
+}*/
+
+
+
+
+
+
+
+
+/*const stackList = document.getElementById('stack-list');
 const stackInput = document.getElementById('stack-input');
 const container = document.getElementById('container');
 const warningTopStack = document.querySelector('#stack-container .warning-top');
@@ -12,10 +56,12 @@ const newStack = new Stack();
 
 const clearStackInput = () => {
   // ... your code goes here
+  stackInput.Value = ""
 };
 
 const renderListStack = () => {
   // ... your code goes here
+  
 };
 
 renderListStack();
@@ -46,3 +92,4 @@ const removeFromStack = () => {
 
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);
+*/
