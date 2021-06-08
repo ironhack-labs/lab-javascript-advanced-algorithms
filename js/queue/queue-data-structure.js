@@ -17,7 +17,7 @@ class Queue {
       throw new Error('QUEUE_OVERFLOW')
     }
 
-    this.queueControl.push(item);
+    this.queueControl.unshift(item);
     return this.queueControl
   }
 
@@ -26,7 +26,7 @@ class Queue {
       throw new Error('QUEUE_UNDERFLOW')
     }
 
-    return this.queueControl.shift();
+    return this.queueControl.pop();
   }
 
   display() {

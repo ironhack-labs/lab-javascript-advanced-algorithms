@@ -11,6 +11,7 @@ class Stack {
   isEmpty() {
     return !this.stackControl.length  ? true : false;
   }
+  
   push(item) {
     // Check if can push is true
     if (!this.canPush()) {
@@ -40,3 +41,5 @@ class Stack {
 
 // This is required to enable the automated tests, please ignore it.
 if (typeof module !== 'undefined') module.exports = Stack;
+
+
