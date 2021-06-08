@@ -22,7 +22,7 @@ class Stack {
     else { return true }
     // ... your code goes here
   }
-  
+
   push(item) {
     if (this.canPush()) {
       this.stackControl.push(item)
@@ -32,10 +32,9 @@ class Stack {
     }
     // ... your code goes here
   }
-  
+
   pop() {
     if (!this.isEmpty()) {
-      this.stackControl.pop()
       return this.stackControl.pop()
     } else {
       throw 'STACK_UNDERFLOW'
@@ -47,7 +46,7 @@ class Stack {
   The method should simply return the list of items stored in the stack.
      */
   display() {
-    // ... your code goes here
+    return this.stackControl// ... your code goes here
   }
 }
 

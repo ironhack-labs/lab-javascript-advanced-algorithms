@@ -25,16 +25,15 @@ class Queue {
 
   dequeue() {
     if (!this.isEmpty()) {
-      this.queueControl.shift()
-      return this.queueControl()
+      return this.queueControl.shift()
     } else {
       throw 'QUEUE_UNDERFLOW'
     }// ... your code goes here
   }
 
   display() {
-    // ... your code goes here
-  }  
+    return this.queueControl// ... your code goes here
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.
