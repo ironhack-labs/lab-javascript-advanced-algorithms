@@ -11,26 +11,36 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  const allStacks = document.querySelectorAll(".stack-list .inactive")
+  allStacks.forEach(function eachStack() {
+    allStacks.style.backgroundColor = 'blue'
+  })
+
+
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  const allStacks = document.querySelectorAll(".stack-list .inactive")
+  allStacks.forEach(function eachStack() {
+    allStacks.style.backgroundColor = 'gray'
+  })
 };
 
 renderListStack();
 
 const generateWarningStack = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    const button1 = document.querySelector('.add-stack')
+    return button1.window.alert('underflow')
   } else if (type === 'overflow') {
-    // ... your code goes here
+    const button1 = document.querySelector('.take-stack')
+    return button1.window.alert('overflow')
   }
 };
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+
   } catch (error) {
     // there was an overflow error, handle it
   }
