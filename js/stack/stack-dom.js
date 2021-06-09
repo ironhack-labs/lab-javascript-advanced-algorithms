@@ -33,7 +33,7 @@ const generateWarningStack = (type) => {
 const addToStack = () => {
   try {
     const newElement = stackInput.value;
-    newStack.stackControl.push(newElement)
+    newStack.push(newElement)
     renderListStack(newStack)
     clearStackInput()
   } catch (error) {
