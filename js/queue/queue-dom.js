@@ -56,7 +56,10 @@ dequeue.addEventListener('click', removeFromQueue);
 
 
 function setQueueTheActiveElements(queue){
-  qLis.forEach( el => el.className='inactive')
+  qLis.forEach( el => {
+    el.className='inactive'
+    el.textContent = ''
+  })
   for(let i = 0; i < queue.getSize(); i++ ){
     qLis[i].className='active'
     qLis[i].textContent=queue.queueControl[i];

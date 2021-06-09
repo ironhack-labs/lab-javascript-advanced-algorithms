@@ -54,7 +54,11 @@ addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);
 
 function setTheActiveElements(stack){
-  lis.forEach( el => el.className='inactive')
+  lis.forEach( el => {
+    el.className='inactive'
+    el.textContent=''
+  })
+
   for(let i = 0; i < stack.stackControl.length; i++ ){
     // try{
       lis[i].className='active'

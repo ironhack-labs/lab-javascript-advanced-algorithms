@@ -15,9 +15,12 @@ class Stack {
   push(item) {
     if( !this.canPush()){
       throw new Error('STACK_OVERFLOW') 
+      // return this.stackControl
+    }else{
+      const height = this.stackControl.length
+      this.stackControl[height] = item
     }
-    const height = this.stackControl.length
-    this.stackControl[height] = item
+
     // this.stackControl.push(item)
     return this.stackControl
   }
