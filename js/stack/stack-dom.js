@@ -10,38 +10,53 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new Stack();
 
+warningTopStack.innerHTML = 'STACK OVERFLOW';
+warningBottomStack.innerHTML = `STACK UNDERFLOW`;
+
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = '';
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  stackList.innerHTML = '';
+  newStack.display().forEach(
+    (element) =>
+      (stackList.innerHTML += `
+    <li style='background-color: lightgrey; margin-bottom: 2px;'>${element}</li>
+  `)
+  );
 };
 
 renderListStack();
 
 const generateWarningStack = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.style = 'display:block';
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.style = 'display:block';
   }
 };
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    newStack.push(stackInput.value);
   } catch (error) {
-    // there was an overflow error, handle it
+    generateWarningStack('overflow');
   }
+  clearStackInput();
+  renderListStack();
+  warningBottomStack.style = 'display:none';
 };
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
+    newStack.pop();
   } catch (error) {
-    // there was an underflow error, handle it
+    generateWarningStack('underflow');
   }
+  clearStackInput();
+  renderListStack();
+  warningTopStack.style = 'display:none';
 };
 
 addStackBtn.addEventListener('click', addToStack);

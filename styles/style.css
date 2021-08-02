@@ -29,16 +29,17 @@ ul.list-queue {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-left: 0;
 }
 
 ul.list-queue > li {
   list-style: none;
-  margin: 0px 4px 0px 4px;
+  margin: 0px 1% 0px 1%;
   padding: 5px;
   text-align: center;
   display: inline;
+  width: 8%;
 }
 
 div.warning-top {
