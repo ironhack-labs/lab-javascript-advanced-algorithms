@@ -10,37 +10,37 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new Stack();
 
-const clearStackInput = () => {
-  // ... your code goes here
-};
+const clearStackInput = () => {};
 
 const renderListStack = () => {
-  // ... your code goes here
+  console.log(newStack.display());
 };
 
 renderListStack();
 
 const generateWarningStack = (type) => {
-  if (type === 'underflow') {
-    // ... your code goes here
-  } else if (type === 'overflow') {
-    // ... your code goes here
+  if (type.includes('OVER')) {
+    console.log(type);
+  } else if (type.includes('UNDER')) {
+    console.log(type);
   }
 };
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    newStack.push('hello');
+    renderListStack();
   } catch (error) {
-    // there was an overflow error, handle it
+    generateWarningStack(error.message);
   }
 };
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
+    newStack.pop();
+    renderListStack();
   } catch (error) {
-    // there was an underflow error, handle it
+    generateWarningStack(error.message);
   }
 };
 
