@@ -12,6 +12,8 @@ const newStack = new Stack();
 
 const clearStackInput = () => {
   // ... your code goes here
+
+
 };
 
 const renderListStack = () => {
@@ -29,9 +31,25 @@ const generateWarningStack = (type) => {
 };
 
 const addToStack = () => {
-  try {
+  try { 
     // ... your code goes here
-  } catch (error) {
+   if(newStack.canPush()){
+
+    for (let i = 0; i<li.length; i++){
+
+      let li = document.querySelectorAll("li"){
+
+        if(li[i].style.backgroundColor = 'blue'){
+          continue
+        } else {
+          li[i].style.backgroundColor = 'blue'
+          newStack.push(li);
+        }
+    }
+
+    
+    
+   }
     // there was an overflow error, handle it
   }
 };
