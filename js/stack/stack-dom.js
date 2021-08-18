@@ -14,8 +14,15 @@ const clearStackInput = () => {
   // ... your code goes here
 };
 
+const stackArray = [];
 const renderListStack = () => {
   // ... your code goes here
+  for (let i = 0; i < newStack.MAX_SIZE; i++) {
+    const element = document.createElement('li');
+    element.setAttribute('class', `inactive`);
+    stackArray.push(element);
+    stackList.appendChild(element);
+  }
 };
 
 renderListStack();
@@ -30,17 +37,27 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
+    newStack.push('');
+    for (let i = 0; i < newStack.stackControl.length; i++) {
+      stackArray[i].setAttribute('class', 'active');
+    }
     // ... your code goes here
   } catch (error) {
     // there was an overflow error, handle it
+    warningTopStack.style.display = 'block';
+    warningTopStack.innerHTML = error;
   }
 };
 
 const removeFromStack = () => {
   try {
     // ... your code goes here
+    newStack.pop('');
+    stackArray[newStack.stackControl.length].setAttribute('class', 'inactive');
   } catch (error) {
     // there was an underflow error, handle it
+    warningBottomStack.style.display = 'block';
+    warningBottomStack.innerHTML = error;
   }
 };
 
