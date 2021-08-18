@@ -1,3 +1,5 @@
+const stack = new Stack();
+
 const stackList = document.getElementById('stack-list');
 const stackInput = document.getElementById('stack-input');
 const container = document.getElementById('container');
@@ -11,15 +13,21 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  for (let i = 0; i < stack.MAX_SIZE; i++) {
+    let liChild = document.createElement('li');
+    liChild.setAttribute('class', 'inactive');
+    stackList.appendChild(liChild);
+  }
 };
 
 renderListStack();
 
+// Errors handled on add/remove functions
+/*
 const generateWarningStack = (type) => {
   if (type === 'underflow') {
     // ... your code goes here
@@ -27,20 +35,40 @@ const generateWarningStack = (type) => {
     // ... your code goes here
   }
 };
+*/
+
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    stack.push();
+    let lastLi = document.getElementsByClassName('inactive')[0];
+    lastLi.setAttribute('class', 'active');
+
+    if (stack.stackControl.length === 1) {
+      let stackError = document.getElementsByClassName('warning-bottom alert alert-danger')[0];
+      stackError.setAttribute('style', 'display: none');
+    }
   } catch (error) {
-    // there was an overflow error, handle it
+    let stackError = document.getElementsByClassName('warning-top alert alert-danger')[0];
+    stackError.setAttribute('style', 'display: block');
+    stackError.innerHTML = "overflow";
   }
 };
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
+    stack.pop();
+    let firstLi = document.getElementsByClassName('active')[stack.stackControl.length];
+    firstLi.setAttribute('class', 'inactive');
+
+    if (stack.stackControl.length === stack.MAX_SIZE - 1) {
+      let stackError = document.getElementsByClassName('warning-top alert alert-danger')[0];
+      stackError.setAttribute('style', 'display: none');
+    }
   } catch (error) {
-    // there was an underflow error, handle it
+    let stackError = document.getElementsByClassName('warning-bottom alert alert-danger')[0];
+    stackError.setAttribute('style', 'display: block');
+    stackError.innerHTML = "underflow";
   }
 };
 

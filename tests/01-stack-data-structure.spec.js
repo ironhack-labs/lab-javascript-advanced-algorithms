@@ -104,6 +104,6 @@ describe('Stack', () => {
       stack.push(10);
       expect(stack.display()).toEqual([10]);
     });
-  });  
+  });
 });
 
