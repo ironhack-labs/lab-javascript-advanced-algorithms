@@ -7,6 +7,7 @@ const warningBottomStack = document.querySelector(
 );
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
+const list = document.getElementsByClassName('inactive')
 
 const newStack = new Stack();
 
@@ -16,6 +17,10 @@ const clearStackInput = () => {
 
 const renderListStack = () => {
   // ... your code goes here
+for(let i = 0;i < newStack.display().length;i++) {
+    list[i].classList.remove('inactive')
+    list[i].classList.add('active')
+  }
 };
 
 renderListStack();
@@ -31,16 +36,23 @@ const generateWarningStack = (type) => {
 const addToStack = () => {
   try {
     // ... your code goes here
+    newStack.push() 
+    renderListStack()
+    console.log(newStack.display());
   } catch (error) {
     // there was an overflow error, handle it
+    alert(error.message)
   }
 };
 
 const removeFromStack = () => {
   try {
     // ... your code goes here
+    newStack.pop()
+    console.log(newStack.display());
   } catch (error) {
     // there was an underflow error, handle it
+    alert(error.message)
   }
 };
 

@@ -29,17 +29,23 @@ const generateWarningQueue = (type) => {
 
 const addToQueue = () => {
   try {
+    queue.enqueue()
     // ... your code goes here
   } catch (error) {
     // there was an overflow error, handle it
+    alert(error.message)
   }
 };
 
 const removeFromQueue = () => {
   try {
     // ... your code goes here
+    queue.dequeue()
+    console.log(this.queueControl)
   } catch (error) {
     // there was an underflow error, handle it
+    alert(error.message)
+    
   }
 };
 
