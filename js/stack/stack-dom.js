@@ -51,7 +51,6 @@ const addToStack = () => {
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
     newStack.pop('');
     stackArray[newStack.stackControl.length].setAttribute('class', 'inactive');
   } catch (error) {
