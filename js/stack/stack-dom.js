@@ -1,4 +1,4 @@
-const stackList = document.getElementById('stack-list');
+const stackList = document.getElementById("stack-list");
 const stackInput = document.getElementById('stack-input');
 const container = document.getElementById('container');
 const warningTopStack = document.querySelector('#stack-container .warning-top');
@@ -11,36 +11,66 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  let stackLength = newStack.stackControl.length;
+  let stackLi = document.querySelectorAll("#stack-list li");
+
+  stackLi[stackLength].className = "inactive";
+  stackLi[stackLength].textContent = "";
+
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  let li = document.createElement("li");
+  li.className = "inactive";
+
+  for (let i = 0; i < newStack.MAX_SIZE; i++) {
+    stackList.appendChild(li.cloneNode());
+  }
 };
 
 renderListStack();
 
 const generateWarningStack = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningTopStack.style.display = "block";
+    warningTopStack.textContent = type;
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.style.display = "block";
+    warningTopStack.textContent = type;
   }
 };
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    let newStackItem = stackInput.value;
+    let updatedStack = newStack.push(newStackItem);
+    let stackLi = document.querySelectorAll("#stack-list li");
+
+    for (let i = 0; i < updatedStack.length; i++) {
+      stackLi[i].className = "active";
+      stackLi[i].textContent = updatedStack[i];
+    }
+
+    if (warningTopStack.textContent = "underflow") {
+      warningTopStack.style.display = "none";
+    }
   } catch (error) {
-    // there was an overflow error, handle it
+    generateWarningStack('overflow');
   }
+
+  stackInput.value = "";
 };
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
+    newStack.pop();
+    clearStackInput();
+
+    if (warningTopStack.textContent = "overflow") {
+      warningTopStack.style.display = "none";
+    }
   } catch (error) {
-    // there was an underflow error, handle it
+    generateWarningStack('underflow');
   }
 };
 
