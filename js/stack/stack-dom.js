@@ -11,11 +11,15 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = '';
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  for (let i = 0; i < 10; i++) {
+    let stackElm = document.createElement('li');
+    stackElm.className = 'inactive';
+    document.getElementById('stack-list').appendChild(stackElm);
+  }
 };
 
 renderListStack();

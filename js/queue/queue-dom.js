@@ -10,11 +10,15 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new Queue();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = '';
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  for (let i = 0; i < 10; i++) {
+    let queueElm = document.createElement('li');
+    queueElm.className = 'inactive';
+    document.getElementById('queue-list').appendChild(queueElm);
+  }
 };
 
 generateListQueue();
