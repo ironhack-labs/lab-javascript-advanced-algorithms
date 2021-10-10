@@ -5,24 +5,43 @@ class Queue {
   }
 
   canEnqueue() {
-    // ... your code goes here
+    if (this.queueControl.length === this.MAX_SIZE) {
+      return false;
+    } else {
+      return true;
+    }
   }
 
   isEmpty() {
-    // ... your code goes here
+    if (this.queueControl.length === 0) {
+      return true
+    } else {
+      return false;
+    }
   }
 
   enqueue(item) {
-    // ... your code goes here
-  }
+    if (this.queueControl.canEnqueue !== true) {
+      this.queueControl.push(item);
+      return this.queueControl;
+    } else {
+      throw ('QUEUE_OVERFLOW');
+    }
 
+  }
+  //If the value returned by isEmpty is false, you should remove the first item of the queueControl array.
   dequeue() {
-    // ... your code goes here
+    if (this.queueControl.isEmpty === true) {
+      const shifted = this.queueControl.shift();
+      return shifted;
+    } else {
+      throw ('QUEUE_UNDERFLOW');
+    }
   }
 
   display() {
-    // ... your code goes here
-  }  
+    return this.queueControl;
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.
