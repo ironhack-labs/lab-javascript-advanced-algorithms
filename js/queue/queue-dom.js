@@ -1,4 +1,4 @@
-allconst queueUL = document.querySelector('.list-queue');
+const queueUL = document.querySelector('.list-queue');
 const queueInput = document.querySelector('.queue-input');
 const warningTopQueue = document.querySelector('#queue-container .warning-top');
 const warningBottomQueue = document.querySelector(
