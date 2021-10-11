@@ -21,7 +21,7 @@ class Queue {
   }
 
   enqueue(item) {
-    if (this.queueControl.canEnqueue !== true) {
+    if (this.canEnqueue()) {
       this.queueControl.push(item);
       return this.queueControl;
     } else {
@@ -31,7 +31,7 @@ class Queue {
   }
   //If the value returned by isEmpty is false, you should remove the first item of the queueControl array.
   dequeue() {
-    if (this.queueControl.isEmpty === true) {
+    if (!this.isEmpty()) {
       const shifted = this.queueControl.shift();
       return shifted;
     } else {

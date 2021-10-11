@@ -5,7 +5,7 @@ class Stack {
   }
 
   canPush() {
-    if (this.stackControl < this.MAX_SIZE) {
+    if (this.stackControl.length < this.MAX_SIZE) {
       return true;
     } else {
       return false;
@@ -21,25 +21,22 @@ class Stack {
   }
 
   push(item) {
-    if (this.stackControl.length >= this.MAX_SIZE) {
-      throw ('STACK_OVERFLOW');
-    } else {
+    if (this.canPush()) {
       this.stackControl.push(item);
       return this.stackControl;
+
+    } else {
+      throw ('STACK_OVERFLOW');
     }
 
   }
 
   pop() {
-
-    if (this.stackControl.isEmpty === false) {
-
-      const popped = this.stackControl.pop();
-      return popped;
-
+    if (this.isEmpty() === false) {
+      return this.stackControl.pop();
     } else {
 
-      throw ('STACK_UNDERFLOW');
+      throw new Error('STACK_UNDERFLOW');
     }
 
   }
