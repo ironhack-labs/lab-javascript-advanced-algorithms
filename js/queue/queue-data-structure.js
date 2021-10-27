@@ -1,28 +1,45 @@
 class Queue {
-  constructor() {
-    this.queueControl = [];
-    this.MAX_SIZE = 10;
-  }
+	constructor() {
+		this.queueControl = [];
+		this.MAX_SIZE = 10;
+	}
 
-  canEnqueue() {
-    // ... your code goes here
-  }
+	canEnqueue() {
+		if (this.queueControl.length >= this.MAX_SIZE){
+			return false;
+		}
+		return true;
+	}
 
-  isEmpty() {
-    // ... your code goes here
-  }
+	isEmpty() {
+		if (this.queueControl.length === 0) {
+			return true;
+		}
+		return false;
+	}
 
-  enqueue(item) {
-    // ... your code goes here
-  }
+	enqueue(item) {
+		if (this.canEnqueue() === false) {
+			throw new Error('QUEUE_OVERFLOW');
+		}
 
-  dequeue() {
-    // ... your code goes here
-  }
+		this.queueControl.push(item)
+		return this.queueControl;
+	}
 
-  display() {
-    // ... your code goes here
-  }  
+	dequeue() {
+		if (this.isEmpty() === true) {
+			throw new Error('QUEUE_UNDERFLOW');
+		}
+
+		let lastItem = this.queueControl.shift();
+
+		return lastItem;
+	}
+
+	display() {
+		return this.queueControl;
+	}
 }
 
 // This is required to enable the automated tests, please ignore it.
