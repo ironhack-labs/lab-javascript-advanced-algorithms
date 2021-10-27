@@ -32,7 +32,7 @@ class Queue {
     
     return this.queueControl.reverse();
   }
-
+ 
   dequeue() {
     
     if (this.isEmpty()) {
