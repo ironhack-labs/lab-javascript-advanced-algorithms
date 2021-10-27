@@ -2,26 +2,45 @@ class Stack {
   constructor() {
     this.stackControl = [];
     this.MAX_SIZE = 10;
+    this.item = [];
   }
 
   canPush() {
-    // ... your code goes here
+    if(this.stackControl.length < this.MAX_SIZE) {
+      return true;
+    } else {
+      return false; 
+    }
   }
 
   isEmpty() {
-    // ... your code goes here
+    if(this.stackControl.length == 0) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   push(item) {
-    // ... your code goes here
+    if(this.canPush()) {
+      this.stackControl.push(item);
+      return this.stackControl;
+    } else {
+      throw new Error('STACK_OVERFLOW');
+    }
   }
 
-  pop() {
-    // ... your code goes here
+  pop(item) {
+    const deleteItem = this.stackControl.pop(item);
+    if(!this.isEmpty()) {
+      return deleteItem;
+    } else {
+      throw new Error('STACK_UNDERFLOW')
+    }
   }
 
   display() {
-    // ... your code goes here
+    return this.stackControl;
   }  
 }
 
