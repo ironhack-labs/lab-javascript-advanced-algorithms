@@ -1,3 +1,5 @@
+
+
 const queueUL = document.querySelector('.list-queue');
 const queueInput = document.querySelector('.queue-input');
 const warningTopQueue = document.querySelector('#queue-container .warning-top');
@@ -10,11 +12,11 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new Queue();
 
 const clearQueueInput = () => {
-  // ... your code goes here
-};
+  document.querySelector('.queue-input')};
 
 const generateListQueue = () => {
-  // ... your code goes here
+  const queueUL = document.querySelector('.list-queue')
+  queueUL.innerHTML = ' <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>'
 };
 
 generateListQueue();
@@ -29,9 +31,9 @@ const generateWarningQueue = (type) => {
 
 const addToQueue = () => {
   try {
-    // ... your code goes here
+    const addQueue = document.querySelector('.btn-add-queue')
   } catch (error) {
-    // there was an overflow error, handle it
+    const warningTopQueue = document.querySelector('#queue-container .warning-top');
   }
 };
 
@@ -39,7 +41,9 @@ const removeFromQueue = () => {
   try {
     // ... your code goes here
   } catch (error) {
-    // there was an underflow error, handle it
+    const warningBottomQueue = document.querySelector(
+      '#queue-container .warning-bottom'
+    );
   }
 };
 

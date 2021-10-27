@@ -15,7 +15,8 @@ const clearStackInput = () => {
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  const stackList = document.querySelector('.stack-list')
+  stackList.innerHTML = ' <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>  <li class="inactive">&nbsp;</li>'
 };
 
 renderListStack();
