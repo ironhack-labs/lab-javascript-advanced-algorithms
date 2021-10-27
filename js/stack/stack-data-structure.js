@@ -40,7 +40,7 @@ class Stack {
   }
 
   pop() {
-    // ... your code goes here
+    // ... your code goes here.
     if (this.isEmpty() === false ){ 
       
       return this.stackControl.pop(); 
