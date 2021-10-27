@@ -7,6 +7,7 @@ const warningBottomStack = document.querySelector(
 );
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
+const stackResult = document.getElementById("stack-result")
 
 const newStack = new Stack();
 
@@ -16,6 +17,19 @@ const clearStackInput = () => {
 
 const renderListStack = () => {
   // ... your code goes here
+  const print = newStack.display()
+
+  print.forEach(element => {
+    if(print.length>0){
+      stackResult.innerHTML += `<br/><span>${element}</span>`
+
+    }else{
+
+      stackResult.innerHTML += `<br/><span>${element}</span>`
+    }
+  });
+  console.log("Stak :", print);
+
 };
 
 renderListStack();
@@ -29,11 +43,16 @@ const generateWarningStack = (type) => {
 };
 
 const addToStack = () => {
+
   try {
     // ... your code goes here
+    newStack.push(stackInput.value)
+
+
   } catch (error) {
     // there was an overflow error, handle it
   }
+  renderListStack();
 };
 
 const removeFromStack = () => {
