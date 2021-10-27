@@ -30,7 +30,16 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    if (newStack.canPush() === true) {
+      let count = 1;
+      for (i = 0; i < newStack.stackControl.length; i++) {
+        let test = stackList.childNodes[count];
+        console.log(test[i]);
+        test[count].classList.remove('inactive');
+        newStack.stackControl[i].classList.add('active');
+        count += 2;
+      }
+    }
   } catch (error) {
     // there was an overflow error, handle it
   }

@@ -1,4 +1,5 @@
 const queueUL = document.querySelector('.list-queue');
+const queueLI = document.querySelector('#quere-inactive');
 const queueInput = document.querySelector('.queue-input');
 const warningTopQueue = document.querySelector('#queue-container .warning-top');
 const warningBottomQueue = document.querySelector(
@@ -9,13 +10,9 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 
 const queue = new Queue();
 
-const clearQueueInput = () => {
-  // ... your code goes here
-};
+const clearQueueInput = () => {};
 
-const generateListQueue = () => {
-  // ... your code goes here
-};
+const generateListQueue = () => {};
 
 generateListQueue();
 
@@ -29,9 +26,11 @@ const generateWarningQueue = (type) => {
 
 const addToQueue = () => {
   try {
-    // ... your code goes here
+    if (queue.canEnqueue() === true) {
+      queue.enqueue();
+    }
   } catch (error) {
-    // there was an overflow error, handle it
+    throw new Error(error);
   }
 };
 
