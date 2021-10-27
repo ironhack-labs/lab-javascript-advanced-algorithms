@@ -6,7 +6,7 @@ ul.list-stack {
   margin-bottom: 0px;
 }
 
-ul.list-stack > li {
+ul.list-stack>li {
   list-style: none;
   margin: 4px 0px 4px 0px;
   padding: 5px;
@@ -33,8 +33,9 @@ ul.list-queue {
   padding-left: 0;
 }
 
-ul.list-queue > li {
+ul.list-queue>li {
   list-style: none;
+  height: 35px;
   margin: 0px 4px 0px 4px;
   padding: 5px;
   text-align: center;
@@ -50,4 +51,11 @@ div.warning-top {
 div.warning-bottom {
   margin-top: 0px;
   display: none;
+}
+
+.gap {
+  height: 40px;
+  background-color: rgb(201, 201, 201);
+  width: 100%;
+  margin: 10px 0px;
 }

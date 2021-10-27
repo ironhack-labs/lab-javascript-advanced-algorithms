@@ -9,6 +9,10 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 
 const queue = new Queue();
 
+const gapsQ= document.querySelectorAll(".list-queue li");
+
+
+
 const clearQueueInput = () => {
   // ... your code goes here
 };
@@ -28,7 +32,16 @@ const generateWarningQueue = (type) => {
 };
 
 const addToQueue = () => {
+
   try {
+    let queueLength = queue.queueControl.length;
+      let valueInput = queueInput.value;
+      //gapsQ[].textContent = valueInput;
+     // gaps[0]
+
+
+
+
     // ... your code goes here
   } catch (error) {
     // there was an overflow error, handle it
