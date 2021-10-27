@@ -5,9 +5,8 @@ class Queue {
   }
 
   canEnqueue() {
-    // ... your code goes here
+    
   }
-
   isEmpty() {
     // ... your code goes here
   }
