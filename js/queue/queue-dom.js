@@ -10,11 +10,21 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new Queue();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = ''
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  queueUL.innerHTML += `
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>`
 };
 
 generateListQueue();
@@ -29,7 +39,12 @@ const generateWarningQueue = (type) => {
 
 const addToQueue = () => {
   try {
-    // ... your code goes here
+  const arrayTemp = queue.enqueue(queueInput.value)
+  for(let i = 0;i<arrayTemp.length;i++){
+    queueUL.children[i].innerHTML = arrayTemp[i]
+    queueUL.children[i].classList.replace('inactive', 'active')
+  }
+  clearQueueInput()
   } catch (error) {
     // there was an overflow error, handle it
   }
@@ -37,9 +52,19 @@ const addToQueue = () => {
 
 const removeFromQueue = () => {
   try {
-    // ... your code goes here
+    queue.dequeue()
+    const arrayTemp = queue.queueControl
+
+    for(let i = 0;i<arrayTemp.length;i++){
+      queueUL.children[i].innerHTML = arrayTemp[i]
+    }
+
+    for(let i = arrayTemp.length; i<queue.MAX_SIZE;i++){
+      queueUL.children[i].innerHTML = ''
+      queueUL.children[i].classList.replace('active', 'inactive')
+    }
   } catch (error) {
-    // there was an underflow error, handle it
+    generateWarningQueue(error)// there was an underflow error, handle it
   }
 };
 

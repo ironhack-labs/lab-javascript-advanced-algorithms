@@ -11,11 +11,21 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ''
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  stackList.innerHTML += `
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>
+  <li class="inactive">&nbsp;</li>`
 };
 
 renderListStack();
@@ -30,15 +40,25 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
-    // ... your code goes here
-  } catch (error) {
-    // there was an overflow error, handle it
-  }
+    const arrayTemp = newStack.push(stackInput.value)
+    for(let i = 0;i<arrayTemp.length;i++){
+      stackList.children[i].innerHTML = arrayTemp[i]
+      stackList.children[i].classList.replace('inactive', 'active')
+    }
+    clearStackInput()
+    } catch (error) {
+      // there was an overflow error, handle it
+    }
 };
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
+    newStack.pop()
+    const arrayTemp = newStack.stackControl
+  for(let i = arrayTemp.length; i<newStack.MAX_SIZE;i++){
+    stackList.children[i].innerHTML = ''
+    stackList.children[i].classList.replace('active', 'inactive')
+  }
   } catch (error) {
     // there was an underflow error, handle it
   }
