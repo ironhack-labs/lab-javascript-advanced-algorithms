@@ -10,7 +10,7 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new Queue();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+
 };
 
 const generateListQueue = () => {
@@ -44,4 +44,6 @@ const removeFromQueue = () => {
 };
 
 addQueue.addEventListener('click', addToQueue);
+
+
 dequeue.addEventListener('click', removeFromQueue);

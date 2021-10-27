@@ -35,11 +35,11 @@ class Queue {
       return this.queueControl.pop
     }
   }
-}
 
-display() {
-  return this.queueControl
-}
+
+  display() {
+    return this.queueControl
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.
