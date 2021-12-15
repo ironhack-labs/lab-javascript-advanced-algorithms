@@ -11,36 +11,64 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  const textBox = document.getElementById('stack-input');
+  textBox.value = null;
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  const stackList = document.getElementById('stack-list');
+  stackList.innerHTML = '';
+  for(i = 0; i < newStack.stackControl.length; i++) {
+    const newDiv = document.createElement('li');
+    newDiv.className = 'block';
+    const stackList = document.getElementById('stack-list');
+    stackList.append(newDiv);
+  } 
 };
 
 renderListStack();
 
+const clearWarnings = () => {
+  const warnings = document.getElementById('stack-container').getElementsByClassName('alert');
+  warnings[0].style.display = 'none';
+  warnings[1].style.display = 'none';
+};
+
 const generateWarningStack = (type) => {
-  if (type === 'underflow') {
-    // ... your code goes here
-  } else if (type === 'overflow') {
-    // ... your code goes here
-  }
+  if (type.message === 'STACK_UNDERFLOW') {
+      const warningCallout = document.getElementById('stack-container').getElementsByClassName('warning-bottom')[0];
+      warningCallout.style.display = 'block';
+      warningCallout.innerText = 'STACK UNDERFLOW';
+      setTimeout(clearWarnings, 2000);
+  } else if (type.message === 'STACK_OVERFLOW') {
+    const warningCallout1 = document.getElementById('stack-container').getElementsByClassName('warning-top')[0];
+      warningCallout1.style.display = 'block';
+      warningCallout1.innerText = 'STACK OVERFLOW';
+      setTimeout(clearWarnings, 2000);
+   }
 };
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    let newElementName = document.getElementById('stack-input').value;
+    const newDiv = document.createElement('li');
+    newDiv.className = 'block';
+    newDiv.innerHTML = `<p>${newElementName}</p>`;
+    newStack.push(newElementName);
+    const stackList = document.getElementById('stack-list');
+    stackList.append(newDiv);
+    clearStackInput();
   } catch (error) {
-    // there was an overflow error, handle it
+    generateWarningStack(error);
   }
 };
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
+    newStack.pop();
+    renderListStack();
   } catch (error) {
-    // there was an underflow error, handle it
+    generateWarningStack(error);
   }
 };
 

@@ -10,36 +10,64 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new Queue();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  const textBox = document.getElementById('queue-input');
+  textBox.value = null;
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  const queueList = document.getElementById('queue-list');
+  queueList.innerHTML = '';
+  for(i = 0; i < queue.queueControl.length; i++) {
+    const newDiv = document.createElement('li');
+    newDiv.className = 'block';
+    const queueList = document.getElementById('queue-list');
+    queueList.append(newDiv);
+  } 
 };
 
 generateListQueue();
 
+const clearWarningsQ = () => {
+  const warnings = document.getElementById('queue-container').getElementsByClassName('alert');
+  warnings[0].style.display = 'none';
+  warnings[1].style.display = 'none';
+};
+
 const generateWarningQueue = (type) => {
-  if (type === 'underflow') {
-    // ... your code goes here
-  } else if (type === 'overflow') {
-    // ... your code goes here
-  }
+  if (type.message === 'QUEUE_UNDERFLOW') {
+      const warningCallout = document.getElementById('queue-container').getElementsByClassName('warning-bottom')[0];
+      warningCallout.style.display = 'block';
+      warningCallout.innerText = 'QUEUE UNDERFLOW';
+      setTimeout(clearWarningsQ, 2000);
+  } else if (type.message === 'QUEUE_OVERFLOW') {
+    const warningCallout1 = document.getElementById('queue-container').getElementsByClassName('warning-top')[0];
+      warningCallout1.style.display = 'block';
+      warningCallout1.innerText = 'QUEUE OVERFLOW';
+      setTimeout(clearWarningsQ, 2000);
+   }
 };
 
 const addToQueue = () => {
   try {
-    // ... your code goes here
+    let newElementName = document.getElementById('queue-input').value;
+    const newDiv = document.createElement('li');
+    newDiv.className = 'block';
+    newDiv.innerHTML = `<p>${newElementName}</p>`;
+    queue.enqueue(newElementName);
+    const queueList = document.getElementById('queue-list');
+    queueList.append(newDiv);
+    clearQueueInput();
   } catch (error) {
-    // there was an overflow error, handle it
+    generateWarningQueue(error);
   }
 };
 
 const removeFromQueue = () => {
   try {
-    // ... your code goes here
+    queue.dequeue();
+    generateListQueue();
   } catch (error) {
-    // there was an underflow error, handle it
+    generateWarningQueue(error);
   }
 };
 
