@@ -11,6 +11,8 @@ const queue = new Queue();
 
 const clearQueueInput = () => {
   // ... your code goes here
+  queueInput.value = '';
+
 };
 
 const generateListQueue = () => {
@@ -30,6 +32,7 @@ const generateWarningQueue = (type) => {
 const addToQueue = () => {
   try {
     // ... your code goes here
+    clearQueueInput();
   } catch (error) {
     // there was an overflow error, handle it
   }
@@ -42,6 +45,8 @@ const removeFromQueue = () => {
     // there was an underflow error, handle it
   }
 };
+window.addEventListener('load', () => {
+  addQueue.addEventListener('click', addToQueue);
+  dequeue.addEventListener('click', removeFromQueue);
 
-addQueue.addEventListener('click', addToQueue);
-dequeue.addEventListener('click', removeFromQueue);
+})
