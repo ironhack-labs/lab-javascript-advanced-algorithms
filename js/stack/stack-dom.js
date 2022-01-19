@@ -8,14 +8,23 @@ const warningBottomStack = document.querySelector(
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
 
+const cellNodesArr = document.querySelectorAll('.list-stack li')
+
 const newStack = new Stack();
 
 const clearStackInput = () => {
   // ... your code goes here
+  stackInput.value = ''
 };
 
 const renderListStack = () => {
   // ... your code goes here
+  for (let i = 0; i < newStack.stackControl.length; i++) {
+    for (let j = 0; j < cellNodesArr.length; j++) {
+      cellNodesArr[i].classList.replace('inactive', 'active')
+    }
+  }
+
 };
 
 renderListStack();
@@ -31,8 +40,12 @@ const generateWarningStack = (type) => {
 const addToStack = () => {
   try {
     // ... your code goes here
+    newStack.push(1)
+    renderListStack()
   } catch (error) {
-    // there was an overflow error, handle it
+    // there was an overflow error, handle it    
+    generateWarningStack('overflow')
+
   }
 };
 
