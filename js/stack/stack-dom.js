@@ -8,7 +8,10 @@ const warningBottomStack = document.querySelector(
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
 
+
+
 const newStack = new Stack();
+
 
 const clearStackInput = () => {
   // ... your code goes here
@@ -30,9 +33,11 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    newStack.push()
+    document.querySelector('stack-list li')
+
   } catch (error) {
-    // there was an overflow error, handle it
+    console.error(error)
   }
 };
 
