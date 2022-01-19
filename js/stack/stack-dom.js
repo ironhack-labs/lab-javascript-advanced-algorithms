@@ -12,10 +12,18 @@ const newStack = new Stack();
 
 const clearStackInput = () => {
   // ... your code goes here
+
 };
 
 const renderListStack = () => {
   // ... your code goes here
+  // ul.appendChild(li)
+
+
+  for (let i = 0; i < this.stackControl.length; i++){
+    const li = document.createElement('li');
+  }
+  
 };
 
 renderListStack();
