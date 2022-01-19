@@ -8,6 +8,10 @@ const warningBottomStack = document.querySelector(
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
 
+const inactiveList = document.querySelectorAll("#stack-list li")
+
+
+
 const newStack = new Stack();
 
 const clearStackInput = () => {
@@ -29,8 +33,11 @@ const generateWarningStack = (type) => {
 };
 
 const addToStack = () => {
+  
   try {
-    // ... your code goes here
+    inactiveList[0].className = "active"
+    
+    
   } catch (error) {
     // there was an overflow error, handle it
   }
