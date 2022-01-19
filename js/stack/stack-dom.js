@@ -12,6 +12,7 @@ const newStack = new Stack();
 
 const clearStackInput = () => {
   // ... your code goes here
+  stackInput.value = '';
 };
 
 const renderListStack = () => {
@@ -31,6 +32,7 @@ const generateWarningStack = (type) => {
 const addToStack = () => {
   try {
     // ... your code goes here
+    clearStackInput();
   } catch (error) {
     // there was an overflow error, handle it
   }
@@ -43,6 +45,8 @@ const removeFromStack = () => {
     // there was an underflow error, handle it
   }
 };
+window.addEventListener('load', () => {
+  addStackBtn.addEventListener('click', addToStack);
+  takeStackBtn.addEventListener('click', removeFromStack);
 
-addStackBtn.addEventListener('click', addToStack);
-takeStackBtn.addEventListener('click', removeFromStack);
+})
