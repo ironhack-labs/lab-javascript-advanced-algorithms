@@ -11,6 +11,8 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
+
+
   // ... your code goes here
 };
 
@@ -30,7 +32,9 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    console.log(newStack.stackControl)
+    newStack.push(1)
+    console.log(newStack.stackControl)
   } catch (error) {
     // there was an overflow error, handle it
   }
@@ -38,6 +42,7 @@ const addToStack = () => {
 
 const removeFromStack = () => {
   try {
+    const remBt = document.getElementById(`take-stack`)
     // ... your code goes here
   } catch (error) {
     // there was an underflow error, handle it
