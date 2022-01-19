@@ -7,6 +7,7 @@ const warningBottomStack = document.querySelector(
 );
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
+const stackListLi = document.querySelectorAll('.list-stack li');
 
 const newStack = new Stack();
 
@@ -22,26 +23,32 @@ renderListStack();
 
 const generateWarningStack = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningTopStack.style.display = 'block';
+    warningTopStack.textContent = 'underflow';
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningBottomStack.style.display = 'block';
+    warningBottomStack.textContent = 'overflow';
   }
 };
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    const stack = newStack.push(1);
+    stackListLi[stack.length - 1].classList.replace('inactive', 'active');
+    stackListLi[stack.length - 1].textContent = stackInput.value;
   } catch (error) {
     // there was an overflow error, handle it
+    generateWarningStack('overflow');
   }
 };
 
 const removeFromStack = () => {
-  try {
-    // ... your code goes here
-  } catch (error) {
-    // there was an underflow error, handle it
-  }
+  newStack.pop();
+  stackListLi[newStack.stackControl.length].classList.replace(
+    'active',
+    'inactive'
+  );
+  stackListLi[newStack.stackControl.length].textContent = '';
 };
 
 addStackBtn.addEventListener('click', addToStack);
