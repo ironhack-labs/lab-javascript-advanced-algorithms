@@ -10,6 +10,8 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new Stack();
 
+const stackListAll = document.querySelector(".list-stack li")
+
 const clearStackInput = () => {
   // ... your code goes here
 };
@@ -30,9 +32,10 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    stackListAll.classList.replace("inactive", "active")
   } catch (error) {
-    // there was an overflow error, handle it
+
+    throw new Error('STACK_OVERFLOW');
   }
 };
 
@@ -41,6 +44,7 @@ const removeFromStack = () => {
     // ... your code goes here
   } catch (error) {
     // there was an underflow error, handle it
+
   }
 };
 
