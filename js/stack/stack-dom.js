@@ -20,13 +20,12 @@ const renderListStack = () => {
   // ... your code goes here
   stackList.innerHTML="";
   let stackItem;
-  let fullStack = newStack.display();
 
   for (let i=0;i<newStack.MAX_SIZE;i++){
 
     stackItem = document.createElement("li");
-    if (fullStack[i]!==undefined) {
-       stackItem.innerHTML = fullStack[i];
+    if (newStack.stackControl[i]!==undefined) {
+       stackItem.innerHTML = newStack.stackControl[i];
        stackItem.setAttribute("class","active");
     } else {
       stackItem.setAttribute("class","inactive"); 
