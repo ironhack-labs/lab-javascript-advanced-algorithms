@@ -17,6 +17,7 @@ ul.list-stack > li {
 }
 
 li.inactive {
+  
   background-color: rgb(224, 224, 224);
 }
 

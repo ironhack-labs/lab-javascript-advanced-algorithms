@@ -11,37 +11,66 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.value = ''
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+ 
+  stackList.innerHTML = '';
+  let contentArr = newStack.display();
+  let currentSize = newStack.MAX_SIZE - contentArr.length;
+
+  contentArr.forEach(content =>{
+    let li = createLi()
+    li.innerHTML = content;
+    li.classList.toggle('active') 
+  });
+
+  for(let i = 0 ; i < currentSize ; i++ ){
+    createLi() 
+  };
+
+  function createLi(){
+   let  li = document.createElement('li');
+    li.classList.toggle('inactive') ;
+    stackList.appendChild(li);
+    return li
+  }
+
+  warningTopStack.style.display = 'none';
+  warningBottomStack.style.display = 'none';
 };
 
 renderListStack();
 
 const generateWarningStack = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomStack.style.display = 'block';
+    warningBottomStack.innerHTML = type;
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopStack.style.display = 'block';
+    warningTopStack.innerHTML = type;
   }
 };
 
 const addToStack = () => {
   try {
-    // ... your code goes here
-  } catch (error) {
-    // there was an overflow error, handle it
+     newStack.push(stackInput.value);
+     clearStackInput();
+     renderListStack();
+  }  catch (error) {
+    generateWarningStack('overflow');
   }
-};
+}
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
+    newStack.pop();
+    renderListStack();
   } catch (error) {
-    // there was an underflow error, handle it
+    generateWarningStack('underflow');
   }
+ 
 };
 
 addStackBtn.addEventListener('click', addToStack);
