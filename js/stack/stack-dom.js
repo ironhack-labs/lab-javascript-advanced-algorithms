@@ -11,11 +11,11 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  // ... your code goes here
+  stackInput.innerText = ""
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  stackInput.innerText = stackList
 };
 
 renderListStack();
