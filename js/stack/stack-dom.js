@@ -12,10 +12,21 @@ const newStack = new Stack();
 
 const clearStackInput = () => {
   // ... your code goes here
+  const inputs = document.querySelectorAll('stack-input');
+  inputs.forEach(element => {
+    element.remove();
+  });
 };
 
 const renderListStack = () => {
-  // ... your code goes here
+  const stack = newStack.display();
+  stack.forEach(element => {
+    const node = document.createElement("li")
+    node.classList = "active stack-input"
+    node.innerHTML = element
+    stackList.appendChild(node)
+
+  })
 };
 
 renderListStack();
@@ -30,7 +41,12 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
+
     // ... your code goes here
+    newStack.push(stackInput.value)
+    clearStackInput();
+    renderListStack()
+
   } catch (error) {
     // there was an overflow error, handle it
   }
