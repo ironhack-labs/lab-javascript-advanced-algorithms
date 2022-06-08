@@ -30,6 +30,7 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
+    this.newStack.push(item)
     // ... your code goes here
   } catch (error) {
     // there was an overflow error, handle it
