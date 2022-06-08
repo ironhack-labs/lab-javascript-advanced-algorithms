@@ -1,3 +1,5 @@
+const Stack = require("./stack-data-structure");
+
 const stackList = document.getElementById('stack-list');
 const stackInput = document.getElementById('stack-input');
 const container = document.getElementById('container');
@@ -30,9 +32,11 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
-    // ... your code goes here
+    newStack.push(stackInput.value)
+    document.createElement('li')
+    document.getElementsByTagName('li').innerHTML = stackInput.value
   } catch (error) {
-    // there was an overflow error, handle it
+    generateWarningStack()
   }
 };
 
