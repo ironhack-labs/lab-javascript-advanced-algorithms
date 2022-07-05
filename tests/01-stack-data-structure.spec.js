@@ -1,5 +1,3 @@
-const Stack = require('../js/stack/stack-data-structure');
-
 describe('Stack', () => {
   let stack;
 

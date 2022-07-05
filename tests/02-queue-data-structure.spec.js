@@ -1,5 +1,3 @@
-const Queue = require('../js/queue/queue-data-structure');
-
 describe('Queue', () => {
   let queue;
 
