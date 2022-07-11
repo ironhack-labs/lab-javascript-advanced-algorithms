@@ -4,11 +4,11 @@
 
 ## Learning Goals
 
-In this exercise, you will be able to:
+After this exercise, you will be able to:
 
-- Use data structures to organize your application information
+- Use stack and queue data structures to organize your application information
 - Learn how to model real-life situations and objects into proper data structures
-- Use tests to develop your solution.
+- Develop your code solution in accordance with the tests.
 
 <br>
 
@@ -23,8 +23,7 @@ In this exercise, we will implement two different abstract data types that are v
 ## Requirements
 
 - Fork this repo.
-- Then clone this repo.
-- Visit the "Actions" tab in your fork, and enable workflows.
+- Clone this repo.
 
 <br>
 
@@ -38,11 +37,45 @@ $ git commit -m "Solved lab"
 $ git push origin master
 ```
 
-- Create a Pull Request so your TAs can check up your work.
+- Create a Pull Request so that your TAs can check your work.
+
+
 
 <br>
 
-## Useful information
+## Test Your Code
+
+This LAB is equipped with unit tests to provide automated feedback on your lab progress. In case you want to check the tests, the files are located in the `tests/` folder.
+
+
+
+To run the tests and your JavaScript code, open the `SpecRunner.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
+
+
+
+To see the outputs of the `console.log` in your JavaScript code, open the [Console in the Developer Tools](https://developer.chrome.com/docs/devtools/open/#console).
+
+<br>
+
+
+
+
+
+## Instructions
+
+The goal of this exercise is to create a visual layout to show how stacks and queues work. Here is the demo and your end goal: **[demo-stack-queue](https://sandrabosk.github.io/demo-stack-queue/index.html)**.
+
+This exercise is split into two parts:
+
+- **Logic**: where you will be developing the logic behind _stack_ and _queue_, and you will be guided by tests. When working on logic, you will write your code in the `src/stack/stack-data-structure.js` and `src/queue/queue-data-structure.js`;
+
+- **Visual**: where you will use your DOM manipulation skills to demonstrate how actually stack and queue work. When you come to this part, you will be working on the `src/stack/stack-dom.js` and `src/queue/queue-dom.js`.
+
+<br>
+
+
+
+## Iteration 0 - Read about Stacks & Queues
 
 ### Stacks
 
@@ -70,31 +103,15 @@ The process of adding an element into the queue is called **enqueue**, and the p
 
 <br>
 
-## Instructions
 
-### Introduction
 
-The goal of this exercise is to create a visual layout to show how stacks and queues work. Here is the demo and your end goal: **[demo-stack-queue](https://sandrabosk.github.io/demo-stack-queue/index.html)**.
 
-This exercise is split into two parts:
 
-- **Logic**: where you will be developing the logic behind _stack_ and _queue_, and you will be guided by tests. When working on logic, you will write your code in the `js/stack/stack-data-structure.js` and `js/queue/queue-data-structure.js`;
+### Iteration 1 - The Stack class
 
-- **Visual**: where you will use your DOM manipulation skills to demonstrate how actually stack and queue work. When you come to this part, you will be working on the `js/stack/stack-dom.js` and `js/queue/queue-dom.js`.
+The first abstract data structure we are going to build is the `Stack`. For this iteration, you'll be working in the **`src/stack/stack-data-structure.js`** file. 
 
-<br>
-
-### Tests, tests!
-
-We have created a set of tests to guide you through the abstract data types implementation. After implementing the JavaScript functionality, create a visual layout to show how each data structure works.
-
-Please, open your terminal, change directories into the root of the lab, and run `npm install` to install the test runner. Next, you can run the `npm run test:watch` command to run automated tests. Open the resulting `lab-solution.html` file with the "Live Server" VSCode extension to see the test results.
-
-<br>
-
-### Iteration 1 - The Stack
-
-The first abstract data structure we are going to build is the `Stack`. For this iteration, you'll be working in the **`js/stack/stack-data-structure.js`** file. The tests you will be using while developing the solution are in the `tests/01-stack-data-structure.spec.js` file.
+The tests you will be using while developing the solution are in the `tests/01-stack-data-structure.spec.js` file.
 
 <br>
 
@@ -149,9 +166,9 @@ Lastly, let's add a method called `display` to the Stack class. The method shoul
 
 <br>
 
-### Iteration 2 - The Queue
+### Iteration 2 - The Queue class
 
-The second abstract data type we are going to build is the `Queue`. For this iteration, you'll be working in the **`js/queue/queue-data-structure.js`** file.
+The second abstract data type we are going to build is the `Queue`. For this iteration, you'll be working in the **`src/queue/queue-data-structure.js`** file.
 The tests you will be using while developing the solution are in the `tests/02-queue-data-structure.spec.js` file.
 
 <br>
@@ -207,11 +224,13 @@ If the value returned by `isEmpty` is `true`, we have a case of "**Queue Underfl
 
 Lastly, let's add a method called `display` to the Queue class. The method should simply return the list of items stored in the queue.
 
+<br>
+
 ### Iteration 3 - Visualizing our data structures
 
 And let's go to the visuals! Once you have created the full functionality, let's create a visual representation to see how these stacks and queues work.
 
-We already provided you with full HTML code in the `index.html`. Also, we gave you a head start in the `js/stack/stack-dom.js` and `js/queue/queue-dom.js`.
+We already provided you with full HTML code in the `index.html`. Also, we gave you a head start in the `src/stack/stack-dom.js` and `src/queue/queue-dom.js`.
 
 <!-- Here we propose how we could visually represent the different steps of the stack structure.
 #### Initial layout
