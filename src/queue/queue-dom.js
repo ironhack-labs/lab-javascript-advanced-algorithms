@@ -17,8 +17,6 @@ const clearQueueInput = () => {
 };
 
 const generateListQueue = () => {
-  warningTopStack.style.display = 'none';
-  warningBottomStack.style.display = 'none';
 
   let length = queue.display().length;
   let size = queue.MAX_SIZE - length;
@@ -29,7 +27,7 @@ const generateListQueue = () => {
     let li = document.createElement('li');
     li.className = 'active';
     li.innerText = item;
-    stackList.appendChild(li);
+    ul.appendChild(li);
   });
   //const div = document.createElement('div')
   //div.setAttribute('class', 'stack-container')

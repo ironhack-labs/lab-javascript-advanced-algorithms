@@ -1,6 +1,6 @@
 class Queue {
   constructor() {
-    this.queueControl = [];
+    this.queueControl = [1, 2];
     this.MAX_SIZE = 10;
   }
 
