@@ -46,6 +46,7 @@ const generateWarningStack = type => {
 const addToStack = () => {
   if (newStack.push(stackInput.value) === 'Stack Overflow') {
     generateWarningStack('overflow');
+
   } else {
     clearStackInput();
     renderListStack();
