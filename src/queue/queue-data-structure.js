@@ -8,7 +8,7 @@ class Queue {
     // ... your code goes here
     if (this.queueControl.length === this.MAX_SIZE) {
       return false
-    } else if (this.queueControl.length === 0) {
+    } else if (this.queueControl.length < this.MAX_SIZE) {
       return true
     }
   }
@@ -34,10 +34,15 @@ class Queue {
 
   dequeue() {
     // ... your code goes here
+    if (this.isEmpty()) {
+      throw new Error('QUEUE_UNDERFLOW')
+    } else {
+      return this.queueControl.shift()
+    }
   }
 
   display() {
-    // ... your code goes here
+    return this.queueControl
   }
 }
 
