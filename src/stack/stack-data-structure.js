@@ -5,11 +5,11 @@ class Stack {
   }
 
   canPush() {
-    return !(this.stackControl.length === this.MAX_SIZE);
+    return this.stackControl.length < this.MAX_SIZE;
   }
 
   isEmpty() {
-    return this.stackControl.length === 0 ? true : false;
+    return this.stackControl.length === 0;
   }
 
   push(item) {
@@ -22,11 +22,16 @@ class Stack {
   }
 
   pop() {
-    this.stackControl.pop();
+    if (!this.isEmpty()) {
+      return this.stackControl.pop();
+    } else {
+      throw new Error('STACK_UNDERFLOW');
+    }
   }
 
   display() {
     // ... your code goes here
+    return this.stackControl
   }
 }
 
