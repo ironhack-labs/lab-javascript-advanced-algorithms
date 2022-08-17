@@ -5,24 +5,56 @@ class Stack {
   }
 
   canPush() {
-    // ... your code goes here
+
+    if (this.stackControl.length < this.MAX_SIZE) {
+      return true
+    } else {
+      return false;
+    }
+
   }
 
   isEmpty() {
-    // ... your code goes here
+    // !this.stackControl.length = this.stackControl.length === 0
+    if (!this.stackControl.length) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
+  //(this.stackControl.length > this.MAX_SIZE);
   push(item) {
-    // ... your code goes here
+
+
+
+    if (this.canPush()) {
+      this.stackControl.push(item)
+    } else {
+      throw new Error("STACK_OVERFLOW");
+    }
+
+
+    return this.stackControl;
+
   }
 
   pop() {
-    // ... your code goes here
+    if (!this.isEmpty()) {
+      return this.stackControl.pop();
+
+    } else {
+      throw new Error("STACK_UNDERFLOW");
+    }
   }
 
   display() {
-    // ... your code goes here
-  }  
+    let list = this.stackControl.map(el => {
+      return el;
+
+    });
+    return list;
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.
