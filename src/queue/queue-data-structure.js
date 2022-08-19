@@ -46,15 +46,15 @@ class Queue {
 if (typeof module !== "undefined") module.exports = Queue;
 
 //for testing =>
-const queue = new Queue();
-console.dir(queue);
+//const queue = new Queue();
+//console.dir(queue);
 //console.log(queue.MAX_SIZE);
 //console.log(queue.canEnqueue());
 //console.log(queue.dequeue());
-queue.enqueue(19); // enqueue first Item
-queue.enqueue(88); // enqueue next Item
-console.log(queue.queueControl); // returns the order [88, 19], this should be correct?!
-const firstQueueItem = queue.dequeue(); //should be 19
-console.log(firstQueueItem);
-const nextQueueItem = queue.dequeue();
-console.log(nextQueueItem);
+//queue.enqueue(19); // enqueue first Item
+//queue.enqueue(88); // enqueue next Item
+//console.log(queue.queueControl); // returns the order [88, 19], this should be correct?!
+//const firstQueueItem = queue.dequeue(); //should be 19
+//console.log(firstQueueItem);
+//const nextQueueItem = queue.dequeue();
+//console.log(nextQueueItem);
