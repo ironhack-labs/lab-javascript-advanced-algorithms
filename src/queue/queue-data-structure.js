@@ -1,3 +1,4 @@
+//*Queues with FIFO data structure.
 class Queue {
   constructor() {
     this.queueControl = [];
@@ -22,8 +23,8 @@ class Queue {
 
   display() {
     // ... your code goes here
-  }  
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.
-if (typeof module !== 'undefined') module.exports = Queue;
+if (typeof module !== "undefined") module.exports = Queue;
