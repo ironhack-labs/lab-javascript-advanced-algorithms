@@ -61,9 +61,9 @@ function eatDessert() {
 eatDinner(eatDessert); // <== Eating the dinner!
 
 //for testing
-const stack = new Stack();
-console.log(stack);
-console.log(stack.stackControl.length);
-console.log(stack.canPush());
-console.log(stack.isEmpty());
+//const stack = new Stack();
+//console.log(stack);
+//console.log(stack.stackControl.length);
+//console.log(stack.canPush());
+//console.log(stack.isEmpty());
 //console.log(stack.pop());
