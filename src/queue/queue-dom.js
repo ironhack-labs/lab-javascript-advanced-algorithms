@@ -8,7 +8,7 @@ const addQueue = document.querySelector(".btn-add-queue");
 const dequeue = document.querySelector(".btn-take-dequeue");
 
 const queueTitle = document.querySelector(".col-sm-7 h2");
-queueTitle.innerText = "Queue (FIFO) 🚋 🚋🚋🚋 🚋";
+queueTitle.innerText = "Queue (FIFO) ➡️ 🚋 🚋🚋🚋 🚋 ➡️";
 const queue = new Queue();
 
 const clearQueueInput = () => {
