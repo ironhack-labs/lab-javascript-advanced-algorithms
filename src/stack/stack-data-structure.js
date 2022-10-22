@@ -1,29 +1,35 @@
 class Stack {
-  constructor() {
-    this.stackControl = [];
-    this.MAX_SIZE = 10;
-  }
+	constructor() {
+		this.stackControl = [];
+		this.MAX_SIZE = 10;
+	}
 
-  canPush() {
-    // ... your code goes here
-  }
+	canPush() {
+		return this.stackControl.length < this.MAX_SIZE;
+	}
 
-  isEmpty() {
-    // ... your code goes here
-  }
+	isEmpty() {
+		return this.stackControl.length === 0;
+	}
 
-  push(item) {
-    // ... your code goes here
-  }
+	push(item) {
+		if (!this.canPush()) throw new Error("STACK_OVERFLOW");
 
-  pop() {
-    // ... your code goes here
-  }
+		this.stackControl.push(item);
 
-  display() {
-    // ... your code goes here
-  }  
+		return this.stackControl;
+	}
+
+	pop() {
+		if (this.isEmpty()) throw new Error("STACK_UNDERFLOW");
+
+		return this.stackControl.pop();
+	}
+
+	display() {
+		return this.stackControl;
+	}
 }
 
 // This is required to enable the automated tests, please ignore it.
-if (typeof module !== 'undefined') module.exports = Stack;
+if (typeof module !== "undefined") module.exports = Stack;
