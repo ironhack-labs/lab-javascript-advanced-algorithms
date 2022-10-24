@@ -1,3 +1,4 @@
+
 const stackList = document.getElementById('stack-list');
 const stackInput = document.getElementById('stack-input');
 const container = document.getElementById('container');
@@ -44,20 +45,25 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  if (newStack.push(stackInput.value) === 'Stack Overflow') {
-    generateWarningStack('overflow');
-  } else {
+  try {
+    // ... your code goes here
+     newStack.push(stackInput.value)
+  } catch (error) {
+    // there was an underflow error, handle it
+    return generateWarningStack('overflow');
+  }  
     clearStackInput();
     renderListStack();
-  }
+  
 };
 
 const removeFromStack = () => {
-  if (newStack.pop() === 'Stack Underflow') {
-    generateWarningStack('underflow');
-  } else {
-    renderListStack();
+  try {
+    newStack.pop() === 'Stack Underflow'
+  } catch (error){
+    return generateWarningStack('underflow');
   }
+   renderListStack(); 
 };
 
 addStackBtn.addEventListener('click', addToStack);
