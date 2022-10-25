@@ -5,23 +5,32 @@ class Queue {
   }
 
   canEnqueue() {
-    // ... your code goes here
+    return this.MAX_SIZE <= this.queueControl.length? false : true
   }
 
   isEmpty() {
-    // ... your code goes here
+    return this.queueControl.length? false:true
   }
 
   enqueue(item) {
-    // ... your code goes here
+      if (this.canEnqueue()){
+        this.queueControl.push(item)
+        return this.queueControl
+    }else{
+        throw  Error ("QUEUE_OVERFLOW")
+      }
   }
 
   dequeue() {
-    // ... your code goes here
+      if  (!this.isEmpty()) {
+    return this.queueControl.shift()
+  }else{
+    throw  Error ("QUEUE_UNDERFLOW")
+  }
   }
 
   display() {
-    // ... your code goes here
+  return this.queueControl  
   }  
 }
 
