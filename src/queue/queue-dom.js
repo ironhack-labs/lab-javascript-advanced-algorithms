@@ -7,39 +7,74 @@ const warningBottomQueue = document.querySelector(
 const addQueue = document.querySelector('.btn-add-queue');
 const dequeue = document.querySelector('.btn-take-dequeue');
 
-const queue = new Queue();
+const newQueue = new Queue();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = '';
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  warningTopQueue.style.display = 'none';
+  warningBottomQueue.style.display = 'none';
+  queueUL.innerHTML = '';
+
+  let listLength = newQueue.display().length;
+  let allowedSize = newQueue.MAX_SIZE - listLength;
+
+  // add list items to the beginning of the queeu - BLUE ELEMENTS
+
+  newQueue.display().forEach((item) => {
+    let li = document.createElement('li');
+    li.className = 'active';
+    li.innerText = item;
+
+    queueUL.appendChild(li);
+  });
+  // fill the queue list with inactive elements if necessary - GREY ELEMENTS
+  for (let i = 0; i < allowedSize; i++) {
+    let li = document.createElement('li');
+    li.className = 'inactive';
+    li.innerHTML = '&nbsp;';
+
+    queueUL.appendChild(li);
+  }
 };
 
 generateListQueue();
 
 const generateWarningQueue = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    warningBottomQueue.style.display = 'block';
+    warningBottomQueue.innerText = type;
   } else if (type === 'overflow') {
-    // ... your code goes here
+    warningTopQueue.style.display = 'block';
+    warningTopQueue.innerText = type;
   }
 };
 
 const addToQueue = () => {
   try {
-    // ... your code goes here
+    if (newQueue.enqueue(queueInput.value) === 'Queue Overflow') {
+      generateWarningQueue('overflow');
+    } else {
+      clearQueueInput();
+      generateListQueue();
+    }
   } catch (error) {
-    // there was an overflow error, handle it
+    throw new Error(error);
   }
 };
 
 const removeFromQueue = () => {
   try {
-    // ... your code goes here
+    if (newQueue.dequeue() === 'Queue Underflow') {
+      generateWarningQueue('underflow');
+    } else {
+      clearQueueInput();
+      generateListQueue();
+    }
   } catch (error) {
-    // there was an underflow error, handle it
+    throw new Error(error);
   }
 };
 

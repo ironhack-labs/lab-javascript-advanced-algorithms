@@ -5,24 +5,34 @@ class Queue {
   }
 
   canEnqueue() {
-    // ... your code goes here
+    return this.queueControl.length < this.MAX_SIZE ? true : false;
   }
 
   isEmpty() {
-    // ... your code goes here
+    return this.queueControl.length === 0 ? true : false;
   }
 
   enqueue(item) {
-    // ... your code goes here
+    if (!this.canEnqueue()) {
+      return 'Queue Overflow';
+      throw new Error('QUEUE_OVERFLOW');
+    }
+    this.queueControl.push(item);
+    return this.queueControl;
   }
 
   dequeue() {
-    // ... your code goes here
+    if (!this.isEmpty()) {
+      return this.queueControl.shift();
+    } else {
+      return 'Queue Underflow';
+      throw new Error('QUEUE_UNDERFLOW');
+    }
   }
 
   display() {
-    // ... your code goes here
-  }  
+    return this.queueControl;
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.
