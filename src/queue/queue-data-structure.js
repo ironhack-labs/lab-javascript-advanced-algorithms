@@ -5,15 +5,21 @@ class Queue {
   }
 
   canEnqueue() {
-    // ... your code goes here
+    if (this.queueControl.length < this.MAX_SIZE) {
+      return true
+    }
+    else {
+      return false
+    }
   }
 
   isEmpty() {
-    // ... your code goes here
+
   }
 
   enqueue(item) {
-    // ... your code goes here
+
+
   }
 
   dequeue() {
@@ -22,7 +28,7 @@ class Queue {
 
   display() {
     // ... your code goes here
-  }  
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.
