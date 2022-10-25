@@ -51,16 +51,21 @@ const generateWarningQueue = (type) => {
 const addToQueue = () => {
   try {
     // ... your code goes here
+    queue.enqueue(queueInput.value);
+
   } catch (error) {
-    // there was an overflow error, handle it
+    generateWarningQueue('overflow');
+
   }
 };
 
 const removeFromQueue = () => {
   try {
     // ... your code goes here
+
   } catch (error) {
     // there was an underflow error, handle it
+
   }
 };
 
