@@ -19,13 +19,16 @@ class Stack {
     if (this.canPush()) this.stackControl.push(item);
     else throw new Error('STACK_OVERFLOW');
 
-    return true;
+    return this.stackControl;
   }
 
   pop() {
     // ... your code goes here
-    if (!this.isEmpty()) this.stackControl.pop();
+    let removedItem = ''
+    if (!this.isEmpty()) removedItem = this.stackControl.pop();
     else throw new Error('STACK_UNDERFLOW');
+
+    return removedItem;
   }
 
   display() {

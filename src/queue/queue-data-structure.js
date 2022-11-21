@@ -19,15 +19,16 @@ class Queue {
     if (this.canEnqueue()) this.queueControl.push(item);
     else throw new Error('QUEUE_OVERFLOW');
 
-    return true;
+    return this.queueControl;
   }
 
   dequeue() {
     // ... your code goes here
-    if (!this.isEmpty()) this.queueControl.shift();
+    let removedItem = ''
+    if (!this.isEmpty()) removedItem = this.queueControl.shift();
     else throw new Error('QUEUE_UNDERFLOW');
 
-    return true;
+    return removedItem;
   }
 
   display() {
