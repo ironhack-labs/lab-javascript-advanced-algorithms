@@ -2,7 +2,9 @@ const stackList = document.getElementById('stack-list');
 const stackInput = document.getElementById('stack-input');
 const container = document.getElementById('container');
 const warningTopStack = document.querySelector('#stack-container .warning-top');
-const warningBottomStack = document.querySelector('#stack-container .warning-bottom');
+const warningBottomStack = document.querySelector(
+  '#stack-container .warning-bottom'
+);
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
 
@@ -18,7 +20,7 @@ const renderListStack = () => {
   stackList.innerHTML = '';
   let length = newStack.display().length;
   let size = newStack.MAX_SIZE - length;
-  newStack.display().forEach(item => {
+  newStack.display().forEach((item) => {
     let li = document.createElement('li');
     li.className = 'active';
     li.innerText = item;
@@ -33,7 +35,7 @@ const renderListStack = () => {
 };
 renderListStack();
 
-const generateWarningStack = type => {
+const generateWarningStack = (type) => {
   if (type === 'underflow') {
     warningBottomStack.style.display = 'block';
     warningBottomStack.innerText = type;
@@ -44,19 +46,24 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  if (newStack.push(stackInput.value) === 'Stack Overflow') {
-    generateWarningStack('overflow');
-  } else {
+  try {
+    newStack.push(stackInput.value);
     clearStackInput();
     renderListStack();
+  } catch (error) {
+    // there was an overflow error, handle it
+    generateWarningStack('overflow');
   }
 };
 
 const removeFromStack = () => {
-  if (newStack.pop() === 'Stack Underflow') {
-    generateWarningStack('underflow');
-  } else {
+  try {
+    // ... your code goes here
+    newStack.pop();
     renderListStack();
+  } catch (error) {
+    // there was an underflow error, handle it
+    generateWarningStack('underflow');
   }
 };
 
