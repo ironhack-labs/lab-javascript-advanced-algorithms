@@ -8,7 +8,7 @@ class Stack {
     // ... your code goes here
     if (this.stackControl.length === 10) {
       return false;
-    } else if (this.stackControl.length < 10) {
+    } else if (this.stackControl.length <=9) {
       return true;
     }
   }
@@ -36,7 +36,7 @@ class Stack {
   pop() {
     // ... your code goes here
     let isEmpty = this.isEmpty();
-    if ((isEmpty = false)) {
+    if (isEmpty = false) {
       this.stackControl.pop(item);
     } else {
       throw new Error("STACK_UNDERFLOW");
