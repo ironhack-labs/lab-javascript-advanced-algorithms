@@ -9,55 +9,57 @@ const takeStackBtn = document.getElementById('take-stack');
 const newStack = new Stack();
 
 const clearStackInput = () => {
-  stackInput.value = '';
+	stackInput.value = '';
 };
 
 const renderListStack = () => {
-  warningTopStack.style.display = 'none';
-  warningBottomStack.style.display = 'none';
-  stackList.innerHTML = '';
-  let length = newStack.display().length;
-  let size = newStack.MAX_SIZE - length;
-  newStack.display().forEach(item => {
-    let li = document.createElement('li');
-    li.className = 'active';
-    li.innerText = item;
-    stackList.appendChild(li);
-  });
-  for (let i = 0; i < size; i++) {
-    let li = document.createElement('li');
-    li.className = 'inactive';
-    li.innerHTML = '&nbsp;';
-    stackList.appendChild(li);
-  }
+	warningTopStack.style.display = 'none';
+	warningBottomStack.style.display = 'none';
+	stackList.innerHTML = '';
+	let length = newStack.display().length;
+	let size = newStack.MAX_SIZE - length;
+	newStack.display().forEach((item) => {
+		let li = document.createElement('li');
+		li.className = 'active';
+		li.innerText = item;
+		stackList.appendChild(li);
+	});
+	for (let i = 0; i < size; i++) {
+		let li = document.createElement('li');
+		li.className = 'inactive';
+		li.innerHTML = '&nbsp;';
+		stackList.appendChild(li);
+	}
 };
 renderListStack();
 
-const generateWarningStack = type => {
-  if (type === 'underflow') {
-    warningBottomStack.style.display = 'block';
-    warningBottomStack.innerText = type;
-  } else if (type === 'overflow') {
-    warningTopStack.style.display = 'block';
-    warningTopStack.innerText = type;
-  }
+const generateWarningStack = (type) => {
+	if (type === 'underflow') {
+		warningBottomStack.style.display = 'block';
+		warningBottomStack.innerText = type;
+	} else if (type === 'overflow') {
+		warningTopStack.style.display = 'block';
+		warningTopStack.innerText = type;
+	}
 };
 
 const addToStack = () => {
-  if (newStack.push(stackInput.value) === 'Stack Overflow') {
-    generateWarningStack('overflow');
-  } else {
-    clearStackInput();
-    renderListStack();
-  }
+	try {
+		newStack.push(stackInput.value);
+		clearStackInput();
+		renderListStack();
+	} catch (error) {
+		generateWarningStack('overflow');
+	}
 };
 
 const removeFromStack = () => {
-  if (newStack.pop() === 'Stack Underflow') {
-    generateWarningStack('underflow');
-  } else {
-    renderListStack();
-  }
+	try {
+		newStack.pop();
+		renderListStack();
+	} catch (error) {
+		generateWarningStack('underflow');
+	}
 };
 
 addStackBtn.addEventListener('click', addToStack);

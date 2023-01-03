@@ -5,7 +5,7 @@ class Stack {
 	}
 
 	canPush() {
-		if (!this.stackControl.length) return true;
+		if (this.stackControl.length < this.MAX_SIZE) return true;
 		if (this.stackControl.length === this.MAX_SIZE) return false;
 	}
 
@@ -17,9 +17,8 @@ class Stack {
 	push(item) {
 		if (this.canPush()) {
 			this.stackControl.push(item);
-		}
-		if (this.stackControl[this.stackControl.length - 1] === item) return this.stackControl;
-		else {
+			return this.stackControl;
+		} else {
 			throw new Error('STACK_OVERFLOW');
 		}
 	}
