@@ -1,28 +1,29 @@
 class Queue {
-  constructor() {
-    this.queueControl = [];
-    this.MAX_SIZE = 10;
-  }
+	constructor() {
+		this.queueControl = [];
+		this.MAX_SIZE = 10;
+	}
 
-  canEnqueue() {
-    // ... your code goes here
-  }
+	canEnqueue() {
+		if (!this.queueControl.length) return true;
+		if (this.queueControl.length === this.MAX_SIZE) return false;
+	}
 
-  isEmpty() {
-    // ... your code goes here
-  }
+	isEmpty() {
+		// ... your code goes here
+	}
 
-  enqueue(item) {
-    // ... your code goes here
-  }
+	enqueue(item) {
+		// ... your code goes here
+	}
 
-  dequeue() {
-    // ... your code goes here
-  }
+	dequeue() {
+		// ... your code goes here
+	}
 
-  display() {
-    // ... your code goes here
-  }  
+	display() {
+		// ... your code goes here
+	}
 }
 
 // This is required to enable the automated tests, please ignore it.
