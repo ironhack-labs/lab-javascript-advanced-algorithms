@@ -5,7 +5,7 @@ class Queue {
 	}
 
 	canEnqueue() {
-		if (!this.queueControl.length) return true;
+		if (this.queueControl.length < this.MAX_SIZE) return true;
 		if (this.queueControl.length === this.MAX_SIZE) return false;
 	}
 
