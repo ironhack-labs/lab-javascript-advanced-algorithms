@@ -65,6 +65,7 @@ describe('Stack', () => {
     });
 
     it('should insert the elements in the received order', () => {
+      console.log(stack);
       stack.push(19);
       stack.push(88);
       expect(stack.stackControl).toEqual([19, 88]);
@@ -102,6 +103,5 @@ describe('Stack', () => {
       stack.push(10);
       expect(stack.display()).toEqual([10]);
     });
-  });  
+  });
 });
-
