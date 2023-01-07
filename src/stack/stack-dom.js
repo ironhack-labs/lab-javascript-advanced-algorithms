@@ -1,8 +1,8 @@
 const stackList = document.getElementById('stack-list');
 const stackInput = document.getElementById('stack-input');
-const container = document.getElementById('container');
-const warningTopStack = document.querySelector('#stack-container .warning-top');
-const warningBottomStack = document.querySelector('#stack-container .warning-bottom');
+const sContainer = document.getElementById('col-sm-4');
+const warningTopStack = document.querySelector('.stack-top-alert');
+const warningBottomStack = document.querySelector('.stack-bottom-alert');
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
 
@@ -13,8 +13,7 @@ const clearStackInput = () => {
 };
 
 const renderListStack = () => {
-  warningTopStack.style.display = 'none';
-  warningBottomStack.style.display = 'none';
+  
   stackList.innerHTML = '';
   let length = newStack.display().length;
   let size = newStack.MAX_SIZE - length;
@@ -33,7 +32,7 @@ const renderListStack = () => {
 };
 renderListStack();
 
-const generateWarningStack = type => {
+function generateWarningStack(type) {
   if (type === 'underflow') {
     warningBottomStack.style.display = 'block';
     warningBottomStack.innerText = type;
@@ -44,21 +43,35 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  if (newStack.push(stackInput.value) === 'Stack Overflow') {
+  warningTopStack.style.display = 'none';
+  warningBottomStack.style.display = 'none';
+  try{
+  newStack.push(stackInput.value)
+  clearStackInput();
+  renderListStack();  
+  }  
+  catch(error){
+    console.log(`there was an overflow error, handle it`);
     generateWarningStack('overflow');
-  } else {
-    clearStackInput();
-    renderListStack();
   }
+     
+
 };
 
 const removeFromStack = () => {
-  if (newStack.pop() === 'Stack Underflow') {
-    generateWarningStack('underflow');
-  } else {
+  warningTopStack.style.display = 'none';
+  warningBottomStack.style.display = 'none';
+  try{
+    newStack.pop()  
     renderListStack();
+  } 
+  catch(error){
+    console.log(`there was an underflow error, handle it`);
+    generateWarningStack('underflow');
   }
-};
+    
+  }
+ 
 
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);

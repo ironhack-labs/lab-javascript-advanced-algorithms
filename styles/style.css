@@ -41,13 +41,32 @@ ul.list-queue > li {
   display: inline;
 }
 
-div.warning-top {
-  display: none;
+.stack-top-alert{
   margin-top: 10px;
   margin-bottom: 0px;
+  display: none;
+  Height: 35px;
+  text-align: center;
 }
 
-div.warning-bottom {
+.stack-bottom-alert {
   margin-top: 0px;
   display: none;
+  Height: 35px;
+  text-align: center;
+}
+.queue-top-alert{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  display: none;
+  Height: 35px;
+  text-align: center;
+}
+
+.queue-bottom-alert {
+  margin-top: 0px;
+  display: none;
+  Height: 35px;
+  text-align: center;
+  
 }
