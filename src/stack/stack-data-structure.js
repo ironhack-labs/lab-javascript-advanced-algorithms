@@ -27,7 +27,7 @@ class Stack {
       return this.stackControl
     } 
     else if (this.stackControl.length === this.MAX_SIZE) {
-      throw Error('STACK_OVERFLOW')
+      throw new Error('STACK_OVERFLOW');
     }
   }
 
@@ -35,9 +35,7 @@ class Stack {
     if (!this.isEmpty()) {
       return this.stackControl.pop()
     }
-    else {
-      throw Error('STACK_UNDERFLOW')
-    }
+    throw new Error('STACK_UNDERFLOW');
   }
 
   display() {
