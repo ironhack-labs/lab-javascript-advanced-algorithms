@@ -61,7 +61,7 @@ describe('Stack', () => {
     });
 
     it('should return the stack when an element is inserted', () => {
-      expect(stack.push(19)).toEqual([19]);
+      expect(stack.push(19)).toEqual(stack);
     });
 
     it('should insert the elements in the received order', () => {

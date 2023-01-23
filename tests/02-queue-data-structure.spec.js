@@ -61,7 +61,7 @@ describe('Queue', () => {
     });
 
     it('should return the queue when an element is inserted', () => {
-      expect(queue.enqueue(19)).toEqual([19]);
+      expect(queue.enqueue(19)).toEqual(queue);
     });
 
     it('should insert the elements in the received order', () => {
