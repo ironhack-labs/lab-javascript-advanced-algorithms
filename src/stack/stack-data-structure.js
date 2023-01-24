@@ -6,14 +6,32 @@ class Stack {
 
   canPush() {
     // ... your code goes here
+    if( this.canPush.length ){
+
+      return true
+    }
+    else{
+      return false
+    } 
+
   }
 
   isEmpty() {
     // ... your code goes here
+    if ( this.isEmpty.length === 1){
+      return false
+
+    }
+    else {
+      return true
+    }
   }
 
   push(item) {
     // ... your code goes here
+    if ( this.canPush.length === 0){
+      
+    }
   }
 
   pop() {
