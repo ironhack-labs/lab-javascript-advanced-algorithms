@@ -50,6 +50,7 @@ const addToStack = () => {
     clearStackInput();
     renderListStack();
   }
+  
 };
 
 const removeFromStack = () => {
