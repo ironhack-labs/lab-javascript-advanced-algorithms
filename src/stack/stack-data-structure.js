@@ -4,8 +4,12 @@ class Stack {
     this.MAX_SIZE = 10;
   }
 
-  canPush() {
-    // ... your code goes here
+  canPush() { 
+    if(this.stackControl.length === 0){
+      return true;
+    }else if(this.stackControl.length === this.MAX_SIZE){
+      return false;
+    }
   }
 
   isEmpty() {
