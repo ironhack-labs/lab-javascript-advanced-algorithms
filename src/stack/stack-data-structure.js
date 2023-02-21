@@ -13,7 +13,11 @@ class Stack {
   }
 
   isEmpty() {
-    // ... your code goes here
+    if(this.stackControl.length === 0){
+      return true;
+    }else if(this.stackControl.length >= 1 ){
+      return false;
+    }
   }
 
   push(item) {
