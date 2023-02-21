@@ -13,7 +13,11 @@ class Queue {
   }
 
   isEmpty() {
-    // ... your code goes here
+    if(this.queueControl.length === 0){
+      return true;
+    }else if(this.queueControl.length >= 1){
+      return false;
+    }
   }
 
   enqueue(item) {
