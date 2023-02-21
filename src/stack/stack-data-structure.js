@@ -32,7 +32,12 @@ class Stack {
   }
 
   pop() {
-    // ... your code goes here
+    const empty = this.isEmpty();
+    if(empty === true){
+      throw new Error('STACK_UNDERFLOW');
+    }else{
+     return this.stackControl.pop();
+    }
   }
 
   display() {
