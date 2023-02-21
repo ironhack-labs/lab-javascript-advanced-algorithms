@@ -21,7 +21,12 @@ class Queue {
   }
 
   enqueue(item) {
-    // ... your code goes here
+    if(this.queueControl.length === this.MAX_SIZE){
+      throw new Error('QUEUE_OVERFLOW');
+    }else{
+      this.queueControl.push(item);
+      return this.queueControl;
+    }
   }
 
   dequeue() {
