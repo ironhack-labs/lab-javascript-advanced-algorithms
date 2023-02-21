@@ -38,7 +38,7 @@ class Queue {
   }
 
   display() {
-    // ... your code goes here
+    return this.queueControl;
   }  
 }
 
