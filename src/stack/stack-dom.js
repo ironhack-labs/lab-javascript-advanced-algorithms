@@ -43,20 +43,28 @@ const generateWarningStack = type => {
   }
 };
 
+function sayHello(){
+  console.log("Hello");
+}
+
 const addToStack = () => {
-  if (newStack.push(stackInput.value) === 'Stack Overflow') {
-    generateWarningStack('overflow');
-  } else {
-    clearStackInput();
-    renderListStack();
+  try {
+    newStack.push(stackInput.value)
+          //Clears input field
+          clearStackInput();
+          //Responsible to render input value
+          renderListStack();
+  }catch(err) {
+    generateWarningStack('overflow')
   }
 };
 
 const removeFromStack = () => {
-  if (newStack.pop() === 'Stack Underflow') {
-    generateWarningStack('underflow');
-  } else {
+  try {
+    newStack.pop()
     renderListStack();
+  }catch(err) {
+    generateWarningStack('underflow');
   }
 };
 
