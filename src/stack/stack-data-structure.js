@@ -5,7 +5,7 @@ class Stack {
   }
 
   canPush() { 
-    if(this.stackControl.length === 0){
+    if(this.stackControl.length < this.MAX_SIZE){
       return true;
     }else if(this.stackControl.length === this.MAX_SIZE){
       return false;
@@ -21,7 +21,14 @@ class Stack {
   }
 
   push(item) {
-    // ... your code goes here
+    let isFull = this.canPush();
+    if(isFull === true){
+      this.stackControl.push(item);
+      return this.stackControl;
+    }else if(isFull === false){
+      throw new Error('STACK_OVERFLOW');
+    }
+    
   }
 
   pop() {
