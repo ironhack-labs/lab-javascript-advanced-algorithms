@@ -5,7 +5,7 @@ class Queue {
 	}
 
 	canEnqueue() {
-		if (this.queueControl < this.MAX_SIZE) {
+		if (this.queueControl.length < this.MAX_SIZE) {
 			return true;
 		} else return false;
 	}
@@ -26,7 +26,7 @@ class Queue {
 	}
 
 	dequeue() {
-		const isEmpty = this.isEmpty;
+		const isEmpty = this.isEmpty();
 		if (!isEmpty) {
 			return this.queueControl.shift();
 		} else throw new Error('QUEUE_UNDERFLOW');
