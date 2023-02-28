@@ -47,7 +47,6 @@ const generateWarningStack = (type) => {
 
 const addToStack = () => {
   try {
-    // ... your code goes here
     newStack.push(stackInput.value);
     clearStackInput();
     renderListStack();
@@ -58,7 +57,6 @@ const addToStack = () => {
 
 const removeFromStack = () => {
   try {
-    // ... your code goes here
     newStack.pop();
     clearStackInput();
     renderListStack();
