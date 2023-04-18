@@ -31,6 +31,7 @@ const renderListStack = () => {
     stackList.appendChild(li);
   }
 };
+
 renderListStack();
 
 const generateWarningStack = type => {
@@ -44,7 +45,7 @@ const generateWarningStack = type => {
 };
 
 const addToStack = () => {
-  if (newStack.push(stackInput.value) === 'Stack Overflow') {
+  if (newStack.push(stackInput.value)) {
     generateWarningStack('overflow');
   } else {
     clearStackInput();
