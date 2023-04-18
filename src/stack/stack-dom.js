@@ -18,12 +18,12 @@ const renderListStack = () => {
   stackList.innerHTML = '';
   let length = newStack.display().length;
   let size = newStack.MAX_SIZE - length;
-  newStack.display().forEach(item => {
+  newStack.display().forEach((item => {
     let li = document.createElement('li');
     li.className = 'active';
     li.innerText = item;
     stackList.appendChild(li);
-  });
+  }));
   for (let i = 0; i < size; i++) {
     let li = document.createElement('li');
     li.className = 'inactive';
