@@ -65,9 +65,9 @@ describe('Queue', () => {
     });
 
     it('should insert the elements in the received order', () => {
-      queue.enqueue(19);
-      queue.enqueue(88);
-      expect(queue.queueControl).toEqual([19, 88]);
+      queue.enqueue('popino');
+      queue.enqueue('yabadu');
+      expect(queue.queueControl).toEqual(['popino', 'yabadu']);
     });
 
     it('should throw error with message "QUEUE_OVERFLOW" if the queue is full', () => {
@@ -91,7 +91,7 @@ describe('Queue', () => {
     it('should throw error with message "QUEUE_UNDERFLOW" if there are no elements in the queue', () => {
       expect(() => queue.dequeue()).toThrow(new Error('QUEUE_UNDERFLOW'));
     });
-  });  
+  });
 
   describe('Method "display"', () => {
     it('should be declared', () => {

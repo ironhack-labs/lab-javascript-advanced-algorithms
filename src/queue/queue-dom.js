@@ -7,23 +7,46 @@ const warningBottomQueue = document.querySelector(
 const addQueue = document.querySelector('.btn-add-queue');
 const dequeue = document.querySelector('.btn-take-dequeue');
 
-const queue = new Queue();
+const newQueue = new Queue();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  warningTopStack.style.display = 'none';
+  warningBottomStack.style.display = 'none';
+  stackList.innerHTML = '';
+  let length = newStack.display().length;
+  let size = newStack.MAX_SIZE - length;
+  newStack.display().forEach(item => {
+    let li = document.createElement('li');
+    li.className = 'active';
+    li.innerText = item;
+    stackList.appendChild(li);
+  });
+  for (let i = 0; i < size; i++) {
+    let li = document.createElement('li');
+    li.className = 'inactive';
+    li.innerHTML = '&nbsp;';
+    stackList.appendChild(li);
+  }
 };
+clearQueueInput();
 
 const generateListQueue = () => {
-  // ... your code goes here
+  if (type === 'underflow') {
+    warningBottomStack.style.display = 'block';
+    warningBottomStack.innerText = type;
+  } else if (type === 'overflow') {
+    warningTopStack.style.display = 'block';
+    warningTopStack.innerText = type;
+  }
 };
 
 generateListQueue();
 
 const generateWarningQueue = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
+    clearStackInput();
   } else if (type === 'overflow') {
-    // ... your code goes here
+    clearQueueInput('overflow');
   }
 };
 
