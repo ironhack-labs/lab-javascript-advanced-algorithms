@@ -25,6 +25,7 @@ class Stack {
       throw new Error("STACK_UNDERFLOW")
     }
     return this.stackControl.pop()
+ 
   }
 
   display() {
