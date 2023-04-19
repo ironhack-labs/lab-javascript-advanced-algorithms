@@ -1,27 +1,44 @@
 class Stack {
   constructor() {
-    this.stackControl = [];
+    this.stackControl = []; //almacena elementos //last
     this.MAX_SIZE = 10;
   }
 
   canPush() {
-    // ... your code goes here
+    if(this.stackControl.length < this.MAX_SIZE){
+      return true
+    }else{
+      return false
+    }
   }
 
   isEmpty() {
-    // ... your code goes here
+    if(this.stackControl.length !== 0){
+      return false
+    }else{
+      return true
+    }
   }
 
   push(item) {
-    // ... your code goes here
+    if(this.stackControl.length === this.MAX_SIZE){
+      throw new Error('STACK_OVERFLOW')
+    }else{
+     this.stackControl.push(item)
+     return this.stackControl
+    }
   }
 
   pop() {
-    // ... your code goes here
+    if(this.stackControl.length === 0){
+      throw new Error('STACK_UNDERFLOW')
+    }else{
+     return this.stackControl.pop()
+    }
   }
 
   display() {
-    // ... your code goes here
+    return this.stackControl
   }  
 }
 
