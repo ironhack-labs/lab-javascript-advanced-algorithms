@@ -21,7 +21,6 @@ class Queue {
   }
 
   dequeue() {
-    // ... your code goes here
     if (!this.isEmpty()) return this.queueControl.shift()
     throw new Error("QUEUE_UNDERFLOW")
   }
