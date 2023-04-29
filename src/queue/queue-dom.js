@@ -39,11 +39,9 @@ generateListQueue();
 
 const generateWarningQueue = (type) => {
   if (type === 'underflow') {
-    // ... your code goes here
     warningBottomQueue.style.display = 'block'
     warningBottomQueue.innerText = type
   } else if (type === 'overflow') {
-    // ... your code goes here
     warningTopQueue.style.display = 'block'
     warningTopQueue.innerText = type
   }
