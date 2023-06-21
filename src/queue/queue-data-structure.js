@@ -6,6 +6,9 @@ class Queue {
 
   canEnqueue() {
     // ... your code goes here
+    if (this.queueControl.length = []) {
+      return true
+    } else if (this.queueControl.length < this.MAX_SIZE) { return false }
   }
 
   isEmpty() {
@@ -22,7 +25,7 @@ class Queue {
 
   display() {
     // ... your code goes here
-  }  
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.
