@@ -1,3 +1,5 @@
+// ---------- [INITIAL SETUP] ----------
+
 const stackList = document.getElementById('stack-list');
 const stackInput = document.getElementById('stack-input');
 const container = document.getElementById('container');
@@ -8,9 +10,18 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new Stack();
 
+
+// ---------- [INITIAL SETUP] ----------
+
+// ---------- [MIRROR] ----------
+
 const clearStackInput = () => {
   stackInput.value = '';
 };
+
+// ---------- [MIRROR] ----------
+
+// ---------- [MIRROR] ----------
 
 const renderListStack = () => {
   warningTopStack.style.display = 'none';
@@ -33,6 +44,10 @@ const renderListStack = () => {
 };
 renderListStack();
 
+// ---------- [MIRROR] ----------
+
+// ---------- [MIRROR] ----------
+
 const generateWarningStack = type => {
   if (type === 'underflow') {
     warningBottomStack.style.display = 'block';
@@ -42,6 +57,8 @@ const generateWarningStack = type => {
     warningTopStack.innerText = type;
   }
 };
+
+// ---------- [MIRROR] ----------
 
 const addToStack = () => {
   if (newStack.push(stackInput.value) === 'Stack Overflow') {
@@ -60,5 +77,9 @@ const removeFromStack = () => {
   }
 };
 
+// ---------- [INITIAL SETUP] ----------
+
 addStackBtn.addEventListener('click', addToStack);
 takeStackBtn.addEventListener('click', removeFromStack);
+
+// ---------- [INITIAL SETUP] ----------
