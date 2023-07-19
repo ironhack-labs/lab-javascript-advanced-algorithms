@@ -5,24 +5,54 @@ class Queue {
   }
 
   canEnqueue() {
-    // ... your code goes here
+
+    if (this.queueControl == this.MAX_SIZE) {
+      return false
+    } else {
+      return true
+    }
   }
 
   isEmpty() {
-    // ... your code goes here
+
+    if (this.queueControl == 0) {
+      return true
+    } else {
+      return false
+    }
   }
 
   enqueue(item) {
-    // ... your code goes here
+
+    if (this.canEnqueue()) {
+      this.queueControl.push(item)
+      return this.queueControl
+    } else {
+      //¿Hay o no desbordamiento?? Revisar al completar
+      //throw new Error("QUEUE_OVERFLOW");
+      return 'Queue Overlow'
+    }
+
   }
 
   dequeue() {
-    // ... your code goes here
+
+    if (this.isEmpty) {
+
+      return this.queueControl.shift()
+
+    } else {
+      //¿Hay o no desbordamiento?? Revisar al completar
+      //throw new Error('QUEUE_UNDERFLOW')
+      return 'Queue Underflow'
+
+    }
   }
 
   display() {
-    // ... your code goes here
-  }  
+
+    return this.queueControl
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.
