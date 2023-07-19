@@ -1,28 +1,49 @@
 class Stack {
-  constructor() {
-    this.stackControl = [];
-    this.MAX_SIZE = 10;
-  }
+	constructor() {
+		this.stackControl = [];
+		this.MAX_SIZE = 10;
+	}
 
-  canPush() {
-    // ... your code goes here
-  }
+	canPush() {
+		if (this.stackControl.length === this.MAX_SIZE) {
+			return false;
+		} else {
+			return true;
+		}
+	}
 
-  isEmpty() {
-    // ... your code goes here
-  }
+	isEmpty() {
+		if (this.stackControl.length === 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
-  push(item) {
-    // ... your code goes here
-  }
+	push(item) {
+		if (this.canPush()) {
+			this.stackControl.push(item);
+			return this.stackControl;
+		} else {
+			// Para que Jasmine esté feliz, descomentar la línea de debajo y comentar el return
+			// throw new Error('STACK_OVERFLOW');
+			return 'Stack Overflow';
+		}
+	}
 
-  pop() {
-    // ... your code goes here
-  }
+	pop() {
+		if (this.isEmpty()) {
+			// Para que Jasmine esté feliz, descomentar la línea de debajo y comentar el return
+			// throw new Error('STACK_UNDERFLOW');
+			return 'Stack Underflow';
+		} else {
+			return this.stackControl.pop();
+		}
+	}
 
-  display() {
-    // ... your code goes here
-  }  
+	display() {
+		return this.stackControl;
+	}
 }
 
 // This is required to enable the automated tests, please ignore it.
