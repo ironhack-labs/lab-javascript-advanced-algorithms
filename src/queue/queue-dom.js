@@ -10,11 +10,27 @@ const dequeue = document.querySelector('.btn-take-dequeue');
 const queue = new Queue();
 
 const clearQueueInput = () => {
-  // ... your code goes here
+  queueInput.value = '';// ... your code goes here
 };
 
 const generateListQueue = () => {
-  // ... your code goes here
+  warningTopQue.style.display = 'none';
+  warningBottomStack.style.display = 'none';
+  stackList.innerHTML = '';
+  let length = newStack.display().length;
+  let size = newStack.MAX_SIZE - length;
+  newStack.display().forEach(item => {
+    let li = document.createElement('li');
+    li.className = 'active';
+    li.innerText = item;
+    stackList.appendChild(li);
+  });
+  for (let i = 0; i < size; i++) {
+    let li = document.createElement('li');
+    li.className = 'inactive';
+    li.innerHTML = '&nbsp;';
+    stackList.appendChild(li);
+  }// ... your code goes here
 };
 
 generateListQueue();
