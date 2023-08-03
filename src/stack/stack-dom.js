@@ -16,8 +16,10 @@ const renderListStack = () => {
   warningTopStack.style.display = 'none';
   warningBottomStack.style.display = 'none';
   stackList.innerHTML = '';
+
   let length = newStack.display().length;
   let size = newStack.MAX_SIZE - length;
+  
   newStack.display().forEach(item => {
     let li = document.createElement('li');
     li.className = 'active';
@@ -53,7 +55,7 @@ const addToStack = () => {
 };
 
 const removeFromStack = () => {
-  if (newStack.pop() === 'Stack Underflow') {
+  if (newStack.pop() === "Stack Overflow") {
     generateWarningStack('underflow');
   } else {
     renderListStack();
