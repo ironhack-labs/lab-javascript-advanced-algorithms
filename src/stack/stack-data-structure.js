@@ -1,3 +1,12 @@
+class UnderflowError extends Error 
+{
+  constructor(message) 
+  {
+    super(message);
+    this.name = "UnderflowError";
+  }
+}
+
 class Stack {
   constructor() {
     this.stackControl = [];
@@ -25,7 +34,7 @@ class Stack {
 
     if(!this.canPush())
     {
-      throw new Error("STACK_OVERFLOW");
+      throw new UnderflowError("STACK_OVERFLOW");
     }
   }
 
@@ -33,14 +42,12 @@ class Stack {
   {
     if(!this.isEmpty())
     {
-      let lastElement = this.stackControl.pop();
-
-      return lastElement
+      return this.stackControl.pop();
     }
 
     if(this.isEmpty())
     {
-      throw new Error("STACK_UNDERFLOW");
+      throw new UnderflowError("STACK_UNDERFLOW");
     }
   }
 
