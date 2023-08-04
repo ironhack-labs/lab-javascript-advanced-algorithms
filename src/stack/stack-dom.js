@@ -67,7 +67,7 @@ const addToStack = () =>
   } 
   catch(error) 
   {
-    if(error instanceof UnderflowError) 
+    if(error instanceof FlowErrors) 
     {
       generateWarningStack('overflow');
     }
@@ -86,7 +86,7 @@ const removeFromStack = () =>
   } 
   catch(error) 
   {
-    if(error instanceof UnderflowError) 
+    if(error instanceof FlowErrors) 
     {
       generateWarningStack('underflow');
     }

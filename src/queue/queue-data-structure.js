@@ -1,3 +1,12 @@
+class UnderflowError extends Error 
+{
+  constructor(message) 
+  {
+    super(message);
+    this.name = "UnderflowError";
+  }
+}
+
 class Queue {
   constructor() {
     this.queueControl = [];
