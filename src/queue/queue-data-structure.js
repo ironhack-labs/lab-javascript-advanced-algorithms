@@ -1,27 +1,32 @@
-class UnderflowError extends Error 
+class QueueFlowError extends Error 
 {
   constructor(message) 
   {
     super(message);
-    this.name = "UnderflowError";
+    this.name = "QueueFlowError";
   }
 }
 
-class Queue {
-  constructor() {
+class Queue 
+{
+  constructor() 
+  {
     this.queueControl = [];
     this.MAX_SIZE = 10;
   }
 
-  canEnqueue() {
+  canEnqueue() 
+  {
     return this.queueControl.length < this.MAX_SIZE ? true : false;
   }
 
-  isEmpty() {
+  isEmpty() 
+  {
     return this.queueControl.length === 0 ? true : false;
   }
 
-  enqueue(item) {
+  enqueue(item) 
+  {
     if(this.canEnqueue())
     {
       this.queueControl.push(item);
@@ -31,25 +36,25 @@ class Queue {
 
     if(!this.canEnqueue())
     {
-      throw new Error('QUEUE_OVERFLOW');
+      throw new QueueFlowError('QUEUE_OVERFLOW');
     }
   }
 
-  dequeue() {
+  dequeue() 
+  {
     if(!this.isEmpty())
     {
-      let firstElement = this.queueControl.shift();
-
-      return firstElement
+      return this.queueControl.shift();
     }
 
     if(this.isEmpty())
     {
-      throw new Error("QUEUE_UNDERFLOW");
+      throw new QueueFlowError("QUEUE_UNDERFLOW");
     }
   }
 
-  display() {
+  display() 
+  {
     return this.queueControl
   }  
 }

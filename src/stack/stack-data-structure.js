@@ -1,9 +1,9 @@
-class FlowErrors extends Error 
+class StackFlowError extends Error 
 {
   constructor(message) 
   {
     super(message);
-    this.name = "FlowErrors";
+    this.name = "StackFlowError";
   }
 }
 
@@ -34,7 +34,7 @@ class Stack {
 
     if(!this.canPush())
     {
-      throw new FlowErrors("STACK_OVERFLOW");
+      throw new StackFlowError("STACK_OVERFLOW");
     }
   }
 
@@ -47,7 +47,7 @@ class Stack {
 
     if(this.isEmpty())
     {
-      throw new FlowErrors("STACK_UNDERFLOW");
+      throw new StackFlowError("STACK_UNDERFLOW");
     }
   }
 

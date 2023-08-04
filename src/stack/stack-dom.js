@@ -38,6 +38,7 @@ const renderListStack = () =>
     stackList.appendChild(li);
   }
 };
+
 renderListStack();
 
 const generateWarningStack = type => 
@@ -67,7 +68,7 @@ const addToStack = () =>
   } 
   catch(error) 
   {
-    if(error instanceof FlowErrors) 
+    if(error instanceof StackFlowError) 
     {
       generateWarningStack('overflow');
     }
@@ -86,7 +87,7 @@ const removeFromStack = () =>
   } 
   catch(error) 
   {
-    if(error instanceof FlowErrors) 
+    if(error instanceof StackFlowError) 
     {
       generateWarningStack('underflow');
     }
