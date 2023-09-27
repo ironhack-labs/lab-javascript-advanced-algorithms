@@ -1,3 +1,7 @@
+body {
+  background-color: antiquewhite;
+}
+
 ul.list-stack {
   display: block;
   margin-top: 10px;
@@ -26,19 +30,21 @@ li.active {
 }
 
 ul.list-queue {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: block;
+  margin-top: 10px;
   padding-left: 0;
+  transform: rotate(180deg);
+  margin-bottom: 0px;
 }
 
 ul.list-queue > li {
   list-style: none;
-  margin: 0px 4px 0px 4px;
+  margin: 4px 0px 4px 0px;
   padding: 5px;
+  display: block;
+  transform: rotate(-180deg);
+  height: 40px;
   text-align: center;
-  display: inline;
 }
 
 div.warning-top {
@@ -50,4 +56,15 @@ div.warning-top {
 div.warning-bottom {
   margin-top: 0px;
   display: none;
+}
+
+#centeringDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
 }
