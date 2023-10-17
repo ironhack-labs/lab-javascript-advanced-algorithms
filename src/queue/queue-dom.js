@@ -34,14 +34,4 @@ const addToQueue = () => {
     // there was an overflow error, handle it
   }
 };
-
-const removeFromQueue = () => {
-  try {
-    // ... your code goes here
-  } catch (error) {
-    // there was an underflow error, handle it
-  }
-};
-
-addQueue.addEventListener('click', addToQueue);
-dequeue.addEventListener('click', removeFromQueue);
+https://github.com/ironhack-labs/lab-js-chronometer/pull/677
