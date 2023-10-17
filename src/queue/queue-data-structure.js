@@ -21,7 +21,7 @@ class Queue {
   }
 
   enqueue(item) {
-
+    //NO ESTE A FULL
     if (!this.canEnqueue()) {
       throw new Error('QUEUE_OVERFLOW')
     } else {
