@@ -25,7 +25,8 @@ class Stack {
   push(item) {
     // ... your code goes here
     if (this.canPush() === false) {
-      throw new Error("STACK_OVERFLOW");
+      return ('Stack Overflow');
+      //throw new Error("STACK_OVERFLOW");
     } else {
       this.stackControl.push(item);
       return this.stackControl;
@@ -35,7 +36,8 @@ class Stack {
   pop() {
     // ... your code goes here
     if (this.isEmpty() === true) {
-      throw new Error("STACK_UNDERFLOW");
+      return ('Stack Underflow');
+      //throw new Error("STACK_UNDERFLOW");
     } else {
       let lastItem = this.stackControl.pop();
       return lastItem;
