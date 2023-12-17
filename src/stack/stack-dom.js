@@ -8,7 +8,7 @@ const takeStackBtn = document.getElementById('take-stack');
 
 const newStack = new Stack();
 
-const cslearStackInput = () => {
+const clearStackInput = () => {
   stackInput.value = '';
 };
 
@@ -46,6 +46,7 @@ const generateWarningStack = (type) => {
 };
 
 const addToStack = () => {
+  console.log ("called")
   if (newStack.push(stackInput.value) === 'Stack Overflow') {
     generateWarningStack('overflow');
   } else {
