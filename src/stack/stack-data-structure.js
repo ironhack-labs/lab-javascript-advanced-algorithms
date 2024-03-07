@@ -15,11 +15,7 @@ class Stack {
 
   isEmpty() {
     // ... your code goes here
-    if(this.stackControl > 0) {
-      return false
-    } else {
-      return true;
-    }
+    return this.stackControl.length === 0;
     }
 
   push(item) {
@@ -27,7 +23,6 @@ class Stack {
     if(this.canPush() === true){
       this.stackControl.push(item);
       return this.stackControl;
-
     } else {
       throw new Error("STACK_OVERFLOW")
     }
@@ -35,12 +30,10 @@ class Stack {
 
   pop() {
     // ... your code goes here
-    if(this.isEmpty() === false ){
-      this.stackControl.pop();
-      return this.stackControl;
-      // TO DO
+    if (this.isEmpty() === false) {
+      return this.stackControl.pop();
     } else {
-      throw new Error("STACK_UNDERFLOW")
+      throw new Error("STACK_UNDERFLOW");
     }
   }
 
