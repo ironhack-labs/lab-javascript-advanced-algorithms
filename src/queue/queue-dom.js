@@ -1,47 +1,38 @@
-const queueUL = document.querySelector('.list-queue');
-const queueInput = document.querySelector('.queue-input');
-const warningTopQueue = document.querySelector('#queue-container .warning-top');
-const warningBottomQueue = document.querySelector(
-  '#queue-container .warning-bottom'
-);
-const addQueue = document.querySelector('.btn-add-queue');
-const dequeue = document.querySelector('.btn-take-dequeue');
-
-const queue = new Queue();
-
-const clearQueueInput = () => {
-  // ... your code goes here
-};
-
-const generateListQueue = () => {
-  // ... your code goes here
-};
-
-generateListQueue();
-
-const generateWarningQueue = (type) => {
-  if (type === 'underflow') {
-    // ... your code goes here
-  } else if (type === 'overflow') {
-    // ... your code goes here
+class Queue {
+  constructor() {
+    this.queueControl = [];
+    this.MAX_SIZE = 10;
   }
-};
 
-const addToQueue = () => {
-  try {
-    // ... your code goes here
-  } catch (error) {
-    // there was an overflow error, handle it
+  canEnqueue() {
+    return this.queueControl.length < this.MAX_SIZE;
   }
-};
 
-const removeFromQueue = () => {
-  try {
-    // ... your code goes here
-  } catch (error) {
-    // there was an underflow error, handle it
+  isEmpty() {
+    return this.queueControl.length === 0;
   }
-};
 
-addQueue.addEventListener('click', addToQueue);
-dequeue.addEventListener('click', removeFromQueue);
+  enqueue(item) {
+    if (this.canEnqueue()) {
+      this.queueControl.push(item);
+      return this.queueControl;
+    } else {
+      throw new Error('QUEUE_OVERFLOW');
+    }
+  }
+
+  dequeue() {
+    if (!this.isEmpty()) {
+      return this.queueControl.shift();
+    } else {
+      throw new Error('QUEUE_UNDERFLOW');
+    }
+  }
+
+  display() {
+    return this.queueControl;
+  }
+}
+
+// This is required to enable the automated tests, please ignore it.
+if (typeof module !== 'undefined') module.exports = Queue;

@@ -1,29 +1,38 @@
-class Queue {
+class Stack {
   constructor() {
-    this.queueControl = [];
+    this.stackControl = [];
     this.MAX_SIZE = 10;
   }
 
-  canEnqueue() {
-    // ... your code goes here
+  canPush() {
+    return this.stackControl.length < this.MAX_SIZE;
   }
 
   isEmpty() {
-    // ... your code goes here
+    return this.stackControl.length === 0;
   }
 
-  enqueue(item) {
-    // ... your code goes here
+  push(item) {
+    if (this.canPush()) {
+      this.stackControl.push(item);
+      return this.stackControl;
+    } else {
+      throw new Error('STACK_OVERFLOW');
+    }
   }
 
-  dequeue() {
-    // ... your code goes here
+  pop() {
+    if (!this.isEmpty()) {
+      return this.stackControl.pop();
+    } else {
+      throw new Error('STACK_UNDERFLOW');
+    }
   }
 
   display() {
-    // ... your code goes here
-  }  
+    return this.stackControl;
+  }
 }
 
 // This is required to enable the automated tests, please ignore it.
-if (typeof module !== 'undefined') module.exports = Queue;
+if (typeof module !== 'undefined') module.exports = Stack;
