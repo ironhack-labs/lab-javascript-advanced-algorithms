@@ -5,24 +5,36 @@ class Stack {
   }
 
   canPush() {
-    // ... your code goes here
+    return (this.stackControl.length < this.MAX_SIZE)
   }
+      
 
   isEmpty() {
-    // ... your code goes here
+    return (this.stackControl.length === 0)
   }
 
   push(item) {
-    // ... your code goes here
+    if (this.canPush()) {
+      this.stackControl.push(item)
+      return this.stackControl;
+    } else { return 'Stack Overflow'}
+
   }
 
   pop() {
-    // ... your code goes here
+    if (this.isEmpty()) {
+      return 'Stack Underflow';
+    } else {
+      const stackElim = this.stackControl[this.stackControl.length - 1]
+      this.stackControl.pop()
+      return stackElim;
+    }
   }
 
+
   display() {
-    // ... your code goes here
-  }  
+    return [...this.stackControl];
+}
 }
 
 // This is required to enable the automated tests, please ignore it.
