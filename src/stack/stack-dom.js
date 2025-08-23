@@ -6,7 +6,7 @@ const warningBottomStack = document.querySelector('#stack-container .warning-bot
 const addStackBtn = document.getElementById('add-stack');
 const takeStackBtn = document.getElementById('take-stack');
 
-const newStack = new Stack();
+const newStack = new Stack(); //definimos la clase
 
 const clearStackInput = () => {
   stackInput.value = '';
